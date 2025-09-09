@@ -57,8 +57,6 @@ class AmityMessageReportReasonCubit
         // await AmityChatClient.newMessageRepository().flagMessage(
         //     messageId: messageId,
         //     reason: AmityContentFlagReason.others(customReason));
-
-        // Use deprecated method for now untill SDK is updated
         await AmityChatClient.newMessageRepository().flag(messageId);
 
         toastBloc.add(AmityToastShort(

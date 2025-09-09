@@ -98,29 +98,28 @@ class AmityExploreComponent extends NewBaseComponent {
         ? "Find community or create your own"
         : "Let's create your own communities..";
 
-    Widget emptyWidget = Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
+    Widget emptyWidget =
+        Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       SvgPicture.asset(
-          'assets/Icons/amity_ic_global_feed_empty.svg',
-          width: 160,
-          height: 160,
-          package: 'amity_uikit_beta_service',
-        ),
-        const SizedBox(height: 16),
-        Text(title, style: AmityTextStyle.titleBold(theme.baseColorShade3)),
-        const SizedBox(height: 4),
-        Text(caption, style: AmityTextStyle.caption(theme.baseColorShade3)),
-        const SizedBox(height: 26),
-        _buildCreateCommunityButton(context),
-        const SizedBox(height: 40)
+        'assets/Icons/amity_ic_global_feed_empty.svg',
+        width: 160,
+        height: 160,
+        package: 'amity_uikit_beta_service',
+      ),
+      const SizedBox(height: 16),
+      Text(title, style: AmityTextStyle.titleBold(theme.baseColorShade3)),
+      const SizedBox(height: 4),
+      Text(caption, style: AmityTextStyle.caption(theme.baseColorShade3)),
+      const SizedBox(height: 26),
+      _buildCreateCommunityButton(context),
+      const SizedBox(height: 40)
     ]);
 
     return Column(
       children: [
         _getDivider(),
-        if (state.categoryState != CategoryListState.empty)...[
-           AmityCommunityCategoriesComponent(
+        if (state.categoryState != CategoryListState.empty) ...[
+          AmityCommunityCategoriesComponent(
             onStateChanged: (state) {
               context.read<ExploreComponentCubit>().setCategoryState(state);
             },

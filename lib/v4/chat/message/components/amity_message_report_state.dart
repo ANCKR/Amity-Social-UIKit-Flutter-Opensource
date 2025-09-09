@@ -1,7 +1,7 @@
 part of 'amity_message_report_cubit.dart';
 
 class AmityMessageReportState extends Equatable {
-  final AmityContentFlagReason? selectedReason;
+  final dynamic? selectedReason;
   final String othersText;
 
   const AmityMessageReportState({
@@ -10,7 +10,7 @@ class AmityMessageReportState extends Equatable {
   });
 
   AmityMessageReportState copyWith({
-    AmityContentFlagReason? selectedReason,
+    dynamic selectedReason,
     String? othersText,
   }) {
     return AmityMessageReportState(

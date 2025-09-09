@@ -18,7 +18,7 @@ class AmityMessageReportCubit extends Cubit<AmityMessageReportState> {
     emit(state.copyWith(othersText: textController.text));
   }
 
-  void selectReason(AmityContentFlagReason reason) {
+  void selectReason(dynamic reason) {
     emit(state.copyWith(selectedReason: reason));
   }
 

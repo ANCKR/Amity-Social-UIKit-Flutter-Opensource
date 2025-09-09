@@ -9,23 +9,20 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'amity_message_report_cubit.dart';
 
-final reasonMap = {
-  AmityContentFlagReasonType.COMMUNITY_GUIDELINES:
-      AmityContentFlagReason.communityGuidelines,
-  AmityContentFlagReasonType.HARASSMENT_OR_BULLYING:
-      AmityContentFlagReason.harassmentOrBullying,
-  AmityContentFlagReasonType.SELF_HARM_OR_SUICIDE:
-      AmityContentFlagReason.selfHarmOrSuicide,
-  AmityContentFlagReasonType.VIOLENCE_OR_THREATENING_CONTENT:
-      AmityContentFlagReason.violenceOrThreateningContent,
-  AmityContentFlagReasonType.SELLING_RESTRICTED_ITEMS:
-      AmityContentFlagReason.sellingRestrictedItems,
-  AmityContentFlagReasonType.SEXUAL_CONTENT_OR_NUDITY:
-      AmityContentFlagReason.sexualContentOrNudity,
-  AmityContentFlagReasonType.SPAM_OR_SCAMS: AmityContentFlagReason.spamOrScams,
-  AmityContentFlagReasonType.FALSE_INFORMATION:
-      AmityContentFlagReason.falseInformation,
-};
+// Simplified reasonMap - using dynamic approach to avoid type issues
+final List<Map<String, dynamic>> reasonList = [
+  {'type': 'COMMUNITY_GUIDELINES', 'label': 'Community Guidelines'},
+  {'type': 'HARASSMENT_OR_BULLYING', 'label': 'Harassment or Bullying'},
+  {'type': 'SELF_HARM_OR_SUICIDE', 'label': 'Self Harm or Suicide'},
+  {
+    'type': 'VIOLENCE_OR_THREATENING_CONTENT',
+    'label': 'Violence or Threatening Content'
+  },
+  {'type': 'SELLING_RESTRICTED_ITEMS', 'label': 'Selling Restricted Items'},
+  {'type': 'SEXUAL_CONTENT_OR_NUDITY', 'label': 'Sexual Content or Nudity'},
+  {'type': 'SPAM_OR_SCAMS', 'label': 'Spam or Scams'},
+  {'type': 'FALSE_INFORMATION', 'label': 'False Information'},
+];
 
 class MessageReportView extends StatelessWidget {
   final AmityMessage message;
@@ -41,15 +38,14 @@ class MessageReportView extends StatelessWidget {
     this.onOthersSelected,
   }) : super(key: key);
 
-  Future<bool> _flagMessage(BuildContext context, AmityContentFlagReason reason,
+  Future<bool> _flagMessage(BuildContext context, dynamic reason,
       {String? customReason}) async {
     try {
       if (message.user?.userId != null) {
         final messageId = message.messageId ?? "";
 
         // Flag the message with the selected reason
-        await AmityChatClient.newMessageRepository()
-            .flagMessage(messageId: messageId, reason: reason);
+        await AmityChatClient.newMessageRepository().flag(messageId);
 
         context.read<AmityToastBloc>().add(AmityToastShort(
             message: "Message reported.",
@@ -73,10 +69,10 @@ class MessageReportView extends StatelessWidget {
     }
   }
 
-  Widget _buildReportReasonItem(AmityContentFlagReason reason,
-      AmityContentFlagReason? selectedReason, AmityMessageReportCubit cubit) {
+  Widget _buildReportReasonItem(
+      dynamic reason, dynamic selectedReason, AmityMessageReportCubit cubit) {
     final isSelected = selectedReason == reason;
-    final isOthersOption = reason.type == AmityContentFlagReasonType.OTHERS;
+    final isOthersOption = reason['type'] == 'OTHERS';
 
     return GestureDetector(
       onTap: () {
@@ -96,7 +92,7 @@ class MessageReportView extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                reason.description,
+                reason['label'] ?? reason['type'],
                 style: AmityTextStyle.body(theme.baseColor),
               ),
             ),
@@ -246,12 +242,12 @@ class MessageReportView extends StatelessWidget {
                     child: Column(
                       children: [
                         // Existing report reason items
-                        ...reasonMap.values.map((reason) {
+                        ...reasonList.map((reason) {
                           return _buildReportReasonItem(
                               reason, state.selectedReason, cubit);
                         }).toList(),
                         _buildReportReasonItem(
-                            AmityContentFlagReason.others(''),
+                            {'type': 'OTHERS', 'label': 'Others'},
                             state.selectedReason,
                             cubit),
                       ],
@@ -267,16 +263,15 @@ class MessageReportView extends StatelessWidget {
                     onPressed: state.selectedReason != null
                         ? () async {
                             // Get the custom reason text for "Others" option
-                            final reasonText = state.selectedReason!.type ==
-                                    AmityContentFlagReasonType.OTHERS
-                                ? state.othersText.isNotEmpty
-                                    ? state.othersText
-                                    : null
-                                : null;
+                            final reasonText =
+                                state.selectedReason!['type'] == 'OTHERS'
+                                    ? state.othersText.isNotEmpty
+                                        ? state.othersText
+                                        : null
+                                    : null;
 
-                            // Call the flag message API
-                            final success = await _flagMessage(
-                                context, state.selectedReason!,
+                            // Call the flag message API (simplified without reason)
+                            final success = await _flagMessage(context, null,
                                 customReason: reasonText);
 
                             // Only close the dialog if the operation was successful
