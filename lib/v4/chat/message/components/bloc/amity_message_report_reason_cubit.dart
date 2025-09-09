@@ -8,7 +8,8 @@ import 'package:equatable/equatable.dart';
 
 part 'amity_message_report_reason_state.dart';
 
-class AmityMessageReportReasonCubit extends Cubit<AmityMessageReportReasonState> {
+class AmityMessageReportReasonCubit
+    extends Cubit<AmityMessageReportReasonState> {
   final AmityMessage? message;
   final Function()? onCancel;
   final Function()? onBack;
@@ -24,7 +25,7 @@ class AmityMessageReportReasonCubit extends Cubit<AmityMessageReportReasonState>
   }) : super(const AmityMessageReportReasonState()) {
     // Add listener to text controller to update button state
     textController.addListener(_onTextChanged);
-    
+
     // Auto-focus the text field when the component loads
     WidgetsBinding.instance.addPostFrameCallback((_) {
       focusNode.requestFocus();
@@ -34,7 +35,7 @@ class AmityMessageReportReasonCubit extends Cubit<AmityMessageReportReasonState>
   void _onTextChanged() {
     final currentLength = textController.text.length;
     final isValid = textController.text.trim().isNotEmpty;
-    
+
     emit(state.copyWith(
       characterCount: currentLength,
       isSubmitEnabled: isValid,
@@ -53,9 +54,12 @@ class AmityMessageReportReasonCubit extends Cubit<AmityMessageReportReasonState>
         final customReason = textController.text.trim();
 
         // Flag the message with the custom reason
-        await AmityChatClient.newMessageRepository().flagMessage(
-            messageId: messageId,
-            reason: AmityContentFlagReason.others(customReason));
+        // await AmityChatClient.newMessageRepository().flagMessage(
+        //     messageId: messageId,
+        //     reason: AmityContentFlagReason.others(customReason));
+
+        // Use deprecated method for now untill SDK is updated
+        await AmityChatClient.newMessageRepository().flag(messageId);
 
         toastBloc.add(AmityToastShort(
             message: "Message reported.",
@@ -63,7 +67,7 @@ class AmityMessageReportReasonCubit extends Cubit<AmityMessageReportReasonState>
             bottomPadding: AmityChatPage.toastBottomPadding));
 
         emit(state.copyWith(isSubmitting: false, isSuccess: true));
-        
+
         // Close the dialog after successful submission
         onCancel?.call();
       } else {
