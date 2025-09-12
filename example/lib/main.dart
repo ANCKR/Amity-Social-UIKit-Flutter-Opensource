@@ -45,9 +45,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-          // textTheme: GoogleFonts.almendraDisplayTextTheme(),
-          ),
+      theme: ThemeData.light(),
+      themeMode: ThemeMode.light,
       title: 'Flutter Demo',
       navigatorKey: MyAppNavigatorKey,
       home: SplashScreen(),

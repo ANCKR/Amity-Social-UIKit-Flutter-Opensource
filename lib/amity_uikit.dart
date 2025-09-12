@@ -287,7 +287,8 @@ class AmityUIKitProvider extends StatelessWidget {
         return Consumer<ConfigProvider>(builder: (context, configProvider, _) {
           configProvider.loadConfig();
           return MaterialApp(
-            theme: ThemeData(),
+            theme: ThemeData.light(),
+            themeMode: ThemeMode.light,
             debugShowCheckedModeBanner: false,
             navigatorKey: NavigationService.navigatorKey,
             home: Builder(builder: (context2) {
