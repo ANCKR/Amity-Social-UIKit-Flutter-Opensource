@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import '../v4/core/amity_colors.dart';
 
 class AmityUIConfiguration extends ChangeNotifier {
   var appColors = AppColors();
@@ -64,31 +65,14 @@ class AppColors {
   final userProfileIconColor;
 
   AppColors({
-    this.primary = const Color(0xFF1054de),
-    // this.primaryShade1 = const Color(0xFF4a82f2),
-    // this.primaryShade2 = const Color(0xFFa0bd8f),
-    this.primaryShade3 = const Color(0xFFd9e5fc),
-    // this.primaryShade4 = const Color(0xFFFFFFFF),
-    this.base = const Color(0xFF000000),
-    // this.baseInverse = const Color(0xFFFFFFFF),
-    // this.baseDefault = const Color(0xFF292b32),
-    // this.baseShade1 = const Color(0xFF636878),
-    // this.baseShade2 = const Color(0xFF8989e9),
-    // this.baseShade3 = const Color(0xFFa5a9b5),
-    this.baseShade4 = const Color(0xFFebecef),
-    this.baseBackground = const Color(0xFFFFFFFF),
-    this.userProfileBGColor = const Color(0xFFFFFFFF),
-    this.userProfileTextColor = const Color(0xff898E9E),
-    this.userProfileIconColor = const Color(0xff898E9E),
-    // this.secondaryDefault = const Color(0xFF292632),
-    // this.secondaryShade1 = const Color(0xFF636878),
-    // this.secondaryShade2 = const Color(0xFF8989e9),
-    // this.secondaryShade3 = const Color(0xFFa5a9b5),
-    // this.secondaryShade4 = const Color(0xFFebecef),
-    // this.alert = const Color(0xFFfa4d30),
-    // this.actionButton = const Color(0x80000000), // 50% opacity
-    // this.hyperlink = const Color(0xCCFFFFFF), // 80% opacity
-    // this.highlight = const Color(0xFF1054de),
+    this.primary = AmityColors.primary,
+    this.primaryShade3 = AmityColors.primaryShade3,
+    this.base = AmityColors.baseInverseLight,
+    this.baseShade4 = AmityColors.baseShade4Light,
+    this.baseBackground = AmityColors.backgroundLight,
+    this.userProfileBGColor = AmityColors.userProfileBG,
+    this.userProfileTextColor = AmityColors.userProfileText,
+    this.userProfileIconColor = AmityColors.userProfileIcon,
   });
 }
 

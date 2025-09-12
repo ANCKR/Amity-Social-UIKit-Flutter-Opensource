@@ -1,5 +1,6 @@
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -12,7 +13,7 @@ class CommunityModeratorBadge extends StatelessWidget {
       padding: const EdgeInsets.only(left: 6, right: 6),
       clipBehavior: Clip.antiAlias,
       decoration: ShapeDecoration(
-        color: const Color(0xFFD9E5FC),
+        color: AmityColors.primaryShade3,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -39,7 +40,7 @@ class CommunityModeratorBadge extends StatelessWidget {
               //color: Colors.blue,
               child: Text(
                 context.l10n.general_moderator,
-                style: AmityTextStyle.captionSmall(const Color(0xFF1054DE)),
+                style: AmityTextStyle.captionSmall(AmityColors.primary),
               ),
             ),
           ],

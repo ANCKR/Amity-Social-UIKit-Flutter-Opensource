@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'amity_colors.dart';
 
 class AmityTheme {
   final Color primaryColor;
@@ -101,33 +102,33 @@ class AmityThemeColor {
 enum AmityThemeStyle { light, dark, system }
 
 final lightTheme = AmityTheme(
-  primaryColor: const Color(0xFF1054DE),
-  secondaryColor: const Color(0xFF292B32),
-  baseColor: const Color(0xFF292B32),
-  baseInverseColor: const Color(0xFF292B32),
-  baseColorShade1: const Color(0xFF636878),
-  baseColorShade2: const Color(0xFF898E9E),
-  baseColorShade3: const Color(0xFFA5A9B5),
-  baseColorShade4: const Color(0xFFEBECEF),
-  alertColor: const Color(0xFFFA4D30),
-  backgroundColor: const Color(0xFFFFFFFF),
-  backgroundShade1Color: const Color(0xFFF6F7F8),
-  highlightColor: const Color(0xFF1054DE),
+  primaryColor: AmityColors.primary,
+  secondaryColor: AmityColors.secondary,
+  baseColor: AmityColors.baseLight,
+  baseInverseColor: AmityColors.baseInverseLight,
+  baseColorShade1: AmityColors.baseShade1Light,
+  baseColorShade2: AmityColors.baseShade2Light,
+  baseColorShade3: AmityColors.baseShade3Light,
+  baseColorShade4: AmityColors.baseShade4Light,
+  alertColor: AmityColors.alert,
+  backgroundColor: AmityColors.backgroundLight,
+  backgroundShade1Color: AmityColors.backgroundShade1Light,
+  highlightColor: AmityColors.highlight,
 );
 
 final darkTheme = AmityTheme(
-  primaryColor: const Color(0xFF1054DE),
-  secondaryColor: const Color(0xFF292B32),
-  baseColor: const Color(0xFFEBECEF),
-  baseInverseColor: const Color(0xFFFFFFFF),
-  baseColorShade1: const Color(0xFFA5A9B5),
-  baseColorShade2: const Color(0xFF6E7487),
-  baseColorShade3: const Color(0xFF40434E),
-  baseColorShade4: const Color(0xFF292B32),
-  alertColor: const Color(0xFFFA4D30),
-  backgroundColor: const Color(0xFF191919),
-  backgroundShade1Color: const Color(0xFF40434E),
-  highlightColor: const Color(0xFF1054DE),
+  primaryColor: AmityColors.primary,
+  secondaryColor: AmityColors.secondary,
+  baseColor: AmityColors.baseDark,
+  baseInverseColor: AmityColors.baseInverseDark,
+  baseColorShade1: AmityColors.baseShade1Dark,
+  baseColorShade2: AmityColors.baseShade2Dark,
+  baseColorShade3: AmityColors.baseShade3Dark,
+  baseColorShade4: AmityColors.baseShade4Dark,
+  alertColor: AmityColors.alert,
+  backgroundColor: AmityColors.backgroundDark,
+  backgroundShade1Color: AmityColors.backgroundShade1Dark,
+  highlightColor: AmityColors.highlight,
 );
 
 enum ColorBlendingOption {

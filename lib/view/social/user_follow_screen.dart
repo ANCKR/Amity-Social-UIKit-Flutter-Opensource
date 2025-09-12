@@ -1,6 +1,7 @@
 import 'package:amity_uikit_beta_service/view/social/user_follower_component.dart';
 import 'package:amity_uikit_beta_service/view/social/user_following_component.dart';
 import 'package:amity_uikit_beta_service/viewmodel/follower_following_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,7 +28,6 @@ class _FollowScreenState extends State<FollowScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Scaffold(
       backgroundColor:
           Provider.of<AmityUIConfiguration>(context).appColors.baseBackground,
@@ -51,9 +51,9 @@ class _FollowScreenState extends State<FollowScreen> {
               dividerColor: Provider.of<AmityUIConfiguration>(context)
                   .appColors
                   .baseBackground,
-              labelColor: const Color(0xFF1054DE),
+              labelColor: AmityColors.primary,
               unselectedLabelColor: Colors.black,
-              indicatorColor: const Color(0xFF1054DE),
+              indicatorColor: AmityColors.primary,
               labelStyle: const TextStyle(
                 fontSize: 17,
                 fontWeight: FontWeight.w600,
