@@ -2,13 +2,9 @@ part of '../message_bubble_view.dart';
 
 extension GenericWidget on MessageBubbleView {
   Widget _buildFailToSendText() {
-    return const Text(
+    return Text(
       'Failed to send message.',
-      style: TextStyle(
-        color: Color(0xFFFA4D30),
-        fontSize: 10,
-        fontWeight: FontWeight.w400,
-      ),
+      style: AmityTextStyle.captionSmall(const Color(0xFFFA4D30)),
     );
   }
 
@@ -49,12 +45,10 @@ extension GenericWidget on MessageBubbleView {
               ),
               Text(
                 'This message was deleted',
-                style: TextStyle(
-                  color: isUser
+                style: AmityTextStyle.caption(
+                  isUser
                       ? messageColor.rightBubbleDefault
                       : messageColor.leftBubbleDefault.darken(25),
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
                 ),
               ),
             ],
@@ -73,10 +67,7 @@ extension GenericWidget on MessageBubbleView {
       padding: const EdgeInsets.only(bottom: 8),
       child: Text(
         text,
-        style: TextStyle(
-            color: theme.baseColorShade2,
-            fontSize: 10,
-            fontWeight: FontWeight.w400),
+        style: AmityTextStyle.captionSmall(theme.baseColorShade2),
       ),
     );
   }

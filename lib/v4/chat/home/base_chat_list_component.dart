@@ -78,10 +78,7 @@ class BaseChatListComponent extends NewBaseComponent {
                       const SizedBox(width: 4),
                       Text(
                         context.l10n.chat_notifications_disabled,
-                        style: TextStyle(
-                            color: theme.baseColorShade1,
-                            fontSize: 13,
-                            fontWeight: FontWeight.w400),
+                        style: AmityTextStyle.caption(theme.baseColorShade1),
                       ),
                     ],
                   ),
@@ -295,7 +292,7 @@ class ChatListItem extends BaseElement {
           Flexible(
             child: Text(
               channel.displayName ?? "",
-              style: AmityTextStyle.titleBold(theme.baseColor),
+              style: AmityTextStyle.bodyBold(theme.baseColor),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
@@ -318,7 +315,7 @@ class ChatListItem extends BaseElement {
 
       displayNameWidget = Text(
         displayName,
-        style: AmityTextStyle.titleBold(theme.baseColor),
+        style: AmityTextStyle.bodyBold(theme.baseColor),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
       );
@@ -391,11 +388,7 @@ class ChatListItem extends BaseElement {
       ),
       child: Text(
         unreadCount > 99 ? '99+' : unreadCount.toString(),
-        style: const TextStyle(
-          color: Colors.white,
-          fontSize: 12,
-          fontWeight: FontWeight.bold,
-        ),
+        style: AmityTextStyle.captionBold(Colors.white),
       ),
     );
   }

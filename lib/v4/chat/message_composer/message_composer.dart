@@ -204,12 +204,7 @@ class AmityMessageComposer extends NewBaseComponent {
                                 minLines: 1,
                                 textAlignVertical: TextAlignVertical.bottom,
                                 cursorColor: theme.primaryColor,
-                                style: TextStyle(
-                                  color: theme.baseColor,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w400,
-                                  letterSpacing: -0.24,
-                                ),
+                                style: AmityTextStyle.body(theme.baseColor),
                                 decoration: InputDecoration(
                                   isDense: true,
                                   contentPadding: const EdgeInsets.symmetric(
@@ -219,12 +214,7 @@ class AmityMessageComposer extends NewBaseComponent {
                                   prefixIconColor: theme.primaryColor,
                                   suffixIconColor: theme.primaryColor,
                                   hoverColor: theme.primaryColor,
-                                  hintStyle: TextStyle(
-                                    color: theme.baseColorShade2,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400,
-                                    letterSpacing: -0.24,
-                                  ),
+                                  hintStyle: AmityTextStyle.body(theme.baseColorShade2),
                                 ),
                               ),
                             ),
@@ -566,12 +556,7 @@ class AmityMessageComposer extends NewBaseComponent {
           Text(
             label,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: theme.baseColorShade1,
-              fontSize: 13,
-              fontWeight: FontWeight.w400,
-              letterSpacing: -0.10,
-            ),
+            style: AmityTextStyle.caption(theme.baseColorShade1),
           )
         ],
       ),

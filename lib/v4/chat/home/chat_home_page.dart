@@ -157,10 +157,9 @@ class _ChatTabs extends NewBaseComponent {
           ),
           child: Text(
             localizedText,
-            style: TextStyle(
-              fontSize: 17,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-            ),
+            style: isSelected 
+                ? AmityTextStyle.bodyBold(Colors.white)
+                : AmityTextStyle.body(theme.baseColorShade1),
           ),
         ),
       ),
@@ -180,35 +179,37 @@ class ChatHomePageNavigationBar extends NewBaseComponent {
         builder: (context, state) {
           return AppBar(
             automaticallyImplyLeading: false,
-            titleSpacing: 4,
-            title: Visibility(
-              visible: !state.isConnected,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const CupertinoActivityIndicator(
-                    radius: 8,
+            title: Row(
+              children: [
+                GestureDetector(
+                  onTap: () => Navigator.of(context).pop(),
+                  child: Container(
+                    width: 32,
+                    height: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      color: theme.baseColor,
+                      size: 20,
+                    ),
                   ),
+                ),
+                const SizedBox(width: 8),
+                Text(context.l10n.chat_title,
+                    style: AmityTextStyle.bodyBold(theme.baseColor)),
+                if (!state.isConnected) ...[
+                  const SizedBox(width: 16),
+                  const CupertinoActivityIndicator(radius: 8),
                   const SizedBox(width: 4),
                   Text(context.l10n.chat_waiting_for_network,
                       style: AmityTextStyle.caption(theme.baseColorShade1)),
                 ],
-              ),
+              ],
             ),
-            centerTitle: true,
-            leadingWidth: 65,
-            leading: Padding(
-              padding: const EdgeInsets.only(left: 16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(context.l10n.chat_title,
-                      style: AmityTextStyle.headline(theme.baseColor)),
-                ],
-              ),
-            ),
+            centerTitle: false,
             backgroundColor: theme.backgroundColor,
             elevation: 0,
             actions: [AmityCreateChatMenuComponent(), AmityChatMenuComponent()],

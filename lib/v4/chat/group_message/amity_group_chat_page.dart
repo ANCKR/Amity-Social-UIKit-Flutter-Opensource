@@ -112,8 +112,7 @@ class AmityGroupChatPage extends NewBasePage {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(state.channelDisplayName ?? "",
-                                    style: AmityTextStyle.titleBold(
-                                        theme.baseColor)),
+                                    style: AmityTextStyle.bodyBold(theme.baseColor)),
                                 Visibility(
                                   visible: !state.isConnected,
                                   child: Row(
@@ -125,11 +124,7 @@ class AmityGroupChatPage extends NewBasePage {
                                       const SizedBox(width: 4),
                                       Text(
                                         "Waiting for network...",
-                                        style: TextStyle(
-                                          fontSize: 13,
-                                          color: theme.baseColorShade1,
-                                          fontWeight: FontWeight.w400,
-                                        ),
+                                        style: AmityTextStyle.caption(theme.baseColorShade1),
                                       ),
                                     ],
                                   ),

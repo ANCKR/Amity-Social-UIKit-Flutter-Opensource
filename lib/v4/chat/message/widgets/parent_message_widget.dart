@@ -204,11 +204,8 @@ extension ParentMessageWidget on MessageBubbleView {
                             if (element is LinkableElement) {
                               return TextSpan(
                                 text: element.text,
-                                style: TextStyle(
-                                  color: theme.highlightColor,
+                                style: AmityTextStyle.subtitle(theme.highlightColor).copyWith(
                                   decoration: TextDecoration.underline,
-                                  fontSize: 15.0,
-                                  fontWeight: FontWeight.w400,
                                 ),
                               );
                             } else {

@@ -124,11 +124,7 @@ class AmityChatPage extends NewBasePage {
                               children: [
                                 Text(
                                   state.userDisplayName ?? "",
-                                  style: TextStyle(
-                                    color: theme.baseColor,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                                  style: AmityTextStyle.bodyBold(theme.baseColor),
                                 ),
                                 Visibility(
                                   visible: !state.isConnected,
@@ -141,12 +137,8 @@ class AmityChatPage extends NewBasePage {
                                       const SizedBox(width: 4),
                                       Text(
                                         context.l10n.chat_waiting_for_network,
-                                        style: TextStyle(
-                                          fontSize: 13,
-                                          color: theme.baseColorShade1,
-                                          fontWeight: FontWeight.w400,
+                                        style: AmityTextStyle.caption(theme.baseColorShade1),
                                         ),
-                                      ),
                                     ],
                                   ),
                                 ),
@@ -389,7 +381,7 @@ class AmityChatPage extends NewBasePage {
                                               style: TextStyle(
                                                   color: theme.baseColorShade1,
                                                   fontWeight: FontWeight.w400,
-                                                  fontSize: 13),
+                                                ),
                                             ),
                                           ),
                                         ),

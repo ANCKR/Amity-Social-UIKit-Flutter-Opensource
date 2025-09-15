@@ -377,10 +377,7 @@ extension MessagePopup on MessageBubbleView {
                       const SizedBox(width: 10),
                       Text(
                         "Edit",
-                        style: TextStyle(
-                            color: theme.baseColor,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400),
+                        style: AmityTextStyle.body(theme.baseColor),
                       ),
                     ],
                   ),
@@ -405,10 +402,7 @@ extension MessagePopup on MessageBubbleView {
                     const SizedBox(width: 10),
                     Text(
                       "Reply",
-                      style: TextStyle(
-                          color: theme.baseColor,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w400),
+                      style: AmityTextStyle.subtitle(theme.baseColor),
                     ),
                   ],
                 ),
@@ -435,10 +429,7 @@ extension MessagePopup on MessageBubbleView {
                       const SizedBox(width: 13),
                       Text(
                         "Save",
-                        style: TextStyle(
-                            color: theme.baseColor,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400),
+                        style: AmityTextStyle.subtitle(theme.baseColor),
                       ),
                     ],
                   ),
@@ -465,10 +456,7 @@ extension MessagePopup on MessageBubbleView {
                     const SizedBox(width: 12),
                     Text(
                       "Copy",
-                      style: TextStyle(
-                          color: theme.baseColor,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w400),
+                      style: AmityTextStyle.subtitle(theme.baseColor),
                     ),
                   ],
                 ),
@@ -495,11 +483,7 @@ extension MessagePopup on MessageBubbleView {
                     const SizedBox(width: 10),
                     Text(
                       message.isFlaggedByMe == true ? "Unreport" : "Report",
-                      style: TextStyle(
-                        color: theme.baseColor,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                      ),
+                      style: AmityTextStyle.subtitle(theme.baseColor),
                     ),
                   ],
                 ),
@@ -525,11 +509,7 @@ extension MessagePopup on MessageBubbleView {
                     const SizedBox(width: 10),
                     Text(
                       "Delete",
-                      style: TextStyle(
-                        color: theme.alertColor,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                      ),
+                      style: AmityTextStyle.subtitle(theme.alertColor),
                     ),
                   ],
                 ),

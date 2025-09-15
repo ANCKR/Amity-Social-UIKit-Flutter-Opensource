@@ -224,9 +224,9 @@ class MessageBubbleView extends NewBaseComponent {
     showCupertinoModalPopup<void>(
       context: context,
       builder: (BuildContext context) => CupertinoActionSheet(
-        title: const Text(
-          'Your message wasn’t sent',
-          style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+        title: Text(
+          "Your message wasn't sent",
+          style: AmityTextStyle.captionBold(Colors.black),
         ),
         actions: <CupertinoActionSheetAction>[
           CupertinoActionSheetAction(
@@ -234,12 +234,9 @@ class MessageBubbleView extends NewBaseComponent {
               onResend?.call(message);
               Navigator.pop(context);
             },
-            child: const Text(
+            child: Text(
               'Resend',
-              style: TextStyle(
-                  color: Color(0xff007AFF),
-                  fontSize: 17,
-                  fontWeight: FontWeight.w400),
+              style: AmityTextStyle.title(const Color(0xff007AFF)),
             ),
           ),
           CupertinoActionSheetAction(
@@ -247,12 +244,9 @@ class MessageBubbleView extends NewBaseComponent {
             onPressed: () async {
               deleteMessage(context, true);
             },
-            child: const Text(
+            child: Text(
               'Delete',
-              style: TextStyle(
-                  color: Color(0xffFF3B30),
-                  fontSize: 17,
-                  fontWeight: FontWeight.w400),
+              style: AmityTextStyle.title(const Color(0xffFF3B30)),
             ),
           ),
         ],
@@ -260,12 +254,9 @@ class MessageBubbleView extends NewBaseComponent {
             onPressed: () {
               Navigator.pop(context);
             },
-            child: const Text(
+            child: Text(
               "Cancel",
-              style: TextStyle(
-                  color: Color(0xff007AFF),
-                  fontSize: 17,
-                  fontWeight: FontWeight.w600),
+              style: AmityTextStyle.titleBold(const Color(0xff007AFF)),
             )),
       ),
     );

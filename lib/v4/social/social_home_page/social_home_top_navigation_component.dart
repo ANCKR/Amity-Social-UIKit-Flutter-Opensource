@@ -1,4 +1,5 @@
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/v4/chat/home/chat_home_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
@@ -31,7 +32,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
       elevation: 0,
       actions: [
         IconButton(
-          padding: EdgeInsets.only(right: selectedTab == AmitySocialHomePageTab.explore ? 16 : 0),
+          padding: const EdgeInsets.only(right: 8),
           icon: Container(
             width: 32,
             height: 32,
@@ -55,6 +56,38 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
             if (searchButtonAction != null) {
               searchButtonAction!();
             }
+          },
+        ),
+        IconButton(
+          padding: EdgeInsets.only(right: selectedTab == AmitySocialHomePageTab.explore ? 16 : 0),
+          icon: Container(
+            width: 32,
+            height: 32,
+            decoration: BoxDecoration(
+              color: theme.secondaryColor.blend(ColorBlendingOption.shade4),
+              shape: BoxShape.circle,
+            ),
+            padding: const EdgeInsets.all(5),
+            child: SvgPicture.asset(
+              'assets/Icons/amity_ic_chat_create_button.svg',
+              package: 'amity_uikit_beta_service',
+              width: 21,
+              height: 21,
+              colorFilter: ColorFilter.mode(
+                theme.secondaryColor,
+                BlendMode.srcIn,
+              ),
+            ),
+          ),
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                fullscreenDialog: true,
+                builder: (context) => Scaffold(
+                  body: AmityChatHomePage(),
+                ),
+              ),
+            );
           },
         ),
         if (selectedTab == AmitySocialHomePageTab.newsFeed)
