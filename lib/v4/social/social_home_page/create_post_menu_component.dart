@@ -21,8 +21,8 @@ class AmityCreatePostMenuComponent extends NewBaseComponent {
         Container(
           width: 32,
           height: 32,
-          decoration: BoxDecoration(
-            color: theme.secondaryColor.blend(ColorBlendingOption.shade4),
+          decoration: const BoxDecoration(
+            color: Colors.white,
             shape: BoxShape.circle,
           ),
           child: PopupMenuButton<int>(
@@ -37,7 +37,7 @@ class AmityCreatePostMenuComponent extends NewBaseComponent {
               "assets/Icons/amity_ic_post_creation_button.svg",
               package: 'amity_uikit_beta_service',
               colorFilter: ColorFilter.mode(
-                theme.secondaryColor,
+                theme.primaryColor,
                 BlendMode.srcIn,
               ),
             ),

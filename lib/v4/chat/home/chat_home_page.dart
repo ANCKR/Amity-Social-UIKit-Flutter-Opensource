@@ -5,11 +5,11 @@ import 'package:amity_uikit_beta_service/v4/chat/createGroup/ui/amity_select_gro
 import 'package:amity_uikit_beta_service/v4/chat/home/amity_all_chat_list_component.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/amity_conversation_chat_list_component.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/amity_group_chat_list_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:amity_uikit_beta_service/v4/core/Network/network_connectivity_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
-import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
 import 'package:flutter/cupertino.dart';
@@ -177,24 +177,18 @@ class ChatHomePageNavigationBar extends NewBaseComponent {
       create: (context) => NetworkConnectivityBloc(),
       child: BlocBuilder<NetworkConnectivityBloc, NetworkConnectivityState>(
         builder: (context, state) {
+          final isDarkTheme = Theme.of(context).brightness == Brightness.dark;
+          
           return AppBar(
             automaticallyImplyLeading: false,
             title: Row(
               children: [
                 GestureDetector(
                   onTap: () => Navigator.of(context).pop(),
-                  child: Container(
-                    width: 32,
-                    height: 32,
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(
-                      Icons.arrow_back_ios,
-                      color: theme.baseColor,
-                      size: 20,
-                    ),
+                  child: Icon(
+                    Icons.arrow_back_ios,
+                    color: theme.baseColor,
+                    size: 20,
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -210,8 +204,17 @@ class ChatHomePageNavigationBar extends NewBaseComponent {
               ],
             ),
             centerTitle: false,
-            backgroundColor: theme.backgroundColor,
+            backgroundColor: Colors.transparent,
             elevation: 0,
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: AmityColors.getSocialHeaderGradient(isDarkTheme: isDarkTheme),
+                ),
+              ),
+            ),
             actions: [AmityCreateChatMenuComponent(), AmityChatMenuComponent()],
             iconTheme: const IconThemeData(color: Colors.black),
           );
@@ -232,8 +235,8 @@ class AmityCreateChatMenuComponent extends NewBaseComponent {
         Container(
           width: 32,
           height: 32,
-          decoration: BoxDecoration(
-            color: theme.secondaryColor.blend(ColorBlendingOption.shade4),
+          decoration: const BoxDecoration(
+            color: Colors.white,
             shape: BoxShape.circle,
           ),
           child: PopupMenuButton<int>(
@@ -248,7 +251,7 @@ class AmityCreateChatMenuComponent extends NewBaseComponent {
               "assets/Icons/amity_ic_post_creation_button.svg",
               package: 'amity_uikit_beta_service',
               colorFilter: ColorFilter.mode(
-                theme.secondaryColor,
+                theme.primaryColor,
                 BlendMode.srcIn,
               ),
             ),
@@ -331,8 +334,8 @@ class AmityChatMenuComponent extends NewBaseComponent {
         Container(
           width: 32,
           height: 32,
-          decoration: BoxDecoration(
-            color: theme.secondaryColor.blend(ColorBlendingOption.shade4),
+          decoration: const BoxDecoration(
+            color: Colors.white,
             shape: BoxShape.circle,
           ),
           child: PopupMenuButton<int>(
@@ -344,7 +347,7 @@ class AmityChatMenuComponent extends NewBaseComponent {
             elevation: 3,
             offset: const Offset(0, 36),
             icon: SvgPicture.asset(
-              "assets/Icons/amity_ic_chat_home_option.svg",
+              "assets/Icons/amity_ic_chat_home_option_primary.svg",
               package: 'amity_uikit_beta_service',
             ),
             padding: const EdgeInsets.all(5),

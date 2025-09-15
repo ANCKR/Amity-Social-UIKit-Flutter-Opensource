@@ -1,5 +1,6 @@
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/chat_home_page.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
@@ -21,6 +22,8 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
 
   @override
   Widget buildComponent(BuildContext context) {
+    final isDarkTheme = Theme.of(context).brightness == Brightness.dark;
+    
     return AppBar(
       automaticallyImplyLeading: false,
       title: Text(
@@ -28,16 +31,25 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
         style: AmityTextStyle.bodyBold(theme.baseColor),
       ),
       centerTitle: false,
-      backgroundColor: theme.backgroundColor,
+      backgroundColor: Colors.transparent,
       elevation: 0,
+      flexibleSpace: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: AmityColors.getSocialHeaderGradient(isDarkTheme: isDarkTheme),
+          ),
+        ),
+      ),
       actions: [
         IconButton(
           padding: const EdgeInsets.only(right: 8),
           icon: Container(
             width: 32,
             height: 32,
-            decoration: BoxDecoration(
-              color: theme.secondaryColor.blend(ColorBlendingOption.shade4),
+            decoration: const BoxDecoration(
+              color: Colors.white,
               shape: BoxShape.circle,
             ),
             padding: const EdgeInsets.all(5),
@@ -47,7 +59,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
               width: 21,
               height: 21,
               colorFilter: ColorFilter.mode(
-                theme.secondaryColor,
+                theme.primaryColor,
                 BlendMode.srcIn,
               ),
             ),
@@ -63,8 +75,8 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
           icon: Container(
             width: 32,
             height: 32,
-            decoration: BoxDecoration(
-              color: theme.secondaryColor.blend(ColorBlendingOption.shade4),
+            decoration: const BoxDecoration(
+              color: Colors.white,
               shape: BoxShape.circle,
             ),
             padding: const EdgeInsets.all(5),
@@ -74,7 +86,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
               width: 21,
               height: 21,
               colorFilter: ColorFilter.mode(
-                theme.secondaryColor,
+                theme.primaryColor,
                 BlendMode.srcIn,
               ),
             ),
@@ -103,9 +115,8 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
                 child: Container(
                     width: 32,
                     height: 32,
-                    decoration: BoxDecoration(
-                      color: theme.secondaryColor
-                          .blend(ColorBlendingOption.shade4),
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
                       shape: BoxShape.circle,
                     ),
                     child: Center(
@@ -113,7 +124,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
                       "assets/Icons/amity_ic_post_creation_button.svg",
                       package: 'amity_uikit_beta_service',
                       colorFilter: ColorFilter.mode(
-                        theme.secondaryColor,
+                        theme.primaryColor,
                         BlendMode.srcIn,
                       ),
                     )))),

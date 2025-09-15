@@ -49,12 +49,31 @@ class _CommunityPageState extends State<CommunityPage> {
         backgroundColor: Provider.of<AmityUIConfiguration>(context).appColors.baseShade4,
         appBar: AppBar(
           elevation: 0.05, // Add this line to remove the shadow
-          backgroundColor: Provider.of<AmityUIConfiguration>(context).appColors.baseBackground,
-
+          backgroundColor: Colors.transparent,
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: AmityColors.getSocialHeaderGradient(
+                  isDarkTheme: Theme.of(context).brightness == Brightness.dark,
+                ),
+              ),
+            ),
+          ),
           leading: IconButton(
-            icon: Icon(
-              Icons.close,
-              color: Provider.of<AmityUIConfiguration>(context).appColors.base,
+            icon: Container(
+              width: 32,
+              height: 32,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+              ),
+              child: Icon(
+                Icons.close,
+                color: Provider.of<AmityUIConfiguration>(context).appColors.primary,
+                size: 18,
+              ),
             ),
             onPressed: () => Navigator.of(context).pop(),
           ),
@@ -62,13 +81,24 @@ class _CommunityPageState extends State<CommunityPage> {
           automaticallyImplyLeading: false,
           title: Text(
             "Community",
-            style: Provider.of<AmityUIConfiguration>(context).titleTextStyle.copyWith(color: Provider.of<AmityUIConfiguration>(context).appColors.base),
+            style: Provider.of<AmityUIConfiguration>(context).titleTextStyle.copyWith(
+              color: Provider.of<AmityUIConfiguration>(context).appColors.base,
+            ),
           ),
           actions: [
             IconButton(
-              icon: Icon(
-                Icons.search,
-                color: Provider.of<AmityUIConfiguration>(context).appColors.base,
+              icon: Container(
+                width: 32,
+                height: 32,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.search,
+                  color: Provider.of<AmityUIConfiguration>(context).appColors.primary,
+                  size: 18,
+                ),
               ),
               onPressed: () {
                 // Implement search functionality

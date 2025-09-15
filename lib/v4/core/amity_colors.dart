@@ -49,9 +49,24 @@ class AmityColors {
   /// Additional MenoTracker colors for health features
   static const Color successColor = Color(0xFF00B556);
   static const Color errorColor = Color(0xFFAF1414);
-  static const Color hotFlashes = Color(0xFF6EC6CA);
-  static const Color stress = Color(0xFF9B72AA);
-  static const Color monthlyPeriodColor = Color(0xFFC33E4F);
-  static const Color selectedColor = Color(0xFF5CC7D1);
-  static const Color borderColor = Color(0xFFD5E5EC);
+  
+  /// Social Header Gradient Colors
+  /// Light theme gradient for social header/AppBar
+  static const List<Color> socialHeaderGradientLight = <Color>[
+    Color(0xFF859DE5),  // Primary blue (left/top)
+    Color(0xFFB8C6F0),  // Lighter blue (middle)
+    Color(0xFFF5F7FA),  // Very light background (right/bottom)
+  ];
+  
+  /// Dark theme gradient for social header/AppBar
+  static const List<Color> socialHeaderGradientDark = <Color>[
+    Color(0xFF6B7FCF),  // Darker primary (left/top)
+    Color(0xFF404B66),  // Mid-dark (middle) 
+    Color(0xFF1C1C1C), // Background dark (right/bottom)
+  ];
+  
+  /// Helper method to get appropriate header gradient based on theme
+  static List<Color> getSocialHeaderGradient({required bool isDarkTheme}) {
+    return isDarkTheme ? socialHeaderGradientDark : socialHeaderGradientLight;
+  }
 }
