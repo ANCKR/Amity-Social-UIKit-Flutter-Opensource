@@ -1,6 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_membership/community_membership_page.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
 import 'package:flutter/material.dart';
@@ -21,20 +22,12 @@ class AmityCommunityInfoView extends BaseElement {
       children: [
         Text(
           postCount.formattedCompactString(),
-          style: TextStyle(
-            color: theme.baseColor,
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-          ),
+          style: AmityTextStyle.subtitleBold(theme.baseColor),
         ),
         const SizedBox(width: 4),
         Text(
           context.l10n.profile_posts_count(postCount),
-          style: TextStyle(
-            color: theme.baseColorShade2,
-            fontSize: 13,
-            fontWeight: FontWeight.w400,
-          ),
+          style: AmityTextStyle.caption(theme.baseColorShade2),
         ),
         const SizedBox(width: 16),
         Container(
@@ -56,20 +49,12 @@ class AmityCommunityInfoView extends BaseElement {
             children: [
               Text(
                 memberCount.formattedCompactString(),
-                style: TextStyle(
-                  color: theme.baseColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AmityTextStyle.subtitleBold(theme.baseColor),
               ),
               const SizedBox(width: 4),
               Text(
                 context.l10n.profile_members_count(memberCount),
-                style: TextStyle(
-                  color: theme.baseColorShade2,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: AmityTextStyle.caption(theme.baseColorShade2),
               ),
             ],
           ),

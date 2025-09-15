@@ -1,5 +1,6 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
@@ -104,10 +105,8 @@ class PostReactionButton extends StatelessWidget {
     }
     return Text(
       text,
-      style: TextStyle(
-        color: hasMyReaction ? appTheme.primaryColor : const Color(0xFF898E9E),
-        fontSize: 15,
-        fontWeight: FontWeight.w600,
+      style: AmityTextStyle.subtitleBold(
+        hasMyReaction ? appTheme.primaryColor : const Color(0xFF898E9E),
       ),
     );
   }
@@ -129,10 +128,8 @@ class PostReactionButton extends StatelessWidget {
     }
     return Text(
       text,
-      style: TextStyle(
-        color: !hasMyReaction ? appTheme.primaryColor : const Color(0xFF898E9E),
-        fontSize: 15,
-        fontWeight: FontWeight.w600,
+      style: AmityTextStyle.subtitleBold(
+        !hasMyReaction ? appTheme.primaryColor : const Color(0xFF898E9E),
       ),
     );
   }

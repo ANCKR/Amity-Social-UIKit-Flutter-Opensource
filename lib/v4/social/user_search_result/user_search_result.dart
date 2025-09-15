@@ -40,7 +40,7 @@ class AmityUserSearchResultComponent extends NewBaseComponent {
                 style: TextStyle(
                   color: theme.baseColorShade3,
                   fontWeight: FontWeight.w600,
-                  fontSize: 17,
+                  fontSize: 20, // Using title size
                 ),
               ),
             ],

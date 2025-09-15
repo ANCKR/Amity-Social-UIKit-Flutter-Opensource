@@ -1,4 +1,5 @@
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/widgets.dart';
 
 class AmityCommunityCategoryList extends BaseElement {
@@ -45,8 +46,7 @@ class AmityCommunityCategoryList extends BaseElement {
         label,
         overflow: TextOverflow.ellipsis,
         maxLines: 1,
-        style: TextStyle(
-            color: theme.baseColor, fontSize: 12, fontWeight: FontWeight.w400),
+        style: AmityTextStyle.caption(theme.baseColor),
       ),
     );
   }

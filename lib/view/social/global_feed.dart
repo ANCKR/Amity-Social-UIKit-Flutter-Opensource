@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/components/alert_dialog.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/components/post_profile.dart';
 import 'package:amity_uikit_beta_service/components/reaction_button.dart';
 import 'package:amity_uikit_beta_service/components/skeleton.dart';
@@ -348,8 +349,8 @@ class _PostWidgetState
                 child: Builder(builder: (context) {
                   return Text(
                     option,
-                    style: TextStyle(
-                      color: Provider.of<AmityUIConfiguration>(context)
+                    style: AmityTextStyle.body(
+                      Provider.of<AmityUIConfiguration>(context)
                           .appColors
                           .base,
                     ),
@@ -365,8 +366,8 @@ class _PostWidgetState
                 child: Builder(builder: (context) {
                   return Text(
                     option,
-                    style: TextStyle(
-                      color: Provider.of<AmityUIConfiguration>(context)
+                    style: AmityTextStyle.body(
+                      Provider.of<AmityUIConfiguration>(context)
                           .appColors
                           .base,
                     ),
@@ -468,9 +469,8 @@ class _PostWidgetState
                                             .currentamityUser!
                                             .displayName ??
                                         "",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Provider.of<AmityUIConfiguration>(
+                                style: AmityTextStyle.bodyBold(
+                                    Provider.of<AmityUIConfiguration>(
                                             context)
                                         .appColors
                                         .base),
@@ -520,8 +520,8 @@ class _PostWidgetState
                                                 .appColors
                                                 .base,
                                         overflow: TextOverflow.ellipsis,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 16, // Using subtitle size
                                       ),
                                     ),
                                   )
@@ -558,8 +558,8 @@ class _PostWidgetState
                                         width: 5,
                                       ),
                                       Text("Edited",
-                                          style: TextStyle(
-                                            color: widget.feedType ==
+                                          style: AmityTextStyle.caption(
+                                            widget.feedType ==
                                                     FeedType.user
                                                 ? Provider.of<
                                                             AmityUIConfiguration>(
@@ -767,15 +767,14 @@ class _PostWidgetState
                                           .commentIcon(),
                                       const SizedBox(width: 5.5),
                                       Text(
-                                        'Comment',
-                                        style: TextStyle(
-                                            color: Provider.of<
-                                                        AmityUIConfiguration>(
-                                                    context)
-                                                .appColors
-                                                .userProfileIconColor,
-                                            fontSize: feedReactionCountSize,
-                                            letterSpacing: 0.5),
+                        'Comment',
+                        style: AmityTextStyle.caption(
+                            Provider.of<
+                                        AmityUIConfiguration>(
+                                    context)
+                                .appColors
+                                .userProfileIconColor,
+                        ).copyWith(letterSpacing: 0.5),
                                       ),
                                     ],
                                   ),
@@ -914,10 +913,9 @@ class PendingSectionButton extends StatelessWidget {
                         Provider.of<AmityUIConfiguration>(context).primaryColor,
                     borderRadius: BorderRadius.circular(4), // Set border radius
                   ),
-                  child: const Center(
+                  child: Center(
                       child: Text("Accept",
-                          style: TextStyle(
-                              color: Colors.white))), // Text color set to white
+                          style: AmityTextStyle.body(Colors.white))), // Text color set to white
                 ),
               ),
             ),
@@ -1005,11 +1003,11 @@ class _LatestCommentComponentState extends State<LatestCommentComponent> {
                   ? const SizedBox()
                   : comments.isDeleted!
                       ? Container(
-                          child: const Column(
+                          child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(9.0),
+                                padding: const EdgeInsets.all(9.0),
                                 child: Row(
                                   children: [
                                     SizedBox(
@@ -1025,9 +1023,9 @@ class _LatestCommentComponentState extends State<LatestCommentComponent> {
                                     ),
                                     Text(
                                       "This comment  has been deleted",
-                                      style: TextStyle(
-                                          color: Color(0xff636878),
-                                          fontSize: 13),
+                                      style: AmityTextStyle.caption(
+                                          const Color(0xff636878),
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -1080,13 +1078,11 @@ class _LatestCommentComponentState extends State<LatestCommentComponent> {
                                     ),
                                     child: Text(
                                       commentData.text!,
-                                      style: TextStyle(
-                                        fontSize: 15,
-                                        color:
-                                            Provider.of<AmityUIConfiguration>(
-                                                    context)
-                                                .appColors
-                                                .base,
+                                      style: AmityTextStyle.subtitle(
+                                        Provider.of<AmityUIConfiguration>(
+                                                context)
+                                            .appColors
+                                            .base,
                                       ),
                                     ),
                                   ),
@@ -1148,16 +1144,14 @@ class CommentActionComponent extends StatelessWidget {
                             snapshot.data!.reactionCount! > 0
                                 ? Text(
                                     " ${snapshot.data!.reactionCount!}",
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xff898E9E),
+                                    style: AmityTextStyle.captionBold(
+                                      const Color(0xff898E9E),
                                     ),
                                   )
-                                : const Text(
+                                : Text(
                                     " Like",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xff898E9E),
+                                    style: AmityTextStyle.captionBold(
+                                      const Color(0xff898E9E),
                                     ),
                                   ),
                           ],
@@ -1209,9 +1203,8 @@ class CommentActionComponent extends StatelessWidget {
                                                 .primaryColor),
                                 Text(
                                   " ${snapshot.data?.reactionCount ?? 0}",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Provider.of<AmityUIConfiguration>(
+                                  style: AmityTextStyle.captionBold(
+                                      Provider.of<AmityUIConfiguration>(
                                               context)
                                           .appColors
                                           .primary),

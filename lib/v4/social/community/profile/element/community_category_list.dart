@@ -1,4 +1,5 @@
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 
 class AmityCommunityCategoryListElement extends BaseElement {
@@ -58,8 +59,7 @@ class AmityCommunityCategoryListElement extends BaseElement {
         label,
         overflow: TextOverflow.ellipsis,
         maxLines: 1,
-        style: TextStyle(
-            color: theme.baseColor, fontSize: 12, fontWeight: FontWeight.w400),
+        style: AmityTextStyle.caption(theme.baseColor),
       ),
     );
   }
@@ -80,13 +80,9 @@ class CategoryItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(20),
       ),
       child: Text(
-      title,
-      style: const TextStyle(
-        fontSize: 13,
-        fontWeight: FontWeight.w400,
-        color: Colors.black,
-      ),
-      textAlign: TextAlign.center,
+        title,
+        style: AmityTextStyle.caption(Colors.black),
+        textAlign: TextAlign.center,
       ),
     );
   }

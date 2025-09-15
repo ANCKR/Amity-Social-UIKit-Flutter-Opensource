@@ -1,4 +1,5 @@
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_event.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/create_community_page.dart';
@@ -44,20 +45,13 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                   child: Text(
                     'Your feed is empty',
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: theme.baseColorShade1,
-                      fontSize: 17,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: AmityTextStyle.titleBold(theme.baseColorShade1),
                   ),
                 ),
                 Text(
                   'Find community or create your own ',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: theme.baseColorShade1,
-                      fontSize: 13,
-                      fontWeight: FontWeight.w400),
+                  style: AmityTextStyle.caption(theme.baseColorShade1),
                 ),
                 const SizedBox(height: 17),
                 Container(
@@ -112,13 +106,9 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                   ],
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 'Explore community',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                ),
+                                style: AmityTextStyle.subtitleBold(Colors.white),
                               ),
                             ],
                           ),
@@ -142,11 +132,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                             children: [
                               Text(
                                 'Create community',
-                                style: TextStyle(
-                                  color: theme.primaryColor,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w400,
-                                ),
+                                style: AmityTextStyle.subtitle(theme.primaryColor),
                               ),
                             ],
                           ),

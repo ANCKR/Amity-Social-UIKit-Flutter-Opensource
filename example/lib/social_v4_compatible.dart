@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider_widget.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/create_action_bottom_sheet.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/post_target_page.dart';
@@ -95,11 +96,7 @@ class _CommunityPageState extends State<AmitySocialV4Compatible> {
                       indicatorColor: Provider.of<AmityUIConfiguration>(context)
                           .appColors
                           .primary,
-                      labelStyle: const TextStyle(
-                        fontSize: 17,
-                        fontWeight: FontWeight.w600,
-                        fontFamily: 'SF Pro Text',
-                      ),
+                      labelStyle: AmityTextStyle.titleBold(Colors.black),
                       tabs: const [
                         Tab(
                           text: "Newfeed",
@@ -179,10 +176,8 @@ class RecommendationSection extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 16, top: 20),
                 child: Text(
                   'Recommended for you',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Provider.of<AmityUIConfiguration>(context)
+                  style: AmityTextStyle.titleBold(
+                      Provider.of<AmityUIConfiguration>(context)
                           .appColors
                           .base),
                 ),
@@ -247,15 +242,11 @@ class RecommendationSection extends StatelessWidget {
                                     Flexible(
                                       child: Text(
                                         "${community.displayName}  ",
-                                        style: TextStyle(
-                                          color:
+                                        style: AmityTextStyle.subtitleBold(
                                               Provider.of<AmityUIConfiguration>(
                                                       context)
                                                   .appColors
-                                                  .base,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                        ),
+                                                  .base),
                                         overflow: TextOverflow
                                             .ellipsis, // Handle text overflow
                                       ),
@@ -278,22 +269,20 @@ class RecommendationSection extends StatelessWidget {
                                   height: 4,
                                 ),
                                 community.categories!.isEmpty
-                                    ? const Text(
+                                    ? Text(
                                         '',
-                                        style: TextStyle(
-                                            color: Colors.black, fontSize: 13),
+                                        style: AmityTextStyle.caption(Colors.black),
                                         overflow: TextOverflow
                                             .ellipsis, // Handle text overflow
                                       )
                                     : Text(
                                         '${community.categories?[0]?.name}',
-                                        style: TextStyle(
-                                            color: Provider.of<
+                                        style: AmityTextStyle.caption(
+                                            Provider.of<
                                                         AmityUIConfiguration>(
                                                     context)
                                                 .appColors
-                                                .base,
-                                            fontSize: 13),
+                                                .base),
                                         overflow: TextOverflow
                                             .ellipsis, // Handle text overflow
                                       ),
@@ -303,8 +292,7 @@ class RecommendationSection extends StatelessWidget {
                                 Text(
                                   '${community.membersCount} ${community.membersCount == 1 ? 'Member' : 'Members'}',
 
-                                  style:
-                                      const TextStyle(color: Color(0xff636878)),
+                                  style: AmityTextStyle.caption(const Color(0xff636878)),
                                   overflow: TextOverflow
                                       .ellipsis, // Handle text overflow
                                 ),
@@ -315,9 +303,7 @@ class RecommendationSection extends StatelessWidget {
                                   child: Text(
                                     community.description ?? '',
                                     softWrap: true,
-                                    style: TextStyle(
-                                        fontSize: 13,
-                                        color:
+                                    style: AmityTextStyle.caption(
                                             Provider.of<AmityUIConfiguration>(
                                                     context)
                                                 .appColors
@@ -364,10 +350,8 @@ class TrendingSection extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 16, top: 20),
                 child: Text(
                   'Today\'s Trending',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Provider.of<AmityUIConfiguration>(context)
+                  style: AmityTextStyle.titleBold(
+                      Provider.of<AmityUIConfiguration>(context)
                           .appColors
                           .base),
                 ),
@@ -411,13 +395,10 @@ class TrendingSection extends StatelessWidget {
                         ),
                         const SizedBox(width: 15),
                         Text("${index + 1}",
-                            style: TextStyle(
-                                fontSize: 20,
-                                color:
+                            style: AmityTextStyle.headlineBold(
                                     Provider.of<AmityUIConfiguration>(context)
                                         .appColors
-                                        .primary,
-                                fontWeight: FontWeight.bold)), // Ranking number
+                                        .primary)), // Ranking number
                         // Spacing between rank and avatar
                       ],
                     ),
@@ -427,13 +408,10 @@ class TrendingSection extends StatelessWidget {
                         Flexible(
                           child: Text(
                             "${community.displayName}  ",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Provider.of<AmityUIConfiguration>(context)
+                            style: AmityTextStyle.subtitleBold(
+                              Provider.of<AmityUIConfiguration>(context)
                                   .appColors
-                                  .base,
-                              fontSize: 15,
-                            ),
+                                  .base),
                             overflow:
                                 TextOverflow.ellipsis, // Handle text overflow
                           ),
@@ -453,13 +431,13 @@ class TrendingSection extends StatelessWidget {
                     subtitle: community.categories!.isEmpty
                         ? Text(
                             'no category • ${community.membersCount} ${community.membersCount == 1 ? "member" : "members"}',
-                            style: const TextStyle(
-                                fontSize: 13, color: Color(0xff636878)),
+                            style: AmityTextStyle.caption(
+                                const Color(0xff636878)),
                           )
                         : Text(
                             '${community.categories?[0]?.name ?? ""} • ${community.membersCount} ${community.membersCount == 1 ? "member" : "members"}',
-                            style: const TextStyle(
-                                fontSize: 13, color: Color(0xff636878)),
+                            style: AmityTextStyle.caption(
+                                const Color(0xff636878)),
                           ),
                   );
                 },
@@ -572,12 +550,10 @@ class CategorySection extends StatelessWidget {
                             child: Text(
                               category.name ?? '',
                               overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                  color:
+                              style: AmityTextStyle.bodyBold(
                                       Provider.of<AmityUIConfiguration>(context)
                                           .appColors
-                                          .base,
-                                  fontWeight: FontWeight.bold),
+                                          .base),
                             ),
                           ),
                         ],

@@ -186,11 +186,7 @@ class _AmityCommentCreatorInternalState
                               horizontal: 0, vertical: 0),
                           hintText: context.l10n.comment_create_hint,
                           border: InputBorder.none,
-                          hintStyle: TextStyle(
-                            color: widget.theme.baseColorShade2,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400,
-                          ),
+                          hintStyle: AmityTextStyle.subtitle(widget.theme.baseColorShade2),
                         ),
                         suggestionOverlayBottomPaddingWhenKeyboardClosed:
                             state.currentHeight +

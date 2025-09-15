@@ -1,15 +1,14 @@
 import 'dart:async';
 import 'dart:math';
-import 'dart:developer' as dev;
 
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
 
 import '../../../utils/amity_social_behaviour_helper.dart';
 import '../../../utils/user_image.dart';
@@ -171,10 +170,7 @@ class _PostPollContentState extends State<PostPollContent> {
                         strokeWidth: 2,
                       )
                     : Text(context.l10n.poll_vote,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        )),
+                        style: AmityTextStyle.bodyBold(Colors.white)),
               );
             },
           ),
@@ -185,11 +181,7 @@ class _PostPollContentState extends State<PostPollContent> {
             Expanded(
               child: Text(
                 '${context.l10n.poll_vote_count(poll.totalVote)} • $timeLeft',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600,
-                  color: widget.theme.baseColorShade2,
-                ),
+                style: AmityTextStyle.captionBold(widget.theme.baseColorShade2),
               ),
             ),
             if (widget.post.postedUserId ==
@@ -212,11 +204,7 @@ class _PostPollContentState extends State<PostPollContent> {
                 },
                 child: Text(
                   isResultState ? context.l10n.poll_back_to_vote : context.l10n.poll_results,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: widget.theme.primaryColor,
-                  ),
+                  style: AmityTextStyle.captionBold(widget.theme.primaryColor),
                 ),
               ),
           ],
@@ -314,11 +302,7 @@ class PollOptions extends StatelessWidget {
           poll.answerType == AmityPollAnswerType.SINGLE
               ? context.l10n.poll_single_choice
               : context.l10n.poll_multiple_choice,
-          style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w600,
-            color: theme.baseColorShade2,
-          ),
+          style: AmityTextStyle.bodyBold(theme.baseColorShade2),
         ),
         const SizedBox(height: 8),
         ...answers
@@ -372,14 +356,10 @@ class PollOptions extends StatelessWidget {
                               vertical: 8.0), // Add vertical padding
                           child: Text(
                             answer.data ?? "",
-                            style: TextStyle(
-                              fontWeight: isSelected
-                                  ? FontWeight.bold
-                                  : FontWeight.bold,
-                              color: canVote
+                            style: AmityTextStyle.bodyBold(
+                              canVote
                                   ? theme.baseColor
-                                  : theme
-                                      .baseColorShade3, // Dim text if disabled
+                                  : theme.baseColorShade3, // Dim text if disabled
                             ),
                           ),
                         ),
@@ -453,10 +433,7 @@ class PollOptions extends StatelessWidget {
             ),
             child: Text(
               context.l10n.poll_see_more_options(answers.length - threshold),
-              style: TextStyle(
-                color: theme.secondaryColor,
-                fontWeight: FontWeight.bold,
-              ),
+              style: AmityTextStyle.bodyBold(theme.secondaryColor),
             ),
           ),
       ],
@@ -535,10 +512,7 @@ class PollResults extends StatelessWidget {
                     Expanded(
                       child: Text(
                         answer.data ?? "",
-                        style: TextStyle(
-                          color: theme.baseColor,
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: AmityTextStyle.bodyBold(theme.baseColor),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -546,11 +520,10 @@ class PollResults extends StatelessWidget {
                     const SizedBox(width: 8),
                     Text(
                       '${votePercentage % 1 == 0 ? votePercentage.toInt() : votePercentage.toStringAsFixed(2)}%',
-                      style: TextStyle(
-                        color: isTopAnswer
+                      style: AmityTextStyle.bodyBold(
+                        isTopAnswer
                             ? theme.primaryColor
                             : theme.baseColorShade1,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
@@ -562,10 +535,7 @@ class PollResults extends StatelessWidget {
                     Flexible(
                       child: Text(
                         getVotedByText(context, answer.voteCount ?? 0, userVoted),
-                        style: TextStyle(
-                          color: theme.baseColorShade2,
-                          fontSize: 12,
-                        ),
+                        style: AmityTextStyle.caption(theme.baseColorShade2),
                         maxLines: 1, // Ensures the text does not overflow
                         overflow: TextOverflow
                             .ellipsis, // Adds ellipsis if the text is too long
@@ -627,10 +597,7 @@ class PollResults extends StatelessWidget {
             ),
             child: Text(
               context.l10n.poll_see_full_results,
-              style: TextStyle(
-                color: theme.baseColor,
-                fontWeight: FontWeight.bold,
-              ),
+              style: AmityTextStyle.bodyBold(theme.baseColor),
             ),
           ),
       ],

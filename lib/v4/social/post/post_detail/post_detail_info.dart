@@ -1,6 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/reaction/reaction_list.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
 import 'package:flutter/material.dart';
@@ -101,21 +102,13 @@ class PostDetailInfo extends NewBaseComponent {
     final reactionCount = post.reactionCount ?? 0;
     final text = context.l10n.post_like_count(reactionCount);
     return Text(text,
-        style: TextStyle(
-          color: theme.baseColorShade2,
-          fontSize: 13,
-          fontWeight: FontWeight.w400,
-        ));
+        style: AmityTextStyle.caption(theme.baseColorShade2));
   }
 
   Widget getCommentCount(BuildContext context, AmityPost post) {
     final commentCount = post.commentCount ?? 0;
     final text = context.l10n.post_comment_count(commentCount);
     return Text(text,
-        style: TextStyle(
-          color: theme.baseColorShade2,
-          fontSize: 13,
-          fontWeight: FontWeight.w400,
-        ));
+        style: AmityTextStyle.caption(theme.baseColorShade2));
   }
 }

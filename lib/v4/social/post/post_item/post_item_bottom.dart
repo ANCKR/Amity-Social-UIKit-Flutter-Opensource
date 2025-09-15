@@ -1,6 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_reaction_button.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
@@ -75,11 +76,7 @@ class PostItemBottom extends NewBaseComponent {
         const SizedBox(width: 4),
         Text(
           hideCommentCount ? context.l10n.post_comment : (post.commentCount ?? 0).formattedCompactString(),
-          style: TextStyle(
-            color: theme.baseColorShade2,
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-          ),
+          style: AmityTextStyle.subtitleBold(theme.baseColorShade2),
         ),
       ],
     );

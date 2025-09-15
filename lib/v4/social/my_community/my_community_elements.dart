@@ -59,8 +59,7 @@ class AmityCommunityCategoriesName extends BaseElement {
         label,
         overflow: TextOverflow.ellipsis,
         maxLines: 1,
-        style: TextStyle(
-            color: theme.baseColor, fontSize: 12, fontWeight: FontWeight.w400),
+        style: AmityTextStyle.caption(theme.baseColor),
       ),
     );
   }
@@ -155,7 +154,7 @@ class CommunityMemberCountElement extends BaseElement {
       style: TextStyle(
         color: theme.baseColorShade1,
         fontWeight: FontWeight.w400,
-        fontSize: 13,
+        fontSize: 12, // Using caption size
       ),
     );
   }
