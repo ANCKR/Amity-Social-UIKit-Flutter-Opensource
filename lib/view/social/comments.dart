@@ -9,6 +9,7 @@ import 'package:amity_uikit_beta_service/view/social/global_feed.dart';
 import 'package:amity_uikit_beta_service/view/social/post_content_widget.dart';
 import 'package:amity_uikit_beta_service/viewmodel/amity_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/reply_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -750,34 +751,32 @@ class _CommentComponentState extends State<CommentComponent> {
 
                         return comments.isDeleted!
                             ? Container(
-                                child: const Column(
+                                child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: Row(
                                         children: [
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 14,
                                           ),
-                                          Icon(
+                                          const Icon(
                                             Icons.remove_circle_outline,
                                             size: 15,
                                             color: Color(0xff636878),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 14,
                                           ),
                                           Text(
                                             "This comment  has been deleted",
-                                            style: TextStyle(
-                                                color: Color(0xff636878),
-                                                fontSize: 13),
+                                            style: AmityTextStyle.caption(const Color(0xff636878)),
                                           ),
                                         ],
                                       ),
                                     ),
-                                    Divider(
+                                    const Divider(
                                       height: 0,
                                     )
                                   ],
@@ -934,14 +933,9 @@ class _CommentComponentState extends State<CommentComponent> {
                                                   const SizedBox(
                                                     width: 5,
                                                   ),
-                                                  const Text(
+                                                  Text(
                                                     "Reply",
-                                                    style: TextStyle(
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        color:
-                                                            Color(0xff898E9E),
-                                                        fontSize: 15),
+                                                    style: AmityTextStyle.subtitleBold(const Color(0xff898E9E)),
                                                   ),
                                                 ],
                                               ),
@@ -1124,32 +1118,29 @@ class _CommentComponentState extends State<CommentComponent> {
                                                       padding:
                                                           const EdgeInsets.all(
                                                               5.0),
-                                                      child: const Wrap(
+                                                      child: Wrap(
                                                         crossAxisAlignment:
                                                             WrapCrossAlignment
                                                                 .center,
                                                         children: [
-                                                          SizedBox(
+                                                          const SizedBox(
                                                             width: 14,
                                                           ),
-                                                          Icon(
+                                                          const Icon(
                                                             Icons
                                                                 .subdirectory_arrow_right,
                                                             size: 15,
                                                             color: Color(
                                                                 0xff636878),
                                                           ),
-                                                          SizedBox(
+                                                          const SizedBox(
                                                             width: 14,
                                                           ),
                                                           Text(
                                                             "View more replies",
-                                                            style: TextStyle(
-                                                                color: Color(
-                                                                    0xff636878),
-                                                                fontSize: 13),
+                                                            style: AmityTextStyle.caption(const Color(0xff636878)),
                                                           ),
-                                                          SizedBox(
+                                                          const SizedBox(
                                                             width: 14,
                                                           )
                                                         ],
@@ -1330,26 +1321,25 @@ class ReplyCommentComponent extends StatelessWidget {
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(4))),
                           padding: const EdgeInsets.all(5.0),
-                          child: const Wrap(
+                          child: Wrap(
                             crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 width: 14,
                               ),
-                              Icon(
+                              const Icon(
                                 Icons.remove_circle_outline,
                                 size: 15,
                                 color: Color(0xff636878),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 14,
                               ),
                               Text(
                                 "This reply has been deleted",
-                                style: TextStyle(
-                                    color: Color(0xff636878), fontSize: 13),
+                                style: AmityTextStyle.caption(const Color(0xff636878)),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 14,
                               )
                             ],

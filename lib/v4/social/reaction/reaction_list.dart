@@ -477,12 +477,7 @@ class AmityReactionList extends NewBaseComponent {
                 children: [
                   Text(
                     reaction.creator?.displayName ?? "",
-                    style: TextStyle(
-                      color: theme.baseColor,
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'SF Pro Text',
-                    ),
+                    style: AmityTextStyle.subtitleBold(theme.baseColor),
                   ),
                   if (referenceType == AmityReactionReferenceType.MESSAGE &&
                       isCurrentUser)

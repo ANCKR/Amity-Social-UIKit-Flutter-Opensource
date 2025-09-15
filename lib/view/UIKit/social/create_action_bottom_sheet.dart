@@ -1,15 +1,12 @@
 import 'package:amity_sdk/amity_sdk.dart';
-import 'package:amity_uikit_beta_service/v4/social/story/draft/amity_story_media_type.dart';
-import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
-import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_story_single_segment_timer_element.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider_widget.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/create_post_screenV2.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/post_target_page.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/story_target_page.dart';
 import 'package:amity_uikit_beta_service/view/social/global_feed.dart';
 import 'package:amity_uikit_beta_service/viewmodel/configuration_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
@@ -39,13 +36,9 @@ class CreateActionBottomSheet {
                 ),
               ),
               ListTile(
-                title: const Text(
+                title: Text(
                   "Post",
-                  style: TextStyle(
-                    fontFamily: "SF Pro Text",
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: AmityTextStyle.subtitleBold(Colors.black),
                 ),
                 leading: SvgPicture.asset(
                   "assets/Icons/ic_create_post_black.svg",
@@ -69,13 +62,9 @@ class CreateActionBottomSheet {
                 },
               ),
               ListTile(
-                title: const Text(
+                title: Text(
                   "Story",
-                  style: TextStyle(
-                    fontFamily: "SF Pro Text",
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: AmityTextStyle.subtitleBold(Colors.black),
                 ),
                 leading: SvgPicture.asset(
                   "assets/Icons/ic_create_stroy_black.svg",

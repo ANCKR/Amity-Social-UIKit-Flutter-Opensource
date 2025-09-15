@@ -1,6 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/amity_uikit.dart';
-import 'package:amity_uikit_beta_service/uikit_behavior.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
@@ -89,21 +88,13 @@ class PostDisplayName extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 2),
                     child: Text(
                       "• ",
-                      style: TextStyle(
-                        color: theme.baseColorShade2,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
-                      ),
+                      style: AmityTextStyle.caption(theme.baseColorShade2),
                     )),
               Container(
                 alignment: Alignment.topLeft,
                 child: Text(
                   timestampText,
-                  style: TextStyle(
-                    color: theme.baseColorShade2,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: AmityTextStyle.caption(theme.baseColorShade2),
                 ),
               ),
             ],

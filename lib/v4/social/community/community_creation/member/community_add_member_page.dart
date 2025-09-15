@@ -1,5 +1,6 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/member/bloc/community_add_member_page_bloc.dart';
@@ -131,11 +132,7 @@ class AmityCommunityAddMemberPage extends NewBasePage {
               user.displayName ?? '',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                color: theme.baseColor,
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AmityTextStyle.bodyBold(theme.baseColor),
             ),
           ),
           const SizedBox(width: 8),
@@ -199,11 +196,7 @@ class AmityCommunityAddMemberPage extends NewBasePage {
           const SizedBox(height: 4),
           Text(
             user.displayName ?? context.l10n.user_profile_unknown_name,
-            style: TextStyle(
-              color: theme.baseColor,
-              fontSize: 13,
-              fontWeight: FontWeight.w400,
-            ),
+            style: AmityTextStyle.body(theme.baseColor),
             overflow: TextOverflow.ellipsis, // Ensure text does not overflow
             maxLines: 1, // Limit to a single line
           ),
@@ -237,10 +230,7 @@ class AmityCommunityAddMemberPage extends NewBasePage {
                 child: Center(
                   child: Text(
                     context.l10n.member_add,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600),
+                    style: AmityTextStyle.bodyBold(Colors.white),
                   ),
                 )),
           )),

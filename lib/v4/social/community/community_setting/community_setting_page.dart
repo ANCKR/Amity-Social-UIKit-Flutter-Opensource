@@ -9,6 +9,7 @@ import 'package:amity_uikit_beta_service/v4/social/community/community_setting/e
 import 'package:amity_uikit_beta_service/v4/social/community/community_setting/permission_setting/post/community_post_permission_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_setting/permission_setting/story/community_story_setting_page.dart';
 import 'package:amity_uikit_beta_service/v4/utils/app_bar.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -75,10 +76,7 @@ class AmityCommunitySettingPage extends NewBasePage {
                         state.isNotificationEnabled
                             ? context.l10n.general_on
                             : context.l10n.general_off,
-                        style: TextStyle(
-                            color: theme.baseColorShade1,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400)),
+                        style: AmityTextStyle.subtitle(theme.baseColorShade1)),
                   ),
                 ],
               ),
@@ -175,10 +173,7 @@ class AmityCommunitySettingPage extends NewBasePage {
     return Padding(
         padding: const EdgeInsets.fromLTRB(16, 24, 16, 8),
         child: Text(title,
-            style: TextStyle(
-                color: theme.baseColor,
-                fontSize: 17,
-                fontWeight: FontWeight.w600)));
+            style: AmityTextStyle.titleBold(theme.baseColor)));
   }
 
   Widget _getSettingDetailItemWidget(String title, String? detail,
@@ -190,18 +185,12 @@ class AmityCommunitySettingPage extends NewBasePage {
             child: ListTile(
                 contentPadding: EdgeInsets.zero,
                 title: Text(title,
-                    style: TextStyle(
-                        color: theme.alertColor,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600)),
+                    style: AmityTextStyle.subtitleBold(theme.alertColor)),
                 subtitle: detail != null
                     ? Padding(
                         padding: const EdgeInsets.only(top: 4, bottom: 8),
                         child: Text(detail,
-                            style: TextStyle(
-                                color: theme.baseColorShade1,
-                                fontSize: 13,
-                                fontWeight: FontWeight.w400)))
+                            style: AmityTextStyle.caption(theme.baseColorShade1)))
                     : null)));
   }
 

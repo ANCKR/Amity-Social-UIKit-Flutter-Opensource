@@ -6,6 +6,7 @@ import 'package:amity_uikit_beta_service/v4/core/ui/mention/mention_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
+import '../../core/styles.dart';
 import '../../core/theme.dart';
 import '../../core/toast/amity_uikit_toast.dart';
 import '../../core/toast/bloc/amity_uikit_toast_bloc.dart';
@@ -55,11 +56,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                 targetCommunityName ?? context.l10n.general_my_timeline,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  color: theme.baseColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AmityTextStyle.headlineBold(theme.baseColor),
               ),
               leading: IconButton(
                 icon: Icon(Icons.close, color: theme.baseColor),
@@ -77,10 +74,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                       : () => _createPollPost(state, bloc, context),
                   child: Text(
                     context.l10n.general_post,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: state.isPosting ||
+                    style: AmityTextStyle.subtitleBold(state.isPosting ||
                               state.question.trim().isEmpty ||
                               state.options
                                       .where((o) => o.trim().isNotEmpty)
@@ -140,19 +134,11 @@ class AmityPollPostComposerPage extends NewBasePage {
           children: [
             Text(
               context.l10n.poll_question,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-                color: theme.baseColor,
-              ),
+              style: AmityTextStyle.subtitleBold(theme.baseColor),
             ),
             Text(
               '${state.question.length}/$maxQuestionLength',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-                color: theme.baseColorShade1,
-              ),
+              style: AmityTextStyle.body(theme.baseColorShade1),
             ),
           ],
         ),
@@ -170,17 +156,9 @@ class AmityPollPostComposerPage extends NewBasePage {
             hintText: context.l10n.poll_question_hint,
             border: InputBorder.none,
             contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
-            hintStyle: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.normal,
-              color: theme.baseColorShade3,
-            ),
+            hintStyle: AmityTextStyle.subtitle(theme.baseColorShade3),
           ),
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.normal,
-            color: theme.baseColor,
-          ),
+          style: AmityTextStyle.subtitle(theme.baseColor),
           onChanged: (value) {
             bloc.add(UpdateQuestionEvent(question: value));
           },
@@ -194,11 +172,7 @@ class AmityPollPostComposerPage extends NewBasePage {
           Divider(color: theme.alertColor),
           Text(
             context.l10n.error_max_poll_characters(maxQuestionLength),
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.normal,
-              color: theme.alertColor,
-            ),
+            style: AmityTextStyle.caption(theme.alertColor),
           ),
         ],
       ],
@@ -213,21 +187,13 @@ class AmityPollPostComposerPage extends NewBasePage {
         children: [
           Text(
             title,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-              color: theme.baseColor,
-            ),
+            style: AmityTextStyle.subtitleBold(theme.baseColor),
           ),
           if (description != null) ...[
             const SizedBox(height: 4),
             Text(
               description,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-                color: theme.baseColorShade1,
-              ),
+              style: AmityTextStyle.body(theme.baseColorShade1),
             ),
           ],
         ],
@@ -272,11 +238,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                     decoration: InputDecoration(
                       hintText: context.l10n.poll_option_hint(index + 1),
                       // Dynamic hint text
-                      hintStyle: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.normal,
-                        color: theme.baseColorShade3,
-                      ),
+                      hintStyle: AmityTextStyle.body(theme.baseColorShade3),
                       filled: true,
                       fillColor: theme.baseColorShade4,
                       border: OutlineInputBorder(
@@ -306,11 +268,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                         horizontal: 12.0,
                       ),
                     ),
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.normal,
-                      color: theme.baseColor,
-                    ),
+                    style: AmityTextStyle.body(theme.baseColor),
                   ),
                 ),
                 Padding(
@@ -347,11 +305,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                 child: Text(
                   context.l10n
                       .error_max_poll_option_characters(maxOptionLength),
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.normal,
-                    color: theme.alertColor,
-                  ),
+                  style: AmityTextStyle.caption(theme.alertColor),
                 ),
               ),
           ],
@@ -400,10 +354,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                           const SizedBox(width: 8),
                           Text(
                             context.l10n.poll_add_option,
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.normal,
-                              color: state.isPosting
+                            style: AmityTextStyle.body(state.isPosting
                                   ? theme.secondaryColor
                                   : theme.baseColor,
                             ),
@@ -431,11 +382,7 @@ class AmityPollPostComposerPage extends NewBasePage {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Text(
             'Options',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-              color: theme.primaryColor,
-            ),
+            style: AmityTextStyle.subtitleBold(theme.primaryColor),
           ),
         ),
         const SizedBox(height: 4),
@@ -443,11 +390,7 @@ class AmityPollPostComposerPage extends NewBasePage {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Text(
             'Poll must contain at least $minOptionsRequired options',
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.normal,
-              color: theme.primaryColor.blend(ColorBlendingOption.shade2),
-            ),
+            style: AmityTextStyle.caption(theme.primaryColor.blend(ColorBlendingOption.shade2)),
           ),
         ),
         const SizedBox(height: 12),
@@ -478,20 +421,12 @@ class AmityPollPostComposerPage extends NewBasePage {
             children: [
               Text(
                 context.l10n.poll_multiple_selection_title,
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  color: theme.baseColor,
-                ),
+                style: AmityTextStyle.subtitleBold(theme.baseColor),
               ),
               const SizedBox(height: 4),
               Text(
                 context.l10n.poll_multiple_selection_description,
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                  color: theme.baseColorShade1,
-                ),
+                style: AmityTextStyle.body(theme.baseColorShade1),
               ),
             ],
           ),
@@ -548,11 +483,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                               ),
                               title: Text(
                                 localizedDuration,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: theme.baseColor,
-                                ),
+                                style: AmityTextStyle.bodyBold(theme.baseColor),
                               ),
                               trailing: Radio<int>(
                                 value: index,
@@ -583,11 +514,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                             ),
                             title: Text(
                               context.l10n.poll_custom_edn_date,
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: theme.baseColor,
-                              ),
+                              style: AmityTextStyle.bodyBold(theme.baseColor),
                             ),
                             trailing: Radio<int>(
                               value: -1,
@@ -677,10 +604,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                           ? context.l10n.poll_custom_edn_date
                           : context.l10n.poll_duration_days(state
                               .durationDays[state.selectedPollDurationIndex]),
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: theme.baseColor,
-                      ),
+                      style: AmityTextStyle.body(theme.baseColor),
                     ),
                   ),
                   Icon(
@@ -704,10 +628,7 @@ class AmityPollPostComposerPage extends NewBasePage {
                 Duration(
                     days:
                         state.durationDays[state.selectedPollDurationIndex])))),
-            style: TextStyle(
-              fontSize: 12,
-              color: theme.baseColorShade1,
-            ),
+            style: AmityTextStyle.caption(theme.baseColorShade1),
           ),
         ],
       ],
@@ -722,10 +643,7 @@ class AmityPollPostComposerPage extends NewBasePage {
       children: [
         Text(
           context.l10n.poll_ends_on_label,
-          style: TextStyle(
-            fontSize: 14,
-            color: theme.baseColorShade1,
-          ),
+          style: AmityTextStyle.body(theme.baseColorShade1),
         ),
         const SizedBox(width: 8),
         // Date Picker Trigger
@@ -769,10 +687,7 @@ class AmityPollPostComposerPage extends NewBasePage {
               state.customDate != null
                   ? DateFormat("dd MMM yyyy", Localizations.localeOf(context).toLanguageTag()).format(state.customDate!)
                   : context.l10n.poll_select_date,
-              style: TextStyle(
-                fontSize: 14,
-                color: theme.baseColor,
-              ),
+              style: AmityTextStyle.body(theme.baseColor),
             ),
           ),
         ),
@@ -824,10 +739,7 @@ class AmityPollPostComposerPage extends NewBasePage {
               state.customDate != null
                   ? DateFormat("hh:mm a").format(state.customDate!)
                   : context.l10n.poll_select_time,
-              style: TextStyle(
-                fontSize: 14,
-                color: theme.baseColor,
-              ),
+              style: AmityTextStyle.body(theme.baseColor),
             ),
           ),
         ),

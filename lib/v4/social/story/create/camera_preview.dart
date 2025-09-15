@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:amity_uikit_beta_service/amity_sle_uikit.dart';
 import 'package:amity_uikit_beta_service/amity_uikit.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -380,7 +381,7 @@ class _CameraPreviewWidgetState extends State<CameraPreviewWidget> with WidgetsB
                           child: Center(
                             child: Text(
                               pressDuration,
-                              style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w600, fontFamily: "'SF Pro Text'"),
+                              style: AmityTextStyle.subtitleBold(Colors.white),
                             ),
                           ),
                         ),

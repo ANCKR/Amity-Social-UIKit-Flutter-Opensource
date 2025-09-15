@@ -9,6 +9,8 @@ import 'package:amity_uikit_beta_service/view/user/user_setting.dart';
 import 'package:amity_uikit_beta_service/viewmodel/follower_following_viewmodel.dart';
 import 'package:animation_wrappers/animations/fade_animation.dart';
 import 'package:animation_wrappers/animations/faded_scale_animation.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 import 'package:provider/provider.dart';
@@ -172,16 +174,10 @@ class UserProfileScreenState extends State<UserProfileScreen>
                                       //     .toString()),
                                       Text(
                                         getAmityUser().displayName ?? "",
-                                        style: TextStyle(
-                                          color:
-                                              Provider.of<AmityUIConfiguration>(
+                                        style: AmityTextStyle.titleBold(Provider.of<AmityUIConfiguration>(
                                                       context)
                                                   .appColors
-                                                  .base,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w700,
-                                          letterSpacing: -0.4,
-                                        ),
+                                                  .base),
                                       ),
                                       vm.amityMyFollowInfo.id == null
                                           ? const SizedBox()
@@ -267,9 +263,7 @@ class UserProfileScreenState extends State<UserProfileScreen>
                             children: [
                               Text(
                                 getAmityUser().description ?? "",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    color: Provider.of<AmityUIConfiguration>(
+                                style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(
                                             context)
                                         .appColors
                                         .base),
@@ -323,15 +317,11 @@ class UserProfileScreenState extends State<UserProfileScreen>
                                             ),
                                             Text(
                                               "Edit Profile",
-                                              style: theme.textTheme.titleSmall!
-                                                  .copyWith(
-                                                color: Provider.of<
+                                              style: AmityTextStyle.subtitle(Provider.of<
                                                             AmityUIConfiguration>(
                                                         context)
                                                     .appColors
-                                                    .base,
-                                                fontSize: 15,
-                                              ),
+                                                    .base),
                                               textAlign: TextAlign.center,
                                             ),
                                           ],
@@ -398,11 +388,7 @@ class UserProfileScreenState extends State<UserProfileScreen>
                                               child: Text(
                                                 "",
                                                 textAlign: TextAlign.center,
-                                                style: theme
-                                                    .textTheme.titleSmall!
-                                                    .copyWith(
-                                                  fontSize: 12,
-                                                ),
+                                                style: AmityTextStyle.caption(Colors.black),
                                               ),
                                             )
                                           : StreamBuilder<AmityUserFollowInfo>(
@@ -472,19 +458,9 @@ class UserProfileScreenState extends State<UserProfileScreen>
                                                                     textAlign:
                                                                         TextAlign
                                                                             .center,
-                                                                    style: theme
-                                                                        .textTheme
-                                                                        .titleSmall!
-                                                                        .copyWith(
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w700,
-                                                                      color: getFollowingStatusTextColor(snapshot
+                                                                    style: AmityTextStyle.subtitleBold(getFollowingStatusTextColor(snapshot
                                                                           .data!
-                                                                          .status),
-                                                                      fontSize:
-                                                                          15,
-                                                                    ),
+                                                                          .status)),
                                                                   ),
                                                                 ],
                                                               ),
@@ -544,8 +520,7 @@ class _Item extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Text(
             text,
-            style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+            style: AmityTextStyle.titleBold(Colors.white),
           ),
         ),
       ),
@@ -599,19 +574,13 @@ class _StickyHeaderList extends StatelessWidget {
                               package: "amity_uikit_beta_service",
                             ),
                             const SizedBox(height: 12),
-                            const Text(
+                            Text(
                               "This account is private",
-                              style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff292B32)),
+                              style: AmityTextStyle.titleBold(const Color(0xff292B32)),
                             ),
-                            const Text(
+                            Text(
                               "Follow this user to see all posts",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffA5A9B5)),
+                              style: AmityTextStyle.subtitle(const Color(0xffA5A9B5)),
                             ),
                           ],
                         ),
@@ -639,12 +608,9 @@ class _StickyHeaderList extends StatelessWidget {
                               package: "amity_uikit_beta_service",
                             ),
                             const SizedBox(height: 12),
-                            const Text(
+                            Text(
                               "No post yet",
-                              style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xffA5A9B5)),
+                              style: AmityTextStyle.titleBold(const Color(0xffA5A9B5)),
                             ),
                           ],
                         ),
@@ -852,11 +818,7 @@ class Header extends StatelessWidget {
                             Provider.of<AmityUIConfiguration>(context)
                                 .appColors
                                 .primary,
-                        labelStyle: const TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
-                          fontFamily: 'SF Pro Text',
-                        ),
+                        labelStyle: AmityTextStyle.titleBold(AmityColors.baseLight),
                         tabs: const [
                           Tab(text: "Timeline"),
                           Tab(text: "Gallery"),

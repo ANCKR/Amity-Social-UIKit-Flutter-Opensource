@@ -3,6 +3,7 @@ import 'package:amity_uikit_beta_service/view/user/edit_profile.dart';
 import 'package:amity_uikit_beta_service/viewmodel/configuration_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/user_feed_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/user_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -51,10 +52,7 @@ class UserSettingPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text("Basic info",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 17,
-                          color: Provider.of<AmityUIConfiguration>(context)
+                      style: AmityTextStyle.titleBold(Provider.of<AmityUIConfiguration>(context)
                               .appColors
                               .base)),
                 ),
@@ -76,13 +74,9 @@ class UserSettingPage extends StatelessWidget {
                                         .base)),
                         title: Text(
                           "Edit Profile",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                            color: Provider.of<AmityUIConfiguration>(context)
+                          style: AmityTextStyle.subtitleBold(Provider.of<AmityUIConfiguration>(context)
                                 .appColors
-                                .base,
-                          ),
+                                .base),
                         ),
                         onTap: () async {
                           await Navigator.of(context).push(MaterialPageRoute(
@@ -107,13 +101,9 @@ class UserSettingPage extends StatelessWidget {
                                     ),
                                     child: const Icon(Icons.person_remove,
                                         color: Color(0xff292B32))),
-                                title: const Text(
+                                title: Text(
                                   "Follow",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.black,
-                                  ),
+                                  style: AmityTextStyle.subtitleBold(Colors.black),
                                 ),
                                 onTap: () {
                                   Provider.of<UserFeedVM>(context,
@@ -142,14 +132,10 @@ class UserSettingPage extends StatelessWidget {
                                                 .base)),
                                 title: Text(
                                   "Unfollow",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w600,
-                                    color: Provider.of<AmityUIConfiguration>(
+                                  style: AmityTextStyle.subtitleBold(Provider.of<AmityUIConfiguration>(
                                             context)
                                         .appColors
-                                        .base,
-                                  ),
+                                        .base),
                                 ),
                                 onTap: () {
                                   Provider.of<UserFeedVM>(context,
@@ -174,14 +160,9 @@ class UserSettingPage extends StatelessWidget {
                                     color: Color(0xff292B32))),
                             title: Text(
                               "Unreport User",
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color:
-                                    Provider.of<AmityUIConfiguration>(context)
+                              style: AmityTextStyle.subtitleBold(Provider.of<AmityUIConfiguration>(context)
                                         .appColors
-                                        .base,
-                              ),
+                                        .base),
                             ),
                             onTap: () {
                               // Navigate to Members Page or perform an action
@@ -204,14 +185,9 @@ class UserSettingPage extends StatelessWidget {
                                         .base)),
                             title: Text(
                               "Report User",
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color:
-                                    Provider.of<AmityUIConfiguration>(context)
+                              style: AmityTextStyle.subtitleBold(Provider.of<AmityUIConfiguration>(context)
                                         .appColors
-                                        .base,
-                              ),
+                                        .base),
                             ),
                             onTap: () {
                               // Navigate to Members Page or perform an action
@@ -240,13 +216,9 @@ class UserSettingPage extends StatelessWidget {
                           snapshot.data!.status == AmityFollowStatus.BLOCKED
                               ? "Unblock"
                               : "Block User",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                            color: Provider.of<AmityUIConfiguration>(context)
+                          style: AmityTextStyle.subtitleBold(Provider.of<AmityUIConfiguration>(context)
                                 .appColors
-                                .base,
-                          ),
+                                .base),
                         ),
                         onTap: () {
                           // Navigate to Members Page or perform an action

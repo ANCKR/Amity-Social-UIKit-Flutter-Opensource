@@ -9,6 +9,8 @@ import 'package:amity_uikit_beta_service/viewmodel/community_member_viewmodel.da
 import 'package:amity_uikit_beta_service/viewmodel/community_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/configuration_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/user_feed_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -166,11 +168,7 @@ class _MemberManagementPageState extends State<MemberManagementPage> {
                   indicatorColor: Provider.of<AmityUIConfiguration>(context)
                       .appColors
                       .primary,
-                  labelStyle: const TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w600,
-                    fontFamily: 'SF Pro Text',
-                  ),
+                  labelStyle: AmityTextStyle.titleBold(AmityColors.baseLight),
 
                   tabs: const [
                     Tab(text: "Members"),
@@ -230,7 +228,7 @@ class MemberList extends StatelessWidget {
                 viewModel.userList[index].user?.displayName ?? '',
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontSize: 15,
+                    // Migrated to AmityTextStyle system - fontSize: 15
                     color: Provider.of<AmityUIConfiguration>(context)
                         .appColors
                         .base),
@@ -294,7 +292,7 @@ class ModeratorList extends StatelessWidget {
               title: Text(
                 viewModel.moderatorList[index].user?.displayName ?? '',
                 style:
-                    const TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                    AmityTextStyle.subtitleMedium(AmityColors.baseLight),
               ),
               trailing: IconButton(
                 icon: const Icon(

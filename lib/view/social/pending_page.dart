@@ -1,6 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/community_setting/community_member_page.dart';
 import 'package:amity_uikit_beta_service/viewmodel/configuration_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -51,7 +52,7 @@ class PendingFeddScreenState extends State<PendingFeddScreen> {
         ),
         Text(
           community.description ?? "",
-          style: const TextStyle(fontSize: 15),
+          style: AmityTextStyle.subtitle(Colors.black),
         ),
       ],
     );
@@ -83,9 +84,9 @@ class PendingFeddScreenState extends State<PendingFeddScreen> {
             Column(
               children: [
                 Text(community.postsCount.toString(),
-                    style: const TextStyle(fontSize: 16)),
-                const Text('posts',
-                    style: TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                    style: AmityTextStyle.subtitle(Colors.black)),
+                Text('posts',
+                    style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
               ],
             ),
             Container(
@@ -99,10 +100,10 @@ class PendingFeddScreenState extends State<PendingFeddScreen> {
               children: [
                 Text(
                   community.membersCount.toString(),
-                  style: const TextStyle(fontSize: 16),
+                  style: AmityTextStyle.subtitle(Colors.black),
                 ),
-                const Text('members',
-                    style: TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                Text('members',
+                    style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
               ],
             ),
           ],

@@ -1,5 +1,6 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/category/bloc/community_add_category_page_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/element/category_grid_view.dart';
@@ -61,10 +62,7 @@ class AmityCommunityAddCategoryPage extends NewBasePage {
               padding: const EdgeInsets.only(right: 16),
               child: Text(
                 '${state.selectedCategories.length}/10',
-                style: TextStyle(
-                    color: theme.baseColorShade1,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w400),
+                style: AmityTextStyle.caption(theme.baseColorShade1),
               ),
             )),
         body: Column(
@@ -151,11 +149,7 @@ class AmityCommunityAddCategoryPage extends NewBasePage {
               category.name ?? '',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                color: theme.baseColor,
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AmityTextStyle.bodyBold(theme.baseColor),
             ),
           ),
           const SizedBox(width: 8),
@@ -206,10 +200,7 @@ class AmityCommunityAddCategoryPage extends NewBasePage {
                 child: Center(
                   child: Text(
                     context.l10n.category_add,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600),
+                    style: AmityTextStyle.bodyBold(Colors.white),
                   ),
                 )),
           )),

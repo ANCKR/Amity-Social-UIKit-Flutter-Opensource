@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/amity_uikit.dart';
@@ -349,16 +347,8 @@ class CommentItem extends BaseElement {
         : "";
 
     // Define normal and mention styles.
-    final normalStyle = TextStyle(
-      color: theme.baseColor,
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-    );
-    final mentionStyle = TextStyle(
-      color: theme.highlightColor,
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-    );
+    final normalStyle = AmityTextStyle.subtitle(theme.baseColor);
+    final mentionStyle = AmityTextStyle.subtitle(theme.highlightColor);
 
     List<AmityUserMentionMetadata>? mentionedUsers;
 
@@ -394,11 +384,7 @@ class CommentItem extends BaseElement {
             children: [
               Text(
                 "${comment.createdAt?.toSocialTimestamp(context) ?? ""}${(comment.editedAt != comment.createdAt) ? context.l10n.general_edited_suffix : ""}",
-                style: TextStyle(
-                  color: theme.baseColorShade2,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: AmityTextStyle.caption(theme.baseColorShade2),
               ),
               const SizedBox(width: 8),
               renderReactionButton(context, comment, isReacting),
@@ -408,11 +394,7 @@ class CommentItem extends BaseElement {
                       onTap: () => {commentAction.onReply(comment)},
                       child: Text(
                         context.l10n.comment_reply,
-                        style: TextStyle(
-                          color: theme.baseColorShade2,
-                          fontSize: 13,
-                          fontWeight: FontWeight.w600,
-                        ),
+                        style: AmityTextStyle.captionBold(theme.baseColorShade2),
                       ),
                     )
                   : Container(),
@@ -459,19 +441,11 @@ class CommentItem extends BaseElement {
       return (hasMyReaction)
           ? Text(
               context.l10n.post_like,
-              style: TextStyle(
-                color: theme.baseColorShade2,
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AmityTextStyle.captionBold(theme.baseColorShade2),
             )
           : Text(
               context.l10n.post_like,
-              style: TextStyle(
-                color: theme.primaryColor,
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AmityTextStyle.captionBold(theme.primaryColor),
             );
     } else {
       return GestureDetector(
@@ -496,19 +470,11 @@ class CommentItem extends BaseElement {
         child: (hasMyReaction)
             ? Text(
                 context.l10n.post_like,
-                style: TextStyle(
-                  color: theme.primaryColor,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AmityTextStyle.captionBold(theme.primaryColor),
               )
             : Text(
                 context.l10n.post_like,
-                style: TextStyle(
-                  color: theme.baseColorShade2,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AmityTextStyle.captionBold(theme.baseColorShade2),
               ),
       );
     }
@@ -562,11 +528,7 @@ class CommentItem extends BaseElement {
                       const SizedBox(width: 4),
                       Text(
                         context.l10n.comment_view_reply_count(childrenNumber),
-                        style: TextStyle(
-                          color: theme.baseColorShade1,
-                          fontSize: 13,
-                          fontWeight: FontWeight.w600,
-                        ),
+                        style: AmityTextStyle.captionBold(theme.baseColorShade1),
                       ),
                     ],
                   ),
@@ -715,11 +677,7 @@ class CommentItem extends BaseElement {
 
   Widget getReactionCount(int reactionCount) {
     return Text(reactionCount.formattedCompactString(),
-        style: TextStyle(
-          color: theme.baseColorShade2,
-          fontSize: 13,
-          fontWeight: FontWeight.w400,
-        ));
+        style: AmityTextStyle.caption(theme.baseColorShade2));
   }
 
   void showCommentAction(BuildContext context, AmityComment comment) {
@@ -911,11 +869,7 @@ class CommentItem extends BaseElement {
                         children: [
                           Text(
                             context.l10n.general_save,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 13,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: AmityTextStyle.captionBold(Colors.white),
                           ),
                         ],
                       ),

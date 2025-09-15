@@ -1,3 +1,4 @@
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 
 class AmityStoryUploadProgressRow extends StatelessWidget {
@@ -8,11 +9,11 @@ class AmityStoryUploadProgressRow extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(10),
-      child: const Row(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             width: 20,
             height: 20,
             child: CircularProgressIndicator(
@@ -20,10 +21,10 @@ class AmityStoryUploadProgressRow extends StatelessWidget {
               backgroundColor: Colors.white,
             ),
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Text(
             "Uploading...",
-            style: TextStyle(color: Colors.white , fontSize: 15 , fontFamily: "SF Pro Text" , fontWeight: FontWeight.w400),
+            style: AmityTextStyle.subtitle(Colors.white),
           ),
         ],
       ),

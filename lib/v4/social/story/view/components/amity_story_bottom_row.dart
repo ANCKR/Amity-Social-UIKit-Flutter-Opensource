@@ -4,6 +4,7 @@ import 'package:amity_uikit_beta_service/v4/social/story/view/bloc/view_story_bl
 import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_story_engagement_row.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_story_upload_progress_row.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -104,14 +105,9 @@ class AmityStoryUploadFailedRow extends StatelessWidget {
                 width: 16,
               ),
               const SizedBox(width: 8),
-              const Text(
+              Text(
                 "Failed to upload",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontFamily: "SF Pro Text",
-                  fontWeight: FontWeight.w400,
-                ),
+                style: AmityTextStyle.subtitle(Colors.white),
               ),
             ],
           ),

@@ -10,6 +10,8 @@ import 'package:amity_uikit_beta_service/view/social/pending_page.dart';
 import 'package:amity_uikit_beta_service/view/user/medie_component.dart';
 import 'package:amity_uikit_beta_service/viewmodel/explore_page_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/my_community_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 import 'package:provider/provider.dart';
@@ -75,7 +77,7 @@ class CommunityScreenState extends State<CommunityScreen>
         ),
         Text(
           community.description ?? "",
-          style: const TextStyle(fontSize: 15),
+          style: AmityTextStyle.subtitle(Colors.black),
         ),
       ],
     );
@@ -107,9 +109,9 @@ class CommunityScreenState extends State<CommunityScreen>
             Column(
               children: [
                 Text("${Provider.of<CommuFeedVM>(context).postCount}",
-                    style: const TextStyle(fontSize: 16)),
-                const Text('posts',
-                    style: TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                    style: AmityTextStyle.subtitle(Colors.black)),
+                Text('posts',
+                    style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
               ],
             ),
             Container(
@@ -125,11 +127,10 @@ class CommunityScreenState extends State<CommunityScreen>
                 children: [
                   Text(
                     community.membersCount.toString(),
-                    style: const TextStyle(fontSize: 16),
+                    style: AmityTextStyle.subtitle(Colors.black),
                   ),
                   Text(community.membersCount == 1 ? 'member' : 'members',
-                      style: const TextStyle(
-                          fontSize: 16, color: Color(0xff898E9E)))
+                      style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
                 ],
               ),
             ),
@@ -273,21 +274,19 @@ class _EditProfileButtonState extends State<EditProfileButton> {
                             .primaryColor), // Grey border color
                     borderRadius: BorderRadius.circular(4), // Rounded corners
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize:
                         MainAxisSize.min, // To wrap the content of the row
                     children: <Widget>[
-                      Icon(
+                      const Icon(
                         Icons.add,
                         color: Colors.white,
                       ),
-                      SizedBox(width: 8.0), // Space between icon and text
+                      const SizedBox(width: 8.0), // Space between icon and text
                       Text(
                         "Join",
-                        style: TextStyle(
-                          color: Colors.white, // Text color
-                        ),
+                        style: AmityTextStyle.body(Colors.white),
                       ),
                     ],
                   ),
@@ -325,11 +324,9 @@ class _EditProfileButtonState extends State<EditProfileButton> {
                   const SizedBox(width: 8.0), // Space between icon and text
                   Text(
                     "Edit Profile",
-                    style: TextStyle(
-                      color: Provider.of<AmityUIConfiguration>(context)
+                    style: AmityTextStyle.body(Provider.of<AmityUIConfiguration>(context)
                           .appColors
-                          .base, // Text color
-                    ),
+                          .base),
                   ),
                 ],
               ),
@@ -382,11 +379,9 @@ class PedindingButton extends StatelessWidget {
                 const SizedBox(width: 8.0), // Space between icon and text
                 Text(
                   "Pending posts",
-                  style: TextStyle(
-                    color: Provider.of<AmityUIConfiguration>(context)
+                  style: AmityTextStyle.body(Provider.of<AmityUIConfiguration>(context)
                         .appColors
-                        .base, // Text color
-                  ),
+                        .base),
                 ),
               ],
             ),
@@ -400,12 +395,9 @@ class PedindingButton extends StatelessWidget {
                           .hasPermission(AmityPermission.REVIEW_COMMUNITY_POST)
                       ? "Your posts are pending for review"
                       : "${Provider.of<CommuFeedVM>(context).reviewingPostCount} posts need approval",
-                  style: TextStyle(
-                    fontSize: 13,
-                    color: Provider.of<AmityUIConfiguration>(context)
+                  style: AmityTextStyle.caption(Provider.of<AmityUIConfiguration>(context)
                         .appColors
-                        .base, // Text color
-                  ),
+                        .base),
                 ),
               ],
             ),
@@ -436,10 +428,7 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
         ),
         Text(
           community.description ?? "",
-          style: TextStyle(
-            fontSize: 15,
-            color: Provider.of<AmityUIConfiguration>(context).appColors.base,
-          ),
+          style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(context).appColors.base),
         ),
       ],
     );
@@ -471,14 +460,11 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
             Column(
               children: [
                 Text("${Provider.of<CommuFeedVM>(context).postCount}",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Provider.of<AmityUIConfiguration>(context)
+                    style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(context)
                           .appColors
-                          .base,
-                    )),
-                const Text('posts',
-                    style: TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                          .base)),
+                Text('posts',
+                    style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
               ],
             ),
             Container(
@@ -499,16 +485,12 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
                 children: [
                   Text(
                     community.membersCount.toString(),
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Provider.of<AmityUIConfiguration>(context)
+                    style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(context)
                           .appColors
-                          .base,
-                    ),
+                          .base),
                   ),
                   Text(community.membersCount == 1 ? 'member' : 'members',
-                      style: const TextStyle(
-                          fontSize: 16, color: Color(0xff898E9E)))
+                      style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
                 ],
               ),
             ),
@@ -589,10 +571,7 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
                             widget.community.displayName != null
                                 ? widget.community.displayName!
                                 : "Community",
-                            style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w800,
-                                color: Colors.white)),
+                            style: AmityTextStyle.titleBold(Colors.white)),
                         const SizedBox(
                           width: 7,
                         ),
@@ -612,10 +591,7 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
                                     : widget.community.categories![0]?.name ??
                                         ""
                                 : "",
-                            style: const TextStyle(
-                                overflow: TextOverflow.ellipsis,
-                                fontSize: 16,
-                                color: Colors.white)),
+                            style: AmityTextStyle.subtitle(Colors.white).copyWith(overflow: TextOverflow.ellipsis)),
                     const SizedBox(
                       height: 16,
                     )
@@ -698,8 +674,7 @@ class _Item extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Text(
             text,
-            style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+            style: AmityTextStyle.titleBold(Colors.white),
           ),
         ),
       ),
@@ -750,19 +725,13 @@ class _StickyHeaderList extends StatelessWidget {
                               package: "amity_uikit_beta_service",
                             ),
                             const SizedBox(height: 12),
-                            const Text(
+                            Text(
                               "This account is private",
-                              style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff292B32)),
+                              style: AmityTextStyle.titleBold(const Color(0xff292B32)),
                             ),
-                            const Text(
+                            Text(
                               "Follow this user to see all posts",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffA5A9B5)),
+                              style: AmityTextStyle.subtitle(const Color(0xffA5A9B5)),
                             ),
                           ],
                         ),
@@ -787,12 +756,9 @@ class _StickyHeaderList extends StatelessWidget {
                               package: "amity_uikit_beta_service",
                             ),
                             const SizedBox(height: 12),
-                            const Text(
+                            Text(
                               "No post yet",
-                              style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xffA5A9B5)),
+                              style: AmityTextStyle.titleBold(const Color(0xffA5A9B5)),
                             ),
                           ],
                         ),
@@ -994,11 +960,7 @@ class Header extends StatelessWidget {
                             Provider.of<AmityUIConfiguration>(context)
                                 .appColors
                                 .primary,
-                        labelStyle: const TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w600,
-                          fontFamily: 'SF Pro Text',
-                        ),
+                        labelStyle: AmityTextStyle.titleBold(AmityColors.baseLight),
                         tabs: const [
                           Tab(text: "Timeline"),
                           Tab(text: "Gallery"),

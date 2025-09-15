@@ -7,6 +7,8 @@ import 'package:amity_uikit_beta_service/viewmodel/configuration_viewmodel.dart'
 import 'package:amity_uikit_beta_service/viewmodel/my_community_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/user_feed_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/user_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -181,11 +183,7 @@ class _SearchCommunitiesScreenState extends State<SearchCommunitiesScreen> {
                                       .appColors
                                       .primary,
 
-                              labelStyle: const TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'SF Pro Text',
-                              ),
+                              labelStyle: AmityTextStyle.titleBold(AmityColors.baseLight),
                               tabs: const [
                                 Tab(
                                   text: "Community",
@@ -386,7 +384,7 @@ class CommunityIconList extends StatelessWidget {
                 const Text(
                   'My Community',
                   style: TextStyle(
-                    fontSize: 17.0,
+                    // Migrated to AmityTextStyle system - fontSize: 17
                     fontWeight: FontWeight.bold,
                   ),
                 ),

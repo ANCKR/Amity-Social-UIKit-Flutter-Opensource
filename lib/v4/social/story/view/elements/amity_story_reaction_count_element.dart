@@ -1,3 +1,4 @@
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -53,11 +54,7 @@ class AmityStoryReactionCountElement extends StatelessWidget {
             const SizedBox(width: 8),
             Text(
               count,
-              style: const TextStyle(
-                fontFamily: "SF Pro Text",
-                color: Colors.white,
-                fontSize: 14,
-              ),
+              style: AmityTextStyle.body(Colors.white),
             )
           ],
         ),

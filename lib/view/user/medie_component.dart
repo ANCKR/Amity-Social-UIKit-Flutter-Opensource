@@ -5,6 +5,7 @@ import 'package:amity_uikit_beta_service/view/social/imag_viewer.dart';
 import 'package:amity_uikit_beta_service/viewmodel/community_feed_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/configuration_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/user_feed_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -119,17 +120,11 @@ class MediaGalleryPage extends StatelessWidget {
         const SizedBox(height: 12),
         Text(
           context.l10n.user_feed_private_title,
-          style: const TextStyle(
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-              color: Color(0xff292B32)),
+          style: AmityTextStyle.titleBold(const Color(0xff292B32)),
         ),
         Text(
           context.l10n.user_feed_private_description,
-          style: const TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w400,
-              color: Color(0xffA5A9B5)),
+          style: AmityTextStyle.subtitle(const Color(0xffA5A9B5)),
         ),
       ],
     );
@@ -149,10 +144,7 @@ class MediaGalleryPage extends StatelessWidget {
             const SizedBox(height: 12),
             Text(
               context.l10n.feed_no_photos,
-              style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xffA5A9B5)),
+              style: AmityTextStyle.titleBold(const Color(0xffA5A9B5)),
             ),
           ],
         ),
@@ -240,10 +232,7 @@ class MediaGalleryPage extends StatelessWidget {
             const SizedBox(height: 12),
             Text(
               context.l10n.feed_no_videos,
-              style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xffA5A9B5)),
+              style: AmityTextStyle.titleBold(const Color(0xffA5A9B5)),
             ),
           ],
         ),

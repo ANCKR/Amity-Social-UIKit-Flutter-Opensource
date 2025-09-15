@@ -11,6 +11,8 @@ import 'package:amity_uikit_beta_service/view/user/medie_component.dart';
 import 'package:amity_uikit_beta_service/viewmodel/component_size_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/explore_page_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/my_community_viewmodel.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:intrinsic_dimension/intrinsic_dimension.dart';
 import 'package:provider/provider.dart';
@@ -67,7 +69,7 @@ class CommunityScreenState extends State<CommunityScreen> {
         ),
         Text(
           community.description ?? "",
-          style: const TextStyle(fontSize: 15),
+          style: AmityTextStyle.subtitle(Colors.black),
         ),
       ],
     );
@@ -93,7 +95,7 @@ class CommunityScreenState extends State<CommunityScreen> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Column(
-              children: [Text("${Provider.of<CommuFeedVM>(context).postCount}", style: const TextStyle(fontSize: 16)), const Text('posts', style: TextStyle(fontSize: 16, color: Color(0xff898E9E)))],
+              children: [Text("${Provider.of<CommuFeedVM>(context).postCount}", style: AmityTextStyle.subtitle(Colors.black)), Text('posts', style: AmityTextStyle.subtitle(const Color(0xff898E9E)))],
             ),
             Container(
               color: const Color(0xffE5E5E5), // Divider color
@@ -108,9 +110,9 @@ class CommunityScreenState extends State<CommunityScreen> {
                 children: [
                   Text(
                     community.membersCount.toString(),
-                    style: const TextStyle(fontSize: 16),
+                    style: AmityTextStyle.subtitle(Colors.black),
                   ),
-                  Text(community.membersCount == 1 ? 'member' : 'members', style: const TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                  Text(community.membersCount == 1 ? 'member' : 'members', style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
                 ],
               ),
             ),
@@ -268,11 +270,7 @@ class CommunityScreenState extends State<CommunityScreen> {
                                           dividerColor: Provider.of<AmityUIConfiguration>(context).appColors.baseBackground,
                                           labelColor: Provider.of<AmityUIConfiguration>(context).appColors.primary,
                                           indicatorColor: Provider.of<AmityUIConfiguration>(context).appColors.primary,
-                                          labelStyle: const TextStyle(
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w600,
-                                            fontFamily: 'SF Pro Text',
-                                          ),
+                                          labelStyle: AmityTextStyle.titleBold(AmityColors.baseLight),
                                           tabs: const [
                                             Tab(text: "Timeline"),
                                             Tab(text: "Gallery"),
@@ -351,20 +349,18 @@ class _EditProfileButtonState extends State<EditProfileButton> {
                     border: Border.all(color: Provider.of<AmityUIConfiguration>(context).primaryColor), // Grey border color
                     borderRadius: BorderRadius.circular(4), // Rounded corners
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min, // To wrap the content of the row
                     children: <Widget>[
-                      Icon(
+                      const Icon(
                         Icons.add,
                         color: Colors.white,
                       ),
-                      SizedBox(width: 8.0), // Space between icon and text
+                      const SizedBox(width: 8.0), // Space between icon and text
                       Text(
                         "Join",
-                        style: TextStyle(
-                          color: Colors.white, // Text color
-                        ),
+                        style: AmityTextStyle.body(Colors.white),
                       ),
                     ],
                   ),
@@ -394,9 +390,7 @@ class _EditProfileButtonState extends State<EditProfileButton> {
                   const SizedBox(width: 8.0), // Space between icon and text
                   Text(
                     "Edit Profile",
-                    style: TextStyle(
-                      color: Provider.of<AmityUIConfiguration>(context).appColors.base, // Text color
-                    ),
+                    style: AmityTextStyle.body(Provider.of<AmityUIConfiguration>(context).appColors.base),
                   ),
                 ],
               ),
@@ -446,9 +440,7 @@ class PedindingButton extends StatelessWidget {
                 const SizedBox(width: 8.0), // Space between icon and text
                 Text(
                   "Pending posts",
-                  style: TextStyle(
-                    color: Provider.of<AmityUIConfiguration>(context).appColors.base, // Text color
-                  ),
+                  style: AmityTextStyle.body(Provider.of<AmityUIConfiguration>(context).appColors.base),
                 ),
               ],
             ),
@@ -459,10 +451,7 @@ class PedindingButton extends StatelessWidget {
               children: <Widget>[
                 Text(
                   !community.hasPermission(AmityPermission.REVIEW_COMMUNITY_POST) ? "Your posts are pending for review" : "${Provider.of<CommuFeedVM>(context).reviewingPostCount} posts need approval",
-                  style: TextStyle(
-                    fontSize: 13,
-                    color: Provider.of<AmityUIConfiguration>(context).appColors.base, // Text color
-                  ),
+                  style: AmityTextStyle.caption(Provider.of<AmityUIConfiguration>(context).appColors.base),
                 ),
               ],
             ),
@@ -488,10 +477,7 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
       margin: const EdgeInsets.only(top: 5),
       child: Text(
         community.description ?? "",
-        style: TextStyle(
-          fontSize: 15,
-          color: Provider.of<AmityUIConfiguration>(context).appColors.base,
-        ),
+        style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(context).appColors.base),
       ),
     );
   }
@@ -518,11 +504,8 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
             Column(
               children: [
                 Text("${Provider.of<CommuFeedVM>(context).postCount}",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Provider.of<AmityUIConfiguration>(context).appColors.base,
-                    )),
-                const Text('posts', style: TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                    style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(context).appColors.base)),
+                Text('posts', style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
               ],
             ),
             Container(
@@ -541,12 +524,9 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
                 children: [
                   Text(
                     community.membersCount.toString(),
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Provider.of<AmityUIConfiguration>(context).appColors.base,
-                    ),
+                    style: AmityTextStyle.subtitle(Provider.of<AmityUIConfiguration>(context).appColors.base),
                   ),
-                  Text(community.membersCount == 1 ? 'member' : 'members', style: const TextStyle(fontSize: 16, color: Color(0xff898E9E)))
+                  Text(community.membersCount == 1 ? 'member' : 'members', style: AmityTextStyle.subtitle(const Color(0xff898E9E)))
                 ],
               ),
             ),
@@ -616,7 +596,7 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
                           : const SizedBox(
                               width: 7,
                             ),
-                      Text(widget.community.displayName != null ? widget.community.displayName! : "Community", style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white)),
+                      Text(widget.community.displayName != null ? widget.community.displayName! : "Community", style: AmityTextStyle.headlineBold(Colors.white)),
                       const SizedBox(
                         width: 7,
                       ),
@@ -631,7 +611,7 @@ class _CommunityDetailComponentState extends State<CommunityDetailComponent> {
                                   ? "no category"
                                   : widget.community.categories![0]?.name ?? ""
                               : "",
-                          style: const TextStyle(overflow: TextOverflow.ellipsis, fontSize: 16, color: Colors.white)),
+                          style: AmityTextStyle.subtitle(Colors.white).copyWith(overflow: TextOverflow.ellipsis)),
                   const SizedBox(
                     height: 16,
                   )

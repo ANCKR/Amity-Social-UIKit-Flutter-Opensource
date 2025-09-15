@@ -13,6 +13,7 @@ import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_cus
 import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_story_single_segment_timer_element.dart';
 import 'package:amity_uikit_beta_service/v4/utils/create_story/bloc/create_story_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/utils/network_image.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -464,12 +465,7 @@ class ShareButton extends BaseElement {
               margin: const EdgeInsets.only(left: 8, right: 8),
               child: Text(
                 "Share Story",
-                style: TextStyle(
-                  color: theme.baseColor,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "SF Pro Text",
-                ),
+                style: AmityTextStyle.subtitleBold(theme.baseColor),
               ),
             ),
             SvgPicture.asset(

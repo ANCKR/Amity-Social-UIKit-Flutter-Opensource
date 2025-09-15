@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../v4/core/amity_colors.dart';
+import '../v4/core/styles.dart';
 
 class AmityUIConfiguration extends ChangeNotifier {
   var appColors = AppColors();
@@ -14,17 +15,9 @@ class AmityUIConfiguration extends ChangeNotifier {
   // Color userProfileBGColor = Colors.white;
   // Color userProfileTextColor = Colors.black;
   // Color userProfileIconColor = Colors.grey;
-  TextStyle titleTextStyle = const TextStyle(
-    fontSize: 17,
-    color: Colors.black,
-    fontWeight: FontWeight.w600,
-  );
+  TextStyle titleTextStyle = AmityTextStyle.titleBold(Colors.black);
 
-  TextStyle hintTextStyle = const TextStyle(
-    fontSize: 15,
-    color: Colors.black,
-    fontWeight: FontWeight.w400,
-  );
+  TextStyle hintTextStyle = AmityTextStyle.subtitle(Colors.black);
 
   void updateUI() {
     notifyListeners();

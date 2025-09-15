@@ -7,6 +7,7 @@ import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_sto
 import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_story_single_segment_timer_element.dart';
 import 'package:amity_uikit_beta_service/v4/utils/date_time_extension.dart';
 import 'package:amity_uikit_beta_service/v4/utils/network_image.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -126,12 +127,7 @@ class AmityStoryHeaderRow extends StatelessWidget {
                               children: [
                                 Text(
                                   state.community!.displayName ?? "",
-                                  style: const TextStyle(
-                                    fontSize: 15,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "SF Pro Text",
-                                  ),
+                                  style: AmityTextStyle.subtitleBold(Colors.white),
                                 ),
                                 (state.community?.isOfficial != null && state.community?.isOfficial == true)?
                                 const SizedBox(
@@ -151,12 +147,7 @@ class AmityStoryHeaderRow extends StatelessWidget {
                               children: [
                                 Text(
                                   story!.createdAt!.toSocialTimestamp(context),
-                                  style: const TextStyle(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white,
-                                    fontFamily: "SF Pro Text",
-                                  ),
+                                  style: AmityTextStyle.body(Colors.white),
                                 ),
                                 Container(
                                   height: 3,
@@ -171,12 +162,7 @@ class AmityStoryHeaderRow extends StatelessWidget {
                                 ),
                                 Text(
                                   "By ${story?.creator?.displayName}",
-                                  style: const TextStyle(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.w400,
-                                    fontFamily: "SF Pro Text",
-                                    color: Colors.white,
-                                  ),
+                                  style: AmityTextStyle.body(Colors.white),
                                 ),
                               ],
                             )

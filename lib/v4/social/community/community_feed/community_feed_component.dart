@@ -8,6 +8,7 @@ import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_compo
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
 import 'package:amity_uikit_beta_service/v4/utils/shimmer_widget.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -161,12 +162,7 @@ class CommunityFeedComponent extends NewBaseComponent {
             child: Text(
               context.l10n.feed_no_posts,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                color: theme.baseColorShade3,
-                fontSize: 17,
-                fontFamily: 'SF Pro Text',
-                fontWeight: FontWeight.w600,
-              ),
+              style: AmityTextStyle.titleBold(theme.baseColorShade3),
             ),
           ),
         ],

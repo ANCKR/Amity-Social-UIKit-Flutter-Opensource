@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
@@ -86,11 +87,7 @@ class _CategoryGridViewState extends State<CategoryGridView> {
                       item.name ?? '',
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        color: widget.theme.baseColor,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: AmityTextStyle.captionBold(widget.theme.baseColor),
                     ),
                   ),
                   const SizedBox(width: 4),

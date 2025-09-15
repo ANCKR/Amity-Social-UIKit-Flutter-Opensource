@@ -49,7 +49,7 @@ class InfoTextField extends BaseElement {
           Row(children: [
             Text(
               title,
-              style: AmityTextStyle.titleBold(theme.baseColor),
+              style: AmityTextStyle.bodyBold(theme.baseColor),
             ),
             if (isOptional)
               Text(
@@ -59,7 +59,7 @@ class InfoTextField extends BaseElement {
           ]),
           Text(
             '${state.text.length}/$maxLength',
-            style: AmityTextStyle.body(theme.baseColorShade1),
+            style: AmityTextStyle.caption(theme.baseColorShade1),
           ),
         ]),
         const SizedBox(height: 8),
@@ -77,10 +77,7 @@ class InfoTextField extends BaseElement {
               isDisabled ? theme.baseColorShade2 : theme.baseColor),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: TextStyle(
-                color: theme.baseColorShade3,
-                fontSize: 15,
-                fontWeight: FontWeight.w400),
+            hintStyle: AmityTextStyle.caption(theme.baseColorShade3),
             labelStyle: AmityTextStyle.body(theme.baseColor),
             border: InputBorder.none,
           ),

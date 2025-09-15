@@ -5,6 +5,7 @@ import 'package:amity_uikit_beta_service/v4/social/comment/comment_creator/comme
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_creator/comment_creator_action.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_item/comment_action.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_list/comment_list_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -95,11 +96,7 @@ class _CommentTrayComponentState extends State<CommentTrayComponent> {
                   slivers: [
                     SliverAppBar(
                       title: const Text('Comments'),
-                      titleTextStyle: TextStyle(
-                        color: widget.theme.baseColor,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      titleTextStyle: AmityTextStyle.titleBold(widget.theme.baseColor),
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
@@ -168,15 +165,9 @@ class _CommentTrayComponentState extends State<CommentTrayComponent> {
                                     height: 16,
                                   ),
                                   const SizedBox(width: 16),
-                                  const Text(
+                                  Text(
                                     "Comments are disabled for this story",
-                                    style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: "SF Pro Text",
-                                      color: Color(
-                                        0xff898E9E,
-                                      ),
-                                    ),
+                                    style: AmityTextStyle.subtitle(const Color(0xff898E9E)),
                                   ),
                                 ],
                               ),

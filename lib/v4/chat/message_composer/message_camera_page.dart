@@ -494,12 +494,7 @@ class _AmityMessageCameraScreenState extends State<AmityMessageCameraScreen> {
                             children: [
                               Text(
                                 'Send',
-                                style: TextStyle(
-                                  color: Color(0xFF292B32),
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  letterSpacing: -0.24,
-                                ),
+                                style: AmityTextStyle.subtitle(const Color(0xFF292B32)),
                               ),
                             ],
                           ),

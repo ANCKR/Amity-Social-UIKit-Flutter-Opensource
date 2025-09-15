@@ -210,7 +210,7 @@ class AmityCommunitySetupPage extends NewBasePage {
       children: [
         Text(
           context.l10n.categories_title,
-          style: AmityTextStyle.titleBold(theme.baseColor),
+          style: AmityTextStyle.bodyBold(theme.baseColor),
         ),
         const SizedBox(height: 22),
         Row(
@@ -221,11 +221,7 @@ class AmityCommunitySetupPage extends NewBasePage {
                 child: state.communityCategories.isEmpty
                     ? Text(
                         context.l10n.category_hint,
-                        style: TextStyle(
-                          color: theme.baseColorShade3,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w400,
-                        ),
+                        style: AmityTextStyle.body(theme.baseColorShade3),
                       )
                     : CategoryGridView(
                         items: state.communityCategories,
@@ -255,7 +251,7 @@ class AmityCommunitySetupPage extends NewBasePage {
       children: [
         Text(
           context.l10n.settings_privacy,
-          style: AmityTextStyle.titleBold(theme.baseColor),
+          style: AmityTextStyle.bodyBold(theme.baseColor),
         ),
         const SizedBox(height: 16),
         _getRadioButtonTile(
@@ -290,7 +286,7 @@ class AmityCommunitySetupPage extends NewBasePage {
       children: [
         Text(
           context.l10n.community_members,
-          style: AmityTextStyle.titleBold(theme.baseColor),
+          style: AmityTextStyle.bodyBold(theme.baseColor),
         ),
         const SizedBox(height: 16),
         Wrap(
@@ -365,10 +361,7 @@ class AmityCommunitySetupPage extends NewBasePage {
                   ),
                   Text(
                     context.l10n.community_create,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600),
+                    style: AmityTextStyle.bodyBold(Colors.white),
                   ),
                 ])),
           )),
@@ -406,10 +399,7 @@ class AmityCommunitySetupPage extends NewBasePage {
                 child: Center(
                   child: Text(
                     context.l10n.general_save,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600),
+                    style: AmityTextStyle.bodyBold(Colors.white),
                   ),
                 )),
           )),
@@ -454,19 +444,11 @@ class AmityCommunitySetupPage extends NewBasePage {
             children: [
               Text(
                 title,
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  color: theme.baseColor,
-                ),
+                style: AmityTextStyle.bodyBold(theme.baseColor),
               ),
               Text(
                 description,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
-                  color: theme.baseColorShade1,
-                ),
+                style: AmityTextStyle.caption(theme.baseColorShade1),
               ),
             ],
           )),
@@ -509,10 +491,7 @@ class AmityCommunitySetupPage extends NewBasePage {
                 )),
             const SizedBox(height: 4),
             Text(context.l10n.general_add,
-                style: TextStyle(
-                    color: theme.baseColor,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w400))
+                style: AmityTextStyle.bodyBold(theme.baseColor))
           ],
         ));
   }
@@ -564,11 +543,7 @@ class AmityCommunitySetupPage extends NewBasePage {
           const SizedBox(height: 4),
           Text(
             user.displayName ?? context.l10n.user_profile_unknown_name,
-            style: TextStyle(
-              color: theme.baseColor,
-              fontSize: 13,
-              fontWeight: FontWeight.w400,
-            ),
+            style: AmityTextStyle.bodyBold(theme.baseColor),
             overflow: TextOverflow.ellipsis, // Ensure text does not overflow
             maxLines: 1, // Limit to a single line
           ),
@@ -654,11 +629,7 @@ class AmityCommunitySetupPage extends NewBasePage {
         offset: const Offset(-5, 0),
         child: Text(
           title,
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: theme.baseColor,
-          ),
+          style: AmityTextStyle.bodyBold(theme.baseColor),
         ),
       ),
       onTap: onTap,

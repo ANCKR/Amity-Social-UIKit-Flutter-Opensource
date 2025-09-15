@@ -2,6 +2,7 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/components/alert_dialog.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/bloc/view_story_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -106,11 +107,7 @@ class AmityBottomSheetActionItem extends StatelessWidget {
             const SizedBox(width: 16),
             Text(
               text,
-              style: const TextStyle(
-                fontSize: 15,
-                fontFamily: "SF Pro Text",
-                fontWeight: FontWeight.w600,
-              ),
+              style: AmityTextStyle.subtitleBold(Colors.black),
             ),
           ],
         ),

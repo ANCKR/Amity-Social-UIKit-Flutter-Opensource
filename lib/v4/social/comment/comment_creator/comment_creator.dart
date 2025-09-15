@@ -264,21 +264,11 @@ class _AmityCommentCreatorInternalState
                   children: [
                     TextSpan(
                       text: context.l10n.comment_reply_to,
-                      style: TextStyle(
-                        color: widget.theme.baseColorShade1,
-                        fontSize: 15,
-                        fontFamily: 'SF Pro Text',
-                        fontWeight: FontWeight.w400,
-                      ),
+                      style: AmityTextStyle.subtitle(widget.theme.baseColorShade1),
                     ),
                     TextSpan(
                       text: commentCreator,
-                      style: TextStyle(
-                        color: widget.theme.baseColorShade1,
-                        fontSize: 15,
-                        fontFamily: 'SF Pro Text',
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: AmityTextStyle.subtitleBold(widget.theme.baseColorShade1),
                     ),
                   ],
                 ),
