@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
 
 class AmityAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -41,11 +42,7 @@ class AmityAppBar extends StatelessWidget implements PreferredSizeWidget {
           scrolledUnderElevation: 0.0,
           title: Text(title),
           centerTitle: true,
-          titleTextStyle: TextStyle(
-            color: theme.baseColor,
-            fontSize: 17,
-            fontWeight: FontWeight.w600,
-          ),
+          titleTextStyle: AmityTextStyle.titleBold(theme.baseColor),
           leading: leadingButton,
           actions: tailingButton != null
               ? [tailingButton!]

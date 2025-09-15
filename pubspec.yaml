@@ -134,6 +134,16 @@ flutter:
     - family: Material-Design-Iconic-Font
       fonts:
         - asset: assets/fonts/Material-Design-Iconic-Font.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
 
   #
   # For details regarding fonts in packages, see

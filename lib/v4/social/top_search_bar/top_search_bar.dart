@@ -1,5 +1,6 @@
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -28,11 +29,7 @@ class AmityTopSearchBarComponent extends NewBaseComponent {
           Expanded(
             child: TextField(
               controller: textcontroller,
-              style: TextStyle(
-                  color: theme.baseColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+              style: AmityTextStyle.body(theme.baseColor),
               decoration: InputDecoration(
                 prefixIcon: Container(
                   width: 20,
@@ -49,11 +46,7 @@ class AmityTopSearchBarComponent extends NewBaseComponent {
                   ),
                 ),
                 hintText: hintText,
-                hintStyle: TextStyle(
-                  color: theme.baseColorShade2,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                hintStyle: AmityTextStyle.body(theme.baseColorShade2),
                 filled: true,
                 contentPadding: const EdgeInsets.symmetric(vertical: 0),
                 fillColor: theme.baseColorShade4,
@@ -117,11 +110,7 @@ class AmityTopSearchBarComponent extends NewBaseComponent {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     context.l10n.general_cancel,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 15,
-                      color: theme.primaryColor,
-                    ),
+                    style: AmityTextStyle.body(theme.primaryColor),
                   ),
                 ),
               )

@@ -1,5 +1,6 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/my_community/my_community_component.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
@@ -105,11 +106,7 @@ Widget communityRow(
                   Flexible(
                     child: Text(
                       community.displayName ?? '',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: theme.baseColor,
-                      ),
+                      style: AmityTextStyle.bodyBold(theme.baseColor),
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),

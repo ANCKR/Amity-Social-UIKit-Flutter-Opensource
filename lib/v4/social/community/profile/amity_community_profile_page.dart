@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/bottom_sheet_menu.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_feed/community_feed_component.dart';
@@ -119,11 +120,7 @@ class AmityCommunityProfilePage extends NewBasePage {
                                     state.community?.displayName ?? "",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                    style: AmityTextStyle.titleBold(Colors.white),
                                   ),
                                 ),
                                 if (state.community?.isOfficial == true)
@@ -553,14 +550,10 @@ class AmityCommunityProfilePage extends NewBasePage {
                           ),
                         ),
                         const SizedBox(width: 12),
-                        Text(
-                          context.l10n.general_post,
-                          style: TextStyle(
-                            color: theme.baseColor,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
+                          Text(
+                            context.l10n.general_post,
+                            style: AmityTextStyle.bodyBold(theme.baseColor),
                           ),
-                        ),
                       ],
                     ),
                   ),
@@ -602,11 +595,7 @@ class AmityCommunityProfilePage extends NewBasePage {
                           const SizedBox(width: 12),
                           Text(
                             context.l10n.general_story,
-                            style: TextStyle(
-                              color: theme.baseColor,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                            ),
+                            style: AmityTextStyle.bodyBold(theme.baseColor),
                           ),
                         ],
                       ),
@@ -675,14 +664,10 @@ class AmityCommunityProfilePage extends NewBasePage {
                           ),
                         ),
                         const SizedBox(width: 12),
-                        Text(
-                          context.l10n.general_poll,
-                          style: TextStyle(
-                            color: theme.baseColor,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
+                          Text(
+                            context.l10n.general_poll,
+                            style: AmityTextStyle.bodyBold(theme.baseColor),
                           ),
-                        ),
                       ],
                     ),
                   ),

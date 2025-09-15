@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/mention/mention_field.dart';
 import 'package:amity_uikit_beta_service/v4/social/post_composer_page/bloc/post_composer_bloc.dart';
@@ -19,8 +20,7 @@ extension PostComposerView on AmityPostComposerPage {
       backgroundColor: theme.backgroundColor,
       title: Text(
         getPageTitle(context),
-        style: TextStyle(
-            fontWeight: FontWeight.w600, fontSize: 17, color: theme.baseColor),
+        style: AmityTextStyle.titleBold(theme.baseColor),
       ),
       leading: IconButton(
         icon: SvgPicture.asset(
@@ -52,13 +52,9 @@ extension PostComposerView on AmityPostComposerPage {
       onPressed: isPostButtonEnabled ? () => handleAction(context) : null,
       child: Text(
         options.mode == AmityPostComposerMode.edit ? context.l10n.general_save : context.l10n.general_post,
-        style: TextStyle(
-          fontSize: 15,
-          fontWeight: FontWeight.w400,
-          color: isPostButtonEnabled
+        style: AmityTextStyle.body(isPostButtonEnabled
               ? theme.primaryColor
-              : theme.primaryColor.blend(ColorBlendingOption.shade2),
-        ),
+              : theme.primaryColor.blend(ColorBlendingOption.shade2)),
       ),
     );
   }
@@ -79,16 +75,9 @@ extension PostComposerView on AmityPostComposerPage {
         border: InputBorder.none,
         focusedBorder: InputBorder.none,
         enabledBorder: InputBorder.none,
-        hintStyle: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.normal,
-            color: theme.baseColorShade3),
+        hintStyle: AmityTextStyle.body(theme.baseColorShade3),
       ),
-      style: TextStyle(
-        fontSize: 15,
-        fontWeight: FontWeight.normal,
-        color: theme.baseColor,
-      ),
+      style: AmityTextStyle.body(theme.baseColor),
       onChanged: (value) {},
     );
   }

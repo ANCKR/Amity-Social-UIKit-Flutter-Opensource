@@ -315,11 +315,7 @@ class AmityPendingPostContentComponent extends NewBaseComponent {
         offset: const Offset(-5, 0),
         child: Text(
           title,
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: isDestructive ? theme.alertColor : theme.baseColor,
-          ),
+          style: AmityTextStyle.bodyBold(isDestructive ? theme.alertColor : theme.baseColor),
         ),
       ),
       onTap: onTap,
@@ -508,18 +504,11 @@ class AmityPendingPostContentComponent extends NewBaseComponent {
                   children: [
                     Text(
                       "${files[index].data!.fileInfo.fileName}",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: theme.baseColor,
-                        fontWeight: FontWeight.w500,
-                      ),
+                      style: AmityTextStyle.bodyBold(theme.baseColor),
                     ),
                     Text(
                       '${(files[index].data!.fileInfo.fileSize)} KB',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: theme.baseColorShade2,
-                      ),
+                      style: AmityTextStyle.captionSmall(theme.baseColorShade2),
                     ),
                   ],
                 ),

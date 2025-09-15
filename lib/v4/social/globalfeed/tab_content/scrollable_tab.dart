@@ -1,6 +1,7 @@
 import 'package:amity_uikit_beta_service/amity_uikit.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_event.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_state.dart';
@@ -62,11 +63,9 @@ class ScrollableTabs extends NewBaseComponent {
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8)),
         child: Text(
           text,
-          style: TextStyle(
-            fontSize: 17,
-            fontWeight:
-                selectedIndex == index ? FontWeight.bold : FontWeight.normal,
-          ),
+          style: selectedIndex == index 
+              ? AmityTextStyle.bodyBold(Colors.white)
+              : AmityTextStyle.body(theme.baseColorShade1),
         ),
       ),
     );

@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/expandable_text.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/profile/amity_user_profile_page.dart';
 import 'package:flutter/material.dart';
@@ -24,16 +25,8 @@ class PostContentText extends StatelessWidget {
     }
 
     // Define your normal text style and mention highlight style.
-    final normalStyle = TextStyle(
-      color: theme.baseColor,
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-    );
-    final mentionStyle = TextStyle(
-      color: theme.highlightColor, // Use your highlight color from the theme.
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-    );
+    final normalStyle = AmityTextStyle.body(theme.baseColor);
+    final mentionStyle = AmityTextStyle.body(theme.highlightColor);
 
     List<AmityUserMentionMetadata>? mentionedUsers;
     if (post.metadata != null && post.metadata!['mentioned'] != null) {

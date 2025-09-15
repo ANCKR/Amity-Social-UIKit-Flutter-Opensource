@@ -71,13 +71,9 @@ extension TextMessageWidget on MessageBubbleView {
               final textPainter = TextPainter(
                 text: TextSpan(
                   text: text,
-                  style: TextStyle(
-                    color: isUser
+                  style: AmityTextStyle.body(isUser
                         ? messageColor.rightBubbleText
-                        : messageColor.leftBubbleText,
-                    fontSize: 15.0,
-                    fontWeight: FontWeight.w400,
-                  ),
+                        : messageColor.leftBubbleText),
                 ),
                 maxLines: 10,
                 ellipsis: '...',
@@ -197,15 +193,11 @@ extension TextMessageWidget on MessageBubbleView {
                                     children: [
                                       Text(
                                         "See more",
-                                        style: TextStyle(
-                                          color: isUser
+                                        style: AmityTextStyle.caption(isUser
                                               ? messageColor
                                                   .rightBubbleSubtleText
                                               : messageColor
-                                                  .leftBubbleSubtleText,
-                                          fontSize: 13.0,
-                                          fontWeight: FontWeight.w400,
-                                        ),
+                                                  .leftBubbleSubtleText),
                                       ),
                                       SvgPicture.asset(
                                         'assets/Icons/amity_ic_seemore_arrow.svg',
@@ -246,11 +238,8 @@ extension TextMessageWidget on MessageBubbleView {
       if (element is LinkableElement) {
         return TextSpan(
           text: element.text,
-          style: TextStyle(
-            color: isUser ? messageColor.rightBubbleText : theme.highlightColor,
+          style: AmityTextStyle.body(isUser ? messageColor.rightBubbleText : theme.highlightColor).copyWith(
             decoration: TextDecoration.underline,
-            fontSize: 15.0,
-            fontWeight: FontWeight.w400,
           ),
           recognizer: TapGestureRecognizer()
             ..onTap = () => _onOpenLink(element),
@@ -258,13 +247,9 @@ extension TextMessageWidget on MessageBubbleView {
       } else {
         return TextSpan(
           text: element.text,
-          style: TextStyle(
-            color: isUser
+          style: AmityTextStyle.body(isUser
                 ? messageColor.rightBubbleText
-                : messageColor.leftBubbleText,
-            fontSize: 15.0,
-            fontWeight: FontWeight.w400,
-          ),
+                : messageColor.leftBubbleText),
         );
       }
     }).toList();

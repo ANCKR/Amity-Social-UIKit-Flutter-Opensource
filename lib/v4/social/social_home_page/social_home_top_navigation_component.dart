@@ -1,5 +1,6 @@
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/community_setup_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/create_post_menu_component.dart';
@@ -23,11 +24,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
       automaticallyImplyLeading: false,
       title: Text(
         context.l10n.community_title,
-        style: TextStyle(
-          fontSize: 20,
-          color: theme.baseColor,
-          fontWeight: FontWeight.bold,
-        ),
+        style: AmityTextStyle.bodyBold(theme.baseColor),
       ),
       centerTitle: false,
       backgroundColor: theme.backgroundColor,

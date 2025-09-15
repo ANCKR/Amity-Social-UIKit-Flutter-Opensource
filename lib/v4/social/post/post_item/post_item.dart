@@ -1,6 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/amity_uikit.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/expandable_text.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/preview_link_widget.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
@@ -155,16 +156,8 @@ class PostItem extends NewBaseComponent {
     }
 
     // Define your normal text style and mention highlight style.
-    final normalStyle = TextStyle(
-      color: theme.baseColor,
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-    );
-    final mentionStyle = TextStyle(
-      color: theme.highlightColor, // Use your highlight color from the theme.
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-    );
+    final normalStyle = AmityTextStyle.body(theme.baseColor);
+    final mentionStyle = AmityTextStyle.body(theme.highlightColor);
 
     List<AmityUserMentionMetadata>? mentionedUsers;
 
@@ -299,17 +292,11 @@ class PostItem extends NewBaseComponent {
                   children: [
                     Text(
                       "${files[index].data!.fileInfo.fileName}",
-                      style: const TextStyle(
-                        fontSize: 16,
-                        color: Colors.black,
-                      ),
+                      style: AmityTextStyle.body(theme.baseColor),
                     ),
                     Text(
                       '${(files[index].data!.fileInfo.fileSize)} KB',
-                      style: const TextStyle(
-                        fontSize: 12,
-                        color: Colors.grey,
-                      ),
+                      style: AmityTextStyle.captionSmall(theme.baseColorShade2),
                     ),
                   ],
                 ),

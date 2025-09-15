@@ -1,6 +1,7 @@
 // Define the PopupMenu class
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/post_target_selection_page/post_target_selection_page.dart';
 import 'package:amity_uikit_beta_service/view/UIKit/social/story_target_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
@@ -148,11 +149,7 @@ class AmityCreatePostMenuComponent extends NewBaseComponent {
           ),
           Expanded(
             child: Text(text,
-                style: TextStyle(
-                  color: theme.baseColor,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                )),
+                style: AmityTextStyle.bodyBold(theme.baseColor)),
           ),
         ],
       ),

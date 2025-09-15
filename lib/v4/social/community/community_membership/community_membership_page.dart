@@ -2,6 +2,7 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/amity_uikit.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
@@ -75,15 +76,9 @@ class AmityCommunityMembershipPage extends NewBasePage {
                   tabAlignment: TabAlignment.start,
                   indicatorSize: TabBarIndicatorSize.label,
                   labelColor: theme.primaryColor,
-                  labelStyle: const TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  labelStyle: AmityTextStyle.bodyBold(theme.primaryColor),
                   unselectedLabelColor: theme.baseColorShade2,
-                  unselectedLabelStyle: const TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  unselectedLabelStyle: AmityTextStyle.bodyBold(theme.baseColorShade2),
                   indicatorColor: theme.primaryColor,
                   dividerColor: theme.baseColorShade4,
                   dividerHeight: 1.0, // Makes indicator match text width
@@ -217,11 +212,7 @@ class AmityCommunityMembershipPage extends NewBasePage {
                           context.l10n.user_profile_unknown_name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        color: theme.baseColor,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                      ),
+                      style: AmityTextStyle.body(theme.baseColor),
                     ),
                     onTap: () {
                       final userId = member.user?.userId;
@@ -434,11 +425,7 @@ class AmityCommunityMembershipPage extends NewBasePage {
         offset: const Offset(-5, 0),
         child: Text(
           title,
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: isDestructive ? theme.alertColor : theme.baseColor,
-          ),
+          style: AmityTextStyle.bodyBold(isDestructive ? theme.alertColor : theme.baseColor),
         ),
       ),
       onTap: onTap,

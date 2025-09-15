@@ -1,42 +1,54 @@
 import 'package:flutter/material.dart';
 
-/// Custom TextStyle class for Amity with default font family
+/// Custom TextStyle class for MenoTracker with Poppins font family
 class AmityTextStyle {
+  // MenoTracker font constants
+  static const String fontName = 'Poppins';
+  static const double letterSpacing = -0.28;
+  static const double textHeight = 1.5;
+  
+  // MenoTracker font sizes
+  static const double xXlargeText = 24;  // Headlines
+  static const double xlargeText = 20;   // Large titles
+  static const double largeText = 16;    // Titles
+  static const double mediumTexts = 14;  // Body text
+  static const double smallText = 12;    // Small text/labels
+
   static TextStyle headline(Color color, {double? textHeight}) {
-    return getStyle(20, FontWeight.w700, color, textHeight);
+    return getStyle(xXlargeText, FontWeight.w700, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle titleBold(Color color, {double? textHeight}) {
-    return getStyle(17, FontWeight.w600, color, textHeight);
+    return getStyle(xlargeText, FontWeight.w600, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle title(Color color, {double? textHeight}) {
-    return getStyle(17, FontWeight.w400, color, textHeight);
+    return getStyle(xlargeText, FontWeight.w400, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle bodyBold(Color color, {double? textHeight}) {
-    return getStyle(15, FontWeight.w600, color, textHeight);
+    return getStyle(largeText, FontWeight.w600, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle body(Color color, {double? textHeight}) {
-    return getStyle(15, FontWeight.w400, color, textHeight);
+    return getStyle(largeText, FontWeight.w400, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle captionBold(Color color, {double? textHeight}) {
-    return getStyle(13, FontWeight.w600, color, textHeight);
+    return getStyle(mediumTexts, FontWeight.w600, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle caption(Color color, {double? textHeight}) {
-    return getStyle(13, FontWeight.w400, color, textHeight);
+    return getStyle(mediumTexts, FontWeight.w400, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle captionSmall(Color color, {double? textHeight}) {
-    return getStyle(10, FontWeight.w400, color, textHeight);
+    return getStyle(smallText, FontWeight.w400, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   static TextStyle custom(double fontSize, FontWeight fontWeight, Color color,
       {double? textHeight}) {
-    return getStyle(fontSize, fontWeight, color, textHeight);
+    return getStyle(fontSize, fontWeight, color, textHeight ?? AmityTextStyle.textHeight);
   }
 
   // Note:
@@ -50,11 +62,12 @@ class AmityTextStyle {
   static TextStyle getStyle(
       double fontSize, FontWeight fontWeight, Color color, double? textHeight) {
     return TextStyle(
-      fontFamily: 'SF Pro Text',
+      fontFamily: fontName,
       fontSize: fontSize,
       fontWeight: fontWeight,
       height: textHeight,
       color: color,
+      letterSpacing: letterSpacing,
     );
   }
 }

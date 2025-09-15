@@ -6,6 +6,7 @@ import 'package:amity_uikit_beta_service/v4/social/top_search_bar/top_search_bar
 import 'package:amity_uikit_beta_service/v4/utils/debouncer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter_svg/svg.dart';
 
 class AmityChannelCreateConversationPage extends NewBasePage {
@@ -31,9 +32,9 @@ class AmityChannelCreateConversationPage extends NewBasePage {
               backgroundColor: theme.backgroundColor,
               appBar: AppBar(
                 backgroundColor: theme.backgroundColor,
-                title: const Text(
+                title: Text(
                   'New conversation',
-                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+                  style: AmityTextStyle.titleBold(theme.baseColor),
                 ),
                 leading: IconButton(
                   icon: SvgPicture.asset(
@@ -104,11 +105,7 @@ class AmityChannelCreateConversationPage extends NewBasePage {
                 isInitialSearch
                   ? 'Start your search by typing\n at least 3 letters'
                   : 'No results found',
-                style: TextStyle(
-                color: theme.baseColorShade3,
-                fontWeight: FontWeight.w600,
-                fontSize: 17,
-                ),
+                style: AmityTextStyle.titleBold(theme.baseColorShade3),
                 textAlign: TextAlign.center,
               ),
               ],

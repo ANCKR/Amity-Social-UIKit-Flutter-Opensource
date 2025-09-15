@@ -5,6 +5,7 @@ import 'package:camera/camera.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:video_player/video_player.dart';
 
 class AmityMessageCameraScreen extends StatefulWidget {
@@ -229,7 +230,7 @@ class _AmityMessageCameraScreenState extends State<AmityMessageCameraScreen> {
               padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
               child: Text(
                 elapsedTime,
-                style: const TextStyle(color: Colors.white, fontSize: 16),
+                style: AmityTextStyle.body(Colors.white),
               ),
             ),
         ],
@@ -372,11 +373,7 @@ class _AmityMessageCameraScreenState extends State<AmityMessageCameraScreen> {
               },
               child: Text(
                 'VIDEO',
-                style: TextStyle(
-                  color: isVideoMode ? Colors.yellow : Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: AmityTextStyle.bodyBold(isVideoMode ? Colors.yellow : Colors.white),
               ),
             ),
           ),
@@ -389,11 +386,7 @@ class _AmityMessageCameraScreenState extends State<AmityMessageCameraScreen> {
             },
             child: Text(
               'PHOTO',
-              style: TextStyle(
-                color: !isVideoMode ? Colors.yellow : Colors.white,
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
+                style: AmityTextStyle.bodyBold(!isVideoMode ? Colors.yellow : Colors.white),
             ),
           ),
       ],

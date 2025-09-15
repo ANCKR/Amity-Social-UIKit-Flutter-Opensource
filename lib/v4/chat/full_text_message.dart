@@ -1,4 +1,5 @@
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 
 class FullTextScreen extends StatelessWidget {
@@ -23,11 +24,7 @@ class FullTextScreen extends StatelessWidget {
         scrolledUnderElevation: 1,
         centerTitle: displayName == "Replied message", //TODO Remove this condition when jump to replied message is implemented
         title: Text(displayName,
-            style: TextStyle(
-              color: theme.baseColor,
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-            )),
+            style: AmityTextStyle.titleBold(theme.baseColor)),
       ),
       body: Container(
         constraints: const BoxConstraints.expand(),
@@ -40,10 +37,7 @@ class FullTextScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 fullText,
-                style: TextStyle(
-                    color: theme.baseColor,
-                    fontSize: 17,
-                    fontWeight: FontWeight.w400),
+                style: AmityTextStyle.title(theme.baseColor),
               ),
             ),
           ),

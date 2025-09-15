@@ -7,6 +7,7 @@ import 'package:amity_uikit_beta_service/v4/social/post_poll_composer_page/post_
 import 'package:amity_uikit_beta_service/v4/social/post_target_selection_page/bloc/post_target_selection_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/utils/shimmer_widget.dart';
 import 'package:amity_uikit_beta_service/v4/utils/user_image.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -42,9 +43,9 @@ class AmityPostPollTargetSelectionPage extends NewBasePage {
               backgroundColor: theme.backgroundColor,
               appBar: AppBar(
                 backgroundColor: theme.backgroundColor,
-                title: const Text(
+                title: Text(
                   'Post to',
-                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+                  style: AmityTextStyle.titleBold(theme.baseColor),
                 ),
                 leading: IconButton(
                   icon: SvgPicture.asset(
@@ -120,10 +121,7 @@ class AmityPostPollTargetSelectionPage extends NewBasePage {
                         ),
                       ),
                       title: Text(context.l10n.general_my_timeline,
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 15,
-                              color: theme.baseColor)),
+                          style: AmityTextStyle.bodyBold(theme.baseColor)),
                     ),
                     const SizedBox(
                       height: 8,
@@ -142,11 +140,7 @@ class AmityPostPollTargetSelectionPage extends NewBasePage {
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       child: Text(
                         context.l10n.tab_my_communities,
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w400,
-                          color: theme.baseColorShade3,
-                        ),
+                        style: AmityTextStyle.body(theme.baseColorShade3),
                       ),
                     ),
                     communityRow(context, state),
@@ -264,11 +258,7 @@ class AmityPostPollTargetSelectionPage extends NewBasePage {
                     Flexible(
                       child: Text(
                         community.displayName ?? '',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w600,
-                          color: theme.baseColor,
-                        ),
+                        style: AmityTextStyle.bodyBold(theme.baseColor),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
