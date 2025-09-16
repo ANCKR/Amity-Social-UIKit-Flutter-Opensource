@@ -63,7 +63,8 @@ import 'app_localizations_pt.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,7 +72,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -83,7 +85,8 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
     delegate,
     GlobalMaterialLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate,
@@ -125,6 +128,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'My Communities'**
   String get tab_my_communities;
+
+  /// Label for the my groups tab in the main navigation (replaces tab_my_communities)
+  ///
+  /// In en, this message translates to:
+  /// **'My Groups'**
+  String get tab_my_groups;
+
+  /// Label for the feed tab in the main navigation (shows content feeds)
+  ///
+  /// In en, this message translates to:
+  /// **'Feed'**
+  String get tab_feed;
+
+  /// Label for permissions settings
+  ///
+  /// In en, this message translates to:
+  /// **'Community permissions'**
+  String get settings_permissions;
+
+  /// Community post permissions setting option
+  ///
+  /// In en, this message translates to:
+  /// **'Post permission'**
+  String get community_post_permission;
+
+  /// label for post permissions page title
+  ///
+  /// In en, this message translates to:
+  /// **'Who can post on this community'**
+  String get community_post_permission_title_label;
+
+  /// label for post permissions page description
+  ///
+  /// In en, this message translates to:
+  /// **'You can control who can create posts in your community.'**
+  String get community_post_permission_description_label;
+
+  /// Label for allow comments on stories settings
+  ///
+  /// In en, this message translates to:
+  /// **'Allow comments on community stories'**
+  String get settings_allow_stories_comments;
+
+  /// Description for allow comments on stories settings
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on to receive comments on stories in this community.'**
+  String get settings_allow_stories_comments_description;
+
+  /// Label for leave community button
+  ///
+  /// In en, this message translates to:
+  /// **'Leave community'**
+  String get community_leave;
+
+  /// Confirmation message for leaving a community
+  ///
+  /// In en, this message translates to:
+  /// **'Leave the community. You will no longer be able to post and interact in this community.'**
+  String get community_leave_description;
+
+  /// Label for close community setting
+  ///
+  /// In en, this message translates to:
+  /// **'Close community'**
+  String get community_setting_close_label;
+
+  /// Description for close community setting
+  ///
+  /// In en, this message translates to:
+  /// **'Closing this community will remove the community  page and all its content and comments.'**
+  String get community_setting_close_description;
+
+  /// Label for close button
+  ///
+  /// In en, this message translates to:
+  /// **'Close community?'**
+  String get community_close;
+
+  /// Confirmation message for closing a community
+  ///
+  /// In en, this message translates to:
+  /// **'All members will be removed from the community. All posts, messages, reactions, and media shared in community will be deleted. This cannot be undone.'**
+  String get community_close_description;
+
+  /// Section title for group permissions in settings (replaces settings_permissions)
+  ///
+  /// In en, this message translates to:
+  /// **'Group permissions'**
+  String get group_settings_permissions;
+
+  /// Group post permissions setting option
+  ///
+  /// In en, this message translates to:
+  /// **'Post permission'**
+  String get group_post_permission;
+
+  /// Label for post permissions page title
+  ///
+  /// In en, this message translates to:
+  /// **'Who can post on this group'**
+  String get group_post_permission_title_label;
+
+  /// Label for post permissions page description
+  ///
+  /// In en, this message translates to:
+  /// **'You can control who can create posts in your group.'**
+  String get group_post_permission_description_label;
+
+  /// Label for story comments setting (replaces settings_allow_stories_comments)
+  ///
+  /// In en, this message translates to:
+  /// **'Allow comments on group stories'**
+  String get group_allow_stories_comments;
+
+  /// Description for story comments setting (replaces settings_allow_stories_comments_description)
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on to receive comments on stories in this group.'**
+  String get group_allow_stories_comments_description;
+
+  /// Label for leave group button
+  ///
+  /// In en, this message translates to:
+  /// **'Leave group'**
+  String get group_leave;
+
+  /// Confirmation message for leaving a group
+  ///
+  /// In en, this message translates to:
+  /// **'Leave the group. You will no longer be able to post and interact in this group.'**
+  String get group_leave_description;
+
+  /// Label for close group setting
+  ///
+  /// In en, this message translates to:
+  /// **'Close group'**
+  String get group_setting_close_label;
+
+  /// Description for close group setting
+  ///
+  /// In en, this message translates to:
+  /// **'Closing this group will remove the group page and all its content and comments.'**
+  String get group_setting_close_description;
+
+  /// Confirmation title for closing a group
+  ///
+  /// In en, this message translates to:
+  /// **'Close group?'**
+  String get group_close;
+
+  /// Confirmation message for closing a group
+  ///
+  /// In en, this message translates to:
+  /// **'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.'**
+  String get group_close_description;
 
   /// Hint text for the search communities and users field on the homepage
   ///
@@ -558,18 +717,6 @@ abstract class AppLocalizations {
   /// **'Failed to close the community.'**
   String get community_close_error_message;
 
-  /// Label for close button
-  ///
-  /// In en, this message translates to:
-  /// **'Close community?'**
-  String get community_close;
-
-  /// Confirmation message for closing a community
-  ///
-  /// In en, this message translates to:
-  /// **'All members will be removed from the community. All posts, messages, reactions, and media shared in community will be deleted. This cannot be undone.'**
-  String get community_close_description;
-
   /// Label for join community button
   ///
   /// In en, this message translates to:
@@ -599,18 +746,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'1.2K members'**
   String get community_placeholder_members;
-
-  /// Label for leave community button
-  ///
-  /// In en, this message translates to:
-  /// **'Leave community'**
-  String get community_leave;
-
-  /// Confirmation message for leaving a community
-  ///
-  /// In en, this message translates to:
-  /// **'Leave the community. You will no longer be able to post and interact in this community.'**
-  String get community_leave_description;
 
   /// Label for create community button
   ///
@@ -840,18 +975,6 @@ abstract class AppLocalizations {
   /// **'Receive notifications when someone comment to your comments in this community.'**
   String get settings_new_replies_description;
 
-  /// Label for allow comments on stories settings
-  ///
-  /// In en, this message translates to:
-  /// **'Allow comments on community stories'**
-  String get settings_allow_stories_comments;
-
-  /// Description for allow comments on stories settings
-  ///
-  /// In en, this message translates to:
-  /// **'Turn on to receive comments on stories in this community.'**
-  String get settings_allow_stories_comments_description;
-
   /// Label for new stories settings
   ///
   /// In en, this message translates to:
@@ -911,12 +1034,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Privacy'**
   String get settings_privacy;
-
-  /// Label for permissions settings
-  ///
-  /// In en, this message translates to:
-  /// **'Community permissions'**
-  String get settings_permissions;
 
   /// Label for language settings
   ///
@@ -1398,46 +1515,16 @@ abstract class AppLocalizations {
   /// **'Failed to save your profile. Please try again.'**
   String get profile_update_failed;
 
-  /// Community post permissions setting option
-  ///
-  /// In en, this message translates to:
-  /// **'Post permission'**
-  String get community_post_permission;
-
   /// No description provided for @community_story_comments.
   ///
   /// In en, this message translates to:
   /// **'Story comments'**
   String get community_story_comments;
 
-  /// Label for close community setting
+  /// Label for post item bottom text for non members
   ///
   /// In en, this message translates to:
-  /// **'Close community'**
-  String get community_setting_close_label;
-
-  /// Description for close community setting
-  ///
-  /// In en, this message translates to:
-  /// **'Closing this community will remove the community  page and all its content and comments.'**
-  String get community_setting_close_description;
-
-  /// label for post permissions page title
-  ///
-  /// In en, this message translates to:
-  /// **'Who can post on this community'**
-  String get community_post_permission_title_label;
-
-  /// label for post permissions page description
-  ///
-  /// In en, this message translates to:
-  /// **'You can control who can create posts in your community.'**
-  String get community_post_permission_description_label;
-
-  /// label for post item bottom text for non members
-  ///
-  /// In en, this message translates to:
-  /// **'Join community to interact with all posts'**
+  /// **'Join group to interact with all posts'**
   String get post_item_bottom_nonmember_label;
 
   /// success toast message for turning on notification
@@ -2189,9 +2276,358 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No message yet'**
   String get chat_no_message_yet;
+
+  /// Title for groups (replaces community_title)
+  ///
+  /// In en, this message translates to:
+  /// **'Group'**
+  String get group_title;
+
+  /// Label for create group button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Group'**
+  String get group_create;
+
+  /// Label for edit group button
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Group'**
+  String get group_edit;
+
+  /// Label for group name
+  ///
+  /// In en, this message translates to:
+  /// **'Group name'**
+  String get group_name;
+
+  /// Hint text for group name input
+  ///
+  /// In en, this message translates to:
+  /// **'Name your group'**
+  String get group_name_hint;
+
+  /// Hint text for group description input
+  ///
+  /// In en, this message translates to:
+  /// **'Enter description'**
+  String get group_description_hint;
+
+  /// Label for group about section
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get group_about;
+
+  /// Label for group members
+  ///
+  /// In en, this message translates to:
+  /// **'Members'**
+  String get group_members;
+
+  /// Label for join group button
+  ///
+  /// In en, this message translates to:
+  /// **'Join'**
+  String get group_join;
+
+  /// Label for joined group status
+  ///
+  /// In en, this message translates to:
+  /// **'Joined'**
+  String get group_joined;
+
+  /// Label for public group type
+  ///
+  /// In en, this message translates to:
+  /// **'Public'**
+  String get group_public;
+
+  /// Label for private group type
+  ///
+  /// In en, this message translates to:
+  /// **'Private'**
+  String get group_private;
+
+  /// Description for public group type
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone can join, view and search the posts in this group.'**
+  String get group_public_description;
+
+  /// Description for private group type
+  ///
+  /// In en, this message translates to:
+  /// **'Only members invited by the moderators can join, view, and search the posts in this group.'**
+  String get group_private_description;
+
+  /// Section title for recommended groups
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended for you'**
+  String get group_recommended_for_you;
+
+  /// Section title for trending groups
+  ///
+  /// In en, this message translates to:
+  /// **'Trending now'**
+  String get group_trending_now;
+
+  /// Placeholder text for group members count
+  ///
+  /// In en, this message translates to:
+  /// **'1.2K members'**
+  String get group_placeholder_members;
+
+  /// Label for basic info section
+  ///
+  /// In en, this message translates to:
+  /// **'Basic Info'**
+  String get group_basic_info;
+
+  /// Label for discard changes confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Leave without finishing?'**
+  String get group_discard_confirmation;
+
+  /// Description for discard changes confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Your progress won\'t be saved and your group won\'t be created.'**
+  String get group_discard_description;
+
+  /// Label for pending posts section
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Posts'**
+  String get group_pending_posts;
+
+  /// Title for pending request/requests
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Pending request} other{Pending requests}}'**
+  String group_pending_request_title(int count);
+
+  /// Message for pending request showing count and plural forms
+  ///
+  /// In en, this message translates to:
+  /// **'{displayCount} {count, plural, =1{post requires} other{posts require}} approval'**
+  String group_pending_request_message(String displayCount, int count);
+
+  /// Tab label for all members in group membership page
+  ///
+  /// In en, this message translates to:
+  /// **'All members'**
+  String get group_all_members;
+
+  /// Tab label for moderators in group membership page
+  ///
+  /// In en, this message translates to:
+  /// **'Moderators'**
+  String get group_moderators;
+
+  /// Hint text for member search field
+  ///
+  /// In en, this message translates to:
+  /// **'Search member'**
+  String get group_search_member_hint;
+
+  /// Action to promote a member to moderator role
+  ///
+  /// In en, this message translates to:
+  /// **'Promote to moderator'**
+  String get group_promote_moderator;
+
+  /// Action to demote a moderator to member role
+  ///
+  /// In en, this message translates to:
+  /// **'Demote to member'**
+  String get group_demote_member;
+
+  /// Action to remove a member from the group
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from group'**
+  String get group_remove_member;
+
+  /// Group story comments setting option
+  ///
+  /// In en, this message translates to:
+  /// **'Story comments'**
+  String get group_story_comments;
+
+  /// Plural form for group members count
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No members} =1{1 member} other{{count} members}}'**
+  String group_members_count(int count);
+
+  /// Empty state message when there are no groups
+  ///
+  /// In en, this message translates to:
+  /// **'No group yet'**
+  String get group_empty_state;
+
+  /// Title for the pending requests page
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Requests'**
+  String get group_pending_requests_title;
+
+  /// Title for empty state when no pending requests are available
+  ///
+  /// In en, this message translates to:
+  /// **'No pending requests available'**
+  String get group_pending_requests_empty_title;
+
+  /// Description for empty state when no pending requests are available
+  ///
+  /// In en, this message translates to:
+  /// **'Enable post review or join approval in group settings to manage requests.'**
+  String get group_pending_requests_empty_description;
+
+  /// Placeholder text for join requests feature that is not yet implemented
+  ///
+  /// In en, this message translates to:
+  /// **'Join requests feature coming soon'**
+  String get group_join_requests_coming_soon;
+
+  /// Warning message for moderators about declining pending posts
+  ///
+  /// In en, this message translates to:
+  /// **'Decline pending post will permanently delete the selected post from group.'**
+  String get group_pending_posts_warning;
+
+  /// Empty state message when there are no pending posts
+  ///
+  /// In en, this message translates to:
+  /// **'No pending posts'**
+  String get group_pending_posts_empty;
+
+  /// Button text for accepting a pending post
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get group_pending_post_accept;
+
+  /// Button text for declining a pending post
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get group_pending_post_decline;
+
+  /// Toast message for group creation success
+  ///
+  /// In en, this message translates to:
+  /// **'Successfully created group.'**
+  String get group_create_success_message;
+
+  /// Toast message for group creation failure
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to create group. Please try again.'**
+  String get group_create_error_message;
+
+  /// Toast message for group update success
+  ///
+  /// In en, this message translates to:
+  /// **'Successfully updated group.'**
+  String get group_update_success_message;
+
+  /// Toast message for group update failure
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to save your group profile. Please try again.'**
+  String get group_update_error_message;
+
+  /// Toast message for group leave success
+  ///
+  /// In en, this message translates to:
+  /// **'Successfully left the group.'**
+  String get group_leave_success_message;
+
+  /// Toast message for group leave error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to leave the group.'**
+  String get group_leave_error_message;
+
+  /// Toast message for group close success
+  ///
+  /// In en, this message translates to:
+  /// **'Successfully closed the group.'**
+  String get group_close_success_message;
+
+  /// Toast message for group close error
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to close the group.'**
+  String get group_close_error_message;
+
+  /// Success message when pending post is deleted
+  ///
+  /// In en, this message translates to:
+  /// **'Post deleted.'**
+  String get group_pending_post_delete_success;
+
+  /// Error message when deleting pending post fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to delete post. Please try again.'**
+  String get group_pending_post_delete_error;
+
+  /// Success message when pending post is approved
+  ///
+  /// In en, this message translates to:
+  /// **'Post accepted.'**
+  String get group_pending_post_approve_success;
+
+  /// Error message when approving pending post fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to accept post. This post has been reviewed by another moderator.'**
+  String get group_pending_post_approve_error;
+
+  /// Success message when pending post is declined
+  ///
+  /// In en, this message translates to:
+  /// **'Post declined.'**
+  String get group_pending_post_decline_success;
+
+  /// Error message when declining pending post fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to decline post. This post has been reviewed by another moderator.'**
+  String get group_pending_post_decline_error;
+
+  /// Error message title when leaving a group fails
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to leave group'**
+  String get error_leave_group;
+
+  /// Error message description when leaving a group fails
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re the only moderator in this group. To leave group, nominate other members to moderator role'**
+  String get error_leave_group_description;
+
+  /// Error message title when closing a group fails
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to close group'**
+  String get error_close_group;
+
+  /// Error message description when closing a group fails
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong. Please try again later.'**
+  String get error_close_group_description;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -2200,44 +2636,53 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'es', 'pt'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['en', 'es', 'pt'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
   // Lookup logic when language+country codes are specified.
   switch (locale.languageCode) {
-    case 'es': {
-  switch (locale.countryCode) {
-    case 'CL': return AppLocalizationsEsCl();
-case 'CO': return AppLocalizationsEsCo();
-case 'MX': return AppLocalizationsEsMx();
-case 'PE': return AppLocalizationsEsPe();
-   }
-  break;
-   }
-    case 'pt': {
-  switch (locale.countryCode) {
-    case 'BR': return AppLocalizationsPtBr();
-   }
-  break;
-   }
+    case 'es':
+      {
+        switch (locale.countryCode) {
+          case 'CL':
+            return AppLocalizationsEsCl();
+          case 'CO':
+            return AppLocalizationsEsCo();
+          case 'MX':
+            return AppLocalizationsEsMx();
+          case 'PE':
+            return AppLocalizationsEsPe();
+        }
+        break;
+      }
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return AppLocalizationsPtBr();
+        }
+        break;
+      }
   }
 
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'en': return AppLocalizationsEn();
-    case 'es': return AppLocalizationsEs();
-    case 'pt': return AppLocalizationsPt();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'pt':
+      return AppLocalizationsPt();
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

@@ -35,7 +35,7 @@ class AmityCommunityPostPermissionPage extends NewBasePage {
     return Scaffold(
         backgroundColor: theme.backgroundColor,
         appBar: AmityAppBar(
-            title: context.l10n.community_post_permission,
+            title: context.l10n.group_post_permission,
             configProvider: configProvider,
             theme: theme,
             leadingButton: SettingConfirmationBackButton(
@@ -70,9 +70,9 @@ class AmityCommunityPostPermissionPage extends NewBasePage {
         body: ListView(
           children: [
             SettingRadioButtonWidget(
-                title: context.l10n.community_post_permission_title_label,
+                title: context.l10n.group_post_permission_title_label,
                 description:
-                    context.l10n.community_post_permission_description_label,
+                    context.l10n.group_post_permission_description_label,
                 groupValue: state.postPermissionSetting,
                 onChanged: (value) {
                   context.read<CommunityPostPermissionPageBloc>().add(

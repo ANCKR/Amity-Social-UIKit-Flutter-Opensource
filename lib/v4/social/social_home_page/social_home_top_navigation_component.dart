@@ -27,7 +27,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
     return AppBar(
       automaticallyImplyLeading: false,
       title: Text(
-        context.l10n.community_title,
+        context.l10n.group_title,
         style: AmityTextStyle.bodyBold(theme.baseColor),
       ),
       centerTitle: false,

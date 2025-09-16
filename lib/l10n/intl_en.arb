@@ -16,6 +16,134 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
+  "tab_my_groups": "My Groups",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Feed",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  
+  "settings_permissions": "Community permissions",
+  "@settings_permissions": {
+    "description": "Section title for community permissions in settings"
+  },
+  
+  "community_post_permission": "Post permission",
+  "@community_post_permission": {
+    "description": "Label for post permission settings"
+  },
+  
+  "community_post_permission_title_label": "Who can post on this community",
+  "@community_post_permission_title_label": {
+    "description": "Title for post permission selection"
+  },
+  
+  "community_post_permission_description_label": "You can control who can create posts in your community.",
+  "@community_post_permission_description_label": {
+    "description": "Description for post permission settings"
+  },
+  
+  "settings_allow_stories_comments": "Allow comments on group stories",
+  "@settings_allow_stories_comments": {
+    "description": "Label for story comments setting"
+  },
+  
+  "settings_allow_stories_comments_description": "Turn on to receive comments on stories in this group.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for story comments setting"
+  },
+  
+  "community_leave": "Leave community",
+  "@community_leave": {
+    "description": "Label for leave community action"
+  },
+  
+  "community_leave_description": "Are you sure you want to leave this community?",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving community"
+  },
+  
+  "community_setting_close_label": "Close community",
+  "@community_setting_close_label": {
+    "description": "Label for close community action"
+  },
+  
+  "community_setting_close_description": "Closing this community will remove the community page and all its content and comments.",
+  "@community_setting_close_description": {
+    "description": "Description for close community action"
+  },
+  
+  "community_close": "Close community",
+  "@community_close": {
+    "description": "Confirmation dialog title for closing community"
+  },
+  
+  "community_close_description": "This action cannot be undone. Are you sure?",
+  "@community_close_description": {
+    "description": "Confirmation dialog description for closing community"
+  },
+  
+  "group_settings_permissions": "Group permissions",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  
+  "group_post_permission": "Post permission",
+  "@group_post_permission": {
+    "description": "Label for post permission settings (replaces community_post_permission)"
+  },
+  
+  "group_post_permission_title_label": "Who can post on this group",
+  "@group_post_permission_title_label": {
+    "description": "Title for post permission selection (replaces community_post_permission_title_label)"
+  },
+  
+  "group_post_permission_description_label": "You can control who can create posts in your group.",
+  "@group_post_permission_description_label": {
+    "description": "Description for post permission settings (replaces community_post_permission_description_label)"
+  },
+  
+  "group_allow_stories_comments": "Allow comments on group stories",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  
+  "group_allow_stories_comments_description": "Turn on to receive comments on stories in this group.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  
+  "group_leave": "Leave group",
+  "@group_leave": {
+    "description": "Label for leave group action (replaces community_leave)"
+  },
+  
+  "group_leave_description": "Are you sure you want to leave this group?",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving group (replaces community_leave_description)"
+  },
+  
+  "group_setting_close_label": "Close group",
+  "@group_setting_close_label": {
+    "description": "Label for close group action (replaces community_setting_close_label)"
+  },
+  
+  "group_setting_close_description": "Closing this group will remove the group page and all its content and comments.",
+  "@group_setting_close_description": {
+    "description": "Description for close group action (replaces community_setting_close_description)"
+  },
+  
+  "group_close": "Close group",
+  "@group_close": {
+    "description": "Confirmation dialog title for closing group (replaces community_close)"
+  },
+  
+  "group_close_description": "This action cannot be undone. Are you sure?",
+  "@group_close_description": {
+    "description": "Confirmation dialog description for closing group (replaces community_close_description)"
+  },
 
   "global_search_hint": "Search community and user",
   "@global_search_hint": {
@@ -1563,5 +1691,363 @@
   "chat_no_message_yet": "No message yet",
   "@chat_no_message_yet": {
     "description": "Preview text when there are no messages in the chat"
+  },
+  
+  "group_title": "Group",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  
+  "group_create": "Create Group",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  
+  "group_edit": "Edit Group",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  
+  "group_name": "Group name",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  
+  "group_name_hint": "Name your group",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  
+  "group_description_hint": "Enter description",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  
+  "group_about": "About",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  
+  "group_members": "Members",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  
+  "group_join": "Join",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  
+  "group_joined": "Joined",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  
+  "group_leave": "Leave group",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  
+  "group_leave_description": "Leave the group. You will no longer be able to post and interact in this group.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  
+  "group_close": "Close group?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  
+  "group_close_description": "All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  
+  "group_public": "Public",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  
+  "group_private": "Private",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  
+  "group_public_description": "Anyone can join, view and search the posts in this group.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  
+  "group_private_description": "Only members invited by the moderators can join, view, and search the posts in this group.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  
+  "group_recommended_for_you": "Recommended for you",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  
+  "group_trending_now": "Trending now",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  
+  "group_placeholder_members": "1.2K members",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  
+  "group_basic_info": "Basic Info",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  
+  "group_discard_confirmation": "Leave without finishing?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  
+  "group_discard_description": "Your progress won't be saved and your group won't be created.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  
+  "group_pending_posts": "Pending Posts",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "group_all_members": "All members",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  
+  "group_moderators": "Moderators",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  
+  "group_search_member_hint": "Search member",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  
+  "group_promote_moderator": "Promote to moderator",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  
+  "group_demote_member": "Demote to member",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  
+  "group_remove_member": "Remove from group",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  
+  "group_post_permission": "Post permission",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  
+  "group_story_comments": "Story comments",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  
+  "group_setting_close_label": "Close group",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  
+  "group_setting_close_description": "Closing this group will remove the group page and all its content and comments.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  
+  "group_post_permission_title_label": "Who can post on this group",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  
+  "group_post_permission_description_label": "You can control who can create posts in your group.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "group_empty_state": "No group yet",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  
+  "group_pending_requests_title": "Pending Requests",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  
+  "group_pending_requests_empty_title": "No pending requests available",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  
+  "group_pending_requests_empty_description": "Enable post review or join approval in group settings to manage requests.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  
+  "group_join_requests_coming_soon": "Join requests feature coming soon",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  
+  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  
+  "group_pending_posts_empty": "No pending posts",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  
+  "group_pending_post_accept": "Accept",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  
+  "group_pending_post_decline": "Decline",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  
+  "group_create_success_message": "Successfully created group.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  
+  "group_create_error_message": "Failed to create group. Please try again.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  
+  "group_update_success_message": "Successfully updated group.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  
+  "group_update_error_message": "Failed to save your group profile. Please try again.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  
+  "group_leave_success_message": "Successfully left the group.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  
+  "group_leave_error_message": "Failed to leave the group.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  
+  "group_close_success_message": "Successfully closed the group.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  
+  "group_close_error_message": "Failed to close the group.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  
+  "group_pending_post_delete_success": "Post deleted.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  
+  "group_pending_post_delete_error": "Failed to delete post. Please try again.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  
+  "group_pending_post_approve_success": "Post accepted.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  
+  "group_pending_post_approve_error": "Failed to accept post. This post has been reviewed by another moderator.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  
+  "group_pending_post_decline_success": "Post declined.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  
+  "group_pending_post_decline_error": "Failed to decline post. This post has been reviewed by another moderator.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  
+  "error_leave_group": "Unable to leave group",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  
+  "error_leave_group_description": "You're the only moderator in this group. To leave group, nominate other members to moderator role",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  
+  "error_close_group": "Unable to close group",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  
+  "error_close_group_description": "Something went wrong. Please try again later.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  
+  "post_item_bottom_nonmember_label": "Join group to interact with all posts",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
   }
 }

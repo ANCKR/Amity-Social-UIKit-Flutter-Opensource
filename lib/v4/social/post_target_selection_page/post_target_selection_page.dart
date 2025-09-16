@@ -142,7 +142,7 @@ class AmityPostTargetSelectionPage extends NewBasePage {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       child: Text(
-                        context.l10n.tab_my_communities,
+                        context.l10n.tab_my_groups,
                         style: AmityTextStyle.body(theme.baseColorShade3),
                       ),
                     ),

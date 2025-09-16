@@ -49,7 +49,7 @@ class _StoryCommentSettingPageState extends State<StoryCommentSettingPage> {
 
           ListTile(
             title: const Text(
-              'Allow comments on community stories',
+              'Allow comments on group stories',
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.bold,
@@ -59,7 +59,7 @@ class _StoryCommentSettingPageState extends State<StoryCommentSettingPage> {
             subtitle: const Padding(
               padding: EdgeInsets.only(top: 8.0),
               child: Text(
-                'Turn on to receive comments on stories in this community.',
+                'Turn on to receive comments on stories in this group.',
                 style: TextStyle(
                   fontSize: 12,
                   color: Color(0xff636878),
