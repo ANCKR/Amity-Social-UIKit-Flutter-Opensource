@@ -93,10 +93,10 @@ class AmityExploreComponent extends NewBaseComponent {
   Widget _buildEmptyState(BuildContext context, ExploreComponentState state) {
     final String title = state.categoryState == CategoryListState.empty
         ? "Your explore is empty"
-        : "No community yet";
+        : "No group yet";
     final String caption = state.categoryState == CategoryListState.empty
-        ? "Find community or create your own"
-        : "Let's create your own communities..";
+        ? "Find group or create your own"
+        : "Let's create your own groups..";
 
     Widget emptyWidget = Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -112,7 +112,7 @@ class AmityExploreComponent extends NewBaseComponent {
         const SizedBox(height: 4),
         Text(caption, style: AmityTextStyle.caption(theme.baseColorShade3)),
         const SizedBox(height: 26),
-        _buildCreateCommunityButton(context),
+        _buildCreateGroupButton(context),
         const SizedBox(height: 40)
     ]);
 
@@ -152,7 +152,7 @@ class AmityExploreComponent extends NewBaseComponent {
     );
   }
 
-  Widget _buildCreateCommunityButton(BuildContext context) {
+  Widget _buildCreateGroupButton(BuildContext context) {
     return ElevatedButton.icon(
       onPressed: () {
         Navigator.push(
@@ -166,7 +166,7 @@ class AmityExploreComponent extends NewBaseComponent {
         );
       },
       icon: const Icon(Icons.add),
-      label: Text("Create community", style: AmityTextStyle.body(Colors.white)),
+      label: Text("Create group", style: AmityTextStyle.body(Colors.white)),
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: theme.primaryColor,

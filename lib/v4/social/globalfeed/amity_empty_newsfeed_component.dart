@@ -2,7 +2,7 @@ import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_event.dart';
-import 'package:amity_uikit_beta_service/view/UIKit/social/create_community_page.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_creation/community_setup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -49,7 +49,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                   ),
                 ),
                 Text(
-                  'Find community or create your own ',
+                  'Find group or create your own ',
                   textAlign: TextAlign.center,
                   style: AmityTextStyle.caption(theme.baseColorShade1),
                 ),
@@ -107,7 +107,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                 ),
                               ),
                               Text(
-                                'Explore community',
+                                'Explore group',
                                 style: AmityTextStyle.subtitleBold(Colors.white),
                               ),
                             ],
@@ -118,8 +118,11 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                       GestureDetector(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
+                              fullscreenDialog: true,
                               builder: (context) =>
-                                  const CreateCommunityPage()));
+                                  AmityCommunitySetupPage(
+                                    mode: const CreateMode(),
+                                  )));
                         },
                         child: Container(
                           width: 220,
@@ -131,7 +134,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                'Create community',
+                                'Create group',
                                 style: AmityTextStyle.subtitle(theme.primaryColor),
                               ),
                             ],
