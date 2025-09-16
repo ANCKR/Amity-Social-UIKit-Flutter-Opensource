@@ -81,7 +81,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
             ),
             padding: const EdgeInsets.all(5),
             child: SvgPicture.asset(
-              'assets/Icons/amity_ic_chat_create_button.svg',
+              'assets/Icons/amity_ic_chat.svg',
               package: 'amity_uikit_beta_service',
               width: 21,
               height: 21,
