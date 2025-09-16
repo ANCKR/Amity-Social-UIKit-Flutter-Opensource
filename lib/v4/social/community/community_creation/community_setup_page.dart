@@ -9,12 +9,13 @@ import 'package:amity_uikit_beta_service/v4/social/community/community_creation/
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/bloc/community_setup_page_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/element/bloc/info_text_field_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/element/category_grid_view.dart';
-import 'package:amity_uikit_beta_service/v4/social/community/community_creation/element/info_text_field.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/category/community_add_category_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/post_composer_page/post_camera_screen.dart';
 import 'package:amity_uikit_beta_service/v4/utils/amity_dialog.dart';
 import 'package:amity_uikit_beta_service/v4/utils/app_bar.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_creation/validation/enhanced_validation_hooks.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_creation/validation/form_validation_manager.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -43,6 +44,7 @@ class AmityCommunitySetupPage extends NewBasePage {
   final AmityCommunitySetupPageMode mode;
   AmityCommunity? community;
   late ScrollController _scrollController;
+  final FormValidationManager _formValidator = FormValidationManager();
 
   AmityCommunitySetupPage({super.key, required this.mode})
       : super(pageId: 'community_composer_page') {
@@ -119,30 +121,40 @@ class AmityCommunitySetupPage extends NewBasePage {
                           padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
                           child: Column(
                             children: [
-                              InfoTextField(
-                                  title: context.l10n.group_name,
-                                  hint: context.l10n.group_name_hint,
-                                  initialText: community?.displayName ?? '',
-                                  maxLength: 30,
-                                  expandable: false,
-                                  onChanged: (text) {
-                                    context.read<CommunitySetupPageBloc>().add(
-                                        CommunitySetupPageNameChangedEvent(
-                                            text));
-                                  }),
+                              Builder(
+                                builder: (context) {
+                                  final categoryIds = state.communityCategories
+                                      .map((cc) => cc.category?.categoryId?.toString())
+                                      .where((id) => id != null)
+                                      .cast<String>()
+                                      .toList();
+                                  
+                                  return EnhancedValidationHooks.createValidatedNameField(
+                                    context: context,
+                                    title: context.l10n.group_name,
+                                    hint: context.l10n.group_name_hint,
+                                    initialText: community?.displayName ?? '',
+                                    categoryIds: categoryIds.isEmpty ? null : categoryIds,
+                                    formValidator: _formValidator,
+                                    onChanged: (text) {
+                                      context.read<CommunitySetupPageBloc>().add(
+                                          CommunitySetupPageNameChangedEvent(text));
+                                    },
+                                  );
+                                }
+                              ),
                               const SizedBox(height: 24),
-                              InfoTextField(
-                                  title: context.l10n.group_about,
-                                  isOptional: true,
-                                  hint: context.l10n.group_description_hint,
-                                  initialText: community?.description ?? '',
-                                  maxLength: 180,
-                                  expandable: true,
-                                  onChanged: (text) {
-                                    context.read<CommunitySetupPageBloc>().add(
-                                        CommunitySetupPageDescriptionChangedEvent(
-                                            text));
-                                  }),
+                              EnhancedValidationHooks.createValidatedDescriptionField(
+                                context: context,
+                                title: context.l10n.group_about,
+                                hint: 'e.g., "A supportive community for women navigating menopause together"',
+                                initialText: community?.description ?? '',
+                                formValidator: _formValidator,
+                                onChanged: (text) {
+                                  context.read<CommunitySetupPageBloc>().add(
+                                      CommunitySetupPageDescriptionChangedEvent(text));
+                                },
+                              ),
                               const SizedBox(height: 24),
                               GestureDetector(
                                 onTap: () {
@@ -167,7 +179,7 @@ class AmityCommunitySetupPage extends NewBasePage {
                 ),
                 _getDividerWidget(),
                 if (mode is CreateMode)
-                  _getCreateCommunityButtonWidget(context, state)
+                  _getValidatedCreateCommunityButtonWidget(context, state)
                 else
                   _getSaveButtonWidget(context, state)
               ],
@@ -313,60 +325,84 @@ class AmityCommunitySetupPage extends NewBasePage {
     );
   }
 
-  Widget _getCreateCommunityButtonWidget(
+  /// Enhanced create button that is disabled until all validation passes
+  Widget _getValidatedCreateCommunityButtonWidget(
       BuildContext context, CommunitySetupPageState state) {
-    return Container(
-      color: theme.backgroundColor,
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
-      child: Row(
-        children: [
-          Expanded(
-              child: GestureDetector(
-            onTap: () {
-              if (state.communityName.isNotEmpty) {
-                context
-                    .read<CommunitySetupPageBloc>()
-                    .add(CommunitySetupPageCreateCommunityEvent(
-                        onSuccess: (community) {
-                          Navigator.pop(context);
-                          _goToCommunityProfilePage(context, community);
-                        },
-                        toastBloc: context.read<AmityToastBloc>(),
-                        context: context));
-              }
-            },
-            child: Container(
-                decoration: BoxDecoration(
-                  color: state.communityName.isEmpty
-                      ? theme.primaryColor.blend(ColorBlendingOption.shade2)
-                      : theme.primaryColor, // Rectangle background color
-                  borderRadius: BorderRadius.circular(8.0), // Rounded corners
-                ),
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                child:
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: Transform.translate(
-                      offset: const Offset(0, 1),
-                      child: SvgPicture.asset(
-                        'assets/Icons/amity_ic_post_creation_button.svg',
-                        width: 16,
-                        height: 18,
-                        color: Colors.white,
-                        package: 'amity_uikit_beta_service',
-                        fit: BoxFit.contain,
-                      ),
+    return ListenableBuilder(
+      listenable: _formValidator,
+      builder: (context, _) {
+        final buttonState = _formValidator.submitButtonState;
+        
+        return Container(
+          color: theme.backgroundColor,
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
+          child: Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: buttonState.isEnabled ? () {
+                    context
+                        .read<CommunitySetupPageBloc>()
+                        .add(CommunitySetupPageCreateCommunityEvent(
+                            onSuccess: (community) {
+                              Navigator.pop(context);
+                              _goToCommunityProfilePage(context, community);
+                            },
+                            toastBloc: context.read<AmityToastBloc>(),
+                            context: context));
+                  } : null,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: buttonState.isEnabled
+                          ? theme.primaryColor
+                          : theme.primaryColor.blend(ColorBlendingOption.shade2),
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center, 
+                      children: [
+                        if (buttonState.showSpinner) ...[
+                          SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                        ] else ...[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: Transform.translate(
+                              offset: const Offset(0, 1),
+                              child: SvgPicture.asset(
+                                'assets/Icons/amity_ic_post_creation_button.svg',
+                                width: 16,
+                                height: 18,
+                                color: Colors.white,
+                                package: 'amity_uikit_beta_service',
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                        ],
+                        Text(
+                          buttonState.isEnabled 
+                              ? context.l10n.group_create
+                              : buttonState.text,
+                          style: AmityTextStyle.bodyBold(Colors.white),
+                        ),
+                      ]
                     ),
                   ),
-                  Text(
-                    context.l10n.group_create,
-                    style: AmityTextStyle.bodyBold(Colors.white),
-                  ),
-                ])),
-          )),
-        ],
-      ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 
