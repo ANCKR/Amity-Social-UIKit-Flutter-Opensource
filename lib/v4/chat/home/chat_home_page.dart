@@ -193,7 +193,7 @@ class ChatHomePageNavigationBar extends NewBaseComponent {
                 ),
                 const SizedBox(width: 8),
                 Text(context.l10n.chat_title,
-                    style: AmityTextStyle.bodyBold(theme.baseColor)),
+                    style: AmityTextStyle.title(theme.baseColor)),
                 if (!state.isConnected) ...[
                   const SizedBox(width: 16),
                   const CupertinoActivityIndicator(radius: 8),
