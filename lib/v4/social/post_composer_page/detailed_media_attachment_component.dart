@@ -10,6 +10,7 @@ class AmityDetailedMediaAttachmentComponent extends NewBaseComponent {
   final Function()? onCameraTap;
   final Function()? onImageTap;
   final Function()? onVideoTap;
+  final Function()? onFileTap;
   final FileType? mediaType;
 
   AmityDetailedMediaAttachmentComponent({
@@ -17,6 +18,7 @@ class AmityDetailedMediaAttachmentComponent extends NewBaseComponent {
     this.onCameraTap,
     this.onImageTap,
     this.onVideoTap,
+    this.onFileTap,
     this.mediaType,
   }) : super(key: key, componentId: "detailed_media_attachment");
 
@@ -54,6 +56,7 @@ class AmityDetailedMediaAttachmentComponent extends NewBaseComponent {
     final featureConfig = configProvider.getFeatureConfig();
     final isVideoPostEnabled = featureConfig.post.video.createEnabled;
     final isImagePostEnabled = featureConfig.post.image.createEnabled;
+    final isFilePostEnabled = true; // TODO: Add to feature config
 
     return Column(
       children: [
@@ -76,6 +79,12 @@ class AmityDetailedMediaAttachmentComponent extends NewBaseComponent {
                 assetPath: 'assets/Icons/amity_ic_video_button.svg',
                 title: context.l10n.general_video,
                 onTap: onVideoTap,
+              ),
+            if ((mediaType == FileType.any || mediaType == null) && isFilePostEnabled)
+              _buildListTile(
+                assetPath: 'assets/Icons/amity_ic_file_button.svg',
+                title: 'File',
+                onTap: onFileTap,
               ),
           ],
         ),

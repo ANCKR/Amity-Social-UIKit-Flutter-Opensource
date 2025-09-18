@@ -83,6 +83,67 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           } catch (e) {
             await showPermissionDialog();
           }
+        } else if (type == FileType.any) {
+          typeText = 'documents';
+
+          pickDocuments() async {
+            FilePickerResult? result = await FilePicker.platform.pickFiles(
+              type: type,
+              allowMultiple: true,
+              withData: false,
+              withReadStream: true,
+              lockParentWindow: true,
+              onFileLoading: (status) => {
+                if (status == FilePickerStatus.done)
+                  {context.read<AmityToastBloc>().add(AmityToastDismiss())}
+                else
+                  {
+                    context.read<AmityToastBloc>().add(const AmityToastLoading(
+                        message: "Processing...", icon: AmityToastIcon.loading))
+                  }
+              },
+            );
+
+            if (result != null) {
+              files = result.files
+                  .where((file) => file.path != null)
+                  .map((file) => XFile(file.path!))
+                  .toList();
+            }
+          }
+
+          showDocumentPermissionDialog() async {
+            ConfirmationV4Dialog().show(
+              context: context,
+              title: 'Allow access to your files',
+              detailText:
+                  'This allows $appName to access files on your device.',
+              leftButtonColor: null,
+              leftButtonText: 'OK',
+              rightButtonText: 'Open settings',
+              onConfirm: () {
+                openAppSettings();
+              },
+            );
+          }
+
+          try {
+            var androidInfo = await DeviceInfoPlugin().androidInfo;
+            var sdkInt = androidInfo.version.sdkInt;
+
+            if (sdkInt > 32) {              
+              await pickDocuments();
+            } else {
+              // Needs to check storage permission on Android versions 12 and below
+              if (await Permission.storage.request().isGranted) {
+                await pickDocuments();
+              } else {
+                await showDocumentPermissionDialog();
+              }
+            }
+          } catch (e) {
+            await showDocumentPermissionDialog();
+          }
         } else {
           typeText = 'images';
           Future.delayed(const Duration(milliseconds: 1000), () {
@@ -97,7 +158,7 @@ extension PostComposerFilePicker on AmityPostComposerPage {
             context.read<AmityToastBloc>().add(AmityToastDismiss());
           } catch (e) {
             isPickerClosed = true;
-
+          
             PermissionAlertV4Dialog().show(
               context: context,
               title: 'Allow access to your photos',
@@ -131,9 +192,25 @@ extension PostComposerFilePicker on AmityPostComposerPage {
               },
             );
           };
+        } else if (type == FileType.any) {
+          typeText = 'documents';
+          showPermissionDialog = () async {
+            ConfirmationV4Dialog().show(
+              context: context,
+              title: 'Allow access to your files',
+              detailText:
+                  'This allows $appName to access files on your device.',
+              leftButtonColor: null,
+              leftButtonText: 'OK',
+              rightButtonText: 'Open settings',
+              onConfirm: () {
+                openAppSettings();
+              },
+            );
+          };
         } else {
           typeText = 'videos';
-
+          
           showPermissionDialog = () async {
             ConfirmationV4Dialog().show(
               context: context,
@@ -191,7 +268,7 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           AmityV4Dialog().showAlertErrorDialog(
             title: "Maximum upload limit reached",
             message:
-                "You’ve reached the upload limit of 10 $typeText. Any additional $typeText will not be saved.",
+                    "You’ve reached the upload limit of 10 $typeText. Any additional $typeText will not be saved.",
             closeText: "Close",
           );
         } else {
@@ -199,6 +276,12 @@ extension PostComposerFilePicker on AmityPostComposerPage {
             for (var image in files) {
               context.read<PostComposerBloc>().add(
                     PostComposerSelectImagesEvent(selectedImage: image),
+                  );
+            }
+          } else if (type == FileType.any) {
+            for (var document in files) {
+              context.read<PostComposerBloc>().add(
+                    PostComposerSelectFilesEvent(selectedFile: document),
                   );
             }
           } else {
@@ -212,8 +295,8 @@ extension PostComposerFilePicker on AmityPostComposerPage {
       } else {
         context.read<AmityToastBloc>().add(AmityToastDismiss());
       }
-      // ignore: empty_catches
+            // ignore: empty_catches
     } catch (e) {}
-    return null;
+        return null;
   }
 }

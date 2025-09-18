@@ -99,3 +99,20 @@ class PostComposerGetVideoUrlsEvent extends PostComposerEvent {
   @override
   List<Object> get props => [videos];
 }
+
+class PostComposerSelectFilesEvent extends PostComposerEvent {
+  final XFile selectedFile;
+
+  const PostComposerSelectFilesEvent({required this.selectedFile});
+
+  PostComposerSelectFilesEvent copyWith({
+    AmityFileInfoWithUploadStatus? selectedFile,
+  }) {
+    return PostComposerSelectFilesEvent(
+      selectedFile: this.selectedFile,
+    );
+  }
+
+  @override
+  get props => [selectedFile];
+}

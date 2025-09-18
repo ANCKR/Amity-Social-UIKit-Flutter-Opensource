@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
@@ -200,6 +199,10 @@ class AmityPostComposerPage extends NewBasePage {
                         pickMultipleFiles(context, FileType.video,
                             maxFiles: 10);
                       },
+                      onFileTap: () async {
+                        pickMultipleFiles(context, FileType.any,
+                            maxFiles: 10);
+                      },
                       mediaType: selectedMediaType,
                     ),
                     expandedContent: AmityDetailedMediaAttachmentComponent(
@@ -212,6 +215,10 @@ class AmityPostComposerPage extends NewBasePage {
                         },
                         onVideoTap: () {
                           pickMultipleFiles(context, FileType.video,
+                              maxFiles: 10);
+                        },
+                        onFileTap: () {
+                          pickMultipleFiles(context, FileType.any,
                               maxFiles: 10);
                         },
                         mediaType: selectedMediaType),
@@ -497,6 +504,16 @@ class AmityPostComposerPage extends NewBasePage {
         }
         postCreatorBuilder =
             dataTypeSelector.video(videos).text(textController.text);
+      } else if (selectedMediaType == FileType.any) {
+        List<AmityFile> files = [];
+
+        for (var amityFile in selectedFiles.entries) {
+          AmityFile file =
+              AmityFile(amityFile.value.fileInfo!.getFileProperties!);
+          files.add(file);
+        }
+        postCreatorBuilder =
+            dataTypeSelector.file(files).text(textController.text);
       } else {
         List<AmityImage> images = [];
         var imageList = selectedFiles.entries;

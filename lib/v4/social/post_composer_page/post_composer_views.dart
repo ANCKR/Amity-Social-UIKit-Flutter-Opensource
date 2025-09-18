@@ -210,6 +210,79 @@ extension PostComposerView on AmityPostComposerPage {
             ),
           );
         }
+      } else if (selectedMediaType == FileType.any) {
+        // Document display
+        String fileName = file.key.split('/').last;
+        String fileExtension = fileName.split('.').isNotEmpty ? fileName.split('.').last.toLowerCase() : '';
+        
+        IconData fileIcon;
+        Color iconColor = theme.baseColor;
+        
+        switch (fileExtension) {
+          case 'pdf':
+            fileIcon = Icons.picture_as_pdf;
+            iconColor = Colors.red;
+            break;
+          case 'doc':
+          case 'docx':
+            fileIcon = Icons.description;
+            iconColor = Colors.blue;
+            break;
+          case 'xls':
+          case 'xlsx':
+            fileIcon = Icons.table_chart;
+            iconColor = Colors.green;
+            break;
+          case 'ppt':
+          case 'pptx':
+            fileIcon = Icons.slideshow;
+            iconColor = Colors.orange;
+            break;
+          case 'txt':
+            fileIcon = Icons.text_snippet;
+            iconColor = Colors.grey;
+            break;
+          case 'zip':
+          case 'rar':
+            fileIcon = Icons.folder_zip;
+            iconColor = Colors.purple;
+            break;
+          default:
+            fileIcon = Icons.insert_drive_file;
+            iconColor = theme.baseColor;
+        }
+        
+        return Container(
+          decoration: BoxDecoration(
+            color: theme.backgroundColor,
+            borderRadius: BorderRadius.circular(8.0),
+            border: Border.all(color: theme.baseColorShade4),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                fileIcon,
+                size: 32,
+                color: iconColor,
+              ),
+              const SizedBox(height: 4),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                child: Text(
+                  fileName.length > 15 ? '${fileName.substring(0, 15)}...' : fileName,
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: theme.baseColor,
+                  ),
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+        );
       }
       return const SizedBox.shrink();
     }

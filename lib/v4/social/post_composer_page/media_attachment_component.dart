@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +9,7 @@ class AmityMediaAttachmentComponent extends NewBaseComponent {
   final Function()? onCameraTap;
   final Function()? onImageTap;
   final Function()? onVideoTap;
+  final Function()? onFileTap;
   final FileType? mediaType;
 
   AmityMediaAttachmentComponent({
@@ -18,6 +17,7 @@ class AmityMediaAttachmentComponent extends NewBaseComponent {
     this.onCameraTap,
     this.onImageTap,
     this.onVideoTap,
+    this.onFileTap,
     this.mediaType,
   }) : super(key: key, componentId: "media_attachment");
 
@@ -27,6 +27,7 @@ class AmityMediaAttachmentComponent extends NewBaseComponent {
     final featureConfig = configProvider.getFeatureConfig();
     final isVideoPostEnabled = featureConfig.post.video.createEnabled;
     final isImagePostEnabled = featureConfig.post.image.createEnabled;
+    final isFilePostEnabled = true; // TODO: Add to feature config
 
     return Column(
       children: [
@@ -74,6 +75,20 @@ class AmityMediaAttachmentComponent extends NewBaseComponent {
                   onPressed: () async {
                     if (onVideoTap != null) {
                       onVideoTap!();
+                    }
+                  },
+                ),
+              if ((mediaType == FileType.any || mediaType == null) && isFilePostEnabled)
+                IconButton(
+                  icon: SvgPicture.asset(
+                    'assets/Icons/amity_ic_file_button.svg',
+                    package: 'amity_uikit_beta_service',
+                    width: 33,
+                    height: 32,
+                  ),
+                  onPressed: () async {
+                    if (onFileTap != null) {
+                      onFileTap!();
                     }
                   },
                 ),
