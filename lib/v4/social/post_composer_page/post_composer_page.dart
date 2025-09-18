@@ -134,6 +134,8 @@ class AmityPostComposerPage extends NewBasePage {
                 } else if (selectedFiles.entries.first.value.type ==
                     FileType.image) {
                   selectedMediaType = FileType.image;
+                } else if (selectedFiles.entries.first.value.type == FileType.any) {
+                  selectedMediaType = FileType.any;
                 }
                 if (currentUrlsCount != selectedFiles.length) {
                   isFileCountChanged = true;

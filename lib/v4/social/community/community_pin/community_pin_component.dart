@@ -132,8 +132,7 @@ class CommunityPinComponent extends NewBaseComponent {
     }
     final amityPost = post;
     if (((amityPost.children?.isNotEmpty ?? false) &&
-            (amityPost.children!.first.type == AmityDataType.FILE ||
-                amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
+            (amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
         (amityPost.isDeleted ?? false)) {
       return Container();
     } else {
@@ -173,8 +172,7 @@ class CommunityPinComponent extends NewBaseComponent {
   Widget _getPinPost(int index, CommunityPinState state) {
     final amityPost = state.pins[index].post!;
     if (((amityPost.children?.isNotEmpty ?? false) &&
-            (amityPost.children!.first.type == AmityDataType.FILE ||
-                amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
+            (amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
         (amityPost.isDeleted ?? false) ||
         (state.announcements.map((e) => e.postId).contains(amityPost.postId))) {
       return Container();

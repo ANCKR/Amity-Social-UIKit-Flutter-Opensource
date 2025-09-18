@@ -1,6 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_children_content_image.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_children_content_video.dart';
+import 'package:amity_uikit_beta_service/v4/social/post/common/post_children_content_file.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_poll.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,8 @@ class PostChildrenContent extends StatelessWidget {
       return PostContentVideo(posts: post.children!, theme: theme);
     } else if (post.children!.first.data is PollData) {
       return PostPollContent(post: post.children!.first, style: style, theme: theme, hideMenu: hideMenu, goToDetail: (){},);
+    } else if (post.children!.first.data is FileData) {
+      return PostContentFile(posts: post.children!, theme: theme);
     } else {
       return Container();
     }

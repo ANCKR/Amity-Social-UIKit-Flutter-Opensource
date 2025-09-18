@@ -221,6 +221,8 @@ class PostItem extends NewBaseComponent {
           theme: theme,
           hideMenu: hideMenu,
           goToDetail: goToDetail);
+    } else if (post.children!.first.data is FileData) {
+      return _listMediaGrid(post.children!);
     } else {
       return Container();
     }

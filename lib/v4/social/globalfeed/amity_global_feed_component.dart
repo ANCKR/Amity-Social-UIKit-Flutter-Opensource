@@ -71,8 +71,6 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
 
                           if (((amityPost.children?.isNotEmpty ?? false) &&
                                   (amityPost.children!.first.type ==
-                                          AmityDataType.FILE ||
-                                      amityPost.children!.first.type ==
                                           AmityDataType.LIVESTREAM)) ||
                               (amityPost.isDeleted ?? false)) {
                             return Container();
