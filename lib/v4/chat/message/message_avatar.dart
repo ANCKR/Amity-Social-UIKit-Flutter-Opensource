@@ -115,10 +115,11 @@ class AmityMessageAvatar extends BaseElement {
         shape: BoxShape.circle,
       ),
       child: Center(
-          child: Text(
-        displayName.isEmpty ? "" : displayName[0].toUpperCase(),
-        style: AmityTextStyle.custom(16, FontWeight.w400, Colors.white),
-      )),
+        child: Text(
+          displayName.isEmpty ? "" : displayName[0].toUpperCase(),
+          style: AmityTextStyle.custom(14, FontWeight.w600, Colors.white),
+        ),
+      ),
     );
   }
 }

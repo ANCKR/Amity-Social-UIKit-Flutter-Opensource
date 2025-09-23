@@ -87,18 +87,18 @@ class AmityUserAvatar extends BaseElement {
 
   Widget avatarCharacter() {
     return Container(
-      height: avatarSize.height,
-      width: avatarSize.width,
+      height: 40,
+      width: 40,
       decoration: BoxDecoration(
-        color: theme.primaryColor.blend(ColorBlendingOption.shade2),
+        color: theme.primaryColor,
         shape: BoxShape.circle,
       ),
       child: Center(
-          child: Text(
-        displayName.isEmpty ? "" : displayName[0].toUpperCase(),
-        style: characterTextStyle ??
-            AmityTextStyle.custom(20, FontWeight.w400, Colors.white),
-      )),
+        child: Text(
+          displayName.isNotEmpty ? displayName[0].toUpperCase() : "",
+          style: AmityTextStyle.custom(18, FontWeight.w400, Colors.white, textHeight: 1.0),
+        ),
+      ),
     );
   }
 }

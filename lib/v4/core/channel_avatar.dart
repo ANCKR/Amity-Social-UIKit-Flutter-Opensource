@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
@@ -63,7 +61,7 @@ class AmityChannelAvatar extends BaseElement {
         width: avatarSize.width,
         height: avatarSize.height,
         child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(borderRadius)),
+          borderRadius: BorderRadius.all(Radius.circular(avatarSize.width / 2)),
           child: Image.network(
             avatarUrl!,
             fit: BoxFit.cover,
@@ -113,16 +111,27 @@ class AmityChannelAvatar extends BaseElement {
       width: avatarSize.width,
       decoration: BoxDecoration(
         color: theme.primaryColor.blend(ColorBlendingOption.shade2),
-        borderRadius: BorderRadius.all(Radius.circular(borderRadius)),
+        shape: BoxShape.circle,
       ),
-      child: Center(
-        child: SvgPicture.asset(
-          avatarPlaceholder,
-          package: 'amity_uikit_beta_service',
-          height: placeholderSize.height,
-          width: placeholderSize.width,
+        child: Center(
+          child: displayName.isNotEmpty
+              ? Text(
+                  displayName[0].toUpperCase(),
+                  style: characterTextStyle ??
+                      AmityTextStyle.custom(
+                        avatarSize.width * 0.4, // Dynamic font size based on avatar size
+                        FontWeight.w600,
+                        Colors.white,
+                        textHeight: 1.0,
+                      ),
+                )
+              : SvgPicture.asset(
+                  avatarPlaceholder,
+                  package: 'amity_uikit_beta_service',
+                  height: placeholderSize.height,
+                  width: placeholderSize.width,
+                ),
         ),
-      ),
     );
   }
 
