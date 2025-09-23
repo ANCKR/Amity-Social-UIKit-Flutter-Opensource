@@ -363,10 +363,12 @@ class ChatListItem extends BaseElement {
           ),
           const SizedBox(width: 12),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(channel.lastActivity?.toChatTimestamp(context) ?? "",
                   style: AmityTextStyle.caption(theme.baseColorShade2)),
-              const SizedBox(height: 10),
+              const SizedBox(height: 2),
               unreadCountWidget(channel.unreadCount ?? 0)
             ],
           ),
@@ -381,14 +383,17 @@ class ChatListItem extends BaseElement {
     }
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      height: 18,
+      width: 18,
       decoration: BoxDecoration(
         color: theme.alertColor,
-        borderRadius: BorderRadius.circular(12),
+        shape: BoxShape.circle,
       ),
-      child: Text(
-        unreadCount > 99 ? '99+' : unreadCount.toString(),
-        style: AmityTextStyle.captionBold(Colors.white),
+      child: Center(
+        child: Text(
+          unreadCount > 99 ? '99+' : unreadCount.toString(),
+          style: AmityTextStyle.custom(10, FontWeight.w600, Colors.white, textHeight: 1.0),
+        ),
       ),
     );
   }
