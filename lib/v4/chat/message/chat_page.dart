@@ -194,17 +194,6 @@ class AmityChatPage extends NewBasePage {
                         Expanded(
                           child: Stack(
                             children: [
-                              Visibility(
-                                visible: state.isFetching &&
-                                    state.messages.isNotEmpty,
-                                child: Container(
-                                  margin:
-                                      const EdgeInsets.symmetric(vertical: 8.0),
-                                  width: 24.0,
-                                  height: 24.0,
-                                  child: const CupertinoActivityIndicator(),
-                                ),
-                              ),
                               LayoutBuilder(builder: (context, constraints) {
                                 final firstItem =
                                     state.messages.firstOrNull?.message;
