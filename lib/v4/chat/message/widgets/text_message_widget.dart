@@ -12,13 +12,14 @@ extension TextMessageWidget on MessageBubbleView {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          if (isUser &&
-              message.createdAt != null &&
-              message.syncState == AmityMessageSyncState.SYNCED) ...[
-            _buildDateWidget(message.createdAt!),
+          if (isUser && message.createdAt != null) ...[
+            _buildDateWidget(
+              message.createdAt!, 
+              showSentIcon: message.syncState == AmityMessageSyncState.SYNCED
+            ),
             const SizedBox(width: 8),
           ],
-          if (!isUser) ...[
+          if (!isUser && isGroupChat) ...[
             _buildAvatarWidget(context),
             const SizedBox(width: 8),
           ],
@@ -46,7 +47,6 @@ extension TextMessageWidget on MessageBubbleView {
             ),
             const SizedBox(width: 8),
           ],
-          Container(color: Colors.red),
           _buildTextWidget(context, text, isUser, state),
           if (!isUser && message.createdAt != null) ...[
             const SizedBox(width: 8),

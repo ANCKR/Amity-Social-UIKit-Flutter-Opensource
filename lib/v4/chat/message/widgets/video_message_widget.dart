@@ -19,10 +19,11 @@ extension VideoMessageWidget on MessageBubbleView {
                 ? CrossAxisAlignment.center
                 : CrossAxisAlignment.end,
         children: [
-          if (isUser &&
-              message.createdAt != null &&
-              message.syncState == AmityMessageSyncState.SYNCED) ...[
-            _buildDateWidget(message.createdAt!),
+          if (isUser && message.createdAt != null) ...[
+            _buildDateWidget(
+              message.createdAt!, 
+              showSentIcon: message.syncState == AmityMessageSyncState.SYNCED
+            ),
             const SizedBox(width: 8),
           ],
           if (isUser &&
@@ -31,7 +32,7 @@ extension VideoMessageWidget on MessageBubbleView {
             _buildSideTextWidget("Sending..."),
             const SizedBox(width: 8),
           ],
-          if (!isUser) ...[
+          if (!isUser && isGroupChat) ...[
             _buildAvatarWidget(context),
             const SizedBox(width: 8),
           ],

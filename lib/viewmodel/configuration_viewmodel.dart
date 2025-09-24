@@ -165,6 +165,45 @@ class AmityIconConfig {
       package: 'amity_uikit_beta_service',
     );
   }
+
+  Widget sentIcon(
+      {double iconSize = 10,
+      Color color = Colors.grey,
+      BlendMode blendmode = BlendMode.srcIn}) {
+    return SvgPicture.asset(
+      "assets/Icons/amity_ic_message_sent.svg",
+      width: iconSize,
+      height: iconSize,
+      colorFilter: ColorFilter.mode(color, blendmode),
+      package: 'amity_uikit_beta_service',
+    );
+  }
+
+  Widget deliveredIcon(
+      {double iconSize = 12,
+      Color color = Colors.grey,
+      BlendMode blendmode = BlendMode.srcIn}) {
+    return SvgPicture.asset(
+      "assets/Icons/amity_ic_message_delivered.svg",
+      width: iconSize,
+      height: iconSize,
+      colorFilter: ColorFilter.mode(color, blendmode),
+      package: 'amity_uikit_beta_service',
+    );
+  }
+
+  Widget readIcon(
+      {double iconSize = 12,
+      Color color = Colors.blue,
+      BlendMode blendmode = BlendMode.srcIn}) {
+    return SvgPicture.asset(
+      "assets/Icons/amity_ic_message_read.svg",
+      width: iconSize,
+      height: iconSize,
+      colorFilter: ColorFilter.mode(color, blendmode),
+      package: 'amity_uikit_beta_service',
+    );
+  }
 }
 
 class ChannelListConfig {

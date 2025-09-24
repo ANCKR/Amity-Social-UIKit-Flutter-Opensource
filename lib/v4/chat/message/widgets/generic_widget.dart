@@ -14,7 +14,7 @@ extension GenericWidget on MessageBubbleView {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if (!isUser && message.user != null) ...[
+        if (!isUser && message.user != null && isGroupChat) ...[
           _buildAvatarWidget(context),
           const SizedBox(width: 8),
         ],
@@ -58,8 +58,29 @@ extension GenericWidget on MessageBubbleView {
     );
   }
 
-  Widget _buildDateWidget(DateTime timestamp) {
-    return _buildSideTextWidget(_formatTime(message.createdAt!));
+  Widget _buildDateWidget(DateTime timestamp, {bool showSentIcon = false}) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (showSentIcon) ...[
+            Opacity(
+              opacity: 0.8,
+              child: AmityIconConfig().sentIcon(
+                iconSize: 10,
+                color: theme.baseColorShade2,
+              ),
+            ),
+            const SizedBox(width: 3),
+          ],
+          Text(
+            _formatTime(timestamp),
+            style: AmityTextStyle.captionSmall(theme.baseColorShade2),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildSideTextWidget(String text) {
@@ -97,8 +118,21 @@ extension GenericWidget on MessageBubbleView {
   }
 
   String _formatTime(DateTime timestamp) {
-    return "${timestamp.toLocal().hour}:${timestamp.toLocal().minute.toString().padLeft(2, '0')}";
+    final localTime = timestamp.toLocal();
+    int hour = localTime.hour;
+    int minute = localTime.minute;
+    String period = hour >= 12 ? 'PM' : 'AM';
+    
+    // Convert to 12-hour format
+    if (hour == 0) {
+      hour = 12; // 12 AM
+    } else if (hour > 12) {
+      hour = hour - 12; // Convert PM hours
+    }
+    
+    return "${hour}:${minute.toString().padLeft(2, '0')} $period";
   }
+
 
   Widget _buildUploadingIndicator() {
     return SizedBox(
