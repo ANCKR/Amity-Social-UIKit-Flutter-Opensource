@@ -6,6 +6,7 @@ import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/Skeleton/user_skeleton_list.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/bottom_sheet_menu.dart';
+import 'package:amity_uikit_beta_service/v4/core/ui/report/amity_report_interface.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/follow/user_relationship_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/follow/user_relationship_page.dart';
@@ -142,12 +143,13 @@ class UserFollowListComponent extends NewBaseComponent {
         onTap: () {
           Navigator.of(context).pop();
 
-          relationshipBloc.addEvent(UserModerationEvent(
-              action: UserModerationAction.report,
-              userId: userId,
-              toastBloc: context.read<AmityToastBloc>(),
-              successMessage: context.l10n.user_report_success,
-              errorMessage: context.l10n.user_report_error));
+          if (user != null) {
+            AmityReportInterface.reportUser(
+              context: context,
+              user: user,
+              theme: theme,
+            );
+          }
         });
 
     final unreportAction = BottomSheetMenuOption(

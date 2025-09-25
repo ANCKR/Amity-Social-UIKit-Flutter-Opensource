@@ -20,6 +20,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/bottom_sheet_menu.dart';
+import 'package:amity_uikit_beta_service/v4/core/ui/report/amity_report_interface.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 
 import 'bloc/user_profile_bloc.dart';
@@ -285,13 +286,13 @@ class AmityUserProfilePage extends NewBasePage {
         onTap: () {
           Navigator.of(context).pop();
 
-          profileBloc.addEvent(UserProfileUserModerationEvent(
-              action: UserModerationAction.report,
-              userId: userId,
-              toastBloc: context.read<AmityToastBloc>(),
-              successMessage: context.l10n.user_report_success,
-              errorMessage: context.l10n.user_report_error,
-              onError: () {}));
+          if (user != null) {
+            AmityReportInterface.reportUser(
+              context: context,
+              user: user,
+              theme: theme,
+            );
+          }
         });
 
     final unreportAction = BottomSheetMenuOption(

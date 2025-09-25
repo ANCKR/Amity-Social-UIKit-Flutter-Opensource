@@ -5,6 +5,7 @@ import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/bottom_sheet_menu.dart';
+import 'package:amity_uikit_beta_service/v4/core/ui/report/amity_report_interface.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
@@ -182,8 +183,11 @@ class AmityPostHeader extends StatelessWidget {
     List<BottomSheetMenuOption> userActions = [];
 
     onReport() => {
-          context.read<PostItemBloc>().add(PostItemFlag(
-              post: post, toastBloc: context.read<AmityToastBloc>()))
+          AmityReportInterface.reportPost(
+            context: context,
+            post: post,
+            theme: theme,
+          )
         };
     onUnReport() => {
           context.read<PostItemBloc>().add(PostItemUnFlag(

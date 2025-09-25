@@ -9,6 +9,7 @@ import 'package:amity_uikit_beta_service/v4/core/ui/bottom_sheet_menu.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/expandable_text.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/mention/mention_field.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/mention/mention_text_editing_controller.dart';
+import 'package:amity_uikit_beta_service/v4/core/ui/report/amity_report_interface.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_extention.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_item/bloc/comment_item_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_item/comment_action.dart';
@@ -745,10 +746,11 @@ class CommentItem extends BaseElement {
               comment: comment,
               toastBloc: context.read<AmityToastBloc>(),
             ))
-        : context.read<CommentItemBloc>().add(CommentItemFlag(
+        : AmityReportInterface.reportComment(
+              context: context,
               comment: comment,
-              toastBloc: context.read<AmityToastBloc>(),
-            ));
+              theme: theme,
+            );
 
     List<BottomSheetMenuOption> userActions = [];
 
