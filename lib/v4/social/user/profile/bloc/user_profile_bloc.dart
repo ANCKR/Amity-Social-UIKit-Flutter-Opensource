@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart' as global_relationship;
 import 'package:amity_uikit_beta_service/v4/social/user/follow/user_relationship_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/user_relationship_manager.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
@@ -10,12 +11,16 @@ import 'package:amity_uikit_beta_service/v4/utils/error_util.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'dart:async';
 
 part 'user_profile_events.dart';
 part 'user_profile_state.dart';
 
 class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
-  UserProfileBloc(String userId) : super(UserProfileState(userId: userId)) {
+  final global_relationship.UserRelationshipBloc? globalUserRelationshipBloc;
+  StreamSubscription<global_relationship.UserRelationshipState>? _relationshipSubscription;
+
+  UserProfileBloc(String userId, {this.globalUserRelationshipBloc}) : super(UserProfileState(userId: userId)) {
     on<UserProfileEventUpdated>((event, emit) async {
       emit(state.copyWith(user: event.user));
     });
@@ -83,6 +88,9 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
             toast.add(AmityToastShort(
                 message: event.successMessage, icon: AmityToastIcon.success));
 
+            // Sync with global relationship BLoC
+            globalUserRelationshipBloc?.updateBlockingStatus(userId, true);
+
             setupFollowInfo(userId);
           }, onError: () {
             toast.add(AmityToastShort(
@@ -93,6 +101,9 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
           relationshipManager.unblockUser(userId, onSuccess: () {
             toast.add(AmityToastShort(
                 message: event.successMessage, icon: AmityToastIcon.success));
+
+            // Sync with global relationship BLoC
+            globalUserRelationshipBloc?.updateBlockingStatus(userId, false);
 
             // Update follow info
             setupFollowInfo(userId);
@@ -133,6 +144,9 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
 
     // Follow Info
     setupFollowInfo(userId);
+
+    // Listen to global relationship changes
+    _setupRelationshipListener();
   }
 
   void setupFollowInfo(String userId) {
@@ -163,5 +177,32 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
     }).onError((error, stackTrace) {
       debugPrint("Error fetching user info: $error");
     });
+  }
+
+  @override
+  Future<void> close() {
+    _relationshipSubscription?.cancel();
+    return super.close();
+  }
+
+  /// Sets up listener for global relationship changes
+  void _setupRelationshipListener() {
+    if (globalUserRelationshipBloc != null) {
+      _relationshipSubscription = globalUserRelationshipBloc!.stream.listen((relationshipState) {
+        // Check if this user's blocking status changed
+        final isBlocked = relationshipState.isUserBlocked(state.userId);
+        
+        // If status changed, refresh the follow info to update UI
+        if (state.userFollowInfo != null) {
+          final currentStatus = state.userFollowInfo?.status;
+          final shouldBeBlocked = isBlocked;
+          
+          // Refresh if blocking status doesn't match
+          if ((currentStatus == AmityFollowStatus.BLOCKED) != shouldBeBlocked) {
+            setupFollowInfo(state.userId);
+          }
+        }
+      });
+    }
   }
 }

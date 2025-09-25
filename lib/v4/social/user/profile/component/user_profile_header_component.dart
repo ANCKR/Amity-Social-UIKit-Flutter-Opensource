@@ -80,13 +80,48 @@ class AmityUserProfileHeaderComponent extends NewBaseComponent {
                                 );
                               }
                             },
-                            child: AmityUserAvatar(
-                              avatarUrl: user?.avatarUrl,
-                              displayName: user?.displayName ?? "",
-                              isDeletedUser: user?.isDeleted ?? false,
-                              avatarSize: const Size(56, 56),
-                              characterTextStyle: AmityTextStyle.custom(
-                                  32, FontWeight.w400, Colors.white),
+                            child: Stack(
+                              clipBehavior: Clip.none,
+                              children: [
+                                AmityUserAvatar(
+                                  avatarUrl: user?.avatarUrl,
+                                  displayName: user?.displayName ?? "",
+                                  isDeletedUser: user?.isDeleted ?? false,
+                                  avatarSize: const Size(56, 56),
+                                  characterTextStyle: AmityTextStyle.custom(
+                                      32, FontWeight.w400, Colors.white),
+                                ),
+                                // Show blocked indicator if user is blocked (same as chat list)
+                                if (userFollowInfo?.status == AmityFollowStatus.BLOCKED)
+                                  Positioned(
+                                    right: -2,
+                                    bottom: -2,
+                                    child: Container(
+                                      width: 16,
+                                      height: 16,
+                                      decoration: BoxDecoration(
+                                        color: theme.alertColor,
+                                        shape: BoxShape.circle,
+                                        border: Border.all(
+                                          color: Colors.white,
+                                          width: 2,
+                                        ),
+                                      ),
+                                      child: Center(
+                                        child: SvgPicture.asset(
+                                          'assets/Icons/amity_ic_manage_blocked_user.svg',
+                                          package: 'amity_uikit_beta_service',
+                                          width: 8,
+                                          height: 8,
+                                          colorFilter: const ColorFilter.mode(
+                                            Colors.white,
+                                            BlendMode.srcIn,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                              ],
                             ),
                           ),
                           const SizedBox(

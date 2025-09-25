@@ -12,19 +12,13 @@ class UserRelationshipBloc extends Bloc<UserRelationshipEvent, UserRelationshipS
   UserRelationshipBloc() : super(const UserRelationshipState()) {
     
     on<UserRelationshipEventBlockStatusChanged>((event, emit) {
-      print('🔄 UserRelationshipBloc: ${event.isBlocked ? "Blocking" : "Unblocking"} user ${event.userId}');
-      
       final updatedBlockedUsers = Map<String, bool>.from(state.blockedUsers);
-      
-      print('📋 Before update - Blocked users: ${updatedBlockedUsers.keys.toList()}');
       
       if (event.isBlocked) {
         updatedBlockedUsers[event.userId] = true;
       } else {
         updatedBlockedUsers.remove(event.userId);
       }
-      
-      print('📋 After update - Blocked users: ${updatedBlockedUsers.keys.toList()}');
       
       emit(state.copyWith(blockedUsers: updatedBlockedUsers));
     });

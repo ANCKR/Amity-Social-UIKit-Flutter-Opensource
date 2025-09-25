@@ -4,6 +4,7 @@ import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart' as global_relationship;
 import 'package:amity_uikit_beta_service/v4/social/post_composer_page/post_composer_model.dart';
 import 'package:amity_uikit_beta_service/v4/social/post_composer_page/post_composer_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/post_poll_composer_page/post_poll_composer_page.dart';
@@ -35,7 +36,10 @@ class AmityUserProfilePage extends NewBasePage {
   @override
   Widget buildPage(BuildContext context) {
     return BlocProvider(
-      create: (context) => UserProfileBloc(userId),
+      create: (context) => UserProfileBloc(
+        userId,
+        globalUserRelationshipBloc: context.read<global_relationship.UserRelationshipBloc>(),
+      ),
       child: Builder(builder: (context) {
         return BlocBuilder<UserProfileBloc, UserProfileState>(
           builder: (context, state) {
