@@ -1,8 +1,10 @@
 import 'dart:async';
+import 'dart:developer';
 import 'dart:typed_data';
 
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/services/chat_service.dart';
 import 'package:amity_uikit_beta_service/v4/chat/message/parent_message_cache.dart';
 import 'package:amity_uikit_beta_service/v4/chat/message/replying_message.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
@@ -340,6 +342,26 @@ class ChatPageBloc extends Bloc<ChatPageEvent, ChatPageState> {
       event.message.markRead();
     });
 
+    on<ChatPageEventMarkChannelAsSeen>((event, emit) async {
+      // Use ChatService to mark channel as seen
+      // Note: ChatService should be initialized during app login
+      try {
+        await ChatService.instance.markChannelAsSeen(
+          channelId: event.channelId,
+          readToSegment: event.readToSegment,
+          callback: (success, error) {
+            if (success) {
+              log("✅ Channel marked as seen up to segment ${event.readToSegment}");
+            } else {
+              log("❌ Failed to mark channel as seen: $error");
+            }
+          },
+        );
+      } catch (e) {
+        log("❌ Error marking channel as seen: $e");
+      }
+    });
+
     on<ChatPageEventFlagUser>((event, emit) async {
       // Use our dedicated user property first, fallback to channelMember.user if needed
       AmityUser? user = state.user ?? state.channelMember?.user;
@@ -542,6 +564,17 @@ class ChatPageBloc extends Bloc<ChatPageEvent, ChatPageState> {
     }
 
     liveCollection?.getStreamController().stream.listen((event) {
+      // Mark channel as seen with the highest segment from latest messages
+      if (event.isNotEmpty) {
+        final latestMessage = event.first; // Messages are ordered newest first
+        if (latestMessage.channelSegment != null && latestMessage.channelId != null) {
+          addEvent(ChatPageEventMarkChannelAsSeen(
+            channelId: latestMessage.channelId!,
+            readToSegment: latestMessage.channelSegment!,
+          ));
+        }
+      }
+      
       addEvent(
           ChatPageEventChanged(messages: event, isFetching: state.isFetching));
     });

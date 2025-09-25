@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:developer';
 import 'dart:typed_data';
 
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/services/chat_service.dart';
 import 'package:amity_uikit_beta_service/v4/chat/message/bloc/chat_page_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/chat/message/parent_message_cache.dart';
 import 'package:amity_uikit_beta_service/v4/chat/message/replying_message.dart';
@@ -353,6 +355,26 @@ class AmityGroupChatPageBloc extends Bloc<GroupChatPageEvent, GroupChatPageState
       event.message.markRead();
     });
 
+    on<GroupChatPageEventMarkChannelAsSeen>((event, emit) async {
+      // Use ChatService to mark channel as seen
+      // Note: ChatService should be initialized during app login
+      try {
+        await ChatService.instance.markChannelAsSeen(
+          channelId: event.channelId,
+          readToSegment: event.readToSegment,
+          callback: (success, error) {
+            if (success) {
+              log("✅ Group channel marked as seen up to segment ${event.readToSegment}");
+            } else {
+              log("❌ Failed to mark group channel as seen: $error");
+            }
+          },
+        );
+      } catch (e) {
+        log("❌ Error marking group channel as seen: $e");
+      }
+    });
+
     if (channelId.isNotEmpty) {
       initLiveCollection(channelId);
       addEvent(GroupChatPageEventChannelIdChanged(channelId));
@@ -424,6 +446,17 @@ class AmityGroupChatPageBloc extends Bloc<GroupChatPageEvent, GroupChatPageState
     // }
 
     liveCollection?.getStreamController().stream.listen((event) {
+      // Mark channel as seen with the highest segment from latest messages
+      if (event.isNotEmpty) {
+        final latestMessage = event.first; // Messages are ordered newest first
+        if (latestMessage.channelSegment != null && latestMessage.channelId != null) {
+          addEvent(GroupChatPageEventMarkChannelAsSeen(
+            channelId: latestMessage.channelId!,
+            readToSegment: latestMessage.channelSegment!,
+          ));
+        }
+      }
+      
       addEvent(GroupChatPageEventChanged(
           messages: event, isFetching: state.isFetching));
     });

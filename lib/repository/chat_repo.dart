@@ -17,4 +17,10 @@ class AmityChatRepo {
       Function(AmityMessage?, String?) callback) async {}
 
   Future<void> reactMessage(String messageId) async {}
+
+  Future<void> markChannelAsSeen({
+    required String channelId,
+    required int readToSegment,
+    required Function(bool success, String? error) callback,
+  }) async {}
 }

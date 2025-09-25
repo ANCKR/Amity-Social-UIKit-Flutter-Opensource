@@ -201,4 +201,17 @@ class ChatPageEventBlockUser extends ChatPageEvent {
   List<Object> get props => [isUserBlocked];
 }
 
+class ChatPageEventMarkChannelAsSeen extends ChatPageEvent {
+  final String channelId;
+  final int readToSegment;
+
+  const ChatPageEventMarkChannelAsSeen({
+    required this.channelId,
+    required this.readToSegment,
+  });
+
+  @override
+  List<Object> get props => [channelId, readToSegment];
+}
+
 

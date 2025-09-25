@@ -23,6 +23,7 @@ import 'package:amity_uikit_beta_service/viewmodel/community_member_viewmodel.da
 import 'package:amity_uikit_beta_service/viewmodel/component_size_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/create_postV2_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/explore_page_viewmodel.dart';
+import 'package:amity_uikit_beta_service/services/chat_service.dart';
 import 'package:amity_uikit_beta_service/viewmodel/media_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/my_community_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/notification_viewmodel.dart';
@@ -57,6 +58,13 @@ enum AmityEndpointRegion {
 
 class AmityUIKit {
   static List<CameraDescription> cameras = <CameraDescription>[];
+  static AmityEndpointRegion? _currentRegion;
+  
+  /// Get the current region set during setup
+  static AmityEndpointRegion get currentRegion => _currentRegion ?? AmityEndpointRegion.us;
+  
+  /// Get the region code as string (us, sg, eu)
+  static String get regionCode => currentRegion.name;
 
   Future<void> setup({
     required String apikey,
@@ -66,6 +74,8 @@ class AmityUIKit {
     String? customMqttEndpoint,
     String? customUploadEndpoint,
   }) async {
+    // Store region for later use
+    _currentRegion = region;
     Stopwatch stopwatch = Stopwatch()..start();
     AmityRegionalHttpEndpoint? amityEndpoint;
     AmityRegionalMqttEndpoint? amityMqttEndpoint;
@@ -136,6 +146,21 @@ class AmityUIKit {
         .login(userID: userId, displayName: displayName, authToken: authToken)
         .then((value) async {
       log("login success");
+
+      print("authToken: $authToken");
+
+      // Automatically initialize ChatService after successful login
+      if (authToken != null) {
+        try {
+          print("initialize ChatService with authToken: $authToken");
+          ChatService.instance.initialize(authToken);
+          print("✅ ChatService automatically initialized with access token");
+        } catch (e) {
+          print("❌ Failed to initialize ChatService: $e");
+        }
+      } else {
+        print("⚠️ ChatService not initialized - no authToken provided");
+      }
 
       // await Provider.of<UserVM>(context, listen: false)
       //     .initAccessToken()

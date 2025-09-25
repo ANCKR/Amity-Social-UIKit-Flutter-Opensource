@@ -2,15 +2,17 @@ import 'dart:developer';
 
 import '../model/amity_channel_model.dart';
 import '../model/amity_message_model.dart';
-import '../model/amity_response_model.dart';
-import '../utils/env_manager.dart';
+import '../services/chat_service.dart';
 import 'chat_repo.dart';
 
 class AmityChatRepoImp implements AmityChatRepo {
+  final ChatService _chatService = ChatService.instance;
 
   @override
   Future<void> initRepo(String accessToken) async {
+    _chatService.initialize(accessToken);
   }
+
 
   @override
   Future<void> fetchChannelById(
@@ -95,5 +97,18 @@ class AmityChatRepoImp implements AmityChatRepo {
       {required String channelId,
       required Function(ChannelList? data, String? error) callback}) async {
     log("getChannelById...");
+  }
+
+  @override
+  Future<void> markChannelAsSeen({
+    required String channelId,
+    required int readToSegment,
+    required Function(bool success, String? error) callback,
+  }) async {
+    await _chatService.markChannelAsSeen(
+      channelId: channelId,
+      readToSegment: readToSegment,
+      callback: callback,
+    );
   }
 }

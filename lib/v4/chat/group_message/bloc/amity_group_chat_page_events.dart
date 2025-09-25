@@ -186,3 +186,16 @@ class GroupChatPageMemberRolesUpdated extends GroupChatPageEvent {
   @override
   List<Object> get props => [memberRoles];
 }
+
+class GroupChatPageEventMarkChannelAsSeen extends GroupChatPageEvent {
+  final String channelId;
+  final int readToSegment;
+
+  const GroupChatPageEventMarkChannelAsSeen({
+    required this.channelId,
+    required this.readToSegment,
+  });
+
+  @override
+  List<Object> get props => [channelId, readToSegment];
+}
