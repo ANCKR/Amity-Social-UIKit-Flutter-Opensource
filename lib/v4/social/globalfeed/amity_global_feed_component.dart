@@ -5,6 +5,8 @@ import 'package:amity_uikit_beta_service/v4/social/globalfeed/amity_empty_newsfe
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/bloc/global_feed_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
+import 'package:amity_uikit_beta_service/v4/social/post/common/shared_post_wrapper.dart';
+import 'package:amity_uikit_beta_service/v4/utils/post_action_helper.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/target/amity_story_tab_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/target/amity_story_tab_component_type.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
@@ -88,22 +90,33 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                               },
                               child: Column(
                                 children: [
-                                  AmityPostContentComponent(
-                                      style:
-                                          AmityPostContentComponentStyle.feed,
-                                      post: amityPost,
-                                      category: (state.pinnedPostIds
-                                              .contains(amityPost.postId))
-                                          ? AmityPostCategory.globalFeatured
-                                          : AmityPostCategory.general,
-                                      key: uniqueKey,
-                                      hideTarget: false,
-                                      action: AmityPostAction(
-                                        onAddReaction: (String) {},
-                                        onRemoveReaction: (String) {},
-                                        onPostDeleted: (AmityPost post) {},
-                                        onPostUpdated: (post) {},
-                                      )),
+                                  EnhancedPostWrapper(
+                                    post: amityPost,
+                                    category: (state.pinnedPostIds
+                                            .contains(amityPost.postId))
+                                        ? AmityPostCategory.globalFeatured
+                                        : AmityPostCategory.general,
+                                    hideTarget: false,
+                                    postBuilder: (AmityPost post, bool isOriginalInShared) {
+                                      return AmityPostContentComponent(
+                                        style: AmityPostContentComponentStyle.feed,
+                                        post: post,
+                                        category: (state.pinnedPostIds
+                                                .contains(post.postId))
+                                            ? AmityPostCategory.globalFeatured
+                                            : AmityPostCategory.general,
+                                        key: uniqueKey,
+                                        hideTarget: isOriginalInShared,
+                                        action: AmityPostAction(
+                                          onAddReaction: (String) {},
+                                          onRemoveReaction: (String) {},
+                                          onPostDeleted: (AmityPost post) {},
+                                          onPostUpdated: (post) {},
+                                          onSharePost: PostActionHelper.createShareHandler(context, theme),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                   const SizedBox(height: 8),
                                 ],
                               ),

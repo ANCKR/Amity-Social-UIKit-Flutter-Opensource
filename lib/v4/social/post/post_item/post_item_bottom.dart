@@ -54,6 +54,13 @@ class PostItemBottom extends NewBaseComponent {
               PostReactionButton(post: post, action: action, isReacting: isReacting, showLabel: hideReactionCount, isOptimisticUi: isOptimisticUi,),
               const SizedBox(width: 12),
               getCommentButton(context, hideReactionCount),
+              if (action.onSharePost != null) ...[
+                const SizedBox(width: 12),
+                GestureDetector(
+                  onTap: () => action.onSharePost?.call(post),
+                  child: getShareButton(context),
+                ),
+              ],
             ],
           )
         )

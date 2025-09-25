@@ -13,7 +13,9 @@ import 'package:amity_uikit_beta_service/v4/social/post/post_detail/amity_post_d
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/bloc/post_item_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/post_item_bottom.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/post_item_bottom_nonmember.dart';
+import 'package:amity_uikit_beta_service/v4/social/post/common/shared_post_wrapper.dart';
 import 'package:amity_uikit_beta_service/v4/utils/network_image.dart';
+import 'package:amity_uikit_beta_service/v4/utils/post_action_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -43,12 +45,21 @@ class PostItem extends NewBaseComponent {
       create: (context) => PostItemBloc(context, post),
       child:
           BlocBuilder<PostItemBloc, PostItemState>(builder: (context, state) {
-        return renderPost(
-            context: context,
-            post: state.post,
-            category: category,
-            hideTarget: hideTarget,
-            isReacting: state.isReacting);
+        // Check if this is a shared post and render accordingly
+        return EnhancedPostWrapper(
+          post: state.post,
+          category: category,
+          hideTarget: hideTarget,
+          postBuilder: (AmityPost post, bool isOriginalInShared) {
+            return renderPost(
+                context: context,
+                post: post,
+                category: category,
+                hideTarget: hideTarget || isOriginalInShared,
+                isReacting: state.isReacting,
+                isOriginalInShared: isOriginalInShared);
+          },
+        );
       }),
     );
   }
@@ -59,6 +70,7 @@ class PostItem extends NewBaseComponent {
     required AmityPostCategory category,
     required bool hideTarget,
     bool isReacting = false,
+    bool isOriginalInShared = false,
   }) {
     onAddReaction(reactionType) {
       context
@@ -80,12 +92,14 @@ class PostItem extends NewBaseComponent {
         ? action!.copyWith(
             onAddReaction: onAddReaction,
             onRemoveReaction: onRemoveReaction,
-            onPostUpdated: onPostUpdated)
+            onPostUpdated: onPostUpdated,
+            onSharePost: PostActionHelper.createShareHandler(context, theme))
         : AmityPostAction(
             onAddReaction: onAddReaction,
             onRemoveReaction: onRemoveReaction,
-            onPostDeleted: (String) {},
-            onPostUpdated: onPostUpdated);
+            onPostDeleted: (_) {},
+            onPostUpdated: onPostUpdated,
+            onSharePost: PostActionHelper.createShareHandler(context, theme));
 
     var page = AmityPostDetailPage(
       postId: post.postId!,

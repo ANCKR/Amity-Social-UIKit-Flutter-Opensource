@@ -10,6 +10,7 @@ import 'package:amity_uikit_beta_service/v4/social/post/post_detail/post_detail_
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/bloc/post_item_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/post_item_bottom.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/post_item_bottom_nonmember.dart';
+import 'package:amity_uikit_beta_service/v4/utils/post_action_helper.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -50,12 +51,14 @@ class PostDetail extends NewBaseComponent {
         var postAction = (action != null)
             ? action!.copyWith(
                 onAddReaction: onAddReaction,
-                onRemoveReaction: onRemoveReaction)
+                onRemoveReaction: onRemoveReaction,
+                onSharePost: PostActionHelper.createShareHandler(context, theme))
             : AmityPostAction(
                 onAddReaction: onAddReaction,
                 onRemoveReaction: onRemoveReaction,
                 onPostDeleted: (_) {},
-                onPostUpdated: (_) {});
+                onPostUpdated: (_) {},
+                onSharePost: PostActionHelper.createShareHandler(context, theme));
         return Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,

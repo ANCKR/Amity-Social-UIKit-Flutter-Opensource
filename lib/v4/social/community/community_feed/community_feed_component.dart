@@ -6,6 +6,7 @@ import 'package:amity_uikit_beta_service/v4/social/community/community_feed/bloc
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/amity_global_feed_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
+import 'package:amity_uikit_beta_service/v4/social/post/common/shared_post_wrapper.dart';
 import 'package:amity_uikit_beta_service/v4/utils/shimmer_widget.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
@@ -201,22 +202,31 @@ class CommunityFeedComponent extends NewBaseComponent {
         child: Column(
           children: [
             if (index > 0) const SizedBox(height: 8),
-            AmityPostContentComponent(
-                style: AmityPostContentComponentStyle.feed,
-                post: amityPost,
-                key: uniqueKey,
-                category:
-                    (state.pins.map((e) => e.postId).contains(amityPost.postId))
-                        ? AmityPostCategory.announcementAndPin
-                        : AmityPostCategory.announcement,
-                hideTarget: true,
-                hideMenu: !state.isJoined,
-                action: AmityPostAction(
-                  onAddReaction: (String) {},
-                  onRemoveReaction: (String) {},
-                  onPostDeleted: (AmityPost post) {},
-                  onPostUpdated: (post) {},
-                )),
+            EnhancedPostWrapper(
+              post: amityPost,
+              category: (state.pins.map((e) => e.postId).contains(amityPost.postId))
+                  ? AmityPostCategory.announcementAndPin
+                  : AmityPostCategory.announcement,
+              hideTarget: true,
+              postBuilder: (AmityPost post, bool isOriginalInShared) {
+                return AmityPostContentComponent(
+                  style: AmityPostContentComponentStyle.feed,
+                  post: post,
+                  key: uniqueKey,
+                  category: (state.pins.map((e) => e.postId).contains(post.postId))
+                      ? AmityPostCategory.announcementAndPin
+                      : AmityPostCategory.announcement,
+                  hideTarget: isOriginalInShared,
+                  hideMenu: !state.isJoined,
+                  action: AmityPostAction(
+                    onAddReaction: (String) {},
+                    onRemoveReaction: (String) {},
+                    onPostDeleted: (AmityPost post) {},
+                    onPostUpdated: (post) {},
+                  ),
+                );
+              },
+            ),
           ],
         ),
       );
@@ -242,22 +252,31 @@ class CommunityFeedComponent extends NewBaseComponent {
         },
         child: Column(
           children: [
-            AmityPostContentComponent(
-                style: AmityPostContentComponentStyle.feed,
-                post: amityPost,
-                category:
-                    (state.pins.map((e) => e.postId).contains(amityPost.postId))
-                        ? AmityPostCategory.pin
-                        : AmityPostCategory.general,
-                key: uniqueKey,
-                hideTarget: true,
-                hideMenu: !state.isJoined,
-                action: AmityPostAction(
-                  onAddReaction: (String) {},
-                  onRemoveReaction: (String) {},
-                  onPostDeleted: (AmityPost post) {},
-                  onPostUpdated: (post) {},
-                )),
+            EnhancedPostWrapper(
+              post: amityPost,
+              category: (state.pins.map((e) => e.postId).contains(amityPost.postId))
+                  ? AmityPostCategory.pin
+                  : AmityPostCategory.general,
+              hideTarget: true,
+              postBuilder: (AmityPost post, bool isOriginalInShared) {
+                return AmityPostContentComponent(
+                  style: AmityPostContentComponentStyle.feed,
+                  post: post,
+                  category: (state.pins.map((e) => e.postId).contains(post.postId))
+                      ? AmityPostCategory.pin
+                      : AmityPostCategory.general,
+                  key: uniqueKey,
+                  hideTarget: isOriginalInShared,
+                  hideMenu: !state.isJoined,
+                  action: AmityPostAction(
+                    onAddReaction: (String) {},
+                    onRemoveReaction: (String) {},
+                    onPostDeleted: (AmityPost post) {},
+                    onPostUpdated: (post) {},
+                  ),
+                );
+              },
+            ),
             const SizedBox(height: 8),
           ],
         ),
