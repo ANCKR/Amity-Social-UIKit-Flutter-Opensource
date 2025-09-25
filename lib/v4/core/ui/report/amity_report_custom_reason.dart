@@ -3,6 +3,7 @@ import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/report/bloc/amity_report_cubit.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/report/reportable_content.dart';
+import 'package:amity_uikit_beta_service/v4/core/ui/report/amity_report_evidence_upload.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -216,6 +217,12 @@ class _CustomReasonView extends StatelessWidget {
                 ),
               ],
 
+              const SizedBox(height: 24),
+
+              // Evidence upload section
+              AmityReportEvidenceUpload(theme: theme),
+              const SizedBox(height: 16),
+              Container(height: 1, color: theme.baseColorShade4),
               const SizedBox(height: 24),
 
               // Submit button

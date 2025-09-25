@@ -7,6 +7,7 @@ export 'amity_report_interface.dart';
 // Core components for building custom report flows
 export 'amity_report_reason_selector.dart';
 export 'amity_report_custom_reason.dart';
+export 'amity_report_evidence_upload.dart';
 
 // Content abstraction for different reportable types
 export 'reportable_content.dart';

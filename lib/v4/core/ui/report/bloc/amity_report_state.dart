@@ -6,6 +6,8 @@ class AmityReportState extends Equatable {
   final bool isSubmitting;
   final bool isSuccess;
   final String? errorMessage;
+  final List<XFile> evidenceFiles;
+  final bool isUploadingEvidence;
 
   const AmityReportState({
     this.selectedReason,
@@ -13,6 +15,8 @@ class AmityReportState extends Equatable {
     this.isSubmitting = false,
     this.isSuccess = false,
     this.errorMessage,
+    this.evidenceFiles = const [],
+    this.isUploadingEvidence = false,
   });
 
   AmityReportState copyWith({
@@ -21,6 +25,8 @@ class AmityReportState extends Equatable {
     bool? isSubmitting,
     bool? isSuccess,
     String? errorMessage,
+    List<XFile>? evidenceFiles,
+    bool? isUploadingEvidence,
   }) {
     return AmityReportState(
       selectedReason: selectedReason ?? this.selectedReason,
@@ -28,6 +34,8 @@ class AmityReportState extends Equatable {
       isSubmitting: isSubmitting ?? this.isSubmitting,
       isSuccess: isSuccess ?? this.isSuccess,
       errorMessage: errorMessage ?? this.errorMessage,
+      evidenceFiles: evidenceFiles ?? this.evidenceFiles,
+      isUploadingEvidence: isUploadingEvidence ?? this.isUploadingEvidence,
     );
   }
 
@@ -56,5 +64,7 @@ class AmityReportState extends Equatable {
         isSubmitting,
         isSuccess,
         errorMessage,
+        evidenceFiles,
+        isUploadingEvidence,
       ];
 }

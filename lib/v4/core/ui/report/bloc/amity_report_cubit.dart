@@ -6,6 +6,7 @@ import 'package:amity_uikit_beta_service/v4/core/ui/report/report_reasons.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 part 'amity_report_state.dart';
 
@@ -18,6 +19,7 @@ class AmityReportCubit extends Cubit<AmityReportState> {
 
   final TextEditingController textController = TextEditingController();
   final FocusNode focusNode = FocusNode();
+  final ImagePicker _imagePicker = ImagePicker();
 
   AmityReportCubit({
     required this.content,
@@ -59,6 +61,129 @@ class AmityReportCubit extends Cubit<AmityReportState> {
   void reset() {
     textController.clear();
     emit(const AmityReportState());
+  }
+
+  /// Pick images from gallery
+  Future<void> pickImages() async {
+    try {
+      emit(state.copyWith(isUploadingEvidence: true));
+      
+      final List<XFile> pickedFiles = await _imagePicker.pickMultipleMedia(
+        imageQuality: 80,
+      );
+      
+      if (pickedFiles.isNotEmpty) {
+        final currentFiles = List<XFile>.from(state.evidenceFiles);
+        
+        // Add new files, limiting to max 5 files total
+        for (var file in pickedFiles) {
+          if (currentFiles.length < 5) {
+            currentFiles.add(file);
+          }
+        }
+        
+        emit(state.copyWith(
+          evidenceFiles: currentFiles,
+          isUploadingEvidence: false,
+        ));
+      } else {
+        emit(state.copyWith(isUploadingEvidence: false));
+      }
+    } catch (e) {
+      emit(state.copyWith(
+        isUploadingEvidence: false,
+        errorMessage: 'Failed to pick images. Please try again.',
+      ));
+    }
+  }
+
+  /// Pick images from camera
+  Future<void> pickImageFromCamera() async {
+    try {
+      emit(state.copyWith(isUploadingEvidence: true));
+      
+      final XFile? pickedFile = await _imagePicker.pickImage(
+        source: ImageSource.camera,
+        imageQuality: 80,
+      );
+      
+      if (pickedFile != null) {
+        final currentFiles = List<XFile>.from(state.evidenceFiles);
+        
+        // Add new file if under limit
+        if (currentFiles.length < 5) {
+          currentFiles.add(pickedFile);
+          
+          emit(state.copyWith(
+            evidenceFiles: currentFiles,
+            isUploadingEvidence: false,
+          ));
+        } else {
+          emit(state.copyWith(
+            isUploadingEvidence: false,
+            errorMessage: 'Maximum 5 files allowed for evidence.',
+          ));
+        }
+      } else {
+        emit(state.copyWith(isUploadingEvidence: false));
+      }
+    } catch (e) {
+      emit(state.copyWith(
+        isUploadingEvidence: false,
+        errorMessage: 'Failed to take photo. Please try again.',
+      ));
+    }
+  }
+
+  /// Pick video from gallery
+  Future<void> pickVideo() async {
+    try {
+      emit(state.copyWith(isUploadingEvidence: true));
+      
+      final XFile? pickedFile = await _imagePicker.pickVideo(
+        source: ImageSource.gallery,
+      );
+      
+      if (pickedFile != null) {
+        final currentFiles = List<XFile>.from(state.evidenceFiles);
+        
+        // Add new file if under limit
+        if (currentFiles.length < 5) {
+          currentFiles.add(pickedFile);
+          
+          emit(state.copyWith(
+            evidenceFiles: currentFiles,
+            isUploadingEvidence: false,
+          ));
+        } else {
+          emit(state.copyWith(
+            isUploadingEvidence: false,
+            errorMessage: 'Maximum 5 files allowed for evidence.',
+          ));
+        }
+      } else {
+        emit(state.copyWith(isUploadingEvidence: false));
+      }
+    } catch (e) {
+      emit(state.copyWith(
+        isUploadingEvidence: false,
+        errorMessage: 'Failed to pick video. Please try again.',
+      ));
+    }
+  }
+
+  /// Remove evidence file at index
+  void removeEvidenceFile(int index) {
+    if (index >= 0 && index < state.evidenceFiles.length) {
+      final updatedFiles = List<XFile>.from(state.evidenceFiles);
+      updatedFiles.removeAt(index);
+      emit(state.copyWith(evidenceFiles: updatedFiles));
+    }
+  }
+
+  /// Clear all evidence files
+  void clearEvidenceFiles() {
+    emit(state.copyWith(evidenceFiles: const []));
   }
 
   /// Submit the report
