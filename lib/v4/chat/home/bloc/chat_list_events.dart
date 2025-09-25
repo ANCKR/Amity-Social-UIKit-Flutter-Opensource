@@ -64,3 +64,16 @@ class ChatListEventChannelUnarchive extends ChatListEvent {
 }
 
 class ChatListEventResetDialogState extends ChatListEvent {}
+
+class ChatListEventFetchBlockingStatus extends ChatListEvent {
+  const ChatListEventFetchBlockingStatus();
+}
+
+class ChatListEventBlockingStatusUpdated extends ChatListEvent {
+  final Map<String, bool> blockingStatus;
+
+  const ChatListEventBlockingStatusUpdated({required this.blockingStatus});
+
+  @override
+  List<Object> get props => [blockingStatus];
+}

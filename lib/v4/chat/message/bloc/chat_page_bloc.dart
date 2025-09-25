@@ -7,6 +7,7 @@ import 'package:amity_uikit_beta_service/v4/chat/message/parent_message_cache.da
 import 'package:amity_uikit_beta_service/v4/chat/message/replying_message.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:equatable/equatable.dart';
@@ -27,10 +28,11 @@ class ChatPageBloc extends Bloc<ChatPageEvent, ChatPageState> {
   bool _isScrollListenerAdded = false;
 
   final AmityToastBloc toastBloc;
+  final UserRelationshipBloc? userRelationshipBloc;
   BuildContext _context;
 
   ChatPageBloc(String? channelId, String? userId, String? userDisplayName,
-      String? avatarUrl, this.toastBloc, this._context)
+      String? avatarUrl, this.toastBloc, this.userRelationshipBloc, this._context)
       : super(ChatPageStateInitial(
             channelId: channelId ?? "",
             userDisplayName: userDisplayName,
@@ -437,6 +439,9 @@ class ChatPageBloc extends Bloc<ChatPageEvent, ChatPageState> {
           // Update state to reflect blocking
           addEvent(const ChatPageFollowInfoUpdated(isUserBlocked: true));
 
+          // Notify global relationship BLoC about the change
+          userRelationshipBloc?.updateBlockingStatus(user.userId!, true);
+
           // Use a small delay before showing toast
           await Future.delayed(const Duration(milliseconds: 300));
 
@@ -452,6 +457,9 @@ class ChatPageBloc extends Bloc<ChatPageEvent, ChatPageState> {
 
           // Update state to reflect unblocking
           addEvent(const ChatPageFollowInfoUpdated(isUserBlocked: false));
+
+          // Notify global relationship BLoC about the change
+          userRelationshipBloc?.updateBlockingStatus(user.userId!, false);
 
           // Use a small delay before showing toast
           await Future.delayed(const Duration(milliseconds: 300));

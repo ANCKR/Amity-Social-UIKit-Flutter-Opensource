@@ -2,6 +2,7 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/base_chat_list_component.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/bloc/chat_list_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,7 +20,8 @@ class AmityAllChatListComponent extends BaseChatListComponent {
       create: (context) => ChatListBloc(
           chatListType: ChatListType.CONVERSATION,
           channelTypes: [AmityChannelType.CONVERSATION, AmityChannelType.COMMUNITY],
-          toastBloc: context.read<AmityToastBloc>()),
+          toastBloc: context.read<AmityToastBloc>(),
+          userRelationshipBloc: context.read<UserRelationshipBloc>()),
       child: super.buildComponent(context),
     );
   }

@@ -11,6 +11,7 @@ import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/animation/bounce_animator.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/animation/simple_ticker_provider.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
@@ -65,6 +66,7 @@ class AmityChatPage extends NewBasePage {
                 userDisplayName,
                 avatarUrl,
                 context.read<AmityToastBloc>(),
+                context.read<UserRelationshipBloc>(),
                 context),
             child: BlocBuilder<ChatPageBloc, ChatPageState>(
               key: Key("${channelId ?? ""}_${userId ?? ""}"),

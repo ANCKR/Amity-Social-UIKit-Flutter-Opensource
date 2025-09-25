@@ -10,7 +10,6 @@ import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
 import 'package:amity_uikit_beta_service/v4/core/channel_avatar.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
-import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/utils/amity_dialog.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
@@ -91,6 +90,7 @@ class BaseChatListComponent extends NewBaseComponent {
                     final channel = state.channels[index];
                     final channelMember = state
                         .channelMembers[channel.channelId]; // Other participant
+                    final isBlocked = state.blockingStatus[channelMember?.userId] ?? false;
 
                     return GestureDetector(
                         behavior: HitTestBehavior.translucent,
@@ -125,7 +125,7 @@ class BaseChatListComponent extends NewBaseComponent {
                           }
                         },
                         child: renderChatListItem(
-                            context, chatListType, channel, channelMember));
+                            context, chatListType, channel, channelMember, isBlocked));
                   },
                 ),
               ),
@@ -147,12 +147,13 @@ class BaseChatListComponent extends NewBaseComponent {
   }
 
   Widget renderChatListItem(BuildContext context, ChatListType chatListType,
-      AmityChannel channel, AmityChannelMember? channelMember) {
+      AmityChannel channel, AmityChannelMember? channelMember, bool isBlocked) {
     if (chatListType == ChatListType.CONVERSATION) {
       return renderDismissibleListItem(
           chatListType,
           channel,
           channelMember,
+          isBlocked,
           "assets/Icons/amity_ic_channel_archive.svg",
           context.l10n.chat_archive, (direction) {
         context.read<ChatListBloc>().addEvent(
@@ -163,13 +164,14 @@ class BaseChatListComponent extends NewBaseComponent {
           chatListType,
           channel,
           channelMember,
+          isBlocked,
           "assets/Icons/amity_ic_channel_unarchive.svg",
           context.l10n.chat_unarchive, (direction) {
         context.read<ChatListBloc>().addEvent(
             ChatListEventChannelUnarchive(channelId: channel.channelId!));
       });
     } else {
-      return ChatListItem(channel: channel, channelMember: channelMember);
+      return ChatListItem(channel: channel, channelMember: channelMember, isBlocked: isBlocked);
     }
   }
 
@@ -177,6 +179,7 @@ class BaseChatListComponent extends NewBaseComponent {
       ChatListType chatListType,
       AmityChannel channel,
       AmityChannelMember? channelMember,
+      bool isBlocked,
       String assetIcon,
       String actionText,
       void Function(DismissDirection)? onDismissed) {
@@ -218,13 +221,14 @@ class BaseChatListComponent extends NewBaseComponent {
             ),
           );
         }),
-        child: ChatListItem(channel: channel, channelMember: channelMember));
+        child: ChatListItem(channel: channel, channelMember: channelMember, isBlocked: isBlocked));
   }
 }
 
 class ChatListItem extends BaseElement {
   final AmityChannel channel;
   final AmityChannelMember? channelMember; // Other member
+  final bool isBlocked;
 
   ChatListItem({
     Key? key,
@@ -232,6 +236,7 @@ class ChatListItem extends BaseElement {
     String? componentId,
     required this.channel,
     required this.channelMember,
+    required this.isBlocked,
   }) : super(
           key: key,
           pageId: pageId,
@@ -335,7 +340,37 @@ class ChatListItem extends BaseElement {
               showPrivateBadge: (channel.isPublic == false),
             )
           else
-            AmityChatAvatar(channelMember: channelMember),
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                AmityChatAvatar(channelMember: channelMember),
+                if (isBlocked)
+                  Positioned(
+                    right: -2,
+                    bottom: -2,
+                    child: Container(
+                      width: 18,
+                      height: 18,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: theme.alertColor,
+                      ),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          'assets/Icons/amity_ic_manage_blocked_user.svg',
+                          package: 'amity_uikit_beta_service',
+                          width: 12,
+                          height: 12,
+                          colorFilter: const ColorFilter.mode(
+                            Colors.white,
+                            BlendMode.srcIn,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
           const SizedBox(width: 12),
           Expanded(
             child: Column(

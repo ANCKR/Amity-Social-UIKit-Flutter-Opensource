@@ -3,6 +3,7 @@ part of 'chat_list_bloc.dart';
 class ChatListState extends Equatable {
   final List<AmityChannel> channels;
   final Map<String, AmityChannelMember?> channelMembers;
+  final Map<String, bool> blockingStatus;
   final bool isLoading;
   final bool isPushNotificationEnabled;
   final AmityErrorInfo? error;
@@ -12,6 +13,7 @@ class ChatListState extends Equatable {
   const ChatListState({
     this.channels = const [],
     this.channelMembers = const {},
+    this.blockingStatus = const {},
     this.isLoading = true,
     this.isPushNotificationEnabled = true,
     this.error,
@@ -22,6 +24,7 @@ class ChatListState extends Equatable {
   ChatListState copyWith({
     List<AmityChannel>? channels,
     Map<String, AmityChannelMember?>? channelMembers,
+    Map<String, bool>? blockingStatus,
     bool? isLoading,
     bool? isPushNotificationEnabled,
     AmityErrorInfo? error,
@@ -31,6 +34,7 @@ class ChatListState extends Equatable {
     return ChatListState(
       channels: channels ?? this.channels,
       channelMembers: channelMembers ?? this.channelMembers,
+      blockingStatus: blockingStatus ?? this.blockingStatus,
       isLoading: isLoading ?? this.isLoading,
       isPushNotificationEnabled:
           isPushNotificationEnabled ?? this.isPushNotificationEnabled,
@@ -45,6 +49,7 @@ class ChatListState extends Equatable {
   List<Object?> get props => [
         channels,
         channelMembers,
+        blockingStatus,
         isLoading,
         isPushNotificationEnabled,
         error,

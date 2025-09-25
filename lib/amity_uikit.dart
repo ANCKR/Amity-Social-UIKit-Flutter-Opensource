@@ -8,6 +8,7 @@ import 'package:amity_uikit_beta_service/l10n/generated/app_localizations.dart';
 import 'package:amity_uikit_beta_service/utils/navigation_key.dart';
 import 'package:amity_uikit_beta_service/v4/chat/message/parent_message_cache.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/bloc/global_feed_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/create/bloc/create_story_page_bloc.dart';
@@ -226,6 +227,7 @@ class AmityUIKitProvider extends StatelessWidget {
       providers: [
         BlocProvider<GlobalFeedBloc>(create: (context) => GlobalFeedBloc()),
         BlocProvider<AmityToastBloc>(create: (context) => AmityToastBloc()),
+        BlocProvider<UserRelationshipBloc>(create: (context) => UserRelationshipBloc()),
         BlocProvider<SocialHomeBloc>(create: (context) => SocialHomeBloc()),
         BlocProvider<CreateStoryPageBloc>(
             create: (context) => CreateStoryPageBloc()),

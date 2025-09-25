@@ -1,11 +1,13 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/base_chat_list_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_relationship/user_relationship_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
 import 'package:amity_uikit_beta_service/v4/utils/error_util.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'dart:async';
 
 part 'chat_list_events.dart';
 part 'chat_list_state.dart';
@@ -14,10 +16,12 @@ class ChatListBloc extends Bloc<ChatListEvent, ChatListState> {
   ChatListType chatListType;
   List<AmityChannelType> channelTypes;
   AmityToastBloc toastBloc;
+  UserRelationshipBloc? userRelationshipBloc;
 
   late final LiveCollectionStream<AmityChannel> channelLiveCollection;
+  StreamSubscription<UserRelationshipState>? _relationshipSubscription;
 
-  ChatListBloc({required this.chatListType, required this.channelTypes, required this.toastBloc})
+  ChatListBloc({required this.chatListType, required this.channelTypes, required this.toastBloc, this.userRelationshipBloc})
       : super(const ChatListState()) {
     if (chatListType == ChatListType.ARCHIVED) {
       channelLiveCollection =
@@ -75,6 +79,9 @@ class ChatListBloc extends Bloc<ChatListEvent, ChatListState> {
       emit(state.copyWith(
         channelMembers: membersMap,
       ));
+
+      // Fetch blocking status after members are loaded
+      addEvent(const ChatListEventFetchBlockingStatus());
     });
 
     on<ChatListEventLoadingStateUpdated>((event, emit) {
@@ -139,10 +146,28 @@ class ChatListBloc extends Bloc<ChatListEvent, ChatListState> {
       ));
     });
 
+    on<ChatListEventFetchBlockingStatus>((event, emit) async {
+      final userIds = _extractUserIds();
+      if (userIds.isEmpty) return;
+
+      final blockingStatus = await _fetchBlockingStatusConcurrently(userIds);
+      addEvent(ChatListEventBlockingStatusUpdated(blockingStatus: blockingStatus));
+    });
+
+    on<ChatListEventBlockingStatusUpdated>((event, emit) {
+      print('📱 ChatListBloc: Updating blocking status - ${event.blockingStatus.keys.toList()}');
+      emit(state.copyWith(
+        blockingStatus: event.blockingStatus,
+      ));
+    });
+
     channelLiveCollection.getStream().listen((event) {
       addEvent(ChatListEventLoadingStateUpdated(isLoading: event.isFetching));
       addEvent(ChatListEventChannelsUpdated(channels: event.data));
     });
+
+    // Listen to global relationship changes
+    _setupRelationshipListener();
 
     // Query for notification settings
     fetchNotificationSettings();
@@ -151,6 +176,7 @@ class ChatListBloc extends Bloc<ChatListEvent, ChatListState> {
   @override
   Future<void> close() {
     channelLiveCollection.dispose();
+    _relationshipSubscription?.cancel();
     return super.close();
   }
 
@@ -162,5 +188,72 @@ class ChatListBloc extends Bloc<ChatListEvent, ChatListState> {
         (settings.isEnabled ?? true) && (chatModuleSettings?.isEnabled ?? true);
     addEvent(ChatListPushNotificationEvent(
         isPushNotificationEnabled: isPushNotificationEnabled));
+  }
+
+  /// Extracts unique user IDs from channel members, excluding current user
+  List<String> _extractUserIds() {
+    final Set<String> uniqueUserIds = <String>{};
+    final currentUserId = AmityCoreClient.getUserId();
+    
+    for (final member in state.channelMembers.values) {
+      if (member?.userId != null && 
+          member!.userId != currentUserId &&
+          !(member.isDeleted ?? false)) {
+        uniqueUserIds.add(member.userId!);
+      }
+    }
+    
+    return uniqueUserIds.toList();
+  }
+
+  /// Fetches blocking status for multiple users concurrently
+  Future<Map<String, bool>> _fetchBlockingStatusConcurrently(List<String> userIds) async {
+    final Map<String, bool> blockingStatus = <String, bool>{};
+    
+    try {
+      // Use Future.wait for concurrent API calls to improve performance
+      final List<bool> results = await Future.wait(
+        userIds.map(_fetchSingleUserBlockingStatus),
+      );
+      
+      // Map results back to user IDs
+      for (int i = 0; i < userIds.length; i++) {
+        blockingStatus[userIds[i]] = results[i];
+      }
+    } catch (error) {
+      // If concurrent fetching fails, fallback to default values
+      for (final userId in userIds) {
+        blockingStatus[userId] = false;
+      }
+    }
+    
+    return blockingStatus;
+  }
+
+  /// Fetches blocking status for a single user
+  Future<bool> _fetchSingleUserBlockingStatus(String userId) async {
+    try {
+      final followInfo = await AmityCoreClient.newUserRepository()
+          .relationship()
+          .getFollowInfo(userId);
+      return followInfo.status == AmityFollowStatus.BLOCKED;
+    } catch (error) {
+      // Default to not blocked if there's an error
+      return false;
+    }
+  }
+
+  /// Sets up listener for global relationship changes
+  void _setupRelationshipListener() {
+    if (userRelationshipBloc != null) {
+      _relationshipSubscription = userRelationshipBloc!.stream.listen((relationshipState) {
+        print('👂 ChatListBloc: Received relationship update - Blocked users: ${relationshipState.blockedUsers.keys.toList()}');
+        // Always update our local blocking status with the global state
+        // This ensures both blocking AND unblocking actions are synchronized
+        addEvent(ChatListEventBlockingStatusUpdated(
+          blockingStatus: relationshipState.blockedUsers,
+        ));
+      });
+    }
   }
 }
