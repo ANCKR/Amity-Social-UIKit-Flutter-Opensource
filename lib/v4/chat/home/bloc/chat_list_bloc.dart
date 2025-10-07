@@ -155,7 +155,6 @@ class ChatListBloc extends Bloc<ChatListEvent, ChatListState> {
     });
 
     on<ChatListEventBlockingStatusUpdated>((event, emit) {
-      print('📱 ChatListBloc: Updating blocking status - ${event.blockingStatus.keys.toList()}');
       emit(state.copyWith(
         blockingStatus: event.blockingStatus,
       ));

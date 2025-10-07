@@ -1,8 +1,6 @@
-import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/chat_home_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
-import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/community_setup_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/create_post_menu_component.dart';
 import 'package:flutter/material.dart';
@@ -25,10 +23,6 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
     
     return AppBar(
       automaticallyImplyLeading: false,
-      title: Text(
-        context.l10n.group_title,
-        style: AmityTextStyle.title(theme.baseColor),
-      ),
       centerTitle: false,
       backgroundColor: Colors.transparent,
       elevation: 0,
