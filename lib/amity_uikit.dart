@@ -287,54 +287,12 @@ class AmityUIKitProvider extends StatelessWidget {
           ],
         ),
       ],
-      child: Builder(builder: (context) {
-        return Consumer<ConfigProvider>(builder: (context, configProvider, _) {
+      child: Builder(builder: (builderContext) {
+        return Consumer<ConfigProvider>(builder: (consumerContext, configProvider, _) {
           configProvider.loadConfig();
-          return MaterialApp(
-            theme: ThemeData.light(),
-            themeMode: ThemeMode.light,
-            debugShowCheckedModeBanner: false,
-            navigatorKey: NavigationService.navigatorKey,
-            home: Builder(builder: (context2) {
-              return child;
-            }),
-            localizationsDelegates: const [
-              AppLocalizations.delegate,
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-              GlobalCupertinoLocalizations.delegate,
-            ],
-            supportedLocales: const [
-              Locale('en'),
-              Locale('pt'), // Base Portuguese locale
-              Locale('pt', 'BR'),  // Portuguese (Brazil)
-              Locale('es'),        // Base Spanish locale
-              Locale('es', 'CL'),  // Spanish (Chile)
-              Locale('es', 'CO'),  // Spanish (Colombia)
-              Locale('es', 'MX'),  // Spanish (Mexico)
-              Locale('es', 'PE'),  // Spanish (Peru)
-            ],
-            // Ensure the app uses the device locale by default
-            localeResolutionCallback: (deviceLocale, supportedLocales) {
-              if (deviceLocale != null) {
-                for (var locale in supportedLocales) {
-                  print ("deviceLocale: ${deviceLocale.languageCode}");
-                  print ("supportedLocales: $supportedLocales}");
-                  // Check for exact matches first
-                  if (locale.languageCode == deviceLocale.languageCode &&
-                      locale.countryCode == deviceLocale.countryCode) {
-                    return locale;
-                  }
-                  // Then check for language code matches
-                  if (locale.languageCode == deviceLocale.languageCode) {
-                    return locale;
-                  }
-                }
-              }
-              // Default to English if no match found
-              return const Locale('en');
-            },
-          );
+          
+          // No MaterialApp - use the parent app's navigation system
+          return child;
         });
       }),
     );
