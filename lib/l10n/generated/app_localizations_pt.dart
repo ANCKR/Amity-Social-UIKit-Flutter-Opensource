@@ -21,7 +21,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tab_my_communities => 'Minhas Comunidades';
 
   @override
-  String get tab_my_groups => 'My Groups';
+  String get tab_my_groups => 'Meus Grupos';
 
   @override
   String get tab_feed => 'Feed';
@@ -34,11 +34,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get community_post_permission_title_label =>
-      'Who can post on this community';
+      'Quem pode publicar nesta comunidade';
 
   @override
   String get community_post_permission_description_label =>
-      'You can control who can create posts in your community.';
+      'Você pode controlar quem pode criar publicações em sua comunidade.';
 
   @override
   String get settings_allow_stories_comments =>
@@ -70,45 +70,47 @@ class AppLocalizationsPt extends AppLocalizations {
       'Todos os membros serão removidos da comunidade. Todas as publicações, mensagens, reações e mídias compartilhadas na comunidade serão excluídas. Isso não pode ser desfeito.';
 
   @override
-  String get group_settings_permissions => 'Group permissions';
+  String get group_settings_permissions => 'Permissões do grupo';
 
   @override
-  String get group_post_permission => 'Post permission';
+  String get group_post_permission => 'Permissão de publicação';
 
   @override
-  String get group_post_permission_title_label => 'Who can post on this group';
+  String get group_post_permission_title_label =>
+      'Quem pode publicar neste grupo';
 
   @override
   String get group_post_permission_description_label =>
-      'You can control who can create posts in your group.';
+      'Você pode controlar quem pode criar publicações em seu grupo.';
 
   @override
-  String get group_allow_stories_comments => 'Allow comments on group stories';
+  String get group_allow_stories_comments =>
+      'Permitir comentários nas histórias do grupo';
 
   @override
   String get group_allow_stories_comments_description =>
-      'Turn on to receive comments on stories in this group.';
+      'Ative para receber comentários nas histórias deste grupo.';
 
   @override
-  String get group_leave => 'Leave group';
+  String get group_leave => 'Sair do grupo';
 
   @override
   String get group_leave_description =>
-      'Leave the group. You will no longer be able to post and interact in this group.';
+      'Sair do grupo. Você não poderá mais publicar e interagir neste grupo.';
 
   @override
-  String get group_setting_close_label => 'Close group';
+  String get group_setting_close_label => 'Fechar grupo';
 
   @override
   String get group_setting_close_description =>
-      'Closing this group will remove the group page and all its content and comments.';
+      'Fechar este grupo removerá a página do grupo e todo o seu conteúdo e comentários.';
 
   @override
-  String get group_close => 'Close group?';
+  String get group_close => 'Fechar grupo?';
 
   @override
   String get group_close_description =>
-      'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
+      'Todos os membros serão removidos do grupo. Todas as publicações, mensagens, reações e mídias compartilhadas no grupo serão excluídas. Isso não pode ser desfeito.';
 
   @override
   String get global_search_hint => 'Pesquisar comunidade e usuário';
@@ -341,41 +343,41 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get comment_create_error_ban_word =>
-      'Your comment contains inappropriate word. Please review and delete it.';
+      'Seu comentário contém uma palavra inapropriada. Por favor, revise e exclua-a.';
 
   @override
   String get comment_create_error_story_deleted =>
-      'This story is no longer available';
+      'Esta história não está mais disponível';
 
   @override
   String get community_create_success_message =>
-      'Successfully created community.';
+      'Comunidade criada com sucesso.';
 
   @override
   String get community_create_error_message =>
-      'Failed to create community. Please try again.';
+      'Falha ao criar comunidade. Por favor, tente novamente.';
 
   @override
   String get community_update_success_message =>
-      'Successfully updated community.';
+      'Comunidade atualizada com sucesso.';
 
   @override
   String get community_update_error_message =>
-      'Failed to save your community profile. Please try again.';
+      'Falha ao salvar o perfil da comunidade. Por favor, tente novamente.';
 
   @override
   String get community_leave_success_message =>
-      'Successfully left the community.';
+      'Você saiu da comunidade com sucesso.';
 
   @override
-  String get community_leave_error_message => 'Failed to leave the community.';
+  String get community_leave_error_message => 'Falha ao sair da comunidade.';
 
   @override
   String get community_close_success_message =>
-      'Successfully closed the community.';
+      'Comunidade fechada com sucesso.';
 
   @override
-  String get community_close_error_message => 'Failed to close the community.';
+  String get community_close_error_message => 'Falha ao fechar a comunidade.';
 
   @override
   String get community_join => 'Entrar';
@@ -888,7 +890,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get post_item_bottom_nonmember_label =>
-      'Join group to interact with all posts';
+      'Entre no grupo para interagir com todas as publicações';
 
   @override
   String get notification_turn_on_success => 'Notification turned on';
@@ -1317,78 +1319,78 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chat_no_message_yet => 'No message yet';
 
   @override
-  String get group_title => 'Group';
+  String get group_title => 'Grupo';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Criar Grupo';
 
   @override
-  String get group_edit => 'Edit Group';
+  String get group_edit => 'Editar Grupo';
 
   @override
-  String get group_name => 'Group name';
+  String get group_name => 'Nome do grupo';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Nomeie seu grupo';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Digite a descrição';
 
   @override
-  String get group_about => 'About';
+  String get group_about => 'Sobre';
 
   @override
-  String get group_members => 'Members';
+  String get group_members => 'Membros';
 
   @override
-  String get group_join => 'Join';
+  String get group_join => 'Entrar';
 
   @override
-  String get group_joined => 'Joined';
+  String get group_joined => 'Participando';
 
   @override
-  String get group_public => 'Public';
+  String get group_public => 'Público';
 
   @override
-  String get group_private => 'Private';
+  String get group_private => 'Privado';
 
   @override
   String get group_public_description =>
-      'Anyone can join, view and search the posts in this group.';
+      'Qualquer pessoa pode entrar, visualizar e pesquisar as publicações neste grupo.';
 
   @override
   String get group_private_description =>
-      'Only members invited by the moderators can join, view, and search the posts in this group.';
+      'Apenas membros convidados pelos moderadores podem entrar, visualizar e pesquisar as publicações neste grupo.';
 
   @override
-  String get group_recommended_for_you => 'Recommended for you';
+  String get group_recommended_for_you => 'Recomendado para você';
 
   @override
-  String get group_trending_now => 'Trending now';
+  String get group_trending_now => 'Em alta agora';
 
   @override
-  String get group_placeholder_members => '1.2K members';
+  String get group_placeholder_members => '1.2K membros';
 
   @override
-  String get group_basic_info => 'Basic Info';
+  String get group_basic_info => 'Informações básicas';
 
   @override
-  String get group_discard_confirmation => 'Leave without finishing?';
+  String get group_discard_confirmation => 'Sair sem concluir?';
 
   @override
   String get group_discard_description =>
-      'Your progress won\'t be saved and your group won\'t be created.';
+      'Seu progresso não será salvo e seu grupo não será criado.';
 
   @override
-  String get group_pending_posts => 'Pending Posts';
+  String get group_pending_posts => 'Publicações Pendentes';
 
   @override
   String group_pending_request_title(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Pending requests',
-      one: 'Pending request',
+      other: 'Solicitações pendentes',
+      one: 'Solicitação pendente',
     );
     return '$_temp0';
   }
@@ -1398,136 +1400,136 @@ class AppLocalizationsPt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts require',
-      one: 'post requires',
+      other: 'publicações requerem',
+      one: 'publicação requer',
     );
-    return '$displayCount $_temp0 approval';
+    return '$displayCount $_temp0 aprovação';
   }
 
   @override
-  String get group_all_members => 'All members';
+  String get group_all_members => 'Todos os membros';
 
   @override
-  String get group_moderators => 'Moderators';
+  String get group_moderators => 'Moderadores';
 
   @override
-  String get group_search_member_hint => 'Search member';
+  String get group_search_member_hint => 'Pesquisar membro';
 
   @override
-  String get group_promote_moderator => 'Promote to moderator';
+  String get group_promote_moderator => 'Promover a moderador';
 
   @override
-  String get group_demote_member => 'Demote to member';
+  String get group_demote_member => 'Rebaixar para membro';
 
   @override
-  String get group_remove_member => 'Remove from group';
+  String get group_remove_member => 'Remover do grupo';
 
   @override
-  String get group_story_comments => 'Story comments';
+  String get group_story_comments => 'Comentários de histórias';
 
   @override
   String group_members_count(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count membros',
+      one: '1 membro',
+      zero: 'Sem membros',
     );
     return '$_temp0';
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'Ainda não há grupos';
 
   @override
-  String get group_pending_requests_title => 'Pending Requests';
+  String get group_pending_requests_title => 'Solicitações Pendentes';
 
   @override
   String get group_pending_requests_empty_title =>
-      'No pending requests available';
+      'Nenhuma solicitação pendente disponível';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'Ative a revisão de publicações ou a aprovação de entrada nas configurações do grupo para gerenciar solicitações.';
 
   @override
   String get group_join_requests_coming_soon =>
-      'Join requests feature coming soon';
+      'O recurso de solicitações de entrada estará disponível em breve';
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Recusar publicação pendente excluirá permanentemente a publicação selecionada do grupo.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'Nenhuma publicação pendente';
 
   @override
-  String get group_pending_post_accept => 'Accept';
+  String get group_pending_post_accept => 'Aceitar';
 
   @override
-  String get group_pending_post_decline => 'Decline';
+  String get group_pending_post_decline => 'Recusar';
 
   @override
-  String get group_create_success_message => 'Successfully created group.';
+  String get group_create_success_message => 'Grupo criado com sucesso.';
 
   @override
   String get group_create_error_message =>
-      'Failed to create group. Please try again.';
+      'Falha ao criar o grupo. Por favor, tente novamente.';
 
   @override
-  String get group_update_success_message => 'Successfully updated group.';
+  String get group_update_success_message => 'Grupo atualizado com sucesso.';
 
   @override
   String get group_update_error_message =>
-      'Failed to save your group profile. Please try again.';
+      'Falha ao salvar o perfil do grupo. Por favor, tente novamente.';
 
   @override
-  String get group_leave_success_message => 'Successfully left the group.';
+  String get group_leave_success_message => 'Você saiu do grupo com sucesso.';
 
   @override
-  String get group_leave_error_message => 'Failed to leave the group.';
+  String get group_leave_error_message => 'Falha ao sair do grupo.';
 
   @override
-  String get group_close_success_message => 'Successfully closed the group.';
+  String get group_close_success_message => 'Grupo fechado com sucesso.';
 
   @override
-  String get group_close_error_message => 'Failed to close the group.';
+  String get group_close_error_message => 'Falha ao fechar o grupo.';
 
   @override
-  String get group_pending_post_delete_success => 'Post deleted.';
+  String get group_pending_post_delete_success => 'Publicação excluída.';
 
   @override
   String get group_pending_post_delete_error =>
-      'Failed to delete post. Please try again.';
+      'Falha ao excluir a publicação. Por favor, tente novamente.';
 
   @override
-  String get group_pending_post_approve_success => 'Post accepted.';
+  String get group_pending_post_approve_success => 'Publicação aceita.';
 
   @override
   String get group_pending_post_approve_error =>
-      'Failed to accept post. This post has been reviewed by another moderator.';
+      'Falha ao aceitar a publicação. Esta publicação foi revisada por outro moderador.';
 
   @override
-  String get group_pending_post_decline_success => 'Post declined.';
+  String get group_pending_post_decline_success => 'Publicação recusada.';
 
   @override
   String get group_pending_post_decline_error =>
-      'Failed to decline post. This post has been reviewed by another moderator.';
+      'Falha ao recusar a publicação. Esta publicação foi revisada por outro moderador.';
 
   @override
-  String get error_leave_group => 'Unable to leave group';
+  String get error_leave_group => 'Não é possível sair do grupo';
 
   @override
   String get error_leave_group_description =>
-      'You\'re the only moderator in this group. To leave group, nominate other members to moderator role';
+      'Você é o único moderador neste grupo. Para sair do grupo, indique outros membros para o papel de moderador';
 
   @override
-  String get error_close_group => 'Unable to close group';
+  String get error_close_group => 'Não é possível fechar o grupo';
 
   @override
   String get error_close_group_description =>
-      'Something went wrong. Please try again later.';
+      'Algo deu errado. Por favor, tente novamente mais tarde.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -1547,7 +1549,21 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get tab_my_communities => 'Minhas Comunidades';
 
   @override
+  String get tab_my_groups => 'Meus Grupos';
+
+  @override
+  String get tab_feed => 'Feed';
+
+  @override
   String get settings_permissions => 'Permissões da comunidade';
+
+  @override
+  String get community_post_permission_title_label =>
+      'Quem pode publicar nesta comunidade';
+
+  @override
+  String get community_post_permission_description_label =>
+      'Você pode controlar quem pode criar publicações em sua comunidade.';
 
   @override
   String get settings_allow_stories_comments =>
@@ -1570,6 +1586,49 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get community_close_description =>
       'Todos os membros serão removidos da comunidade. Todas as publicações, mensagens, reações e mídias compartilhadas na comunidade serão excluídas. Isso não pode ser desfeito.';
+
+  @override
+  String get group_settings_permissions => 'Permissões do grupo';
+
+  @override
+  String get group_post_permission => 'Permissão de publicação';
+
+  @override
+  String get group_post_permission_title_label =>
+      'Quem pode publicar neste grupo';
+
+  @override
+  String get group_post_permission_description_label =>
+      'Você pode controlar quem pode criar publicações em seu grupo.';
+
+  @override
+  String get group_allow_stories_comments =>
+      'Permitir comentários nas histórias do grupo';
+
+  @override
+  String get group_allow_stories_comments_description =>
+      'Ative para receber comentários nas histórias deste grupo.';
+
+  @override
+  String get group_leave => 'Sair do grupo';
+
+  @override
+  String get group_leave_description =>
+      'Sair do grupo. Você não poderá mais publicar e interagir neste grupo.';
+
+  @override
+  String get group_setting_close_label => 'Fechar grupo';
+
+  @override
+  String get group_setting_close_description =>
+      'Fechar este grupo removerá a página do grupo e todo o seu conteúdo e comentários.';
+
+  @override
+  String get group_close => 'Fechar grupo?';
+
+  @override
+  String get group_close_description =>
+      'Todos os membros serão removidos do grupo. Todas as publicações, mensagens, reações e mídias compartilhadas no grupo serão excluídas. Isso não pode ser desfeito.';
 
   @override
   String get global_search_hint => 'Pesquisar comunidade e usuário';
@@ -1799,6 +1858,44 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String comment_delete_description(String content) {
     return 'Este $content será excluído permanentemente.';
   }
+
+  @override
+  String get comment_create_error_ban_word =>
+      'Seu comentário contém uma palavra inapropriada. Por favor, revise e exclua-a.';
+
+  @override
+  String get comment_create_error_story_deleted =>
+      'Esta história não está mais disponível';
+
+  @override
+  String get community_create_success_message =>
+      'Comunidade criada com sucesso.';
+
+  @override
+  String get community_create_error_message =>
+      'Falha ao criar comunidade. Por favor, tente novamente.';
+
+  @override
+  String get community_update_success_message =>
+      'Comunidade atualizada com sucesso.';
+
+  @override
+  String get community_update_error_message =>
+      'Falha ao salvar o perfil da comunidade. Por favor, tente novamente.';
+
+  @override
+  String get community_leave_success_message =>
+      'Você saiu da comunidade com sucesso.';
+
+  @override
+  String get community_leave_error_message => 'Falha ao sair da comunidade.';
+
+  @override
+  String get community_close_success_message =>
+      'Comunidade fechada com sucesso.';
+
+  @override
+  String get community_close_error_message => 'Falha ao fechar a comunidade.';
 
   @override
   String get community_join => 'Entrar';
@@ -2230,8 +2327,225 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get profile_edit => 'Editar Perfil';
 
   @override
+  String get post_item_bottom_nonmember_label =>
+      'Entre no grupo para interagir com todas as publicações';
+
+  @override
   String get user_unfollow => 'Deixar de seguir';
 
   @override
   String get user_follow => 'Seguir';
+
+  @override
+  String get group_title => 'Grupo';
+
+  @override
+  String get group_create => 'Criar Grupo';
+
+  @override
+  String get group_edit => 'Editar Grupo';
+
+  @override
+  String get group_name => 'Nome do grupo';
+
+  @override
+  String get group_name_hint => 'Dê um nome ao seu grupo';
+
+  @override
+  String get group_description_hint => 'Digite a descrição';
+
+  @override
+  String get group_about => 'Sobre';
+
+  @override
+  String get group_members => 'Membros';
+
+  @override
+  String get group_join => 'Entrar';
+
+  @override
+  String get group_joined => 'Participando';
+
+  @override
+  String get group_public => 'Público';
+
+  @override
+  String get group_private => 'Privado';
+
+  @override
+  String get group_public_description =>
+      'Qualquer pessoa pode entrar, visualizar e pesquisar as publicações neste grupo.';
+
+  @override
+  String get group_private_description =>
+      'Apenas membros convidados pelos moderadores podem entrar, visualizar e pesquisar as publicações neste grupo.';
+
+  @override
+  String get group_recommended_for_you => 'Recomendado para você';
+
+  @override
+  String get group_trending_now => 'Em alta agora';
+
+  @override
+  String get group_placeholder_members => '1.2K membros';
+
+  @override
+  String get group_basic_info => 'Informações básicas';
+
+  @override
+  String get group_discard_confirmation => 'Sair sem concluir?';
+
+  @override
+  String get group_discard_description =>
+      'Seu progresso não será salvo e seu grupo não será criado.';
+
+  @override
+  String get group_pending_posts => 'Publicações Pendentes';
+
+  @override
+  String group_pending_request_title(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Solicitações pendentes',
+      one: 'Solicitação pendente',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String group_pending_request_message(String displayCount, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'publicações requerem',
+      one: 'publicação requer',
+    );
+    return '$displayCount $_temp0 aprovação';
+  }
+
+  @override
+  String get group_all_members => 'Todos os membros';
+
+  @override
+  String get group_moderators => 'Moderadores';
+
+  @override
+  String get group_search_member_hint => 'Pesquisar membro';
+
+  @override
+  String get group_promote_moderator => 'Promover a moderador';
+
+  @override
+  String get group_demote_member => 'Rebaixar para membro';
+
+  @override
+  String get group_remove_member => 'Remover do grupo';
+
+  @override
+  String get group_story_comments => 'Comentários de histórias';
+
+  @override
+  String group_members_count(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count membros',
+      one: '1 membro',
+      zero: 'Sem membros',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get group_empty_state => 'Ainda não há grupos';
+
+  @override
+  String get group_pending_requests_title => 'Solicitações Pendentes';
+
+  @override
+  String get group_pending_requests_empty_title =>
+      'Nenhuma solicitação pendente disponível';
+
+  @override
+  String get group_pending_requests_empty_description =>
+      'Ative a revisão de publicações ou a aprovação de entrada nas configurações do grupo para gerenciar solicitações.';
+
+  @override
+  String get group_join_requests_coming_soon =>
+      'O recurso de solicitações de entrada estará disponível em breve';
+
+  @override
+  String get group_pending_posts_warning =>
+      'Recusar publicação pendente excluirá permanentemente a publicação selecionada do grupo.';
+
+  @override
+  String get group_pending_posts_empty => 'Nenhuma publicação pendente';
+
+  @override
+  String get group_pending_post_accept => 'Aceitar';
+
+  @override
+  String get group_pending_post_decline => 'Recusar';
+
+  @override
+  String get group_create_success_message => 'Grupo criado com sucesso.';
+
+  @override
+  String get group_create_error_message =>
+      'Falha ao criar o grupo. Por favor, tente novamente.';
+
+  @override
+  String get group_update_success_message => 'Grupo atualizado com sucesso.';
+
+  @override
+  String get group_update_error_message =>
+      'Falha ao salvar o perfil do grupo. Por favor, tente novamente.';
+
+  @override
+  String get group_leave_success_message => 'Você saiu do grupo com sucesso.';
+
+  @override
+  String get group_leave_error_message => 'Falha ao sair do grupo.';
+
+  @override
+  String get group_close_success_message => 'Grupo fechado com sucesso.';
+
+  @override
+  String get group_close_error_message => 'Falha ao fechar o grupo.';
+
+  @override
+  String get group_pending_post_delete_success => 'Publicação excluída.';
+
+  @override
+  String get group_pending_post_delete_error =>
+      'Falha ao excluir a publicação. Por favor, tente novamente.';
+
+  @override
+  String get group_pending_post_approve_success => 'Publicação aceita.';
+
+  @override
+  String get group_pending_post_approve_error =>
+      'Falha ao aceitar a publicação. Esta publicação foi revisada por outro moderador.';
+
+  @override
+  String get group_pending_post_decline_success => 'Publicação recusada.';
+
+  @override
+  String get group_pending_post_decline_error =>
+      'Falha ao recusar a publicação. Esta publicação foi revisada por outro moderador.';
+
+  @override
+  String get error_leave_group => 'Não é possível sair do grupo';
+
+  @override
+  String get error_leave_group_description =>
+      'Você é o único moderador neste grupo. Para sair do grupo, indique outros membros para o papel de moderador';
+
+  @override
+  String get error_close_group => 'Não é possível fechar o grupo';
+
+  @override
+  String get error_close_group_description =>
+      'Algo deu errado. Por favor, tente novamente mais tarde.';
 }

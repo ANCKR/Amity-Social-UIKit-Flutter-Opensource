@@ -16,6 +16,14 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
+  "tab_my_groups": "Mis Grupos",
+  "@tab_my_groups": {
+    "description": "Etiqueta para la pestaña mis grupos en la navegación principal (reemplaza tab_my_communities)"
+  },
+  "tab_feed": "Feed",
+  "@tab_feed": {
+    "description": "Etiqueta para la pestaña de feed en la navegación principal (muestra feeds de contenido)"
+  },
   "global_search_hint": "Buscar comunidad y usuario",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
@@ -928,5 +936,368 @@
   "user_block": "Bloquear Usuario",
   "@user_block": {
     "description": "Button text for blocking a user"
+  },
+  
+  "comment_create_error_ban_word": "Tu comentario contiene una palabra inapropiada. Por favor, revísalo y elimínalo.",
+  "@comment_create_error_ban_word": {
+    "description": "Mensaje de aviso para la creación de comentarios con palabra prohibida"
+  },
+  
+  "comment_create_error_story_deleted": "Esta historia ya no está disponible",
+  "@comment_create_error_story_deleted": {
+    "description": "Mensaje de aviso para la creación de comentarios"
+  },
+  
+  "community_create_success_message": "Comunidad creada exitosamente.",
+  "@community_create_success_message": {
+    "description": "Mensaje de éxito para la creación de comunidad"
+  },
+  
+  "community_create_error_message": "No se pudo crear la comunidad. Por favor, inténtalo de nuevo.",
+  "@community_create_error_message": {
+    "description": "Mensaje de error para la creación de comunidad"
+  },
+  
+  "community_update_success_message": "Comunidad actualizada exitosamente.",
+  "@community_update_success_message": {
+    "description": "Mensaje de éxito para la actualización de comunidad"
+  },
+  
+  "community_update_error_message": "No se pudo guardar el perfil de la comunidad. Por favor, inténtalo de nuevo.",
+  "@community_update_error_message": {
+    "description": "Mensaje de error para la actualización de comunidad"
+  },
+  
+  "community_leave_success_message": "Has salido de la comunidad exitosamente.",
+  "@community_leave_success_message": {
+    "description": "Mensaje de éxito para salir de la comunidad"
+  },
+  
+  "community_leave_error_message": "No se pudo salir de la comunidad.",
+  "@community_leave_error_message": {
+    "description": "Mensaje de error para salir de la comunidad"
+  },
+  
+  "community_close_success_message": "Comunidad cerrada exitosamente.",
+  "@community_close_success_message": {
+    "description": "Mensaje de éxito para cerrar la comunidad"
+  },
+  
+  "community_close_error_message": "No se pudo cerrar la comunidad.",
+  "@community_close_error_message": {
+    "description": "Mensaje de error para cerrar la comunidad"
+  },
+  
+  "community_post_permission_title_label": "Quién puede publicar en esta comunidad",
+  "@community_post_permission_title_label": {
+    "description": "Etiqueta para el título de la página de permisos de publicación"
+  },
+  
+  "community_post_permission_description_label": "Puedes controlar quién puede crear publicaciones en tu comunidad.",
+  "@community_post_permission_description_label": {
+    "description": "Etiqueta para la descripción de la página de permisos de publicación"
+  },
+  
+  "group_title": "Grupo",
+  "@group_title": {
+    "description": "Título para grupos (reemplaza community_title)"
+  },
+  "group_create": "Crear Grupo",
+  "@group_create": {
+    "description": "Etiqueta para el botón de crear grupo"
+  },
+  "group_edit": "Editar Grupo",
+  "@group_edit": {
+    "description": "Etiqueta para el botón de editar grupo"
+  },
+  "group_name": "Nombre del grupo",
+  "@group_name": {
+    "description": "Etiqueta para el nombre del grupo"
+  },
+  "group_name_hint": "Nombra tu grupo",
+  "@group_name_hint": {
+    "description": "Texto de sugerencia para la entrada del nombre del grupo"
+  },
+  "group_description_hint": "Ingresa descripción",
+  "@group_description_hint": {
+    "description": "Texto de sugerencia para la entrada de descripción del grupo"
+  },
+  "group_about": "Acerca de",
+  "@group_about": {
+    "description": "Etiqueta para la sección acerca del grupo"
+  },
+  "group_members": "Miembros",
+  "@group_members": {
+    "description": "Etiqueta para los miembros del grupo"
+  },
+  "group_join": "Unirse",
+  "@group_join": {
+    "description": "Etiqueta para el botón de unirse al grupo"
+  },
+  "group_joined": "Unido",
+  "@group_joined": {
+    "description": "Etiqueta para el estado de unido al grupo"
+  },
+  "group_leave": "Salir del grupo",
+  "@group_leave": {
+    "description": "Etiqueta para el botón de salir del grupo"
+  },
+  "group_leave_description": "Salir del grupo. Ya no podrás publicar e interactuar en este grupo.",
+  "@group_leave_description": {
+    "description": "Mensaje de confirmación para salir de un grupo"
+  },
+  "group_close": "¿Cerrar grupo?",
+  "@group_close": {
+    "description": "Título de confirmación para cerrar un grupo"
+  },
+  "group_close_description": "Todos los miembros serán eliminados del grupo. Todas las publicaciones, mensajes, reacciones y medios compartidos en el grupo serán eliminados. Esto no se puede deshacer.",
+  "@group_close_description": {
+    "description": "Mensaje de confirmación para cerrar un grupo"
+  },
+  "group_public": "Público",
+  "@group_public": {
+    "description": "Etiqueta para el tipo de grupo público"
+  },
+  "group_private": "Privado",
+  "@group_private": {
+    "description": "Etiqueta para el tipo de grupo privado"
+  },
+  "group_public_description": "Cualquiera puede unirse, ver y buscar las publicaciones en este grupo.",
+  "@group_public_description": {
+    "description": "Descripción para el tipo de grupo público"
+  },
+  "group_private_description": "Solo los miembros invitados por los moderadores pueden unirse, ver y buscar las publicaciones en este grupo.",
+  "@group_private_description": {
+    "description": "Descripción para el tipo de grupo privado"
+  },
+  "group_recommended_for_you": "Recomendado para ti",
+  "@group_recommended_for_you": {
+    "description": "Título de sección para grupos recomendados"
+  },
+  "group_trending_now": "Tendencia ahora",
+  "@group_trending_now": {
+    "description": "Título de sección para grupos en tendencia"
+  },
+  "group_placeholder_members": "1.2K miembros",
+  "@group_placeholder_members": {
+    "description": "Texto de marcador de posición para el conteo de miembros del grupo"
+  },
+  "group_basic_info": "Información básica",
+  "@group_basic_info": {
+    "description": "Etiqueta para la sección de información básica"
+  },
+  "group_discard_confirmation": "¿Salir sin terminar?",
+  "@group_discard_confirmation": {
+    "description": "Etiqueta para la confirmación de descartar cambios"
+  },
+  "group_discard_description": "Tu progreso no se guardará y tu grupo no será creado.",
+  "@group_discard_description": {
+    "description": "Descripción para la confirmación de descartar cambios"
+  },
+  "group_pending_posts": "Publicaciones Pendientes",
+  "@group_pending_posts": {
+    "description": "Etiqueta para la sección de publicaciones pendientes"
+  },
+  "group_pending_request_title": "{count, plural, =1{Solicitud pendiente} other{Solicitudes pendientes}}",
+  "@group_pending_request_title": {
+    "description": "Título para solicitud/solicitudes pendientes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{publicación requiere} other{publicaciones requieren}} aprobación",
+  "@group_pending_request_message": {
+    "description": "Mensaje para solicitud pendiente mostrando conteo y formas plurales",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "Todos los miembros",
+  "@group_all_members": {
+    "description": "Etiqueta de pestaña para todos los miembros en la página de membresía del grupo"
+  },
+  "group_moderators": "Moderadores",
+  "@group_moderators": {
+    "description": "Etiqueta de pestaña para moderadores en la página de membresía del grupo"
+  },
+  "group_search_member_hint": "Buscar miembro",
+  "@group_search_member_hint": {
+    "description": "Texto de sugerencia para el campo de búsqueda de miembros"
+  },
+  "group_promote_moderator": "Promover a moderador",
+  "@group_promote_moderator": {
+    "description": "Acción para promover un miembro al rol de moderador"
+  },
+  "group_demote_member": "Degradar a miembro",
+  "@group_demote_member": {
+    "description": "Acción para degradar un moderador al rol de miembro"
+  },
+  "group_remove_member": "Eliminar del grupo",
+  "@group_remove_member": {
+    "description": "Acción para eliminar un miembro del grupo"
+  },
+  "group_post_permission": "Permiso de publicación",
+  "@group_post_permission": {
+    "description": "Opción de configuración de permisos de publicación del grupo"
+  },
+  "group_story_comments": "Comentarios de historias",
+  "@group_story_comments": {
+    "description": "Opción de configuración de comentarios de historias del grupo"
+  },
+  "group_setting_close_label": "Cerrar grupo",
+  "@group_setting_close_label": {
+    "description": "Etiqueta para la configuración de cerrar grupo"
+  },
+  "group_setting_close_description": "Cerrar este grupo eliminará la página del grupo y todo su contenido y comentarios.",
+  "@group_setting_close_description": {
+    "description": "Descripción para la configuración de cerrar grupo"
+  },
+  "group_post_permission_title_label": "Quién puede publicar en este grupo",
+  "@group_post_permission_title_label": {
+    "description": "Etiqueta para el título de la página de permisos de publicación"
+  },
+  "group_post_permission_description_label": "Puedes controlar quién puede crear publicaciones en tu grupo.",
+  "@group_post_permission_description_label": {
+    "description": "Etiqueta para la descripción de la página de permisos de publicación"
+  },
+  "group_members_count": "{count, plural, =0{Sin miembros} =1{1 miembro} other{{count} miembros}}",
+  "@group_members_count": {
+    "description": "Forma plural para el conteo de miembros del grupo",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Aún no hay grupos",
+  "@group_empty_state": {
+    "description": "Mensaje de estado vacío cuando no hay grupos"
+  },
+  "group_pending_requests_title": "Solicitudes Pendientes",
+  "@group_pending_requests_title": {
+    "description": "Título para la página de solicitudes pendientes"
+  },
+  "group_pending_requests_empty_title": "No hay solicitudes pendientes disponibles",
+  "@group_pending_requests_empty_title": {
+    "description": "Título para el estado vacío cuando no hay solicitudes pendientes disponibles"
+  },
+  "group_pending_requests_empty_description": "Habilita la revisión de publicaciones o la aprobación de unión en la configuración del grupo para gestionar solicitudes.",
+  "@group_pending_requests_empty_description": {
+    "description": "Descripción para el estado vacío cuando no hay solicitudes pendientes disponibles"
+  },
+  "group_join_requests_coming_soon": "La función de solicitudes de unión estará disponible pronto",
+  "@group_join_requests_coming_soon": {
+    "description": "Texto de marcador de posición para la función de solicitudes de unión que aún no está implementada"
+  },
+  "group_pending_posts_warning": "Rechazar publicación pendiente eliminará permanentemente la publicación seleccionada del grupo.",
+  "@group_pending_posts_warning": {
+    "description": "Mensaje de advertencia para moderadores sobre el rechazo de publicaciones pendientes"
+  },
+  "group_pending_posts_empty": "No hay publicaciones pendientes",
+  "@group_pending_posts_empty": {
+    "description": "Mensaje de estado vacío cuando no hay publicaciones pendientes"
+  },
+  "group_pending_post_accept": "Aceptar",
+  "@group_pending_post_accept": {
+    "description": "Texto del botón para aceptar una publicación pendiente"
+  },
+  "group_pending_post_decline": "Rechazar",
+  "@group_pending_post_decline": {
+    "description": "Texto del botón para rechazar una publicación pendiente"
+  },
+  "group_create_success_message": "Grupo creado exitosamente.",
+  "@group_create_success_message": {
+    "description": "Mensaje de éxito para la creación de grupo"
+  },
+  "group_create_error_message": "No se pudo crear el grupo. Por favor, inténtalo de nuevo.",
+  "@group_create_error_message": {
+    "description": "Mensaje de error para la creación de grupo"
+  },
+  "group_update_success_message": "Grupo actualizado exitosamente.",
+  "@group_update_success_message": {
+    "description": "Mensaje de éxito para la actualización de grupo"
+  },
+  "group_update_error_message": "No se pudo guardar el perfil del grupo. Por favor, inténtalo de nuevo.",
+  "@group_update_error_message": {
+    "description": "Mensaje de error para la actualización de grupo"
+  },
+  "group_leave_success_message": "Has salido del grupo exitosamente.",
+  "@group_leave_success_message": {
+    "description": "Mensaje de éxito para salir del grupo"
+  },
+  "group_leave_error_message": "No se pudo salir del grupo.",
+  "@group_leave_error_message": {
+    "description": "Mensaje de error para salir del grupo"
+  },
+  "group_close_success_message": "Grupo cerrado exitosamente.",
+  "@group_close_success_message": {
+    "description": "Mensaje de éxito para cerrar el grupo"
+  },
+  "group_close_error_message": "No se pudo cerrar el grupo.",
+  "@group_close_error_message": {
+    "description": "Mensaje de error para cerrar el grupo"
+  },
+  "group_pending_post_delete_success": "Publicación eliminada.",
+  "@group_pending_post_delete_success": {
+    "description": "Mensaje de éxito cuando se elimina una publicación pendiente"
+  },
+  "group_pending_post_delete_error": "No se pudo eliminar la publicación. Por favor, inténtalo de nuevo.",
+  "@group_pending_post_delete_error": {
+    "description": "Mensaje de error cuando falla la eliminación de publicación pendiente"
+  },
+  "group_pending_post_approve_success": "Publicación aceptada.",
+  "@group_pending_post_approve_success": {
+    "description": "Mensaje de éxito cuando se aprueba una publicación pendiente"
+  },
+  "group_pending_post_approve_error": "No se pudo aceptar la publicación. Esta publicación ha sido revisada por otro moderador.",
+  "@group_pending_post_approve_error": {
+    "description": "Mensaje de error cuando falla la aprobación de publicación pendiente"
+  },
+  "group_pending_post_decline_success": "Publicación rechazada.",
+  "@group_pending_post_decline_success": {
+    "description": "Mensaje de éxito cuando se rechaza una publicación pendiente"
+  },
+  "group_pending_post_decline_error": "No se pudo rechazar la publicación. Esta publicación ha sido revisada por otro moderador.",
+  "@group_pending_post_decline_error": {
+    "description": "Mensaje de error cuando falla el rechazo de publicación pendiente"
+  },
+  "error_leave_group": "No se puede salir del grupo",
+  "@error_leave_group": {
+    "description": "Título del mensaje de error cuando falla salir de un grupo"
+  },
+  "error_leave_group_description": "Eres el único moderador en este grupo. Para salir del grupo, nombra a otros miembros como moderadores",
+  "@error_leave_group_description": {
+    "description": "Descripción del mensaje de error cuando falla salir de un grupo"
+  },
+  "error_close_group": "No se puede cerrar el grupo",
+  "@error_close_group": {
+    "description": "Título del mensaje de error cuando falla cerrar un grupo"
+  },
+  "error_close_group_description": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
+  "@error_close_group_description": {
+    "description": "Descripción del mensaje de error cuando falla cerrar un grupo"
+  },
+  "post_item_bottom_nonmember_label": "Únete al grupo para interactuar con todas las publicaciones",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Etiqueta para el texto inferior del elemento de publicación para no miembros"
+  },
+  "group_settings_permissions": "Permisos del grupo",
+  "@group_settings_permissions": {
+    "description": "Título de sección para permisos del grupo en configuración (reemplaza settings_permissions)"
+  },
+  "group_allow_stories_comments": "Permitir comentarios en historias del grupo",
+  "@group_allow_stories_comments": {
+    "description": "Etiqueta para la configuración de comentarios de historias (reemplaza settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Actívalo para recibir comentarios en historias de este grupo.",
+  "@group_allow_stories_comments_description": {
+    "description": "Descripción para la configuración de comentarios de historias (reemplaza settings_allow_stories_comments_description)"
   }
 }
