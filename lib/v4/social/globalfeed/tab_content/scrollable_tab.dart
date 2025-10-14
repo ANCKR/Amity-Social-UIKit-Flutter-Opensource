@@ -1,4 +1,3 @@
-import 'package:amity_uikit_beta_service/amity_uikit.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
@@ -7,7 +6,6 @@ import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
 class ScrollableTabs extends NewBaseComponent {
   ScrollableTabs({Key? key, required String pageId})

@@ -44,3 +44,25 @@ class GlobalFeedPinPostUpdated extends GlobalFeedEvent {
   GlobalFeedPinPostUpdated({required this.pinnedPosts});
 }
 
+// Search Event
+class GlobalFeedSearchQueryChanged extends GlobalFeedEvent {
+  final String query;
+  
+  GlobalFeedSearchQueryChanged({required this.query});
+}
+
+// Filter Events
+class GlobalFeedFilterChanged extends GlobalFeedEvent {
+  final List<AmityDataType>? dataTypes;
+  final AmityPostSortOption? sortOption;
+  final bool? includeDeleted;
+  
+  GlobalFeedFilterChanged({
+    this.dataTypes,
+    this.sortOption,
+    this.includeDeleted,
+  });
+}
+
+class GlobalFeedClearFilters extends GlobalFeedEvent {}
+

@@ -7,6 +7,11 @@ class GlobalFeedState extends Equatable {
   final bool isFetching;
   final List<AmityPinnedPost> pinnedPosts;
   final Set<String> pinnedPostIds; // For quick access
+  final String searchQuery;
+  final List<AmityPost> filteredList;
+  final List<AmityDataType> selectedDataTypes;
+  final AmityPostSortOption sortOption;
+  final bool includeDeleted;
 
   const GlobalFeedState({
     required this.list,
@@ -15,7 +20,12 @@ class GlobalFeedState extends Equatable {
     required this.isFetching,
     required this.pinnedPosts,
     required this.pinnedPostIds,
-  });
+    this.searchQuery = '',
+    List<AmityPost>? filteredList,
+    this.selectedDataTypes = const [],
+    this.sortOption = AmityPostSortOption.LAST_CREATED,
+    this.includeDeleted = false,
+  }) : filteredList = filteredList ?? list;
 
   GlobalFeedState copyWith({
     List<AmityPost>? list,
@@ -24,6 +34,11 @@ class GlobalFeedState extends Equatable {
     bool? isFetching,
     List<AmityPinnedPost>? pinnedPosts,
     Set<String>? pinnedPostIds,
+    String? searchQuery,
+    List<AmityPost>? filteredList,
+    List<AmityDataType>? selectedDataTypes,
+    AmityPostSortOption? sortOption,
+    bool? includeDeleted,
   }) {
     return GlobalFeedState(
       list: list ?? this.list,
@@ -32,9 +47,26 @@ class GlobalFeedState extends Equatable {
       isFetching: isFetching ?? this.isFetching,
       pinnedPosts: pinnedPosts ?? this.pinnedPosts,
       pinnedPostIds: pinnedPostIds ?? this.pinnedPostIds,
+      searchQuery: searchQuery ?? this.searchQuery,
+      filteredList: filteredList ?? this.filteredList,
+      selectedDataTypes: selectedDataTypes ?? this.selectedDataTypes,
+      sortOption: sortOption ?? this.sortOption,
+      includeDeleted: includeDeleted ?? this.includeDeleted,
     );
   }
 
   @override
-  List<Object> get props => [list, localList, hasMoreItems, isFetching, pinnedPosts, pinnedPostIds];
+  List<Object> get props => [
+    list, 
+    localList, 
+    hasMoreItems, 
+    isFetching, 
+    pinnedPosts, 
+    pinnedPostIds, 
+    searchQuery, 
+    filteredList,
+    selectedDataTypes,
+    sortOption,
+    includeDeleted,
+  ];
 }

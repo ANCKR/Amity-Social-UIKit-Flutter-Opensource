@@ -10,9 +10,12 @@ part 'global_feed_event.dart';
 part 'global_feed_state.dart';
 
 class GlobalFeedBloc extends Bloc<GlobalFeedEvent, GlobalFeedState> {
-  late CustomRankingLiveCollection liveCollection;
+  dynamic liveCollection; // Can be CustomRankingLiveCollection or PostLiveCollection
   late GlobalPinnedPostLiveCollection pinnedPostCollection;
   final int pageSize = 20;
+  List<StreamSubscription> subscriptions = [];
+  StreamSubscription? _liveCollectionSubscription;
+  StreamSubscription? _loadingSubscription;
 
   GlobalFeedBloc()
       : super(const GlobalFeedState(
@@ -22,12 +25,10 @@ class GlobalFeedBloc extends Bloc<GlobalFeedEvent, GlobalFeedState> {
           isFetching: false,
           pinnedPosts: [],
           pinnedPostIds: {},
+          searchQuery: '',
+          filteredList: [],
         )) {
-    List<StreamSubscription> subscriptions = [];
-
-    liveCollection = AmitySocialClient.newFeedRepository()
-        .getCustomRankingGlobalFeed()
-        .getLiveCollection();
+    _initializeLiveCollection();
 
     pinnedPostCollection = AmitySocialClient.newPostRepository().getGlobalPinnedPosts();
 
@@ -74,6 +75,8 @@ class GlobalFeedBloc extends Bloc<GlobalFeedEvent, GlobalFeedState> {
         isFetching: false,
         pinnedPosts: [],
         pinnedPostIds: {},
+        searchQuery: '',
+        filteredList: [],
       ));
       for (var subscription in subscriptions) {
         subscription.cancel();
@@ -92,14 +95,6 @@ class GlobalFeedBloc extends Bloc<GlobalFeedEvent, GlobalFeedState> {
       emit(state.copyWith(isFetching: event.isLoading));
     });
 
-    liveCollection.getStreamController().stream.listen((event) {
-      addEvent(GlobalFeedListUpdated(posts: event));
-    });
-
-    liveCollection.observeLoadingState().listen((isLoading) {
-      addEvent(GlobalFeedLoadingStateUpdated(isLoading: isLoading));
-    });
-
     // Global Pinned Posts
     on<GlobalFeedPinPostUpdated>((event, emit) async {
       // First we collect pinned post ids
@@ -111,14 +106,109 @@ class GlobalFeedBloc extends Bloc<GlobalFeedEvent, GlobalFeedState> {
       addEvent(GlobalFeedPinPostUpdated(pinnedPosts: pinnedPosts));
     });
 
+    // Search Event Handler
+    on<GlobalFeedSearchQueryChanged>((event, emit) async {
+      final query = event.query.toLowerCase().trim();
+      emit(state.copyWith(searchQuery: query));
+      
+      if (query.isEmpty) {
+        // If search query is empty, show all posts
+        emit(state.copyWith(filteredList: state.list));
+      } else {
+        // Filter posts based on text content
+        final filtered = state.list.where((post) {
+          // Search in post text
+          final postText = _getPostText(post).toLowerCase();
+          if (postText.contains(query)) return true;
+          
+          // Search in target community name
+          if (post.target is CommunityTarget) {
+            final communityName = (post.target as CommunityTarget).targetCommunity?.displayName?.toLowerCase() ?? '';
+            if (communityName.contains(query)) return true;
+          }
+          
+          // Search in user display name
+          final userName = post.postedUser?.displayName?.toLowerCase() ?? '';
+          if (userName.contains(query)) return true;
+          
+          return false;
+        }).toList();
+        
+        emit(state.copyWith(filteredList: filtered));
+      }
+    });
+
+    // Filter Event Handlers
+    on<GlobalFeedFilterChanged>((event, emit) async {
+      emit(state.copyWith(
+        selectedDataTypes: event.dataTypes ?? state.selectedDataTypes,
+        sortOption: event.sortOption ?? state.sortOption,
+        includeDeleted: event.includeDeleted ?? state.includeDeleted,
+      ));
+      
+      // Re-apply filters to current posts
+      updateFeed(state.list, state.pinnedPosts, emit);
+    });
+
+    on<GlobalFeedClearFilters>((event, emit) async {
+      emit(state.copyWith(
+        selectedDataTypes: const [],
+        sortOption: AmityPostSortOption.LAST_CREATED,
+        includeDeleted: false,
+      ));
+      
+      // Re-apply filters (which will reset to show all)
+      updateFeed(state.list, state.pinnedPosts, emit);
+    });
+
     // Load live collection
     pinnedPostCollection.loadNext();
     liveCollection.loadNext();
   }
+  
+  // Initialize live collection
+  void _initializeLiveCollection() {
+    _liveCollectionSubscription?.cancel();
+    _loadingSubscription?.cancel();
+    
+    // Global feed doesn't support filtering at SDK level
+    // We'll always use CustomRanking and apply filters client-side
+    liveCollection = AmitySocialClient.newFeedRepository()
+        .getCustomRankingGlobalFeed()
+        .getLiveCollection();
+    
+    // Subscribe to collection updates
+    _liveCollectionSubscription = liveCollection.getStreamController().stream.listen((event) {
+      addEvent(GlobalFeedListUpdated(posts: event));
+    });
+
+    _loadingSubscription = liveCollection.observeLoadingState().listen((isLoading) {
+      addEvent(GlobalFeedLoadingStateUpdated(isLoading: isLoading));
+    });
+  }
+  
+  // Helper method to extract text from post
+  String _getPostText(AmityPost post) {
+    if (post.data is TextData) {
+      return (post.data as TextData).text ?? '';
+    } else if (post.data is CommentTextData) {
+      return (post.data as CommentTextData).text ?? '';
+    }
+    return '';
+  }
 
   @override
   Future<void> close() {
-    liveCollection.dispose();
+    _liveCollectionSubscription?.cancel();
+    _loadingSubscription?.cancel();
+    for (var subscription in subscriptions) {
+      subscription.cancel();
+    }
+    try {
+      liveCollection?.dispose();
+    } catch (e) {
+      // Ignore disposal errors
+    }
     pinnedPostCollection.dispose();
     return super.close();
   }
@@ -157,10 +247,96 @@ class GlobalFeedBloc extends Bloc<GlobalFeedEvent, GlobalFeedState> {
       list.insertAll(0, mappedPinnedPosts);
     }
     
+    // Separate pinned posts from regular posts for filtering
+    final regularPosts = list.where((post) => !pinnedPostIds.contains(post.postId)).toList();
+    final pinnedPostsList = list.where((post) => pinnedPostIds.contains(post.postId)).toList();
+    
+    // Apply content type filters to regular posts only
+    var filteredByType = regularPosts;
+    if (state.selectedDataTypes.isNotEmpty) {
+      filteredByType = _filterByDataType(regularPosts, state.selectedDataTypes);
+    }
+    
+    // Apply sort option to filtered posts only
+    var sortedList = _applySorting(filteredByType, state.sortOption);
+    
+    // Apply search filter if there's a search query
+    var searchFilteredList = state.searchQuery.isEmpty ? sortedList : _filterPosts(sortedList, state.searchQuery);
+    
+    // Re-add pinned posts at the top (they should always be visible)
+    final filteredList = [...pinnedPostsList, ...searchFilteredList];
+    
     emit(state.copyWith(
         list: list,
         hasMoreItems: liveCollection.hasNextPage(),
         pinnedPostIds: pinnedPostIds,
-        pinnedPosts: pinnedPosts));
+        pinnedPosts: pinnedPosts,
+        filteredList: filteredList));
+  }
+  
+  // Helper method to filter posts based on search query
+  List<AmityPost> _filterPosts(List<AmityPost> posts, String query) {
+    final lowerQuery = query.toLowerCase().trim();
+    if (lowerQuery.isEmpty) return posts;
+    
+    return posts.where((post) {
+      // Search in post text
+      final postText = _getPostText(post).toLowerCase();
+      if (postText.contains(lowerQuery)) return true;
+      
+      // Search in target community name
+      if (post.target is CommunityTarget) {
+        final communityName = (post.target as CommunityTarget).targetCommunity?.displayName?.toLowerCase() ?? '';
+        if (communityName.contains(lowerQuery)) return true;
+      }
+      
+      // Search in user display name
+      final userName = post.postedUser?.displayName?.toLowerCase() ?? '';
+      if (userName.contains(lowerQuery)) return true;
+      
+      return false;
+    }).toList();
+  }
+  
+  // Helper method to filter posts by data type (content type)
+  List<AmityPost> _filterByDataType(List<AmityPost> posts, List<AmityDataType> dataTypes) {
+    if (dataTypes.isEmpty) return posts;
+    
+    return posts.where((post) {
+      // Check post type
+      if (dataTypes.contains(post.type)) return true;
+      
+      // Check children types (for posts with attachments)
+      if (post.children != null && post.children!.isNotEmpty) {
+        for (var child in post.children!) {
+          if (dataTypes.contains(child.type)) return true;
+        }
+      }
+      
+      return false;
+    }).toList();
+  }
+  
+  // Helper method to apply sorting
+  List<AmityPost> _applySorting(List<AmityPost> posts, AmityPostSortOption sortOption) {
+    final sortedList = List<AmityPost>.from(posts);
+    
+    if (sortOption == AmityPostSortOption.FIRST_CREATED) {
+      // Sort oldest first
+      sortedList.sort((a, b) {
+        final aTime = a.createdAt ?? DateTime.now();
+        final bTime = b.createdAt ?? DateTime.now();
+        return aTime.compareTo(bTime);
+      });
+    } else {
+      // Sort latest first (LAST_CREATED or default)
+      sortedList.sort((a, b) {
+        final aTime = a.createdAt ?? DateTime.now();
+        final bTime = b.createdAt ?? DateTime.now();
+        return bTime.compareTo(aTime);
+      });
+    }
+    
+    return sortedList;
   }
 }

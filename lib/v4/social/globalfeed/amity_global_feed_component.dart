@@ -1,7 +1,9 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/amity_empty_newsfeed_component.dart';
+import 'package:amity_uikit_beta_service/v4/social/globalfeed/amity_global_feed_filter_bottom_sheet.dart';
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/bloc/global_feed_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
@@ -15,13 +17,15 @@ import 'package:amity_uikit_beta_service/v4/utils/shimmer_widget.dart';
 import 'package:amity_uikit_beta_service/v4/utils/skeleton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 class AmityGlobalFeedComponent extends NewBaseComponent {
+  final List<String> viewedPost = [];
+  final TextEditingController searchController = TextEditingController();
+
   AmityGlobalFeedComponent({Key? key, String? pageId})
       : super(key: key, pageId: pageId, componentId: 'global_feed_component');
-
-  List<String> viewedPost = [];
 
   @override
   Widget buildComponent(BuildContext context) {
@@ -38,7 +42,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
       child: BlocBuilder<GlobalFeedBloc, GlobalFeedState>(
           builder: (context, state) {
         if (state.isFetching && state.list.isEmpty) {
-          viewedPost = [];
+          viewedPost.clear();
           return FeedSkeleton(theme, configProvider);
         } else {
           return BaseComponent(
@@ -61,15 +65,137 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                     ),
                   ),
                   SliverToBoxAdapter(
+                    child: Container(
+                      color: theme.backgroundColor,
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        right: 16,
+                        top: 12,
+                        bottom: 12,
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: TextField(
+                              controller: searchController,
+                              style: AmityTextStyle.body(theme.baseColor),
+                              decoration: InputDecoration(
+                                prefixIcon: Container(
+                                  width: 20,
+                                  height: 20,
+                                  padding: const EdgeInsets.only(
+                                    top: 12,
+                                    bottom: 12,
+                                    right: 8,
+                                    left: 12,
+                                  ),
+                                  child: SvgPicture.asset(
+                                    'assets/Icons/amity_ic_navigation_search.svg',
+                                    package: 'amity_uikit_beta_service',
+                                    colorFilter: ColorFilter.mode(
+                                      theme.baseColorShade2,
+                                      BlendMode.srcIn,
+                                    ),
+                                  ),
+                                ),
+                                hintText: 'Search posts...',
+                                hintStyle: AmityTextStyle.body(theme.baseColorShade2),
+                                filled: true,
+                                contentPadding: const EdgeInsets.symmetric(vertical: 0),
+                                fillColor: theme.baseColorShade4,
+                                focusColor: Colors.white,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                  borderSide: BorderSide.none,
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                  borderSide: BorderSide.none,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                  borderSide: BorderSide.none,
+                                ),
+                              ),
+                              onChanged: (value) {
+                                context.read<GlobalFeedBloc>().addEvent(
+                                      GlobalFeedSearchQueryChanged(query: value),
+                                    );
+                              },
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          // Filter Button
+                          Stack(
+                            children: [
+                              InkWell(
+                                onTap: () {
+                                  showModalBottomSheet(
+                                    context: context,
+                                    isScrollControlled: true,
+                                    backgroundColor: Colors.transparent,
+                                    builder: (bottomSheetContext) {
+                                      return BlocProvider.value(
+                                        value: context.read<GlobalFeedBloc>(),
+                                        child: AmityGlobalFeedFilterBottomSheet(
+                                          pageId: pageId,
+                                          selectedDataTypes: state.selectedDataTypes,
+                                          sortOption: state.sortOption,
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                                child: Container(
+                                  width: 48,
+                                  height: 48,
+                                  decoration: BoxDecoration(
+                                    color: state.selectedDataTypes.isNotEmpty ||
+                                            state.sortOption != AmityPostSortOption.LAST_CREATED
+                                        ? theme.primaryColor
+                                        : theme.baseColorShade4,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Icon(
+                                    Icons.tune,
+                                    color: state.selectedDataTypes.isNotEmpty ||
+                                            state.sortOption != AmityPostSortOption.LAST_CREATED
+                                        ? Colors.white
+                                        : theme.baseColor,
+                                  ),
+                                ),
+                              ),
+                              // Filter Badge
+                              if (state.selectedDataTypes.isNotEmpty ||
+                                  state.sortOption != AmityPostSortOption.LAST_CREATED)
+                                Positioned(
+                                  right: 4,
+                                  top: 4,
+                                  child: Container(
+                                    width: 8,
+                                    height: 8,
+                                    decoration: BoxDecoration(
+                                      color: theme.alertColor,
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SliverToBoxAdapter(
                       child: Container(
                     color: theme.baseColorShade4,
                     height: 8,
                   )),
-                  if (state.list.isNotEmpty)
+                  if (state.filteredList.isNotEmpty)
                     SliverList(
                       delegate: SliverChildBuilderDelegate(
                         (context, index) {
-                          final amityPost = state.list[index];
+                          final amityPost = state.filteredList[index];
 
                           if (((amityPost.children?.isNotEmpty ?? false) &&
                                   (amityPost.children!.first.type ==
@@ -123,7 +249,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                             );
                           }
                         },
-                        childCount: state.list.length,
+                        childCount: state.filteredList.length,
                       ),
                     )
                   else
@@ -133,12 +259,40 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                         alignment: Alignment.center,
                         child: state.isFetching
                             ? const CircularProgressIndicator()
-                            : AmityEmptyNewsFeedComponent(
-                                pageId: pageId,
-                              ),
+                            : state.searchQuery.isNotEmpty
+                                ? Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.search_off,
+                                        size: 64,
+                                        color: theme.baseColorShade3,
+                                      ),
+                                      const SizedBox(height: 16),
+                                      Text(
+                                        'No posts found',
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          color: theme.baseColorShade1,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      Text(
+                                        'Try adjusting your search',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: theme.baseColorShade2,
+                                        ),
+                                      ),
+                                    ],
+                                  )
+                                : AmityEmptyNewsFeedComponent(
+                                    pageId: pageId,
+                                  ),
                       ),
                     ),
-                  if (state.isFetching && state.list.isNotEmpty)
+                  if (state.isFetching && state.filteredList.isNotEmpty)
                     SliverToBoxAdapter(
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 16.0),
