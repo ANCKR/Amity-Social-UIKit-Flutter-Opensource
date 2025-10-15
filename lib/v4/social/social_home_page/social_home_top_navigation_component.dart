@@ -64,7 +64,7 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
           },
         ),
         IconButton(
-          padding: EdgeInsets.only(right: selectedTab == AmitySocialHomePageTab.explore ? 16 : 0),
+          padding: EdgeInsets.only(right: selectedTab == AmitySocialHomePageTab.explore ? 16 : 12),
           icon: Container(
             width: 32,
             height: 32,
