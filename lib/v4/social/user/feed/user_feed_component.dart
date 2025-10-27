@@ -149,9 +149,7 @@ class UserFeedComponent extends NewBaseComponent {
 
   Widget _getPost(int index, UserFeedState state) {
     final amityPost = state.posts[index];
-    if (((amityPost.children?.isNotEmpty ?? false) &&
-            (amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
-        (amityPost.isDeleted ?? false)) {
+    if (amityPost.isDeleted ?? false) {
       return Container();
     } else {
       var uniqueKey = UniqueKey();

@@ -197,10 +197,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                         (context, index) {
                           final amityPost = state.filteredList[index];
 
-                          if (((amityPost.children?.isNotEmpty ?? false) &&
-                                  (amityPost.children!.first.type ==
-                                          AmityDataType.LIVESTREAM)) ||
-                              (amityPost.isDeleted ?? false)) {
+                          if (amityPost.isDeleted ?? false) {
                             return Container();
                           } else {
                             var uniqueKey = UniqueKey();
