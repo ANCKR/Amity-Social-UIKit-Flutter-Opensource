@@ -8,6 +8,7 @@ import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_compo
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_children_content_image.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_children_content_video.dart';
+import 'package:amity_uikit_beta_service/v4/social/post/common/post_children_content_livestream.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_header.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/post_detail/amity_post_detail_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/post_item/bloc/post_item_bloc.dart';
@@ -228,6 +229,8 @@ class PostItem extends NewBaseComponent {
       return PostContentImage(posts: post.children!, theme: theme);
     } else if (post.children!.first.data is VideoData) {
       return PostContentVideo(posts: post.children!, theme: theme);
+    } else if (post.children!.first.type == AmityDataType.LIVESTREAM) {
+      return PostContentLivestream(post: post.children!.first.data as LiveStreamData, theme: theme);
     } else if (post.children!.first.data is PollData) {
       return PostPollContent(
           post: post.children!.first,

@@ -3,6 +3,7 @@
 import 'dart:developer';
 
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_video_player/amity_video_player.dart';
 import 'package:amity_uikit_beta_service/uikit_behavior.dart';
 import 'package:amity_uikit_beta_service/l10n/generated/app_localizations.dart';
 import 'package:amity_uikit_beta_service/utils/navigation_key.dart';
@@ -123,6 +124,16 @@ class AmityUIKit {
           uploadEndpoint: amityUploadEndpoint!,
         ),
         sycInitialization: true);
+    
+    // Initialize Amity Video Player Client for livestream support
+    // As per documentation: https://docs.amity.co/social/flutter
+    try {
+      AmityStreamPlayerClient.setup(AmityCoreClient.getConfiguration());
+      log('AmityStreamPlayerClient initialized successfully');
+    } catch (e) {
+      log('Failed to initialize AmityStreamPlayerClient: $e');
+    }
+    
     stopwatch.stop();
     log('setupAmityClient execution time: ${stopwatch.elapsedMilliseconds} ms');
   }
