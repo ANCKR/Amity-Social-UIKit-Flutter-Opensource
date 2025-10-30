@@ -6,7 +6,6 @@ import 'easy_localization_helper.dart';
 /// This allows Amity UIKit to use the app's translation system without changing UI code
 ///
 /// Uses noSuchMethod to dynamically handle all translation getters
-@proxy
 class _EasyLocalizationBridge extends AppLocalizations {
   final BuildContext context;
   
