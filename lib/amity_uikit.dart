@@ -30,6 +30,7 @@ import 'package:amity_uikit_beta_service/viewmodel/my_community_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/notification_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/pending_request_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/reply_viewmodel.dart';
+import 'package:amity_uikit_beta_service/repository/translation_repo.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -67,6 +68,8 @@ class AmityUIKit {
     String? customSocketEndpoint,
     String? customMqttEndpoint,
     String? customUploadEndpoint,
+    String? translationServerUrl,
+    String? translationApiKey,
   }) async {
     Stopwatch stopwatch = Stopwatch()..start();
     AmityRegionalHttpEndpoint? amityEndpoint;
@@ -123,6 +126,14 @@ class AmityUIKit {
           uploadEndpoint: amityUploadEndpoint!,
         ),
         sycInitialization: true);
+    
+    // Initialize translation service
+    final translationService = TranslationService();
+    translationService.init(
+      baseUrl: translationServerUrl,
+      apiKey: translationApiKey,
+    );
+    
     stopwatch.stop();
     log('setupAmityClient execution time: ${stopwatch.elapsedMilliseconds} ms');
   }

@@ -19,6 +19,8 @@ import 'package:amity_uikit_beta_service/v4/utils/post_action_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:amity_uikit_beta_service/v4/social/common/translation_button.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import '../common/post_poll.dart';
 
@@ -28,6 +30,9 @@ class PostItem extends NewBaseComponent {
   final bool hideMenu;
   final bool hideTarget;
   final AmityPostAction? action;
+
+  // Static map to persist BLoCs across widget recreations
+  static final Map<String, PostItemBloc> _blocCache = {};
 
   PostItem({
     Key? key,
@@ -41,10 +46,24 @@ class PostItem extends NewBaseComponent {
 
   @override
   Widget buildComponent(BuildContext context) {
-    return BlocProvider(
-      create: (context) => PostItemBloc(context, post),
+    final postId = post.postId ?? '';
+    
+    if (!_blocCache.containsKey(postId)) {
+      _blocCache[postId] = PostItemBloc(context, post);
+    }
+    
+    return BlocProvider.value(
+      value: _blocCache[postId]!,
       child:
-          BlocBuilder<PostItemBloc, PostItemState>(builder: (context, state) {
+          BlocBuilder<PostItemBloc, PostItemState>(
+            buildWhen: (previous, current) {
+              return previous.isTranslated != current.isTranslated ||
+                  previous.isTranslating != current.isTranslating ||
+                  previous.translatedText != current.translatedText ||
+                  previous.post != current.post ||
+                  previous.isReacting != current.isReacting;
+            },
+            builder: (context, state) {
         // Check if this is a shared post and render accordingly
         return EnhancedPostWrapper(
           post: state.post,
@@ -57,7 +76,8 @@ class PostItem extends NewBaseComponent {
                 category: category,
                 hideTarget: hideTarget || isOriginalInShared,
                 isReacting: state.isReacting,
-                isOriginalInShared: isOriginalInShared);
+                isOriginalInShared: isOriginalInShared,
+                state: state);
           },
         );
       }),
@@ -71,6 +91,7 @@ class PostItem extends NewBaseComponent {
     required bool hideTarget,
     bool isReacting = false,
     bool isOriginalInShared = false,
+    required PostItemState state,
   }) {
     onAddReaction(reactionType) {
       context
@@ -134,7 +155,7 @@ class PostItem extends NewBaseComponent {
               hideTarget: hideTarget,
               action: postAction,
             ),
-            getTextPostContent(context, post),
+            getTextPostContent(context, post, state),
             if (post.children?.isEmpty ?? true && post.data is TextData)
               Container(
                 padding: const EdgeInsets.only(left: 16, right: 16, top: 8),
@@ -162,7 +183,7 @@ class PostItem extends NewBaseComponent {
     );
   }
 
-  Widget getTextPostContent(BuildContext context, AmityPost post) {
+  Widget getTextPostContent(BuildContext context, AmityPost post, PostItemState state) {
     // Get the text content from the post.
     String textContent = "";
     if (post.data is TextData) {
@@ -184,19 +205,60 @@ class PostItem extends NewBaseComponent {
       // Sort mention metadata by starting index (if not already sorted).
       mentionedUsers.sort((a, b) => a.index.compareTo(b.index));
     }
-
+    
+    // Use translated text if available, otherwise show original
+    final displayText = state.isTranslated && state.translatedText != null
+        ? state.translatedText!
+        : textContent;
+    
     // Return a RichText widget with the computed spans.
     return Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        child: ExpandableText(
-            text: textContent,
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ExpandableText(
+            key: ValueKey('text_${post.postId}_${state.isTranslated}'),
+            text: displayText,
             mentionedUsers: mentionedUsers,
             maxLines: 8,
             style: normalStyle,
             linkStyle: mentionStyle,
-            onMentionTap: (userId) => _goToUserProfilePage(context, userId)
-            ));
+            onMentionTap: (userId) => _goToUserProfilePage(context, userId),
+          ),
+          if (textContent.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            TranslationButton(
+              isTranslated: state.isTranslated,
+              isLoading: state.isTranslating,
+              error: null,
+              theme: theme,
+              onTap: () => _handleTranslation(context, textContent, state.isTranslated),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  void _handleTranslation(
+    BuildContext context,
+    String text,
+    bool isCurrentlyTranslated,
+  ) {
+    try {
+      final bloc = context.read<PostItemBloc>();
+      
+      if (isCurrentlyTranslated) {
+        bloc.add(ShowOriginalPost());
+      } else {
+        final targetLang = context.locale.languageCode;
+        bloc.add(TranslatePost(text: text, targetLang: targetLang));
+      }
+    } catch (e) {
+      // Handle error silently
+    }
   }
 
   Widget getImagePostContent(List<ImageData> images) {
