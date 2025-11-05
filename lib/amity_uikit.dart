@@ -17,6 +17,7 @@ import 'package:amity_uikit_beta_service/v4/social/story/create/bloc/create_stor
 import 'package:amity_uikit_beta_service/v4/social/story/draft/bloc/story_draft_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/hyperlink/bloc/hyperlink_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/social/livestream/data/livestream_session_manager.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
 import 'package:amity_uikit_beta_service/v4/utils/create_story/bloc/create_story_bloc.dart';
 import 'package:amity_uikit_beta_service/viewmodel/category_viewmodel.dart';
@@ -150,27 +151,19 @@ class AmityUIKit {
         .then((value) async {
       log("login success");
 
-      // await Provider.of<UserVM>(context, listen: false)
-      //     .initAccessToken()
-      //     .then((value) {
-      //   log("initAccessToken success");
-      //   if (Provider.of<UserVM>(context, listen: false).accessToken != null ||
-      //       Provider.of<UserVM>(context, listen: false).accessToken != "") {
+      // Initialize livestream session in background (non-blocking)
+      // Parent app doesn't wait for this - user can proceed immediately
+      LivestreamSessionManager().initializeSession().then((_) {
+        log("🎬 Livestream session initialized in background");
+      }).catchError((error) {
+        log("⚠️ Livestream session initialization failed (non-critical): $error");
+        // Don't block login on livestream session failure
+      });
+
+      // Callback immediately - don't wait for livestream session
       if (callback != null) {
         callback(true, null);
       }
-      //   } else {
-      //     if (callback != null) {
-      //       callback(false, "Initialize accesstoken fail...");
-      //     }
-      //   }
-      // }).onError((error, stackTrace) {
-      //   log("initAccessToken fail...");
-      //   log(error.toString());
-      //   if (callback != null) {
-      //     callback(true, error.toString());
-      //   }
-      // });
     }).onError((error, stackTrace) {
       log("registerDevice...Error:$error");
       if (callback != null) {
@@ -213,6 +206,10 @@ class AmityUIKit {
   void unRegisterDevice() {
     AmityCoreClient.unregisterDeviceNotification();
     ParentMessageCache().clear();
+    
+    // Clear livestream session on logout
+    LivestreamSessionManager().clearSession();
+    
     AmityCoreClient.logout();
   }
 

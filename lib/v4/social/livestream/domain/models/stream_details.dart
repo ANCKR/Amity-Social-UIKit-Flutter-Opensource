@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
 import 'stream_status.dart';
 
 /// Domain model representing livestream details from Amity REST API
@@ -50,6 +51,65 @@ class StreamDetails extends Equatable {
 
   /// Check if stream is playable
   bool get isPlayable => streamUrl != null && streamUrl!.isNotEmpty;
+
+  /// Get user-friendly status message
+  String get statusMessage {
+    switch (status) {
+      case StreamStatus.idle:
+        return 'Stream hasn\'t started yet';
+      case StreamStatus.live:
+        return 'Live now';
+      case StreamStatus.ended:
+        return recordings.isNotEmpty ? 'Watch replay' : 'Stream has ended';
+      case StreamStatus.recorded:
+        return 'Replay available';
+    }
+  }
+
+  /// Get badge text for UI
+  String get badgeText {
+    switch (status) {
+      case StreamStatus.idle:
+        return 'UPCOMING';
+      case StreamStatus.live:
+        return 'LIVE';
+      case StreamStatus.ended:
+        return 'ENDED';
+      case StreamStatus.recorded:
+        return 'REPLAY';
+    }
+  }
+
+  /// Get badge color
+  Color get badgeColor {
+    switch (status) {
+      case StreamStatus.idle:
+        return Colors.grey;
+      case StreamStatus.live:
+        return const Color(0xFFFF0000); // YouTube red
+      case StreamStatus.ended:
+        return Colors.grey.shade600;
+      case StreamStatus.recorded:
+        return Colors.blue;
+    }
+  }
+
+  /// Check if stream should show play button
+  bool get shouldShowPlayButton {
+    return status == StreamStatus.live || 
+           status == StreamStatus.recorded ||
+           (status == StreamStatus.ended && recordings.isNotEmpty);
+  }
+
+  /// Check if stream should show calendar/scheduled icon
+  bool get shouldShowScheduledIcon {
+    return status == StreamStatus.idle;
+  }
+
+  /// Check if stream should show "notify me" button
+  bool get shouldShowNotifyButton {
+    return status == StreamStatus.idle;
+  }
 
   @override
   List<Object?> get props => [

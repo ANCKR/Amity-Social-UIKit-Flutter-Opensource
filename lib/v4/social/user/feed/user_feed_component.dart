@@ -152,7 +152,8 @@ class UserFeedComponent extends NewBaseComponent {
     if (amityPost.isDeleted ?? false) {
       return Container();
     } else {
-      var uniqueKey = UniqueKey();
+      // Use stable key based on post ID to preserve widget state during scroll
+      final stableKey = ValueKey('post_${amityPost.postId}');
       return VisibilityDetector(
         key: Key(amityPost.postId ?? ''),
         onVisibilityChanged: (VisibilityInfo info) {
@@ -167,7 +168,7 @@ class UserFeedComponent extends NewBaseComponent {
                 style: AmityPostContentComponentStyle.feed,
                 post: amityPost,
                 category: AmityPostCategory.general,
-                key: uniqueKey,
+                key: stableKey,
                 hideTarget: true,
                 hideMenu: false,
                 action: AmityPostAction(

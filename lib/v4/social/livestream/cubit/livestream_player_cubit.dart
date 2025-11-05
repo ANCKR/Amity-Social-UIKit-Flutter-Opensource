@@ -16,7 +16,11 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
     required this.streamId,
     LivestreamApiClient? apiClient,
   })  : _apiClient = apiClient ?? LivestreamApiClient(),
-        super(const LivestreamPlayerState.initial()) {
+        super(const LivestreamPlayerState.initial());
+
+  /// Start player initialization
+  /// Call this manually when ready to load the stream
+  void start() {
     initialize();
   }
 
@@ -33,11 +37,14 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
       log('Status: ${streamDetails.status}, IsLive: ${streamDetails.isLive}');
       log('Stream URL: ${streamDetails.streamUrl}');
 
+      // Handle non-playable streams (idle, ended without recording)
       if (!streamDetails.isPlayable) {
+        log('Stream is not playable. Status: ${streamDetails.status}');
         emit(state.copyWith(
           isLoading: false,
-          errorMessage: 'Stream is not available for playback',
           streamDetails: streamDetails,
+          // Don't set errorMessage - this is an expected state, not an error
+          errorMessage: null,
         ));
         return;
       }

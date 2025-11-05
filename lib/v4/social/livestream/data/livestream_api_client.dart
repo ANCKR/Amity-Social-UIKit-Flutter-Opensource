@@ -3,9 +3,12 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:dio/dio.dart';
 import '../domain/models/stream_details.dart';
 import '../domain/models/stream_status.dart';
+import 'livestream_session_manager.dart';
 
 /// Client for calling Amity REST API directly to get stream data
 /// Bypasses the buggy SDK getStream() method
+/// 
+/// Now uses LivestreamSessionManager for token caching to reduce API calls
 class LivestreamApiClient {
   final Dio _dio;
 
@@ -34,9 +37,9 @@ class LivestreamApiClient {
     return 'https://apix.sg.amity.co/api';
   }
 
-  /// Step 1: Get Amity Authentication Token
+  /// Step 1: Get Amity Authentication Token (Public for SessionManager)
   /// POST /v4/authentication/token with X-Server-Key
-  Future<String?> _getAuthToken(String userId) async {
+  Future<String?> getAuthTokenForSession(String userId) async {
     try {
       final baseUrl = _getBaseUrl();
       
@@ -67,9 +70,9 @@ class LivestreamApiClient {
     }
   }
 
-  /// Step 2: Create Amity Session
+  /// Step 2: Create Amity Session (Public for SessionManager)
   /// POST /v4/sessions with X-Api-Key and authToken
-  Future<String?> _createSession(String userId, String authToken) async {
+  Future<String?> createSessionForToken(String userId, String authToken) async {
     try {
       final baseUrl = _getBaseUrl();
       
@@ -105,35 +108,18 @@ class LivestreamApiClient {
     }
   }
 
-  /// Get access token using the 2-step authentication sequence
+  /// Get access token - now uses LivestreamSessionManager for caching
+  /// 
+  /// This method now delegates to the session manager which:
+  /// - Returns cached token if still valid
+  /// - Creates new session if token expired
+  /// - Reduces redundant API calls
   Future<String?> _getAccessToken() async {
     try {
-      final userId = AmityCoreClient.getCurrentUser().userId;
-      if (userId == null) {
-        print('❌ No current user ID from SDK');
-        return null;
-      }
-
-      print('🔐 Starting authentication sequence for user: $userId');
-
-      // Step 1: Get auth token
-      final authToken = await _getAuthToken(userId);
-      if (authToken == null) {
-        print('❌ Authentication failed: Could not get auth token');
-        return null;
-      }
-
-      // Step 2: Create session and get access token
-      final accessToken = await _createSession(userId, authToken);
-      if (accessToken == null) {
-        print('❌ Authentication failed: Could not create session');
-        return null;
-      }
-
-      print('✅ Authentication successful!');
-      return accessToken;
+      // Use cached token from session manager
+      return await LivestreamSessionManager().getAccessToken();
     } catch (e) {
-      print('❌ Authentication error: $e');
+      print('❌ Error getting access token: $e');
       return null;
     }
   }
@@ -316,6 +302,41 @@ class LivestreamApiClient {
     if (value is double) return value;
     if (value is int) return value.toDouble();
     return double.tryParse(value.toString());
+  }
+
+  /// Fetch file details from REST API
+  /// GET /api/v3/files/{fileId}
+  Future<Map<String, dynamic>?> getFileDetails(String fileId) async {
+    try {
+      final baseUrl = _getBaseUrl();
+      print('📁 Fetching file details for fileId: $fileId');
+      
+      final accessToken = await _getAccessToken();
+
+      if (accessToken == null) {
+        print('❌ Authentication failed - no access token');
+        return null;
+      }
+
+      final response = await _dio.get(
+        '$baseUrl/v3/files/$fileId',
+        options: Options(
+          headers: {'Authorization': 'Bearer $accessToken'},
+        ),
+      );
+
+      if (response.statusCode == 200 && response.data != null) {
+        print('✅ File details fetched successfully');
+        print('File response: ${response.data}');
+        return response.data as Map<String, dynamic>;
+      }
+
+      print('❌ Failed to fetch file: ${response.statusCode}');
+      return null;
+    } catch (e) {
+      print('❌ Error fetching file details: $e');
+      return null;
+    }
   }
 }
 

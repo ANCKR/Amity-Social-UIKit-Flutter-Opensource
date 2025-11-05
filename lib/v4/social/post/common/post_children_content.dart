@@ -27,7 +27,11 @@ class PostChildrenContent extends StatelessWidget {
     } else if (post.children!.first.data is VideoData) {
       return PostContentVideo(posts: post.children!, theme: theme);
     } else if (post.children!.first.type == AmityDataType.LIVESTREAM) {
-      return PostContentLivestream(post: post.children!.first.data as LiveStreamData, theme: theme);
+      return PostContentLivestream(
+        post: post.children!.first.data as LiveStreamData, 
+        theme: theme,
+        fullPost: post.children!.first,
+      );
     } else if (post.children!.first.data is PollData) {
       return PostPollContent(post: post.children!.first, style: style, theme: theme, hideMenu: hideMenu, goToDetail: (){},);
     } else if (post.children!.first.data is FileData) {
