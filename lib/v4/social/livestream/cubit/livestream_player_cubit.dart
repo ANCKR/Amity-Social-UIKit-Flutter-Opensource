@@ -10,10 +10,12 @@ import 'livestream_player_state.dart';
 /// Cubit for managing livestream player state
 class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
   final String streamId;
+  final StreamDetails? initialStreamDetails;
   final LivestreamApiClient _apiClient;
 
   LivestreamPlayerCubit({
     required this.streamId,
+    this.initialStreamDetails,
     LivestreamApiClient? apiClient,
   })  : _apiClient = apiClient ?? LivestreamApiClient(),
         super(const LivestreamPlayerState.initial());
@@ -31,9 +33,17 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
 
       log('Initializing livestream player for: $streamId');
 
-      final streamDetails = await _apiClient.getStreamDetails(streamId);
+      // Use cached data if available (from preview widget)
+      StreamDetails streamDetails;
+      if (initialStreamDetails != null) {
+        log('Using cached stream details from preview');
+        streamDetails = initialStreamDetails!;
+      } else {
+        log('Fetching stream details from API');
+        streamDetails = await _apiClient.getStreamDetails(streamId);
+      }
 
-      log('Stream details fetched: ${streamDetails.streamId}');
+      log('Stream details: ${streamDetails.streamId}');
       log('Status: ${streamDetails.status}, IsLive: ${streamDetails.isLive}');
       log('Stream URL: ${streamDetails.streamUrl}');
 

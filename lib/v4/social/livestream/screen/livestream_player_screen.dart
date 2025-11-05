@@ -21,11 +21,13 @@ import 'package:chewie/chewie.dart';
 class LivestreamPlayerScreen extends StatefulWidget {
   final String streamId;
   final LiveStreamData livestreamData;
+  final StreamDetails? initialStreamDetails; // Optional cached data from preview
 
   const LivestreamPlayerScreen({
     Key? key,
     required this.streamId,
     required this.livestreamData,
+    this.initialStreamDetails,
   }) : super(key: key);
 
   @override
@@ -45,8 +47,11 @@ class _LivestreamPlayerScreenState extends State<LivestreamPlayerScreen> {
       DeviceOrientation.landscapeRight,
     ]);
 
-    // Create cubit and manually start initialization
-    _cubit = LivestreamPlayerCubit(streamId: widget.streamId);
+    // Create cubit with optional cached data
+    _cubit = LivestreamPlayerCubit(
+      streamId: widget.streamId,
+      initialStreamDetails: widget.initialStreamDetails,
+    );
     _cubit.start(); // Manual initialization (not auto)
   }
 

@@ -16,6 +16,7 @@ class LivestreamPreviewWidget extends StatefulWidget {
   final AmityThemeColor theme;
   final double aspectRatio;
   final AmityPost? fullPost; // For debugging
+  final void Function(StreamDetails?)? onStreamDetailsLoaded; // Callback to pass data to parent
 
   const LivestreamPreviewWidget({
     Key? key,
@@ -23,6 +24,7 @@ class LivestreamPreviewWidget extends StatefulWidget {
     required this.theme,
     this.aspectRatio = 16 / 9,
     this.fullPost,
+    this.onStreamDetailsLoaded,
   }) : super(key: key);
 
   @override
@@ -35,7 +37,7 @@ class _LivestreamPreviewWidgetState extends State<LivestreamPreviewWidget>
   StreamDetails? _streamDetails;
 
   @override
-  bool get wantKeepAlive => true; // Keep widget alive during scroll
+  bool get wantKeepAlive => _streamDetails != null; // Keep alive only if data loaded
 
   @override
   void initState() {
@@ -49,23 +51,21 @@ class _LivestreamPreviewWidgetState extends State<LivestreamPreviewWidget>
       final sessionManager = LivestreamSessionManager();
       final streamDetails = await sessionManager.getStreamDetails(widget.livestreamData.streamId!);
 
-      // Update state with stream details
+      // Fetch thumbnail if available
+      String? thumbnailUrl;
+      if (streamDetails.thumbnailFileId != null && streamDetails.thumbnailFileId!.isNotEmpty) {
+        thumbnailUrl = await sessionManager.getThumbnailUrl(streamDetails.thumbnailFileId!);
+      }
+
+      // Single setState call for both values
       if (mounted) {
         setState(() {
           _streamDetails = streamDetails;
+          _thumbnailUrl = thumbnailUrl;
         });
-      }
-
-      // If thumbnailFileId exists, fetch the thumbnail URL (with caching)
-      if (streamDetails.thumbnailFileId != null && streamDetails.thumbnailFileId!.isNotEmpty) {
-        // Use session manager which handles caching
-        final thumbnailUrl = await sessionManager.getThumbnailUrl(streamDetails.thumbnailFileId!);
-
-        if (thumbnailUrl != null && mounted) {
-          setState(() {
-            _thumbnailUrl = thumbnailUrl;
-          });
-        }
+        
+        // Notify parent widget of loaded stream details
+        widget.onStreamDetailsLoaded?.call(streamDetails);
       }
     } catch (e) {
       // Silently fail - will show gradient placeholder
@@ -130,7 +130,8 @@ class _LivestreamPreviewWidgetState extends State<LivestreamPreviewWidget>
         child: Image.network(
           _thumbnailUrl!,
           fit: BoxFit.cover,
-          cacheWidth: 600, // Optimize image size
+          cacheWidth: 600,
+          cacheHeight: 338, // 16:9 ratio
           errorBuilder: (context, error, stackTrace) {
             // Fallback to gradient if image fails to load
             return _buildGradientPlaceholder();

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_preview_widget.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/screen/livestream_player_screen.dart';
+import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_details.dart';
 
 /// Widget to display livestream content in a post (YouTube-style)
 /// 
@@ -10,10 +11,10 @@ import 'package:amity_uikit_beta_service/v4/social/livestream/screen/livestream_
 /// Opens full player screen when tapped (portrait → landscape on fullscreen)
 /// 
 /// Flow:
-/// 1. Feed: Shows preview (no initialization, no API calls)
-/// 2. Tap: Navigate to LivestreamPlayerScreen (portrait mode)
+/// 1. Feed: Shows preview (fetches stream data once)
+/// 2. Tap: Navigate to LivestreamPlayerScreen with cached data
 /// 3. Fullscreen button: Chewie handles landscape rotation
-class PostContentLivestream extends StatelessWidget {
+class PostContentLivestream extends StatefulWidget {
   final LiveStreamData post;
   final AmityThemeColor theme;
   final AmityPost? fullPost; // Optional: for debugging full post data
@@ -26,9 +27,16 @@ class PostContentLivestream extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  State<PostContentLivestream> createState() => _PostContentLivestreamState();
+}
+
+class _PostContentLivestreamState extends State<PostContentLivestream> {
+  StreamDetails? _cachedStreamDetails;
+
+  @override
   Widget build(BuildContext context) {
     // Validate stream ID exists
-    if (post.streamId == null || post.streamId!.isEmpty) {
+    if (widget.post.streamId == null || widget.post.streamId!.isEmpty) {
       return AspectRatio(
         aspectRatio: 16 / 9,
         child: Container(
@@ -43,25 +51,30 @@ class PostContentLivestream extends StatelessWidget {
       );
     }
 
-    // Show preview thumbnail in feed (no player initialization)
+    // Show preview thumbnail in feed
     return GestureDetector(
       onTap: () {
-        // Navigate to full player screen (YouTube pattern)
+        // Navigate to full player screen with cached data
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => LivestreamPlayerScreen(
-              streamId: post.streamId!,
-              livestreamData: post,
+              streamId: widget.post.streamId!,
+              livestreamData: widget.post,
+              initialStreamDetails: _cachedStreamDetails, // Pass cached data
             ),
           ),
         );
       },
       child: LivestreamPreviewWidget(
-        livestreamData: post,
-        theme: theme,
+        livestreamData: widget.post,
+        theme: widget.theme,
         aspectRatio: 16 / 9,
-        fullPost: fullPost,
+        fullPost: widget.fullPost,
+        onStreamDetailsLoaded: (details) {
+          // Cache stream details when loaded
+          _cachedStreamDetails = details;
+        },
       ),
     );
   }

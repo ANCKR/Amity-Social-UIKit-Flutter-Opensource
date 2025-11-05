@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:developer';
 import 'package:amity_sdk/amity_sdk.dart';
 import 'livestream_api_client.dart';
@@ -37,24 +38,28 @@ class LivestreamSessionManager {
   // API client for authentication
   final LivestreamApiClient _apiClient = LivestreamApiClient();
 
-  // Initialization state
-  bool _isInitializing = false;
+  // Initialization state (using Completer to prevent race conditions)
+  Completer<void>? _initializationCompleter;
   
   // Cache durations
   static const Duration _streamDetailsCacheDuration = Duration(seconds: 30);
   static const Duration _thumbnailCacheDuration = Duration(minutes: 5);
+  
+  // Cache size limits (prevent memory bloat)
+  static const int _maxStreamCacheSize = 50;
+  static const int _maxThumbnailCacheSize = 100;
 
   /// Initialize session after user logs in
   /// 
   /// Creates a new session and caches the access token.
-  /// Safe to call multiple times - will skip if already initializing.
+  /// Safe to call multiple times - will wait for existing initialization.
   /// 
   /// This should be called in AmityUIKit.registerDevice() after successful login.
   Future<void> initializeSession() async {
-    // Skip if already initializing
-    if (_isInitializing) {
-      log('🎬 Livestream session already initializing, skipping...');
-      return;
+    // If already initializing, wait for existing operation
+    if (_initializationCompleter != null && !_initializationCompleter!.isCompleted) {
+      log('🎬 Livestream session already initializing, waiting...');
+      return _initializationCompleter!.future;
     }
 
     // Skip if token is still valid
@@ -63,8 +68,9 @@ class LivestreamSessionManager {
       return;
     }
 
+    _initializationCompleter = Completer<void>();
+
     try {
-      _isInitializing = true;
       
       final userId = AmityCoreClient.getCurrentUser().userId;
       if (userId == null) {
@@ -99,10 +105,12 @@ class LivestreamSessionManager {
       log('   Token cached until: $_tokenExpiry');
       log('🎬 ═══════════════════════════════════════════════════════');
       log('');
+      
+      _initializationCompleter?.complete();
     } catch (e) {
       log('❌ Error initializing livestream session: $e');
-    } finally {
-      _isInitializing = false;
+      _initializationCompleter?.completeError(e);
+      rethrow;
     }
   }
 
@@ -166,11 +174,8 @@ class LivestreamSessionManager {
     
     final details = await _apiClient.getStreamDetails(streamId);
     
-    // Cache it
-    _streamDetailsCache[streamId] = _CachedStreamDetails(
-      details: details,
-      fetchedAt: DateTime.now(),
-    );
+    // Cache it with size limit
+    _addToStreamCache(streamId, details);
     
     log('💾 Cached stream details for: $streamId');
     return details;
@@ -208,11 +213,8 @@ class LivestreamSessionManager {
     final thumbnailUrl = fileDetails?['fileUrl'] as String?;
     
     if (thumbnailUrl != null) {
-      // Cache it
-      _thumbnailCache[fileId] = _CachedThumbnail(
-        url: thumbnailUrl,
-        fetchedAt: DateTime.now(),
-      );
+      // Cache it with size limit
+      _addToThumbnailCache(fileId, thumbnailUrl);
       log('💾 Cached thumbnail URL for: $fileId');
     }
     
@@ -247,14 +249,45 @@ class LivestreamSessionManager {
       
       _accessToken = null;
       _tokenExpiry = null;
-      _isInitializing = false;
+      _initializationCompleter = null;
       _streamDetailsCache.clear();
       _thumbnailCache.clear();
     }
   }
+  
+  /// Add stream details to cache with LRU eviction
+  void _addToStreamCache(String streamId, StreamDetails details) {
+    // Remove oldest entry if cache is full
+    if (_streamDetailsCache.length >= _maxStreamCacheSize) {
+      final oldestKey = _streamDetailsCache.keys.first;
+      _streamDetailsCache.remove(oldestKey);
+      log('🗑️  Evicted oldest stream from cache: $oldestKey');
+    }
+    
+    _streamDetailsCache[streamId] = _CachedStreamDetails(
+      details: details,
+      fetchedAt: DateTime.now(),
+    );
+  }
+  
+  /// Add thumbnail to cache with LRU eviction
+  void _addToThumbnailCache(String fileId, String url) {
+    // Remove oldest entry if cache is full
+    if (_thumbnailCache.length >= _maxThumbnailCacheSize) {
+      final oldestKey = _thumbnailCache.keys.first;
+      _thumbnailCache.remove(oldestKey);
+      log('🗑️  Evicted oldest thumbnail from cache: $oldestKey');
+    }
+    
+    _thumbnailCache[fileId] = _CachedThumbnail(
+      url: url,
+      fetchedAt: DateTime.now(),
+    );
+  }
 
   /// Check if session is currently initializing
-  bool get isInitializing => _isInitializing;
+  bool get isInitializing => 
+      _initializationCompleter != null && !_initializationCompleter!.isCompleted;
 
   /// Check if session is initialized and valid
   bool get isSessionValid => _isTokenValid();
