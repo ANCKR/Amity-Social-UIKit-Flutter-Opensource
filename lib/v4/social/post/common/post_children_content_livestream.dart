@@ -1,9 +1,13 @@
 import 'package:amity_sdk/amity_sdk.dart';
-import 'package:amity_video_player/amity_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_player_widget.dart';
 
-class PostContentLivestream extends StatefulWidget {
+/// Widget to display livestream content in a post
+/// 
+/// Uses custom LivestreamPlayerWidget that calls REST API directly
+/// to bypass the buggy SDK getStream() method
+class PostContentLivestream extends StatelessWidget {
   final LiveStreamData post;
   final AmityThemeColor theme;
 
@@ -14,42 +18,28 @@ class PostContentLivestream extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<PostContentLivestream> createState() => _PostContentLivestreamState();
-}
-
-class _PostContentLivestreamState extends State<PostContentLivestream> {
-  late AmityVideoContoller controller;
-  AmityStream? _amityStream;
-
-  @override
-  void initState() {
-    super.initState();
-    controller = AmityVideoContoller(streamId: widget.post.streamId!);
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  Future<void> getStream() async {
-    try {
-      _amityStream = await getAmityStreamById(widget.post.streamId!);
-    } catch (e) {
-      print('error: $e');
-    }
-  }
-
-  Future<AmityStream> getAmityStreamById(String streamId) async {
-    return await AmityVideoClient.newStreamRepository()
-        .getStream(streamId);
-  }
-
-  @override
   Widget build(BuildContext context) {
-    print('widget.post.streamId: ${widget.post.streamId}');
-    return AmityVideoPlayer(
-        controller: AmityVideoContoller(streamId: widget.post.streamId!),
+    // Validate stream ID exists
+    if (post.streamId == null || post.streamId!.isEmpty) {
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(
+          color: Colors.black,
+          child: const Center(
+            child: Text(
+              'Invalid stream ID',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
       );
+    }
+
+    // Use custom livestream player with REST API
+    return LivestreamPlayerWidget(
+      streamId: post.streamId!,
+      aspectRatio: 16 / 9,
+    );
   }
 }
+
