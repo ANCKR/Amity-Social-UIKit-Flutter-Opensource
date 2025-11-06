@@ -4,6 +4,8 @@ import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/data/livestream_session_manager.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_details.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_status.dart';
+import 'package:amity_uikit_beta_service/v4/utils/shimmer_widget.dart';
+import 'package:amity_uikit_beta_service/v4/utils/skeleton.dart';
 
 /// Preview widget for livestream posts shown in feed
 /// 
@@ -147,21 +149,40 @@ class _LivestreamPreviewWidgetState extends State<LivestreamPreviewWidget>
   }
 
 
-  /// Build gradient placeholder
+  /// Build gradient placeholder with shimmer effect
   Widget _buildGradientPlaceholder() {
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            widget.theme.primaryColor.withOpacity(0.8),
-            widget.theme.primaryColor.withOpacity(0.4),
-            Colors.black.withOpacity(0.8),
-          ],
-        ),
+        color: Colors.black,
         borderRadius: const BorderRadius.vertical(
           top: Radius.circular(8),
+        ),
+      ),
+      child: Shimmer(
+        linearGradient: LinearGradient(
+          colors: [
+            const Color(0xFF1A1A1A),
+            widget.theme.primaryColor.withOpacity(0.3),
+            const Color(0xFF1A1A1A),
+          ],
+          stops: const [0.1, 0.5, 0.9],
+          begin: const Alignment(-1.0, -0.3),
+          end: const Alignment(1.0, 0.3),
+          tileMode: TileMode.clamp,
+        ),
+        child: ShimmerLoading(
+          isLoading: true,
+          child: Container(
+            color: const Color(0xFF1A1A1A),
+            child: Center(
+              child: SkeletonImage(
+                width: 80,
+                height: 80,
+                borderRadius: 40,
+                color: widget.theme.primaryColor.withOpacity(0.2),
+              ),
+            ),
+          ),
         ),
       ),
     );
