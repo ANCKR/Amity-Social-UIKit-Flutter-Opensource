@@ -55,6 +55,9 @@ class _PostContentLivestreamState extends State<PostContentLivestream> {
     return GestureDetector(
       onTap: () {
         // Navigate to full player screen with cached data
+        print('📱 User tapped livestream preview');
+        print('🔍 Cached stream details: ${_cachedStreamDetails != null ? "AVAILABLE" : "NULL - will call API"}');
+        
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -73,6 +76,7 @@ class _PostContentLivestreamState extends State<PostContentLivestream> {
         fullPost: widget.fullPost,
         onStreamDetailsLoaded: (details) {
           // Cache stream details when loaded
+          print('💾 Stream details cached for: ${widget.post.streamId}');
           _cachedStreamDetails = details;
         },
       ),

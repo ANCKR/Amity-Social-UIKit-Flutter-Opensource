@@ -10,6 +10,7 @@ class StreamDetails extends Equatable {
   final StreamStatus status;
   final bool isLive;
   final String? thumbnailFileId;
+  final String? thumbnailUrl; // Direct URL from files array
   final String? userId;
   final DateTime? createdAt;
   final DateTime? startedAt;
@@ -28,6 +29,7 @@ class StreamDetails extends Equatable {
     required this.status,
     required this.isLive,
     this.thumbnailFileId,
+    this.thumbnailUrl,
     this.userId,
     this.createdAt,
     this.startedAt,

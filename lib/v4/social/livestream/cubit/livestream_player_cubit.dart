@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:chewie/chewie.dart';
 import 'package:video_player/video_player.dart';
 import '../data/livestream_api_client.dart';
+import '../data/livestream_session_manager.dart';
 import '../domain/models/stream_details.dart';
 import 'livestream_player_state.dart';
 
@@ -31,16 +32,27 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
     try {
       emit(state.copyWith(isLoading: true, errorMessage: null));
 
-      log('Initializing livestream player for: $streamId');
+      log('🎬 Initializing livestream player for: $streamId');
 
-      // Use cached data if available (from preview widget)
+      // Priority order:
+      // 1. Use passed initialStreamDetails (from preview callback)
+      // 2. Check LivestreamSessionManager cache (preview already fetched it)
+      // 3. Fetch from API as last resort
       StreamDetails streamDetails;
       if (initialStreamDetails != null) {
-        log('Using cached stream details from preview');
+        log('✅ Using passed stream details from preview (NO API CALL)');
         streamDetails = initialStreamDetails!;
       } else {
-        log('Fetching stream details from API');
-        streamDetails = await _apiClient.getStreamDetails(streamId);
+        // Check session manager cache - preview should have already cached it
+        final sessionManager = LivestreamSessionManager();
+        try {
+          log('🔍 Checking session manager cache...');
+          streamDetails = await sessionManager.getStreamDetails(streamId, forceRefresh: false);
+          log('✅ Found in session manager cache (NO API CALL)');
+        } catch (e) {
+          log('⚠️ Cache miss - fetching from API');
+          streamDetails = await _apiClient.getStreamDetails(streamId);
+        }
       }
 
       log('Stream details: ${streamDetails.streamId}');

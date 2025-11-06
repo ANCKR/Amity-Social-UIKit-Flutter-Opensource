@@ -51,11 +51,8 @@ class _LivestreamPreviewWidgetState extends State<LivestreamPreviewWidget>
       final sessionManager = LivestreamSessionManager();
       final streamDetails = await sessionManager.getStreamDetails(widget.livestreamData.streamId!);
 
-      // Fetch thumbnail if available
-      String? thumbnailUrl;
-      if (streamDetails.thumbnailFileId != null && streamDetails.thumbnailFileId!.isNotEmpty) {
-        thumbnailUrl = await sessionManager.getThumbnailUrl(streamDetails.thumbnailFileId!);
-      }
+      // Use thumbnail URL directly from stream details (no extra API call needed!)
+      final thumbnailUrl = streamDetails.thumbnailUrl;
 
       // Single setState call for both values
       if (mounted) {

@@ -152,24 +152,33 @@ class LivestreamSessionManager {
     String streamId, {
     bool forceRefresh = false,
   }) async {
+    log('📦 getStreamDetails called for: $streamId (forceRefresh: $forceRefresh)');
+    log('📦 Cache size: ${_streamDetailsCache.length}');
+    log('📦 Cache contains streamId: ${_streamDetailsCache.containsKey(streamId)}');
+    
     // Check cache first (unless force refresh)
     if (!forceRefresh && _streamDetailsCache.containsKey(streamId)) {
       final cached = _streamDetailsCache[streamId]!;
+      final age = DateTime.now().difference(cached.fetchedAt);
+      
+      log('📦 Found in cache! Age: ${age.inSeconds}s, Max age: ${_streamDetailsCacheDuration.inSeconds}s');
       
       // Return cached if still fresh
-      if (DateTime.now().difference(cached.fetchedAt) < _streamDetailsCacheDuration) {
-        log('✅ Using cached stream details for: $streamId (age: ${DateTime.now().difference(cached.fetchedAt).inSeconds}s)');
+      if (age < _streamDetailsCacheDuration) {
+        log('✅ CACHE HIT: Using cached stream details for: $streamId (age: ${age.inSeconds}s) - NO API CALL');
         return cached.details;
       } else {
-        log('⏰ Cache expired for stream: $streamId (age: ${DateTime.now().difference(cached.fetchedAt).inSeconds}s)');
+        log('⏰ CACHE EXPIRED for stream: $streamId (age: ${age.inSeconds}s)');
       }
+    } else {
+      log('❌ CACHE MISS for stream: $streamId');
     }
     
     // Cache miss, expired, or force refresh - fetch from API
     if (forceRefresh) {
       log('🔄 Force refresh: Fetching fresh stream details for: $streamId');
     } else {
-      log('🔄 Fetching fresh stream details for: $streamId');
+      log('🔄 Cache miss/expired: Fetching stream details from API for: $streamId');
     }
     
     final details = await _apiClient.getStreamDetails(streamId);
@@ -177,7 +186,7 @@ class LivestreamSessionManager {
     // Cache it with size limit
     _addToStreamCache(streamId, details);
     
-    log('💾 Cached stream details for: $streamId');
+    log('💾 Cached stream details for: $streamId (cache size now: ${_streamDetailsCache.length})');
     return details;
   }
   

@@ -1,5 +1,4 @@
 import 'dart:developer';
-import 'package:amity_sdk/amity_sdk.dart';
 import 'package:dio/dio.dart';
 import '../domain/models/stream_details.dart';
 import '../domain/models/stream_status.dart';
@@ -44,6 +43,7 @@ class LivestreamApiClient {
       final baseUrl = _getBaseUrl();
       
       print('🔐 Step 1: Getting auth token for user: $userId');
+      print('🌐 API CALL: POST $baseUrl/v4/authentication/token');
 
       final response = await _dio.post(
         '$baseUrl/v4/authentication/token',
@@ -77,6 +77,7 @@ class LivestreamApiClient {
       final baseUrl = _getBaseUrl();
       
       print('🔐 Step 2: Creating session for user: $userId');
+      print('🌐 API CALL: POST $baseUrl/v4/sessions');
 
       final response = await _dio.post(
         '$baseUrl/v4/sessions',
@@ -140,7 +141,7 @@ class LivestreamApiClient {
       }
 
       print('✅ Access token received: ${accessToken.substring(0, 20)}...');
-      print('Making API call to: $baseUrl/v3/video-streaming/$streamId');
+      print('🌐 API CALL: GET $baseUrl/v3/video-streaming/$streamId');
 
       final response = await _dio.get(
         '$baseUrl/v3/video-streaming/$streamId',
@@ -268,6 +269,29 @@ class LivestreamApiClient {
         print('⚠️ recordings is null in stream data');
       }
 
+      print('--- Parsing thumbnail from files array ---');
+      String? thumbnailUrl;
+      final thumbnailFileId = streamData['thumbnailFileId'] as String?;
+      if (thumbnailFileId != null && json['files'] != null) {
+        final filesList = json['files'] as List;
+        print('Found ${filesList.length} files in response');
+        
+        // Find matching file by fileId
+        for (var fileData in filesList) {
+          if (fileData is Map<String, dynamic>) {
+            if (fileData['fileId'] == thumbnailFileId) {
+              thumbnailUrl = fileData['fileUrl'] as String?;
+              print('✅ Found thumbnail URL in files array: $thumbnailUrl');
+              break;
+            }
+          }
+        }
+        
+        if (thumbnailUrl == null) {
+          print('⚠️ Thumbnail fileId $thumbnailFileId not found in files array');
+        }
+      }
+
       print('--- Creating StreamDetails object ---');
       return StreamDetails(
         streamId: streamId,
@@ -275,7 +299,8 @@ class LivestreamApiClient {
         description: streamData['description'] as String?,
         status: StreamStatus.fromString(streamData['status'] as String?),
         isLive: streamData['isLive'] as bool? ?? false,
-        thumbnailFileId: streamData['thumbnailFileId'] as String?,
+        thumbnailFileId: thumbnailFileId,
+        thumbnailUrl: thumbnailUrl,
         userId: streamData['userId'] as String?,
         resolution: streamData['resolution'] as String?,
         hlsUrl: hlsUrl,
