@@ -130,16 +130,33 @@ class _LivestreamPlayerScreenState extends State<LivestreamPlayerScreen>
         appBar: _buildAppBar(context),
         body: BlocBuilder<LivestreamPlayerCubit, LivestreamPlayerState>(
           builder: (context, state) {
-            return SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  LivestreamVideoSection(state: state),
-                  LivestreamInfoSection(streamDetails: state.streamDetails),
-                  const LivestreamActionsSection(),
-                  const LivestreamChatSection(),
-                ],
-              ),
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Video player (fixed at top)
+                LivestreamVideoSection(state: state),
+                
+                // Scrollable content (info, actions, chat)
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        LivestreamInfoSection(streamDetails: state.streamDetails),
+                        const LivestreamActionsSection(),
+                        
+                        // Chat section with fixed height
+                        SizedBox(
+                          height: 400,
+                          child: LivestreamChatSection(
+                            channelId: state.streamDetails?.channelId,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             );
           },
         ),

@@ -370,6 +370,13 @@ class LivestreamApiClient {
     List<RecordingData> recordings,
     String? thumbnailUrl,
   ) {
+    final channelId = streamData['channelId'] as String?;
+    if (channelId != null) {
+      print('✅ Found channelId for live chat: $channelId');
+    } else {
+      print('⚠️ No channelId found - live chat will be disabled');
+    }
+    
     return StreamDetails(
       streamId: streamData['streamId'] as String? ?? 'unknown',
       title: streamData['title'] as String?,
@@ -380,6 +387,7 @@ class LivestreamApiClient {
       thumbnailUrl: thumbnailUrl,
       userId: streamData['userId'] as String?,
       resolution: streamData['resolution'] as String?,
+      channelId: channelId,
       hlsUrl: watcherUrls.hlsUrl,
       rtmpUrl: watcherUrls.rtmpUrl,
       recordings: recordings,

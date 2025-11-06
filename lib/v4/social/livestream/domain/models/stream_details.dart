@@ -16,6 +16,7 @@ class StreamDetails extends Equatable {
   final DateTime? startedAt;
   final DateTime? endedAt;
   final String? resolution;
+  final String? channelId; // Channel ID for live chat
 
   // Streaming URLs extracted from REST API
   final String? hlsUrl;
@@ -35,6 +36,7 @@ class StreamDetails extends Equatable {
     this.startedAt,
     this.endedAt,
     this.resolution,
+    this.channelId,
     this.hlsUrl,
     this.rtmpUrl,
     this.recordings = const [],
@@ -113,12 +115,16 @@ class StreamDetails extends Equatable {
     return status == StreamStatus.idle;
   }
 
+  /// Check if chat is available for this stream
+  bool get hasChatEnabled => channelId != null && channelId!.isNotEmpty;
+
   @override
   List<Object?> get props => [
         streamId,
         title,
         status,
         isLive,
+        channelId,
         hlsUrl,
         rtmpUrl,
         recordings,
