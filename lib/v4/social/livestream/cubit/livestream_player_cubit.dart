@@ -1,4 +1,4 @@
-import 'dart:developer';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:chewie/chewie.dart';
@@ -6,20 +6,57 @@ import 'package:video_player/video_player.dart';
 import '../data/livestream_api_client.dart';
 import '../data/livestream_session_manager.dart';
 import '../domain/models/stream_details.dart';
+import '../domain/models/livestream_error.dart';
+import '../utils/network_monitor.dart';
+import '../utils/livestream_logger.dart';
+import '../utils/retry_policy.dart';
 import 'livestream_player_state.dart';
 
-/// Cubit for managing livestream player state
+/// Cubit for managing livestream player state with network monitoring and retry logic
 class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
   final String streamId;
   final StreamDetails? initialStreamDetails;
   final LivestreamApiClient _apiClient;
+  final NetworkMonitor _networkMonitor;
+  final RetryPolicy _retryPolicy;
+  
+  StreamSubscription<NetworkState>? _networkSubscription;
+  int _retryAttempt = 0;
 
   LivestreamPlayerCubit({
     required this.streamId,
     this.initialStreamDetails,
     LivestreamApiClient? apiClient,
+    NetworkMonitor? networkMonitor,
+    RetryPolicy? retryPolicy,
   })  : _apiClient = apiClient ?? LivestreamApiClient(),
-        super(const LivestreamPlayerState.initial());
+        _networkMonitor = networkMonitor ?? NetworkMonitor(),
+        _retryPolicy = retryPolicy ?? RetryPolicies.standard,
+        super(const LivestreamPlayerState.initial()) {
+    _startNetworkMonitoring();
+  }
+
+  /// Start monitoring network changes
+  void _startNetworkMonitoring() {
+    _networkMonitor.startMonitoring();
+    
+    // Listen to network state changes
+    _networkSubscription = _networkMonitor.networkStateStream.listen(
+      (networkState) {
+        LivestreamLogger.network('Network state changed: $networkState');
+        emit(state.copyWith(networkState: networkState));
+        
+        // Auto-retry if network comes back online
+        if (networkState == NetworkState.online && state.hasError) {
+          LivestreamLogger.info('Network restored, auto-retrying stream');
+          retry();
+        }
+      },
+    );
+    
+    // Set initial network state
+    emit(state.copyWith(networkState: _networkMonitor.currentState));
+  }
 
   /// Start player initialization
   /// Call this manually when ready to load the stream
@@ -30,9 +67,19 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
   /// Initialize player with stream details
   Future<void> initialize() async {
     try {
-      emit(state.copyWith(isLoading: true, errorMessage: null));
+      // Check network state before attempting to load
+      if (state.isOffline) {
+        LivestreamLogger.warning('Cannot initialize: Device is offline');
+        emit(state.copyWith(
+          isLoading: false,
+          error: const NetworkError('No internet connection'),
+        ));
+        return;
+      }
 
-      log('🎬 Initializing livestream player for: $streamId');
+      emit(state.copyWith(isLoading: true, error: null));
+
+      LivestreamLogger.info('Initializing livestream player', streamId);
 
       // Priority order:
       // 1. Use passed initialStreamDetails (from preview callback)
@@ -40,43 +87,43 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
       // 3. Fetch from API as last resort
       StreamDetails streamDetails;
       if (initialStreamDetails != null) {
-        log('✅ Using passed stream details from preview (NO API CALL)');
+        LivestreamLogger.debug('Using passed stream details from preview (NO API CALL)');
         streamDetails = initialStreamDetails!;
       } else {
         // Check session manager cache - preview should have already cached it
         final sessionManager = LivestreamSessionManager();
         try {
-          log('🔍 Checking session manager cache...');
+          LivestreamLogger.debug('Checking session manager cache...');
           streamDetails = await sessionManager.getStreamDetails(streamId, forceRefresh: false);
-          log('✅ Found in session manager cache (NO API CALL)');
+          LivestreamLogger.debug('Found in session manager cache (NO API CALL)');
         } catch (e) {
-          log('⚠️ Cache miss - fetching from API');
+          LivestreamLogger.info('Cache miss - fetching from API');
           streamDetails = await _apiClient.getStreamDetails(streamId);
         }
       }
 
-      log('Stream details: ${streamDetails.streamId}');
-      log('Status: ${streamDetails.status}, IsLive: ${streamDetails.isLive}');
-      log('Stream URL: ${streamDetails.streamUrl}');
+      LivestreamLogger.debug('Stream details', streamDetails.streamId);
+      LivestreamLogger.debug('Status: ${streamDetails.status}, IsLive: ${streamDetails.isLive}');
+      LivestreamLogger.debug('Stream URL', streamDetails.streamUrl);
 
       // Handle non-playable streams (idle, ended without recording)
       if (!streamDetails.isPlayable) {
-        log('Stream is not playable. Status: ${streamDetails.status}');
+        LivestreamLogger.info('Stream is not playable', streamDetails.status);
         emit(state.copyWith(
           isLoading: false,
           streamDetails: streamDetails,
-          // Don't set errorMessage - this is an expected state, not an error
-          errorMessage: null,
+          // Don't set error - this is an expected state, not an error
+          error: null,
         ));
         return;
       }
 
       await _initializeVideoPlayer(streamDetails);
     } catch (e) {
-      log('Error initializing livestream player: $e');
+      LivestreamLogger.error('Error initializing livestream player', e);
       emit(state.copyWith(
         isLoading: false,
-        errorMessage: 'Failed to load stream: $e',
+        error: UnknownError('Failed to load stream', originalError: e),
       ));
     }
   }
@@ -84,7 +131,7 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
   /// Initialize video player controllers
   Future<void> _initializeVideoPlayer(StreamDetails streamDetails) async {
     try {
-      log('Initializing video player with URL: ${streamDetails.streamUrl}');
+      LivestreamLogger.debug('Initializing video player', streamDetails.streamUrl);
 
       final videoController = VideoPlayerController.networkUrl(
         Uri.parse(streamDetails.streamUrl!),
@@ -92,7 +139,7 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
 
       await videoController.initialize();
 
-      log('Video controller initialized successfully');
+      LivestreamLogger.debug('Video controller initialized successfully');
 
       final chewieController = ChewieController(
         videoPlayerController: videoController,
@@ -142,28 +189,64 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
         },
       );
 
-      log('Chewie controller initialized');
+      LivestreamLogger.debug('Chewie controller initialized');
 
       emit(state.copyWith(
         streamDetails: streamDetails,
         videoController: videoController,
         chewieController: chewieController,
         isLoading: false,
-        errorMessage: null,
+        error: null,
       ));
+      
+      // Reset retry counter on success
+      _resetRetryCounter();
     } catch (e) {
-      log('Error initializing video player: $e');
+      LivestreamLogger.error('Error initializing video player', e);
       emit(state.copyWith(
         isLoading: false,
-        errorMessage: 'Failed to initialize video player: $e',
+        error: PlayerError(
+          'Failed to initialize video player',
+          videoUrl: streamDetails.streamUrl,
+        ),
       ));
     }
   }
 
-  /// Retry loading the stream
+  /// Retry loading the stream with exponential backoff
   Future<void> retry() async {
-    log('Retrying stream initialization');
+    _retryAttempt++;
+    
+    if (_retryAttempt > _retryPolicy.maxAttempts) {
+      LivestreamLogger.warning('Max retry attempts reached');
+      _retryAttempt = 0; // Reset for future manual retries
+      return;
+    }
+
+    LivestreamLogger.info('Retry attempt $_retryAttempt of ${_retryPolicy.maxAttempts}');
+    
+    // Add delay for retries (not first attempt)
+    if (_retryAttempt > 1) {
+      final delay = _calculateRetryDelay(_retryAttempt - 1);
+      LivestreamLogger.debug('Waiting ${delay.inSeconds}s before retry');
+      await Future.delayed(delay);
+    }
+    
     await initialize();
+  }
+  
+  /// Calculate retry delay with exponential backoff
+  Duration _calculateRetryDelay(int attempt) {
+    final delay = _retryPolicy.initialDelay * (1 << attempt); // 2^attempt
+    return delay > _retryPolicy.maxDelay ? _retryPolicy.maxDelay : delay;
+  }
+  
+  /// Reset retry counter (call on successful load)
+  void _resetRetryCounter() {
+    if (_retryAttempt > 0) {
+      LivestreamLogger.debug('Resetting retry counter after success');
+      _retryAttempt = 0;
+    }
   }
 
   /// Dispose video controllers
@@ -171,15 +254,17 @@ class LivestreamPlayerCubit extends Cubit<LivestreamPlayerState> {
     try {
       state.chewieController?.dispose();
       state.videoController?.dispose();
-      log('Video controllers disposed');
+      LivestreamLogger.lifecycle('Video controllers disposed');
     } catch (e) {
-      log('Error disposing controllers: $e');
+      LivestreamLogger.error('Error disposing controllers', e);
     }
   }
 
   @override
   Future<void> close() {
     _disposeControllers();
+    _networkSubscription?.cancel();
+    LivestreamLogger.lifecycle('Cubit closed');
     return super.close();
   }
 }

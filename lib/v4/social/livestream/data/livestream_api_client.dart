@@ -8,8 +8,10 @@ import 'livestream_session_manager.dart';
 /// Bypasses the buggy SDK getStream() method
 /// 
 /// Now uses LivestreamSessionManager for token caching to reduce API calls
+/// Supports request cancellation to prevent memory leaks
 class LivestreamApiClient {
   final Dio _dio;
+  final Map<String, CancelToken> _activeRequests = {};
 
   LivestreamApiClient()
       : _dio = Dio(BaseOptions(
@@ -25,6 +27,17 @@ class LivestreamApiClient {
         },
       ),
     );
+  }
+
+  /// Dispose and cancel all in-flight requests
+  void dispose() {
+    log('🧹 Cancelling ${_activeRequests.length} in-flight requests');
+    for (final token in _activeRequests.values) {
+      if (!token.isCancelled) {
+        token.cancel('API client disposed');
+      }
+    }
+    _activeRequests.clear();
   }
 
   /// Amity API credentials
@@ -125,8 +138,12 @@ class LivestreamApiClient {
     }
   }
 
-  /// Fetch stream details from REST API
+  /// Fetch stream details from REST API with cancellation support
   Future<StreamDetails> getStreamDetails(String streamId) async {
+    // Create cancel token for this request
+    final cancelToken = CancelToken();
+    _activeRequests[streamId] = cancelToken;
+
     try {
       final baseUrl = _getBaseUrl();
       print('=== FETCHING STREAM DATA ===');
@@ -145,6 +162,7 @@ class LivestreamApiClient {
 
       final response = await _dio.get(
         '$baseUrl/v3/video-streaming/$streamId',
+        cancelToken: cancelToken, // Support cancellation
         options: Options(
           headers: {'Authorization': 'Bearer $accessToken'},
         ),
@@ -182,6 +200,10 @@ class LivestreamApiClient {
       
       return streamDetails;
     } on DioException catch (e) {
+      if (e.type == DioExceptionType.cancel) {
+        print('🚫 Request cancelled for stream: $streamId');
+        throw Exception('Request was cancelled');
+      }
       print('❌ DioException occurred:');
       print('Message: ${e.message}');
       print('Response: ${e.response?.data}');
@@ -190,131 +212,181 @@ class LivestreamApiClient {
     } catch (e) {
       print('❌ Error fetching stream: $e');
       rethrow;
+    } finally {
+      // Clean up cancel token
+      _activeRequests.remove(streamId);
     }
   }
 
   /// Parse API response to StreamDetails model
+  /// Orchestrates parsing by delegating to specialized functions
   StreamDetails _parseStreamDetails(Map<String, dynamic> json) {
     try {
       print('--- Parsing response structure ---');
       
-      // Response is wrapped in videoStreamings array
-      if (json['videoStreamings'] == null) {
-        throw Exception('videoStreamings not found in response');
-      }
+      final streamData = _extractStreamData(json);
+      final watcherUrls = _parseWatcherUrls(streamData);
+      final recordings = _parseRecordings(streamData);
+      final thumbnailUrl = _parseThumbnailUrl(json, streamData);
       
-      final videoStreamings = json['videoStreamings'] as List;
-      if (videoStreamings.isEmpty) {
-        throw Exception('videoStreamings array is empty');
-      }
-      
-      print('Found ${videoStreamings.length} video streaming(s)');
-      
-      // Get the first stream
-      final streamData = videoStreamings[0] as Map<String, dynamic>;
-      print('Stream data: $streamData');
-      
-      // Extract streamId if available, otherwise use a placeholder
-      final streamId = streamData['streamId'] as String? ?? 'unknown';
-      
-      print('--- Parsing watcherUrl ---');
-      String? hlsUrl;
-      String? rtmpUrl;
-      if (streamData['watcherUrl'] != null) {
-        print('watcherUrl exists in stream data');
-        final watcherUrls = streamData['watcherUrl'] as Map<String, dynamic>;
-        print('watcherUrl keys: ${watcherUrls.keys}');
-        
-        if (watcherUrls['hls'] != null) {
-          hlsUrl = watcherUrls['hls']['url'] as String?;
-          print('✅ Extracted HLS URL: $hlsUrl');
-        }
-        if (watcherUrls['rtmp'] != null) {
-          rtmpUrl = watcherUrls['rtmp']['url'] as String?;
-          print('✅ Extracted RTMP URL: $rtmpUrl');
-        }
-        if (watcherUrls['flv'] != null) {
-          final flvUrl = watcherUrls['flv']['url'] as String?;
-          print('✅ Found FLV URL (not used): $flvUrl');
-        }
-      } else {
-        print('⚠️ watcherUrl is null in stream data');
-      }
-
-      print('--- Parsing recordings ---');
-      List<RecordingData> recordings = [];
-      if (streamData['recordings'] != null) {
-        final recordingsList = streamData['recordings'] as List;
-        print('Found ${recordingsList.length} recordings');
-        for (var i = 0; i < recordingsList.length; i++) {
-          var recordingMap = recordingsList[i];
-          print('Recording $i: $recordingMap');
-          if (recordingMap is Map<String, dynamic>) {
-            final mp4Data = recordingMap['mp4'];
-            if (mp4Data != null && mp4Data['url'] != null) {
-              print('Recording $i URL: ${mp4Data['url']}');
-              recordings.add(
-                RecordingData(
-                  url: mp4Data['url'] as String?,
-                  duration: _toDouble(mp4Data['duration']),
-                  startTime: _toDouble(mp4Data['startTime']),
-                  stopTime: _toDouble(mp4Data['stopTime']),
-                ),
-              );
-            }
-          }
-        }
-        print('Total valid recordings extracted: ${recordings.length}');
-      } else {
-        print('⚠️ recordings is null in stream data');
-      }
-
-      print('--- Parsing thumbnail from files array ---');
-      String? thumbnailUrl;
-      final thumbnailFileId = streamData['thumbnailFileId'] as String?;
-      if (thumbnailFileId != null && json['files'] != null) {
-        final filesList = json['files'] as List;
-        print('Found ${filesList.length} files in response');
-        
-        // Find matching file by fileId
-        for (var fileData in filesList) {
-          if (fileData is Map<String, dynamic>) {
-            if (fileData['fileId'] == thumbnailFileId) {
-              thumbnailUrl = fileData['fileUrl'] as String?;
-              print('✅ Found thumbnail URL in files array: $thumbnailUrl');
-              break;
-            }
-          }
-        }
-        
-        if (thumbnailUrl == null) {
-          print('⚠️ Thumbnail fileId $thumbnailFileId not found in files array');
-        }
-      }
-
       print('--- Creating StreamDetails object ---');
-      return StreamDetails(
-        streamId: streamId,
-        title: streamData['title'] as String?,
-        description: streamData['description'] as String?,
-        status: StreamStatus.fromString(streamData['status'] as String?),
-        isLive: streamData['isLive'] as bool? ?? false,
-        thumbnailFileId: thumbnailFileId,
-        thumbnailUrl: thumbnailUrl,
-        userId: streamData['userId'] as String?,
-        resolution: streamData['resolution'] as String?,
-        hlsUrl: hlsUrl,
-        rtmpUrl: rtmpUrl,
-        recordings: recordings,
-        createdAt: _parseDateTime(streamData['createdAt']),
-        startedAt: _parseDateTime(streamData['startedAt']),
-        endedAt: _parseDateTime(streamData['endedAt']),
+      return _buildStreamDetails(
+        streamData,
+        watcherUrls,
+        recordings,
+        thumbnailUrl,
       );
     } catch (e) {
       print('❌ Error parsing stream details: $e');
       print('Stack trace: ${StackTrace.current}');
       throw Exception('Failed to parse stream data: $e');
     }
+  }
+
+  /// Extract and validate stream data from response
+  Map<String, dynamic> _extractStreamData(Map<String, dynamic> json) {
+    if (json['videoStreamings'] == null) {
+      throw Exception('videoStreamings not found in response');
+    }
+    
+    final videoStreamings = json['videoStreamings'] as List;
+    if (videoStreamings.isEmpty) {
+      throw Exception('videoStreamings array is empty');
+    }
+    
+    print('Found ${videoStreamings.length} video streaming(s)');
+    
+    final streamData = videoStreamings[0] as Map<String, dynamic>;
+    print('Stream data: $streamData');
+    
+    return streamData;
+  }
+
+  /// Parse streaming URLs (HLS, RTMP) from watcher URL object
+  _WatcherUrls _parseWatcherUrls(Map<String, dynamic> streamData) {
+    print('--- Parsing watcherUrl ---');
+    
+    if (streamData['watcherUrl'] == null) {
+      print('⚠️ watcherUrl is null in stream data');
+      return _WatcherUrls(hlsUrl: null, rtmpUrl: null);
+    }
+    
+    print('watcherUrl exists in stream data');
+    final watcherUrls = streamData['watcherUrl'] as Map<String, dynamic>;
+    print('watcherUrl keys: ${watcherUrls.keys}');
+    
+    String? hlsUrl;
+    String? rtmpUrl;
+    
+    if (watcherUrls['hls'] != null) {
+      hlsUrl = watcherUrls['hls']['url'] as String?;
+      print('✅ Extracted HLS URL: $hlsUrl');
+    }
+    
+    if (watcherUrls['rtmp'] != null) {
+      rtmpUrl = watcherUrls['rtmp']['url'] as String?;
+      print('✅ Extracted RTMP URL: $rtmpUrl');
+    }
+    
+    if (watcherUrls['flv'] != null) {
+      final flvUrl = watcherUrls['flv']['url'] as String?;
+      print('✅ Found FLV URL (not used): $flvUrl');
+    }
+    
+    return _WatcherUrls(hlsUrl: hlsUrl, rtmpUrl: rtmpUrl);
+  }
+
+  /// Parse recordings array into list of RecordingData
+  List<RecordingData> _parseRecordings(Map<String, dynamic> streamData) {
+    print('--- Parsing recordings ---');
+    
+    if (streamData['recordings'] == null) {
+      print('⚠️ recordings is null in stream data');
+      return [];
+    }
+    
+    final recordingsList = streamData['recordings'] as List;
+    print('Found ${recordingsList.length} recordings');
+    
+    final recordings = <RecordingData>[];
+    
+    for (var i = 0; i < recordingsList.length; i++) {
+      final recordingMap = recordingsList[i];
+      print('Recording $i: $recordingMap');
+      
+      if (recordingMap is! Map<String, dynamic>) continue;
+      
+      final mp4Data = recordingMap['mp4'];
+      if (mp4Data != null && mp4Data['url'] != null) {
+        print('Recording $i URL: ${mp4Data['url']}');
+        recordings.add(
+          RecordingData(
+            url: mp4Data['url'] as String?,
+            duration: _toDouble(mp4Data['duration']),
+            startTime: _toDouble(mp4Data['startTime']),
+            stopTime: _toDouble(mp4Data['stopTime']),
+          ),
+        );
+      }
+    }
+    
+    print('Total valid recordings extracted: ${recordings.length}');
+    return recordings;
+  }
+
+  /// Parse thumbnail URL from files array using thumbnailFileId
+  String? _parseThumbnailUrl(
+    Map<String, dynamic> json,
+    Map<String, dynamic> streamData,
+  ) {
+    print('--- Parsing thumbnail from files array ---');
+    
+    final thumbnailFileId = streamData['thumbnailFileId'] as String?;
+    if (thumbnailFileId == null || json['files'] == null) {
+      return null;
+    }
+    
+    final filesList = json['files'] as List;
+    print('Found ${filesList.length} files in response');
+    
+    for (final fileData in filesList) {
+      if (fileData is! Map<String, dynamic>) continue;
+      
+      if (fileData['fileId'] == thumbnailFileId) {
+        final thumbnailUrl = fileData['fileUrl'] as String?;
+        print('✅ Found thumbnail URL in files array: $thumbnailUrl');
+        return thumbnailUrl;
+      }
+    }
+    
+    print('⚠️ Thumbnail fileId $thumbnailFileId not found in files array');
+    return null;
+  }
+
+  /// Build final StreamDetails object from parsed components
+  StreamDetails _buildStreamDetails(
+    Map<String, dynamic> streamData,
+    _WatcherUrls watcherUrls,
+    List<RecordingData> recordings,
+    String? thumbnailUrl,
+  ) {
+    return StreamDetails(
+      streamId: streamData['streamId'] as String? ?? 'unknown',
+      title: streamData['title'] as String?,
+      description: streamData['description'] as String?,
+      status: StreamStatus.fromString(streamData['status'] as String?),
+      isLive: streamData['isLive'] as bool? ?? false,
+      thumbnailFileId: streamData['thumbnailFileId'] as String?,
+      thumbnailUrl: thumbnailUrl,
+      userId: streamData['userId'] as String?,
+      resolution: streamData['resolution'] as String?,
+      hlsUrl: watcherUrls.hlsUrl,
+      rtmpUrl: watcherUrls.rtmpUrl,
+      recordings: recordings,
+      createdAt: _parseDateTime(streamData['createdAt']),
+      startedAt: _parseDateTime(streamData['startedAt']),
+      endedAt: _parseDateTime(streamData['endedAt']),
+    );
   }
 
   DateTime? _parseDateTime(dynamic value) {
@@ -365,3 +437,13 @@ class LivestreamApiClient {
   }
 }
 
+/// Helper class to hold parsed watcher URLs
+class _WatcherUrls {
+  final String? hlsUrl;
+  final String? rtmpUrl;
+
+  const _WatcherUrls({
+    required this.hlsUrl,
+    required this.rtmpUrl,
+  });
+}

@@ -248,13 +248,18 @@ class LivestreamSessionManager {
   /// Clear session on logout
   /// 
   /// Clears all caches: access token, stream details, and thumbnails.
+  /// Cancels any in-flight API requests.
   /// This should be called in AmityUIKit.unRegisterDevice() when user logs out.
   void clearSession() {
     if (_accessToken != null || _streamDetailsCache.isNotEmpty || _thumbnailCache.isNotEmpty) {
       log('🎬 Clearing livestream session and caches');
+      log('   - Disposing API client and cancelling requests');
       log('   - Clearing access token');
       log('   - Clearing ${_streamDetailsCache.length} stream details');
       log('   - Clearing ${_thumbnailCache.length} thumbnails');
+      
+      // Cancel all in-flight requests
+      _apiClient.dispose();
       
       _accessToken = null;
       _tokenExpiry = null;
