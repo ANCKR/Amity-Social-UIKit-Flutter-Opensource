@@ -33,6 +33,14 @@ class PostItem extends NewBaseComponent {
   // Static map to persist BLoCs across widget recreations
   static final Map<String, PostItemBloc> _blocCache = {};
 
+  // Static method to reset all translation states
+  static void resetAllTranslations() {
+    // Reset translation state for all cached posts back to original
+    for (var bloc in _blocCache.values) {
+      bloc.add(ShowOriginalPost());
+    }
+  }
+
   PostItem({
     Key? key,
     String? pageId,
@@ -46,11 +54,11 @@ class PostItem extends NewBaseComponent {
   @override
   Widget buildComponent(BuildContext context) {
     final postId = post.postId ?? '';
-    
+
     if (!_blocCache.containsKey(postId)) {
       _blocCache[postId] = PostItemBloc(context, post);
     }
-    
+
     return BlocProvider.value(
       value: _blocCache[postId]!,
       child:

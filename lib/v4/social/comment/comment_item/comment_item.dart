@@ -43,6 +43,18 @@ class CommentItem extends BaseElement {
   static final _translationCache = TranslationCache();
   static final Map<String, ValueNotifier<TranslationState>> _translationNotifiers = {};
 
+  // Static method to reset all comment translation states
+  static void resetAllTranslations() {
+    // Reset translation state for all comments back to original
+    for (var notifier in _translationNotifiers.values) {
+      final currentState = notifier.value;
+      // Reset to original but keep cached translation for re-use
+      notifier.value = TranslationState(
+        translatedText: currentState.translatedText,
+      );
+    }
+  }
+
   CommentItem({
     Key? key,
     String? pageId,
@@ -373,7 +385,7 @@ class CommentItem extends BaseElement {
     }
 
     final commentId = comment.commentId ?? '';
-    
+
     // Create or get notifier for this comment
     _translationNotifiers[commentId] ??= ValueNotifier<TranslationState>(TranslationState());
 
