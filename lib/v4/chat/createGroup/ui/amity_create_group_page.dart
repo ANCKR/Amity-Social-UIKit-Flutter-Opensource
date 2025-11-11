@@ -1,3 +1,4 @@
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/chat/group_message/amity_group_chat_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
@@ -541,16 +542,18 @@ class AmityCreateGroupChatPage extends NewBasePage {
                   ),
                 ),
                 _buildListTile(
+                  context: context,
                   assetPath: 'assets/Icons/amity_ic_camera_button.svg',
-                  title: 'Camera',
+                  title: context.l10n.general_camera,
                   onTap: () {
                     Navigator.pop(context);
                     _goToCameraPage(context);
                   },
                 ),
                 _buildListTile(
+                    context: context,
                     assetPath: 'assets/Icons/amity_ic_image_button.svg',
-                    title: 'Photo',
+                    title: context.l10n.general_photo,
                     onTap: () {
                       Navigator.pop(context);
                       _pickImage(context);
@@ -562,6 +565,7 @@ class AmityCreateGroupChatPage extends NewBasePage {
   }
 
   Widget _buildListTile({
+    required BuildContext context,
     required String assetPath,
     required String title,
     required Function()? onTap,

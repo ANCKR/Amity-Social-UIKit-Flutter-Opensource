@@ -1,5 +1,6 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/components/alert_dialog.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/bloc/view_story_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/elements/amity_story_modal_bottom_sheet.dart';
@@ -227,10 +228,10 @@ class AmityStoryHeaderRow extends StatelessWidget {
                                     deleteClicked: (String storyId) {
                                       ConfirmationDialog().show(
                                         context: context,
-                                        title: 'Delete this story?',
-                                        detailText: 'This story will be permanently deleted.\n You’ll no longer to see and find this story',
-                                        leftButtonText: 'Cancel',
-                                        rightButtonText: 'Delete',
+                                        title: context.l10n.story_delete_confirm,
+                                        detailText: 'This story will be permanently deleted.\nYou\'ll no longer to see and find this story',
+                                        leftButtonText: context.l10n.general_cancel,
+                                        rightButtonText: context.l10n.general_delete,
                                         onConfirm: () {
                                           BlocProvider.of<ViewStoryBloc>(context).add(DeleteStoryEvent(storyId: storyId));
                                           BlocProvider.of<ViewStoryBloc>(context).add(ShoudPauseEvent(shouldPause: false));

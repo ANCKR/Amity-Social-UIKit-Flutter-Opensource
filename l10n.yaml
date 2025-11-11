@@ -1,5 +1,46 @@
 arb-dir: lib/l10n
-template-arb-file: intl_en.arb
+template-arb-file: intl_en_US.arb
 output-localization-file: app_localizations.dart
 output-dir: lib/l10n/generated
-synthetic-package: false
+untranslated-messages-file: untranslated_messages.txt
+
+# Supported locales with country variants
+# These 37 locales cover all major markets worldwide
+preferred-supported-locales:
+  - ar_EG  # Arabic (Egypt)
+  - bg_BG  # Bulgarian (Bulgaria)
+  - bs_BA  # Bosnian (Bosnia and Herzegovina)
+  - cs_CZ  # Czech (Czech Republic)
+  - da_DK  # Danish (Denmark)
+  - de_DE  # German (Germany)
+  - el_GR  # Greek (Greece)
+  - en_US  # English (United States)
+  - es_ES  # Spanish (Spain)
+  - et_EE  # Estonian (Estonia)
+  - fa_IR  # Persian/Farsi (Iran)
+  - fi_FI  # Finnish (Finland)
+  - fr_FR  # French (France)
+  - he_IL  # Hebrew (Israel)
+  - hr_HR  # Croatian (Croatia)
+  - hu_HU  # Hungarian (Hungary)
+  - id_ID  # Indonesian (Indonesia)
+  - it_IT  # Italian (Italy)
+  - ja_JP  # Japanese (Japan)
+  - lt_LT  # Lithuanian (Lithuania)
+  - lv_LV  # Latvian (Latvia)
+  - nl_NL  # Dutch (Netherlands)
+  - no_NO  # Norwegian (Norway)
+  - pl_PL  # Polish (Poland)
+  - ps_AF  # Pashto (Afghanistan)
+  - pt_PT  # Portuguese (Portugal)
+  - ro_RO  # Romanian (Romania)
+  - ru_RU  # Russian (Russia)
+  - sk_SK  # Slovak (Slovakia)
+  - sl_SI  # Slovenian (Slovenia)
+  - so_SO  # Somali (Somalia)
+  - sq_AL  # Albanian (Albania)
+  - sr_RS  # Serbian (Serbia)
+  - sv_SE  # Swedish (Sweden)
+  - tr_TR  # Turkish (Turkey)
+  - uk_UA  # Ukrainian (Ukraine)
+  - vi_VN  # Vietnamese (Vietnam)

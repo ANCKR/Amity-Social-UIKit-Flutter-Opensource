@@ -29,7 +29,6 @@ import 'package:amity_uikit_beta_service/model/translation_model.dart';
 import 'package:amity_uikit_beta_service/repository/translation_repo.dart';
 import 'package:amity_uikit_beta_service/utils/translation_cache.dart';
 import 'package:amity_uikit_beta_service/v4/social/common/translation_button.dart';
-import 'package:easy_localization/easy_localization.dart';
 
 class CommentItem extends BaseElement {
   final ScrollController parentScrollController;
@@ -433,8 +432,8 @@ class CommentItem extends BaseElement {
       );
       return;
     }
-    
-    final targetLang = context.locale.languageCode;
+
+    final targetLang = Localizations.localeOf(context).languageCode;
     final cached = _translationCache.get(commentId, targetLang);
     if (cached != null) {
       notifier.value = TranslationState(

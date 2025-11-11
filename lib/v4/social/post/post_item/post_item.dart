@@ -20,7 +20,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:amity_uikit_beta_service/v4/social/common/translation_button.dart';
-import 'package:easy_localization/easy_localization.dart';
 
 import '../common/post_poll.dart';
 
@@ -253,7 +252,7 @@ class PostItem extends NewBaseComponent {
       if (isCurrentlyTranslated) {
         bloc.add(ShowOriginalPost());
       } else {
-        final targetLang = context.locale.languageCode;
+        final targetLang = Localizations.localeOf(context).languageCode;
         bloc.add(TranslatePost(text: text, targetLang: targetLang));
       }
     } catch (e) {

@@ -13,7 +13,6 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.2  # Use the version compatible with your Flutter version
-  easy_localization: ^3.0.8  # For unified translation system
   plugin_platform_interface: ^2.0.2
   animation_wrappers: ^3.0.0
   font_awesome_flutter: ^10.1.0
@@ -118,7 +117,6 @@ flutter:
     - assets/images/noVideo.png
     - assets/config/config.json
     - assets/
-    - assets/lang/
 
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

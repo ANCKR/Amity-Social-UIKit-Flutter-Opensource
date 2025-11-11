@@ -24,127 +24,102 @@
   "@tab_feed": {
     "description": "Label for the feed tab in the main navigation (shows content feeds)"
   },
-  
   "settings_permissions": "Community permissions",
   "@settings_permissions": {
-    "description": "Section title for community permissions in settings"
+    "description": "Label for permissions settings"
   },
-  
   "community_post_permission": "Post permission",
   "@community_post_permission": {
-    "description": "Label for post permission settings"
+    "description": "Community post permissions setting option"
   },
-  
   "community_post_permission_title_label": "Who can post on this community",
   "@community_post_permission_title_label": {
-    "description": "Title for post permission selection"
+    "description": "label for post permissions page title"
   },
-  
   "community_post_permission_description_label": "You can control who can create posts in your community.",
   "@community_post_permission_description_label": {
-    "description": "Description for post permission settings"
+    "description": "label for post permissions page description"
   },
-  
-  "settings_allow_stories_comments": "Allow comments on group stories",
+  "settings_allow_stories_comments": "Allow comments on community stories",
   "@settings_allow_stories_comments": {
-    "description": "Label for story comments setting"
+    "description": "Label for allow comments on stories settings"
   },
-  
-  "settings_allow_stories_comments_description": "Turn on to receive comments on stories in this group.",
+  "settings_allow_stories_comments_description": "Turn on to receive comments on stories in this community.",
   "@settings_allow_stories_comments_description": {
-    "description": "Description for story comments setting"
+    "description": "Description for allow comments on stories settings"
   },
-  
   "community_leave": "Leave community",
   "@community_leave": {
-    "description": "Label for leave community action"
+    "description": "Label for leave community button"
   },
-  
-  "community_leave_description": "Are you sure you want to leave this community?",
+  "community_leave_description": "Leave the community. You will no longer be able to post and interact in this community.",
   "@community_leave_description": {
-    "description": "Confirmation message for leaving community"
+    "description": "Confirmation message for leaving a community"
   },
-  
   "community_setting_close_label": "Close community",
   "@community_setting_close_label": {
-    "description": "Label for close community action"
+    "description": "Label for close community setting"
   },
-  
-  "community_setting_close_description": "Closing this community will remove the community page and all its content and comments.",
+  "community_setting_close_description": "Closing this community will remove the community  page and all its content and comments.",
   "@community_setting_close_description": {
-    "description": "Description for close community action"
+    "description": "Description for close community setting"
   },
-  
-  "community_close": "Close community",
+  "community_close": "Close community?",
   "@community_close": {
-    "description": "Confirmation dialog title for closing community"
+    "description": "Label for close button"
   },
-  
-  "community_close_description": "This action cannot be undone. Are you sure?",
+  "community_close_description": "All members will be removed from the community. All posts, messages, reactions, and media shared in community will be deleted. This cannot be undone.",
   "@community_close_description": {
-    "description": "Confirmation dialog description for closing community"
+    "description": "Confirmation message for closing a community"
   },
-  
   "group_settings_permissions": "Group permissions",
   "@group_settings_permissions": {
     "description": "Section title for group permissions in settings (replaces settings_permissions)"
   },
-  
   "group_post_permission": "Post permission",
   "@group_post_permission": {
-    "description": "Label for post permission settings (replaces community_post_permission)"
+    "description": "Group post permissions setting option"
   },
-  
   "group_post_permission_title_label": "Who can post on this group",
   "@group_post_permission_title_label": {
-    "description": "Title for post permission selection (replaces community_post_permission_title_label)"
+    "description": "Label for post permissions page title"
   },
-  
   "group_post_permission_description_label": "You can control who can create posts in your group.",
   "@group_post_permission_description_label": {
-    "description": "Description for post permission settings (replaces community_post_permission_description_label)"
+    "description": "Label for post permissions page description"
   },
-  
   "group_allow_stories_comments": "Allow comments on group stories",
   "@group_allow_stories_comments": {
     "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
   },
-  
   "group_allow_stories_comments_description": "Turn on to receive comments on stories in this group.",
   "@group_allow_stories_comments_description": {
     "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
   },
-  
   "group_leave": "Leave group",
   "@group_leave": {
-    "description": "Label for leave group action (replaces community_leave)"
+    "description": "Label for leave group button"
   },
-  
-  "group_leave_description": "Are you sure you want to leave this group?",
+  "group_leave_description": "Leave the group. You will no longer be able to post and interact in this group.",
   "@group_leave_description": {
-    "description": "Confirmation message for leaving group (replaces community_leave_description)"
+    "description": "Confirmation message for leaving a group"
   },
-  
   "group_setting_close_label": "Close group",
   "@group_setting_close_label": {
-    "description": "Label for close group action (replaces community_setting_close_label)"
+    "description": "Label for close group setting"
   },
-  
   "group_setting_close_description": "Closing this group will remove the group page and all its content and comments.",
   "@group_setting_close_description": {
-    "description": "Description for close group action (replaces community_setting_close_description)"
+    "description": "Description for close group setting"
   },
-  
-  "group_close": "Close group",
+  "group_close": "Close group?",
   "@group_close": {
-    "description": "Confirmation dialog title for closing group (replaces community_close)"
+    "description": "Confirmation title for closing a group"
   },
-  
-  "group_close_description": "This action cannot be undone. Are you sure?",
+  "group_close_description": "All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.",
   "@group_close_description": {
-    "description": "Confirmation dialog description for closing group (replaces community_close_description)"
+    "description": "Confirmation message for closing a group"
   },
-
   "global_search_hint": "Search community and user",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
@@ -157,11 +132,11 @@
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
-  "title_communities":"Communities",
+  "title_communities": "Communities",
   "@title_communities": {
     "description": "Title for the communities section"
   },
-  "title_users":"Users",
+  "title_users": "Users",
   "@title_users": {
     "description": "Title for the users section"
   },
@@ -193,7 +168,6 @@
   "@profile_posts": {
     "description": "Label for user posts"
   },
-  
   "post_create": "Create Post",
   "@post_create": {
     "description": "Label for create post button"
@@ -427,68 +401,45 @@
       }
     }
   },
-
   "comment_create_error_ban_word": "Your comment contains inappropriate word. Please review and delete it.",
   "@comment_create_error_ban_word": {
     "description": "Toast message for comment creation with banned word"
   },
-
   "comment_create_error_story_deleted": "This story is no longer available",
   "@comment_create_error_story_deleted": {
     "description": "Toast message for comment creation"
   },
-
   "community_create_success_message": "Successfully created community.",
   "@community_create_success_message": {
     "description": "Toast message for community creation success"
   },
-
   "community_create_error_message": "Failed to create community. Please try again.",
   "@community_create_error_message": {
     "description": "Toast message for community creation failure"
   },
-
   "community_update_success_message": "Successfully updated community.",
   "@community_update_success_message": {
     "description": "Toast message for community update success"
   },
-
   "community_update_error_message": "Failed to save your community profile. Please try again.",
   "@community_update_error_message": {
     "description": "Toast message for community update failure"
   },
-
   "community_leave_success_message": "Successfully left the community.",
   "@community_leave_success_message": {
     "description": "Toast message for community leave success"
   },
-
   "community_leave_error_message": "Failed to leave the community.",
   "@community_leave_error_message": {
     "description": "Toast message for community leave error"
   },
-
   "community_close_success_message": "Successfully closed the community.",
   "@community_close_success_message": {
     "description": "Toast message for community close success"
   },
-
   "community_close_error_message": "Failed to close the community.",
   "@community_close_error_message": {
     "description": "Toast message for community close error"
-  },
-
-
-
-
-
-  "community_close": "Close community?",
-  "@community_close": {
-    "description": "Label for close button"
-  },
-  "community_close_description": "All members will be removed from the community. All posts, messages, reactions, and media shared in community will be deleted. This cannot be undone.",
-  "@community_close_description": {
-    "description": "Confirmation message for closing a community"
   },
   "community_join": "Join",
   "@community_join": {
@@ -509,14 +460,6 @@
   "community_placeholder_members": "1.2K members",
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
-  },
-  "community_leave": "Leave community",
-  "@community_leave": {
-    "description": "Label for leave community button"
-  },
-  "community_leave_description": "Leave the community. You will no longer be able to post and interact in this community.",
-  "@community_leave_description": {
-    "description": "Confirmation message for leaving a community"
   },
   "community_create": "Create Community",
   "@community_create": {
@@ -586,7 +529,6 @@
   "@commnuity_pending_post_reviewing": {
     "description": "Label for reviewing pending post"
   },
-
   "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
   "@commnuity_pending_post_count": {
     "description": "Plural form for pending post count",
@@ -596,7 +538,6 @@
       }
     }
   },
-
   "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
   "@community_pending_request_title": {
     "description": "Title for pending request/requests",
@@ -606,7 +547,6 @@
       }
     }
   },
-
   "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
   "@community_pending_request_message": {
     "description": "Message for pending request showing count and plural forms",
@@ -619,7 +559,6 @@
       }
     }
   },
-
   "community_basic_info": "Basic Info",
   "@community_basic_info": {
     "description": "Label for basic info section"
@@ -632,7 +571,6 @@
   "@community_discard_description": {
     "description": "Description for discard changes confirmation"
   },
-  
   "message_send": "Send",
   "@message_send": {
     "description": "Label for send message button"
@@ -645,7 +583,6 @@
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
-  
   "settings_title": "Settings",
   "@settings_title": {
     "description": "Title for settings screen"
@@ -694,14 +631,6 @@
   "@settings_new_replies_description": {
     "description": "Description for new replies settings"
   },
-  "settings_allow_stories_comments": "Allow comments on community stories",
-  "@settings_allow_stories_comments": {
-    "description": "Label for allow comments on stories settings"
-  },
-  "settings_allow_stories_comments_description": "Turn on to receive comments on stories in this community.",
-  "@settings_allow_stories_comments_description": {
-    "description": "Description for allow comments on stories settings"
-  },
   "settings_new_stories": "New stories",
   "@settings_new_stories": {
     "description": "Label for new stories settings"
@@ -741,10 +670,6 @@
   "settings_privacy": "Privacy",
   "@settings_privacy": {
     "description": "Label for privacy settings"
-  },
-  "settings_permissions": "Community permissions",
-  "@settings_permissions": {
-    "description": "Label for permissions settings"
   },
   "settings_language": "Language",
   "@settings_language": {
@@ -902,7 +827,6 @@
   "@post_edit_globally_featured_description": {
     "description": "Description for globally featured post"
   },
-
   "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
   "@post_like_count": {
     "description": "Plural form for post like count",
@@ -912,7 +836,6 @@
       }
     }
   },
-  
   "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
   "@post_comment_count": {
     "description": "Plural form for post comment count",
@@ -939,7 +862,6 @@
       }
     }
   },
-  
   "community_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
   "@community_members_count": {
     "description": "Plural form for community members count",
@@ -969,7 +891,7 @@
   },
   "user_block": "Block user",
   "@user_block": {
-    "description": "Label for block user button"
+    "description": "Community story comments setting option"
   },
   "user_unblock": "Unblock user",
   "@user_unblock": {
@@ -1119,33 +1041,10 @@
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
-  "community_post_permission": "Post permission",
-  "@community_post_permission": {
-    "description": "Community post permissions setting option"
-  },
   "community_story_comments": "Story comments",
-  "@user_block": {
-    "description": "Community story comments setting option"
-  },
-  "community_setting_close_label": "Close community",
-  "@community_setting_close_label": {
-    "description": "Label for close community setting"
-  },
-  "community_setting_close_description": "Closing this community will remove the community  page and all its content and comments.",
-  "@community_setting_close_description": {
-    "description": "Description for close community setting"
-  },
-  "community_post_permission_title_label": "Who can post on this community",
-  "@community_post_permission_title_label": {
-    "description": "label for post permissions page title"
-  },
-  "community_post_permission_description_label": "You can control who can create posts in your community.",
-  "@community_post_permission_description_label": {
-    "description": "label for post permissions page description"
-  },
-  "post_item_bottom_nonmember_label": "Join community to interact with all posts",
+  "post_item_bottom_nonmember_label": "Join group to interact with all posts",
   "@post_item_bottom_nonmember_label": {
-    "description": "label for post item bottom text for non members"
+    "description": "Label for post item bottom text for non members"
   },
   "notification_turn_on_success": "Notification turned on",
   "@notification_turn_on_success": {
@@ -1692,132 +1591,90 @@
   "@chat_no_message_yet": {
     "description": "Preview text when there are no messages in the chat"
   },
-  
   "group_title": "Group",
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  
   "group_create": "Create Group",
   "@group_create": {
     "description": "Label for create group button"
   },
-  
   "group_edit": "Edit Group",
   "@group_edit": {
     "description": "Label for edit group button"
   },
-  
   "group_name": "Group name",
   "@group_name": {
     "description": "Label for group name"
   },
-  
   "group_name_hint": "Name your group",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  
   "group_description_hint": "Enter description",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
-  
   "group_about": "About",
   "@group_about": {
     "description": "Label for group about section"
   },
-  
   "group_members": "Members",
   "@group_members": {
     "description": "Label for group members"
   },
-  
   "group_join": "Join",
   "@group_join": {
     "description": "Label for join group button"
   },
-  
   "group_joined": "Joined",
   "@group_joined": {
     "description": "Label for joined group status"
   },
-  
-  "group_leave": "Leave group",
-  "@group_leave": {
-    "description": "Label for leave group button"
-  },
-  
-  "group_leave_description": "Leave the group. You will no longer be able to post and interact in this group.",
-  "@group_leave_description": {
-    "description": "Confirmation message for leaving a group"
-  },
-  
-  "group_close": "Close group?",
-  "@group_close": {
-    "description": "Confirmation title for closing a group"
-  },
-  
-  "group_close_description": "All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.",
-  "@group_close_description": {
-    "description": "Confirmation message for closing a group"
-  },
-  
   "group_public": "Public",
   "@group_public": {
     "description": "Label for public group type"
   },
-  
   "group_private": "Private",
   "@group_private": {
     "description": "Label for private group type"
   },
-  
   "group_public_description": "Anyone can join, view and search the posts in this group.",
   "@group_public_description": {
     "description": "Description for public group type"
   },
-  
   "group_private_description": "Only members invited by the moderators can join, view, and search the posts in this group.",
   "@group_private_description": {
     "description": "Description for private group type"
   },
-  
   "group_recommended_for_you": "Recommended for you",
   "@group_recommended_for_you": {
     "description": "Section title for recommended groups"
   },
-  
   "group_trending_now": "Trending now",
   "@group_trending_now": {
     "description": "Section title for trending groups"
   },
-  
   "group_placeholder_members": "1.2K members",
   "@group_placeholder_members": {
     "description": "Placeholder text for group members count"
   },
-  
   "group_basic_info": "Basic Info",
   "@group_basic_info": {
     "description": "Label for basic info section"
   },
-  
   "group_discard_confirmation": "Leave without finishing?",
   "@group_discard_confirmation": {
     "description": "Label for discard changes confirmation"
   },
-  
   "group_discard_description": "Your progress won't be saved and your group won't be created.",
   "@group_discard_description": {
     "description": "Description for discard changes confirmation"
   },
-  
   "group_pending_posts": "Pending Posts",
   "@group_pending_posts": {
     "description": "Label for pending posts section"
   },
-  
   "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
   "@group_pending_request_title": {
     "description": "Title for pending request/requests",
@@ -1827,7 +1684,6 @@
       }
     }
   },
-  
   "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
   "@group_pending_request_message": {
     "description": "Message for pending request showing count and plural forms",
@@ -1840,67 +1696,34 @@
       }
     }
   },
-  
   "group_all_members": "All members",
   "@group_all_members": {
     "description": "Tab label for all members in group membership page"
   },
-  
   "group_moderators": "Moderators",
   "@group_moderators": {
     "description": "Tab label for moderators in group membership page"
   },
-  
   "group_search_member_hint": "Search member",
   "@group_search_member_hint": {
     "description": "Hint text for member search field"
   },
-  
   "group_promote_moderator": "Promote to moderator",
   "@group_promote_moderator": {
     "description": "Action to promote a member to moderator role"
   },
-  
   "group_demote_member": "Demote to member",
   "@group_demote_member": {
     "description": "Action to demote a moderator to member role"
   },
-  
   "group_remove_member": "Remove from group",
   "@group_remove_member": {
     "description": "Action to remove a member from the group"
   },
-  
-  "group_post_permission": "Post permission",
-  "@group_post_permission": {
-    "description": "Group post permissions setting option"
-  },
-  
   "group_story_comments": "Story comments",
   "@group_story_comments": {
     "description": "Group story comments setting option"
   },
-  
-  "group_setting_close_label": "Close group",
-  "@group_setting_close_label": {
-    "description": "Label for close group setting"
-  },
-  
-  "group_setting_close_description": "Closing this group will remove the group page and all its content and comments.",
-  "@group_setting_close_description": {
-    "description": "Description for close group setting"
-  },
-  
-  "group_post_permission_title_label": "Who can post on this group",
-  "@group_post_permission_title_label": {
-    "description": "Label for post permissions page title"
-  },
-  
-  "group_post_permission_description_label": "You can control who can create posts in your group.",
-  "@group_post_permission_description_label": {
-    "description": "Label for post permissions page description"
-  },
-  
   "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
   "@group_members_count": {
     "description": "Plural form for group members count",
@@ -1910,144 +1733,504 @@
       }
     }
   },
-  
   "group_empty_state": "No group yet",
   "@group_empty_state": {
     "description": "Empty state message when there are no groups"
   },
-  
   "group_pending_requests_title": "Pending Requests",
   "@group_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  
   "group_pending_requests_empty_title": "No pending requests available",
   "@group_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  
   "group_pending_requests_empty_description": "Enable post review or join approval in group settings to manage requests.",
   "@group_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
-  
   "group_join_requests_coming_soon": "Join requests feature coming soon",
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  
   "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
-  
   "group_pending_posts_empty": "No pending posts",
   "@group_pending_posts_empty": {
     "description": "Empty state message when there are no pending posts"
   },
-  
   "group_pending_post_accept": "Accept",
   "@group_pending_post_accept": {
     "description": "Button text for accepting a pending post"
   },
-  
   "group_pending_post_decline": "Decline",
   "@group_pending_post_decline": {
     "description": "Button text for declining a pending post"
   },
-  
   "group_create_success_message": "Successfully created group.",
   "@group_create_success_message": {
     "description": "Toast message for group creation success"
   },
-  
   "group_create_error_message": "Failed to create group. Please try again.",
   "@group_create_error_message": {
     "description": "Toast message for group creation failure"
   },
-  
   "group_update_success_message": "Successfully updated group.",
   "@group_update_success_message": {
     "description": "Toast message for group update success"
   },
-  
   "group_update_error_message": "Failed to save your group profile. Please try again.",
   "@group_update_error_message": {
     "description": "Toast message for group update failure"
   },
-  
   "group_leave_success_message": "Successfully left the group.",
   "@group_leave_success_message": {
     "description": "Toast message for group leave success"
   },
-  
   "group_leave_error_message": "Failed to leave the group.",
   "@group_leave_error_message": {
     "description": "Toast message for group leave error"
   },
-  
   "group_close_success_message": "Successfully closed the group.",
   "@group_close_success_message": {
     "description": "Toast message for group close success"
   },
-  
   "group_close_error_message": "Failed to close the group.",
   "@group_close_error_message": {
     "description": "Toast message for group close error"
   },
-  
   "group_pending_post_delete_success": "Post deleted.",
   "@group_pending_post_delete_success": {
     "description": "Success message when pending post is deleted"
   },
-  
   "group_pending_post_delete_error": "Failed to delete post. Please try again.",
   "@group_pending_post_delete_error": {
     "description": "Error message when deleting pending post fails"
   },
-  
   "group_pending_post_approve_success": "Post accepted.",
   "@group_pending_post_approve_success": {
     "description": "Success message when pending post is approved"
   },
-  
   "group_pending_post_approve_error": "Failed to accept post. This post has been reviewed by another moderator.",
   "@group_pending_post_approve_error": {
     "description": "Error message when approving pending post fails"
   },
-  
   "group_pending_post_decline_success": "Post declined.",
   "@group_pending_post_decline_success": {
     "description": "Success message when pending post is declined"
   },
-  
   "group_pending_post_decline_error": "Failed to decline post. This post has been reviewed by another moderator.",
   "@group_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  
   "error_leave_group": "Unable to leave group",
   "@error_leave_group": {
     "description": "Error message title when leaving a group fails"
   },
-  
   "error_leave_group_description": "You're the only moderator in this group. To leave group, nominate other members to moderator role",
   "@error_leave_group_description": {
     "description": "Error message description when leaving a group fails"
   },
-  
   "error_close_group": "Unable to close group",
   "@error_close_group": {
     "description": "Error message title when closing a group fails"
   },
-  
   "error_close_group_description": "Something went wrong. Please try again later.",
   "@error_close_group_description": {
     "description": "Error message description when closing a group fails"
   },
-  
-  "post_item_bottom_nonmember_label": "Join group to interact with all posts",
-  "@post_item_bottom_nonmember_label": {
-    "description": "Label for post item bottom text for non members"
+  "chat_too_many_archived": "Too many chats archived",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Public",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Private",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "File",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Confirm unban",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Delete this message?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Everyone",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Only moderators",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Default mode",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Silent mode",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Subscribe mode",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Group profile",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Group notifications",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Member permissions",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "All members",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Banned users",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Leave Group",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "You're the last moderator",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "notifications",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Allow notifications",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Discard this Story?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "The story will be permanently deleted. It cannot be undone.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_discard_action": "Discard",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "story_remove_link_confirm": "Remove Link?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Unsaved changes",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Failed to upload story",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Delete this story?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Stories",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "media_permission_files": "Allow access to your files",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Allow access to your photos",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Allow access to your videos",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Maximum upload limit reached",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "post_pending_review": "Posts sent for review",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "category_all": "All Categories",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "general_search": "Search",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "general_on": "On",
+  "@general_on": {
+    "description": "Generic on state label"
+  },
+  "general_off": "Off",
+  "@general_off": {
+    "description": "Generic off state label"
+  },
+  "general_error_title": "Something went wrong",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "general_error_retry": "Please try again.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "chat_archived_title": "Archived chats",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "chat_archived_empty": "No archive chat",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_add_member_title": "Add Member",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "chat_add_member_button": "Add Member",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_banned_users_empty": "Nothing here to see yet",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_unban_confirmation_message": "Are you sure you want to unban this user? They will be able to rejoin the group again.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "chat_unban_button": "Unban",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "chat_group_settings_title": "Group Settings",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "chat_group_settings_section": "Group settings",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "chat_group_profile_updated": "Group profile updated.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_profile_update_failed": "Failed to update group profile. Please try again.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "chat_group_notification_updated": "Group notification updated.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_group_notification_update_failed": "Failed to update group notification. Please try again.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "chat_member_permissions_updated": "Member permissions updated.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_member_permissions_update_failed": "Failed to update member permissions. Please try again.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "chat_member_list_updated": "Member list updated.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "chat_member_list_update_failed": "Failed to update member list. Please try again.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "chat_banned_users_updated": "Banned users updated.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "chat_banned_users_update_failed": "Failed to update banned users. Please try again.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_your_preferences": "Your preferences",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "chat_leave_group_title": "Leave Group",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "If you leave this group, you will no longer see new activities or participate in this group.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_leave_button": "Leave",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_promote_member_button": "Promote member",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "chat_group_left_success": "Group chat left.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_group_left_failed": "Failed to leave group chat. Please try again.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_messaging_section": "Messaging",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "chat_permission_everyone_description": "Everyone can send a message in the group.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "chat_permission_moderators_description": "Members who are not moderators can read messages but cannot send any messages.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_notification_default_description": "By default, members in this community will receive notifications, but they can choose to turn them off.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "chat_notification_silent_description": "No notifications for everyone in this channel. Members can't turn on notifications in the channel.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "chat_notification_subscribe_description": "All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "feed_filter_title": "Filter Posts",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "feed_filter_content_type": "Content Type",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "feed_filter_images": "Images",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "feed_filter_videos": "Videos",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_text": "Text",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_filter_sort_by": "Sort By",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "feed_filter_latest_first": "Latest First",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "feed_filter_oldest_first": "Oldest First",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "feed_filter_clear_all": "Clear All",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "feed_filter_apply": "Apply Filters",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_empty_title": "Your feed is empty",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "feed_empty_description": "Find group or create your own",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "feed_empty_explore_button": "Explore group",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "feed_empty_create_button": "Create group",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "explore_empty_title": "Your explore is empty",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "explore_no_group_title": "No group yet",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_empty_description": "Find group or create your own",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "explore_no_group_description": "Let's create your own groups..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
   }
 }

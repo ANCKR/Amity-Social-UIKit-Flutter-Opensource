@@ -1,105 +1,107 @@
 import 'package:flutter/material.dart';
-import 'generated/app_localizations.dart';
 
 /// Helper class to check locale support and provide fallback to English
 class LocaleFallbackHelper {
-  /// Supported base languages (from isSupported method)
-  static const List<String> supportedLanguages = ['en', 'es', 'pt'];
+  /// Supported locales with country variants - 37 locales total
+  /// Matches configuration in l10n.yaml
+  static const List<Locale> supportedLocales = [
+    Locale('ar', 'EG'), // Arabic (Egypt)
+    Locale('bg', 'BG'), // Bulgarian (Bulgaria)
+    Locale('bs', 'BA'), // Bosnian (Bosnia and Herzegovina)
+    Locale('cs', 'CZ'), // Czech (Czech Republic)
+    Locale('da', 'DK'), // Danish (Denmark)
+    Locale('de', 'DE'), // German (Germany)
+    Locale('el', 'GR'), // Greek (Greece)
+    Locale('en', 'US'), // English (United States)
+    Locale('es', 'ES'), // Spanish (Spain)
+    Locale('et', 'EE'), // Estonian (Estonia)
+    Locale('fa', 'IR'), // Persian/Farsi (Iran)
+    Locale('fi', 'FI'), // Finnish (Finland)
+    Locale('fr', 'FR'), // French (France)
+    Locale('he', 'IL'), // Hebrew (Israel)
+    Locale('hr', 'HR'), // Croatian (Croatia)
+    Locale('hu', 'HU'), // Hungarian (Hungary)
+    Locale('id', 'ID'), // Indonesian (Indonesia)
+    Locale('it', 'IT'), // Italian (Italy)
+    Locale('ja', 'JP'), // Japanese (Japan)
+    Locale('lt', 'LT'), // Lithuanian (Lithuania)
+    Locale('lv', 'LV'), // Latvian (Latvia)
+    Locale('nl', 'NL'), // Dutch (Netherlands)
+    Locale('no', 'NO'), // Norwegian (Norway)
+    Locale('pl', 'PL'), // Polish (Poland)
+    Locale('ps', 'AF'), // Pashto (Afghanistan)
+    Locale('pt', 'PT'), // Portuguese (Portugal)
+    Locale('ro', 'RO'), // Romanian (Romania)
+    Locale('ru', 'RU'), // Russian (Russia)
+    Locale('sk', 'SK'), // Slovak (Slovakia)
+    Locale('sl', 'SI'), // Slovenian (Slovenia)
+    Locale('so', 'SO'), // Somali (Somalia)
+    Locale('sq', 'AL'), // Albanian (Albania)
+    Locale('sr', 'RS'), // Serbian (Serbia)
+    Locale('sv', 'SE'), // Swedish (Sweden)
+    Locale('tr', 'TR'), // Turkish (Turkey)
+    Locale('uk', 'UA'), // Ukrainian (Ukraine)
+    Locale('vi', 'VN'), // Vietnamese (Vietnam)
+  ];
 
-  /// Map of supported language variants
-  static const Map<String, List<String>> supportedVariants = {
-    'es': ['CL', 'CO', 'MX', 'PE'],
-    'pt': ['BR'],
-  };
-
-  /// Default fallback locale (English)
-  static const Locale fallbackLocale = Locale('en');
+  /// Default fallback locale (English - United States)
+  static const Locale fallbackLocale = Locale('en', 'US');
 
   /// Check if a locale is supported
-  /// Returns true if the language code is in supported list
+  /// Returns true if the exact locale (language + country) is in supported list
   static bool isLocaleSupported(Locale locale) {
-    return supportedLanguages.contains(locale.languageCode);
+    return supportedLocales.any((supported) =>
+        supported.languageCode == locale.languageCode &&
+        supported.countryCode == locale.countryCode);
   }
 
   /// Check if a specific locale variant exists
-  /// Example: es_AR doesn't exist, but es does
   static bool hasExactVariant(Locale locale) {
-    if (locale.countryCode == null) {
-      return supportedLanguages.contains(locale.languageCode);
-    }
-
-    final variants = supportedVariants[locale.languageCode];
-    if (variants == null) return false;
-
-    return variants.contains(locale.countryCode);
+    return isLocaleSupported(locale);
   }
 
   /// Get the best matching locale with fallback logic
   /// Priority:
   /// 1. Exact match (language + country)
-  /// 2. Language-only match
-  /// 3. English fallback
+  /// 2. English (United States) fallback
   static Locale getBestMatchingLocale(Locale requestedLocale) {
-    // Check if language is supported at all
-    if (!isLocaleSupported(requestedLocale)) {
-      debugPrint(
-        '⚠️ Language "${requestedLocale.languageCode}" not supported. '
-        'Falling back to English.',
-      );
-      return fallbackLocale;
+    // Check if exact locale is supported
+    if (isLocaleSupported(requestedLocale)) {
+      return requestedLocale;
     }
 
-    // Check if exact variant exists
-    if (requestedLocale.countryCode != null &&
-        !hasExactVariant(requestedLocale)) {
-      debugPrint(
-        '⚠️ Variant "${requestedLocale.languageCode}_${requestedLocale.countryCode}" '
-        'not found. Using base "${requestedLocale.languageCode}".',
-      );
-      return Locale(requestedLocale.languageCode);
-    }
-
-    return requestedLocale;
+    debugPrint(
+      '⚠️ Locale "${requestedLocale.languageCode}_${requestedLocale.countryCode}" not supported. '
+      'Falling back to English (United States).',
+    );
+    return fallbackLocale;
   }
 
   /// Validate and get safe locale with detailed status
   static LocaleValidationResult validateLocale(Locale locale) {
-    // Not supported at all
-    if (!isLocaleSupported(locale)) {
+    // Check if supported
+    if (isLocaleSupported(locale)) {
       return LocaleValidationResult(
         originalLocale: locale,
-        resolvedLocale: fallbackLocale,
-        status: LocaleStatus.notSupported,
-        message:
-            'Language "${locale.languageCode}" is not supported. Using English.',
+        resolvedLocale: locale,
+        status: LocaleStatus.supported,
+        message: 'Locale fully supported.',
       );
     }
 
-    // Supported but variant missing
-    if (locale.countryCode != null && !hasExactVariant(locale)) {
-      final baseLocale = Locale(locale.languageCode);
-      return LocaleValidationResult(
-        originalLocale: locale,
-        resolvedLocale: baseLocale,
-        status: LocaleStatus.variantMissing,
-        message:
-            'Variant "${locale.countryCode}" not available for "${locale.languageCode}". '
-            'Using base language.',
-      );
-    }
-
-    // Fully supported
+    // Not supported - fallback to English
     return LocaleValidationResult(
       originalLocale: locale,
-      resolvedLocale: locale,
-      status: LocaleStatus.supported,
-      message: 'Locale fully supported.',
+      resolvedLocale: fallbackLocale,
+      status: LocaleStatus.notSupported,
+      message:
+          'Locale "${locale.languageCode}_${locale.countryCode}" is not supported. Using English (United States).',
     );
   }
 
   /// Get all supported locales
   static List<Locale> getAllSupportedLocales() {
-    return AppLocalizations.supportedLocales;
+    return supportedLocales;
   }
 
   /// Check if a locale will fallback to English
@@ -109,15 +111,10 @@ class LocaleFallbackHelper {
 
   /// Get a human-readable status for a locale
   static String getLocaleStatusMessage(Locale locale) {
-    if (!isLocaleSupported(locale)) {
-      return '❌ Not supported - will use English';
+    if (isLocaleSupported(locale)) {
+      return '✅ Fully supported';
     }
-
-    if (locale.countryCode != null && !hasExactVariant(locale)) {
-      return '⚠️ Variant missing - will use base ${locale.languageCode}';
-    }
-
-    return '✅ Fully supported';
+    return '❌ Not supported - will use English (United States)';
   }
 }
 
@@ -126,10 +123,10 @@ enum LocaleStatus {
   /// Locale is fully supported
   supported,
 
-  /// Language is supported but specific variant is missing
+  /// Locale variant is missing (not used in this version as we require exact match)
   variantMissing,
 
-  /// Language is not supported at all
+  /// Locale is not supported at all
   notSupported,
 }
 
@@ -159,7 +156,9 @@ class LocaleValidationResult {
 
   /// Whether it will fallback to English
   bool get willFallbackToEnglish =>
-      status == LocaleStatus.notSupported && resolvedLocale.languageCode == 'en';
+      status == LocaleStatus.notSupported &&
+      resolvedLocale.languageCode == 'en' &&
+      resolvedLocale.countryCode == 'US';
 
   @override
   String toString() {
@@ -173,10 +172,10 @@ class LocaleValidationResult {
 
 /// Extension on BuildContext for easy locale checking
 extension LocaleCheckExtension on BuildContext {
-  /// Check if current locale is the fallback (English)
+  /// Check if current locale is the fallback (English - United States)
   bool get isUsingFallbackLocale {
     final locale = Localizations.localeOf(this);
-    return locale.languageCode == 'en';
+    return locale.languageCode == 'en' && locale.countryCode == 'US';
   }
 
   /// Get validation result for current locale
@@ -185,4 +184,3 @@ extension LocaleCheckExtension on BuildContext {
     return LocaleFallbackHelper.validateLocale(locale);
   }
 }
-

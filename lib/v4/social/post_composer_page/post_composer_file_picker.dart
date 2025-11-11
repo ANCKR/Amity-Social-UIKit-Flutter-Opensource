@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/post_composer_page/bloc/post_composer_bloc.dart';
@@ -54,12 +55,12 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           showPermissionDialog() async {
             ConfirmationV4Dialog().show(
               context: context,
-              title: 'Allow access to your vidoes',
+              title: context.l10n.media_permission_videos,
               detailText:
                   'This allows $appName to access vidoes on your device.',
               leftButtonColor: null,
-              leftButtonText: 'OK',
-              rightButtonText: 'Open settings',
+              leftButtonText: context.l10n.general_ok,
+              rightButtonText: context.l10n.general_open_settings,
               onConfirm: () {
                 openAppSettings();
               },
@@ -115,12 +116,12 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           showDocumentPermissionDialog() async {
             ConfirmationV4Dialog().show(
               context: context,
-              title: 'Allow access to your files',
+              title: context.l10n.media_permission_files,
               detailText:
                   'This allows $appName to access files on your device.',
               leftButtonColor: null,
-              leftButtonText: 'OK',
-              rightButtonText: 'Open settings',
+              leftButtonText: context.l10n.general_ok,
+              rightButtonText: context.l10n.general_open_settings,
               onConfirm: () {
                 openAppSettings();
               },
@@ -161,11 +162,11 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           
             PermissionAlertV4Dialog().show(
               context: context,
-              title: 'Allow access to your photos',
+              title: context.l10n.media_permission_photos,
               detailText:
                   'This allows $appName to share photos from this device and save photos to it.',
-              bottomButtonText: 'OK',
-              topButtonText: 'Open settings',
+              bottomButtonText: context.l10n.general_ok,
+              topButtonText: context.l10n.general_open_settings,
               onTopButtonAction: () {
                 openAppSettings();
               },
@@ -182,11 +183,11 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           showPermissionDialog = () async {
             PermissionAlertV4Dialog().show(
               context: context,
-              title: 'Allow access to your photos',
+              title: context.l10n.media_permission_photos,
               detailText:
                   'This allows $appName to share photos from this device and save photos to it.',
-              bottomButtonText: 'OK',
-              topButtonText: 'Open settings',
+              bottomButtonText: context.l10n.general_ok,
+              topButtonText: context.l10n.general_open_settings,
               onTopButtonAction: () {
                 openAppSettings();
               },
@@ -197,12 +198,12 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           showPermissionDialog = () async {
             ConfirmationV4Dialog().show(
               context: context,
-              title: 'Allow access to your files',
+              title: context.l10n.media_permission_files,
               detailText:
                   'This allows $appName to access files on your device.',
               leftButtonColor: null,
-              leftButtonText: 'OK',
-              rightButtonText: 'Open settings',
+              leftButtonText: context.l10n.general_ok,
+              rightButtonText: context.l10n.general_open_settings,
               onConfirm: () {
                 openAppSettings();
               },
@@ -214,12 +215,12 @@ extension PostComposerFilePicker on AmityPostComposerPage {
           showPermissionDialog = () async {
             ConfirmationV4Dialog().show(
               context: context,
-              title: 'Allow access to your vidoes',
+              title: context.l10n.media_permission_videos,
               detailText:
                   'This allows $appName to access vidoes on your device.',
               leftButtonColor: null,
-              leftButtonText: 'OK',
-              rightButtonText: 'Open settings',
+              leftButtonText: context.l10n.general_ok,
+              rightButtonText: context.l10n.general_open_settings,
               onConfirm: () {
                 openAppSettings();
               },

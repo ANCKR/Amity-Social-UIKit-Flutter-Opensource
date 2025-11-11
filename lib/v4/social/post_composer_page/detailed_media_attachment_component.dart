@@ -83,7 +83,7 @@ class AmityDetailedMediaAttachmentComponent extends NewBaseComponent {
             if ((mediaType == FileType.any || mediaType == null) && isFilePostEnabled)
               _buildListTile(
                 assetPath: 'assets/Icons/amity_ic_file_button.svg',
-                title: 'File',
+                title: context.l10n.general_file,
                 onTap: onFileTap,
               ),
           ],
