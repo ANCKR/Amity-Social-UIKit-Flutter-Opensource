@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:chewie/chewie.dart';
+// import 'package:chewie/chewie.dart'; // Unused with Amity Video Player
 import 'package:amity_uikit_beta_service/v4/social/livestream/cubit/livestream_player_cubit.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/cubit/livestream_player_state.dart';
-import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_error_widget.dart';
-import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_loading_widget.dart';
-import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_offline_widget.dart';
-import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_details.dart';
-import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_status.dart';
+// import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_error_widget.dart'; // Unused
+// import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_loading_widget.dart'; // Unused
+// import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_offline_widget.dart'; // Unused
+import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/amity_livestream_player_widget.dart';
+// import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_details.dart'; // Unused
+// import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_status.dart'; // Unused
 
 /// Video player section for livestream
-/// 
+///
 /// Handles all video player states: loading, playing, error, non-playable, offline
+///
+/// TEMPORARY: Using Amity Video Player which bypasses the cubit's stream fetching
+/// and uses AmityVideoClient.newStreamRepository().getStream() internally
 class LivestreamVideoSection extends StatelessWidget {
   final LivestreamPlayerState state;
 
@@ -22,6 +26,23 @@ class LivestreamVideoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ============================================================================
+    // AMITY VIDEO PLAYER (Temporary - Direct SDK Integration)
+    // Using AmityVideoContoller which fetches stream via:
+    // AmityVideoClient.newStreamRepository().getStream(streamId)
+    // This bypasses the API client and uses SDK directly
+    // ============================================================================
+    final cubit = context.read<LivestreamPlayerCubit>();
+    return AmityLivestreamPlayerWidget(
+      streamId: cubit.streamId,
+      aspectRatio: 16 / 9,
+    );
+
+    // ============================================================================
+    // ORIGINAL FLOW (Commented out for testing)
+    // This used the cubit to fetch stream details via API
+    // ============================================================================
+    /*
     // Show offline state first (highest priority)
     if (state.isOffline) {
       return LivestreamOfflineWidget(
@@ -51,6 +72,15 @@ class LivestreamVideoSection extends StatelessWidget {
       return const LivestreamLoadingWidget(aspectRatio: 16 / 9);
     }
 
+    // Amity Video Player (if stream details available)
+    if (state.streamDetails != null && state.streamDetails!.streamId.isNotEmpty) {
+      return AmityLivestreamPlayerWidget(
+        streamId: state.streamDetails!.streamId,
+        aspectRatio: 16 / 9,
+      );
+    }
+
+    // Chewie Player fallback
     if (state.isReady && state.chewieController != null) {
       return AspectRatio(
         aspectRatio: 16 / 9,
@@ -60,6 +90,7 @@ class LivestreamVideoSection extends StatelessWidget {
       );
     }
 
+    // Final fallback
     return AspectRatio(
       aspectRatio: 16 / 9,
       child: Container(
@@ -72,77 +103,7 @@ class LivestreamVideoSection extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-/// View for non-playable streams (idle/ended without recording)
-class _NonPlayableStreamView extends StatelessWidget {
-  final StreamDetails streamDetails;
-
-  const _NonPlayableStreamView({
-    Key? key,
-    required this.streamDetails,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final isIdle = streamDetails.status == StreamStatus.idle;
-
-    return AspectRatio(
-      aspectRatio: 16 / 9,
-      child: Container(
-        color: Colors.black,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-        child: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  isIdle ? Icons.schedule : Icons.check_circle_outline,
-                  size: 48,
-                  color: Colors.grey,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  streamDetails.statusMessage,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 8),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Text(
-                    isIdle
-                        ? 'The stream will appear here when it starts'
-                        : 'This stream is no longer available',
-                    style: TextStyle(
-                      color: Colors.grey.shade400,
-                      fontSize: 13,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                TextButton.icon(
-                  onPressed: () => Navigator.of(context).pop(),
-                  icon: const Icon(Icons.arrow_back, size: 18),
-                  label: const Text('Back to feed'),
-                  style: TextButton.styleFrom(
-                    foregroundColor: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
+    */
   }
 }
 
