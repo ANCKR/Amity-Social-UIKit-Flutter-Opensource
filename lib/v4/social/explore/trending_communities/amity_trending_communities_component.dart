@@ -3,6 +3,7 @@ import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/amity_custom_overlay_toast.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/amity_community_category_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
@@ -37,7 +38,7 @@ class AmityTrendingCommunitiesComponent extends NewBaseComponent {
   }
 }
 
-class AmityTrendingCommunitiesView extends StatelessWidget {
+class AmityTrendingCommunitiesView extends StatelessWidget with AmityCustomOverlayToast {
   final AmityThemeColor theme;
   final Function(CommunityListState) onStateChanged;
 
@@ -80,6 +81,7 @@ class AmityTrendingCommunitiesView extends StatelessWidget {
                   index: entry.key,
                   theme: theme,
                   community: entry.value,
+                  isLoading: state.loadingCommunityIds.contains(entry.value.communityId),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => AmityCommunityProfilePage(
@@ -87,15 +89,44 @@ class AmityTrendingCommunitiesView extends StatelessWidget {
                       ),
                     ));
                   },
-                  onJoinTap: () {
+                  onJoinTap: () async {
+                    final communityName = entry.value.displayName ?? 'Community';
                     if (entry.value.isJoined == true) {
-                      context
+                      final success = await context
                           .read<TrendingCommunitiesCubit>()
                           .leaveCommunity(entry.value.communityId!);
+                      // Show custom overlay toast after leaving
+                      if (context.mounted) {
+                        if (success) {
+                          showAmitySuccessToast(
+                            context,
+                            'Left $communityName',
+                          );
+                        } else {
+                          showAmityErrorToast(
+                            context,
+                            'Failed to leave $communityName',
+                          );
+                        }
+                      }
                     } else {
-                      context
+                      final success = await context
                           .read<TrendingCommunitiesCubit>()
                           .joinCommunity(entry.value.communityId!);
+                      // Show custom overlay toast after joining
+                      if (context.mounted) {
+                        if (success) {
+                          showAmitySuccessToast(
+                            context,
+                            'Joined $communityName',
+                          );
+                        } else {
+                          showAmityErrorToast(
+                            context,
+                            'Failed to join $communityName',
+                          );
+                        }
+                      }
                     }
                   },
                 )
@@ -113,6 +144,7 @@ class AmityJoinCommunityView extends StatelessWidget {
   final VoidCallback onTap;
   final VoidCallback onJoinTap;
   final int index;
+  final bool isLoading;
 
   const AmityJoinCommunityView({
     Key? key,
@@ -121,6 +153,7 @@ class AmityJoinCommunityView extends StatelessWidget {
     required this.onTap,
     required this.onJoinTap,
     required this.index,
+    required this.isLoading,
   }) : super(key: key);
 
   @override
@@ -165,8 +198,8 @@ class AmityJoinCommunityView extends StatelessWidget {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.black.withOpacity(0),
-                        Colors.black.withOpacity(0.4),
+                        Colors.black.withValues(alpha: 0.0),
+                        Colors.black.withValues(alpha: 0.4),
                       ],
                     ),
                   ),
@@ -251,6 +284,7 @@ class AmityJoinCommunityView extends StatelessWidget {
                       theme: theme,
                       community: community,
                       onTap: onJoinTap,
+                      isLoading: isLoading,
                     ),
                   ),
                 ],

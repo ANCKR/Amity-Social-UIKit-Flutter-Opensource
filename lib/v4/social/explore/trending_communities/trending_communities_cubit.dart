@@ -43,29 +43,85 @@ class TrendingCommunitiesCubit extends Cubit<CommunityState> {
     }
   }
 
-  Future<void> joinCommunity(String communityId) async {
+  Future<bool> joinCommunity(String communityId) async {
+    // Add community to loading set
+    final loadingIds = Set<String>.from(state.loadingCommunityIds)..add(communityId);
+    emit(state.copyWith(loadingCommunityIds: loadingIds));
+
     try {
       await AmitySocialClient.newCommunityRepository()
           .joinCommunity(communityId);
-      refreshController?.notifyRefresh();
-    } catch (e) {
+
+      // Fetch the updated community to get the latest isJoined status
+      final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+          .getCommunity(communityId);
+
+      // Update only the specific community in the list
+      final updatedCommunities = state.communities.map((community) {
+        if (community.communityId == communityId) {
+          return updatedCommunity;
+        }
+        return community;
+      }).toList();
+
+      // Remove from loading set and emit new state
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
       emit(state.copyWith(
+        communities: updatedCommunities,
+        loadingCommunityIds: finalLoadingIds,
+        hasError: false,
+      ));
+      return true;
+    } catch (e) {
+      // Remove from loading set on error
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
+      emit(state.copyWith(
+        loadingCommunityIds: finalLoadingIds,
         hasError: true,
         errorMessage: 'Failed to join community',
       ));
+      return false;
     }
   }
 
-  Future<void> leaveCommunity(String communityId) async {
+  Future<bool> leaveCommunity(String communityId) async {
+    // Add community to loading set
+    final loadingIds = Set<String>.from(state.loadingCommunityIds)..add(communityId);
+    emit(state.copyWith(loadingCommunityIds: loadingIds));
+
     try {
       await AmitySocialClient.newCommunityRepository()
           .leaveCommunity(communityId);
-      refreshController?.notifyRefresh();
-    } catch (e) {
+
+      // Fetch the updated community to get the latest isJoined status
+      final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+          .getCommunity(communityId);
+
+      // Update only the specific community in the list
+      final updatedCommunities = state.communities.map((community) {
+        if (community.communityId == communityId) {
+          return updatedCommunity;
+        }
+        return community;
+      }).toList();
+
+      // Remove from loading set and emit new state
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
       emit(state.copyWith(
+        communities: updatedCommunities,
+        loadingCommunityIds: finalLoadingIds,
+        hasError: false,
+      ));
+      return true;
+    } catch (e) {
+      // Remove from loading set on error
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
+      emit(state.copyWith(
+        loadingCommunityIds: finalLoadingIds,
         hasError: true,
         errorMessage: 'Failed to leave community',
       ));
+      return false;
     }
   }
 
