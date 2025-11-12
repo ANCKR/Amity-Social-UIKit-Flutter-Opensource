@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_join_notifier.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
@@ -97,6 +98,9 @@ class CommunityProfileBloc
           joinSuccess: true,
           joinError: false,
         ));
+
+        // Notify globally that user joined this community
+        CommunityJoinNotifier().notifyJoined(event.communityId);
       } catch (e) {
         // Clear loading state and set error flag
         emit(state.copyWith(

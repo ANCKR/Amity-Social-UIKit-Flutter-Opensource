@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_join_notifier.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/list_state/amity_list_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class TrendingCommunitiesCubit extends Cubit<CommunityState> {
   ExploreComponentRefreshController? refreshController;
   late final StreamSubscription? _refreshSubscription;
+  late final StreamSubscription<String>? _joinSubscription;
 
   TrendingCommunitiesCubit(this.refreshController)
       : super(CommunityState(
@@ -19,6 +21,12 @@ class TrendingCommunitiesCubit extends Cubit<CommunityState> {
 
     refreshController ??= ExploreComponentRefreshController();
     _refreshSubscription = refreshController?.refreshStream.listen((event) {
+      loadTrendingCommunities();
+    });
+
+    // Listen for join events from community profile page
+    _joinSubscription = CommunityJoinNotifier().onCommunityJoined.listen((communityId) {
+      // Refresh the list when a community is joined
       loadTrendingCommunities();
     });
   }
@@ -135,6 +143,7 @@ class TrendingCommunitiesCubit extends Cubit<CommunityState> {
   @override
   Future<void> close() {
     _refreshSubscription?.cancel();
+    _joinSubscription?.cancel();
     return super.close();
   }
 }
