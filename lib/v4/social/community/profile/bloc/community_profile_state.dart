@@ -14,6 +14,9 @@ class CommunityProfileState extends Equatable {
     this.isModerator = false,
     this.canManageStory = false,
     this.isDetailExpanded = false,
+    this.isJoiningCommunity = false,
+    this.joinSuccess = false,
+    this.joinError = false,
   });
 
   final String communityId;
@@ -26,9 +29,12 @@ class CommunityProfileState extends Equatable {
   final bool isModerator;
   final bool canManageStory;
   final bool isDetailExpanded;
+  final bool isJoiningCommunity;
+  final bool joinSuccess;
+  final bool joinError;
 
   @override
-  List<Object?> get props => [communityId, community, scrollController, isExpanded, pendingPostCount, selectedIndex, isJoined, isModerator, canManageStory, isDetailExpanded];
+  List<Object?> get props => [communityId, community, scrollController, isExpanded, pendingPostCount, selectedIndex, isJoined, isModerator, canManageStory, isDetailExpanded, isJoiningCommunity, joinSuccess, joinError];
 
   CommunityProfileState copyWith({
     String? communityId,
@@ -41,6 +47,9 @@ class CommunityProfileState extends Equatable {
     bool? isModerator,
     bool? canManageStory,
     bool? isDetailExpanded,
+    bool? isJoiningCommunity,
+    bool? joinSuccess,
+    bool? joinError,
   }) {
     return CommunityProfileState(
       communityId: communityId ?? this.communityId,
@@ -53,6 +62,9 @@ class CommunityProfileState extends Equatable {
       isModerator: isModerator ?? this.isModerator,
       canManageStory: canManageStory ?? this.canManageStory,
       isDetailExpanded: isDetailExpanded ?? this.isDetailExpanded,
+      isJoiningCommunity: isJoiningCommunity ?? this.isJoiningCommunity,
+      joinSuccess: joinSuccess ?? this.joinSuccess,
+      joinError: joinError ?? this.joinError,
     );
   }
 }
