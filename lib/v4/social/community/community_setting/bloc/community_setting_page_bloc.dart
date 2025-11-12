@@ -1,6 +1,7 @@
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_join_notifier.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_setting/notification_setting/community_notification_setting_extension.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -67,6 +68,10 @@ class CommunitySettingPageBloc
         event.toastBloc.add(AmityToastShort(
             message: event.context.l10n.community_leave_success_message,
             icon: AmityToastIcon.success));
+
+        // Notify globally that user left this community
+        CommunityJoinNotifier().notifyLeft(_community.communityId ?? '');
+
         event.onSuccess();
       }).onError((error, stackTrace) {
         event.toastBloc.add(AmityToastShort(

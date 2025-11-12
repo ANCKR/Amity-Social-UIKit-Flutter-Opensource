@@ -10,6 +10,7 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
   ExploreComponentRefreshController? refreshController;
   late final StreamSubscription? _refreshSubscription;
   late final StreamSubscription<String>? _joinSubscription;
+  late final StreamSubscription<String>? _leaveSubscription;
   final _joinNotifier = CommunityJoinNotifier();
 
   RecommendedCommunitiesCubit(this.refreshController)
@@ -25,10 +26,56 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
       loadRecommendedCommunities();
     });
 
-    // Listen for join events from community profile page
-    _joinSubscription = CommunityJoinNotifier().onCommunityJoined.listen((communityId) {
-      // Refresh the list when a community is joined
-      loadRecommendedCommunities();
+    // Listen for join events from community profile page or other sections
+    _joinSubscription = CommunityJoinNotifier().onCommunityJoined.listen((communityId) async {
+      // Check if this community is in our list
+      final communityInList = state.communities.any((c) => c.communityId == communityId);
+      if (communityInList) {
+        // Community is in our list, update only this specific item
+        try {
+          final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+              .getCommunity(communityId);
+
+          final updatedCommunities = state.communities.map((community) {
+            if (community.communityId == communityId) {
+              return updatedCommunity;
+            }
+            return community;
+          }).toList();
+
+          emit(state.copyWith(communities: updatedCommunities));
+        } catch (e) {
+          // If fetch fails, reload the entire list
+          loadRecommendedCommunities();
+        }
+      }
+      // If not in our list, no need to refresh
+    });
+
+    // Listen for leave events from community settings page or other sections
+    _leaveSubscription = CommunityJoinNotifier().onCommunityLeft.listen((communityId) async {
+      // Check if this community is in our list
+      final communityInList = state.communities.any((c) => c.communityId == communityId);
+      if (communityInList) {
+        // Community is in our list, update only this specific item
+        try {
+          final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+              .getCommunity(communityId);
+
+          final updatedCommunities = state.communities.map((community) {
+            if (community.communityId == communityId) {
+              return updatedCommunity;
+            }
+            return community;
+          }).toList();
+
+          emit(state.copyWith(communities: updatedCommunities));
+        } catch (e) {
+          // If fetch fails, reload the entire list
+          loadRecommendedCommunities();
+        }
+      }
+      // If not in our list, no need to refresh
     });
   }
 
@@ -153,6 +200,7 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
   Future<void> close() {
     _refreshSubscription?.cancel();
     _joinSubscription?.cancel();
+    _leaveSubscription?.cancel();
     return super.close();
   }
 }

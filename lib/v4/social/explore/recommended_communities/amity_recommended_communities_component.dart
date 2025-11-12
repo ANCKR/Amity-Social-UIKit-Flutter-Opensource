@@ -307,8 +307,9 @@ class AmityCommunityJoinButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isJoined = community.isJoined ?? false;
     return InkWell(
-      onTap: isLoading ? null : onTap,
+      onTap: (isLoading || isJoined) ? null : onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: _getButtonDecoration(),
