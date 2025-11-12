@@ -3,7 +3,8 @@ import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
-import 'package:amity_uikit_beta_service/v4/core/toast/amity_custom_overlay_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/amity_community_category_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
@@ -38,7 +39,7 @@ class AmityTrendingCommunitiesComponent extends NewBaseComponent {
   }
 }
 
-class AmityTrendingCommunitiesView extends StatelessWidget with AmityCustomOverlayToast {
+class AmityTrendingCommunitiesView extends StatelessWidget {
   final AmityThemeColor theme;
   final Function(CommunityListState) onStateChanged;
 
@@ -95,17 +96,20 @@ class AmityTrendingCommunitiesView extends StatelessWidget with AmityCustomOverl
                       final success = await context
                           .read<TrendingCommunitiesCubit>()
                           .leaveCommunity(entry.value.communityId!);
-                      // Show custom overlay toast after leaving
+                      // Show bloc toast after leaving
                       if (context.mounted) {
                         if (success) {
-                          showAmitySuccessToast(
-                            context,
-                            'Left $communityName',
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: context.l10n.community_leave_success_message,
+                              icon: AmityToastIcon.success,
+                            ),
                           );
                         } else {
-                          showAmityErrorToast(
-                            context,
-                            'Failed to leave $communityName',
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: context.l10n.community_leave_error_message,
+                            ),
                           );
                         }
                       }
@@ -113,17 +117,20 @@ class AmityTrendingCommunitiesView extends StatelessWidget with AmityCustomOverl
                       final success = await context
                           .read<TrendingCommunitiesCubit>()
                           .joinCommunity(entry.value.communityId!);
-                      // Show custom overlay toast after joining
+                      // Show bloc toast after joining
                       if (context.mounted) {
                         if (success) {
-                          showAmitySuccessToast(
-                            context,
-                            'Joined $communityName',
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: 'Joined $communityName',
+                              icon: AmityToastIcon.success,
+                            ),
                           );
                         } else {
-                          showAmityErrorToast(
-                            context,
-                            'Failed to join $communityName',
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: 'Failed to join $communityName',
+                            ),
                           );
                         }
                       }

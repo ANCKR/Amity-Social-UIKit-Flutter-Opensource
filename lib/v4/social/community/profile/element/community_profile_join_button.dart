@@ -2,13 +2,14 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
-import 'package:amity_uikit_beta_service/v4/core/toast/amity_custom_overlay_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/bloc/community_profile_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
-class AmityCommunityJoinButton extends BaseElement with AmityCustomOverlayToast {
+class AmityCommunityJoinButton extends BaseElement {
   final AmityCommunity community;
 
   AmityCommunityJoinButton({Key? key, required this.community})
@@ -16,24 +17,27 @@ class AmityCommunityJoinButton extends BaseElement with AmityCustomOverlayToast 
 
   @override
   Widget buildElement(BuildContext context) {
-    final communityName = community.displayName ?? 'Community';
-
     return BlocConsumer<CommunityProfileBloc, CommunityProfileState>(
       listener: (context, state) {
         // Show toast when join completes
         if (state.joinSuccess) {
-          showAmitySuccessToast(
-            context,
-            'Joined $communityName',
+          final communityName = community.displayName ?? 'Community';
+          context.read<AmityToastBloc>().add(
+            AmityToastShort(
+              message: 'Joined $communityName',
+              icon: AmityToastIcon.success,
+            ),
           );
           // Reset flags after showing toast
           context.read<CommunityProfileBloc>().add(
             CommunityProfileEventResetJoinFlags(),
           );
         } else if (state.joinError) {
-          showAmityErrorToast(
-            context,
-            'Failed to join $communityName',
+          final communityName = community.displayName ?? 'Community';
+          context.read<AmityToastBloc>().add(
+            AmityToastShort(
+              message: 'Failed to join $communityName',
+            ),
           );
           // Reset flags after showing toast
           context.read<CommunityProfileBloc>().add(
@@ -70,36 +74,24 @@ class AmityCommunityJoinButton extends BaseElement with AmityCustomOverlayToast 
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
-                  width: 20,
-                  height: 20,
-                  padding: const EdgeInsets.symmetric(vertical: 2),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      if (isLoading)
-                        SizedBox(
-                          width: 20,
-                          height: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                          ),
-                        )
-                      else
-                        SizedBox(
-                          width: 20,
-                          child: SvgPicture.asset(
-                            'assets/Icons/amity_ic_plus_button.svg',
-                            package: 'amity_uikit_beta_service',
-                          ),
-                        ),
-                    ],
+                if (isLoading)
+                  SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                      backgroundColor: theme.baseColorShade4,
+                    ),
+                  )
+                else
+                  SvgPicture.asset(
+                    'assets/Icons/amity_ic_plus_button.svg',
+                    package: 'amity_uikit_beta_service',
+                    width: 20,
+                    height: 20,
                   ),
-                ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 10),
                 Text(
                   context.l10n.community_join,
                   style: AmityTextStyle.subtitleBold(Colors.white),

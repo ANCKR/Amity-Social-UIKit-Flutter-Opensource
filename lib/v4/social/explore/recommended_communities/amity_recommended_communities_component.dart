@@ -3,7 +3,8 @@ import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
-import 'package:amity_uikit_beta_service/v4/core/toast/amity_custom_overlay_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/amity_community_category_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
@@ -15,7 +16,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
-class AmityRecommendedCommunitiesComponent extends NewBaseComponent with AmityCustomOverlayToast {
+class AmityRecommendedCommunitiesComponent extends NewBaseComponent {
   final Function(CommunityListState) onStateChanged;
   final ExploreComponentRefreshController? refreshController;
 
@@ -72,17 +73,20 @@ class AmityRecommendedCommunitiesComponent extends NewBaseComponent with AmityCu
                         final success = await context
                             .read<RecommendedCommunitiesCubit>()
                             .joinCommunity(community.communityId!);
-                        // Show custom overlay toast after joining
+                        // Show bloc toast after joining
                         if (context.mounted) {
                           if (success) {
-                            showAmitySuccessToast(
-                              context,
-                              'Joined $communityName',
+                            context.read<AmityToastBloc>().add(
+                              AmityToastShort(
+                                message: 'Joined $communityName',
+                                icon: AmityToastIcon.success,
+                              ),
                             );
                           } else {
-                            showAmityErrorToast(
-                              context,
-                              'Failed to join $communityName',
+                            context.read<AmityToastBloc>().add(
+                              AmityToastShort(
+                                message: 'Failed to join $communityName',
+                              ),
                             );
                           }
                         }
@@ -312,7 +316,7 @@ class AmityCommunityJoinButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             _getButtonIcon(),
-            const SizedBox(width: 4),
+            const SizedBox(width: 10),
             _getButtonLabel(context),
           ],
         ),
@@ -338,13 +342,14 @@ class AmityCommunityJoinButton extends StatelessWidget {
   Widget _getButtonIcon() {
     if (isLoading) {
       return SizedBox(
-        width: 16,
-        height: 16,
+        width: 18,
+        height: 18,
         child: CircularProgressIndicator(
           strokeWidth: 2,
           valueColor: AlwaysStoppedAnimation<Color>(
             community.isJoined ?? false ? theme.baseColor : Colors.white,
           ),
+          backgroundColor: theme.baseColorShade4,
         ),
       );
     }
