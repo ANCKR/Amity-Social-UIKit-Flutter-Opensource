@@ -14,10 +14,12 @@ enum AmityCommunityHeaderStyle { EXPANDED, COLLAPSE }
 
 class AmityCommunityHeaderComponent extends NewBaseComponent {
   final AmityCommunity? community;
+  final bool isJoined;
 
   AmityCommunityHeaderComponent({
     super.key,
     required this.community,
+    this.isJoined = false,
   }) : super(componentId: "community_header");
 
   @override
@@ -33,7 +35,8 @@ class AmityCommunityHeaderComponent extends NewBaseComponent {
             children: [
               AmityCommunityCoverView(
                   community: community,
-                  style: AmityCommunityHeaderStyle.EXPANDED),
+                  style: AmityCommunityHeaderStyle.EXPANDED,
+                  isJoined: isJoined),
               Container(
                 color: theme.backgroundColor,
                 width: double.infinity,
