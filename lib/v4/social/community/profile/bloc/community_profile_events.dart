@@ -54,3 +54,5 @@ class CommunityProfileEventTabSelected extends CommunityProfileEvent {
   @override
   List<Object> get props => [tab];
  }
+
+class CommunityProfileEventResetJoinFlags extends CommunityProfileEvent { }

@@ -10,6 +10,7 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
   ExploreComponentRefreshController? refreshController;
   late final StreamSubscription? _refreshSubscription;
   late final StreamSubscription<String>? _joinSubscription;
+  final _joinNotifier = CommunityJoinNotifier();
 
   RecommendedCommunitiesCubit(this.refreshController)
       : super(CommunityState(
@@ -79,6 +80,10 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
         loadingCommunityIds: finalLoadingIds,
         hasError: false,
       ));
+
+      // Notify globally that user joined this community
+      _joinNotifier.notifyJoined(communityId);
+
       return true;
     } catch (e) {
       // Remove from loading set on error
@@ -120,6 +125,10 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
         loadingCommunityIds: finalLoadingIds,
         hasError: false,
       ));
+
+      // Notify globally that user left this community
+      _joinNotifier.notifyLeft(communityId);
+
       return true;
     } catch (e) {
       // Remove from loading set on error

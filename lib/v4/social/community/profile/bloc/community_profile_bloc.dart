@@ -122,6 +122,10 @@ class CommunityProfileBloc
       emit(state.copyWith(isDetailExpanded: true));
     });
 
+    on<CommunityProfileEventResetJoinFlags>((event, emit) async {
+      emit(state.copyWith(joinSuccess: false, joinError: false));
+    });
+
     try {
       final communityStream = AmitySocialClient.newCommunityRepository()
           .live

@@ -170,24 +170,7 @@ class AmityJoinCommunityView extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(4),
-                  child: Image.network(
-                    community.avatarImage?.getUrl(AmityImageSize.MEDIUM) ?? '',
-                    width: 80,
-                    height: 80,
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) => Container(
-                        width: 80,
-                        height: 80,
-                        color: theme.baseColorShade3,
-                        child: Center(
-                          child: SvgPicture.asset(
-                            'assets/Icons/amity_ic_default_community_avatar.svg',
-                            width: 24,
-                            height: 18,
-                            package: 'amity_uikit_beta_service',
-                          ),
-                        )),
-                  ),
+                  child: _buildCommunityAvatar(community, theme),
                 ),
                 Container(
                   width: 80,
@@ -291,6 +274,40 @@ class AmityJoinCommunityView extends StatelessWidget {
               ),
             )
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCommunityAvatar(AmityCommunity community, AmityThemeColor theme) {
+    final imageUrl = community.avatarImage?.getUrl(AmityImageSize.MEDIUM);
+
+    // Check if URL is valid (not null and not empty)
+    if (imageUrl != null && imageUrl.isNotEmpty) {
+      return Image.network(
+        imageUrl,
+        width: 80,
+        height: 80,
+        fit: BoxFit.cover,
+        errorBuilder: (context, error, stackTrace) => _buildPlaceholder(theme),
+      );
+    }
+
+    // Show placeholder if no valid URL
+    return _buildPlaceholder(theme);
+  }
+
+  Widget _buildPlaceholder(AmityThemeColor theme) {
+    return Container(
+      width: 80,
+      height: 80,
+      color: theme.baseColorShade3,
+      child: Center(
+        child: SvgPicture.asset(
+          'assets/Icons/amity_ic_default_community_avatar.svg',
+          width: 24,
+          height: 18,
+          package: 'amity_uikit_beta_service',
         ),
       ),
     );

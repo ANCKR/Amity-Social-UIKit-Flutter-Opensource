@@ -249,6 +249,9 @@ class AmityRecommendedCommunityAvatarView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final imageUrl = image?.getUrl(AmityImageSize.MEDIUM);
+    final hasValidUrl = imageUrl != null && imageUrl.isNotEmpty;
+
     return SizedBox(
       height: 125,
       width: 268,
@@ -257,9 +260,9 @@ class AmityRecommendedCommunityAvatarView extends StatelessWidget {
           topLeft: Radius.circular(8),
           topRight: Radius.circular(8),
         ),
-        child: image?.getUrl(AmityImageSize.MEDIUM) != null
+        child: hasValidUrl
             ? Image.network(
-                image!.getUrl(AmityImageSize.MEDIUM),
+                imageUrl,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) =>
                     _buildPlaceholder(),

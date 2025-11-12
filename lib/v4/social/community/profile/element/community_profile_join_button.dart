@@ -26,10 +26,18 @@ class AmityCommunityJoinButton extends BaseElement with AmityCustomOverlayToast 
             context,
             'Joined $communityName',
           );
+          // Reset flags after showing toast
+          context.read<CommunityProfileBloc>().add(
+            CommunityProfileEventResetJoinFlags(),
+          );
         } else if (state.joinError) {
           showAmityErrorToast(
             context,
             'Failed to join $communityName',
+          );
+          // Reset flags after showing toast
+          context.read<CommunityProfileBloc>().add(
+            CommunityProfileEventResetJoinFlags(),
           );
         }
       },
