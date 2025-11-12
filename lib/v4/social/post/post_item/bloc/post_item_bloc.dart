@@ -19,8 +19,6 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
   final _translationCache = TranslationCache();
 
   PostItemBloc(this.context, this.post) : super(PostItemState(post: post)) {
-    print('🎬 PostItemBloc CREATED for post: ${post.postId} - hashCode: $hashCode');
-    
     on<PostItemLoading>((event, emit) async {
       var post =
           await AmitySocialClient.newPostRepository().getPost(event.postId);
@@ -86,14 +84,11 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
     });
 
     on<TranslatePost>((event, emit) async {
-      print('📥 TranslatePost event received in BLoC: $hashCode');
       final postId = state.post.postId ?? '';
-      
+
       // Check cache first
       final cached = _translationCache.get(postId, event.targetLang);
       if (cached != null) {
-        print('💾 Translation cache HIT for: $postId');
-        print('   🔄 About to emit state with isTranslated=true');
         emit(PostItemState(
           post: state.post,
           isReacting: state.isReacting,
@@ -101,11 +96,9 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
           translatedText: cached,
           isTranslating: false,
         ));
-        print('   ✅ State emitted with cache');
         return;
       }
-      
-      print('🔄 Translating post: $postId');
+
       emit(PostItemState(
         post: state.post,
         isReacting: state.isReacting,
@@ -113,16 +106,14 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
         translatedText: state.translatedText,
         isTranslating: true,
       ));
-      
+
       final translated = await _translationService.translateText(
         text: event.text,
         targetLang: event.targetLang,
       );
-      
+
       if (translated != null) {
-        print('✅ Translation SUCCESS for: $postId');
         _translationCache.put(postId, event.targetLang, translated);
-        print('   🔄 About to emit state with new translation');
         emit(PostItemState(
           post: state.post,
           isReacting: state.isReacting,
@@ -130,9 +121,7 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
           translatedText: translated,
           isTranslating: false,
         ));
-        print('   ✅ State emitted with new translation');
       } else {
-        print('❌ Translation FAILED for: $postId');
         emit(PostItemState(
           post: state.post,
           isReacting: state.isReacting,
@@ -144,7 +133,6 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
     });
 
     on<ShowOriginalPost>((event, emit) async {
-      print('👆 Showing original post');
       emit(PostItemState(
         post: state.post,
         isReacting: state.isReacting,

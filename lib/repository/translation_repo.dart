@@ -7,16 +7,12 @@ class TranslationService {
   TranslationService._internal();
 
   final Dio _dio = Dio();
-  String _baseUrl = 'http://localhost:3000/api';
-  String _apiKey = '12345';
+  String? _baseUrl;
+  String? _apiKey;
 
   void init({String? baseUrl, String? apiKey}) {
-    if (baseUrl != null) {
-      _baseUrl = baseUrl;
-    }
-    if (apiKey != null) {
-      _apiKey = apiKey;
-    }
+    _baseUrl = baseUrl;
+    _apiKey = apiKey;
     log('TranslationService initialized with baseUrl: $_baseUrl');
   }
 
@@ -24,18 +20,17 @@ class TranslationService {
     required String text,
     required String targetLang,
   }) async {
+    // Check if config is provided
+    if (_baseUrl == null || _apiKey == null) {
+      log('Translation service not configured - skipping translation');
+      return null;
+    }
+
     try {
-      log('Translating text to $targetLang: ${text.substring(0, text.length > 50 ? 50 : text.length)}...');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      print('🔄 TRANSLATION REQUEST');
-      print('📝 Text: ${text.substring(0, text.length > 100 ? 100 : text.length)}${text.length > 100 ? "..." : ""}');
-      print('🎯 Target: $targetLang');
-      print('🔗 URL: $_baseUrl/translate');
-      print('🔑 API Key: ${_apiKey.substring(0, 3)}***');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      
+      log('Translating text to $targetLang');
+
       final response = await _dio.post(
-        '$_baseUrl/translate',
+        '$_baseUrl/translate-ugc',
         data: {
           'text': text,
           'targetLang': targetLang,
@@ -43,7 +38,7 @@ class TranslationService {
         options: Options(
           headers: {
             'Content-Type': 'application/json',
-            'X-API-Key': _apiKey,
+            'X-API-Key': _apiKey!,
           },
           sendTimeout: const Duration(seconds: 15),
           receiveTimeout: const Duration(seconds: 15),
@@ -54,51 +49,29 @@ class TranslationService {
         final data = response.data;
         // Handle different possible response formats
         if (data is Map<String, dynamic>) {
-          final translatedText = data['translatedText'] ?? 
-                                 data['translation'] ?? 
-                                 data['text'] ?? 
-                                 '';
-          log('Translation successful: ${translatedText.substring(0, translatedText.length > 50 ? 50 : translatedText.length)}...');
-          print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-          print('✅ TRANSLATION SUCCESS');
-          print('📝 Original: ${text.substring(0, text.length > 100 ? 100 : text.length)}${text.length > 100 ? "..." : ""}');
-          print('🌐 Translated: $translatedText');
-          print('🎯 Target Language: $targetLang');
-          print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+          final translatedText = data['translatedText'] ??
+              data['translation'] ??
+              data['text'] ??
+              '';
+          log('Translation successful');
           return translatedText;
         } else if (data is String) {
-          print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-          print('✅ TRANSLATION SUCCESS (String response)');
-          print('🌐 Translated: $data');
-          print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+          log('Translation successful (String response)');
           return data;
         }
       }
-      
+
       log('Translation failed: Invalid response format');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      print('❌ TRANSLATION FAILED: Invalid response format');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
       return null;
     } on DioException catch (e) {
       log('Translation error (DioException): ${e.message}');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      print('❌ TRANSLATION ERROR (DioException)');
-      print('💬 Message: ${e.message}');
       if (e.response != null) {
         log('Response status: ${e.response?.statusCode}');
         log('Response data: ${e.response?.data}');
-        print('📊 Status: ${e.response?.statusCode}');
-        print('📄 Response: ${e.response?.data}');
       }
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
       return null;
     } catch (e) {
       log('Translation error: $e');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      print('❌ TRANSLATION ERROR');
-      print('💬 Error: $e');
-      print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
       return null;
     }
   }
@@ -111,4 +84,3 @@ class TranslationService {
     return translateText(text: text, targetLang: 'es');
   }
 }
-
