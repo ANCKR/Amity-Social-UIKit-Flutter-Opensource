@@ -9,7 +9,7 @@ class CustomBottomSheetBloc extends Bloc<CustomBottomSheetEvent, CustomBottomShe
   final double minSize;
 
   CustomBottomSheetBloc(this.maxSize, this.minSize)
-      : super(CustomBottomSheetExpanded(0.3)) {
+      : super(CustomBottomSheetCollapsed(minSize)) {
     on<CustomBottomSheetExtentChanged>((event, emit) {
       if (event.extent > ((maxSize - minSize) * 0.5) + minSize) {
         emit(CustomBottomSheetExpanded(event.extent));
