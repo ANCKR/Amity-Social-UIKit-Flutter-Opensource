@@ -1,6 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
-import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -110,28 +109,21 @@ class AmityChannelAvatar extends BaseElement {
       height: avatarSize.height,
       width: avatarSize.width,
       decoration: BoxDecoration(
-        color: theme.primaryColor.blend(ColorBlendingOption.shade2),
+        color: theme.primaryColor,
         shape: BoxShape.circle,
       ),
-        child: Center(
-          child: displayName.isNotEmpty
-              ? Text(
-                  displayName[0].toUpperCase(),
-                  style: characterTextStyle ??
-                      AmityTextStyle.custom(
-                        avatarSize.width * 0.4, // Dynamic font size based on avatar size
-                        FontWeight.w600,
-                        Colors.white,
-                        textHeight: 1.0,
-                      ),
-                )
-              : SvgPicture.asset(
-                  avatarPlaceholder,
-                  package: 'amity_uikit_beta_service',
-                  height: placeholderSize.height,
-                  width: placeholderSize.width,
-                ),
+      child: Center(
+        child: SvgPicture.asset(
+          avatarPlaceholder,
+          package: 'amity_uikit_beta_service',
+          height: placeholderSize.height,
+          width: placeholderSize.width,
+          colorFilter: const ColorFilter.mode(
+            Colors.white,
+            BlendMode.srcIn,
+          ),
         ),
+      ),
     );
   }
 
@@ -139,19 +131,32 @@ class AmityChannelAvatar extends BaseElement {
     return Container(
       width: 16,
       height: 16,
-      padding: const EdgeInsets.all(3),
+      padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
-        color: theme.primaryColor.blend(ColorBlendingOption.shade2),
+        color: theme.backgroundColor,
         shape: BoxShape.circle,
         border: Border.all(
           color: theme.backgroundColor,
-          width: 1,
+          width: 1.5,
         ),
       ),
-      child: SvgPicture.asset(
-        "assets/Icons/amity_ic_private_community_channel.svg",
-        package: 'amity_uikit_beta_service',
-        color: theme.backgroundColor,
+      child: Container(
+        decoration: BoxDecoration(
+          color: theme.baseColorShade2,
+          shape: BoxShape.circle,
+        ),
+        child: Center(
+          child: SvgPicture.asset(
+            "assets/Icons/amity_ic_private_community_channel.svg",
+            package: 'amity_uikit_beta_service',
+            width: 8,
+            height: 8,
+            colorFilter: const ColorFilter.mode(
+              Colors.white,
+              BlendMode.srcIn,
+            ),
+          ),
+        ),
       ),
     );
   }
