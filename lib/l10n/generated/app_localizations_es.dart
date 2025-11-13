@@ -21,7 +21,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Grupos Unidos';
 
   @override
   String get tab_feed => 'Feed';
@@ -1558,7 +1558,7 @@ class AppLocalizationsEsCl extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Grupos Unidos';
 
   @override
   String get tab_feed => 'Feed';
@@ -2658,7 +2658,7 @@ class AppLocalizationsEsCo extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Grupos Unidos';
 
   @override
   String get tab_feed => 'Feed';
@@ -3749,7 +3749,7 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Grupos Unidos';
 
   @override
   String get tab_feed => 'Feed';
@@ -4840,7 +4840,7 @@ class AppLocalizationsEsPe extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Grupos Unidos';
 
   @override
   String get tab_feed => 'Feed';

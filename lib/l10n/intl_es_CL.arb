@@ -16,7 +16,7 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
-  "tab_my_groups": "Mis Grupos",
+  "tab_my_groups": "Grupos Unidos",
   "@tab_my_groups": {
     "description": "Etiqueta para la pestaña mis grupos en la navegación principal (reemplaza tab_my_communities)"
   },

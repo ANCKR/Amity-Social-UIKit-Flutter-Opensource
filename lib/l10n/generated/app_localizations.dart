@@ -132,7 +132,7 @@ abstract class AppLocalizations {
   /// Label for the my groups tab in the main navigation (replaces tab_my_communities)
   ///
   /// In en, this message translates to:
-  /// **'My Groups'**
+  /// **'Joined Groups'**
   String get tab_my_groups;
 
   /// Label for the feed tab in the main navigation (shows content feeds)
