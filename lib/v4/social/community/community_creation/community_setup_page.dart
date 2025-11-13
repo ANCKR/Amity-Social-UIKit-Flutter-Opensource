@@ -86,8 +86,8 @@ class AmityCommunitySetupPage extends NewBasePage {
         backgroundColor: theme.backgroundColor,
         appBar: AmityAppBar(
           title: mode is CreateMode
-              ? context.l10n.group_create
-              : context.l10n.group_edit,
+              ? context.l10n.community_create
+              : context.l10n.community_edit,
           configProvider: configProvider,
           theme: theme,
           leadingButton: GestureDetector(
@@ -131,8 +131,8 @@ class AmityCommunitySetupPage extends NewBasePage {
                                   
                                   return EnhancedValidationHooks.createValidatedNameField(
                                     context: context,
-                                    title: context.l10n.group_name,
-                                    hint: context.l10n.group_name_hint,
+                                    title: context.l10n.community_name,
+                                    hint: context.l10n.community_name_hint,
                                     initialText: community?.displayName ?? '',
                                     categoryIds: categoryIds.isEmpty ? null : categoryIds,
                                     formValidator: _formValidator,
@@ -146,7 +146,7 @@ class AmityCommunitySetupPage extends NewBasePage {
                               const SizedBox(height: 24),
                               EnhancedValidationHooks.createValidatedDescriptionField(
                                 context: context,
-                                title: context.l10n.group_about,
+                                title: context.l10n.community_about,
                                 hint: 'e.g., "A supportive community for women navigating menopause together"',
                                 initialText: community?.description ?? '',
                                 formValidator: _formValidator,
@@ -267,8 +267,8 @@ class AmityCommunitySetupPage extends NewBasePage {
         ),
         const SizedBox(height: 16),
         _getRadioButtonTile(
-            title: context.l10n.group_public,
-            description: context.l10n.group_public_description,
+            title: context.l10n.community_public,
+            description: context.l10n.community_public_description,
             iconPath: 'assets/Icons/amity_ic_public_badge.svg',
             value: state.communityPrivacy,
             groupValue: CommunityPrivacy.public,
@@ -278,8 +278,8 @@ class AmityCommunitySetupPage extends NewBasePage {
                       CommunityPrivacy.public));
             }),
         _getRadioButtonTile(
-            title: context.l10n.group_private,
-            description: context.l10n.group_private_description,
+            title: context.l10n.community_private,
+            description: context.l10n.community_private_description,
             value: state.communityPrivacy,
             iconPath: 'assets/Icons/amity_ic_private_community.svg',
             groupValue: CommunityPrivacy.private,
@@ -297,7 +297,7 @@ class AmityCommunitySetupPage extends NewBasePage {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          context.l10n.group_members,
+          context.l10n.community_members,
           style: AmityTextStyle.bodyBold(theme.baseColor),
         ),
         const SizedBox(height: 16),
@@ -389,8 +389,8 @@ class AmityCommunitySetupPage extends NewBasePage {
                           ),
                         ],
                         Text(
-                          buttonState.isEnabled 
-                              ? context.l10n.group_create
+                          buttonState.isEnabled
+                              ? context.l10n.community_create
                               : buttonState.text,
                           style: AmityTextStyle.bodyBold(Colors.white),
                         ),
@@ -760,8 +760,8 @@ class AmityCommunitySetupPage extends NewBasePage {
   void _backAction(BuildContext context) {
     ConfirmationV4Dialog().show(
         context: context,
-        title: context.l10n.group_discard_confirmation,
-        detailText: context.l10n.group_discard_description,
+        title: context.l10n.community_discard_confirmation,
+        detailText: context.l10n.community_discard_description,
         leftButtonText: context.l10n.general_cancel,
         rightButtonText: context.l10n.general_leave,
         onConfirm: () {

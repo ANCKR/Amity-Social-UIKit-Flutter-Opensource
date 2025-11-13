@@ -21,7 +21,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tab_my_communities => 'Minhas Comunidades';
 
   @override
-  String get tab_my_groups => 'Grupos Inscritos';
+  String get tab_my_groups => 'Comunidades Inscritas';
 
   @override
   String get tab_feed => 'Feed';
@@ -1549,7 +1549,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get tab_my_communities => 'Minhas Comunidades';
 
   @override
-  String get tab_my_groups => 'Grupos Inscritos';
+  String get tab_my_groups => 'Comunidades Inscritas';
 
   @override
   String get tab_feed => 'Feed';

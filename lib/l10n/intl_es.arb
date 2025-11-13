@@ -16,9 +16,9 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
-  "tab_my_groups": "Grupos Unidos",
+  "tab_my_groups": "Comunidades Unidas",
   "@tab_my_groups": {
-    "description": "Etiqueta para la pestaña mis grupos en la navegación principal (reemplaza tab_my_communities)"
+    "description": "Etiqueta para la pestaña mis comunidades en la navegación principal"
   },
   "tab_feed": "Feed",
   "@tab_feed": {

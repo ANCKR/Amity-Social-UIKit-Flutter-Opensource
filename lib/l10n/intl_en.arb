@@ -16,9 +16,9 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
-  "tab_my_groups": "Joined Groups",
+  "tab_my_groups": "Joined Communities",
   "@tab_my_groups": {
-    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+    "description": "Label for the my communities tab in the main navigation"
   },
   "tab_feed": "Feed",
   "@tab_feed": {

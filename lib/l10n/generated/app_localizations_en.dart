@@ -21,7 +21,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tab_my_communities => 'My Communities';
 
   @override
-  String get tab_my_groups => 'Joined Groups';
+  String get tab_my_groups => 'Joined Communities';
 
   @override
   String get tab_feed => 'Feed';
