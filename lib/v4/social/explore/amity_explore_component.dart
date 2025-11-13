@@ -10,6 +10,8 @@ import 'package:amity_uikit_beta_service/v4/social/explore/recommended_communiti
 import 'package:amity_uikit_beta_service/v4/social/explore/recommended_communities/amity_recommended_community_shimmer.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/trending_communities/amity_trending_communities_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/trending_communities/amity_trending_community_shimmer.dart';
+import 'package:amity_uikit_beta_service/v4/social/shared/amity_empty_state_widget.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -92,29 +94,29 @@ class AmityExploreComponent extends NewBaseComponent {
 
   Widget _buildEmptyState(BuildContext context, ExploreComponentState state) {
     final String title = state.categoryState == CategoryListState.empty
-        ? "Your explore is empty"
-        : "No community yet";
+        ? context.l10n.empty_explore_title_no_categories
+        : context.l10n.empty_explore_title_no_communities;
     final String caption = state.categoryState == CategoryListState.empty
-        ? "Find community or create your own"
-        : "Let's create your own communities..";
+        ? context.l10n.empty_explore_description_no_categories
+        : context.l10n.empty_explore_description_no_communities;
 
-    Widget emptyWidget = Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-      SvgPicture.asset(
-          'assets/Icons/amity_ic_global_feed_empty.svg',
-          width: 160,
-          height: 160,
-          package: 'amity_uikit_beta_service',
-        ),
-        const SizedBox(height: 16),
-        Text(title, style: AmityTextStyle.titleBold(theme.baseColorShade3)),
-        const SizedBox(height: 4),
-        Text(caption, style: AmityTextStyle.caption(theme.baseColorShade3)),
-        const SizedBox(height: 26),
-        _buildCreateGroupButton(context),
-        const SizedBox(height: 40)
-    ]);
+    Widget emptyWidget = AmityEmptyStateWidget(
+      theme: theme,
+      title: title,
+      description: caption,
+      primaryButtonText: context.l10n.cta_create_community,
+      onPrimaryButtonTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            fullscreenDialog: true,
+            builder: (context) => AmityCommunitySetupPage(
+              mode: const CreateMode(),
+            ),
+          ),
+        );
+      },
+    );
 
     return Column(
       children: [
@@ -149,31 +151,6 @@ class AmityExploreComponent extends NewBaseComponent {
             style: AmityTextStyle.caption(theme.baseColorShade3)),
         const SizedBox(height: 40)
       ],
-    );
-  }
-
-  Widget _buildCreateGroupButton(BuildContext context) {
-    return ElevatedButton.icon(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            fullscreenDialog: true,
-            builder: (context) => AmityCommunitySetupPage(
-              mode: const CreateMode(),
-            ),
-          ),
-        );
-      },
-      icon: const Icon(Icons.add),
-      label: Text("Create community", style: AmityTextStyle.body(Colors.white)),
-      style: ElevatedButton.styleFrom(
-        foregroundColor: Colors.white,
-        backgroundColor: theme.primaryColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-      ),
     );
   }
 

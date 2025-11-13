@@ -2624,6 +2624,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Something went wrong. Please try again later.'**
   String get error_close_group_description;
+
+  /// Title for empty my communities list
+  ///
+  /// In en, this message translates to:
+  /// **'No communities yet'**
+  String get empty_my_communities_title;
+
+  /// Description for empty my communities list
+  ///
+  /// In en, this message translates to:
+  /// **'Join communities to see them here'**
+  String get empty_my_communities_description;
+
+  /// CTA button text for empty my communities list
+  ///
+  /// In en, this message translates to:
+  /// **'Explore communities'**
+  String get empty_my_communities_cta;
+
+  /// Title for empty group chats list
+  ///
+  /// In en, this message translates to:
+  /// **'No group chats yet'**
+  String get empty_group_chats_title;
+
+  /// Description for empty group chats list
+  ///
+  /// In en, this message translates to:
+  /// **'Start a group chat with friends'**
+  String get empty_group_chats_description;
+
+  /// CTA button text for empty group chats list
+  ///
+  /// In en, this message translates to:
+  /// **'Create group chat'**
+  String get empty_group_chats_cta;
+
+  /// Description for empty archived chats list
+  ///
+  /// In en, this message translates to:
+  /// **'Archived chats will appear here'**
+  String get empty_archived_chats_description;
+
+  /// Title for empty comments list
+  ///
+  /// In en, this message translates to:
+  /// **'No comments yet'**
+  String get empty_comments_title;
+
+  /// Description for empty comments list
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to comment'**
+  String get empty_comments_description;
+
+  /// Description for empty communities in category
+  ///
+  /// In en, this message translates to:
+  /// **'No communities found in this category. Try exploring other categories or create your own.'**
+  String get empty_category_communities_description;
+
+  /// Title for empty search results
+  ///
+  /// In en, this message translates to:
+  /// **'No results found'**
+  String get empty_search_title;
+
+  /// Description for empty search results
+  ///
+  /// In en, this message translates to:
+  /// **'Try different keywords or browse communities'**
+  String get empty_search_description;
+
+  /// CTA button text for empty search results
+  ///
+  /// In en, this message translates to:
+  /// **'Browse communities'**
+  String get empty_search_cta;
+
+  /// Title for empty all chats list
+  ///
+  /// In en, this message translates to:
+  /// **'No conversation yet'**
+  String get empty_all_chats_title;
+
+  /// Description for empty all chats list
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s create chat to get started.'**
+  String get empty_all_chats_description;
+
+  /// CTA button text for empty all chats list
+  ///
+  /// In en, this message translates to:
+  /// **'Create new chat'**
+  String get empty_all_chats_cta;
+
+  /// Title for empty archived chats list
+  ///
+  /// In en, this message translates to:
+  /// **'No archive chat'**
+  String get empty_archived_chats_title;
+
+  /// CTA button text to create a community
+  ///
+  /// In en, this message translates to:
+  /// **'Create community'**
+  String get cta_create_community;
+
+  /// Title for explore page when no categories exist
+  ///
+  /// In en, this message translates to:
+  /// **'Your explore is empty'**
+  String get empty_explore_title_no_categories;
+
+  /// Description for explore page when no categories exist
+  ///
+  /// In en, this message translates to:
+  /// **'Find community or create your own'**
+  String get empty_explore_description_no_categories;
+
+  /// Title for explore page when categories exist but no communities
+  ///
+  /// In en, this message translates to:
+  /// **'No community yet'**
+  String get empty_explore_title_no_communities;
+
+  /// Description for explore page when categories exist but no communities
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s create your own communities..'**
+  String get empty_explore_description_no_communities;
 }
 
 class _AppLocalizationsDelegate

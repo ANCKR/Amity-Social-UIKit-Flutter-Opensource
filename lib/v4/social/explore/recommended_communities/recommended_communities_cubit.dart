@@ -28,6 +28,8 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
 
     // Listen for join events from community profile page or other sections
     _joinSubscription = CommunityJoinNotifier().onCommunityJoined.listen((communityId) async {
+      if (isClosed) return;
+
       // Check if this community is in our list
       final communityInList = state.communities.any((c) => c.communityId == communityId);
       if (communityInList) {
@@ -43,10 +45,14 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
             return community;
           }).toList();
 
-          emit(state.copyWith(communities: updatedCommunities));
+          if (!isClosed) {
+            emit(state.copyWith(communities: updatedCommunities));
+          }
         } catch (e) {
           // If fetch fails, reload the entire list
-          loadRecommendedCommunities();
+          if (!isClosed) {
+            loadRecommendedCommunities();
+          }
         }
       }
       // If not in our list, no need to refresh
@@ -54,6 +60,8 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
 
     // Listen for leave events from community settings page or other sections
     _leaveSubscription = CommunityJoinNotifier().onCommunityLeft.listen((communityId) async {
+      if (isClosed) return;
+
       // Check if this community is in our list
       final communityInList = state.communities.any((c) => c.communityId == communityId);
       if (communityInList) {
@@ -69,10 +77,14 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
             return community;
           }).toList();
 
-          emit(state.copyWith(communities: updatedCommunities));
+          if (!isClosed) {
+            emit(state.copyWith(communities: updatedCommunities));
+          }
         } catch (e) {
           // If fetch fails, reload the entire list
-          loadRecommendedCommunities();
+          if (!isClosed) {
+            loadRecommendedCommunities();
+          }
         }
       }
       // If not in our list, no need to refresh
@@ -81,28 +93,37 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
 
   Future<void> loadRecommendedCommunities() async {
     try {
-      emit(state.copyWith(isLoading: true));
+      if (!isClosed) {
+        emit(state.copyWith(isLoading: true));
+      }
+
       final communities = await AmitySocialClient.newCommunityRepository()
           .getRecommendedCommunities()
           .then((communities) => communities.take(4).toList());
 
-      emit(state.copyWith(
-        isLoading: false,
-        communities: communities,
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          isLoading: false,
+          communities: communities,
+        ));
+      }
     } catch (e) {
-      emit(state.copyWith(
-        isLoading: false,
-        hasError: true,
-        errorMessage: e.toString(),
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          isLoading: false,
+          hasError: true,
+          errorMessage: e.toString(),
+        ));
+      }
     }
   }
 
   Future<bool> joinCommunity(String communityId) async {
     // Add community to loading set
     final loadingIds = Set<String>.from(state.loadingCommunityIds)..add(communityId);
-    emit(state.copyWith(loadingCommunityIds: loadingIds));
+    if (!isClosed) {
+      emit(state.copyWith(loadingCommunityIds: loadingIds));
+    }
 
     try {
       await AmitySocialClient.newCommunityRepository()
@@ -122,11 +143,13 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
 
       // Remove from loading set and emit new state
       final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
-      emit(state.copyWith(
-        communities: updatedCommunities,
-        loadingCommunityIds: finalLoadingIds,
-        hasError: false,
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          communities: updatedCommunities,
+          loadingCommunityIds: finalLoadingIds,
+          hasError: false,
+        ));
+      }
 
       // Notify globally that user joined this community
       _joinNotifier.notifyJoined(communityId);
@@ -135,11 +158,13 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
     } catch (e) {
       // Remove from loading set on error
       final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
-      emit(state.copyWith(
-        loadingCommunityIds: finalLoadingIds,
-        hasError: true,
-        errorMessage: 'Failed to join community',
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          loadingCommunityIds: finalLoadingIds,
+          hasError: true,
+          errorMessage: 'Failed to join community',
+        ));
+      }
       return false;
     }
   }
@@ -147,7 +172,9 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
   Future<bool> leaveCommunity(String communityId) async {
     // Add community to loading set
     final loadingIds = Set<String>.from(state.loadingCommunityIds)..add(communityId);
-    emit(state.copyWith(loadingCommunityIds: loadingIds));
+    if (!isClosed) {
+      emit(state.copyWith(loadingCommunityIds: loadingIds));
+    }
 
     try {
       await AmitySocialClient.newCommunityRepository()
@@ -167,11 +194,13 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
 
       // Remove from loading set and emit new state
       final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
-      emit(state.copyWith(
-        communities: updatedCommunities,
-        loadingCommunityIds: finalLoadingIds,
-        hasError: false,
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          communities: updatedCommunities,
+          loadingCommunityIds: finalLoadingIds,
+          hasError: false,
+        ));
+      }
 
       // Notify globally that user left this community
       _joinNotifier.notifyLeft(communityId);
@@ -180,11 +209,13 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
     } catch (e) {
       // Remove from loading set on error
       final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
-      emit(state.copyWith(
-        loadingCommunityIds: finalLoadingIds,
-        hasError: true,
-        errorMessage: 'Failed to leave community',
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          loadingCommunityIds: finalLoadingIds,
+          hasError: true,
+          errorMessage: 'Failed to leave community',
+        ));
+      }
       return false;
     }
   }

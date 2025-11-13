@@ -1522,4 +1522,77 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get error_close_group_description =>
       'Something went wrong. Please try again later.';
+
+  @override
+  String get empty_my_communities_title => 'No communities yet';
+
+  @override
+  String get empty_my_communities_description =>
+      'Join communities to see them here';
+
+  @override
+  String get empty_my_communities_cta => 'Explore communities';
+
+  @override
+  String get empty_group_chats_title => 'No group chats yet';
+
+  @override
+  String get empty_group_chats_description => 'Start a group chat with friends';
+
+  @override
+  String get empty_group_chats_cta => 'Create group chat';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Archived chats will appear here';
+
+  @override
+  String get empty_comments_title => 'No comments yet';
+
+  @override
+  String get empty_comments_description => 'Be the first to comment';
+
+  @override
+  String get empty_category_communities_description =>
+      'No communities found in this category. Try exploring other categories or create your own.';
+
+  @override
+  String get empty_search_title => 'No results found';
+
+  @override
+  String get empty_search_description =>
+      'Try different keywords or browse communities';
+
+  @override
+  String get empty_search_cta => 'Browse communities';
+
+  @override
+  String get empty_all_chats_title => 'No conversation yet';
+
+  @override
+  String get empty_all_chats_description =>
+      'Let\'s create chat to get started.';
+
+  @override
+  String get empty_all_chats_cta => 'Create new chat';
+
+  @override
+  String get empty_archived_chats_title => 'No archive chat';
+
+  @override
+  String get cta_create_community => 'Create community';
+
+  @override
+  String get empty_explore_title_no_categories => 'Your explore is empty';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Find community or create your own';
+
+  @override
+  String get empty_explore_title_no_communities => 'No community yet';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Let\'s create your own communities..';
 }
