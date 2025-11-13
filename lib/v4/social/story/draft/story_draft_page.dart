@@ -124,13 +124,6 @@ class _StoryDarftPageBuilderState extends State<StoryDarftPageBuilder> {
                                   AmityCustomSnackBar.show(
                                     context,
                                     'Can\'t add more than one link to your story.',
-                                    SvgPicture.asset(
-                                      'assets/Icons/ic_warning_outline_white.svg',
-                                      package: 'amity_uikit_beta_service',
-                                      height: 20,
-                                      color: Colors.white,
-                                    ),
-                                    textColor: Colors.white,
                                   );
                                 } else {
                                   showHyperLinkBottomSheet(
