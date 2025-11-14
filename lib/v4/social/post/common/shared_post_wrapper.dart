@@ -2,6 +2,8 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
+import 'package:amity_uikit_beta_service/v4/social/my_community/my_community_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_reaction_button.dart';
@@ -39,13 +41,14 @@ class SharedPostWrapper extends StatefulWidget {
 
 class _SharedPostWrapperState extends State<SharedPostWrapper> {
   AmityPost? _originalPost;
-  bool _isLoadingOriginalPost = false;
   bool _isReacting = false;
+  AmityCommunity? _targetCommunity;
 
   @override
   void initState() {
     super.initState();
     _loadOriginalPost();
+    _loadTargetCommunityIfNeeded();
   }
 
   Future<void> _loadOriginalPost() async {
@@ -53,27 +56,44 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
       return;
     }
 
-    setState(() {
-      _isLoadingOriginalPost = true;
-    });
-
     try {
       final originalPost = await PostSharingService.getOriginalPost(widget.sharedPost);
       if (mounted) {
         setState(() {
           _originalPost = originalPost;
-          _isLoadingOriginalPost = false;
         });
       }
     } catch (e) {
       print('Failed to load original post: $e');
-      if (mounted) {
-        setState(() {
-          _isLoadingOriginalPost = false;
-        });
-      }
     }
   }
+
+  Future<void> _loadTargetCommunityIfNeeded() async {
+    if (!PostSharingService.isSharedPost(widget.sharedPost)) {
+      return;
+    }
+
+    try {
+      final metadata = widget.sharedPost.metadata;
+      final communityId = metadata?['sharedToCommunityId'] as String?;
+      final communityName = metadata?['sharedToCommunityName'] as String?;
+
+      // Only fetch community if we have an ID but no name (for backwards compatibility)
+      if (communityId != null && communityId.isNotEmpty && communityName == null) {
+        final community = await AmitySocialClient.newCommunityRepository()
+            .getCommunity(communityId);
+
+        if (mounted) {
+          setState(() {
+            _targetCommunity = community;
+          });
+        }
+      }
+    } catch (e) {
+      print('Failed to load target community: $e');
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -114,6 +134,13 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
   }
 
   Widget _buildSharedPostHeader(BuildContext context, dynamic theme) {
+    // Read community info from metadata first, then fallback to fetched community
+    final metadata = widget.sharedPost.metadata;
+    final targetCommunityId = metadata?['sharedToCommunityId'] as String?;
+    final targetCommunityName = metadata?['sharedToCommunityName'] as String? ?? _targetCommunity?.displayName;
+    final targetCommunityIsOfficial = metadata?['sharedToCommunityIsOfficial'] as bool? ?? _targetCommunity?.isOfficial;
+    final hasTargetCommunity = targetCommunityId != null && targetCommunityName != null;
+
     return Container(
       padding: const EdgeInsets.all(16),
       child: Row(
@@ -131,19 +158,70 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      widget.sharedPost.postedUser?.displayName ?? "Unknown User",
-                      style: AmityTextStyle.bodyBold(theme.baseColor),
-                    ),
-                    const SizedBox(width: 4),
-                    Text(
-                      'shared a post',
-                      style: AmityTextStyle.caption(theme.baseColorShade1),
-                    ),
-                  ],
-                ),
+                // Show user name → community name if shared to community
+                if (hasTargetCommunity && !widget.hideTarget)
+                  Row(
+                    children: [
+                      Flexible(
+                        child: Text(
+                          widget.sharedPost.postedUser?.displayName ?? "Unknown User",
+                          style: AmityTextStyle.bodyBold(theme.baseColor),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      // Arrow icon
+                      SvgPicture.asset(
+                        'assets/Icons/amity_ic_post_target_arrow.svg',
+                        package: 'amity_uikit_beta_service',
+                        width: 12,
+                        height: 10,
+                      ),
+                      const SizedBox(width: 8),
+                      // Community name
+                      Flexible(
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => AmityCommunityProfilePage(
+                                  communityId: targetCommunityId,
+                                ),
+                              ),
+                            );
+                          },
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Flexible(
+                                child: Text(
+                                  targetCommunityName,
+                                  style: AmityTextStyle.bodyBold(theme.baseColor),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              if (targetCommunityIsOfficial == true) ...[
+                                const SizedBox(width: 4),
+                                SizedBox(
+                                  width: 16,
+                                  height: 16,
+                                  child: AmityOfficialBadgeElement(),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                else
+                  // Show simple header for timeline shares
+                  Text(
+                    widget.sharedPost.postedUser?.displayName ?? "Unknown User",
+                    style: AmityTextStyle.bodyBold(theme.baseColor),
+                  ),
                 if (!widget.hideTarget)
                   Text(
                     _getTimeAgoText(),

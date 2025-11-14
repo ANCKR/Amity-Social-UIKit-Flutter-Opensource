@@ -100,6 +100,7 @@ class PostSharingService {
         originalPost: originalPost,
         shareComment: shareComment,
         targetCommunityId: communityId,
+        targetCommunity: community,
       );
 
       print('SERVICE: Building post creator...');
@@ -177,13 +178,14 @@ class PostSharingService {
     required AmityPost originalPost,
     String? shareComment,
     String? targetCommunityId,
+    AmityCommunity? targetCommunity,
   }) {
     log('DEBUG: Creating share metadata for post: ${originalPost.postId}');
     log('DEBUG: Original post has ${originalPost.children?.length ?? 0} children');
-    
+
     final mediaUrls = _getOriginalPostMediaUrls(originalPost);
     log('DEBUG: Extracted media URLs: $mediaUrls');
-    
+
     return {
       'type': _sharedPostType,
       'originalPostId': originalPost.postId,
@@ -191,10 +193,15 @@ class PostSharingService {
       'originalAuthorDisplayName': originalPost.postedUser?.displayName ?? 'Unknown User',
       'originalAuthorAvatarUrl': originalPost.postedUser?.avatarUrl,
       'sharedAt': DateTime.now().toIso8601String(),
-      if (shareComment != null && shareComment.isNotEmpty) 
+      if (shareComment != null && shareComment.isNotEmpty)
         'shareComment': shareComment,
-      if (targetCommunityId != null) 
+      if (targetCommunityId != null)
         'sharedToCommunityId': targetCommunityId,
+      if (targetCommunity != null) ...{
+        'sharedToCommunityName': targetCommunity.displayName,
+        'sharedToCommunityIsOfficial': targetCommunity.isOfficial,
+        'sharedToCommunityAvatarUrl': targetCommunity.avatarImage?.fileUrl,
+      },
       // Store original post basic data for fallback display
       'originalPostData': {
         'text': _getOriginalPostText(originalPost),
