@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/utils/permission_denied_exception.dart';
 
 /// Service class for handling post sharing functionality
 class PostSharingService {
@@ -12,31 +13,44 @@ class PostSharingService {
     String? shareComment,
   }) async {
     try {
+      print('SERVICE: shareToTimeline called');
+      print('SERVICE: Original post ID = ${originalPost.postId}');
+      print('SERVICE: Share comment = $shareComment');
+
+      print('SERVICE: Creating share metadata...');
       final shareMetadata = _createShareMetadata(
         originalPost: originalPost,
         shareComment: shareComment,
       );
 
+      print('SERVICE: Building post creator for timeline...');
       final postBuilder = AmitySocialClient.newPostRepository()
           .createPost()
           .targetMe();
 
-      // Add share comment if provided
+      // Add share comment if provided, otherwise use a space (SDK requires non-empty text)
       final PostCreator postCreatorBuilder;
       if (shareComment != null && shareComment.isNotEmpty) {
+        print('SERVICE: Adding share comment: $shareComment');
         postCreatorBuilder = postBuilder.text(shareComment);
       } else {
-        postCreatorBuilder = postBuilder.text(''); // Empty text for shares without comment
+        print('SERVICE: No share comment, using space character');
+        postCreatorBuilder = postBuilder.text(' '); // Space character to satisfy SDK requirement
       }
 
+      print('SERVICE: Calling SDK post() method...');
       final sharedPost = await postCreatorBuilder
           .metadata(shareMetadata)
           .post();
-      
+
+      print('SERVICE: ✅ Timeline share successful! Post ID = ${sharedPost.postId}');
       log('Successfully shared post ${originalPost.postId} to timeline');
       return sharedPost;
     } catch (error, stackTrace) {
-      log('Failed to share post to timeline: $error', 
+      print('SERVICE: ❌ ERROR in shareToTimeline!');
+      print('SERVICE: Error type = ${error.runtimeType}');
+      print('SERVICE: Error message = $error');
+      log('Failed to share post to timeline: $error',
           error: error, stackTrace: stackTrace);
       rethrow;
     }
@@ -49,34 +63,112 @@ class PostSharingService {
     String? shareComment,
   }) async {
     try {
+      print('SERVICE: shareToCommunity called');
+      print('SERVICE: Original post ID = ${originalPost.postId}');
+      print('SERVICE: Community ID = $communityId');
+      print('SERVICE: Share comment = $shareComment');
+
+      // Validate user has permission to post in this community
+      print('SERVICE: Fetching community...');
+      final community = await _getCommunity(communityId);
+
+      if (community == null) {
+        print('SERVICE: ❌ Community not found!');
+        throw Exception('Community not found');
+      }
+
+      print('SERVICE: ✅ Community found: ${community.displayName}');
+      print('SERVICE: Community onlyAdminCanPost = ${community.onlyAdminCanPost}');
+      print('SERVICE: Community isPostReviewEnabled = ${community.isPostReviewEnabled}');
+      print('SERVICE: Checking post permission...');
+
+      final canPost = await _canUserPostToCommunity(community);
+
+      print('SERVICE: Can post = $canPost');
+      if (!canPost) {
+        print('SERVICE: ❌ User does not have permission to post!');
+        throw PermissionDeniedException(
+          'You don\'t have permission to post in this community. '
+          'Only moderators can share posts to this community.',
+        );
+      }
+
+      print('SERVICE: ✅ User has permission to post');
+
+      print('SERVICE: Creating share metadata...');
       final shareMetadata = _createShareMetadata(
         originalPost: originalPost,
         shareComment: shareComment,
         targetCommunityId: communityId,
       );
 
+      print('SERVICE: Building post creator...');
       final postBuilder = AmitySocialClient.newPostRepository()
           .createPost()
           .targetCommunity(communityId);
 
-      // Add share comment if provided
+      // Add share comment if provided, otherwise use a space (SDK requires non-empty text)
       final PostCreator postCreatorBuilder;
       if (shareComment != null && shareComment.isNotEmpty) {
+        print('SERVICE: Adding share comment: $shareComment');
         postCreatorBuilder = postBuilder.text(shareComment);
       } else {
-        postCreatorBuilder = postBuilder.text(''); // Empty text for shares without comment
+        print('SERVICE: No share comment, using space character');
+        postCreatorBuilder = postBuilder.text(' '); // Space character to satisfy SDK requirement
       }
 
+      print('SERVICE: Calling SDK post() method...');
       final sharedPost = await postCreatorBuilder
           .metadata(shareMetadata)
           .post();
-      
+
+      print('SERVICE: ✅ Post created successfully! Post ID = ${sharedPost.postId}');
       log('Successfully shared post ${originalPost.postId} to community $communityId');
       return sharedPost;
     } catch (error, stackTrace) {
-      log('Failed to share post to community: $error', 
+      print('SERVICE: ❌ ERROR in shareToCommunity!');
+      print('SERVICE: Error type = ${error.runtimeType}');
+      print('SERVICE: Error message = $error');
+      log('Failed to share post to community: $error',
           error: error, stackTrace: stackTrace);
       rethrow;
+    }
+  }
+
+  /// Gets a community by ID
+  static Future<AmityCommunity?> _getCommunity(String communityId) async {
+    try {
+      final community = await AmitySocialClient.newCommunityRepository()
+          .getCommunity(communityId);
+      return community;
+    } catch (e) {
+      log('Failed to fetch community: $e');
+      return null;
+    }
+  }
+
+  /// Checks if current user can post to a community
+  static Future<bool> _canUserPostToCommunity(AmityCommunity community) async {
+    try {
+      final currentUserId = AmityCoreClient.getCurrentUser().userId;
+
+      // If onlyAdminCanPost is true, only admins can post
+      if (community.onlyAdminCanPost == true) {
+        // Check if user is the community creator (admin)
+        return community.userId == currentUserId;
+      }
+
+      // If post review is enabled, only moderators and admins can post directly
+      if (community.isPostReviewEnabled == true) {
+        // Check if user is the community creator (admin)
+        return community.userId == currentUserId;
+      }
+
+      // Otherwise, all members can post
+      return true;
+    } catch (e) {
+      log('Error checking post permission: $e');
+      return false;
     }
   }
 
