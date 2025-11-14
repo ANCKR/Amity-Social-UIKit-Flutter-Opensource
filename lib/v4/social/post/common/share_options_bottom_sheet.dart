@@ -58,7 +58,7 @@ class _ShareOptionsBottomSheetState extends State<ShareOptionsBottomSheet> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<PostSharingBloc, PostSharingState>(
+    return BlocConsumer<PostSharingBloc, PostSharingState>(
       listener: (context, state) {
         if (state.status == PostSharingStatus.success && state.shareResult != null) {
           // Add the shared post to global feed immediately
@@ -77,27 +77,34 @@ class _ShareOptionsBottomSheetState extends State<ShareOptionsBottomSheet> {
           Navigator.of(context).pop();
         }
       },
-      child: Container(
-        decoration: BoxDecoration(
-          color: widget.theme.backgroundColor,
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
+      builder: (context, state) {
+        final isLoading = state.status == PostSharingStatus.loading;
+
+        return AbsorbPointer(
+          absorbing: isLoading, // Disable all interactions when loading
+          child: Container(
+            decoration: BoxDecoration(
+              color: widget.theme.backgroundColor,
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
+              ),
+            ),
+            child: SafeArea(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _buildHeader(context),
+                  _buildOriginalPostPreview(context),
+                  _buildShareOptions(context),
+                  if (_showCommentInput) _buildCommentInput(context),
+                  _buildActionButtons(context, isLoading),
+                ],
+              ),
+            ),
           ),
-        ),
-        child: SafeArea(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _buildHeader(context),
-              _buildOriginalPostPreview(context),
-              _buildShareOptions(context),
-              if (_showCommentInput) _buildCommentInput(context),
-              _buildActionButtons(context),
-            ],
-          ),
-        ),
-      ),
+        );
+      },
     );
   }
 
@@ -366,40 +373,81 @@ class _ShareOptionsBottomSheetState extends State<ShareOptionsBottomSheet> {
     );
   }
 
-  Widget _buildActionButtons(BuildContext context) {
+  Widget _buildActionButtons(BuildContext context, bool isLoading) {
     final isCommunityDisabled = _selectedTarget == AmityShareTarget.community && _selectedCommunityId == null;
-    final isDisabled = isCommunityDisabled;
+    final isDisabled = isCommunityDisabled || isLoading;
 
     return Container(
       padding: const EdgeInsets.all(16),
       child: Row(
         children: [
           Expanded(
-            child: OutlinedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              style: OutlinedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                side: BorderSide(color: widget.theme.baseColorShade3),
-              ),
-              child: Text(
-                context.l10n.general_cancel,
-                style: AmityTextStyle.bodyBold(widget.theme.baseColorShade1),
+            child: GestureDetector(
+              onTap: isLoading ? null : () => Navigator.of(context).pop(),
+              child: Container(
+                height: 40,
+                padding: const EdgeInsets.only(
+                  top: 10,
+                  left: 12,
+                  right: 16,
+                  bottom: 10,
+                ),
+                decoration: ShapeDecoration(
+                  color: widget.theme.backgroundColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    side: BorderSide(color: widget.theme.baseColorShade3),
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    context.l10n.general_cancel,
+                    style: AmityTextStyle.bodyBold(widget.theme.baseColorShade1),
+                  ),
+                ),
               ),
             ),
           ),
           const SizedBox(width: 12),
           Expanded(
-            child: ElevatedButton(
-              onPressed: isDisabled ? null : () => _sharePost(context),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: widget.theme.primaryColor,
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                disabledBackgroundColor: widget.theme.baseColorShade4,
-              ),
-              child: Text(
-                context.l10n.post_share,
-                style: AmityTextStyle.bodyBold(
-                  isDisabled ? widget.theme.baseColorShade2 : Colors.white,
+            child: GestureDetector(
+              onTap: isDisabled ? null : () => _sharePost(context),
+              child: Container(
+                height: 40,
+                padding: const EdgeInsets.only(
+                  top: 10,
+                  left: 12,
+                  right: 16,
+                  bottom: 10,
+                ),
+                decoration: ShapeDecoration(
+                  color: widget.theme.primaryColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    if (isLoading) ...[
+                      SizedBox(
+                        width: 18,
+                        height: 18,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                          backgroundColor: widget.theme.baseColorShade4,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                    ],
+                    Text(
+                      context.l10n.post_share,
+                      style: AmityTextStyle.bodyBold(Colors.white),
+                    ),
+                  ],
                 ),
               ),
             ),
