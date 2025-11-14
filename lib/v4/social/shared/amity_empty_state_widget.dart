@@ -109,6 +109,10 @@ class AmityEmptyStateWidget extends StatelessWidget {
                   package: 'amity_uikit_beta_service',
                   width: 20,
                   height: 16,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
                 ),
               ),
               const SizedBox(width: 4),
