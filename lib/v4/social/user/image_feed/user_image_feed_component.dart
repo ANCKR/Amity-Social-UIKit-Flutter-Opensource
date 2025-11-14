@@ -2,7 +2,7 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
-import 'package:amity_uikit_beta_service/v4/social/globalfeed/amity_global_feed_component.dart';
+import 'package:amity_uikit_beta_service/v4/social/post_target_selection_page/post_target_selection_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/feed/user_feed_empty_state_info.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/image_feed/element/user_image_feed_element.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/user_feed_empty_state.dart';
@@ -48,7 +48,12 @@ class UserImageFeedComponent extends NewBaseComponent {
               info = getEmptyStateInfo(
                   context, state.emptyState ?? UserFeedEmptyStateType.empty);
             }
-            return SliverToBoxAdapter(child: UserFeedEmptyState(info: info));
+            return SliverFillRemaining(
+              child: Container(
+                alignment: Alignment.center,
+                child: UserFeedEmptyState(info: info),
+              ),
+            );
           } else if (state.posts.isEmpty && state.isLoading) {
             return SliverToBoxAdapter(
                 child: Column(
@@ -126,10 +131,40 @@ class UserImageFeedComponent extends NewBaseComponent {
 
   UserFeedEmptyStateInfo getEmptyStateInfo(
       BuildContext context, UserFeedEmptyStateType type) {
+    final currentUser = AmityCoreClient.getCurrentUser();
+    final isOwnProfile = currentUser.userId == userId;
+
     switch (type) {
       case UserFeedEmptyStateType.empty:
-        return UserFeedEmptyStateInfo(context.l10n.feed_no_photos, "",
-            "assets/Icons/amity_ic_feed_empty.svg");
+        if (isOwnProfile) {
+          // Own profile - show button to create post
+          return UserFeedEmptyStateInfo(
+            context.l10n.feed_no_photos,
+            "Create your first post to get started",
+            "assets/Icons/amity_ic_feed_empty.svg",
+            buttonText: "Create Post",
+            buttonIcon: "assets/Icons/amity_ic_create_post_button.svg",
+            onButtonTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => PopScope(
+                    canPop: true,
+                    child: AmityPostTargetSelectionPage(),
+                  ),
+                ),
+              );
+            },
+          );
+        } else {
+          // Other user's profile - no button
+          return UserFeedEmptyStateInfo(
+            context.l10n.feed_no_photos,
+            "",
+            "assets/Icons/amity_ic_feed_empty.svg",
+          );
+        }
       case UserFeedEmptyStateType.blocked:
         return UserFeedEmptyStateInfo(
             context.l10n.user_feed_blocked_title,
