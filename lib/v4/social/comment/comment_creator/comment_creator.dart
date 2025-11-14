@@ -140,108 +140,86 @@ class _AmityCommentCreatorInternalState
       String? communityId) {
     AmityUser? user = AmityCoreClient.getCurrentUser();
 
-    // Consistent styling for both comment and reply
-    final double minHeight = 50.0;
-    final double horizontalPadding = 17.0;
-    final double iconSize = 24.0;
-    final int maxLines = 3;
-    final double borderRadius = 12.0;
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          // User avatar
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: AmityUserAvatar(
-              avatarUrl: user?.avatarUrl,
-              displayName: user?.displayName ?? "",
-              isDeletedUser: user?.isDeleted ?? false,
-              characterTextStyle: AmityTextStyle.titleBold(Colors.white),
-              avatarSize: const Size(32, 32),
-            ),
-          ),
-          // Input field
-          Expanded(
-            child: Container(
-              constraints: BoxConstraints(
-                minHeight: minHeight,
-                maxHeight: 60,
+    return Container(
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        border: Border(
+          top: BorderSide(width: 1, color: Color(0xFFEBECEE)),
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            // User avatar (replaces plus button from chat)
+            Container(
+              padding: const EdgeInsets.only(bottom: 6, right: 12),
+              child: AmityUserAvatar(
+                avatarUrl: user?.avatarUrl,
+                displayName: user?.displayName ?? "",
+                isDeletedUser: user?.isDeleted ?? false,
+                characterTextStyle: AmityTextStyle.titleBold(Colors.white),
+                avatarSize: const Size(32, 32),
               ),
-              alignment: Alignment.centerLeft,
-              child: MediaQuery.removePadding(
-                context: context,
-                removeTop: true,
-                removeBottom: true,
-                child: Scrollbar(
-                  controller: scrollController,
-                  child: MentionTextField(
-                    theme: widget.theme,
-                    style: AmityTextStyle.body(widget.theme.baseColor),
-                    suggestionMaxRow: 2,
-                    suggestionDisplayMode: SuggestionDisplayMode.bottom,
-                    mentionContentType: MentionContentType.comment,
-                    communityId: communityId,
-                    controller: controller,
-                    scrollController: scrollController,
-                    focusNode: focusNode,
-                    onChanged: (value) {
-                      context
-                          .read<CommentCreatorBloc>()
-                          .add(CommentCreatorTextChage(text: value.trim()));
-                    },
-                    keyboardType: TextInputType.multiline,
-                    maxLines: maxLines,
-                    minLines: 1,
-                    textAlignVertical: TextAlignVertical.center,
-                    decoration: InputDecoration(
-                      isDense: true,
-                      contentPadding: EdgeInsets.symmetric(
-                        horizontal: horizontalPadding,
-                        vertical: 12.0,
-                      ),
-                      hintText: context.l10n.comment_create_hint,
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintStyle:
-                          AmityTextStyle.subtitle(widget.theme.baseColorShade2),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(borderRadius),
-                        borderSide: BorderSide(
-                          color: widget.theme.baseColorShade3.withOpacity(0.3),
-                          width: 1.0,
+            ),
+            // Input field (matching chat style)
+            Expanded(
+              child: Container(
+                constraints: const BoxConstraints(minHeight: 45, maxHeight: 120),
+                decoration: ShapeDecoration(
+                  color: widget.theme.baseColorShade4,
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(color: widget.theme.backgroundColor),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                child: MediaQuery.removePadding(
+                  context: context,
+                  removeTop: true,
+                  removeBottom: true,
+                  child: Scrollbar(
+                    controller: scrollController,
+                    child: MentionTextField(
+                      theme: widget.theme,
+                      style: AmityTextStyle.body(widget.theme.baseColor),
+                      suggestionMaxRow: 2,
+                      suggestionDisplayMode: SuggestionDisplayMode.bottom,
+                      mentionContentType: MentionContentType.comment,
+                      communityId: communityId,
+                      controller: controller,
+                      scrollController: scrollController,
+                      focusNode: focusNode,
+                      onChanged: (value) {
+                        context
+                            .read<CommentCreatorBloc>()
+                            .add(CommentCreatorTextChage(text: value.trim()));
+                      },
+                      keyboardType: TextInputType.multiline,
+                      maxLines: null,
+                      minLines: 1,
+                      textAlignVertical: TextAlignVertical.bottom,
+                      decoration: InputDecoration(
+                        isDense: true,
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 10,
                         ),
+                        hintText: context.l10n.comment_create_hint,
+                        border: InputBorder.none,
+                        hintStyle: AmityTextStyle.body(widget.theme.baseColorShade2),
                       ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(borderRadius),
-                        borderSide: BorderSide(
-                          color: widget.theme.baseColorShade3.withOpacity(0.3),
-                          width: 1.0,
-                        ),
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(borderRadius),
-                        borderSide: BorderSide(
-                          color: widget.theme.baseColorShade3.withOpacity(0.3),
-                          width: 1.0,
-                        ),
-                      ),
+                      suggestionOverlayBottomPaddingWhenKeyboardClosed:
+                          45.0 + 16.0 + (state.replyTo != null ? 62.0 : 0.0),
+                      suggestionOverlayBottomPaddingWhenKeyboardOpen:
+                          45.0 + 16.0 + (state.replyTo != null ? 62.0 : 0.0),
                     ),
-                    suggestionOverlayBottomPaddingWhenKeyboardClosed:
-                        minHeight + 16.0 + (state.replyTo != null ? 40.0 : 0.0),
-                    suggestionOverlayBottomPaddingWhenKeyboardOpen:
-                        minHeight + 16.0 + (state.replyTo != null ? 40.0 : 0.0),
                   ),
                 ),
               ),
             ),
-          ),
-          // Send icon button
-          Padding(
-            padding: const EdgeInsets.only(left: 8),
-            child: GestureDetector(
+            // Send button (matching chat SVG style)
+            GestureDetector(
               onTap: () {
                 if (!_hasText) return;
 
@@ -256,16 +234,29 @@ class _AmityCommentCreatorInternalState
                     ));
                 controller.clear();
               },
-              child: Icon(
-                Icons.send,
-                size: iconSize,
-                color: _hasText
-                    ? widget.theme.primaryColor
-                    : widget.theme.baseColorShade2,
+              child: Container(
+                padding: const EdgeInsets.only(bottom: 6, left: 12),
+                child: SizedBox(
+                  width: 32,
+                  height: 32,
+                  child: (_hasText)
+                      ? SvgPicture.asset(
+                          "assets/Icons/amity_ic_sent_message_button.svg",
+                          colorFilter: ColorFilter.mode(
+                            widget.theme.primaryColor,
+                            BlendMode.srcIn,
+                          ),
+                          package: 'amity_uikit_beta_service',
+                        )
+                      : SvgPicture.asset(
+                          "assets/Icons/amity_ic_sent_message_button_disable.svg",
+                          package: 'amity_uikit_beta_service',
+                        ),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -274,7 +265,7 @@ class _AmityCommentCreatorInternalState
     final commentCreator = comment.user?.displayName ?? "";
     return Container(
       width: double.infinity,
-      height: 40,
+      height: 62,
       padding: const EdgeInsets.only(top: 10, left: 16, right: 12, bottom: 10),
       decoration: BoxDecoration(color: widget.theme.baseColorShade4),
       child: Row(
