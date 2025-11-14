@@ -100,6 +100,25 @@ class _AmityCommentCreatorInternalState
         });
       }
     });
+
+    // Insert mention for reply-to user if replying
+    if (widget.replyTo != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _insertReplyMention(widget.replyTo!);
+      });
+    }
+  }
+
+  @override
+  void didUpdateWidget(AmityCommentCreatorInternal oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // If reply target changed, insert the new mention
+    if (widget.replyTo != null &&
+        widget.replyTo?.commentId != oldWidget.replyTo?.commentId) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _insertReplyMention(widget.replyTo!);
+      });
+    }
   }
 
   @override
@@ -108,6 +127,35 @@ class _AmityCommentCreatorInternalState
     scrollController.dispose();
     focusNode.dispose();
     super.dispose();
+  }
+
+  /// Inserts a mention for the user being replied to
+  void _insertReplyMention(AmityComment replyTo) {
+    final user = replyTo.user;
+    if (user == null) return;
+
+    final displayName = user.displayName ?? 'User';
+    final userId = user.userId;
+    if (userId == null) return;
+
+    // Create mention text with @ symbol and a space after
+    final mentionText = '@$displayName ';
+
+    // Create mention metadata for the Amity SDK
+    final mentionMetadata = AmityUserMentionMetadata(
+      userId: userId,
+      index: 0,
+      length: mentionText.length - 1, // Exclude the trailing space
+    );
+
+    // Populate the controller with the mention
+    controller.populate(mentionText, [mentionMetadata]);
+
+    // Move cursor to the end so user can continue typing
+    controller.selection = TextSelection.collapsed(offset: mentionText.length);
+
+    // Request focus on the input field
+    focusNode.requestFocus();
   }
 
   @override
