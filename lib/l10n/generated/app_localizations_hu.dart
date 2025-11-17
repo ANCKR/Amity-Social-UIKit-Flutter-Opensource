@@ -113,13 +113,14 @@ class AppLocalizationsHu extends AppLocalizations {
       'Az összes tagot eltávolítjuk a csoportból. A csoportban megosztott összes bejegyzés, üzenet, reakció és média törlődik. Ezt nem lehet visszavonni.';
 
   @override
-  String get global_search_hint => 'Keresés a közösségben és a felhasználóban';
+  String get global_search_hint =>
+      'Keresés a közösségben és a felhasználóban...';
 
   @override
-  String get search_my_community_hint => 'Keresés a közösségemben';
+  String get search_my_community_hint => 'Keresés a közösségemben...';
 
   @override
-  String get search_no_results => 'Nincs találat';
+  String get search_no_results => 'Nincs találat...';
 
   @override
   String get title_communities => 'közösségek';
@@ -396,16 +397,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get community_placeholder_members => '1,2 ezer tag';
 
   @override
-  String get community_create => 'Közösség létrehozása';
+  String get community_create => 'Közösség létrehozása...';
 
   @override
   String get community_name => 'Közösség neve';
 
   @override
-  String get community_name_hint => 'Nevezze el közösségét';
+  String get community_name_hint => 'Nevezze el közösségét...';
 
   @override
-  String get community_description_hint => 'Írja be a leírást';
+  String get community_description_hint => 'Írja be a leírást...';
 
   @override
   String get community_edit => 'Közösség szerkesztése';
@@ -875,7 +876,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get member_add => 'Tag hozzáadása lehetőségre';
 
   @override
-  String get search_user_hint => 'Felhasználó keresése';
+  String get search_user_hint => 'Felhasználó keresése...';
 
   @override
   String get profile_edit => 'Profil szerkesztése';
@@ -1331,7 +1332,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get group_title => 'Csoport';
 
   @override
-  String get group_create => 'Csoport létrehozása';
+  String get group_create => 'Csoport létrehozása...';
 
   @override
   String get group_edit => 'Csoport szerkesztése';
@@ -1340,10 +1341,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get group_name => 'Csoport neve';
 
   @override
-  String get group_name_hint => 'Nevezze el a csoportot';
+  String get group_name_hint => 'Nevezze el a csoportot...';
 
   @override
-  String get group_description_hint => 'Írja be a leírást';
+  String get group_description_hint => 'Írja be a leírást...';
 
   @override
   String get group_about => 'Körülbelül';
@@ -1655,19 +1656,19 @@ class AppLocalizationsHu extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Nincs archív csevegés...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Itt még nincs látnivaló...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1801,28 +1802,31 @@ class AppLocalizationsHu extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'A hírcsatorna üres';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description =>
+      'Keressen csoportot, vagy hozzon létre sajátot';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Csoport felfedezése...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Csoport létrehozása...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'A felfedezés üres';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Még nincs csoport';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'Keressen csoportot, vagy hozzon létre sajátot';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description =>
+      'Hozzunk létre saját csoportokat..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1848,77 +1852,77 @@ class AppLocalizationsHu extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Még nincsenek közösségek';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Csatlakozz a közösségekhez, hogy itt láthasd őket';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Fedezze fel a közösségeket...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Még nincs csoportos csevegés';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description =>
+      'Indítson csoportos csevegést barátaival';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Csoportos csevegés létrehozása...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Még nincs beszélgetés';
 
   @override
   String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+      'A kezdéshez hozzunk létre csevegést.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Új csevegés létrehozása...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Nincs archív csevegés';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Az archivált csevegések itt jelennek meg';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Még nincsenek megjegyzések';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'Legyen Ön az első, aki hozzászól';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Nincs találat';
 
   @override
-  String get empty_search_description =>
-      'Try searching with different keywords';
+  String get empty_search_description => 'Próbáljon más kulcsszavakkal keresni';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Keresés törlése...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'Ebben a kategóriában nem található közösség. Próbáljon más kategóriákat felfedezni, vagy létrehozza sajátját.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'A felfedezés üres';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Keressen közösséget, vagy hozzon létre sajátot';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Még nincsenek közösségek';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Légy az első, aki közösséget hoz létre';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Ez a bejegyzés médiát tartalmaz';
@@ -2083,13 +2087,14 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Az összes tagot eltávolítjuk a csoportból. A csoportban megosztott összes bejegyzés, üzenet, reakció és média törlődik. Ezt nem lehet visszavonni.';
 
   @override
-  String get global_search_hint => 'Keresés a közösségben és a felhasználóban';
+  String get global_search_hint =>
+      'Keresés a közösségben és a felhasználóban...';
 
   @override
-  String get search_my_community_hint => 'Keresés a közösségemben';
+  String get search_my_community_hint => 'Keresés a közösségemben...';
 
   @override
-  String get search_no_results => 'Nincs találat';
+  String get search_no_results => 'Nincs találat...';
 
   @override
   String get title_communities => 'közösségek';
@@ -2252,7 +2257,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'A szavazásnak legalább $minOptions opciót kell tartalmaznia.';
   }
 
   @override
@@ -2307,7 +2312,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'Ez a $content véglegesen törlődik.';
   }
 
   @override
@@ -2366,16 +2371,16 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get community_placeholder_members => '1,2 ezer tag';
 
   @override
-  String get community_create => 'Közösség létrehozása';
+  String get community_create => 'Közösség létrehozása...';
 
   @override
   String get community_name => 'Közösség neve';
 
   @override
-  String get community_name_hint => 'Nevezze el közösségét';
+  String get community_name_hint => 'Nevezze el közösségét...';
 
   @override
-  String get community_description_hint => 'Írja be a leírást';
+  String get community_description_hint => 'Írja be a leírást...';
 
   @override
   String get community_edit => 'Közösség szerkesztése';
@@ -2772,12 +2777,12 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'Elérte a $maxUploads kép feltöltési korlátját. A további képek nem kerülnek mentésre.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'Elérted a $maxUploads videó feltöltési korlátját. A további videók nem kerülnek mentésre.';
   }
 
   @override
@@ -2790,12 +2795,12 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'A szavazás kérdése nem haladhatja meg a $maxQuestionLength karaktert.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'A szavazás nem haladhatja meg a $maxQuestionLength karaktert.';
   }
 
   @override
@@ -2845,7 +2850,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get member_add => 'Tag hozzáadása lehetőségre';
 
   @override
-  String get search_user_hint => 'Felhasználó keresése';
+  String get search_user_hint => 'Felhasználó keresése...';
 
   @override
   String get profile_edit => 'Profil szerkesztése';
@@ -3023,7 +3028,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName nem tudja elküldeni Önnek az üzenetet. Nem kapnak értesítést arról, hogy letiltottad őket.';
   }
 
   @override
@@ -3031,7 +3036,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return 'A $displayName mostantól el tudja küldeni az üzenetet. Nem kapnak értesítést arról, hogy feloldottad a blokkolást.';
   }
 
   @override
@@ -3045,7 +3050,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return '$count kérésekhez az Ön jóváhagyása szükséges';
   }
 
   @override
@@ -3072,7 +3077,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return 'A $displayName nem fogja látni az Ön által létrehozott bejegyzéseket és megjegyzéseket. Nem kapnak értesítést arról, hogy letiltottad őket.';
   }
 
   @override
@@ -3083,7 +3088,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return 'A $displayName mostantól láthatja az Ön által létrehozott bejegyzéseket és megjegyzéseket. Nem kapnak értesítést arról, hogy feloldottad a blokkolást.';
   }
 
   @override
@@ -3123,7 +3128,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'A függőben lévő bejegyzés elutasítása véglegesen törli a kiválasztott bejegyzést a közösségből.';
 
   @override
   String get community_pending_posts_empty =>
@@ -3159,14 +3164,14 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Opció $optionNumber';
   }
 
   @override
   String get poll_add_option => 'Opció hozzáadása';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Többszörös kiválasztás';
 
   @override
   String get poll_multiple_selection_description =>
@@ -3174,7 +3179,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'Vége: $endDate';
   }
 
   @override
@@ -3265,7 +3270,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'Válasz erre: $displayName';
   }
 
   @override
@@ -3301,7 +3306,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get group_title => 'Csoport';
 
   @override
-  String get group_create => 'Csoport létrehozása';
+  String get group_create => 'Csoport létrehozása...';
 
   @override
   String get group_edit => 'Csoport szerkesztése';
@@ -3310,10 +3315,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get group_name => 'Csoport neve';
 
   @override
-  String get group_name_hint => 'Nevezze el a csoportot';
+  String get group_name_hint => 'Nevezze el a csoportot...';
 
   @override
-  String get group_description_hint => 'Írja be a leírást';
+  String get group_description_hint => 'Írja be a leírást...';
 
   @override
   String get group_about => 'Körülbelül';
@@ -3438,7 +3443,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'A függőben lévő bejegyzés elutasítása véglegesen törli a kiválasztott bejegyzést a csoportból.';
 
   @override
   String get group_pending_posts_empty => 'Nincsenek függőben lévő bejegyzések';
@@ -3625,19 +3630,19 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get general_error_retry => 'Kérjük, próbálja újra.';
 
   @override
-  String get chat_archived_title => 'Archivált csevegések';
+  String get chat_archived_title => 'Archivált csevegések...';
 
   @override
-  String get chat_archived_empty => 'Nincs archív csevegés';
+  String get chat_archived_empty => 'Nincs archív csevegés...';
 
   @override
-  String get chat_add_member_title => 'Tag hozzáadása lehetőségre';
+  String get chat_add_member_title => 'Tag hozzáadása lehetőségre...';
 
   @override
-  String get chat_add_member_button => 'Tag hozzáadása lehetőségre';
+  String get chat_add_member_button => 'Tag hozzáadása lehetőségre...';
 
   @override
-  String get chat_banned_users_empty => 'Itt még nincs látnivaló';
+  String get chat_banned_users_empty => 'Itt még nincs látnivaló...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3700,6 +3705,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String get chat_leave_button => 'Szabadság';
+
+  @override
+  String get chat_last_moderator_message =>
+      'Kilépés előtt egy másik tagot moderátorrá kell léptetnie.';
 
   @override
   String get chat_promote_member_button => 'Tag előléptetése';
@@ -3775,10 +3784,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Keressen csoportot, vagy hozzon létre sajátot';
 
   @override
-  String get feed_empty_explore_button => 'Csoport felfedezése';
+  String get feed_empty_explore_button => 'Csoport felfedezése...';
 
   @override
-  String get feed_empty_create_button => 'Csoport létrehozása';
+  String get feed_empty_create_button => 'Csoport létrehozása...';
 
   @override
   String get explore_empty_title => 'A felfedezés üres';
@@ -3793,6 +3802,102 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   @override
   String get explore_no_group_description =>
       'Hozzunk létre saját csoportokat..';
+
+  @override
+  String get general_open_settings => 'Nyissa meg a beállításokat';
+
+  @override
+  String get general_remove => 'Távolítsa el';
+
+  @override
+  String get general_yes => 'Igen';
+
+  @override
+  String get general_no => 'Nem';
+
+  @override
+  String get post_share_success => 'A bejegyzés sikeresen megosztása';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'biztos, hogy törölni akarod? A módosításokat nem menti a rendszer.';
+
+  @override
+  String get story_remove_link_message =>
+      'Ezt a linket eltávolítjuk a történetből.';
+
+  @override
+  String get empty_my_communities_title => 'Még nincsenek közösségek';
+
+  @override
+  String get empty_my_communities_description =>
+      'Csatlakozz a közösségekhez, hogy itt láthasd őket';
+
+  @override
+  String get empty_my_communities_cta => 'Fedezze fel a közösségeket...';
+
+  @override
+  String get empty_group_chats_title => 'Még nincs csoportos csevegés';
+
+  @override
+  String get empty_group_chats_description =>
+      'Indítson csoportos csevegést barátaival';
+
+  @override
+  String get empty_group_chats_cta => 'Csoportos csevegés létrehozása...';
+
+  @override
+  String get empty_all_chats_title => 'Még nincs beszélgetés';
+
+  @override
+  String get empty_all_chats_description =>
+      'A kezdéshez hozzunk létre csevegést.';
+
+  @override
+  String get empty_all_chats_cta => 'Új csevegés létrehozása...';
+
+  @override
+  String get empty_archived_chats_title => 'Nincs archív csevegés';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Az archivált csevegések itt jelennek meg';
+
+  @override
+  String get empty_comments_title => 'Még nincsenek megjegyzések';
+
+  @override
+  String get empty_comments_description => 'Legyen Ön az első, aki hozzászól';
+
+  @override
+  String get empty_search_title => 'Nincs találat';
+
+  @override
+  String get empty_search_description => 'Próbáljon más kulcsszavakkal keresni';
+
+  @override
+  String get empty_search_cta => 'Keresés törlése...';
+
+  @override
+  String get empty_category_communities_description =>
+      'Ebben a kategóriában nem található közösség. Próbáljon más kategóriákat felfedezni, vagy létrehozza sajátját.';
+
+  @override
+  String get empty_explore_title_no_categories => 'A felfedezés üres';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Keressen közösséget, vagy hozzon létre sajátot';
+
+  @override
+  String get empty_explore_title_no_communities => 'Még nincsenek közösségek';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Légy az első, aki közösséget hoz létre';
+
+  @override
+  String get cta_create_community => 'Közösség létrehozása...';
 
   @override
   String get shared_post_media_indicator => 'Ez a bejegyzés médiát tartalmaz';

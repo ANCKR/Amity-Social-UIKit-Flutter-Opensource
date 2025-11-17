@@ -113,13 +113,13 @@ class AppLocalizationsVi extends AppLocalizations {
       'Tất cả các thành viên sẽ bị loại khỏi nhóm. Tất cả các bài đăng, tin nhắn, phản ứng và phương tiện được chia sẻ trong nhóm sẽ bị xóa. Điều này không thể hoàn tác được.';
 
   @override
-  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng';
+  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng...';
 
   @override
-  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi';
+  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi...';
 
   @override
-  String get search_no_results => 'Không tìm thấy kết quả nào';
+  String get search_no_results => 'Không tìm thấy kết quả nào...';
 
   @override
   String get title_communities => 'Cộng đồng';
@@ -282,7 +282,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'Cuộc thăm dò phải chứa ít nhất $minOptions tùy chọn.';
   }
 
   @override
@@ -337,7 +337,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return '$content này sẽ bị xóa vĩnh viễn.';
   }
 
   @override
@@ -392,16 +392,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get community_placeholder_members => '1,2K thành viên';
 
   @override
-  String get community_create => 'Tạo cộng đồng';
+  String get community_create => 'Tạo cộng đồng...';
 
   @override
   String get community_name => 'Tên cộng đồng';
 
   @override
-  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn';
+  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn...';
 
   @override
-  String get community_description_hint => 'Nhập mô tả';
+  String get community_description_hint => 'Nhập mô tả...';
 
   @override
   String get community_edit => 'Chỉnh sửa cộng đồng';
@@ -796,12 +796,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'Bạn đã đạt đến giới hạn tải lên $maxUploads hình ảnh. Mọi hình ảnh bổ sung sẽ không được lưu.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'Bạn đã đạt đến giới hạn tải lên $maxUploads video. Mọi video bổ sung sẽ không được lưu.';
   }
 
   @override
@@ -813,12 +813,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'Câu hỏi thăm dò ý kiến ​​không được vượt quá $maxQuestionLength ký tự.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'Tùy chọn thăm dò ý kiến ​​không được vượt quá $maxQuestionLength ký tự.';
   }
 
   @override
@@ -868,7 +868,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get member_add => 'Thêm thành viên';
 
   @override
-  String get search_user_hint => 'Tìm kiếm người dùng';
+  String get search_user_hint => 'Tìm kiếm người dùng...';
 
   @override
   String get profile_edit => 'Chỉnh sửa hồ sơ';
@@ -1048,7 +1048,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName sẽ không thể gửi tin nhắn cho bạn. Họ sẽ không được thông báo rằng bạn đã chặn họ.';
   }
 
   @override
@@ -1056,7 +1056,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName bây giờ sẽ có thể gửi tin nhắn cho bạn. Họ sẽ không được thông báo rằng bạn đã bỏ chặn họ.';
   }
 
   @override
@@ -1070,7 +1070,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return '$count yêu cầu cần sự chấp thuận của bạn';
   }
 
   @override
@@ -1097,7 +1097,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName sẽ không thể xem các bài đăng và nhận xét mà bạn đã tạo. Họ sẽ không được thông báo rằng bạn đã chặn họ.';
   }
 
   @override
@@ -1108,7 +1108,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName giờ đây sẽ có thể xem các bài đăng và nhận xét mà bạn đã tạo. Họ sẽ không được thông báo rằng bạn đã bỏ chặn họ.';
   }
 
   @override
@@ -1147,7 +1147,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'Từ chối bài đăng đang chờ xử lý sẽ xóa vĩnh viễn bài đăng đã chọn khỏi cộng đồng.';
 
   @override
   String get community_pending_posts_empty =>
@@ -1183,14 +1183,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Tùy chọn $optionNumber';
   }
 
   @override
   String get poll_add_option => 'Thêm tùy chọn';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Nhiều lựa chọn';
 
   @override
   String get poll_multiple_selection_description =>
@@ -1198,7 +1198,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'Kết thúc vào $endDate';
   }
 
   @override
@@ -1291,7 +1291,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'Đang trả lời $displayName';
   }
 
   @override
@@ -1336,10 +1336,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get group_name => 'Tên nhóm';
 
   @override
-  String get group_name_hint => 'Đặt tên cho nhóm của bạn';
+  String get group_name_hint => 'Đặt tên cho nhóm của bạn...';
 
   @override
-  String get group_description_hint => 'Nhập mô tả';
+  String get group_description_hint => 'Nhập mô tả...';
 
   @override
   String get group_about => 'Về';
@@ -1464,7 +1464,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Từ chối bài đăng đang chờ xử lý sẽ xóa vĩnh viễn bài đăng đã chọn khỏi nhóm.';
 
   @override
   String get group_pending_posts_empty => 'Không có bài viết đang chờ xử lý';
@@ -1640,189 +1640,190 @@ class AppLocalizationsVi extends AppLocalizations {
   String get category_all => 'Tất cả danh mục';
 
   @override
-  String get general_search => 'Search';
+  String get general_search => 'Tìm kiếm';
 
   @override
-  String get general_error_title => 'Something went wrong';
+  String get general_error_title => 'Đã xảy ra lỗi';
 
   @override
-  String get general_error_retry => 'Please try again.';
+  String get general_error_retry => 'Vui lòng thử lại.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Thêm thành viên...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Thêm thành viên...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem...';
 
   @override
   String get chat_unban_confirmation_message =>
-      'Are you sure you want to unban this user? They will be able to rejoin the group again.';
+      'Bạn có chắc chắn muốn bỏ cấm người dùng này không? Họ sẽ có thể tham gia lại nhóm một lần nữa.';
 
   @override
-  String get chat_unban_button => 'Unban';
+  String get chat_unban_button => 'Bỏ cấm';
 
   @override
-  String get chat_group_settings_title => 'Group Settings';
+  String get chat_group_settings_title => 'Cài đặt nhóm';
 
   @override
-  String get chat_group_settings_section => 'Group settings';
+  String get chat_group_settings_section => 'Cài đặt nhóm';
 
   @override
-  String get chat_group_profile_updated => 'Group profile updated.';
+  String get chat_group_profile_updated => 'Hồ sơ nhóm được cập nhật.';
 
   @override
   String get chat_group_profile_update_failed =>
-      'Failed to update group profile. Please try again.';
+      'Không cập nhật được hồ sơ nhóm. Vui lòng thử lại.';
 
   @override
-  String get chat_group_notification_updated => 'Group notification updated.';
+  String get chat_group_notification_updated => 'Đã cập nhật thông báo nhóm.';
 
   @override
   String get chat_group_notification_update_failed =>
-      'Failed to update group notification. Please try again.';
+      'Không cập nhật được thông báo nhóm. Vui lòng thử lại.';
 
   @override
-  String get chat_member_permissions_updated => 'Member permissions updated.';
+  String get chat_member_permissions_updated => 'Đã cập nhật quyền thành viên.';
 
   @override
   String get chat_member_permissions_update_failed =>
-      'Failed to update member permissions. Please try again.';
+      'Không thể cập nhật quyền của thành viên. Vui lòng thử lại.';
 
   @override
-  String get chat_member_list_updated => 'Member list updated.';
+  String get chat_member_list_updated => 'Danh sách thành viên được cập nhật.';
 
   @override
   String get chat_member_list_update_failed =>
-      'Failed to update member list. Please try again.';
+      'Không thể cập nhật danh sách thành viên. Vui lòng thử lại.';
 
   @override
-  String get chat_banned_users_updated => 'Banned users updated.';
+  String get chat_banned_users_updated => 'Đã cập nhật người dùng bị cấm.';
 
   @override
   String get chat_banned_users_update_failed =>
-      'Failed to update banned users. Please try again.';
+      'Không thể cập nhật người dùng bị cấm. Vui lòng thử lại.';
 
   @override
-  String get chat_your_preferences => 'Your preferences';
+  String get chat_your_preferences => 'sở thích của bạn';
 
   @override
-  String get chat_leave_group_title => 'Leave Group';
+  String get chat_leave_group_title => 'Rời khỏi nhóm';
 
   @override
   String get chat_leave_group_message =>
-      'If you leave this group, you will no longer see new activities or participate in this group.';
+      'Nếu rời khỏi nhóm này, bạn sẽ không còn thấy các hoạt động mới hoặc tham gia vào nhóm này nữa.';
 
   @override
-  String get chat_leave_button => 'Leave';
+  String get chat_leave_button => 'Rời khỏi';
 
   @override
   String get chat_last_moderator_message =>
-      'You must promote another member to moderator before leaving.';
+      'Bạn phải thăng cấp thành viên khác lên người kiểm duyệt trước khi rời đi.';
 
   @override
-  String get chat_promote_member_button => 'Promote member';
+  String get chat_promote_member_button => 'Quảng bá thành viên';
 
   @override
-  String get chat_group_left_success => 'Group chat left.';
+  String get chat_group_left_success => 'Trò chuyện nhóm đã rời đi.';
 
   @override
   String get chat_group_left_failed =>
-      'Failed to leave group chat. Please try again.';
+      'Không thể rời khỏi cuộc trò chuyện nhóm. Vui lòng thử lại.';
 
   @override
-  String get chat_messaging_section => 'Messaging';
+  String get chat_messaging_section => 'Nhắn tin';
 
   @override
   String get chat_permission_everyone_description =>
-      'Everyone can send a message in the group.';
+      'Mọi người đều có thể gửi tin nhắn trong nhóm.';
 
   @override
   String get chat_permission_moderators_description =>
-      'Members who are not moderators can read messages but cannot send any messages.';
+      'Thành viên không phải là người điều hành có thể đọc tin nhắn nhưng không thể gửi bất kỳ tin nhắn nào.';
 
   @override
   String get chat_notification_default_description =>
-      'By default, members in this community will receive notifications, but they can choose to turn them off.';
+      'Theo mặc định, các thành viên trong cộng đồng này sẽ nhận được thông báo nhưng họ có thể chọn tắt chúng.';
 
   @override
   String get chat_notification_silent_description =>
-      'No notifications for everyone in this channel. Members can\'t turn on notifications in the channel.';
+      'Không có thông báo cho tất cả mọi người trong kênh này. Thành viên không thể bật thông báo trong kênh.';
 
   @override
   String get chat_notification_subscribe_description =>
-      'All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.';
+      'Tất cả thành viên đều có tùy chọn nhận thông báo nhưng họ cần phải bật chúng. Theo mặc định, thông báo sẽ bị tắt đối với từng thành viên.';
 
   @override
-  String get feed_filter_title => 'Filter Posts';
+  String get feed_filter_title => 'Lọc bài viết';
 
   @override
-  String get feed_filter_content_type => 'Content Type';
+  String get feed_filter_content_type => 'Loại nội dung';
 
   @override
   String get feed_filter_all => 'All';
 
   @override
-  String get feed_filter_images => 'Images';
+  String get feed_filter_images => 'Hình ảnh';
 
   @override
-  String get feed_filter_videos => 'Videos';
+  String get feed_filter_videos => 'Video';
 
   @override
-  String get feed_filter_text => 'Text';
+  String get feed_filter_text => 'Chữ';
 
   @override
-  String get feed_filter_sort_by => 'Sort By';
+  String get feed_filter_sort_by => 'Sắp xếp theo';
 
   @override
-  String get feed_filter_latest_first => 'Latest First';
+  String get feed_filter_latest_first => 'Mới nhất Đầu tiên';
 
   @override
-  String get feed_filter_oldest_first => 'Oldest First';
+  String get feed_filter_oldest_first => 'Cũ nhất đầu tiên';
 
   @override
-  String get feed_filter_clear_all => 'Clear All';
+  String get feed_filter_clear_all => 'Xóa tất cả';
 
   @override
-  String get feed_filter_apply => 'Apply Filters';
+  String get feed_filter_apply => 'Áp dụng bộ lọc';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Nguồn cấp dữ liệu của bạn trống';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Tìm nhóm hoặc tạo nhóm của riêng bạn';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Khám phá nhóm...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Tạo nhóm';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Khám phá của bạn trống';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Chưa có nhóm nào';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'Tìm nhóm hoặc tạo nhóm của riêng bạn';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Hãy tạo nhóm của riêng bạn..';
 
   @override
-  String get general_open_settings => 'Open settings';
+  String get general_open_settings => 'Mở cài đặt';
 
   @override
-  String get general_remove => 'Remove';
+  String get general_remove => 'Di dời';
 
   @override
   String get general_yes => 'Yes';
@@ -1831,88 +1832,89 @@ class AppLocalizationsVi extends AppLocalizations {
   String get general_no => 'No';
 
   @override
-  String get post_share_success => 'Post shared successfully';
+  String get post_share_success => 'Bài viết được chia sẻ thành công';
 
   @override
   String get story_unsaved_changes_message =>
-      'are you sure you want to cancel? Your Changes won\'t be saved.';
+      'bạn có chắc chắn muốn hủy không? Thay đổi của bạn sẽ không được lưu.';
 
   @override
   String get story_remove_link_message =>
-      'This link will be removed from story.';
+      'Liên kết này sẽ bị xóa khỏi câu chuyện.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Chưa có cộng đồng nào';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Tham gia cộng đồng để xem chúng ở đây';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Khám phá cộng đồng...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Chưa có cuộc trò chuyện nhóm nào';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description =>
+      'Bắt đầu trò chuyện nhóm với bạn bè';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Tạo cuộc trò chuyện nhóm...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Chưa có cuộc trò chuyện nào';
 
   @override
   String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+      'Hãy tạo cuộc trò chuyện để bắt đầu.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Tạo cuộc trò chuyện mới...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Không có cuộc trò chuyện lưu trữ';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Các cuộc trò chuyện đã lưu trữ sẽ xuất hiện ở đây';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Chưa có bình luận nào';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'Hãy là người đầu tiên bình luận';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Không tìm thấy kết quả nào';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Hãy thử tìm kiếm với các từ khóa khác nhau';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Xóa tìm kiếm...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'Không tìm thấy cộng đồng nào trong danh mục này. Hãy thử khám phá các danh mục khác hoặc tạo danh mục của riêng bạn.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Khám phá của bạn trống';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Tìm cộng đồng hoặc tạo cộng đồng của riêng bạn';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Chưa có cộng đồng nào';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Hãy là người đầu tiên tạo ra một cộng đồng';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Tạo cộng đồng...';
 
   @override
   String get shared_post_media_indicator => 'Bài đăng này có chứa phương tiện';
@@ -1921,7 +1923,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get shared_post_load_error => 'Không thể tải bài đăng được chia sẻ';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Băng hình';
 
   @override
   String get timestamp_just_now_full => 'Vừa xong';
@@ -2077,13 +2079,13 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Tất cả các thành viên sẽ bị loại khỏi nhóm. Tất cả các bài đăng, tin nhắn, phản ứng và phương tiện được chia sẻ trong nhóm sẽ bị xóa. Điều này không thể hoàn tác được.';
 
   @override
-  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng';
+  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng...';
 
   @override
-  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi';
+  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi...';
 
   @override
-  String get search_no_results => 'Không tìm thấy kết quả nào';
+  String get search_no_results => 'Không tìm thấy kết quả nào...';
 
   @override
   String get title_communities => 'Cộng đồng';
@@ -2356,16 +2358,16 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get community_placeholder_members => '1,2K thành viên';
 
   @override
-  String get community_create => 'Tạo cộng đồng';
+  String get community_create => 'Tạo cộng đồng...';
 
   @override
   String get community_name => 'Tên cộng đồng';
 
   @override
-  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn';
+  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn...';
 
   @override
-  String get community_description_hint => 'Nhập mô tả';
+  String get community_description_hint => 'Nhập mô tả...';
 
   @override
   String get community_edit => 'Chỉnh sửa cộng đồng';
@@ -2832,7 +2834,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get member_add => 'Thêm thành viên';
 
   @override
-  String get search_user_hint => 'Tìm kiếm người dùng';
+  String get search_user_hint => 'Tìm kiếm người dùng...';
 
   @override
   String get profile_edit => 'Chỉnh sửa hồ sơ';
@@ -3300,10 +3302,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get group_name => 'Tên nhóm';
 
   @override
-  String get group_name_hint => 'Đặt tên cho nhóm của bạn';
+  String get group_name_hint => 'Đặt tên cho nhóm của bạn...';
 
   @override
-  String get group_description_hint => 'Nhập mô tả';
+  String get group_description_hint => 'Nhập mô tả...';
 
   @override
   String get group_about => 'Về';
@@ -3613,19 +3615,19 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get general_error_retry => 'Vui lòng thử lại.';
 
   @override
-  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ';
+  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ...';
 
   @override
-  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ';
+  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ...';
 
   @override
-  String get chat_add_member_title => 'Thêm thành viên';
+  String get chat_add_member_title => 'Thêm thành viên...';
 
   @override
-  String get chat_add_member_button => 'Thêm thành viên';
+  String get chat_add_member_button => 'Thêm thành viên...';
 
   @override
-  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem';
+  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3687,6 +3689,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
 
   @override
   String get chat_leave_button => 'Rời khỏi';
+
+  @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
 
   @override
   String get chat_promote_member_button => 'Quảng bá thành viên';
@@ -3761,7 +3767,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get feed_empty_description => 'Tìm nhóm hoặc tạo nhóm của riêng bạn';
 
   @override
-  String get feed_empty_explore_button => 'Khám phá nhóm';
+  String get feed_empty_explore_button => 'Khám phá nhóm...';
 
   @override
   String get feed_empty_create_button => 'Tạo nhóm';
@@ -3778,6 +3784,103 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
 
   @override
   String get explore_no_group_description => 'Hãy tạo nhóm của riêng bạn..';
+
+  @override
+  String get general_open_settings => 'Open settings';
+
+  @override
+  String get general_remove => 'Remove';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Post shared successfully';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'are you sure you want to cancel? Your Changes won\'t be saved.';
+
+  @override
+  String get story_remove_link_message =>
+      'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'Chưa có cộng đồng nào';
+
+  @override
+  String get empty_my_communities_description =>
+      'Tham gia cộng đồng để xem chúng ở đây';
+
+  @override
+  String get empty_my_communities_cta => 'Khám phá cộng đồng...';
+
+  @override
+  String get empty_group_chats_title => 'Chưa có cuộc trò chuyện nhóm nào';
+
+  @override
+  String get empty_group_chats_description =>
+      'Bắt đầu trò chuyện nhóm với bạn bè';
+
+  @override
+  String get empty_group_chats_cta => 'Tạo cuộc trò chuyện nhóm...';
+
+  @override
+  String get empty_all_chats_title => 'Chưa có cuộc trò chuyện nào';
+
+  @override
+  String get empty_all_chats_description =>
+      'Hãy tạo cuộc trò chuyện để bắt đầu.';
+
+  @override
+  String get empty_all_chats_cta => 'Tạo cuộc trò chuyện mới...';
+
+  @override
+  String get empty_archived_chats_title => 'Không có cuộc trò chuyện lưu trữ';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Các cuộc trò chuyện đã lưu trữ sẽ xuất hiện ở đây';
+
+  @override
+  String get empty_comments_title => 'Chưa có bình luận nào';
+
+  @override
+  String get empty_comments_description => 'Hãy là người đầu tiên bình luận';
+
+  @override
+  String get empty_search_title => 'Không tìm thấy kết quả nào';
+
+  @override
+  String get empty_search_description =>
+      'Hãy thử tìm kiếm với các từ khóa khác nhau';
+
+  @override
+  String get empty_search_cta => 'Xóa tìm kiếm...';
+
+  @override
+  String get empty_category_communities_description =>
+      'Không tìm thấy cộng đồng nào trong danh mục này. Hãy thử khám phá các danh mục khác hoặc tạo danh mục của riêng bạn.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Khám phá của bạn trống';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Tìm cộng đồng hoặc tạo cộng đồng của riêng bạn';
+
+  @override
+  String get empty_explore_title_no_communities => 'Chưa có cộng đồng nào';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Hãy là người đầu tiên tạo ra một cộng đồng';
+
+  @override
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Bài đăng này có chứa phương tiện';

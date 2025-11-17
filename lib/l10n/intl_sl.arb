@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Iskanje skupnosti in uporabnika",
+  "global_search_hint": "Iskanje skupnosti in uporabnika...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Preišči mojo skupnost",
+  "search_my_community_hint": "Preišči mojo skupnost...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Ni rezultatov",
+  "search_no_results": "Ni rezultatov...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Ustvari skupnost",
+  "community_create": "Ustvari skupnost...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Poimenujte svojo skupnost",
+  "community_name_hint": "Poimenujte svojo skupnost...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Vnesite opis",
+  "community_description_hint": "Vnesite opis...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Išči uporabnika",
+  "search_user_hint": "Išči uporabnika...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1583,11 +1583,11 @@
   "@chat_message_deleted": {
     "description": "Preview text for deleted messages"
   },
-  "chat_message_no_preview": "No preview supported for this message type",
+  "chat_message_no_preview": "Predogled za to vrsto sporočila ni podprt",
   "@chat_message_no_preview": {
     "description": "Preview text for unsupported message types"
   },
-  "chat_no_message_yet": "No message yet",
+  "chat_no_message_yet": "Ni še sporočila",
   "@chat_no_message_yet": {
     "description": "Preview text when there are no messages in the chat"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Create Group",
+  "group_create": "Create Group...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Name your group",
+  "group_name_hint": "Name your group...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Enter description",
+  "group_description_hint": "Enter description...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1733,7 +1733,7 @@
       }
     }
   },
-  "group_empty_state": "No group yet",
+  "group_empty_state": "Ni še skupine",
   "@group_empty_state": {
     "description": "Empty state message when there are no groups"
   },
@@ -1741,11 +1741,11 @@
   "@group_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  "group_pending_requests_empty_title": "No pending requests available",
+  "group_pending_requests_empty_title": "Ni čakajočih zahtev",
   "@group_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  "group_pending_requests_empty_description": "Enable post review or join approval in group settings to manage requests.",
+  "group_pending_requests_empty_description": "Omogočite pregled objave ali odobritev pridružitve v nastavitvah skupine za upravljanje zahtev.",
   "@group_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
@@ -1757,7 +1757,7 @@
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
-  "group_pending_posts_empty": "No pending posts",
+  "group_pending_posts_empty": "Ni čakajočih objav",
   "@group_pending_posts_empty": {
     "description": "Empty state message when there are no pending posts"
   },
@@ -2063,5 +2063,341 @@
   "feed_empty_create_first_post": "Ustvarite svojo prvo objavo",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "Member list updated.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "empty_archived_chats_title": "Brez arhivskega klepeta",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "Failed to update group notification. Please try again.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "empty_explore_description_no_categories": "Poiščite skupnost ali ustvarite svojo",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Za začetek ustvarimo klepet.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Pogovora še ni",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_group_chats_description": "Začnite skupinski klepet s prijatelji",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "chat_add_member_button": "Add Member...",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_unban_confirmation_message": "Are you sure you want to unban this user? They will be able to rejoin the group again.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "empty_group_chats_cta": "Ustvari skupinski klepet...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "chat_notification_silent_description": "No notifications for everyone in this channel. Members can't turn on notifications in the channel.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "empty_explore_title_no_categories": "Vaše raziskovanje je prazno",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_banned_users_updated": "Banned users updated.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "feed_filter_apply": "Apply Filters",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_sort_by": "Sort By",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "empty_category_communities_description": "V tej kategoriji ni najdenih skupnosti. Poskusite raziskati druge kategorije ali ustvarite svojo.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "Vaše raziskovanje je prazno",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "empty_my_communities_title": "Ni še nobene skupnosti",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "general_error_title": "Something went wrong",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "Clear All",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "empty_my_communities_cta": "Raziščite skupnosti...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_group_left_success": "Group chat left.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_promote_member_button": "Promote member",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "empty_archived_chats_description": "Tukaj bodo prikazani arhivirani klepeti",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "chat_leave_group_title": "Leave Group",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "If you leave this group, you will no longer see new activities or participate in this group.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "feed_filter_title": "Filter Posts",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "chat_member_list_update_failed": "Failed to update member list. Please try again.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_filter_content_type": "Content Type",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "chat_member_permissions_update_failed": "Failed to update member permissions. Please try again.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "Poiščite skupino ali ustvarite svojo",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_group_notification_updated": "Group notification updated.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_messaging_section": "Messaging",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "empty_my_communities_description": "Pridružite se skupnostim, da jih vidite tukaj",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_comments_description": "Bodite prvi in ​​komentirajte",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "feed_filter_text": "Text",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_empty_title": "Vaš vir je prazen",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_add_member_title": "Add Member...",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_filter_images": "Images",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "empty_search_cta": "Počisti iskanje...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "By default, members in this community will receive notifications, but they can choose to turn them off.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "feed_empty_description": "Poiščite skupino ali ustvarite svojo",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Ni rezultatov",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_title": "Ni še nobenih skupinskih klepetov",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "feed_empty_create_button": "Ustvari skupino...",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "general_search": "Search",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "chat_your_preferences": "Your preferences",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "empty_search_description": "Poskusite iskati z drugimi ključnimi besedami",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "chat_archived_empty": "Brez arhivskega klepeta...",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_banned_users_update_failed": "Failed to update banned users. Please try again.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "Unban",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "empty_comments_title": "Še ni komentarjev",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "feed_filter_oldest_first": "Oldest First",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_error_retry": "Please try again.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "empty_all_chats_cta": "Ustvari nov klepet...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "chat_permission_moderators_description": "Members who are not moderators can read messages but cannot send any messages.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_banned_users_empty": "Tukaj še ni ničesar za videti...",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "Member permissions updated.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_settings_title": "Group Settings",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "Videos",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_latest_first": "Latest First",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_archived_title": "Archived chats...",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "feed_empty_explore_button": "Raziščite skupino...",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "Leave",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "empty_explore_title_no_communities": "Ni še nobene skupnosti",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "chat_permission_everyone_description": "Everyone can send a message in the group.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "Ni še skupine",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_no_group_description": "Ustvarimo svoje skupine..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "chat_group_left_failed": "Failed to leave group chat. Please try again.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "Failed to update group profile. Please try again.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_group_profile_updated": "Group profile updated.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Group settings",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "empty_explore_description_no_communities": "Bodite prvi, ki bo ustvaril skupnost",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

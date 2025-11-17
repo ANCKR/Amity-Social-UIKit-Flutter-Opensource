@@ -109,13 +109,13 @@ class AppLocalizationsJa extends AppLocalizations {
       'すべてのメンバーがグループから削除されます。グループ内で共有されたすべての投稿、メッセージ、反応、メディアが削除されます。これを元に戻すことはできません。';
 
   @override
-  String get global_search_hint => 'コミュニティとユーザーを検索する';
+  String get global_search_hint => 'コミュニティとユーザーを検索する...';
 
   @override
-  String get search_my_community_hint => '私のコミュニティを検索';
+  String get search_my_community_hint => '私のコミュニティを検索...';
 
   @override
-  String get search_no_results => '結果が見つかりませんでした';
+  String get search_no_results => '結果が見つかりませんでした...';
 
   @override
   String get title_communities => 'コミュニティ';
@@ -385,10 +385,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get community_name => 'コミュニティ名';
 
   @override
-  String get community_name_hint => 'コミュニティに名前を付けます';
+  String get community_name_hint => 'コミュニティに名前を付けます...';
 
   @override
-  String get community_description_hint => '説明を入力してください';
+  String get community_description_hint => '説明を入力してください...';
 
   @override
   String get community_edit => 'コミュニティの編集';
@@ -1287,10 +1287,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get group_name => 'グループ名';
 
   @override
-  String get group_name_hint => 'グループに名前を付けます';
+  String get group_name_hint => 'グループに名前を付けます...';
 
   @override
-  String get group_description_hint => '説明を入力してください';
+  String get group_description_hint => '説明を入力してください...';
 
   @override
   String get group_about => 'について';
@@ -1591,19 +1591,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'アーカイブチャットはありません...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1737,28 +1737,28 @@ class AppLocalizationsJa extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'フィードが空です';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'グループを検索するか、独自のグループを作成します';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'グループを探索する';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'グループの作成';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'あなたの探検は空です';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'まだグループがありません';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description => 'グループを検索するか、独自のグループを作成します';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => '独自のグループを作成しましょう。';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1784,77 +1784,72 @@ class AppLocalizationsJa extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'まだコミュニティはありません';
 
   @override
-  String get empty_my_communities_description =>
-      'Join communities to see them here';
+  String get empty_my_communities_description => 'コミュニティに参加してここで確認してください';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'コミュニティを探索する...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'グループチャットはまだありません';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description => '友達とグループチャットを開始する';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'グループチャットを作成する...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'まだ会話はありません';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'まずはチャットを作成しましょう。';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => '新しいチャットを作成する...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'アーカイブチャットはありません';
 
   @override
-  String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+  String get empty_archived_chats_description => 'アーカイブされたチャットがここに表示されます';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'まだコメントはありません';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => '最初にコメントしてみませんか';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => '結果が見つかりませんでした';
 
   @override
-  String get empty_search_description =>
-      'Try searching with different keywords';
+  String get empty_search_description => '別のキーワードで検索してみてください';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => '検索をクリア';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'このカテゴリにコミュニティは見つかりませんでした。他のカテゴリを探索するか、独自のカテゴリを作成してみてください。';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'あなたの探検は空です';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'コミュニティを見つけるか、独自のコミュニティを作成します';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'まだコミュニティはありません';
 
   @override
-  String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+  String get empty_explore_description_no_communities => '最初にコミュニティを作成してみませんか';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'この投稿にはメディアが含まれています';
@@ -2015,13 +2010,13 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
       'すべてのメンバーがグループから削除されます。グループ内で共有されたすべての投稿、メッセージ、反応、メディアが削除されます。これを元に戻すことはできません。';
 
   @override
-  String get global_search_hint => 'コミュニティとユーザーを検索する';
+  String get global_search_hint => 'コミュニティとユーザーを検索する...';
 
   @override
-  String get search_my_community_hint => '私のコミュニティを検索';
+  String get search_my_community_hint => '私のコミュニティを検索...';
 
   @override
-  String get search_no_results => '結果が見つかりませんでした';
+  String get search_no_results => '結果が見つかりませんでした...';
 
   @override
   String get title_communities => 'コミュニティ';
@@ -2179,7 +2174,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'ポーリングには少なくとも $minOptions オプションが含まれている必要があります。';
   }
 
   @override
@@ -2234,7 +2229,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'この $content は完全に削除されます。';
   }
 
   @override
@@ -2291,10 +2286,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get community_name => 'コミュニティ名';
 
   @override
-  String get community_name_hint => 'コミュニティに名前を付けます';
+  String get community_name_hint => 'コミュニティに名前を付けます...';
 
   @override
-  String get community_description_hint => '説明を入力してください';
+  String get community_description_hint => '説明を入力してください...';
 
   @override
   String get community_edit => 'コミュニティの編集';
@@ -2682,12 +2677,12 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return '$maxUploads 枚の画像のアップロード制限に達しました。 Any additional images will not be saved.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return '$maxUploads 件の動画のアップロード制限に達しました。追加のビデオは保存されません。';
   }
 
   @override
@@ -2698,12 +2693,12 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return '投票の質問は $maxQuestionLength 文字を超えることはできません。';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'ポーリング オプションは $maxQuestionLength 文字を超えることはできません。';
   }
 
   @override
@@ -2916,7 +2911,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName はあなたにメッセージを送信できません。あなたがブロックしたことは相手に通知されません。';
   }
 
   @override
@@ -2924,7 +2919,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName はあなたにメッセージを送信できるようになります。あなたがブロックを解除したことは相手に通知されません。';
   }
 
   @override
@@ -2938,7 +2933,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return '$count リクエストにはあなたの承認が必要です';
   }
 
   @override
@@ -2964,7 +2959,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName は、あなたが作成した投稿やコメントを見ることができなくなります。 They won\'t be notified that you\'ve blocked them.';
   }
 
   @override
@@ -2975,7 +2970,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName は、あなたが作成した投稿やコメントを表示できるようになります。あなたがブロックを解除したことは相手に通知されません。';
   }
 
   @override
@@ -3012,7 +3007,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      '保留中の投稿を拒否すると、選択した投稿がコミュニティから完全に削除されます。';
 
   @override
   String get community_pending_posts_empty => '保留中の投稿はありません';
@@ -3045,21 +3040,21 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'オプション $optionNumber';
   }
 
   @override
   String get poll_add_option => 'オプションを追加';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => '複数選択';
 
   @override
   String get poll_multiple_selection_description => '参加者に複数の選択肢を投票してもらいます。';
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return '$endDate に終了';
   }
 
   @override
@@ -3150,7 +3145,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return '$displayNameに返信する';
   }
 
   @override
@@ -3193,10 +3188,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get group_name => 'グループ名';
 
   @override
-  String get group_name_hint => 'グループに名前を付けます';
+  String get group_name_hint => 'グループに名前を付けます...';
 
   @override
-  String get group_description_hint => '説明を入力してください';
+  String get group_description_hint => '説明を入力してください...';
 
   @override
   String get group_about => 'について';
@@ -3317,7 +3312,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      '保留中の投稿を拒否すると、選択した投稿がグループから完全に削除されます。';
 
   @override
   String get group_pending_posts_empty => '保留中の投稿はありません';
@@ -3497,10 +3492,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get general_error_retry => 'もう一度試してください。';
 
   @override
-  String get chat_archived_title => 'アーカイブされたチャット';
+  String get chat_archived_title => 'アーカイブされたチャット...';
 
   @override
-  String get chat_archived_empty => 'アーカイブチャットはありません';
+  String get chat_archived_empty => 'アーカイブチャットはありません...';
 
   @override
   String get chat_add_member_title => 'メンバーを追加';
@@ -3509,7 +3504,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get chat_add_member_button => 'メンバーを追加';
 
   @override
-  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません';
+  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3570,6 +3565,9 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String get chat_leave_button => '離れる';
+
+  @override
+  String get chat_last_moderator_message => '退会する前に、別のメンバーをモデレータに昇格させる必要があります。';
 
   @override
   String get chat_promote_member_button => 'メンバーを昇格させる';
@@ -3658,6 +3656,95 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String get explore_no_group_description => '独自のグループを作成しましょう。';
+
+  @override
+  String get general_open_settings => '設定を開く';
+
+  @override
+  String get general_remove => '取り除く';
+
+  @override
+  String get general_yes => 'はい';
+
+  @override
+  String get general_no => 'いいえ';
+
+  @override
+  String get post_share_success => '投稿が正常に共有されました';
+
+  @override
+  String get story_unsaved_changes_message => 'キャンセルしてもよろしいですか?変更は保存されません。';
+
+  @override
+  String get story_remove_link_message => 'このリンクはストーリーから削除されます。';
+
+  @override
+  String get empty_my_communities_title => 'まだコミュニティはありません';
+
+  @override
+  String get empty_my_communities_description => 'コミュニティに参加してここで確認してください';
+
+  @override
+  String get empty_my_communities_cta => 'コミュニティを探索する...';
+
+  @override
+  String get empty_group_chats_title => 'グループチャットはまだありません';
+
+  @override
+  String get empty_group_chats_description => '友達とグループチャットを開始する';
+
+  @override
+  String get empty_group_chats_cta => 'グループチャットを作成する...';
+
+  @override
+  String get empty_all_chats_title => 'まだ会話はありません';
+
+  @override
+  String get empty_all_chats_description => 'まずはチャットを作成しましょう。';
+
+  @override
+  String get empty_all_chats_cta => '新しいチャットを作成する...';
+
+  @override
+  String get empty_archived_chats_title => 'アーカイブチャットはありません';
+
+  @override
+  String get empty_archived_chats_description => 'アーカイブされたチャットがここに表示されます';
+
+  @override
+  String get empty_comments_title => 'まだコメントはありません';
+
+  @override
+  String get empty_comments_description => '最初にコメントしてみませんか';
+
+  @override
+  String get empty_search_title => '結果が見つかりませんでした';
+
+  @override
+  String get empty_search_description => '別のキーワードで検索してみてください';
+
+  @override
+  String get empty_search_cta => '検索をクリア';
+
+  @override
+  String get empty_category_communities_description =>
+      'No communities found in this category.他のカテゴリを探索するか、独自のカテゴリを作成してみてください。';
+
+  @override
+  String get empty_explore_title_no_categories => 'あなたの探検は空です';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'コミュニティを見つけるか、独自のコミュニティを作成します';
+
+  @override
+  String get empty_explore_title_no_communities => 'まだコミュニティはありません';
+
+  @override
+  String get empty_explore_description_no_communities => '最初にコミュニティを作成してみませんか';
+
+  @override
+  String get cta_create_community => 'コミュニティを作成する...';
 
   @override
   String get shared_post_media_indicator => 'この投稿にはメディアが含まれています';

@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Tìm kiếm cộng đồng và người dùng",
+  "global_search_hint": "Tìm kiếm cộng đồng và người dùng...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Tìm kiếm cộng đồng của tôi",
+  "search_my_community_hint": "Tìm kiếm cộng đồng của tôi...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Không tìm thấy kết quả nào",
+  "search_no_results": "Không tìm thấy kết quả nào...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Tạo cộng đồng",
+  "community_create": "Tạo cộng đồng...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Đặt tên cho cộng đồng của bạn",
+  "community_name_hint": "Đặt tên cho cộng đồng của bạn...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Nhập mô tả",
+  "community_description_hint": "Nhập mô tả...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Tìm kiếm người dùng",
+  "search_user_hint": "Tìm kiếm người dùng...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Đặt tên cho nhóm của bạn",
+  "group_name_hint": "Đặt tên cho nhóm của bạn...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Nhập mô tả",
+  "group_description_hint": "Nhập mô tả...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,23 +1989,23 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Cuộc trò chuyện đã lưu trữ",
+  "chat_archived_title": "Cuộc trò chuyện đã lưu trữ...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Không có cuộc trò chuyện lưu trữ",
+  "chat_archived_empty": "Không có cuộc trò chuyện lưu trữ...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Thêm thành viên",
+  "chat_add_member_title": "Thêm thành viên...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Thêm thành viên",
+  "chat_add_member_button": "Thêm thành viên...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Chưa có gì ở đây để xem",
+  "chat_banned_users_empty": "Chưa có gì ở đây để xem...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2169,7 +2169,7 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Khám phá nhóm",
+  "feed_empty_explore_button": "Khám phá nhóm...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
@@ -2279,5 +2279,125 @@
   "feed_empty_create_first_post": "Tạo bài đăng đầu tiên của bạn",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Không có cuộc trò chuyện lưu trữ",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Không tìm thấy cộng đồng nào trong danh mục này. Hãy thử khám phá các danh mục khác hoặc tạo danh mục của riêng bạn.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Chưa có bình luận nào",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Chưa có cộng đồng nào",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Hãy là người đầu tiên bình luận",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Khám phá cộng đồng...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Tìm cộng đồng hoặc tạo cộng đồng của riêng bạn",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Hãy tạo cuộc trò chuyện để bắt đầu.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Xóa tìm kiếm...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Chưa có cuộc trò chuyện nào",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Các cuộc trò chuyện đã lưu trữ sẽ xuất hiện ở đây",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Tạo cuộc trò chuyện mới...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Tham gia cộng đồng để xem chúng ở đây",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Bắt đầu trò chuyện nhóm với bạn bè",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Không tìm thấy kết quả nào",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Tạo cuộc trò chuyện nhóm...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Chưa có cuộc trò chuyện nhóm nào",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Chưa có cộng đồng nào",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Khám phá của bạn trống",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Hãy thử tìm kiếm với các từ khóa khác nhau",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Hãy là người đầu tiên tạo ra một cộng đồng",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

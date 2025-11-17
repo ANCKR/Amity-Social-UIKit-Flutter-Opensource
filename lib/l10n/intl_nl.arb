@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Zoekgemeenschap en gebruiker",
+  "global_search_hint": "Zoekgemeenschap en gebruiker...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Zoek in mijn gemeenschap",
+  "search_my_community_hint": "Zoek in mijn gemeenschap...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Geen resultaten gevonden",
+  "search_no_results": "Geen resultaten gevonden...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Creëer een gemeenschap",
+  "community_create": "Creëer een gemeenschap...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Geef uw gemeenschap een naam",
+  "community_name_hint": "Geef uw gemeenschap een naam...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Voer een beschrijving in",
+  "community_description_hint": "Voer een beschrijving in...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -939,11 +939,11 @@
       }
     }
   },
-  "error_edit_post": "Kan bericht niet bewerken. Probeer het opnieuw.",
+  "error_edit_post": "Bewerken mislukt",
   "@error_edit_post": {
     "description": "Error message when editing a post fails"
   },
-  "error_create_post": "Kan bericht niet maken. Probeer het opnieuw.",
+  "error_create_post": "Maken mislukt",
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Zoek gebruiker",
+  "search_user_hint": "Zoek gebruiker...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1037,7 +1037,7 @@
   "@profile_update_success": {
     "description": "Success message when profile is updated"
   },
-  "profile_update_failed": "Kan uw profiel niet opslaan. Probeer het opnieuw.",
+  "profile_update_failed": "Opslaan mislukt",
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
@@ -1074,7 +1074,7 @@
   "@user_unreport_success": {
     "description": "success toast message for unreporting user"
   },
-  "user_unreport_error": "Failed to unreport user. Please try again.",
+  "user_unreport_error": "Rapportage mislukt",
   "@user_unreport_error": {
     "description": "error toast message for unreporting user"
   },
@@ -1094,7 +1094,7 @@
   "@user_unblock_error": {
     "description": "error toast message for unblocking user"
   },
-  "search_no_members_found": "No members found",
+  "search_no_members_found": "Geen leden gevonden",
   "@search_no_members_found": {
     "description": "Message displayed when no members are found in search"
   },
@@ -1150,7 +1150,7 @@
   "@member_add_success": {
     "description": "Success message when adding member to community"
   },
-  "member_add_error": "Failed to add member. Please try again.",
+  "member_add_error": "Toevoegen mislukt",
   "@member_add_error": {
     "description": "Error message when adding member fails"
   },
@@ -1158,7 +1158,7 @@
   "@moderator_promote_success": {
     "description": "Success message when promoting member to moderator"
   },
-  "moderator_promote_error": "Failed to promote member. Please try again.",
+  "moderator_promote_error": "Promotie mislukt",
   "@moderator_promote_error": {
     "description": "Error message when promoting member fails"
   },
@@ -1202,7 +1202,7 @@
   "@user_feed_blocked_title": {
     "description": "Title for blocked user feed empty state"
   },
-  "user_feed_blocked_description": "Unblock to see their posts.",
+  "user_feed_blocked_description": "Deblokkeren om te zien",
   "@user_feed_blocked_description": {
     "description": "Description for blocked user feed empty state"
   },
@@ -1351,7 +1351,7 @@
   "@category_default_title": {
     "description": "Default title for category page when category name is not available"
   },
-  "community_empty_state": "No community yet",
+  "community_empty_state": "Nog geen gemeenschap",
   "@community_empty_state": {
     "description": "Empty state message when there are no communities in the category"
   },
@@ -1359,11 +1359,11 @@
   "@community_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  "community_pending_requests_empty_title": "No pending requests available",
+  "community_pending_requests_empty_title": "Geen openstaande verzoeken beschikbaar",
   "@community_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  "community_pending_requests_empty_description": "Enable post review or join approval in community settings to manage requests.",
+  "community_pending_requests_empty_description": "Schakel postbeoordeling in of sluit u aan bij goedkeuring in de community-instellingen om verzoeken te beheren.",
   "@community_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
@@ -1375,7 +1375,7 @@
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
-  "community_pending_posts_empty": "No pending posts",
+  "community_pending_posts_empty": "Geen openstaande berichten",
   "@community_pending_posts_empty": {
     "description": "Empty state message when there are no pending posts"
   },
@@ -1583,11 +1583,11 @@
   "@chat_message_deleted": {
     "description": "Preview text for deleted messages"
   },
-  "chat_message_no_preview": "No preview supported for this message type",
+  "chat_message_no_preview": "Er wordt geen voorbeeld ondersteund voor dit berichttype",
   "@chat_message_no_preview": {
     "description": "Preview text for unsupported message types"
   },
-  "chat_no_message_yet": "No message yet",
+  "chat_no_message_yet": "Nog geen bericht",
   "@chat_no_message_yet": {
     "description": "Preview text when there are no messages in the chat"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Create Group",
+  "group_create": "Create Group...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Name your group",
+  "group_name_hint": "Name your group...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Enter description",
+  "group_description_hint": "Enter description...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1733,7 +1733,7 @@
       }
     }
   },
-  "group_empty_state": "No group yet",
+  "group_empty_state": "Nog geen groep",
   "@group_empty_state": {
     "description": "Empty state message when there are no groups"
   },
@@ -1741,11 +1741,11 @@
   "@group_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  "group_pending_requests_empty_title": "No pending requests available",
+  "group_pending_requests_empty_title": "Geen openstaande verzoeken beschikbaar",
   "@group_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  "group_pending_requests_empty_description": "Enable post review or join approval in group settings to manage requests.",
+  "group_pending_requests_empty_description": "Schakel postbeoordeling in of neem deel aan goedkeuring in de groepsinstellingen om verzoeken te beheren.",
   "@group_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
@@ -1757,7 +1757,7 @@
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
-  "group_pending_posts_empty": "No pending posts",
+  "group_pending_posts_empty": "Geen openstaande berichten",
   "@group_pending_posts_empty": {
     "description": "Empty state message when there are no pending posts"
   },
@@ -2063,5 +2063,341 @@
   "feed_empty_create_first_post": "Maak je eerste bericht",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "Member list updated.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "empty_archived_chats_title": "Geen archiefchat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "Failed to update group notification. Please try again.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "empty_explore_description_no_categories": "Vind een community of creëer je eigen community",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Laten we een chat maken om aan de slag te gaan.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Nog geen gesprek",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_group_chats_description": "Start een groepschat met vrienden",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "chat_add_member_button": "Add Member...",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_unban_confirmation_message": "Are you sure you want to unban this user? They will be able to rejoin the group again.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "empty_group_chats_cta": "Groepschat maken...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "chat_notification_silent_description": "No notifications for everyone in this channel. Members can't turn on notifications in the channel.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "empty_explore_title_no_categories": "Je verkenning is leeg",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_banned_users_updated": "Banned users updated.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "feed_filter_apply": "Apply Filters",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_sort_by": "Sort By",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "empty_category_communities_description": "Er zijn geen communities gevonden in deze categorie. Probeer andere categorieën te verkennen of maak uw eigen categorieën.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "Je verkenning is leeg",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "empty_my_communities_title": "Geen communities",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "general_error_title": "Something went wrong",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "Clear All",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "empty_my_communities_cta": "Ontdek gemeenschappen...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_group_left_success": "Group chat left.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_promote_member_button": "Promote member",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "empty_archived_chats_description": "Gearchiveerde chats verschijnen hier",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "chat_leave_group_title": "Leave Group",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "If you leave this group, you will no longer see new activities or participate in this group.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "feed_filter_title": "Filter Posts",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "chat_member_list_update_failed": "Failed to update member list. Please try again.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_filter_content_type": "Content Type",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "chat_member_permissions_update_failed": "Failed to update member permissions. Please try again.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "Zoek een groep of creëer uw eigen groep",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_group_notification_updated": "Group notification updated.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_messaging_section": "Messaging",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "empty_my_communities_description": "Sluit je aan bij communities om ze hier te bekijken",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_comments_description": "Wees de eerste die commentaar geeft",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "feed_filter_text": "Text",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_empty_title": "Je feed is leeg",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_add_member_title": "Add Member...",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_filter_images": "Images",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "empty_search_cta": "Duidelijke zoekopdracht...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "By default, members in this community will receive notifications, but they can choose to turn them off.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "feed_empty_description": "Zoek of maak groep",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Geen resultaten gevonden",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_title": "Geen groepen",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "feed_empty_create_button": "Maken",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "general_search": "Search",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "chat_your_preferences": "Your preferences",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "empty_search_description": "Probeer te zoeken met verschillende trefwoorden",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "chat_archived_empty": "Geen archiefchat...",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_banned_users_update_failed": "Failed to update banned users. Please try again.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "Unban",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "empty_comments_title": "Nog geen opmerkingen",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "feed_filter_oldest_first": "Oldest First",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_error_retry": "Please try again.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "empty_all_chats_cta": "Maak een nieuwe chat...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "chat_permission_moderators_description": "Members who are not moderators can read messages but cannot send any messages.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_banned_users_empty": "Hier is nog niets te zien...",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "Member permissions updated.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_settings_title": "Group Settings",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "Videos",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_latest_first": "Latest First",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_archived_title": "Archived chats...",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "feed_empty_explore_button": "Verkennen",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "Leave",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "empty_explore_title_no_communities": "Nog geen gemeenschappen",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "chat_permission_everyone_description": "Everyone can send a message in the group.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "Nog geen groep",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_no_group_description": "Laten we uw eigen groepen maken..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "chat_group_left_failed": "Failed to leave group chat. Please try again.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "Failed to update group profile. Please try again.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_group_profile_updated": "Group profile updated.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Group settings",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "empty_explore_description_no_communities": "Wees de eerste die een community creëert",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

@@ -111,13 +111,13 @@ class AppLocalizationsHe extends AppLocalizations {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user';
+  String get global_search_hint => 'Search community and user...';
 
   @override
-  String get search_my_community_hint => 'Search my community';
+  String get search_my_community_hint => 'Search my community...';
 
   @override
-  String get search_no_results => 'No results found';
+  String get search_no_results => 'לא נמצאו תוצאות...';
 
   @override
   String get title_communities => 'Communities';
@@ -392,16 +392,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community';
+  String get community_create => 'Create Community...';
 
   @override
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community';
+  String get community_name_hint => 'Name your community...';
 
   @override
-  String get community_description_hint => 'Enter description';
+  String get community_description_hint => 'Enter description...';
 
   @override
   String get community_edit => 'Edit Community';
@@ -850,22 +850,22 @@ class AppLocalizationsHe extends AppLocalizations {
   String get user_unreport => 'Unreport user';
 
   @override
-  String get feed_no_videos => 'No videos yet';
+  String get feed_no_videos => 'עדיין אין סרטונים';
 
   @override
-  String get feed_no_photos => 'No photos yet';
+  String get feed_no_photos => 'עדיין אין תמונות';
 
   @override
-  String get feed_no_pinned_posts => 'No pinned post yet';
+  String get feed_no_pinned_posts => 'אין עדיין פוסט מוצמד';
 
   @override
-  String get feed_no_posts => 'No posts yet';
+  String get feed_no_posts => 'אין עדיין פוסטים';
 
   @override
   String get member_add => 'Add member';
 
   @override
-  String get search_user_hint => 'Search user';
+  String get search_user_hint => 'Search user...';
 
   @override
   String get profile_edit => 'Edit profile';
@@ -924,7 +924,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get user_unblock_error => 'Failed to unblock user. Please try again.';
 
   @override
-  String get search_no_members_found => 'No members found';
+  String get search_no_members_found => 'לא נמצאו חברים';
 
   @override
   String get moderator_promotion_title => 'Moderator promotion';
@@ -1119,18 +1119,18 @@ class AppLocalizationsHe extends AppLocalizations {
   String get category_default_title => 'Category';
 
   @override
-  String get community_empty_state => 'No community yet';
+  String get community_empty_state => 'אין עדיין קהילה';
 
   @override
   String get community_pending_requests_title => 'Pending Requests';
 
   @override
   String get community_pending_requests_empty_title =>
-      'No pending requests available';
+      'אין בקשות ממתינות זמינות';
 
   @override
   String get community_pending_requests_empty_description =>
-      'Enable post review or join approval in community settings to manage requests.';
+      'אפשר לפרסם סקירה או להצטרף לאישור בהגדרות הקהילה כדי לנהל בקשות.';
 
   @override
   String get community_join_requests_coming_soon =>
@@ -1141,7 +1141,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'Decline pending post will permanently delete the selected post from community.';
 
   @override
-  String get community_pending_posts_empty => 'No pending posts';
+  String get community_pending_posts_empty => 'אין פוסטים ממתינים';
 
   @override
   String get community_pending_post_accept => 'Accept';
@@ -1305,16 +1305,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get chat_message_no_preview =>
-      'No preview supported for this message type';
+      'אין תצוגה מקדימה נתמכת עבור סוג הודעה זה';
 
   @override
-  String get chat_no_message_yet => 'No message yet';
+  String get chat_no_message_yet => 'אין עדיין הודעה';
 
   @override
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Create Group...';
 
   @override
   String get group_edit => 'Edit Group';
@@ -1323,10 +1323,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Name your group...';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Enter description...';
 
   @override
   String get group_about => 'About';
@@ -1432,18 +1432,17 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'עדיין אין קבוצה';
 
   @override
   String get group_pending_requests_title => 'Pending Requests';
 
   @override
-  String get group_pending_requests_empty_title =>
-      'No pending requests available';
+  String get group_pending_requests_empty_title => 'אין בקשות ממתינות זמינות';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'אפשר פוסט סקירה או הצטרפות לאישור בהגדרות הקבוצה כדי לנהל בקשות.';
 
   @override
   String get group_join_requests_coming_soon =>
@@ -1454,7 +1453,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'Decline pending post will permanently delete the selected post from group.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'אין פוסטים ממתינים';
 
   @override
   String get group_pending_post_accept => 'Accept';
@@ -1636,19 +1635,19 @@ class AppLocalizationsHe extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'אין צ\'אט בארכיון...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1782,28 +1781,28 @@ class AppLocalizationsHe extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'הפיד שלך ריק';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'מצא קבוצה או צור קבוצה משלך';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'חקור את הקבוצה...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'צור קבוצה';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'החקירה שלך ריקה';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'עדיין אין קבוצה';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description => 'מצא קבוצה או צור קבוצה משלך';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'בואו ניצור קבוצות משלכם..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1829,77 +1828,74 @@ class AppLocalizationsHe extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'עדיין אין קהילות';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'הצטרף לקהילות כדי לראות אותם כאן';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'חקור קהילות...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'עדיין אין צ\'אטים קבוצתיים';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description => 'התחל צ\'אט קבוצתי עם חברים';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'צור צ\'אט קבוצתי...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'עדיין אין שיחה';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'בואו ניצור צ\'אט כדי להתחיל.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'צור צ\'אט חדש...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'אין צ\'אט בארכיון';
 
   @override
-  String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+  String get empty_archived_chats_description => 'צ\'אטים בארכיון יופיעו כאן';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'אין תגובות עדיין';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'היה הראשון להגיב';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'לא נמצאו תוצאות';
 
   @override
-  String get empty_search_description =>
-      'Try searching with different keywords';
+  String get empty_search_description => 'נסה לחפש עם מילות מפתח שונות';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'נקה חיפוש';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'לא נמצאו קהילות בקטגוריה זו. נסה לחקור קטגוריות אחרות או ליצור קטגוריות משלך.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'החקירה שלך ריקה';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'מצא קהילה או צור קהילה משלך';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'עדיין אין קהילות';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'היה הראשון ליצור קהילה';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'פוסט זה מכיל מדיה';
@@ -2062,13 +2058,13 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user';
+  String get global_search_hint => 'Search community and user...';
 
   @override
-  String get search_my_community_hint => 'Search my community';
+  String get search_my_community_hint => 'Search my community...';
 
   @override
-  String get search_no_results => 'No results found';
+  String get search_no_results => 'לא נמצאו תוצאות...';
 
   @override
   String get title_communities => 'Communities';
@@ -2343,16 +2339,16 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community';
+  String get community_create => 'Create Community...';
 
   @override
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community';
+  String get community_name_hint => 'Name your community...';
 
   @override
-  String get community_description_hint => 'Enter description';
+  String get community_description_hint => 'Enter description...';
 
   @override
   String get community_edit => 'Edit Community';
@@ -2801,22 +2797,22 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get user_unreport => 'Unreport user';
 
   @override
-  String get feed_no_videos => 'No videos yet';
+  String get feed_no_videos => 'עדיין אין סרטונים';
 
   @override
-  String get feed_no_photos => 'No photos yet';
+  String get feed_no_photos => 'עדיין אין תמונות';
 
   @override
-  String get feed_no_pinned_posts => 'No pinned post yet';
+  String get feed_no_pinned_posts => 'אין עדיין פוסט מוצמד';
 
   @override
-  String get feed_no_posts => 'No posts yet';
+  String get feed_no_posts => 'אין עדיין פוסטים';
 
   @override
   String get member_add => 'Add member';
 
   @override
-  String get search_user_hint => 'Search user';
+  String get search_user_hint => 'Search user...';
 
   @override
   String get profile_edit => 'Edit profile';
@@ -2875,7 +2871,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get user_unblock_error => 'Failed to unblock user. Please try again.';
 
   @override
-  String get search_no_members_found => 'No members found';
+  String get search_no_members_found => 'לא נמצאו חברים';
 
   @override
   String get moderator_promotion_title => 'Moderator promotion';
@@ -3070,18 +3066,18 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get category_default_title => 'Category';
 
   @override
-  String get community_empty_state => 'No community yet';
+  String get community_empty_state => 'אין עדיין קהילה';
 
   @override
   String get community_pending_requests_title => 'Pending Requests';
 
   @override
   String get community_pending_requests_empty_title =>
-      'No pending requests available';
+      'אין בקשות ממתינות זמינות';
 
   @override
   String get community_pending_requests_empty_description =>
-      'Enable post review or join approval in community settings to manage requests.';
+      'אפשר לפרסם סקירה או להצטרף לאישור בהגדרות הקהילה כדי לנהל בקשות.';
 
   @override
   String get community_join_requests_coming_soon =>
@@ -3092,7 +3088,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'Decline pending post will permanently delete the selected post from community.';
 
   @override
-  String get community_pending_posts_empty => 'No pending posts';
+  String get community_pending_posts_empty => 'אין פוסטים ממתינים';
 
   @override
   String get community_pending_post_accept => 'Accept';
@@ -3256,16 +3252,16 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
 
   @override
   String get chat_message_no_preview =>
-      'No preview supported for this message type';
+      'אין תצוגה מקדימה נתמכת עבור סוג הודעה זה';
 
   @override
-  String get chat_no_message_yet => 'No message yet';
+  String get chat_no_message_yet => 'אין עדיין הודעה';
 
   @override
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Create Group...';
 
   @override
   String get group_edit => 'Edit Group';
@@ -3274,10 +3270,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Name your group...';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Enter description...';
 
   @override
   String get group_about => 'About';
@@ -3383,18 +3379,17 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'עדיין אין קבוצה';
 
   @override
   String get group_pending_requests_title => 'Pending Requests';
 
   @override
-  String get group_pending_requests_empty_title =>
-      'No pending requests available';
+  String get group_pending_requests_empty_title => 'אין בקשות ממתינות זמינות';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'אפשר פוסט סקירה או הצטרפות לאישור בהגדרות הקבוצה כדי לנהל בקשות.';
 
   @override
   String get group_join_requests_coming_soon =>
@@ -3405,7 +3400,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'Decline pending post will permanently delete the selected post from group.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'אין פוסטים ממתינים';
 
   @override
   String get group_pending_post_accept => 'Accept';
@@ -3587,10 +3582,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get general_error_retry => 'אנא נסה שוב.';
 
   @override
-  String get chat_archived_title => 'צ\'אטים בארכיון';
+  String get chat_archived_title => 'צ\'אטים בארכיון...';
 
   @override
-  String get chat_archived_empty => 'אין צ\'אט בארכיון';
+  String get chat_archived_empty => 'אין צ\'אט בארכיון...';
 
   @override
   String get chat_add_member_title => 'הוסף חבר';
@@ -3599,7 +3594,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get chat_add_member_button => 'הוסף חבר';
 
   @override
-  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות';
+  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3661,6 +3656,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
 
   @override
   String get chat_leave_button => 'לַעֲזוֹב';
+
+  @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
 
   @override
   String get chat_promote_member_button => 'קדם חבר';
@@ -3735,7 +3734,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get feed_empty_description => 'מצא קבוצה או צור קבוצה משלך';
 
   @override
-  String get feed_empty_explore_button => 'חקור את הקבוצה';
+  String get feed_empty_explore_button => 'חקור את הקבוצה...';
 
   @override
   String get feed_empty_create_button => 'צור קבוצה';
@@ -3751,6 +3750,99 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
 
   @override
   String get explore_no_group_description => 'בואו ניצור קבוצות משלכם..';
+
+  @override
+  String get general_open_settings => 'Open settings';
+
+  @override
+  String get general_remove => 'Remove';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Post shared successfully';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'are you sure you want to cancel? Your Changes won\'t be saved.';
+
+  @override
+  String get story_remove_link_message =>
+      'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'עדיין אין קהילות';
+
+  @override
+  String get empty_my_communities_description =>
+      'הצטרף לקהילות כדי לראות אותם כאן';
+
+  @override
+  String get empty_my_communities_cta => 'חקור קהילות...';
+
+  @override
+  String get empty_group_chats_title => 'עדיין אין צ\'אטים קבוצתיים';
+
+  @override
+  String get empty_group_chats_description => 'התחל צ\'אט קבוצתי עם חברים';
+
+  @override
+  String get empty_group_chats_cta => 'צור צ\'אט קבוצתי...';
+
+  @override
+  String get empty_all_chats_title => 'עדיין אין שיחה';
+
+  @override
+  String get empty_all_chats_description => 'בואו ניצור צ\'אט כדי להתחיל.';
+
+  @override
+  String get empty_all_chats_cta => 'צור צ\'אט חדש...';
+
+  @override
+  String get empty_archived_chats_title => 'אין צ\'אט בארכיון';
+
+  @override
+  String get empty_archived_chats_description => 'צ\'אטים בארכיון יופיעו כאן';
+
+  @override
+  String get empty_comments_title => 'אין תגובות עדיין';
+
+  @override
+  String get empty_comments_description => 'היה הראשון להגיב';
+
+  @override
+  String get empty_search_title => 'לא נמצאו תוצאות';
+
+  @override
+  String get empty_search_description => 'נסה לחפש עם מילות מפתח שונות';
+
+  @override
+  String get empty_search_cta => 'נקה חיפוש';
+
+  @override
+  String get empty_category_communities_description =>
+      'לא נמצאו קהילות בקטגוריה זו. נסה לחקור קטגוריות אחרות או ליצור קטגוריות משלך.';
+
+  @override
+  String get empty_explore_title_no_categories => 'החקירה שלך ריקה';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'מצא קהילה או צור קהילה משלך';
+
+  @override
+  String get empty_explore_title_no_communities => 'עדיין אין קהילות';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'היה הראשון ליצור קהילה';
+
+  @override
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'פוסט זה מכיל מדיה';

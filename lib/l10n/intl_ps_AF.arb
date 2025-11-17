@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "ټولنه او کارن لټون",
+  "global_search_hint": "ټولنه او کارن لټون...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "زما ټولنه وپلټئ",
+  "search_my_community_hint": "زما ټولنه وپلټئ...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "هیڅ پایله ونه موندل شوه",
+  "search_no_results": "هیڅ پایله ونه موندل شوه...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "ټولنه جوړه کړئ",
+  "community_create": "ټولنه جوړه کړئ...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "خپلې ټولنې ته نوم ورکړئ",
+  "community_name_hint": "خپلې ټولنې ته نوم ورکړئ...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "توضیحات دننه کړئ",
+  "community_description_hint": "توضیحات دننه کړئ...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "د کارونکي لټون",
+  "search_user_hint": "د کارونکي لټون...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "ګروپ جوړ کړئ",
+  "group_create": "ګروپ جوړ کړئ...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "خپل ګروپ ته نوم ورکړئ",
+  "group_name_hint": "خپل ګروپ ته نوم ورکړئ...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "توضیحات دننه کړئ",
+  "group_description_hint": "توضیحات دننه کړئ...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,33 +1989,25 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "آرشیف شوي چټونه",
+  "chat_archived_title": "آرشیف شوي چټونه...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "هیڅ آرشیف چیٹ نشته",
+  "chat_archived_empty": "هیڅ آرشیف چیٹ نشته...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "غړی اضافه کړئ",
+  "chat_add_member_title": "غړی اضافه کړئ...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "غړی اضافه کړئ",
+  "chat_add_member_button": "غړی اضافه کړئ...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_no_results_found": "هیڅ پایله ونه موندل شوه",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
-  },
-  "chat_banned_users_empty": "دلته د لیدلو لپاره هیڅ شی نشته",
+  "chat_banned_users_empty": "دلته د لیدلو لپاره هیڅ شی نشته...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "د بندیز تصدیق کول",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
   },
   "chat_unban_confirmation_message": "ایا تاسو ډاډه یاست چې تاسو د دې کارن بندیز لرې کول غواړئ؟ دوی به وکولای شي چې یو ځل بیا له ډلې سره یوځای شي.",
   "@chat_unban_confirmation_message": {
@@ -2177,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "ګروپ وپلټئ",
+  "feed_empty_explore_button": "ګروپ وپلټئ...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "ګروپ جوړ کړئ",
+  "feed_empty_create_button": "ګروپ جوړ کړئ...",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2287,5 +2279,125 @@
   "feed_empty_create_first_post": "خپل لومړی پوسټ جوړ کړئ",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "هیڅ آرشیف چیٹ نشته",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "په دې کټګورۍ کې هیڅ ټولنه نه موندل کیږي. د نورو کټګوریو سپړلو هڅه وکړئ یا خپل ځان جوړ کړئ.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "تراوسه کومه تبصره نشته",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "تراوسه هیڅ ټولنه نشته",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "د تبصرو لپاره لومړی شئ",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "ټولنې وپلټئ...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "ټولنه ومومئ یا خپل ځان جوړ کړئ",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "راځئ چې د پیل کولو لپاره چیټ جوړ کړو.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "پاک لټون",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "تر اوسه خبرې نه دي شوي",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "آرشیف شوي چټونه به دلته ښکاره شي",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "نوې چیٹ جوړ کړئ...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "د ټولنو سره یوځای شئ ترڅو دوی دلته وګورئ",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "د ملګرو سره ډله ایز چیٹ پیل کړئ",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "هیڅ پایله ونه موندل شوه",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "ډله ایز چیٹ جوړ کړئ...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "تر اوسه هیڅ ګروپ چیټ نشته",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "تراوسه هیڅ ټولنه نشته",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "ستاسو سپړنه خالي ده",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "د مختلف کلیمو سره د لټون کولو هڅه وکړئ",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "د ټولنې د جوړولو لپاره لومړی شئ",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

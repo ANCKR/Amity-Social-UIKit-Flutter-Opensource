@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Pretražite zajednicu i korisnika",
+  "global_search_hint": "Pretražite zajednicu i korisnika...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Pretraži moju zajednicu",
+  "search_my_community_hint": "Pretraži moju zajednicu...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Nema pronađenih rezultata",
+  "search_no_results": "Nema pronađenih rezultata...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Kreirajte zajednicu",
+  "community_create": "Kreirajte zajednicu...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Imenujte svoju zajednicu",
+  "community_name_hint": "Imenujte svoju zajednicu...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Unesite opis",
+  "community_description_hint": "Unesite opis...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Pretraži korisnika",
+  "search_user_hint": "Pretraži korisnika...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Kreiraj grupu",
+  "group_create": "Kreiraj grupu...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Imenujte svoju grupu",
+  "group_name_hint": "Imenujte svoju grupu...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Unesite opis",
+  "group_description_hint": "Unesite opis...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,33 +1989,25 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Arhivirani razgovori",
+  "chat_archived_title": "Arhivirani razgovori...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Nema arhivskog chata",
+  "chat_archived_empty": "Nema arhivskog chata...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Dodaj člana",
+  "chat_add_member_title": "Dodaj člana...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Dodaj člana",
+  "chat_add_member_button": "Dodaj člana...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_no_results_found": "Nema pronađenih rezultata",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
-  },
-  "chat_banned_users_empty": "Još nema šta da se vidi",
+  "chat_banned_users_empty": "Još nema šta da se vidi...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "Potvrdite deban",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
   },
   "chat_unban_confirmation_message": "Jeste li sigurni da želite poništiti zabranu ovog korisnika? Moći će se ponovo pridružiti grupi.",
   "@chat_unban_confirmation_message": {
@@ -2177,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Istražite grupu",
+  "feed_empty_explore_button": "Istražite grupu...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "Kreiraj grupu",
+  "feed_empty_create_button": "Kreiraj grupu...",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2292,11 +2284,11 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "cta_create_community": "Kreirajte zajednicu",
+  "cta_create_community": "Kreirajte zajednicu...",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "Kreirajte novi chat",
+  "empty_all_chats_cta": "Kreirajte novi chat...",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2344,7 +2336,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "Kreirajte grupni chat",
+  "empty_group_chats_cta": "Kreirajte grupni chat...",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2356,7 +2348,7 @@
   "@empty_group_chats_title": {
     "description": "Title for empty group chats list"
   },
-  "empty_my_communities_cta": "Istražite zajednice",
+  "empty_my_communities_cta": "Istražite zajednice...",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },
@@ -2368,7 +2360,7 @@
   "@empty_my_communities_title": {
     "description": "Title for empty my communities list"
   },
-  "empty_search_cta": "Obriši pretragu",
+  "empty_search_cta": "Obriši pretragu...",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },

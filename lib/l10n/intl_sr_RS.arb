@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Претражите заједницу и корисника",
+  "global_search_hint": "Претражите заједницу и корисника...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Претражи моју заједницу",
+  "search_my_community_hint": "Претражи моју заједницу...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Нема пронађених резултата",
+  "search_no_results": "Нема пронађених резултата...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Цреате Цоммунити",
+  "community_create": "Цреате Цоммунити...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Именујте своју заједницу",
+  "community_name_hint": "Именујте своју заједницу...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Унесите опис",
+  "community_description_hint": "Унесите опис...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Претражи корисника",
+  "search_user_hint": "Претражи корисника...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Креирај групу",
+  "group_create": "Креирај групу...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Именујте своју групу",
+  "group_name_hint": "Именујте своју групу...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Унесите опис",
+  "group_description_hint": "Унесите опис...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,23 +1989,23 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Архивирана ћаскања",
+  "chat_archived_title": "Архивирана ћаскања...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Нема архивског ћаскања",
+  "chat_archived_empty": "Нема архивског ћаскања...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Додај члана",
+  "chat_add_member_title": "Додај члана...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Додај члана",
+  "chat_add_member_button": "Додај члана...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Овде још нема шта да се види",
+  "chat_banned_users_empty": "Овде још нема шта да се види...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2169,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Истражите групу",
+  "feed_empty_explore_button": "Истражите групу...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "Креирајте групу",
+  "feed_empty_create_button": "Креирајте групу...",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2279,5 +2279,125 @@
   "feed_empty_create_first_post": "Направите своју прву објаву",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Нема архивског ћаскања",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "У овој категорији није пронађена ниједна заједница. Покушајте да истражите друге категорије или направите сопствене.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Још нема коментара",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Још нема заједница",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Будите први који ће оставити коментар",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Истражите заједнице...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Пронађите заједницу или креирајте сопствену",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Хајде да направимо ћаскање да започнемо.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Обриши претрагу...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Још нема разговора",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Архивирана ћаскања ће се појавити овде",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Креирајте ново ћаскање...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Придружите се заједницама да бисте их видели овде",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Започните групно ћаскање са пријатељима",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Нема пронађених резултата",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Креирајте групно ћаскање...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Још нема групних ћаскања",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Још нема заједница",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Ваше истраживање је празно",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Покушајте да претражујете са различитим кључним речима",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Будите први који ће створити заједницу",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

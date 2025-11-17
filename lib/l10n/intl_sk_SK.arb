@@ -20,7 +20,7 @@
   "@tab_my_groups": {
     "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
   },
-  "tab_feed": "Feed",
+  "tab_feed": "Krmivo",
   "@tab_feed": {
     "description": "Label for the feed tab in the main navigation (shows content feeds)"
   },
@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Vyhľadajte komunitu a používateľa",
+  "global_search_hint": "Vyhľadajte komunitu a používateľa...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Prehľadať moju komunitu",
+  "search_my_community_hint": "Prehľadať moju komunitu...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Nenašli sa žiadne výsledky",
+  "search_no_results": "Nenašli sa žiadne výsledky...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "Anketa musí obsahovať aspoň {minOptions} možností.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Toto {content} bude natrvalo odstránené.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Vytvoriť komunitu",
+  "community_create": "Vytvoriť komunitu...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Pomenujte svoju komunitu",
+  "community_name_hint": "Pomenujte svoju komunitu...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Zadajte popis",
+  "community_description_hint": "Zadajte popis...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Dosiahli ste limit nahrávania {maxUploads} obrázkov. Žiadne ďalšie obrázky sa neuložia.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Dosiahli ste limit nahrávania {maxUploads} videí. Žiadne ďalšie videá sa neuložia.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -947,7 +947,7 @@
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "Anketová otázka nemôže presiahnuť {maxQuestionLength} znakov.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "Možnosť prieskumu nemôže presiahnuť {maxQuestionLength} znakov.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Vyhľadať používateľa",
+  "search_user_hint": "Vyhľadať používateľa...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} vám nebude môcť poslať správu. Nedostanú upozornenie, že ste ich zablokovali.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "{displayName} vám teraz bude môcť poslať správu. Nedostanú upozornenie, že ste ich odblokovali.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "{count} žiadostí vyžaduje vaše schválenie",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} nebude môcť vidieť príspevky a komentáre, ktoré ste vytvorili. Nedostanú upozornenie, že ste ich zablokovali.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} bude teraz môcť vidieť príspevky a komentáre, ktoré ste vytvorili. Nedostanú upozornenie, že ste ich odblokovali.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Odmietnutím čakajúceho príspevku natrvalo odstránite vybratý príspevok z komunity.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Možnosť {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Viacnásobný výber",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Končí sa {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Odpovedanie na {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Vytvoriť skupinu",
+  "group_create": "Vytvoriť skupinu...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Pomenujte svoju skupinu",
+  "group_name_hint": "Pomenujte svoju skupinu...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Zadajte popis",
+  "group_description_hint": "Zadajte popis...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Odmietnutím čakajúceho príspevku natrvalo odstránite vybraný príspevok zo skupiny.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1989,23 +1989,23 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Archivované rozhovory",
+  "chat_archived_title": "Archivované rozhovory...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Žiadny archívny rozhovor",
+  "chat_archived_empty": "Žiadny archívny rozhovor...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Pridať člena",
+  "chat_add_member_title": "Pridať člena...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Pridať člena",
+  "chat_add_member_button": "Pridať člena...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Zatiaľ tu nie je nič vidieť",
+  "chat_banned_users_empty": "Zatiaľ tu nie je nič vidieť...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2169,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Preskúmať skupinu",
+  "feed_empty_explore_button": "Preskúmať skupinu...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "Vytvoriť skupinu",
+  "feed_empty_create_button": "Vytvoriť skupinu...",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2279,5 +2279,125 @@
   "feed_empty_create_first_post": "Vytvorte svoj prvý príspevok",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Žiadny archívny rozhovor",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "V tejto kategórii sa nenašli žiadne komunity. Skúste preskúmať iné kategórie alebo si vytvorte vlastnú.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Zatiaľ žiadne komentáre",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Príspevok bol úspešne zdieľaný",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Zatiaľ žiadne komunity",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Pridajte komentár ako prvý",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "Pred odchodom musíte povýšiť iného člena na moderátora.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Preskúmajte komunity...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Otvorte nastavenia",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Nájdite komunitu alebo si vytvorte vlastnú",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Ak chcete začať, vytvorte čet.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Vymazať vyhľadávanie...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "si si istý, že chceš zrušiť? Vaše zmeny sa neuložia.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Zatiaľ žiadna konverzácia",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Tu sa zobrazia archivované rozhovory",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Vytvoriť nový chat...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Odstrániť",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Pripojte sa ku komunitám a uvidíte ich tu",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Začnite skupinový rozhovor s priateľmi",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Vytvorte komunitu...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Nenašli sa žiadne výsledky",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Vytvorte skupinový chat...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Zatiaľ žiadne skupinové rozhovory",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Zatiaľ žiadne komunity",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Váš prieskum je prázdny",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "Tento odkaz bude z príbehu odstránený.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Skúste hľadať pomocou rôznych kľúčových slov",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Buďte prvý, kto vytvorí komunitu",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

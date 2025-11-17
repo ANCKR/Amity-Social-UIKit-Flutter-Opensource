@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Kërko komunitetin dhe përdoruesin",
+  "global_search_hint": "Kërko komunitetin dhe përdoruesin...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Kërko komunitetin tim",
+  "search_my_community_hint": "Kërko komunitetin tim...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Nuk u gjet asnjë rezultat",
+  "search_no_results": "Nuk u gjet asnjë rezultat...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Krijo Komunitet",
+  "community_create": "Krijo Komunitet...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Emërtoni komunitetin tuaj",
+  "community_name_hint": "Emërtoni komunitetin tuaj...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Fut përshkrimin",
+  "community_description_hint": "Fut përshkrimin...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Kërko përdorues",
+  "search_user_hint": "Kërko përdorues...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Krijo grup",
+  "group_create": "Krijo grup...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Emërtoni grupin tuaj",
+  "group_name_hint": "Emërtoni grupin tuaj...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Fut përshkrimin",
+  "group_description_hint": "Fut përshkrimin...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,23 +1989,23 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Bisedat e arkivuara",
+  "chat_archived_title": "Bisedat e arkivuara...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Asnjë bisedë arkivore",
+  "chat_archived_empty": "Asnjë bisedë arkivore...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Shto Anëtar",
+  "chat_add_member_title": "Shto Anëtar...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Shto Anëtar",
+  "chat_add_member_button": "Shto Anëtar...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Nuk ka asgjë për të parë ende këtu",
+  "chat_banned_users_empty": "Nuk ka asgjë për të parë ende këtu...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2169,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Eksploroni grupin",
+  "feed_empty_explore_button": "Eksploroni grupin...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "Krijo grup",
+  "feed_empty_create_button": "Krijo grup...",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2279,5 +2279,125 @@
   "feed_empty_create_first_post": "Krijo postimin tënd të parë",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Asnjë bisedë arkivore",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Nuk u gjet asnjë komunitet në këtë kategori. Provoni të eksploroni kategori të tjera ose krijoni tuajën.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Ende nuk ka komente",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Nuk ka ende komunitete",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Bëhu i pari që komenton",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Eksploroni komunitetet...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Gjeni komunitetin ose krijoni tuajin",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Le të krijojmë bisedë për të filluar.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Pastro kërkimin...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Asnjë bisedë ende",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Bisedat e arkivuara do të shfaqen këtu",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Krijo një bisedë të re...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Bashkohuni me komunitetet për t'i parë ato këtu",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Filloni një bisedë në grup me miqtë",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Nuk u gjet asnjë rezultat",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Krijo bisedë në grup...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Nuk ka ende biseda në grup",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Nuk ka ende komunitete",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Eksplorimi juaj është bosh",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Provoni të kërkoni me fjalë kyçe të ndryshme",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Bëhu i pari që krijon një komunitet",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "بحث المجتمع والمستخدم",
+  "global_search_hint": "بحث المجتمع والمستخدم...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "ابحث في مجتمعي",
+  "search_my_community_hint": "ابحث في مجتمعي...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "لم يتم العثور على نتائج",
+  "search_no_results": "لم يتم العثور على نتائج...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "إنشاء مجتمع",
+  "community_create": "إنشاء مجتمع...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "قم بتسمية مجتمعك",
+  "community_name_hint": "قم بتسمية مجتمعك...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "أدخل الوصف",
+  "community_description_hint": "أدخل الوصف...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "مستخدم البحث",
+  "search_user_hint": "مستخدم البحث...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "إنشاء مجموعة",
+  "group_create": "إنشاء مجموعة...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "قم بتسمية مجموعتك",
+  "group_name_hint": "قم بتسمية مجموعتك...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "أدخل الوصف",
+  "group_description_hint": "أدخل الوصف...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,11 +1989,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "الدردشات المؤرشفة",
+  "chat_archived_title": "الدردشات المؤرشفة...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "لا توجد دردشة أرشيفية",
+  "chat_archived_empty": "لا توجد دردشة أرشيفية...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,17 +2005,9 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_no_results_found": "لم يتم العثور على نتائج",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
-  },
-  "chat_banned_users_empty": "لا شيء هنا لنرى بعد",
+  "chat_banned_users_empty": "لا شيء هنا لنرى بعد...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "تأكيد إلغاء الحظر",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
   },
   "chat_unban_confirmation_message": "هل أنت متأكد أنك تريد رفع الحظر عن هذا المستخدم؟ سيكونون قادرين على الانضمام إلى المجموعة مرة أخرى.",
   "@chat_unban_confirmation_message": {
@@ -2177,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "استكشاف المجموعة",
+  "feed_empty_explore_button": "استكشاف المجموعة...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "إنشاء مجموعة",
+  "feed_empty_create_button": "إنشاء مجموعة...",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2292,11 +2284,11 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "cta_create_community": "إنشاء المجتمع",
+  "cta_create_community": "إنشاء المجتمع...",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "إنشاء دردشة جديدة",
+  "empty_all_chats_cta": "إنشاء دردشة جديدة...",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2344,7 +2336,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "إنشاء دردشة جماعية",
+  "empty_group_chats_cta": "إنشاء دردشة جماعية...",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2356,7 +2348,7 @@
   "@empty_group_chats_title": {
     "description": "Title for empty group chats list"
   },
-  "empty_my_communities_cta": "استكشاف المجتمعات",
+  "empty_my_communities_cta": "استكشاف المجتمعات...",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },

@@ -113,13 +113,13 @@ class AppLocalizationsSl extends AppLocalizations {
       'Vsi člani bodo odstranjeni iz skupine. Vse objave, sporočila, odzivi in ​​mediji, ki so v skupni rabi v skupini, bodo izbrisani. Tega ni mogoče razveljaviti.';
 
   @override
-  String get global_search_hint => 'Iskanje skupnosti in uporabnika';
+  String get global_search_hint => 'Iskanje skupnosti in uporabnika...';
 
   @override
-  String get search_my_community_hint => 'Preišči mojo skupnost';
+  String get search_my_community_hint => 'Preišči mojo skupnost...';
 
   @override
-  String get search_no_results => 'Ni rezultatov';
+  String get search_no_results => 'Ni rezultatov...';
 
   @override
   String get title_communities => 'skupnosti';
@@ -391,16 +391,16 @@ class AppLocalizationsSl extends AppLocalizations {
   String get community_placeholder_members => '1,2 tisoč članov';
 
   @override
-  String get community_create => 'Ustvari skupnost';
+  String get community_create => 'Ustvari skupnost...';
 
   @override
   String get community_name => 'Ime skupnosti';
 
   @override
-  String get community_name_hint => 'Poimenujte svojo skupnost';
+  String get community_name_hint => 'Poimenujte svojo skupnost...';
 
   @override
-  String get community_description_hint => 'Vnesite opis';
+  String get community_description_hint => 'Vnesite opis...';
 
   @override
   String get community_edit => 'Uredi skupnost';
@@ -870,7 +870,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get member_add => 'Dodaj člana';
 
   @override
-  String get search_user_hint => 'Išči uporabnika';
+  String get search_user_hint => 'Išči uporabnika...';
 
   @override
   String get profile_edit => 'Uredi profil';
@@ -1314,16 +1314,16 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get chat_message_no_preview =>
-      'No preview supported for this message type';
+      'Predogled za to vrsto sporočila ni podprt';
 
   @override
-  String get chat_no_message_yet => 'No message yet';
+  String get chat_no_message_yet => 'Ni še sporočila';
 
   @override
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Create Group...';
 
   @override
   String get group_edit => 'Edit Group';
@@ -1332,10 +1332,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Name your group...';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Enter description...';
 
   @override
   String get group_about => 'About';
@@ -1441,18 +1441,17 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'Ni še skupine';
 
   @override
   String get group_pending_requests_title => 'Pending Requests';
 
   @override
-  String get group_pending_requests_empty_title =>
-      'No pending requests available';
+  String get group_pending_requests_empty_title => 'Ni čakajočih zahtev';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'Omogočite pregled objave ali odobritev pridružitve v nastavitvah skupine za upravljanje zahtev.';
 
   @override
   String get group_join_requests_coming_soon =>
@@ -1463,7 +1462,7 @@ class AppLocalizationsSl extends AppLocalizations {
       'Decline pending post will permanently delete the selected post from group.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'Ni čakajočih objav';
 
   @override
   String get group_pending_post_accept => 'Accept';
@@ -1647,19 +1646,19 @@ class AppLocalizationsSl extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Brez arhivskega klepeta...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1793,28 +1792,29 @@ class AppLocalizationsSl extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Vaš vir je prazen';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Poiščite skupino ali ustvarite svojo';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Raziščite skupino...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Ustvari skupino...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Vaše raziskovanje je prazno';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Ni še skupine';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'Poiščite skupino ali ustvarite svojo';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Ustvarimo svoje skupine..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1840,77 +1840,77 @@ class AppLocalizationsSl extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Ni še nobene skupnosti';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Pridružite se skupnostim, da jih vidite tukaj';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Raziščite skupnosti...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Ni še nobenih skupinskih klepetov';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description =>
+      'Začnite skupinski klepet s prijatelji';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Ustvari skupinski klepet...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Pogovora še ni';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'Za začetek ustvarimo klepet.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Ustvari nov klepet...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Brez arhivskega klepeta';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Tukaj bodo prikazani arhivirani klepeti';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Še ni komentarjev';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'Bodite prvi in ​​komentirajte';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Ni rezultatov';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Poskusite iskati z drugimi ključnimi besedami';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Počisti iskanje...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'V tej kategoriji ni najdenih skupnosti. Poskusite raziskati druge kategorije ali ustvarite svojo.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Vaše raziskovanje je prazno';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Poiščite skupnost ali ustvarite svojo';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Ni še nobene skupnosti';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Bodite prvi, ki bo ustvaril skupnost';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Ta objava vsebuje medije';
@@ -2075,13 +2075,13 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
       'Vsi člani bodo odstranjeni iz skupine. Vse objave, sporočila, odzivi in ​​mediji, ki so v skupni rabi v skupini, bodo izbrisani. Tega ni mogoče razveljaviti.';
 
   @override
-  String get global_search_hint => 'Iskanje skupnosti in uporabnika';
+  String get global_search_hint => 'Iskanje skupnosti in uporabnika...';
 
   @override
-  String get search_my_community_hint => 'Preišči mojo skupnost';
+  String get search_my_community_hint => 'Preišči mojo skupnost...';
 
   @override
-  String get search_no_results => 'Ni rezultatov';
+  String get search_no_results => 'Ni rezultatov...';
 
   @override
   String get title_communities => 'skupnosti';
@@ -2244,7 +2244,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'Anketa mora vsebovati vsaj $minOptions možnosti.';
   }
 
   @override
@@ -2299,7 +2299,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'Ta $content bo trajno izbrisan.';
   }
 
   @override
@@ -2353,16 +2353,16 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get community_placeholder_members => '1,2 tisoč članov';
 
   @override
-  String get community_create => 'Ustvari skupnost';
+  String get community_create => 'Ustvari skupnost...';
 
   @override
   String get community_name => 'Ime skupnosti';
 
   @override
-  String get community_name_hint => 'Poimenujte svojo skupnost';
+  String get community_name_hint => 'Poimenujte svojo skupnost...';
 
   @override
-  String get community_description_hint => 'Vnesite opis';
+  String get community_description_hint => 'Vnesite opis...';
 
   @override
   String get community_edit => 'Uredi skupnost';
@@ -2759,12 +2759,12 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'Dosegli ste omejitev nalaganja $maxUploads slik. Dodatne slike ne bodo shranjene.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'Dosegli ste omejitev nalaganja $maxUploads videoposnetkov. Dodatni videoposnetki ne bodo shranjeni.';
   }
 
   @override
@@ -2777,12 +2777,12 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'Anketno vprašanje ne sme presegati $maxQuestionLength znakov.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'Anketna možnost ne sme presegati $maxQuestionLength znakov.';
   }
 
   @override
@@ -2832,7 +2832,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get member_add => 'Dodaj člana';
 
   @override
-  String get search_user_hint => 'Išči uporabnika';
+  String get search_user_hint => 'Išči uporabnika...';
 
   @override
   String get profile_edit => 'Uredi profil';
@@ -3010,7 +3010,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName vam ne bo mogel poslati sporočila. Ne bodo obveščeni, da ste jih blokirali.';
   }
 
   @override
@@ -3018,7 +3018,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName vam bo zdaj lahko poslal sporočilo. Ne bodo obveščeni, da ste jih odblokirali.';
   }
 
   @override
@@ -3032,7 +3032,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return 'Zahteve $count potrebujejo vašo odobritev';
   }
 
   @override
@@ -3059,7 +3059,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName ne bo mogel videti objav in komentarjev, ki ste jih ustvarili. Ne bodo obveščeni, da ste jih blokirali.';
   }
 
   @override
@@ -3070,7 +3070,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName bo zdaj lahko videl objave in komentarje, ki ste jih ustvarili. Ne bodo obveščeni, da ste jih odblokirali.';
   }
 
   @override
@@ -3109,7 +3109,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'Če zavrnete čakajočo objavo, boste izbrano objavo trajno izbrisali iz skupnosti.';
 
   @override
   String get community_pending_posts_empty => 'Ni čakajočih objav';
@@ -3118,57 +3118,57 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get community_pending_post_accept => 'Sprejmi';
 
   @override
-  String get community_pending_post_decline => 'Decline';
+  String get community_pending_post_decline => 'Zavrni';
 
   @override
-  String get community_pending_post_delete_success => 'Post deleted.';
+  String get community_pending_post_delete_success => 'Objava izbrisana.';
 
   @override
   String get community_pending_post_delete_error =>
-      'Failed to delete post. Please try again.';
+      'Objave ni bilo mogoče izbrisati. prosim poskusite ponovno';
 
   @override
-  String get community_pending_post_approve_success => 'Post accepted.';
+  String get community_pending_post_approve_success => 'Objava sprejeta.';
 
   @override
   String get community_pending_post_approve_error =>
-      'Failed to accept post. This post has been reviewed by another moderator.';
+      'Objave ni bilo mogoče sprejeti. To objavo je pregledal drug moderator.';
 
   @override
-  String get community_pending_post_decline_success => 'Post declined.';
+  String get community_pending_post_decline_success => 'Objava zavrnjena.';
 
   @override
   String get community_pending_post_decline_error =>
-      'Failed to decline post. This post has been reviewed by another moderator.';
+      'Zavrnitev objave ni uspela. To objavo je pregledal drug moderator.';
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Možnost $optionNumber';
   }
 
   @override
-  String get poll_add_option => 'Add option';
+  String get poll_add_option => 'Dodaj možnost';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Večkratna izbira';
 
   @override
   String get poll_multiple_selection_description =>
-      'Let participants vote more than one option.';
+      'Naj udeleženci glasujejo za več kot eno možnost.';
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'Konča se $endDate';
   }
 
   @override
-  String get poll_ends_on_label => 'Ends on';
+  String get poll_ends_on_label => 'Konča se dne';
 
   @override
-  String get poll_select_date => 'Select Date';
+  String get poll_select_date => 'Izberite Datum';
 
   @override
-  String get poll_select_time => 'Select Time';
+  String get poll_select_time => 'Izberite Čas';
 
   @override
   String poll_duration_days(int days) {
@@ -3182,40 +3182,40 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   }
 
   @override
-  String get poll_time_hour => 'Hour';
+  String get poll_time_hour => 'ura';
 
   @override
-  String get poll_time_minute => 'Minute';
+  String get poll_time_minute => 'minuta';
 
   @override
-  String get profile_edit_display_name => 'Display Name';
+  String get profile_edit_display_name => 'Prikazno ime';
 
   @override
-  String get profile_edit_about => 'About';
+  String get profile_edit_about => 'O tem';
 
   @override
-  String get profile_edit_unsupported_image_title => 'Unsupported image type';
+  String get profile_edit_unsupported_image_title => 'Nepodprta vrsta slike';
 
   @override
   String get profile_edit_unsupported_image_description =>
-      'Please upload a PNG or JPG image.';
+      'Naložite sliko PNG ali JPG.';
 
   @override
-  String get profile_edit_inappropriate_image_title => 'Inappropriate image';
+  String get profile_edit_inappropriate_image_title => 'Neprimerna slika';
 
   @override
   String get profile_edit_inappropriate_image_description =>
-      'Please choose a different image to upload.';
+      'Izberite drugo sliko za nalaganje.';
 
   @override
-  String get profile_edit_unsaved_changes_title => 'Unsaved changes';
+  String get profile_edit_unsaved_changes_title => 'Neshranjene spremembe';
 
   @override
   String get profile_edit_unsaved_changes_description =>
-      'Are you sure you want to discard the changes? They will be lost when you leave this page.';
+      'Ali ste prepričani, da želite zavreči spremembe? Izgubljeni bodo, ko zapustite to stran.';
 
   @override
-  String get chat_title => 'Chat';
+  String get chat_title => 'Klepetajte';
 
   @override
   String get chat_tab_all => 'Vse';
@@ -3227,125 +3227,125 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get chat_tab_groups => 'Skupine';
 
   @override
-  String get chat_waiting_for_network => 'Waiting for network...';
+  String get chat_waiting_for_network => 'Čakanje na omrežje ...';
 
   @override
-  String get chat_direct_chat => 'Direct chat';
+  String get chat_direct_chat => 'Neposredni klepet';
 
   @override
-  String get chat_group_chat => 'Group chat';
+  String get chat_group_chat => 'Skupinski klepet';
 
   @override
-  String get chat_archived => 'Archived';
+  String get chat_archived => 'Arhivirano';
 
   @override
-  String get message_editing_message => 'Editing message';
+  String get message_editing_message => 'Urejanje sporočila';
 
   @override
-  String get message_replying_yourself => 'yourself';
+  String get message_replying_yourself => 'sebe';
 
   @override
-  String get message_replied_message => 'Replied message';
+  String get message_replied_message => 'Odgovorjeno sporočilo';
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'Odgovarjanje na $displayName';
   }
 
   @override
-  String get message_media => 'Media';
+  String get message_media => 'Mediji';
 
   @override
-  String get chat_loading => 'Loading chat...';
+  String get chat_loading => 'Nalaganje klepeta ...';
 
   @override
-  String get chat_blocked_message => 'You can\'t send messages to this person.';
+  String get chat_blocked_message => 'Tej osebi ne morete pošiljati sporočil.';
 
   @override
   String get chat_notifications_disabled =>
-      'You have disabled notifications for chat';
+      'Onemogočili ste obvestila za klepet';
 
   @override
-  String get chat_archive => 'Archive';
+  String get chat_archive => 'Arhiv';
 
   @override
-  String get chat_unarchive => 'Unarchive';
+  String get chat_unarchive => 'Odstrani iz arhiva';
 
   @override
-  String get chat_message_deleted => 'This message was deleted';
+  String get chat_message_deleted => 'To sporočilo je bilo izbrisano';
 
   @override
   String get chat_message_no_preview =>
-      'No preview supported for this message type';
+      'Predogled za to vrsto sporočila ni podprt';
 
   @override
-  String get chat_no_message_yet => 'No message yet';
+  String get chat_no_message_yet => 'Ni še sporočila';
 
   @override
-  String get group_title => 'Group';
+  String get group_title => 'skupina';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Ustvari skupino...';
 
   @override
-  String get group_edit => 'Edit Group';
+  String get group_edit => 'Uredi skupino';
 
   @override
-  String get group_name => 'Group name';
+  String get group_name => 'Ime skupine';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Poimenujte svojo skupino...';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Vnesite opis...';
 
   @override
-  String get group_about => 'About';
+  String get group_about => 'O tem';
 
   @override
-  String get group_members => 'Members';
+  String get group_members => 'člani';
 
   @override
-  String get group_join => 'Join';
+  String get group_join => 'Pridruži se';
 
   @override
-  String get group_joined => 'Joined';
+  String get group_joined => 'Pridružen';
 
   @override
-  String get group_public => 'Public';
+  String get group_public => 'Javno';
 
   @override
-  String get group_private => 'Private';
+  String get group_private => 'Zasebno';
 
   @override
   String get group_public_description =>
-      'Anyone can join, view and search the posts in this group.';
+      'Vsakdo se lahko pridruži, si ogleduje in išče objave v tej skupini.';
 
   @override
   String get group_private_description =>
-      'Only members invited by the moderators can join, view, and search the posts in this group.';
+      'Samo člani, ki so jih povabili moderatorji, se lahko pridružijo, si ogledujejo in iščejo objave v tej skupini.';
 
   @override
-  String get group_recommended_for_you => 'Recommended for you';
+  String get group_recommended_for_you => 'Priporočeno za vas';
 
   @override
-  String get group_trending_now => 'Trending now';
+  String get group_trending_now => 'Trenutno v trendu';
 
   @override
-  String get group_placeholder_members => '1.2K members';
+  String get group_placeholder_members => '1,2 tisoč članov';
 
   @override
-  String get group_basic_info => 'Basic Info';
+  String get group_basic_info => 'Osnovne informacije';
 
   @override
-  String get group_discard_confirmation => 'Leave without finishing?';
+  String get group_discard_confirmation => 'Zapustiti brez dokončanja?';
 
   @override
   String get group_discard_description =>
-      'Your progress won\'t be saved and your group won\'t be created.';
+      'Vaš napredek ne bo shranjen in vaša skupina ne bo ustvarjena.';
 
   @override
-  String get group_pending_posts => 'Pending Posts';
+  String get group_pending_posts => 'Čakajoče objave';
 
   @override
   String group_pending_request_title(int count) {
@@ -3370,25 +3370,25 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   }
 
   @override
-  String get group_all_members => 'All members';
+  String get group_all_members => 'Vsi člani';
 
   @override
-  String get group_moderators => 'Moderators';
+  String get group_moderators => 'Moderatorji';
 
   @override
-  String get group_search_member_hint => 'Search member';
+  String get group_search_member_hint => 'Član iskanja';
 
   @override
-  String get group_promote_moderator => 'Promote to moderator';
+  String get group_promote_moderator => 'Povišaj v moderatorja';
 
   @override
-  String get group_demote_member => 'Demote to member';
+  String get group_demote_member => 'Znižaj v člana';
 
   @override
-  String get group_remove_member => 'Remove from group';
+  String get group_remove_member => 'Odstrani iz skupine';
 
   @override
-  String get group_story_comments => 'Story comments';
+  String get group_story_comments => 'Komentarji zgodbe';
 
   @override
   String group_members_count(int count) {
@@ -3403,96 +3403,96 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'Ni še skupine';
 
   @override
-  String get group_pending_requests_title => 'Pending Requests';
+  String get group_pending_requests_title => 'Čakajoče zahteve';
 
   @override
-  String get group_pending_requests_empty_title =>
-      'No pending requests available';
+  String get group_pending_requests_empty_title => 'Ni čakajočih zahtev';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'Omogočite pregled objave ali odobritev pridružitve v nastavitvah skupine za upravljanje zahtev.';
 
   @override
   String get group_join_requests_coming_soon =>
-      'Join requests feature coming soon';
+      'Funkcija prošenj za pridružitev bo kmalu na voljo';
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Če zavrnete čakajočo objavo, boste trajno izbrisali izbrano objavo iz skupine.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'Ni čakajočih objav';
 
   @override
-  String get group_pending_post_accept => 'Accept';
+  String get group_pending_post_accept => 'Sprejmi';
 
   @override
-  String get group_pending_post_decline => 'Decline';
+  String get group_pending_post_decline => 'Zavrni';
 
   @override
-  String get group_create_success_message => 'Successfully created group.';
+  String get group_create_success_message => 'Uspešno ustvarjena skupina.';
 
   @override
   String get group_create_error_message =>
-      'Failed to create group. Please try again.';
+      'Skupine ni bilo mogoče ustvariti. prosim poskusite ponovno';
 
   @override
-  String get group_update_success_message => 'Successfully updated group.';
+  String get group_update_success_message =>
+      'Skupina je bila uspešno posodobljena.';
 
   @override
   String get group_update_error_message =>
-      'Failed to save your group profile. Please try again.';
+      'Profila vaše skupine ni bilo mogoče shraniti. prosim poskusite ponovno';
 
   @override
-  String get group_leave_success_message => 'Successfully left the group.';
+  String get group_leave_success_message => 'Uspešno zapustil skupino.';
 
   @override
-  String get group_leave_error_message => 'Failed to leave the group.';
+  String get group_leave_error_message => 'Skupine ni bilo mogoče zapustiti.';
 
   @override
-  String get group_close_success_message => 'Successfully closed the group.';
+  String get group_close_success_message => 'Skupina je bila uspešno zaprta.';
 
   @override
-  String get group_close_error_message => 'Failed to close the group.';
+  String get group_close_error_message => 'Skupine ni bilo mogoče zapreti.';
 
   @override
-  String get group_pending_post_delete_success => 'Post deleted.';
+  String get group_pending_post_delete_success => 'Objava izbrisana.';
 
   @override
   String get group_pending_post_delete_error =>
-      'Failed to delete post. Please try again.';
+      'Objave ni bilo mogoče izbrisati. prosim poskusite ponovno';
 
   @override
-  String get group_pending_post_approve_success => 'Post accepted.';
+  String get group_pending_post_approve_success => 'Objava sprejeta.';
 
   @override
   String get group_pending_post_approve_error =>
-      'Failed to accept post. This post has been reviewed by another moderator.';
+      'Objave ni bilo mogoče sprejeti. To objavo je pregledal drug moderator.';
 
   @override
-  String get group_pending_post_decline_success => 'Post declined.';
+  String get group_pending_post_decline_success => 'Objava zavrnjena.';
 
   @override
   String get group_pending_post_decline_error =>
-      'Failed to decline post. This post has been reviewed by another moderator.';
+      'Zavrnitev objave ni uspela. To objavo je pregledal drug moderator.';
 
   @override
-  String get error_leave_group => 'Unable to leave group';
+  String get error_leave_group => 'Ni mogoče zapustiti skupine';
 
   @override
   String get error_leave_group_description =>
-      'You\'re the only moderator in this group. To leave group, nominate other members to moderator role';
+      'Vi ste edini moderator v tej skupini. Če želite zapustiti skupino, predlagajte druge člane za vlogo moderatorja';
 
   @override
-  String get error_close_group => 'Unable to close group';
+  String get error_close_group => 'Skupine ni mogoče zapreti';
 
   @override
   String get error_close_group_description =>
-      'Something went wrong. Please try again later.';
+      'Nekaj ​​je šlo narobe. Poskusite znova pozneje.';
 
   @override
   String get chat_too_many_archived => 'Arhiviranih je preveč klepetov';
@@ -3609,19 +3609,19 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get general_error_retry => 'prosim poskusite znova';
 
   @override
-  String get chat_archived_title => 'Arhivirani klepeti';
+  String get chat_archived_title => 'Arhivirani klepeti...';
 
   @override
-  String get chat_archived_empty => 'Brez arhivskega klepeta';
+  String get chat_archived_empty => 'Brez arhivskega klepeta...';
 
   @override
-  String get chat_add_member_title => 'Dodaj člana';
+  String get chat_add_member_title => 'Dodaj člana...';
 
   @override
-  String get chat_add_member_button => 'Dodaj člana';
+  String get chat_add_member_button => 'Dodaj člana...';
 
   @override
-  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti';
+  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3686,6 +3686,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String get chat_leave_button => 'Pusti';
+
+  @override
+  String get chat_last_moderator_message =>
+      'Pred odhodom morate drugega člana povišati v moderatorja.';
 
   @override
   String get chat_promote_member_button => 'Povišaj člana';
@@ -3760,10 +3764,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get feed_empty_description => 'Poiščite skupino ali ustvarite svojo';
 
   @override
-  String get feed_empty_explore_button => 'Raziščite skupino';
+  String get feed_empty_explore_button => 'Raziščite skupino...';
 
   @override
-  String get feed_empty_create_button => 'Ustvari skupino';
+  String get feed_empty_create_button => 'Ustvari skupino...';
 
   @override
   String get explore_empty_title => 'Vaše raziskovanje je prazno';
@@ -3777,6 +3781,102 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String get explore_no_group_description => 'Ustvarimo svoje skupine..';
+
+  @override
+  String get general_open_settings => 'Odprite nastavitve';
+
+  @override
+  String get general_remove => 'Odstrani';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Objava je uspešno deljena';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'ste prepričani, da želite preklicati? Vaše spremembe ne bodo shranjene.';
+
+  @override
+  String get story_remove_link_message =>
+      'Ta povezava bo odstranjena iz zgodbe.';
+
+  @override
+  String get empty_my_communities_title => 'Ni še nobene skupnosti';
+
+  @override
+  String get empty_my_communities_description =>
+      'Pridružite se skupnostim, da jih vidite tukaj';
+
+  @override
+  String get empty_my_communities_cta => 'Raziščite skupnosti...';
+
+  @override
+  String get empty_group_chats_title => 'Ni še nobenih skupinskih klepetov';
+
+  @override
+  String get empty_group_chats_description =>
+      'Začnite skupinski klepet s prijatelji';
+
+  @override
+  String get empty_group_chats_cta => 'Ustvari skupinski klepet...';
+
+  @override
+  String get empty_all_chats_title => 'Pogovora še ni';
+
+  @override
+  String get empty_all_chats_description => 'Za začetek ustvarimo klepet.';
+
+  @override
+  String get empty_all_chats_cta => 'Ustvari nov klepet...';
+
+  @override
+  String get empty_archived_chats_title => 'Brez arhivskega klepeta';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Tukaj bodo prikazani arhivirani klepeti';
+
+  @override
+  String get empty_comments_title => 'Še ni komentarjev';
+
+  @override
+  String get empty_comments_description => 'Bodite prvi in ​​komentirajte';
+
+  @override
+  String get empty_search_title => 'Ni rezultatov';
+
+  @override
+  String get empty_search_description =>
+      'Poskusite iskati z drugimi ključnimi besedami';
+
+  @override
+  String get empty_search_cta => 'Počisti iskanje...';
+
+  @override
+  String get empty_category_communities_description =>
+      'V tej kategoriji ni najdenih skupnosti. Poskusite raziskati druge kategorije ali ustvarite svojo.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Vaše raziskovanje je prazno';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Poiščite skupnost ali ustvarite svojo';
+
+  @override
+  String get empty_explore_title_no_communities => 'Ni še nobene skupnosti';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Bodite prvi, ki bo ustvaril skupnost';
+
+  @override
+  String get cta_create_community => 'Ustvari skupnost...';
 
   @override
   String get shared_post_media_indicator => 'Ta objava vsebuje medije';

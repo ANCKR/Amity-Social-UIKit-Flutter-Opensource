@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Пошук спільноти та користувача",
+  "global_search_hint": "Пошук спільноти та користувача...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Пошук у моїй спільноті",
+  "search_my_community_hint": "Пошук у моїй спільноті...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Результатів не знайдено",
+  "search_no_results": "Результатів не знайдено...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "Опитування має містити принаймні {minOptions} варіантів.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Цей {content} буде остаточно видалено.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Створити спільноту",
+  "community_create": "Створити спільноту...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Назвіть свою спільноту",
+  "community_name_hint": "Назвіть свою спільноту...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Введіть опис",
+  "community_description_hint": "Введіть опис...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Ви досягли ліміту завантажень у {maxUploads} зображень. Будь-які додаткові зображення не будуть збережені.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Ви досягли ліміту завантаження {maxUploads} відео. Будь-які додаткові відео не будуть збережені.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -947,7 +947,7 @@
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "Питання опитування не може перевищувати {maxQuestionLength} символів.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "Варіант опитування не може перевищувати {maxQuestionLength} символів.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Пошук користувача",
+  "search_user_hint": "Пошук користувача...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} не зможе надіслати вам повідомлення. Вони не отримають сповіщення про те, що ви їх заблокували.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "Тепер {displayName} зможе надіслати вам повідомлення. Вони не отримають сповіщення про те, що ви їх розблокували.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "{count} запити потребують вашого схвалення",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} не зможе бачити публікації та коментарі, які ви створили. Вони не отримають сповіщення про те, що ви їх заблокували.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} тепер зможе бачити дописи та коментарі, які ви створили. Вони не отримають сповіщення про те, що ви їх розблокували.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Відхилити публікацію, що очікує на розгляд, назавжди видалити вибрану публікацію зі спільноти.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Варіант {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Множинний вибір",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Закінчується {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Відповідь {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Створити групу",
+  "group_create": "Створити групу...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Назвіть свою групу",
+  "group_name_hint": "Назвіть свою групу...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Введіть опис",
+  "group_description_hint": "Введіть опис...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Відхилити допис, що очікує на розгляд, назавжди видалити вибраний допис із групи.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -2063,5 +2063,341 @@
   "feed_empty_create_first_post": "Створіть свій перший допис",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "Список учасників оновлено.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "empty_archived_chats_title": "Немає архівного чату",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "chat_last_moderator_message": "Ви повинні підвищити іншого учасника до модератора перед виходом.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "Не вдалося оновити групове сповіщення. Спробуйте ще раз.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "empty_explore_description_no_categories": "Знайдіть спільноту або створіть власну",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Давайте створимо чат, щоб почати.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "story_unsaved_changes_message": "Ви впевнені, що хочете скасувати? Ваші зміни не будуть збережені.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Розмови ще немає",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_group_chats_description": "Почніть груповий чат з друзями",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "chat_add_member_button": "Додати учасника...",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_unban_confirmation_message": "Ви впевнені, що хочете розблокувати цього користувача? Вони зможуть знову приєднатися до групи.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "empty_group_chats_cta": "Створити груповий чат...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "chat_notification_silent_description": "Немає сповіщень для всіх у цьому каналі. Учасники не можуть увімкнути сповіщення в каналі.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "empty_explore_title_no_categories": "Ваше дослідження порожнє",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "Це посилання буде видалено з історії.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_banned_users_updated": "Забанених користувачів оновлено.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "feed_filter_apply": "Застосувати фільтри",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_sort_by": "Сортувати за",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "empty_category_communities_description": "У цій категорії не знайдено спільнот. Спробуйте дослідити інші категорії або створіть власну.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "post_share_success": "Публікацію успішно опубліковано",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "Ваше дослідження порожнє",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "empty_my_communities_title": "Спільнот ще немає",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "general_error_title": "Щось пішло не так",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "Очистити все",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "general_open_settings": "Відкрийте налаштування",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "empty_my_communities_cta": "Досліджуйте спільноти...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_group_left_success": "Груповий чат залишився.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_promote_member_button": "Підвищити учасника",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "empty_archived_chats_description": "Тут з’являться заархівовані чати",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "chat_leave_group_title": "Вийти з групи",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "Якщо ви залишите цю групу, ви більше не бачитимете нових дій і не будете брати участь у цій групі.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "feed_filter_title": "Фільтр дописів",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "chat_member_list_update_failed": "Не вдалося оновити список учасників. Спробуйте ще раз.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_filter_content_type": "Тип вмісту",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "chat_member_permissions_update_failed": "Не вдалося оновити дозволи учасників. Спробуйте ще раз.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "Знайдіть групу або створіть власну",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_group_notification_updated": "Сповіщення групи оновлено.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_messaging_section": "Обмін повідомленнями",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "empty_my_communities_description": "Приєднуйтесь до спільнот, щоб побачити їх тут",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_comments_description": "Залиште перший коментар",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "feed_filter_text": "текст",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_empty_title": "Ваша стрічка порожня",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_add_member_title": "Додати учасника...",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_filter_images": "Зображення",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "empty_search_cta": "Очистити пошук...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "general_remove": "видалити",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "За умовчанням учасники цієї спільноти отримуватимуть сповіщення, але вони можуть вимкнути їх.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "feed_empty_description": "Знайдіть групу або створіть власну",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "cta_create_community": "Створіть спільноту...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Результатів не знайдено",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_title": "Групових чатів ще немає",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "feed_empty_create_button": "Створити групу...",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "general_search": "Пошук",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "chat_your_preferences": "Ваші уподобання",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "empty_search_description": "Спробуйте шукати за іншими ключовими словами",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "chat_archived_empty": "Немає архівного чату...",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_banned_users_update_failed": "Не вдалося оновити заблокованих користувачів. Спробуйте ще раз.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "Розбанити",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "empty_comments_title": "Поки немає коментарів",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "feed_filter_oldest_first": "Спочатку найстаріший",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_error_retry": "Спробуйте ще раз.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "empty_all_chats_cta": "Створити новий чат...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "chat_permission_moderators_description": "Учасники, які не є модераторами, можуть читати повідомлення, але не можуть надсилати повідомлення.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_banned_users_empty": "Тут ще нічого не видно...",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "Дозволи учасників оновлено.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_settings_title": "Налаштування групи",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "Відео",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_latest_first": "Останні спочатку",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "Усі учасники мають можливість отримувати сповіщення, але вони повинні їх увімкнути. За замовчуванням сповіщення вимкнено для кожного учасника.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_archived_title": "Архівні чати...",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "feed_empty_explore_button": "Дослідити групу...",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "Залиште",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "empty_explore_title_no_communities": "Спільнот ще немає",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "chat_permission_everyone_description": "Кожен може відправити повідомлення в групі.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "Групи ще немає",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_no_group_description": "Давайте створимо власні групи..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "chat_group_left_failed": "Не вдалося залишити груповий чат. Спробуйте ще раз.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "Не вдалося оновити профіль групи. Спробуйте ще раз.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_group_profile_updated": "Профіль групи оновлено.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Налаштування групи",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "empty_explore_description_no_communities": "Створіть спільноту першим",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

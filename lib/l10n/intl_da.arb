@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Søg efter fællesskab og bruger",
+  "global_search_hint": "Søg efter fællesskab og bruger...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Søg i mit fællesskab",
+  "search_my_community_hint": "Søg i mit fællesskab...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Ingen resultater fundet",
+  "search_no_results": "Ingen resultater fundet...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "Afstemningen skal indeholde mindst {minOptions} muligheder.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Denne {content} vil blive slettet permanent.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Opret fællesskab",
+  "community_create": "Opret fællesskab...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Navngiv dit fællesskab",
+  "community_name_hint": "Navngiv dit fællesskab...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Indtast beskrivelse",
+  "community_description_hint": "Indtast beskrivelse...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Du har nået uploadgrænsen på {maxUploads} billeder. Eventuelle yderligere billeder vil ikke blive gemt.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Du har nået uploadgrænsen på {maxUploads} videoer. Eventuelle yderligere videoer vil ikke blive gemt.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -947,7 +947,7 @@
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "Afstemningsspørgsmålet må ikke overstige {maxQuestionLength} tegn.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "Afstemningsindstillingen må ikke overstige {maxQuestionLength} tegn.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Søg bruger",
+  "search_user_hint": "Søg bruger...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} vil ikke være i stand til at sende dig beskeden. De får ikke besked om, at du har blokeret dem.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "{displayName} vil nu være i stand til at sende dig beskeden. De får ikke besked om, at du har fjernet blokeringen af ​​dem.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "{count} anmodninger kræver din godkendelse",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} vil ikke kunne se indlæg og kommentarer, som du har oprettet. De får ikke besked om, at du har blokeret dem.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} vil nu kunne se indlæg og kommentarer, som du har oprettet. De får ikke besked om, at du har fjernet blokeringen af ​​dem.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Afvis afventende indlæg vil permanent slette det valgte indlæg fra fællesskabet.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Mulighed {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Flere valg",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Slutter {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Svarer til {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Opret gruppe",
+  "group_create": "Opret gruppe...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Navngiv din gruppe",
+  "group_name_hint": "Navngiv din gruppe...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Indtast beskrivelse",
+  "group_description_hint": "Indtast beskrivelse...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Afvis afventende indlæg vil permanent slette det valgte indlæg fra gruppen.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -2063,5 +2063,341 @@
   "feed_empty_create_first_post": "Opret dit første opslag",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "Medlemsliste opdateret.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "empty_archived_chats_title": "Ingen arkivchat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "chat_last_moderator_message": "Du skal forfremme et andet medlem til moderator, før du forlader.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "Gruppemeddelelsen kunne ikke opdateres. Prøv venligst igen.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "empty_explore_description_no_categories": "Find et fællesskab eller skab dit eget",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Lad os oprette chat for at komme i gang.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "story_unsaved_changes_message": "er du sikker på, at du vil annullere? Dine ændringer vil ikke blive gemt.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Ingen samtale endnu",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_group_chats_description": "Start en gruppechat med venner",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "chat_add_member_button": "Tilføj medlem...",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_unban_confirmation_message": "Er du sikker på, at du vil fjerne udelukkelsen af ​​denne bruger? De vil være i stand til at slutte sig til gruppen igen.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "empty_group_chats_cta": "Opret gruppechat...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "chat_notification_silent_description": "Ingen notifikationer til alle på denne kanal. Medlemmer kan ikke slå notifikationer til på kanalen.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "empty_explore_title_no_categories": "Din udforskning er tom",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "Dette link vil blive fjernet fra historien.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_banned_users_updated": "Udelukkede brugere opdateret.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "feed_filter_apply": "Anvend filtre",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_sort_by": "Sorter efter",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "empty_category_communities_description": "Der blev ikke fundet nogen fællesskaber i denne kategori. Prøv at udforske andre kategorier, eller opret din egen.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "post_share_success": "Indlægget blev delt",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "Din udforskning er tom",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "empty_my_communities_title": "Ingen fællesskaber endnu",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "general_error_title": "Noget gik galt",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "Ryd alle",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "general_open_settings": "Åbn indstillinger",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "empty_my_communities_cta": "Udforsk fællesskaber...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_group_left_success": "Gruppechat tilbage.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_promote_member_button": "Fremme medlem",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "empty_archived_chats_description": "Arkiverede chats vises her",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "chat_leave_group_title": "Forlad gruppen",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "Hvis du forlader denne gruppe, vil du ikke længere se nye aktiviteter eller deltage i denne gruppe.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "feed_filter_title": "Filtrer indlæg",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "chat_member_list_update_failed": "Kunne ikke opdatere medlemslisten. Prøv venligst igen.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_filter_content_type": "Indholdstype",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "chat_member_permissions_update_failed": "Kunne ikke opdatere medlemstilladelser. Prøv venligst igen.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "Find en gruppe eller opret din egen",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_group_notification_updated": "Gruppemeddelelse opdateret.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_messaging_section": "Beskeder",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "empty_my_communities_description": "Tilmeld dig fællesskaber for at se dem her",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_comments_description": "Vær den første til at kommentere",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "feed_filter_text": "Tekst",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_empty_title": "Dit feed er tomt",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_add_member_title": "Tilføj medlem...",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_filter_images": "Billeder",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "empty_search_cta": "Ryd søgning...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "general_remove": "Fjerne",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "Som standard vil medlemmer i dette fællesskab modtage notifikationer, men de kan vælge at slå dem fra.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "feed_empty_description": "Find en gruppe eller opret din egen",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "cta_create_community": "Skab fællesskab...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Ingen resultater fundet",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_title": "Ingen gruppechats endnu",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "feed_empty_create_button": "Opret gruppe...",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "general_search": "Søge",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "chat_your_preferences": "Dine præferencer",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "empty_search_description": "Prøv at søge med forskellige søgeord",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "chat_archived_empty": "Ingen arkivchat...",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_banned_users_update_failed": "Kunne ikke opdatere forbudte brugere. Prøv venligst igen.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "Ophæv forbuddet",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "empty_comments_title": "Ingen kommentarer endnu",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "feed_filter_oldest_first": "Ældste først",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_error_retry": "Prøv venligst igen.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "empty_all_chats_cta": "Opret ny chat...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "chat_permission_moderators_description": "Medlemmer, der ikke er moderatorer, kan læse beskeder, men kan ikke sende nogen beskeder.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_banned_users_empty": "Intet her at se endnu...",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "Medlemstilladelser opdateret.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_settings_title": "Gruppeindstillinger",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "Videoer",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_latest_first": "Seneste først",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "Alle medlemmer har mulighed for at modtage notifikationer, men de skal aktivere dem. Som standard er notifikationer slået fra for hvert medlem.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_archived_title": "Arkiverede chats...",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "feed_empty_explore_button": "Udforsk gruppen...",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "Forlade",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "empty_explore_title_no_communities": "Ingen fællesskaber endnu",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "chat_permission_everyone_description": "Alle kan sende en besked i gruppen.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "Ingen gruppe endnu",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_no_group_description": "Lad os oprette dine egne grupper..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "chat_group_left_failed": "Kunne ikke forlade gruppechatten. Prøv venligst igen.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "Gruppeprofilen kunne ikke opdateres. Prøv venligst igen.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_group_profile_updated": "Gruppeprofilen er opdateret.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Gruppeindstillinger",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "empty_explore_description_no_communities": "Vær den første til at skabe et fællesskab",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

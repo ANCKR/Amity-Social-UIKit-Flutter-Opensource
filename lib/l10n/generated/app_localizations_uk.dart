@@ -112,13 +112,13 @@ class AppLocalizationsUk extends AppLocalizations {
       'Усіх учасників буде видалено з групи. Усі дописи, повідомлення, реакції та медіа-файли, опубліковані в групі, будуть видалені. Це неможливо скасувати.';
 
   @override
-  String get global_search_hint => 'Пошук спільноти та користувача';
+  String get global_search_hint => 'Пошук спільноти та користувача...';
 
   @override
-  String get search_my_community_hint => 'Пошук у моїй спільноті';
+  String get search_my_community_hint => 'Пошук у моїй спільноті...';
 
   @override
-  String get search_no_results => 'Результатів не знайдено';
+  String get search_no_results => 'Результатів не знайдено...';
 
   @override
   String get title_communities => 'Спільноти';
@@ -281,7 +281,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'Опитування має містити принаймні $minOptions варіантів.';
   }
 
   @override
@@ -336,7 +336,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'Цей $content буде остаточно видалено.';
   }
 
   @override
@@ -389,16 +389,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String get community_placeholder_members => '1,2 тисячі учасників';
 
   @override
-  String get community_create => 'Створити спільноту';
+  String get community_create => 'Створити спільноту...';
 
   @override
   String get community_name => 'Назва спільноти';
 
   @override
-  String get community_name_hint => 'Назвіть свою спільноту';
+  String get community_name_hint => 'Назвіть свою спільноту...';
 
   @override
-  String get community_description_hint => 'Введіть опис';
+  String get community_description_hint => 'Введіть опис...';
 
   @override
   String get community_edit => 'Редагувати спільноту';
@@ -794,12 +794,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'Ви досягли ліміту завантажень у $maxUploads зображень. Будь-які додаткові зображення не будуть збережені.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'Ви досягли ліміту завантаження $maxUploads відео. Будь-які додаткові відео не будуть збережені.';
   }
 
   @override
@@ -812,12 +812,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'Питання опитування не може перевищувати $maxQuestionLength символів.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'Варіант опитування не може перевищувати $maxQuestionLength символів.';
   }
 
   @override
@@ -867,7 +867,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get member_add => 'Додати учасника';
 
   @override
-  String get search_user_hint => 'Пошук користувача';
+  String get search_user_hint => 'Пошук користувача...';
 
   @override
   String get profile_edit => 'Редагувати профіль';
@@ -1045,7 +1045,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName не зможе надіслати вам повідомлення. Вони не отримають сповіщення про те, що ви їх заблокували.';
   }
 
   @override
@@ -1053,7 +1053,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return 'Тепер $displayName зможе надіслати вам повідомлення. Вони не отримають сповіщення про те, що ви їх розблокували.';
   }
 
   @override
@@ -1067,7 +1067,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return '$count запити потребують вашого схвалення';
   }
 
   @override
@@ -1095,7 +1095,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName не зможе бачити публікації та коментарі, які ви створили. Вони не отримають сповіщення про те, що ви їх заблокували.';
   }
 
   @override
@@ -1106,7 +1106,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName тепер зможе бачити дописи та коментарі, які ви створили. Вони не отримають сповіщення про те, що ви їх розблокували.';
   }
 
   @override
@@ -1146,7 +1146,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'Відхилити публікацію, що очікує на розгляд, назавжди видалити вибрану публікацію зі спільноти.';
 
   @override
   String get community_pending_posts_empty => 'Немає незавершених публікацій';
@@ -1180,14 +1180,14 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Варіант $optionNumber';
   }
 
   @override
   String get poll_add_option => 'Додати варіант';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Множинний вибір';
 
   @override
   String get poll_multiple_selection_description =>
@@ -1195,7 +1195,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'Закінчується $endDate';
   }
 
   @override
@@ -1288,7 +1288,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'Відповідь $displayName';
   }
 
   @override
@@ -1324,7 +1324,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get group_title => 'Група';
 
   @override
-  String get group_create => 'Створити групу';
+  String get group_create => 'Створити групу...';
 
   @override
   String get group_edit => 'Редагувати групу';
@@ -1333,10 +1333,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get group_name => 'Назва групи';
 
   @override
-  String get group_name_hint => 'Назвіть свою групу';
+  String get group_name_hint => 'Назвіть свою групу...';
 
   @override
-  String get group_description_hint => 'Введіть опис';
+  String get group_description_hint => 'Введіть опис...';
 
   @override
   String get group_about => 'про';
@@ -1460,7 +1460,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Відхилити допис, що очікує на розгляд, назавжди видалити вибраний допис із групи.';
 
   @override
   String get group_pending_posts_empty => 'Немає незавершених публікацій';
@@ -1637,189 +1637,189 @@ class AppLocalizationsUk extends AppLocalizations {
   String get category_all => 'Всі Категорії';
 
   @override
-  String get general_search => 'Search';
+  String get general_search => 'Пошук';
 
   @override
-  String get general_error_title => 'Something went wrong';
+  String get general_error_title => 'Щось пішло не так';
 
   @override
-  String get general_error_retry => 'Please try again.';
+  String get general_error_retry => 'Спробуйте ще раз.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Архівні чати...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Немає архівного чату...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Додати учасника...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Додати учасника...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Тут ще нічого не видно...';
 
   @override
   String get chat_unban_confirmation_message =>
-      'Are you sure you want to unban this user? They will be able to rejoin the group again.';
+      'Ви впевнені, що хочете розблокувати цього користувача? Вони зможуть знову приєднатися до групи.';
 
   @override
-  String get chat_unban_button => 'Unban';
+  String get chat_unban_button => 'Розбанити';
 
   @override
-  String get chat_group_settings_title => 'Group Settings';
+  String get chat_group_settings_title => 'Налаштування групи';
 
   @override
-  String get chat_group_settings_section => 'Group settings';
+  String get chat_group_settings_section => 'Налаштування групи';
 
   @override
-  String get chat_group_profile_updated => 'Group profile updated.';
+  String get chat_group_profile_updated => 'Профіль групи оновлено.';
 
   @override
   String get chat_group_profile_update_failed =>
-      'Failed to update group profile. Please try again.';
+      'Не вдалося оновити профіль групи. Спробуйте ще раз.';
 
   @override
-  String get chat_group_notification_updated => 'Group notification updated.';
+  String get chat_group_notification_updated => 'Сповіщення групи оновлено.';
 
   @override
   String get chat_group_notification_update_failed =>
-      'Failed to update group notification. Please try again.';
+      'Не вдалося оновити групове сповіщення. Спробуйте ще раз.';
 
   @override
-  String get chat_member_permissions_updated => 'Member permissions updated.';
+  String get chat_member_permissions_updated => 'Дозволи учасників оновлено.';
 
   @override
   String get chat_member_permissions_update_failed =>
-      'Failed to update member permissions. Please try again.';
+      'Не вдалося оновити дозволи учасників. Спробуйте ще раз.';
 
   @override
-  String get chat_member_list_updated => 'Member list updated.';
+  String get chat_member_list_updated => 'Список учасників оновлено.';
 
   @override
   String get chat_member_list_update_failed =>
-      'Failed to update member list. Please try again.';
+      'Не вдалося оновити список учасників. Спробуйте ще раз.';
 
   @override
-  String get chat_banned_users_updated => 'Banned users updated.';
+  String get chat_banned_users_updated => 'Забанених користувачів оновлено.';
 
   @override
   String get chat_banned_users_update_failed =>
-      'Failed to update banned users. Please try again.';
+      'Не вдалося оновити заблокованих користувачів. Спробуйте ще раз.';
 
   @override
-  String get chat_your_preferences => 'Your preferences';
+  String get chat_your_preferences => 'Ваші уподобання';
 
   @override
-  String get chat_leave_group_title => 'Leave Group';
+  String get chat_leave_group_title => 'Вийти з групи';
 
   @override
   String get chat_leave_group_message =>
-      'If you leave this group, you will no longer see new activities or participate in this group.';
+      'Якщо ви залишите цю групу, ви більше не бачитимете нових дій і не будете брати участь у цій групі.';
 
   @override
-  String get chat_leave_button => 'Leave';
+  String get chat_leave_button => 'Залиште';
 
   @override
   String get chat_last_moderator_message =>
-      'You must promote another member to moderator before leaving.';
+      'Ви повинні підвищити іншого учасника до модератора перед виходом.';
 
   @override
-  String get chat_promote_member_button => 'Promote member';
+  String get chat_promote_member_button => 'Підвищити учасника';
 
   @override
-  String get chat_group_left_success => 'Group chat left.';
+  String get chat_group_left_success => 'Груповий чат залишився.';
 
   @override
   String get chat_group_left_failed =>
-      'Failed to leave group chat. Please try again.';
+      'Не вдалося залишити груповий чат. Спробуйте ще раз.';
 
   @override
-  String get chat_messaging_section => 'Messaging';
+  String get chat_messaging_section => 'Обмін повідомленнями';
 
   @override
   String get chat_permission_everyone_description =>
-      'Everyone can send a message in the group.';
+      'Кожен може відправити повідомлення в групі.';
 
   @override
   String get chat_permission_moderators_description =>
-      'Members who are not moderators can read messages but cannot send any messages.';
+      'Учасники, які не є модераторами, можуть читати повідомлення, але не можуть надсилати повідомлення.';
 
   @override
   String get chat_notification_default_description =>
-      'By default, members in this community will receive notifications, but they can choose to turn them off.';
+      'За умовчанням учасники цієї спільноти отримуватимуть сповіщення, але вони можуть вимкнути їх.';
 
   @override
   String get chat_notification_silent_description =>
-      'No notifications for everyone in this channel. Members can\'t turn on notifications in the channel.';
+      'Немає сповіщень для всіх у цьому каналі. Учасники не можуть увімкнути сповіщення в каналі.';
 
   @override
   String get chat_notification_subscribe_description =>
-      'All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.';
+      'Усі учасники мають можливість отримувати сповіщення, але вони повинні їх увімкнути. За замовчуванням сповіщення вимкнено для кожного учасника.';
 
   @override
-  String get feed_filter_title => 'Filter Posts';
+  String get feed_filter_title => 'Фільтр дописів';
 
   @override
-  String get feed_filter_content_type => 'Content Type';
+  String get feed_filter_content_type => 'Тип вмісту';
 
   @override
   String get feed_filter_all => 'All';
 
   @override
-  String get feed_filter_images => 'Images';
+  String get feed_filter_images => 'Зображення';
 
   @override
-  String get feed_filter_videos => 'Videos';
+  String get feed_filter_videos => 'Відео';
 
   @override
-  String get feed_filter_text => 'Text';
+  String get feed_filter_text => 'текст';
 
   @override
-  String get feed_filter_sort_by => 'Sort By';
+  String get feed_filter_sort_by => 'Сортувати за';
 
   @override
-  String get feed_filter_latest_first => 'Latest First';
+  String get feed_filter_latest_first => 'Останні спочатку';
 
   @override
-  String get feed_filter_oldest_first => 'Oldest First';
+  String get feed_filter_oldest_first => 'Спочатку найстаріший';
 
   @override
-  String get feed_filter_clear_all => 'Clear All';
+  String get feed_filter_clear_all => 'Очистити все';
 
   @override
-  String get feed_filter_apply => 'Apply Filters';
+  String get feed_filter_apply => 'Застосувати фільтри';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Ваша стрічка порожня';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Знайдіть групу або створіть власну';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Дослідити групу...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Створити групу...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Ваше дослідження порожнє';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Групи ще немає';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description => 'Знайдіть групу або створіть власну';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Давайте створимо власні групи..';
 
   @override
-  String get general_open_settings => 'Open settings';
+  String get general_open_settings => 'Відкрийте налаштування';
 
   @override
-  String get general_remove => 'Remove';
+  String get general_remove => 'видалити';
 
   @override
   String get general_yes => 'Yes';
@@ -1828,88 +1828,87 @@ class AppLocalizationsUk extends AppLocalizations {
   String get general_no => 'No';
 
   @override
-  String get post_share_success => 'Post shared successfully';
+  String get post_share_success => 'Публікацію успішно опубліковано';
 
   @override
   String get story_unsaved_changes_message =>
-      'are you sure you want to cancel? Your Changes won\'t be saved.';
+      'Ви впевнені, що хочете скасувати? Ваші зміни не будуть збережені.';
 
   @override
   String get story_remove_link_message =>
-      'This link will be removed from story.';
+      'Це посилання буде видалено з історії.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Спільнот ще немає';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Приєднуйтесь до спільнот, щоб побачити їх тут';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Досліджуйте спільноти...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Групових чатів ще немає';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description => 'Почніть груповий чат з друзями';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Створити груповий чат...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Розмови ще немає';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'Давайте створимо чат, щоб почати.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Створити новий чат...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Немає архівного чату';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Тут з’являться заархівовані чати';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Поки немає коментарів';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'Залиште перший коментар';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Результатів не знайдено';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Спробуйте шукати за іншими ключовими словами';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Очистити пошук...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'У цій категорії не знайдено спільнот. Спробуйте дослідити інші категорії або створіть власну.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Ваше дослідження порожнє';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Знайдіть спільноту або створіть власну';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Спільнот ще немає';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Створіть спільноту першим';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Створіть спільноту...';
 
   @override
   String get shared_post_media_indicator => 'Цей допис містить медіа';
@@ -2073,13 +2072,13 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
       'Усіх учасників буде видалено з групи. Усі дописи, повідомлення, реакції та медіа-файли, опубліковані в групі, будуть видалені. Це неможливо скасувати.';
 
   @override
-  String get global_search_hint => 'Пошук спільноти та користувача';
+  String get global_search_hint => 'Пошук спільноти та користувача...';
 
   @override
-  String get search_my_community_hint => 'Пошук у моїй спільноті';
+  String get search_my_community_hint => 'Пошук у моїй спільноті...';
 
   @override
-  String get search_no_results => 'Результатів не знайдено';
+  String get search_no_results => 'Результатів не знайдено...';
 
   @override
   String get title_communities => 'Спільноти';
@@ -2350,16 +2349,16 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get community_placeholder_members => '1,2 тисячі учасників';
 
   @override
-  String get community_create => 'Створити спільноту';
+  String get community_create => 'Створити спільноту...';
 
   @override
   String get community_name => 'Назва спільноти';
 
   @override
-  String get community_name_hint => 'Назвіть свою спільноту';
+  String get community_name_hint => 'Назвіть свою спільноту...';
 
   @override
-  String get community_description_hint => 'Введіть опис';
+  String get community_description_hint => 'Введіть опис...';
 
   @override
   String get community_edit => 'Редагувати спільноту';
@@ -2828,7 +2827,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get member_add => 'Додати учасника';
 
   @override
-  String get search_user_hint => 'Пошук користувача';
+  String get search_user_hint => 'Пошук користувача...';
 
   @override
   String get profile_edit => 'Редагувати профіль';
@@ -3285,7 +3284,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get group_title => 'Група';
 
   @override
-  String get group_create => 'Створити групу';
+  String get group_create => 'Створити групу...';
 
   @override
   String get group_edit => 'Редагувати групу';
@@ -3294,10 +3293,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get group_name => 'Назва групи';
 
   @override
-  String get group_name_hint => 'Назвіть свою групу';
+  String get group_name_hint => 'Назвіть свою групу...';
 
   @override
-  String get group_description_hint => 'Введіть опис';
+  String get group_description_hint => 'Введіть опис...';
 
   @override
   String get group_about => 'про';
@@ -3607,19 +3606,19 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get general_error_retry => 'Спробуйте ще раз.';
 
   @override
-  String get chat_archived_title => 'Архівні чати';
+  String get chat_archived_title => 'Архівні чати...';
 
   @override
-  String get chat_archived_empty => 'Немає архівного чату';
+  String get chat_archived_empty => 'Немає архівного чату...';
 
   @override
-  String get chat_add_member_title => 'Додати учасника';
+  String get chat_add_member_title => 'Додати учасника...';
 
   @override
-  String get chat_add_member_button => 'Додати учасника';
+  String get chat_add_member_button => 'Додати учасника...';
 
   @override
-  String get chat_banned_users_empty => 'Тут ще нічого не видно';
+  String get chat_banned_users_empty => 'Тут ще нічого не видно...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3681,6 +3680,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
 
   @override
   String get chat_leave_button => 'Залиште';
+
+  @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
 
   @override
   String get chat_promote_member_button => 'Підвищити учасника';
@@ -3755,10 +3758,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get feed_empty_description => 'Знайдіть групу або створіть власну';
 
   @override
-  String get feed_empty_explore_button => 'Дослідити групу';
+  String get feed_empty_explore_button => 'Дослідити групу...';
 
   @override
-  String get feed_empty_create_button => 'Створити групу';
+  String get feed_empty_create_button => 'Створити групу...';
 
   @override
   String get explore_empty_title => 'Ваше дослідження порожнє';
@@ -3771,6 +3774,101 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
 
   @override
   String get explore_no_group_description => 'Давайте створимо власні групи..';
+
+  @override
+  String get general_open_settings => 'Open settings';
+
+  @override
+  String get general_remove => 'Remove';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Post shared successfully';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'are you sure you want to cancel? Your Changes won\'t be saved.';
+
+  @override
+  String get story_remove_link_message =>
+      'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'Спільнот ще немає';
+
+  @override
+  String get empty_my_communities_description =>
+      'Приєднуйтесь до спільнот, щоб побачити їх тут';
+
+  @override
+  String get empty_my_communities_cta => 'Досліджуйте спільноти...';
+
+  @override
+  String get empty_group_chats_title => 'Групових чатів ще немає';
+
+  @override
+  String get empty_group_chats_description => 'Почніть груповий чат з друзями';
+
+  @override
+  String get empty_group_chats_cta => 'Створити груповий чат...';
+
+  @override
+  String get empty_all_chats_title => 'Розмови ще немає';
+
+  @override
+  String get empty_all_chats_description => 'Давайте створимо чат, щоб почати.';
+
+  @override
+  String get empty_all_chats_cta => 'Створити новий чат...';
+
+  @override
+  String get empty_archived_chats_title => 'Немає архівного чату';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Тут з’являться заархівовані чати';
+
+  @override
+  String get empty_comments_title => 'Поки немає коментарів';
+
+  @override
+  String get empty_comments_description => 'Залиште перший коментар';
+
+  @override
+  String get empty_search_title => 'Результатів не знайдено';
+
+  @override
+  String get empty_search_description =>
+      'Спробуйте шукати за іншими ключовими словами';
+
+  @override
+  String get empty_search_cta => 'Очистити пошук...';
+
+  @override
+  String get empty_category_communities_description =>
+      'У цій категорії не знайдено спільнот. Спробуйте дослідити інші категорії або створіть власну.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Ваше дослідження порожнє';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Знайдіть спільноту або створіть власну';
+
+  @override
+  String get empty_explore_title_no_communities => 'Спільнот ще немає';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Створіть спільноту першим';
+
+  @override
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Цей допис містить медіа';

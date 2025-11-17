@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Search community and user",
+  "global_search_hint": "Search community and user...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Search my community",
+  "search_my_community_hint": "Search my community...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "No results found",
+  "search_no_results": "לא נמצאו תוצאות...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Create Community",
+  "community_create": "Create Community...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Name your community",
+  "community_name_hint": "Name your community...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Enter description",
+  "community_description_hint": "Enter description...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1005,19 +1005,19 @@
   "@user_unreport": {
     "description": "Action to unreport a user"
   },
-  "feed_no_videos": "No videos yet",
+  "feed_no_videos": "עדיין אין סרטונים",
   "@feed_no_videos": {
     "description": "Empty state message when there are no videos in the feed"
   },
-  "feed_no_photos": "No photos yet",
+  "feed_no_photos": "עדיין אין תמונות",
   "@feed_no_photos": {
     "description": "Empty state message when there are no photos in the feed"
   },
-  "feed_no_pinned_posts": "No pinned post yet",
+  "feed_no_pinned_posts": "אין עדיין פוסט מוצמד",
   "@feed_no_pinned_posts": {
     "description": "Empty state message when there are no pinned posts in the community"
   },
-  "feed_no_posts": "No posts yet",
+  "feed_no_posts": "אין עדיין פוסטים",
   "@feed_no_posts": {
     "description": "Empty state message when there are no posts in the community feed"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Search user",
+  "search_user_hint": "Search user...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1094,7 +1094,7 @@
   "@user_unblock_error": {
     "description": "error toast message for unblocking user"
   },
-  "search_no_members_found": "No members found",
+  "search_no_members_found": "לא נמצאו חברים",
   "@search_no_members_found": {
     "description": "Message displayed when no members are found in search"
   },
@@ -1351,7 +1351,7 @@
   "@category_default_title": {
     "description": "Default title for category page when category name is not available"
   },
-  "community_empty_state": "No community yet",
+  "community_empty_state": "אין עדיין קהילה",
   "@community_empty_state": {
     "description": "Empty state message when there are no communities in the category"
   },
@@ -1359,11 +1359,11 @@
   "@community_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  "community_pending_requests_empty_title": "No pending requests available",
+  "community_pending_requests_empty_title": "אין בקשות ממתינות זמינות",
   "@community_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  "community_pending_requests_empty_description": "Enable post review or join approval in community settings to manage requests.",
+  "community_pending_requests_empty_description": "אפשר לפרסם סקירה או להצטרף לאישור בהגדרות הקהילה כדי לנהל בקשות.",
   "@community_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
@@ -1375,7 +1375,7 @@
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
-  "community_pending_posts_empty": "No pending posts",
+  "community_pending_posts_empty": "אין פוסטים ממתינים",
   "@community_pending_posts_empty": {
     "description": "Empty state message when there are no pending posts"
   },
@@ -1583,11 +1583,11 @@
   "@chat_message_deleted": {
     "description": "Preview text for deleted messages"
   },
-  "chat_message_no_preview": "No preview supported for this message type",
+  "chat_message_no_preview": "אין תצוגה מקדימה נתמכת עבור סוג הודעה זה",
   "@chat_message_no_preview": {
     "description": "Preview text for unsupported message types"
   },
-  "chat_no_message_yet": "No message yet",
+  "chat_no_message_yet": "אין עדיין הודעה",
   "@chat_no_message_yet": {
     "description": "Preview text when there are no messages in the chat"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Create Group",
+  "group_create": "Create Group...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Name your group",
+  "group_name_hint": "Name your group...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Enter description",
+  "group_description_hint": "Enter description...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1733,7 +1733,7 @@
       }
     }
   },
-  "group_empty_state": "No group yet",
+  "group_empty_state": "עדיין אין קבוצה",
   "@group_empty_state": {
     "description": "Empty state message when there are no groups"
   },
@@ -1741,11 +1741,11 @@
   "@group_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  "group_pending_requests_empty_title": "No pending requests available",
+  "group_pending_requests_empty_title": "אין בקשות ממתינות זמינות",
   "@group_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  "group_pending_requests_empty_description": "Enable post review or join approval in group settings to manage requests.",
+  "group_pending_requests_empty_description": "אפשר פוסט סקירה או הצטרפות לאישור בהגדרות הקבוצה כדי לנהל בקשות.",
   "@group_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
@@ -1757,7 +1757,7 @@
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
-  "group_pending_posts_empty": "No pending posts",
+  "group_pending_posts_empty": "אין פוסטים ממתינים",
   "@group_pending_posts_empty": {
     "description": "Empty state message when there are no pending posts"
   },
@@ -1989,11 +1989,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "צ'אטים בארכיון",
+  "chat_archived_title": "צ'אטים בארכיון...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "אין צ'אט בארכיון",
+  "chat_archived_empty": "אין צ'אט בארכיון...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,17 +2005,9 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_no_results_found": "לא נמצאו תוצאות",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
-  },
-  "chat_banned_users_empty": "אין כאן עדיין מה לראות",
+  "chat_banned_users_empty": "אין כאן עדיין מה לראות...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "אשר ביטול החסימה",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
   },
   "chat_unban_confirmation_message": "האם אתה בטוח שברצונך לבטל את החסימה של משתמש זה? הם יוכלו להצטרף שוב לקבוצה.",
   "@chat_unban_confirmation_message": {
@@ -2177,7 +2169,7 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "חקור את הקבוצה",
+  "feed_empty_explore_button": "חקור את הקבוצה...",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
@@ -2287,5 +2279,125 @@
   "feed_empty_create_first_post": "צור את הפוסט הראשון שלך",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "אין צ'אט בארכיון",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "לא נמצאו קהילות בקטגוריה זו. נסה לחקור קטגוריות אחרות או ליצור קטגוריות משלך.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "אין תגובות עדיין",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "עדיין אין קהילות",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "היה הראשון להגיב",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "חקור קהילות...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "מצא קהילה או צור קהילה משלך",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "בואו ניצור צ'אט כדי להתחיל.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "נקה חיפוש",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "עדיין אין שיחה",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "צ'אטים בארכיון יופיעו כאן",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "צור צ'אט חדש...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "הצטרף לקהילות כדי לראות אותם כאן",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "התחל צ'אט קבוצתי עם חברים",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "לא נמצאו תוצאות",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "צור צ'אט קבוצתי...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "עדיין אין צ'אטים קבוצתיים",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "עדיין אין קהילות",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "החקירה שלך ריקה",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "נסה לחפש עם מילות מפתח שונות",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "היה הראשון ליצור קהילה",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

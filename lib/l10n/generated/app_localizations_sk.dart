@@ -113,13 +113,13 @@ class AppLocalizationsSk extends AppLocalizations {
       'Všetci členovia budú odstránení zo skupiny. Všetky príspevky, správy, reakcie a médiá zdieľané v skupine budú odstránené. Toto sa nedá vrátiť späť.';
 
   @override
-  String get global_search_hint => 'Vyhľadajte komunitu a používateľa';
+  String get global_search_hint => 'Vyhľadajte komunitu a používateľa...';
 
   @override
-  String get search_my_community_hint => 'Prehľadať moju komunitu';
+  String get search_my_community_hint => 'Prehľadať moju komunitu...';
 
   @override
-  String get search_no_results => 'Nenašli sa žiadne výsledky';
+  String get search_no_results => 'Nenašli sa žiadne výsledky...';
 
   @override
   String get title_communities => 'komunity';
@@ -393,16 +393,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get community_placeholder_members => '1,2 tisíc členov';
 
   @override
-  String get community_create => 'Vytvoriť komunitu';
+  String get community_create => 'Vytvoriť komunitu...';
 
   @override
   String get community_name => 'Názov komunity';
 
   @override
-  String get community_name_hint => 'Pomenujte svoju komunitu';
+  String get community_name_hint => 'Pomenujte svoju komunitu...';
 
   @override
-  String get community_description_hint => 'Zadajte popis';
+  String get community_description_hint => 'Zadajte popis...';
 
   @override
   String get community_edit => 'Upraviť komunitu';
@@ -871,7 +871,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get member_add => 'Pridať člena';
 
   @override
-  String get search_user_hint => 'Vyhľadať používateľa';
+  String get search_user_hint => 'Vyhľadať používateľa...';
 
   @override
   String get profile_edit => 'Upraviť profil';
@@ -1325,7 +1325,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get group_title => 'Skupina';
 
   @override
-  String get group_create => 'Vytvoriť skupinu';
+  String get group_create => 'Vytvoriť skupinu...';
 
   @override
   String get group_edit => 'Upraviť skupinu';
@@ -1334,10 +1334,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get group_name => 'Názov skupiny';
 
   @override
-  String get group_name_hint => 'Pomenujte svoju skupinu';
+  String get group_name_hint => 'Pomenujte svoju skupinu...';
 
   @override
-  String get group_description_hint => 'Zadajte popis';
+  String get group_description_hint => 'Zadajte popis...';
 
   @override
   String get group_about => 'O';
@@ -1649,19 +1649,19 @@ class AppLocalizationsSk extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Žiadny archívny rozhovor...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1795,28 +1795,30 @@ class AppLocalizationsSk extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Váš informačný kanál je prázdny';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description =>
+      'Nájdite skupinu alebo si vytvorte vlastnú';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Preskúmať skupinu...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Vytvoriť skupinu...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Váš prieskum je prázdny';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Zatiaľ žiadna skupina';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'Nájdite skupinu alebo si vytvorte vlastnú';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Vytvorme si vlastné skupiny..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1842,77 +1844,77 @@ class AppLocalizationsSk extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Zatiaľ žiadne komunity';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Pripojte sa ku komunitám a uvidíte ich tu';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Preskúmajte komunity...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Zatiaľ žiadne skupinové rozhovory';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description =>
+      'Začnite skupinový rozhovor s priateľmi';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Vytvorte skupinový chat...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Zatiaľ žiadna konverzácia';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'Ak chcete začať, vytvorte čet.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Vytvoriť nový chat...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Žiadny archívny rozhovor';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Tu sa zobrazia archivované rozhovory';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Zatiaľ žiadne komentáre';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'Pridajte komentár ako prvý';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Nenašli sa žiadne výsledky';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Skúste hľadať pomocou rôznych kľúčových slov';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Vymazať vyhľadávanie...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'V tejto kategórii sa nenašli žiadne komunity. Skúste preskúmať iné kategórie alebo si vytvorte vlastnú.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Váš prieskum je prázdny';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Nájdite komunitu alebo si vytvorte vlastnú';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Zatiaľ žiadne komunity';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Buďte prvý, kto vytvorí komunitu';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Tento príspevok obsahuje médiá';
@@ -1989,7 +1991,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get tab_my_groups => 'Moje skupiny';
 
   @override
-  String get tab_feed => 'Feed';
+  String get tab_feed => 'Krmivo';
 
   @override
   String get settings_permissions => 'Povolenia komunity';
@@ -2078,13 +2080,13 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
       'Všetci členovia budú odstránení zo skupiny. Všetky príspevky, správy, reakcie a médiá zdieľané v skupine budú odstránené. Toto sa nedá vrátiť späť.';
 
   @override
-  String get global_search_hint => 'Vyhľadajte komunitu a používateľa';
+  String get global_search_hint => 'Vyhľadajte komunitu a používateľa...';
 
   @override
-  String get search_my_community_hint => 'Prehľadať moju komunitu';
+  String get search_my_community_hint => 'Prehľadať moju komunitu...';
 
   @override
-  String get search_no_results => 'Nenašli sa žiadne výsledky';
+  String get search_no_results => 'Nenašli sa žiadne výsledky...';
 
   @override
   String get title_communities => 'komunity';
@@ -2247,7 +2249,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'Anketa musí obsahovať aspoň $minOptions možností.';
   }
 
   @override
@@ -2302,7 +2304,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'Toto $content bude natrvalo odstránené.';
   }
 
   @override
@@ -2358,16 +2360,16 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get community_placeholder_members => '1,2 tisíc členov';
 
   @override
-  String get community_create => 'Vytvoriť komunitu';
+  String get community_create => 'Vytvoriť komunitu...';
 
   @override
   String get community_name => 'Názov komunity';
 
   @override
-  String get community_name_hint => 'Pomenujte svoju komunitu';
+  String get community_name_hint => 'Pomenujte svoju komunitu...';
 
   @override
-  String get community_description_hint => 'Zadajte popis';
+  String get community_description_hint => 'Zadajte popis...';
 
   @override
   String get community_edit => 'Upraviť komunitu';
@@ -2764,12 +2766,12 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'Dosiahli ste limit nahrávania $maxUploads obrázkov. Žiadne ďalšie obrázky sa neuložia.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'Dosiahli ste limit nahrávania $maxUploads videí. Žiadne ďalšie videá sa neuložia.';
   }
 
   @override
@@ -2782,12 +2784,12 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'Anketová otázka nemôže presiahnuť $maxQuestionLength znakov.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'Možnosť prieskumu nemôže presiahnuť $maxQuestionLength znakov.';
   }
 
   @override
@@ -2836,7 +2838,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get member_add => 'Pridať člena';
 
   @override
-  String get search_user_hint => 'Vyhľadať používateľa';
+  String get search_user_hint => 'Vyhľadať používateľa...';
 
   @override
   String get profile_edit => 'Upraviť profil';
@@ -3013,7 +3015,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName vám nebude môcť poslať správu. Nedostanú upozornenie, že ste ich zablokovali.';
   }
 
   @override
@@ -3021,7 +3023,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName vám teraz bude môcť poslať správu. Nedostanú upozornenie, že ste ich odblokovali.';
   }
 
   @override
@@ -3035,7 +3037,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return '$count žiadostí vyžaduje vaše schválenie';
   }
 
   @override
@@ -3063,7 +3065,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName nebude môcť vidieť príspevky a komentáre, ktoré ste vytvorili. Nedostanú upozornenie, že ste ich zablokovali.';
   }
 
   @override
@@ -3074,7 +3076,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName bude teraz môcť vidieť príspevky a komentáre, ktoré ste vytvorili. Nedostanú upozornenie, že ste ich odblokovali.';
   }
 
   @override
@@ -3114,7 +3116,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'Odmietnutím čakajúceho príspevku natrvalo odstránite vybratý príspevok z komunity.';
 
   @override
   String get community_pending_posts_empty => 'Žiadne čakajúce príspevky';
@@ -3148,14 +3150,14 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Možnosť $optionNumber';
   }
 
   @override
   String get poll_add_option => 'Pridať možnosť';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Viacnásobný výber';
 
   @override
   String get poll_multiple_selection_description =>
@@ -3163,7 +3165,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'Končí sa $endDate';
   }
 
   @override
@@ -3255,7 +3257,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'Odpovedanie na $displayName';
   }
 
   @override
@@ -3290,7 +3292,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get group_title => 'Skupina';
 
   @override
-  String get group_create => 'Vytvoriť skupinu';
+  String get group_create => 'Vytvoriť skupinu...';
 
   @override
   String get group_edit => 'Upraviť skupinu';
@@ -3299,10 +3301,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get group_name => 'Názov skupiny';
 
   @override
-  String get group_name_hint => 'Pomenujte svoju skupinu';
+  String get group_name_hint => 'Pomenujte svoju skupinu...';
 
   @override
-  String get group_description_hint => 'Zadajte popis';
+  String get group_description_hint => 'Zadajte popis...';
 
   @override
   String get group_about => 'O';
@@ -3427,7 +3429,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Odmietnutím čakajúceho príspevku natrvalo odstránite vybraný príspevok zo skupiny.';
 
   @override
   String get group_pending_posts_empty => 'Žiadne čakajúce príspevky';
@@ -3614,19 +3616,19 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get general_error_retry => 'Skúste to znova.';
 
   @override
-  String get chat_archived_title => 'Archivované rozhovory';
+  String get chat_archived_title => 'Archivované rozhovory...';
 
   @override
-  String get chat_archived_empty => 'Žiadny archívny rozhovor';
+  String get chat_archived_empty => 'Žiadny archívny rozhovor...';
 
   @override
-  String get chat_add_member_title => 'Pridať člena';
+  String get chat_add_member_title => 'Pridať člena...';
 
   @override
-  String get chat_add_member_button => 'Pridať člena';
+  String get chat_add_member_button => 'Pridať člena...';
 
   @override
-  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť';
+  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3692,6 +3694,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String get chat_leave_button => 'Odísť';
+
+  @override
+  String get chat_last_moderator_message =>
+      'Pred odchodom musíte povýšiť iného člena na moderátora.';
 
   @override
   String get chat_promote_member_button => 'Povýšiť člena';
@@ -3767,10 +3773,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
       'Nájdite skupinu alebo si vytvorte vlastnú';
 
   @override
-  String get feed_empty_explore_button => 'Preskúmať skupinu';
+  String get feed_empty_explore_button => 'Preskúmať skupinu...';
 
   @override
-  String get feed_empty_create_button => 'Vytvoriť skupinu';
+  String get feed_empty_create_button => 'Vytvoriť skupinu...';
 
   @override
   String get explore_empty_title => 'Váš prieskum je prázdny';
@@ -3784,6 +3790,102 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String get explore_no_group_description => 'Vytvorme si vlastné skupiny..';
+
+  @override
+  String get general_open_settings => 'Otvorte nastavenia';
+
+  @override
+  String get general_remove => 'Odstrániť';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Príspevok bol úspešne zdieľaný';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'si si istý, že chceš zrušiť? Vaše zmeny sa neuložia.';
+
+  @override
+  String get story_remove_link_message =>
+      'Tento odkaz bude z príbehu odstránený.';
+
+  @override
+  String get empty_my_communities_title => 'Zatiaľ žiadne komunity';
+
+  @override
+  String get empty_my_communities_description =>
+      'Pripojte sa ku komunitám a uvidíte ich tu';
+
+  @override
+  String get empty_my_communities_cta => 'Preskúmajte komunity...';
+
+  @override
+  String get empty_group_chats_title => 'Zatiaľ žiadne skupinové rozhovory';
+
+  @override
+  String get empty_group_chats_description =>
+      'Začnite skupinový rozhovor s priateľmi';
+
+  @override
+  String get empty_group_chats_cta => 'Vytvorte skupinový chat...';
+
+  @override
+  String get empty_all_chats_title => 'Zatiaľ žiadna konverzácia';
+
+  @override
+  String get empty_all_chats_description => 'Ak chcete začať, vytvorte čet.';
+
+  @override
+  String get empty_all_chats_cta => 'Vytvoriť nový chat...';
+
+  @override
+  String get empty_archived_chats_title => 'Žiadny archívny rozhovor';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Tu sa zobrazia archivované rozhovory';
+
+  @override
+  String get empty_comments_title => 'Zatiaľ žiadne komentáre';
+
+  @override
+  String get empty_comments_description => 'Pridajte komentár ako prvý';
+
+  @override
+  String get empty_search_title => 'Nenašli sa žiadne výsledky';
+
+  @override
+  String get empty_search_description =>
+      'Skúste hľadať pomocou rôznych kľúčových slov';
+
+  @override
+  String get empty_search_cta => 'Vymazať vyhľadávanie...';
+
+  @override
+  String get empty_category_communities_description =>
+      'V tejto kategórii sa nenašli žiadne komunity. Skúste preskúmať iné kategórie alebo si vytvorte vlastnú.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Váš prieskum je prázdny';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Nájdite komunitu alebo si vytvorte vlastnú';
+
+  @override
+  String get empty_explore_title_no_communities => 'Zatiaľ žiadne komunity';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Buďte prvý, kto vytvorí komunitu';
+
+  @override
+  String get cta_create_community => 'Vytvorte komunitu...';
 
   @override
   String get shared_post_media_indicator => 'Tento príspevok obsahuje médiá';

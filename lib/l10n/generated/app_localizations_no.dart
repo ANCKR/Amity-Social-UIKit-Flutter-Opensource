@@ -111,13 +111,13 @@ class AppLocalizationsNo extends AppLocalizations {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user';
+  String get global_search_hint => 'Search community and user...';
 
   @override
-  String get search_my_community_hint => 'Search my community';
+  String get search_my_community_hint => 'Search my community...';
 
   @override
-  String get search_no_results => 'No results found';
+  String get search_no_results => 'Ingen resultater funnet...';
 
   @override
   String get title_communities => 'Communities';
@@ -392,16 +392,16 @@ class AppLocalizationsNo extends AppLocalizations {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community';
+  String get community_create => 'Create Community...';
 
   @override
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community';
+  String get community_name_hint => 'Name your community...';
 
   @override
-  String get community_description_hint => 'Enter description';
+  String get community_description_hint => 'Enter description...';
 
   @override
   String get community_edit => 'Edit Community';
@@ -870,7 +870,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get member_add => 'Legg til medlem';
 
   @override
-  String get search_user_hint => 'Søk bruker';
+  String get search_user_hint => 'Søk bruker...';
 
   @override
   String get profile_edit => 'Rediger profil';
@@ -1328,7 +1328,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get group_title => 'Gruppe';
 
   @override
-  String get group_create => 'Opprett gruppe';
+  String get group_create => 'Opprett gruppe...';
 
   @override
   String get group_edit => 'Rediger gruppe';
@@ -1337,10 +1337,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get group_name => 'Gruppenavn';
 
   @override
-  String get group_name_hint => 'Gi gruppen et navn';
+  String get group_name_hint => 'Gi gruppen et navn...';
 
   @override
-  String get group_description_hint => 'Skriv inn beskrivelse';
+  String get group_description_hint => 'Skriv inn beskrivelse...';
 
   @override
   String get group_about => 'Om';
@@ -1650,19 +1650,19 @@ class AppLocalizationsNo extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Ingen arkivchat...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Ingenting her å se ennå...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1796,28 +1796,28 @@ class AppLocalizationsNo extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Feeden din er tom';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Finn en gruppe eller lag din egen';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Utforsk gruppen...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Opprett gruppe...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Utforskingen din er tom';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Ingen gruppe ennå';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description => 'Finn en gruppe eller lag din egen';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'La oss lage dine egne grupper..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1843,77 +1843,75 @@ class AppLocalizationsNo extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Ingen fellesskap ennå';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Bli med i fellesskap for å se dem her';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Utforsk fellesskap...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Ingen gruppechatter ennå';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description => 'Start en gruppechat med venner';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Opprett gruppechat...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Ingen samtale ennå';
 
   @override
   String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+      'La oss lage chat for å komme i gang.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Opprett ny chat...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Ingen arkivchat';
 
   @override
-  String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+  String get empty_archived_chats_description => 'Arkiverte chatter vises her';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Ingen kommentarer ennå';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'Vær den første til å kommentere';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Ingen resultater funnet';
 
   @override
-  String get empty_search_description =>
-      'Try searching with different keywords';
+  String get empty_search_description => 'Prøv å søke med forskjellige søkeord';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Tøm søk';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'Ingen fellesskap funnet i denne kategorien. Prøv å utforske andre kategorier eller lag din egen.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Utforskingen din er tom';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Finn fellesskap eller lag ditt eget';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Ingen fellesskap ennå';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Vær den første til å opprette et fellesskap';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Dette innlegget inneholder media';
@@ -2076,13 +2074,13 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user';
+  String get global_search_hint => 'Search community and user...';
 
   @override
-  String get search_my_community_hint => 'Search my community';
+  String get search_my_community_hint => 'Search my community...';
 
   @override
-  String get search_no_results => 'No results found';
+  String get search_no_results => 'Ingen resultater funnet...';
 
   @override
   String get title_communities => 'Communities';
@@ -2357,16 +2355,16 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community';
+  String get community_create => 'Create Community...';
 
   @override
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community';
+  String get community_name_hint => 'Name your community...';
 
   @override
-  String get community_description_hint => 'Enter description';
+  String get community_description_hint => 'Enter description...';
 
   @override
   String get community_edit => 'Edit Community';
@@ -2835,7 +2833,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get member_add => 'Legg til medlem';
 
   @override
-  String get search_user_hint => 'Søk bruker';
+  String get search_user_hint => 'Søk bruker...';
 
   @override
   String get profile_edit => 'Rediger profil';
@@ -3293,7 +3291,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get group_title => 'Gruppe';
 
   @override
-  String get group_create => 'Opprett gruppe';
+  String get group_create => 'Opprett gruppe...';
 
   @override
   String get group_edit => 'Rediger gruppe';
@@ -3302,10 +3300,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get group_name => 'Gruppenavn';
 
   @override
-  String get group_name_hint => 'Gi gruppen et navn';
+  String get group_name_hint => 'Gi gruppen et navn...';
 
   @override
-  String get group_description_hint => 'Skriv inn beskrivelse';
+  String get group_description_hint => 'Skriv inn beskrivelse...';
 
   @override
   String get group_about => 'Om';
@@ -3615,19 +3613,19 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get general_error_retry => 'Vennligst prøv igjen.';
 
   @override
-  String get chat_archived_title => 'Arkiverte chatter';
+  String get chat_archived_title => 'Arkiverte chatter...';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchat';
+  String get chat_archived_empty => 'Ingen arkivchat...';
 
   @override
-  String get chat_add_member_title => 'Legg til medlem';
+  String get chat_add_member_title => 'Legg til medlem...';
 
   @override
-  String get chat_add_member_button => 'Legg til medlem';
+  String get chat_add_member_button => 'Legg til medlem...';
 
   @override
-  String get chat_banned_users_empty => 'Ingenting her å se ennå';
+  String get chat_banned_users_empty => 'Ingenting her å se ennå...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3689,6 +3687,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
 
   @override
   String get chat_leave_button => 'Forlate';
+
+  @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
 
   @override
   String get chat_promote_member_button => 'Promoter medlem';
@@ -3763,10 +3765,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get feed_empty_description => 'Finn en gruppe eller lag din egen';
 
   @override
-  String get feed_empty_explore_button => 'Utforsk gruppen';
+  String get feed_empty_explore_button => 'Utforsk gruppen...';
 
   @override
-  String get feed_empty_create_button => 'Opprett gruppe';
+  String get feed_empty_create_button => 'Opprett gruppe...';
 
   @override
   String get explore_empty_title => 'Utforskingen din er tom';
@@ -3779,6 +3781,100 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
 
   @override
   String get explore_no_group_description => 'La oss lage dine egne grupper..';
+
+  @override
+  String get general_open_settings => 'Open settings';
+
+  @override
+  String get general_remove => 'Remove';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Post shared successfully';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'are you sure you want to cancel? Your Changes won\'t be saved.';
+
+  @override
+  String get story_remove_link_message =>
+      'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'Ingen fellesskap ennå';
+
+  @override
+  String get empty_my_communities_description =>
+      'Bli med i fellesskap for å se dem her';
+
+  @override
+  String get empty_my_communities_cta => 'Utforsk fellesskap...';
+
+  @override
+  String get empty_group_chats_title => 'Ingen gruppechatter ennå';
+
+  @override
+  String get empty_group_chats_description => 'Start en gruppechat med venner';
+
+  @override
+  String get empty_group_chats_cta => 'Opprett gruppechat...';
+
+  @override
+  String get empty_all_chats_title => 'Ingen samtale ennå';
+
+  @override
+  String get empty_all_chats_description =>
+      'La oss lage chat for å komme i gang.';
+
+  @override
+  String get empty_all_chats_cta => 'Opprett ny chat...';
+
+  @override
+  String get empty_archived_chats_title => 'Ingen arkivchat';
+
+  @override
+  String get empty_archived_chats_description => 'Arkiverte chatter vises her';
+
+  @override
+  String get empty_comments_title => 'Ingen kommentarer ennå';
+
+  @override
+  String get empty_comments_description => 'Vær den første til å kommentere';
+
+  @override
+  String get empty_search_title => 'Ingen resultater funnet';
+
+  @override
+  String get empty_search_description => 'Prøv å søke med forskjellige søkeord';
+
+  @override
+  String get empty_search_cta => 'Tøm søk';
+
+  @override
+  String get empty_category_communities_description =>
+      'Ingen fellesskap funnet i denne kategorien. Prøv å utforske andre kategorier eller lag din egen.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Utforskingen din er tom';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Finn fellesskap eller lag ditt eget';
+
+  @override
+  String get empty_explore_title_no_communities => 'Ingen fellesskap ennå';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Vær den første til å opprette et fellesskap';
+
+  @override
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Dette innlegget inneholder media';

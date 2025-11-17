@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Поиск сообщества и пользователя",
+  "global_search_hint": "Поиск сообщества и пользователя...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Искать в моем сообществе",
+  "search_my_community_hint": "Искать в моем сообществе...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Результаты не найдены",
+  "search_no_results": "Результаты не найдены...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "Опрос должен содержать не менее {minOptions} вариантов.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Этот {content} будет удален без возможности восстановления.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Создать сообщество",
+  "community_create": "Создать сообщество...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Назовите свое сообщество",
+  "community_name_hint": "Назовите свое сообщество...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Введите описание",
+  "community_description_hint": "Введите описание...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Вы достигли лимита загрузки изображений {maxUploads}. Дополнительные изображения не будут сохранены.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Вы достигли лимита загрузки {maxUploads} видео. Любые дополнительные видео не будут сохранены.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -939,15 +939,15 @@
       }
     }
   },
-  "error_edit_post": "Не удалось отредактировать сообщение. Пожалуйста, попробуйте еще раз.",
+  "error_edit_post": "Ошибка редактирования",
   "@error_edit_post": {
     "description": "Error message when editing a post fails"
   },
-  "error_create_post": "Не удалось создать публикацию. Пожалуйста, попробуйте еще раз.",
+  "error_create_post": "Ошибка создания",
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "Вопрос опроса не может превышать {maxQuestionLength} символов.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "Длина параметра опроса не может превышать {maxQuestionLength} символов.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Поиск пользователя",
+  "search_user_hint": "Поиск пользователя...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1037,7 +1037,7 @@
   "@profile_update_success": {
     "description": "Success message when profile is updated"
   },
-  "profile_update_failed": "Не удалось сохранить ваш профиль. Пожалуйста, попробуйте еще раз.",
+  "profile_update_failed": "Ошибка сохранения",
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
@@ -1074,7 +1074,7 @@
   "@user_unreport_success": {
     "description": "success toast message for unreporting user"
   },
-  "user_unreport_error": "Не удалось отменить отчет о пользователе. Пожалуйста, попробуйте еще раз.",
+  "user_unreport_error": "Ошибка отмены",
   "@user_unreport_error": {
     "description": "error toast message for unreporting user"
   },
@@ -1150,7 +1150,7 @@
   "@member_add_success": {
     "description": "Success message when adding member to community"
   },
-  "member_add_error": "Не удалось добавить участника. Пожалуйста, попробуйте еще раз.",
+  "member_add_error": "Ошибка добавления",
   "@member_add_error": {
     "description": "Error message when adding member fails"
   },
@@ -1158,7 +1158,7 @@
   "@moderator_promote_success": {
     "description": "Success message when promoting member to moderator"
   },
-  "moderator_promote_error": "Не удалось повысить члена. Пожалуйста, попробуйте еще раз.",
+  "moderator_promote_error": "Ошибка повышения",
   "@moderator_promote_error": {
     "description": "Error message when promoting member fails"
   },
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} не сможет отправить вам сообщение. Они не будут уведомлены о том, что вы их заблокировали.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "{displayName} теперь сможет отправить вам сообщение. Они не будут уведомлены о том, что вы их разблокировали.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "Запросы {count} требуют вашего одобрения",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} не сможет видеть созданные вами сообщения и комментарии. Они не будут уведомлены о том, что вы их заблокировали.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} теперь сможет видеть созданные вами публикации и комментарии. Они не будут уведомлены о том, что вы их разблокировали.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Отклонение ожидающей публикации приведет к окончательному удалению выбранной публикации из сообщества.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Опция {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Множественный выбор",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Заканчивается {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Отвечая на {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Создать группу",
+  "group_create": "Создать группу...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Назовите свою группу",
+  "group_name_hint": "Назовите свою группу...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Введите описание",
+  "group_description_hint": "Введите описание...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Отклонение ожидающей публикации приведет к окончательному удалению выбранной публикации из группы.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1989,33 +1989,25 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Архивированные чаты",
+  "chat_archived_title": "Архивированные чаты...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Нет архивного чата",
+  "chat_archived_empty": "Нет архивного чата...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Добавить участника",
+  "chat_add_member_title": "Добавить участника...",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Добавить участника",
+  "chat_add_member_button": "Добавить участника...",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_no_results_found": "Результаты не найдены",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
-  },
-  "chat_banned_users_empty": "Здесь пока нет ничего интересного",
+  "chat_banned_users_empty": "Здесь пока нет ничего интересного...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "Подтвердите разблокировку",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
   },
   "chat_unban_confirmation_message": "Вы уверены, что хотите разблокировать этого пользователя? Они смогут снова присоединиться к группе.",
   "@chat_unban_confirmation_message": {
@@ -2129,7 +2121,7 @@
   "@feed_filter_title": {
     "description": "Translation for: Filter Posts"
   },
-  "feed_filter_content_type": "Content Type",
+  "feed_filter_content_type": "Тип контента",
   "@feed_filter_content_type": {
     "description": "Translation for: Content Type"
   },
@@ -2137,67 +2129,67 @@
   "@feed_filter_all": {
     "description": "Translation for: All"
   },
-  "feed_filter_images": "Images",
+  "feed_filter_images": "Изображения",
   "@feed_filter_images": {
     "description": "Translation for: Images"
   },
-  "feed_filter_videos": "Videos",
+  "feed_filter_videos": "Видео",
   "@feed_filter_videos": {
     "description": "Translation for: Videos"
   },
-  "feed_filter_text": "Text",
+  "feed_filter_text": "Текст",
   "@feed_filter_text": {
     "description": "Translation for: Text"
   },
-  "feed_filter_sort_by": "Sort By",
+  "feed_filter_sort_by": "Сортировать по",
   "@feed_filter_sort_by": {
     "description": "Translation for: Sort By"
   },
-  "feed_filter_latest_first": "Latest First",
+  "feed_filter_latest_first": "Последнее Сначала",
   "@feed_filter_latest_first": {
     "description": "Translation for: Latest First"
   },
-  "feed_filter_oldest_first": "Oldest First",
+  "feed_filter_oldest_first": "Сначала самый старый",
   "@feed_filter_oldest_first": {
     "description": "Translation for: Oldest First"
   },
-  "feed_filter_clear_all": "Clear All",
+  "feed_filter_clear_all": "Очистить все",
   "@feed_filter_clear_all": {
     "description": "Translation for: Clear All"
   },
-  "feed_filter_apply": "Apply Filters",
+  "feed_filter_apply": "Применить фильтры",
   "@feed_filter_apply": {
     "description": "Translation for: Apply Filters"
   },
-  "feed_empty_title": "Your feed is empty",
+  "feed_empty_title": "Ваша лента пуста",
   "@feed_empty_title": {
     "description": "Translation for: Your feed is empty"
   },
-  "feed_empty_description": "Find group or create your own",
+  "feed_empty_description": "Найти или создать",
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Explore group",
+  "feed_empty_explore_button": "Обзор",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "Create group",
+  "feed_empty_create_button": "Создать",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
-  "explore_empty_title": "Your explore is empty",
+  "explore_empty_title": "Ваше исследование пусто",
   "@explore_empty_title": {
     "description": "Translation for: Your explore is empty"
   },
-  "explore_no_group_title": "No group yet",
+  "explore_no_group_title": "Группы пока нет",
   "@explore_no_group_title": {
     "description": "Translation for: No group yet"
   },
-  "explore_empty_description": "Find group or create your own",
+  "explore_empty_description": "Найдите группу или создайте свою",
   "@explore_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "explore_no_group_description": "Let's create your own groups..",
+  "explore_no_group_description": "Давайте создавать свои группы..",
   "@explore_no_group_description": {
     "description": "Translation for: Let's create your own groups.."
   },
@@ -2287,5 +2279,125 @@
   "feed_empty_create_first_post": "Создайте свой первый пост",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Нет архивного чата",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "В этой категории сообществ не найдено. Попробуйте изучить другие категории или создать свою собственную.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Комментариев пока нет",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Публикация успешно опубликована",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Нет сообществ",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Будьте первым, кто оставит комментарий",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "Прежде чем покинуть группу, вы должны назначить другого участника модератором.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Исследуйте сообщества...",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Открыть настройки",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Найдите сообщество или создайте свое.",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Давайте для начала создадим чат.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Очистить поиск...",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "ты уверен, что хочешь отменить? Ваши изменения не будут сохранены.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Пока нет разговоров",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Архивированные чаты появятся здесь",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Создать новый чат...",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Удалять",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Присоединяйтесь к сообществам, чтобы увидеть их здесь.",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Начать групповой чат с друзьями",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Создать сообщество...",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Результаты не найдены",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Создать групповой чат...",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Нет групп",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Сообществ пока нет",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Ваше исследование пусто",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "Эта ссылка будет удалена из истории.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Попробуйте выполнить поиск по другим ключевым словам",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Будьте первым, кто создаст сообщество",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
   }
 }

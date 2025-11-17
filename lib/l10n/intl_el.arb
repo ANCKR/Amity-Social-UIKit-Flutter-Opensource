@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Αναζήτηση κοινότητας και χρήστη",
+  "global_search_hint": "Αναζήτηση κοινότητας και χρήστη...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Αναζήτηση στην κοινότητά μου",
+  "search_my_community_hint": "Αναζήτηση στην κοινότητά μου...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Δεν βρέθηκαν αποτελέσματα",
+  "search_no_results": "Δεν βρέθηκαν αποτελέσματα...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Δημιουργία Κοινότητας",
+  "community_create": "Δημιουργία Κοινότητας...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Ονομάστε την κοινότητά σας",
+  "community_name_hint": "Ονομάστε την κοινότητά σας...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Εισαγάγετε περιγραφή",
+  "community_description_hint": "Εισαγάγετε περιγραφή...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Αναζήτηση χρήστη",
+  "search_user_hint": "Αναζήτηση χρήστη...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Δημιουργία ομάδας",
+  "group_create": "Δημιουργία ομάδας...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Ονομάστε την ομάδα σας",
+  "group_name_hint": "Ονομάστε την ομάδα σας...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Εισαγάγετε περιγραφή",
+  "group_description_hint": "Εισαγάγετε περιγραφή...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -2064,23 +2064,23 @@
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
   },
-  "chat_add_member_button": "Προσθήκη μέλους",
+  "chat_add_member_button": "Προσθήκη μέλους...",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
-  "chat_add_member_title": "Προσθήκη μέλους",
+  "chat_add_member_title": "Προσθήκη μέλους...",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
-  "chat_archived_empty": "Δεν υπάρχει συνομιλία με αρχείο",
+  "chat_archived_empty": "Δεν υπάρχει συνομιλία με αρχείο...",
   "@chat_archived_empty": {
     "description": "Empty state for archived chats"
   },
-  "chat_archived_title": "Αρχειοθετημένες συνομιλίες",
+  "chat_archived_title": "Αρχειοθετημένες συνομιλίες...",
   "@chat_archived_title": {
     "description": "Title for archived chats page"
   },
-  "chat_banned_users_empty": "Δεν υπάρχει τίποτα για να δείτε ακόμα",
+  "chat_banned_users_empty": "Δεν υπάρχει τίποτα για να δείτε ακόμα...",
   "@chat_banned_users_empty": {
     "description": "Empty state for banned users"
   },
@@ -2196,11 +2196,11 @@
   "@chat_your_preferences": {
     "description": "Section header for user preferences"
   },
-  "cta_create_community": "Δημιουργία κοινότητας",
+  "cta_create_community": "Δημιουργία κοινότητας...",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "Δημιουργία νέας συνομιλίας",
+  "empty_all_chats_cta": "Δημιουργία νέας συνομιλίας...",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2248,7 +2248,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "Δημιουργία ομαδικής συνομιλίας",
+  "empty_group_chats_cta": "Δημιουργία ομαδικής συνομιλίας...",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2260,7 +2260,7 @@
   "@empty_group_chats_title": {
     "description": "Title for empty group chats list"
   },
-  "empty_my_communities_cta": "Εξερευνήστε τις κοινότητες",
+  "empty_my_communities_cta": "Εξερευνήστε τις κοινότητες...",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },
@@ -2272,7 +2272,7 @@
   "@empty_my_communities_title": {
     "description": "Title for empty my communities list"
   },
-  "empty_search_cta": "Εκκαθάριση αναζήτησης",
+  "empty_search_cta": "Εκκαθάριση αναζήτησης...",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },
@@ -2300,7 +2300,7 @@
   "@explore_no_group_title": {
     "description": "Title when no groups exist"
   },
-  "feed_empty_create_button": "Δημιουργία ομάδας",
+  "feed_empty_create_button": "Δημιουργία ομάδας...",
   "@feed_empty_create_button": {
     "description": "Button text to create a new group"
   },
@@ -2308,7 +2308,7 @@
   "@feed_empty_description": {
     "description": "Description shown when feed is empty"
   },
-  "feed_empty_explore_button": "Ομάδα εξερεύνησης",
+  "feed_empty_explore_button": "Ομάδα εξερεύνησης...",
   "@feed_empty_explore_button": {
     "description": "Button text to explore groups"
   },

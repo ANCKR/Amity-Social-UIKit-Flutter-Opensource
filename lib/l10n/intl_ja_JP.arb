@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "コミュニティとユーザーを検索する",
+  "global_search_hint": "コミュニティとユーザーを検索する...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "私のコミュニティを検索",
+  "search_my_community_hint": "私のコミュニティを検索...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "結果が見つかりませんでした",
+  "search_no_results": "結果が見つかりませんでした...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "コミュニティに名前を付けます",
+  "community_name_hint": "コミュニティに名前を付けます...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "説明を入力してください",
+  "community_description_hint": "説明を入力してください...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "グループに名前を付けます",
+  "group_name_hint": "グループに名前を付けます...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "説明を入力してください",
+  "group_description_hint": "説明を入力してください...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,11 +1989,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "アーカイブされたチャット",
+  "chat_archived_title": "アーカイブされたチャット...",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "アーカイブチャットはありません",
+  "chat_archived_empty": "アーカイブチャットはありません...",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,17 +2005,9 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_no_results_found": "結果が見つかりませんでした",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
-  },
-  "chat_banned_users_empty": "ここにはまだ見るべきものはありません",
+  "chat_banned_users_empty": "ここにはまだ見るべきものはありません...",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "禁止解除の確認",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
   },
   "chat_unban_confirmation_message": "このユーザーの禁止を解除してもよろしいですか?彼らは再びグループに戻ることができます。",
   "@chat_unban_confirmation_message": {
@@ -2292,11 +2284,11 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "cta_create_community": "コミュニティを作成する",
+  "cta_create_community": "コミュニティを作成する...",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "新しいチャットを作成する",
+  "empty_all_chats_cta": "新しいチャットを作成する...",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2344,7 +2336,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "グループチャットを作成する",
+  "empty_group_chats_cta": "グループチャットを作成する...",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2356,7 +2348,7 @@
   "@empty_group_chats_title": {
     "description": "Title for empty group chats list"
   },
-  "empty_my_communities_cta": "コミュニティを探索する",
+  "empty_my_communities_cta": "コミュニティを探索する...",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },

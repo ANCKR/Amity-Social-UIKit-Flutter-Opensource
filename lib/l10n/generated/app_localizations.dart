@@ -388,19 +388,19 @@ abstract class AppLocalizations {
   /// Hint text for the search communities and users field on the homepage
   ///
   /// In en_US, this message translates to:
-  /// **'Search community and user'**
+  /// **'Search community and user...'**
   String get global_search_hint;
 
   /// Hint text for searching my communities
   ///
   /// In en_US, this message translates to:
-  /// **'Search my community'**
+  /// **'Search my community...'**
   String get search_my_community_hint;
 
   /// Message displayed when no search results are found
   ///
   /// In en_US, this message translates to:
-  /// **'No results found'**
+  /// **'No results found...'**
   String get search_no_results;
 
   /// Title for the communities section
@@ -850,7 +850,7 @@ abstract class AppLocalizations {
   /// Label for create community button
   ///
   /// In en_US, this message translates to:
-  /// **'Create Community'**
+  /// **'Create Community...'**
   String get community_create;
 
   /// Label for community name
@@ -862,13 +862,13 @@ abstract class AppLocalizations {
   /// Hint text for community name input
   ///
   /// In en_US, this message translates to:
-  /// **'Name your community'**
+  /// **'Name your community...'**
   String get community_name_hint;
 
   /// Hint text for community description input
   ///
   /// In en_US, this message translates to:
-  /// **'Enter description'**
+  /// **'Enter description...'**
   String get community_description_hint;
 
   /// Label for edit community button
@@ -1594,7 +1594,7 @@ abstract class AppLocalizations {
   /// Hint text for searching users
   ///
   /// In en_US, this message translates to:
-  /// **'Search user'**
+  /// **'Search user...'**
   String get search_user_hint;
 
   /// Button text for editing user profile
@@ -2386,7 +2386,7 @@ abstract class AppLocalizations {
   /// Label for create group button
   ///
   /// In en_US, this message translates to:
-  /// **'Create Group'**
+  /// **'Create Group...'**
   String get group_create;
 
   /// Label for edit group button
@@ -2404,13 +2404,13 @@ abstract class AppLocalizations {
   /// Hint text for group name input
   ///
   /// In en_US, this message translates to:
-  /// **'Name your group'**
+  /// **'Name your group...'**
   String get group_name_hint;
 
   /// Hint text for group description input
   ///
   /// In en_US, this message translates to:
-  /// **'Enter description'**
+  /// **'Enter description...'**
   String get group_description_hint;
 
   /// Label for group about section
@@ -2950,31 +2950,31 @@ abstract class AppLocalizations {
   /// Title for archived chats page
   ///
   /// In en_US, this message translates to:
-  /// **'Archived chats'**
+  /// **'Archived chats...'**
   String get chat_archived_title;
 
   /// Empty state for archived chats
   ///
   /// In en_US, this message translates to:
-  /// **'No archive chat'**
+  /// **'No archive chat...'**
   String get chat_archived_empty;
 
   /// Title for add member page
   ///
   /// In en_US, this message translates to:
-  /// **'Add Member'**
+  /// **'Add Member...'**
   String get chat_add_member_title;
 
   /// Button text to add members
   ///
   /// In en_US, this message translates to:
-  /// **'Add Member'**
+  /// **'Add Member...'**
   String get chat_add_member_button;
 
   /// Empty state for banned users
   ///
   /// In en_US, this message translates to:
-  /// **'Nothing here to see yet'**
+  /// **'Nothing here to see yet...'**
   String get chat_banned_users_empty;
 
   /// Confirmation message for unbanning user
@@ -3226,13 +3226,13 @@ abstract class AppLocalizations {
   /// Button text to explore groups
   ///
   /// In en_US, this message translates to:
-  /// **'Explore group'**
+  /// **'Explore group...'**
   String get feed_empty_explore_button;
 
   /// Button text to create a new group
   ///
   /// In en_US, this message translates to:
-  /// **'Create group'**
+  /// **'Create group...'**
   String get feed_empty_create_button;
 
   /// Title for empty explore state
@@ -3316,7 +3316,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty my communities list
   ///
   /// In en_US, this message translates to:
-  /// **'Explore communities'**
+  /// **'Explore communities...'**
   String get empty_my_communities_cta;
 
   /// Title for empty group chats list
@@ -3334,7 +3334,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty group chats list
   ///
   /// In en_US, this message translates to:
-  /// **'Create group chat'**
+  /// **'Create group chat...'**
   String get empty_group_chats_cta;
 
   /// Title for empty all chats list
@@ -3352,7 +3352,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty all chats list
   ///
   /// In en_US, this message translates to:
-  /// **'Create new chat'**
+  /// **'Create new chat...'**
   String get empty_all_chats_cta;
 
   /// Title for empty archived chats list
@@ -3394,7 +3394,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty search results
   ///
   /// In en_US, this message translates to:
-  /// **'Clear search'**
+  /// **'Clear search...'**
   String get empty_search_cta;
 
   /// Description for empty category communities
@@ -3430,7 +3430,7 @@ abstract class AppLocalizations {
   /// CTA button text to create a community
   ///
   /// In en_US, this message translates to:
-  /// **'Create community'**
+  /// **'Create community...'**
   String get cta_create_community;
 
   /// Text shown when shared post contains media but can't display preview

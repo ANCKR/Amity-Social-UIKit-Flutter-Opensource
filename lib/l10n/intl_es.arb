@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Comunidad de búsqueda y usuario",
+  "global_search_hint": "Comunidad de búsqueda y usuario...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Buscar en mi comunidad",
+  "search_my_community_hint": "Buscar en mi comunidad...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "No se encontraron resultados",
+  "search_no_results": "No se encontraron resultados...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Crear comunidad",
+  "community_create": "Crear comunidad...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Nombra tu comunidad",
+  "community_name_hint": "Nombra tu comunidad...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Introduce la descripción",
+  "community_description_hint": "Introduce la descripción...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -939,11 +939,11 @@
       }
     }
   },
-  "error_edit_post": "No se pudo editar la publicación. Por favor inténtalo de nuevo.",
+  "error_edit_post": "Error al editar",
   "@error_edit_post": {
     "description": "Error message when editing a post fails"
   },
-  "error_create_post": "No se pudo crear la publicación. Por favor inténtalo de nuevo.",
+  "error_create_post": "Error al crear",
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Buscar usuario",
+  "search_user_hint": "Buscar usuario...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1037,7 +1037,7 @@
   "@profile_update_success": {
     "description": "Success message when profile is updated"
   },
-  "profile_update_failed": "No se pudo guardar tu perfil. Por favor inténtalo de nuevo.",
+  "profile_update_failed": "Error al guardar",
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
@@ -1074,7 +1074,7 @@
   "@user_unreport_success": {
     "description": "success toast message for unreporting user"
   },
-  "user_unreport_error": "No se pudo cancelar la denuncia del usuario. Por favor inténtalo de nuevo.",
+  "user_unreport_error": "Error al desmarcar",
   "@user_unreport_error": {
     "description": "error toast message for unreporting user"
   },
@@ -1150,7 +1150,7 @@
   "@member_add_success": {
     "description": "Success message when adding member to community"
   },
-  "member_add_error": "No se pudo agregar miembro. Por favor inténtalo de nuevo.",
+  "member_add_error": "Error al agregar",
   "@member_add_error": {
     "description": "Error message when adding member fails"
   },
@@ -1158,7 +1158,7 @@
   "@moderator_promote_success": {
     "description": "Success message when promoting member to moderator"
   },
-  "moderator_promote_error": "No se pudo promover al miembro. Por favor inténtalo de nuevo.",
+  "moderator_promote_error": "Error al promover",
   "@moderator_promote_error": {
     "description": "Error message when promoting member fails"
   },
@@ -1202,7 +1202,7 @@
   "@user_feed_blocked_title": {
     "description": "Title for blocked user feed empty state"
   },
-  "user_feed_blocked_description": "Desbloquea para ver sus publicaciones.",
+  "user_feed_blocked_description": "Desbloquear para ver",
   "@user_feed_blocked_description": {
     "description": "Description for blocked user feed empty state"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Crear grupo",
+  "group_create": "Crear grupo...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Nombra tu grupo",
+  "group_name_hint": "Nombra tu grupo...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Introduce la descripción",
+  "group_description_hint": "Introduce la descripción...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1977,7 +1977,7 @@
   "@story_discard_action": {
     "description": "Button text for discarding story"
   },
-  "empty_my_communities_title": "Aún no hay comunidades",
+  "empty_my_communities_title": "Sin comunidades",
   "@empty_my_communities_title": {
     "description": "Título para lista vacía de mis comunidades"
   },
@@ -1985,11 +1985,11 @@
   "@empty_my_communities_description": {
     "description": "Descripción para lista vacía de mis comunidades"
   },
-  "empty_my_communities_cta": "Explorar comunidades",
+  "empty_my_communities_cta": "Explorar comunidades...",
   "@empty_my_communities_cta": {
     "description": "Texto del botón CTA para lista vacía de mis comunidades"
   },
-  "empty_group_chats_title": "Aún no hay chats grupales",
+  "empty_group_chats_title": "Sin chats grupales",
   "@empty_group_chats_title": {
     "description": "Título para lista vacía de chats grupales"
   },
@@ -1997,7 +1997,7 @@
   "@empty_group_chats_description": {
     "description": "Descripción para lista vacía de chats grupales"
   },
-  "empty_group_chats_cta": "Crear chat grupal",
+  "empty_group_chats_cta": "Crear chat grupal...",
   "@empty_group_chats_cta": {
     "description": "Texto del botón CTA para lista vacía de chats grupales"
   },
@@ -2009,7 +2009,7 @@
   "@empty_all_chats_description": {
     "description": "Descripción para lista de chats vacía"
   },
-  "empty_all_chats_cta": "Crear nuevo chat",
+  "empty_all_chats_cta": "Crear nuevo chat...",
   "@empty_all_chats_cta": {
     "description": "Texto del botón CTA para lista de chats vacía"
   },
@@ -2037,7 +2037,7 @@
   "@empty_search_description": {
     "description": "Descripción para resultados de búsqueda vacíos"
   },
-  "empty_search_cta": "Explorar comunidades",
+  "empty_search_cta": "Explorar comunidades...",
   "@empty_search_cta": {
     "description": "Texto del botón CTA para resultados de búsqueda vacíos"
   },
@@ -2061,7 +2061,7 @@
   "@empty_explore_description_no_communities": {
     "description": "Descripción para página de exploración cuando hay categorías pero no comunidades"
   },
-  "cta_create_community": "Crear comunidad",
+  "cta_create_community": "Crear comunidad...",
   "@cta_create_community": {
     "description": "Texto del botón CTA para crear comunidad"
   },
@@ -2152,19 +2152,19 @@
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
   },
-  "chat_add_member_button": "Agregar miembro",
+  "chat_add_member_button": "Agregar miembro...",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
-  "chat_add_member_title": "Agregar miembro",
+  "chat_add_member_title": "Agregar miembro...",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
-  "chat_archived_empty": "Sin chat de archivo",
+  "chat_archived_empty": "Sin chat de archivo...",
   "@chat_archived_empty": {
     "description": "Empty state for archived chats"
   },
-  "chat_archived_title": "Chats archivados",
+  "chat_archived_title": "Chats archivados...",
   "@chat_archived_title": {
     "description": "Title for archived chats page"
   },
@@ -2300,15 +2300,15 @@
   "@explore_no_group_title": {
     "description": "Title when no groups exist"
   },
-  "feed_empty_create_button": "Crear grupo",
+  "feed_empty_create_button": "Crear",
   "@feed_empty_create_button": {
     "description": "Button text to create a new group"
   },
-  "feed_empty_description": "Encuentra grupo o crea el tuyo propio",
+  "feed_empty_description": "Buscar o crear grupo",
   "@feed_empty_description": {
     "description": "Description shown when feed is empty"
   },
-  "feed_empty_explore_button": "Explorar grupo",
+  "feed_empty_explore_button": "Explorar",
   "@feed_empty_explore_button": {
     "description": "Button text to explore groups"
   },

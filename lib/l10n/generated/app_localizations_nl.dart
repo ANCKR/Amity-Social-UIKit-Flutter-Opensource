@@ -113,13 +113,13 @@ class AppLocalizationsNl extends AppLocalizations {
       'Alle leden worden uit de groep verwijderd. Alle berichten, berichten, reacties en media die in de groep worden gedeeld, worden verwijderd. Dit kan niet ongedaan worden gemaakt.';
 
   @override
-  String get global_search_hint => 'Zoekgemeenschap en gebruiker';
+  String get global_search_hint => 'Zoekgemeenschap en gebruiker...';
 
   @override
-  String get search_my_community_hint => 'Zoek in mijn gemeenschap';
+  String get search_my_community_hint => 'Zoek in mijn gemeenschap...';
 
   @override
-  String get search_no_results => 'Geen resultaten gevonden';
+  String get search_no_results => 'Geen resultaten gevonden...';
 
   @override
   String get title_communities => 'Gemeenschappen';
@@ -395,16 +395,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get community_placeholder_members => '1,2K leden';
 
   @override
-  String get community_create => 'Creëer een gemeenschap';
+  String get community_create => 'Creëer een gemeenschap...';
 
   @override
   String get community_name => 'Gemeenschapsnaam';
 
   @override
-  String get community_name_hint => 'Geef uw gemeenschap een naam';
+  String get community_name_hint => 'Geef uw gemeenschap een naam...';
 
   @override
-  String get community_description_hint => 'Voer een beschrijving in';
+  String get community_description_hint => 'Voer een beschrijving in...';
 
   @override
   String get community_edit => 'Gemeenschap bewerken';
@@ -811,12 +811,10 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get error_edit_post =>
-      'Kan bericht niet bewerken. Probeer het opnieuw.';
+  String get error_edit_post => 'Bewerken mislukt';
 
   @override
-  String get error_create_post =>
-      'Kan bericht niet maken. Probeer het opnieuw.';
+  String get error_create_post => 'Maken mislukt';
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
@@ -875,7 +873,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get member_add => 'Lid toevoegen';
 
   @override
-  String get search_user_hint => 'Zoek gebruiker';
+  String get search_user_hint => 'Zoek gebruiker...';
 
   @override
   String get profile_edit => 'Profiel bewerken';
@@ -884,8 +882,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get profile_update_success => 'Je profiel is succesvol bijgewerkt!';
 
   @override
-  String get profile_update_failed =>
-      'Kan uw profiel niet opslaan. Probeer het opnieuw.';
+  String get profile_update_failed => 'Opslaan mislukt';
 
   @override
   String get community_story_comments => 'Verhaal opmerkingen';
@@ -918,8 +915,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get user_unreport_success => 'User unreported.';
 
   @override
-  String get user_unreport_error =>
-      'Failed to unreport user. Please try again.';
+  String get user_unreport_error => 'Rapportage mislukt';
 
   @override
   String get user_block_success => 'User blocked.';
@@ -934,7 +930,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get user_unblock_error => 'Failed to unblock user. Please try again.';
 
   @override
-  String get search_no_members_found => 'No members found';
+  String get search_no_members_found => 'Geen leden gevonden';
 
   @override
   String get moderator_promotion_title => 'Moderator promotion';
@@ -981,14 +977,13 @@ class AppLocalizationsNl extends AppLocalizations {
       'Successfully added member to this community.';
 
   @override
-  String get member_add_error => 'Failed to add member. Please try again.';
+  String get member_add_error => 'Toevoegen mislukt';
 
   @override
   String get moderator_promote_success => 'Successfully promoted to moderator.';
 
   @override
-  String get moderator_promote_error =>
-      'Failed to promote member. Please try again.';
+  String get moderator_promote_error => 'Promotie mislukt';
 
   @override
   String get moderator_demote_success => 'Successfully demoted to member.';
@@ -1023,7 +1018,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get user_feed_blocked_title => 'You\'ve blocked this user';
 
   @override
-  String get user_feed_blocked_description => 'Unblock to see their posts.';
+  String get user_feed_blocked_description => 'Deblokkeren om te zien';
 
   @override
   String get user_feed_private_title => 'This account is private';
@@ -1129,18 +1124,18 @@ class AppLocalizationsNl extends AppLocalizations {
   String get category_default_title => 'Category';
 
   @override
-  String get community_empty_state => 'No community yet';
+  String get community_empty_state => 'Nog geen gemeenschap';
 
   @override
   String get community_pending_requests_title => 'Pending Requests';
 
   @override
   String get community_pending_requests_empty_title =>
-      'No pending requests available';
+      'Geen openstaande verzoeken beschikbaar';
 
   @override
   String get community_pending_requests_empty_description =>
-      'Enable post review or join approval in community settings to manage requests.';
+      'Schakel postbeoordeling in of sluit u aan bij goedkeuring in de community-instellingen om verzoeken te beheren.';
 
   @override
   String get community_join_requests_coming_soon =>
@@ -1151,7 +1146,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Decline pending post will permanently delete the selected post from community.';
 
   @override
-  String get community_pending_posts_empty => 'No pending posts';
+  String get community_pending_posts_empty => 'Geen openstaande berichten';
 
   @override
   String get community_pending_post_accept => 'Accept';
@@ -1315,16 +1310,16 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get chat_message_no_preview =>
-      'No preview supported for this message type';
+      'Er wordt geen voorbeeld ondersteund voor dit berichttype';
 
   @override
-  String get chat_no_message_yet => 'No message yet';
+  String get chat_no_message_yet => 'Nog geen bericht';
 
   @override
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Create Group...';
 
   @override
   String get group_edit => 'Edit Group';
@@ -1333,10 +1328,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Name your group...';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Enter description...';
 
   @override
   String get group_about => 'About';
@@ -1442,18 +1437,18 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'Nog geen groep';
 
   @override
   String get group_pending_requests_title => 'Pending Requests';
 
   @override
   String get group_pending_requests_empty_title =>
-      'No pending requests available';
+      'Geen openstaande verzoeken beschikbaar';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'Schakel postbeoordeling in of neem deel aan goedkeuring in de groepsinstellingen om verzoeken te beheren.';
 
   @override
   String get group_join_requests_coming_soon =>
@@ -1464,7 +1459,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Decline pending post will permanently delete the selected post from group.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'Geen openstaande berichten';
 
   @override
   String get group_pending_post_accept => 'Accept';
@@ -1646,19 +1641,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Geen archiefchat...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Hier is nog niets te zien...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1792,28 +1787,30 @@ class AppLocalizationsNl extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Je feed is leeg';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Zoek of maak groep';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Verkennen';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Maken';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Je verkenning is leeg';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Nog geen groep';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'Zoek een groep of creëer uw eigen groep';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description =>
+      'Laten we uw eigen groepen maken..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1839,77 +1836,79 @@ class AppLocalizationsNl extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Geen communities';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Sluit je aan bij communities om ze hier te bekijken';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Ontdek gemeenschappen...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Geen groepen';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description =>
+      'Start een groepschat met vrienden';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Groepschat maken...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Nog geen gesprek';
 
   @override
   String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+      'Laten we een chat maken om aan de slag te gaan.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Maak een nieuwe chat...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Geen archiefchat';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Gearchiveerde chats verschijnen hier';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Nog geen opmerkingen';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description =>
+      'Wees de eerste die commentaar geeft';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Geen resultaten gevonden';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Probeer te zoeken met verschillende trefwoorden';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Duidelijke zoekopdracht...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'Er zijn geen communities gevonden in deze categorie. Probeer andere categorieën te verkennen of maak uw eigen categorieën.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Je verkenning is leeg';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Vind een community of creëer je eigen community';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Nog geen gemeenschappen';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Wees de eerste die een community creëert';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Dit bericht bevat media';
@@ -2074,13 +2073,13 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Alle leden worden uit de groep verwijderd. Alle berichten, berichten, reacties en media die in de groep worden gedeeld, worden verwijderd. Dit kan niet ongedaan worden gemaakt.';
 
   @override
-  String get global_search_hint => 'Zoekgemeenschap en gebruiker';
+  String get global_search_hint => 'Zoekgemeenschap en gebruiker...';
 
   @override
-  String get search_my_community_hint => 'Zoek in mijn gemeenschap';
+  String get search_my_community_hint => 'Zoek in mijn gemeenschap...';
 
   @override
-  String get search_no_results => 'Geen resultaten gevonden';
+  String get search_no_results => 'Geen resultaten gevonden...';
 
   @override
   String get title_communities => 'Gemeenschappen';
@@ -2356,16 +2355,16 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get community_placeholder_members => '1,2K leden';
 
   @override
-  String get community_create => 'Creëer een gemeenschap';
+  String get community_create => 'Creëer een gemeenschap...';
 
   @override
   String get community_name => 'Gemeenschapsnaam';
 
   @override
-  String get community_name_hint => 'Geef uw gemeenschap een naam';
+  String get community_name_hint => 'Geef uw gemeenschap een naam...';
 
   @override
-  String get community_description_hint => 'Voer een beschrijving in';
+  String get community_description_hint => 'Voer een beschrijving in...';
 
   @override
   String get community_edit => 'Gemeenschap bewerken';
@@ -2772,12 +2771,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   }
 
   @override
-  String get error_edit_post =>
-      'Kan bericht niet bewerken. Probeer het opnieuw.';
+  String get error_edit_post => 'Bewerken mislukt';
 
   @override
-  String get error_create_post =>
-      'Kan bericht niet maken. Probeer het opnieuw.';
+  String get error_create_post => 'Maken mislukt';
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
@@ -2836,7 +2833,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get member_add => 'Lid toevoegen';
 
   @override
-  String get search_user_hint => 'Zoek gebruiker';
+  String get search_user_hint => 'Zoek gebruiker...';
 
   @override
   String get profile_edit => 'Profiel bewerken';
@@ -2845,8 +2842,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get profile_update_success => 'Je profiel is succesvol bijgewerkt!';
 
   @override
-  String get profile_update_failed =>
-      'Kan uw profiel niet opslaan. Probeer het opnieuw.';
+  String get profile_update_failed => 'Opslaan mislukt';
 
   @override
   String get community_story_comments => 'Verhaal opmerkingen';
@@ -2879,8 +2875,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get user_unreport_success => 'User unreported.';
 
   @override
-  String get user_unreport_error =>
-      'Failed to unreport user. Please try again.';
+  String get user_unreport_error => 'Rapportage mislukt';
 
   @override
   String get user_block_success => 'User blocked.';
@@ -2895,7 +2890,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get user_unblock_error => 'Failed to unblock user. Please try again.';
 
   @override
-  String get search_no_members_found => 'No members found';
+  String get search_no_members_found => 'Geen leden gevonden';
 
   @override
   String get moderator_promotion_title => 'Moderator promotion';
@@ -2942,14 +2937,13 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Successfully added member to this community.';
 
   @override
-  String get member_add_error => 'Failed to add member. Please try again.';
+  String get member_add_error => 'Toevoegen mislukt';
 
   @override
   String get moderator_promote_success => 'Successfully promoted to moderator.';
 
   @override
-  String get moderator_promote_error =>
-      'Failed to promote member. Please try again.';
+  String get moderator_promote_error => 'Promotie mislukt';
 
   @override
   String get moderator_demote_success => 'Successfully demoted to member.';
@@ -2984,7 +2978,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get user_feed_blocked_title => 'You\'ve blocked this user';
 
   @override
-  String get user_feed_blocked_description => 'Unblock to see their posts.';
+  String get user_feed_blocked_description => 'Deblokkeren om te zien';
 
   @override
   String get user_feed_private_title => 'This account is private';
@@ -3090,18 +3084,18 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get category_default_title => 'Category';
 
   @override
-  String get community_empty_state => 'No community yet';
+  String get community_empty_state => 'Nog geen gemeenschap';
 
   @override
   String get community_pending_requests_title => 'Pending Requests';
 
   @override
   String get community_pending_requests_empty_title =>
-      'No pending requests available';
+      'Geen openstaande verzoeken beschikbaar';
 
   @override
   String get community_pending_requests_empty_description =>
-      'Enable post review or join approval in community settings to manage requests.';
+      'Schakel postbeoordeling in of sluit u aan bij goedkeuring in de community-instellingen om verzoeken te beheren.';
 
   @override
   String get community_join_requests_coming_soon =>
@@ -3112,7 +3106,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Decline pending post will permanently delete the selected post from community.';
 
   @override
-  String get community_pending_posts_empty => 'No pending posts';
+  String get community_pending_posts_empty => 'Geen openstaande berichten';
 
   @override
   String get community_pending_post_accept => 'Accept';
@@ -3276,16 +3270,16 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
 
   @override
   String get chat_message_no_preview =>
-      'No preview supported for this message type';
+      'Er wordt geen voorbeeld ondersteund voor dit berichttype';
 
   @override
-  String get chat_no_message_yet => 'No message yet';
+  String get chat_no_message_yet => 'Nog geen bericht';
 
   @override
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group';
+  String get group_create => 'Create Group...';
 
   @override
   String get group_edit => 'Edit Group';
@@ -3294,10 +3288,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group';
+  String get group_name_hint => 'Name your group...';
 
   @override
-  String get group_description_hint => 'Enter description';
+  String get group_description_hint => 'Enter description...';
 
   @override
   String get group_about => 'About';
@@ -3403,18 +3397,18 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   }
 
   @override
-  String get group_empty_state => 'No group yet';
+  String get group_empty_state => 'Nog geen groep';
 
   @override
   String get group_pending_requests_title => 'Pending Requests';
 
   @override
   String get group_pending_requests_empty_title =>
-      'No pending requests available';
+      'Geen openstaande verzoeken beschikbaar';
 
   @override
   String get group_pending_requests_empty_description =>
-      'Enable post review or join approval in group settings to manage requests.';
+      'Schakel postbeoordeling in of neem deel aan goedkeuring in de groepsinstellingen om verzoeken te beheren.';
 
   @override
   String get group_join_requests_coming_soon =>
@@ -3425,7 +3419,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Decline pending post will permanently delete the selected post from group.';
 
   @override
-  String get group_pending_posts_empty => 'No pending posts';
+  String get group_pending_posts_empty => 'Geen openstaande berichten';
 
   @override
   String get group_pending_post_accept => 'Accept';
@@ -3598,7 +3592,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get category_all => 'Alle categorieën';
 
   @override
-  String get general_search => 'Zoekopdracht';
+  String get general_search => 'Zoekopdracht...';
 
   @override
   String get general_error_title => 'Er is iets misgegaan';
@@ -3607,19 +3601,19 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get general_error_retry => 'Probeer het opnieuw.';
 
   @override
-  String get chat_archived_title => 'Gearchiveerde chats';
+  String get chat_archived_title => 'Gearchiveerde chats...';
 
   @override
-  String get chat_archived_empty => 'Geen archiefchat';
+  String get chat_archived_empty => 'Geen archiefchat...';
 
   @override
-  String get chat_add_member_title => 'Lid toevoegen';
+  String get chat_add_member_title => 'Lid toevoegen...';
 
   @override
-  String get chat_add_member_button => 'Lid toevoegen';
+  String get chat_add_member_button => 'Lid toevoegen...';
 
   @override
-  String get chat_banned_users_empty => 'Hier is nog niets te zien';
+  String get chat_banned_users_empty => 'Hier is nog niets te zien...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3682,6 +3676,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
 
   @override
   String get chat_leave_button => 'Vertrekken';
+
+  @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
 
   @override
   String get chat_promote_member_button => 'Lid promoten';
@@ -3753,14 +3751,13 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get feed_empty_title => 'Je feed is leeg';
 
   @override
-  String get feed_empty_description =>
-      'Zoek een groep of creëer uw eigen groep';
+  String get feed_empty_description => 'Zoek of maak groep';
 
   @override
-  String get feed_empty_explore_button => 'Groep verkennen';
+  String get feed_empty_explore_button => 'Verkennen';
 
   @override
-  String get feed_empty_create_button => 'Groep aanmaken';
+  String get feed_empty_create_button => 'Maken';
 
   @override
   String get explore_empty_title => 'Je verkenning is leeg';
@@ -3775,6 +3772,104 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   @override
   String get explore_no_group_description =>
       'Laten we uw eigen groepen maken..';
+
+  @override
+  String get general_open_settings => 'Open settings';
+
+  @override
+  String get general_remove => 'Remove';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Post shared successfully';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'are you sure you want to cancel? Your Changes won\'t be saved.';
+
+  @override
+  String get story_remove_link_message =>
+      'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'Geen communities';
+
+  @override
+  String get empty_my_communities_description =>
+      'Sluit je aan bij communities om ze hier te bekijken';
+
+  @override
+  String get empty_my_communities_cta => 'Ontdek gemeenschappen...';
+
+  @override
+  String get empty_group_chats_title => 'Geen groepen';
+
+  @override
+  String get empty_group_chats_description =>
+      'Start een groepschat met vrienden';
+
+  @override
+  String get empty_group_chats_cta => 'Groepschat maken...';
+
+  @override
+  String get empty_all_chats_title => 'Nog geen gesprek';
+
+  @override
+  String get empty_all_chats_description =>
+      'Laten we een chat maken om aan de slag te gaan.';
+
+  @override
+  String get empty_all_chats_cta => 'Maak een nieuwe chat...';
+
+  @override
+  String get empty_archived_chats_title => 'Geen archiefchat';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Gearchiveerde chats verschijnen hier';
+
+  @override
+  String get empty_comments_title => 'Nog geen opmerkingen';
+
+  @override
+  String get empty_comments_description =>
+      'Wees de eerste die commentaar geeft';
+
+  @override
+  String get empty_search_title => 'Geen resultaten gevonden';
+
+  @override
+  String get empty_search_description =>
+      'Probeer te zoeken met verschillende trefwoorden';
+
+  @override
+  String get empty_search_cta => 'Duidelijke zoekopdracht...';
+
+  @override
+  String get empty_category_communities_description =>
+      'Er zijn geen communities gevonden in deze categorie. Probeer andere categorieën te verkennen of maak uw eigen categorieën.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Je verkenning is leeg';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Vind een community of creëer je eigen community';
+
+  @override
+  String get empty_explore_title_no_communities => 'Nog geen gemeenschappen';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Wees de eerste die een community creëert';
+
+  @override
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Dit bericht bevat media';

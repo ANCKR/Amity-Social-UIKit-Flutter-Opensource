@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Pesquisar comunidade e usuário",
+  "global_search_hint": "Pesquisar comunidade e usuário...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Pesquisar minha comunidade",
+  "search_my_community_hint": "Pesquisar minha comunidade...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Nenhum resultado encontrado",
+  "search_no_results": "Nenhum resultado encontrado...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "A enquete deve conter pelo menos opções {minOptions}.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Este {content} será excluído permanentemente.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Criar comunidade",
+  "community_create": "Criar comunidade...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Dê um nome à sua comunidade",
+  "community_name_hint": "Dê um nome à sua comunidade...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Insira a descrição",
+  "community_description_hint": "Insira a descrição...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Você atingiu o limite de upload de {maxUploads} imagens. Quaisquer imagens adicionais não serão salvas.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Você atingiu o limite de upload de {maxUploads} vídeos. Quaisquer vídeos adicionais não serão salvos.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -939,15 +939,15 @@
       }
     }
   },
-  "error_edit_post": "Falha ao editar a postagem. Por favor, tente novamente.",
+  "error_edit_post": "Erro ao editar",
   "@error_edit_post": {
     "description": "Error message when editing a post fails"
   },
-  "error_create_post": "Falha ao criar postagem. Por favor, tente novamente.",
+  "error_create_post": "Erro ao criar",
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "A pergunta da enquete não pode exceder {maxQuestionLength} caracteres.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "A opção de enquete não pode exceder {maxQuestionLength} caracteres.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Pesquisar usuário",
+  "search_user_hint": "Pesquisar usuário...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1037,7 +1037,7 @@
   "@profile_update_success": {
     "description": "Success message when profile is updated"
   },
-  "profile_update_failed": "Falha ao salvar seu perfil. Por favor, tente novamente.",
+  "profile_update_failed": "Erro ao salvar",
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
@@ -1074,7 +1074,7 @@
   "@user_unreport_success": {
     "description": "success toast message for unreporting user"
   },
-  "user_unreport_error": "Falha ao cancelar a denúncia do usuário. Por favor, tente novamente.",
+  "user_unreport_error": "Erro ao desmarcar",
   "@user_unreport_error": {
     "description": "error toast message for unreporting user"
   },
@@ -1150,7 +1150,7 @@
   "@member_add_success": {
     "description": "Success message when adding member to community"
   },
-  "member_add_error": "Falha ao adicionar membro. Por favor, tente novamente.",
+  "member_add_error": "Erro ao adicionar",
   "@member_add_error": {
     "description": "Error message when adding member fails"
   },
@@ -1158,7 +1158,7 @@
   "@moderator_promote_success": {
     "description": "Success message when promoting member to moderator"
   },
-  "moderator_promote_error": "Falha ao promover membro. Por favor, tente novamente.",
+  "moderator_promote_error": "Erro ao promover",
   "@moderator_promote_error": {
     "description": "Error message when promoting member fails"
   },
@@ -1202,7 +1202,7 @@
   "@user_feed_blocked_title": {
     "description": "Title for blocked user feed empty state"
   },
-  "user_feed_blocked_description": "Desbloqueie para ver suas postagens.",
+  "user_feed_blocked_description": "Desbloquear para ver",
   "@user_feed_blocked_description": {
     "description": "Description for blocked user feed empty state"
   },
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} não poderá enviar a mensagem para você. Eles não serão notificados de que você os bloqueou.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "{displayName} agora poderá enviar a mensagem para você. Eles não serão notificados de que você os desbloqueou.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "Solicitações {count} precisam de sua aprovação",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} não poderá ver postagens e comentários que você criou. Eles não serão notificados de que você os bloqueou.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} agora poderá ver postagens e comentários que você criou. Eles não serão notificados de que você os desbloqueou.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Recusar postagem pendente excluirá permanentemente a postagem selecionada da comunidade.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Opção {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Seleção múltipla",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Termina em {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Respondendo a {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Criar grupo",
+  "group_create": "Criar grupo...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Dê um nome ao seu grupo",
+  "group_name_hint": "Dê um nome ao seu grupo...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Insira a descrição",
+  "group_description_hint": "Insira a descrição...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Recusar postagem pendente excluirá permanentemente a postagem selecionada do grupo.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1977,7 +1977,7 @@
   "@story_discard_action": {
     "description": "Button text for discarding story"
   },
-  "empty_my_communities_title": "Ainda não há comunidades",
+  "empty_my_communities_title": "Sem comunidades",
   "@empty_my_communities_title": {
     "description": "Título para lista vazia de minhas comunidades"
   },
@@ -1985,11 +1985,11 @@
   "@empty_my_communities_description": {
     "description": "Descrição para lista vazia de minhas comunidades"
   },
-  "empty_my_communities_cta": "Explorar comunidades",
+  "empty_my_communities_cta": "Explorar comunidades...",
   "@empty_my_communities_cta": {
     "description": "Texto do botão CTA para lista vazia de minhas comunidades"
   },
-  "empty_group_chats_title": "Ainda não há chats em grupo",
+  "empty_group_chats_title": "Sem grupos",
   "@empty_group_chats_title": {
     "description": "Título para lista vazia de chats em grupo"
   },
@@ -1997,7 +1997,7 @@
   "@empty_group_chats_description": {
     "description": "Descrição para lista vazia de chats em grupo"
   },
-  "empty_group_chats_cta": "Criar chat em grupo",
+  "empty_group_chats_cta": "Criar chat em grupo...",
   "@empty_group_chats_cta": {
     "description": "Texto do botão CTA para lista vazia de chats em grupo"
   },
@@ -2009,7 +2009,7 @@
   "@empty_all_chats_description": {
     "description": "Descrição para lista de chats vazia"
   },
-  "empty_all_chats_cta": "Criar novo chat",
+  "empty_all_chats_cta": "Criar novo chat...",
   "@empty_all_chats_cta": {
     "description": "Texto do botão CTA para lista de chats vazia"
   },
@@ -2037,7 +2037,7 @@
   "@empty_search_description": {
     "description": "Descrição para resultados de pesquisa vazios"
   },
-  "empty_search_cta": "Navegar pelas comunidades",
+  "empty_search_cta": "Navegar pelas comunidades...",
   "@empty_search_cta": {
     "description": "Texto do botão CTA para resultados de pesquisa vazios"
   },
@@ -2061,7 +2061,7 @@
   "@empty_explore_description_no_communities": {
     "description": "Descrição para página de exploração quando há categorias mas não há comunidades"
   },
-  "cta_create_community": "Criar comunidade",
+  "cta_create_community": "Criar comunidade...",
   "@cta_create_community": {
     "description": "Texto do botão CTA para criar comunidade"
   },
@@ -2151,5 +2151,253 @@
   "feed_empty_create_first_post": "Crie sua primeira publicação",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "Lista de membros atualizada.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "feed_filter_sort_by": "Ordenar por",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "chat_banned_users_update_failed": "Falha ao atualizar usuários banidos. Por favor, tente novamente.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "Desbanir",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "post_share_success": "Postagem compartilhada com sucesso",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "Sua exploração está vazia",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "general_error_title": "Algo deu errado",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "Limpar tudo",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "chat_last_moderator_message": "Você deve promover outro membro a moderador antes de sair.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "Falha ao atualizar a notificação do grupo. Por favor, tente novamente.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "feed_filter_oldest_first": "Mais antigo primeiro",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_open_settings": "Abrir configurações",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "feed_filter_text": "Texto",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_add_member_title": "Adicionar membro...",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_empty_title": "Seu feed está vazio",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_group_left_success": "Bate-papo em grupo restante.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "general_error_retry": "Por favor, tente novamente.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "feed_filter_images": "Imagens",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "chat_promote_member_button": "Promover membro",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "story_unsaved_changes_message": "tem certeza que deseja cancelar? Suas alterações não serão salvas.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "general_remove": "Remover",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "chat_leave_group_title": "Sair do grupo",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_permission_moderators_description": "Os membros que não são moderadores podem ler mensagens, mas não podem enviar mensagens.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_leave_group_message": "Se você sair deste grupo, não verá mais novas atividades nem participará dele.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_banned_users_empty": "Nada aqui para ver ainda...",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "Permissões de membros atualizadas.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_profile_updated": "Perfil do grupo atualizado.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "feed_filter_title": "Filtrar postagens",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "Por padrão, os membros desta comunidade receberão notificações, mas podem optar por desativá-las.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "chat_member_list_update_failed": "Falha ao atualizar a lista de membros. Por favor, tente novamente.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_empty_description": "Buscar ou criar grupo",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "chat_group_settings_title": "Configurações de grupo",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "Vídeos",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "chat_add_member_button": "Adicionar membro...",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "feed_filter_latest_first": "Último primeiro",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "Todos os membros têm a opção de receber notificações, mas precisam ativá-las. Por padrão, as notificações estão desativadas para cada membro.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_unban_confirmation_message": "Tem certeza de que deseja cancelar o banimento deste usuário? Eles poderão voltar ao grupo novamente.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "chat_archived_title": "Bate-papos arquivados...",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "chat_archived_empty": "Nenhum bate-papo arquivado...",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "feed_empty_explore_button": "Explorar",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "Deixar",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_notification_silent_description": "Não há notificações para todos neste canal. Os membros não podem ativar notificações no canal.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "feed_filter_content_type": "Tipo de conteúdo",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "feed_empty_create_button": "Criar",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "chat_member_permissions_update_failed": "Falha ao atualizar as permissões dos membros. Por favor, tente novamente.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "Encontre um grupo ou crie o seu próprio",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_permission_everyone_description": "Todos podem enviar uma mensagem no grupo.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "Nenhum grupo ainda",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "general_search": "Procurar",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "explore_no_group_description": "Vamos criar seus próprios grupos..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "story_remove_link_message": "Este link será removido da história.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_group_left_failed": "Falha ao sair do bate-papo em grupo. Por favor, tente novamente.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "Falha ao atualizar o perfil do grupo. Por favor, tente novamente.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_your_preferences": "Suas preferências",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "chat_group_settings_section": "Configurações de grupo",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "chat_group_notification_updated": "Notificação de grupo atualizada.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_banned_users_updated": "Usuários banidos atualizados.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "chat_messaging_section": "Mensagens",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "feed_filter_apply": "Aplicar filtros",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
   }
 }

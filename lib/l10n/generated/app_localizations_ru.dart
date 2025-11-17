@@ -113,13 +113,13 @@ class AppLocalizationsRu extends AppLocalizations {
       'Все участники будут удалены из группы. Все публикации, сообщения, реакции и медиафайлы, опубликованные в группе, будут удалены. Это невозможно отменить.';
 
   @override
-  String get global_search_hint => 'Поиск сообщества и пользователя';
+  String get global_search_hint => 'Поиск сообщества и пользователя...';
 
   @override
-  String get search_my_community_hint => 'Искать в моем сообществе';
+  String get search_my_community_hint => 'Искать в моем сообществе...';
 
   @override
-  String get search_no_results => 'Результаты не найдены';
+  String get search_no_results => 'Результаты не найдены...';
 
   @override
   String get title_communities => 'Сообщества';
@@ -391,16 +391,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get community_placeholder_members => '1,2 тыс. участников';
 
   @override
-  String get community_create => 'Создать сообщество';
+  String get community_create => 'Создать сообщество...';
 
   @override
   String get community_name => 'Название сообщества';
 
   @override
-  String get community_name_hint => 'Назовите свое сообщество';
+  String get community_name_hint => 'Назовите свое сообщество...';
 
   @override
-  String get community_description_hint => 'Введите описание';
+  String get community_description_hint => 'Введите описание...';
 
   @override
   String get community_edit => 'Редактировать сообщество';
@@ -807,12 +807,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get error_edit_post =>
-      'Не удалось отредактировать сообщение. Пожалуйста, попробуйте еще раз.';
+  String get error_edit_post => 'Ошибка редактирования';
 
   @override
-  String get error_create_post =>
-      'Не удалось создать публикацию. Пожалуйста, попробуйте еще раз.';
+  String get error_create_post => 'Ошибка создания';
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
@@ -871,7 +869,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get member_add => 'Добавить участника';
 
   @override
-  String get search_user_hint => 'Поиск пользователя';
+  String get search_user_hint => 'Поиск пользователя...';
 
   @override
   String get profile_edit => 'Редактировать профиль';
@@ -880,8 +878,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profile_update_success => 'Ваш профиль успешно обновлен!';
 
   @override
-  String get profile_update_failed =>
-      'Не удалось сохранить ваш профиль. Пожалуйста, попробуйте еще раз.';
+  String get profile_update_failed => 'Ошибка сохранения';
 
   @override
   String get community_story_comments => 'Комментарии к истории';
@@ -915,8 +912,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get user_unreport_success => 'Пользователь не зарегистрирован.';
 
   @override
-  String get user_unreport_error =>
-      'Не удалось отменить отчет о пользователе. Пожалуйста, попробуйте еще раз.';
+  String get user_unreport_error => 'Ошибка отмены';
 
   @override
   String get user_block_success => 'Пользователь заблокирован.';
@@ -980,15 +976,13 @@ class AppLocalizationsRu extends AppLocalizations {
       'Успешно добавлен участник в это сообщество.';
 
   @override
-  String get member_add_error =>
-      'Не удалось добавить участника. Пожалуйста, попробуйте еще раз.';
+  String get member_add_error => 'Ошибка добавления';
 
   @override
   String get moderator_promote_success => 'Успешно повышен до модератора.';
 
   @override
-  String get moderator_promote_error =>
-      'Не удалось повысить члена. Пожалуйста, попробуйте еще раз.';
+  String get moderator_promote_error => 'Ошибка повышения';
 
   @override
   String get moderator_demote_success => 'Успешно понижен в статусе участника.';
@@ -1328,7 +1322,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get group_title => 'Группа';
 
   @override
-  String get group_create => 'Создать группу';
+  String get group_create => 'Создать группу...';
 
   @override
   String get group_edit => 'Редактировать группу';
@@ -1337,10 +1331,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get group_name => 'Название группы';
 
   @override
-  String get group_name_hint => 'Назовите свою группу';
+  String get group_name_hint => 'Назовите свою группу...';
 
   @override
-  String get group_description_hint => 'Введите описание';
+  String get group_description_hint => 'Введите описание...';
 
   @override
   String get group_about => 'О';
@@ -1651,19 +1645,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Archived chats...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Нет архивного чата...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Add Member...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Add Member...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1797,28 +1791,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String get feed_filter_apply => 'Apply Filters';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Ваша лента пуста';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Найти или создать';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Обзор';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Создать';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Ваше исследование пусто';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Группы пока нет';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description => 'Найдите группу или создайте свою';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Давайте создавать свои группы..';
 
   @override
   String get general_open_settings => 'Open settings';
@@ -1844,77 +1838,77 @@ class AppLocalizationsRu extends AppLocalizations {
       'This link will be removed from story.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Нет сообществ';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Присоединяйтесь к сообществам, чтобы увидеть их здесь.';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Исследуйте сообщества...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Нет групп';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description => 'Начать групповой чат с друзьями';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Создать групповой чат...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Пока нет разговоров';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'Давайте для начала создадим чат.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Создать новый чат...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Нет архивного чата';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Архивированные чаты появятся здесь';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Комментариев пока нет';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description =>
+      'Будьте первым, кто оставит комментарий';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Результаты не найдены';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Попробуйте выполнить поиск по другим ключевым словам';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Очистить поиск...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'В этой категории сообществ не найдено. Попробуйте изучить другие категории или создать свою собственную.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Ваше исследование пусто';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Найдите сообщество или создайте свое.';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Сообществ пока нет';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Будьте первым, кто создаст сообщество';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Этот пост содержит медиа';
@@ -2079,13 +2073,13 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Все участники будут удалены из группы. Все публикации, сообщения, реакции и медиафайлы, опубликованные в группе, будут удалены. Это невозможно отменить.';
 
   @override
-  String get global_search_hint => 'Поиск сообщества и пользователя';
+  String get global_search_hint => 'Поиск сообщества и пользователя...';
 
   @override
-  String get search_my_community_hint => 'Искать в моем сообществе';
+  String get search_my_community_hint => 'Искать в моем сообществе...';
 
   @override
-  String get search_no_results => 'Результаты не найдены';
+  String get search_no_results => 'Результаты не найдены...';
 
   @override
   String get title_communities => 'Сообщества';
@@ -2248,7 +2242,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'Опрос должен содержать не менее $minOptions вариантов.';
   }
 
   @override
@@ -2303,7 +2297,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'Этот $content будет удален без возможности восстановления.';
   }
 
   @override
@@ -2357,16 +2351,16 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get community_placeholder_members => '1,2 тыс. участников';
 
   @override
-  String get community_create => 'Создать сообщество';
+  String get community_create => 'Создать сообщество...';
 
   @override
   String get community_name => 'Название сообщества';
 
   @override
-  String get community_name_hint => 'Назовите свое сообщество';
+  String get community_name_hint => 'Назовите свое сообщество...';
 
   @override
-  String get community_description_hint => 'Введите описание';
+  String get community_description_hint => 'Введите описание...';
 
   @override
   String get community_edit => 'Редактировать сообщество';
@@ -2764,30 +2758,28 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'Вы достигли лимита загрузки изображений $maxUploads. Дополнительные изображения не будут сохранены.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'Вы достигли лимита загрузки $maxUploads видео. Любые дополнительные видео не будут сохранены.';
   }
 
   @override
-  String get error_edit_post =>
-      'Не удалось отредактировать сообщение. Пожалуйста, попробуйте еще раз.';
+  String get error_edit_post => 'Ошибка редактирования';
 
   @override
-  String get error_create_post =>
-      'Не удалось создать публикацию. Пожалуйста, попробуйте еще раз.';
+  String get error_create_post => 'Ошибка создания';
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'Вопрос опроса не может превышать $maxQuestionLength символов.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'Длина параметра опроса не может превышать $maxQuestionLength символов.';
   }
 
   @override
@@ -2837,7 +2829,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get member_add => 'Добавить участника';
 
   @override
-  String get search_user_hint => 'Поиск пользователя';
+  String get search_user_hint => 'Поиск пользователя...';
 
   @override
   String get profile_edit => 'Редактировать профиль';
@@ -2846,8 +2838,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get profile_update_success => 'Ваш профиль успешно обновлен!';
 
   @override
-  String get profile_update_failed =>
-      'Не удалось сохранить ваш профиль. Пожалуйста, попробуйте еще раз.';
+  String get profile_update_failed => 'Ошибка сохранения';
 
   @override
   String get community_story_comments => 'Комментарии к истории';
@@ -2881,8 +2872,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get user_unreport_success => 'Пользователь не зарегистрирован.';
 
   @override
-  String get user_unreport_error =>
-      'Не удалось отменить отчет о пользователе. Пожалуйста, попробуйте еще раз.';
+  String get user_unreport_error => 'Ошибка отмены';
 
   @override
   String get user_block_success => 'Пользователь заблокирован.';
@@ -2946,15 +2936,13 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Успешно добавлен участник в это сообщество.';
 
   @override
-  String get member_add_error =>
-      'Не удалось добавить участника. Пожалуйста, попробуйте еще раз.';
+  String get member_add_error => 'Ошибка добавления';
 
   @override
   String get moderator_promote_success => 'Успешно повышен до модератора.';
 
   @override
-  String get moderator_promote_error =>
-      'Не удалось повысить члена. Пожалуйста, попробуйте еще раз.';
+  String get moderator_promote_error => 'Ошибка повышения';
 
   @override
   String get moderator_demote_success => 'Успешно понижен в статусе участника.';
@@ -3016,7 +3004,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName не сможет отправить вам сообщение. Они не будут уведомлены о том, что вы их заблокировали.';
   }
 
   @override
@@ -3024,7 +3012,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName теперь сможет отправить вам сообщение. Они не будут уведомлены о том, что вы их разблокировали.';
   }
 
   @override
@@ -3038,7 +3026,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return 'Запросы $count требуют вашего одобрения';
   }
 
   @override
@@ -3066,7 +3054,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName не сможет видеть созданные вами сообщения и комментарии. Они не будут уведомлены о том, что вы их заблокировали.';
   }
 
   @override
@@ -3077,7 +3065,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName теперь сможет видеть созданные вами публикации и комментарии. Они не будут уведомлены о том, что вы их разблокировали.';
   }
 
   @override
@@ -3116,7 +3104,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'Отклонение ожидающей публикации приведет к окончательному удалению выбранной публикации из сообщества.';
 
   @override
   String get community_pending_posts_empty => 'Нет ожидающих сообщений';
@@ -3150,14 +3138,14 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Опция $optionNumber';
   }
 
   @override
   String get poll_add_option => 'Добавить вариант';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Множественный выбор';
 
   @override
   String get poll_multiple_selection_description =>
@@ -3165,7 +3153,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'Заканчивается $endDate';
   }
 
   @override
@@ -3258,7 +3246,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'Отвечая на $displayName';
   }
 
   @override
@@ -3294,7 +3282,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get group_title => 'Группа';
 
   @override
-  String get group_create => 'Создать группу';
+  String get group_create => 'Создать группу...';
 
   @override
   String get group_edit => 'Редактировать группу';
@@ -3303,10 +3291,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get group_name => 'Название группы';
 
   @override
-  String get group_name_hint => 'Назовите свою группу';
+  String get group_name_hint => 'Назовите свою группу...';
 
   @override
-  String get group_description_hint => 'Введите описание';
+  String get group_description_hint => 'Введите описание...';
 
   @override
   String get group_about => 'О';
@@ -3431,7 +3419,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Отклонение ожидающей публикации приведет к окончательному удалению выбранной публикации из группы.';
 
   @override
   String get group_pending_posts_empty => 'Нет ожидающих сообщений';
@@ -3617,19 +3605,19 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get general_error_retry => 'Пожалуйста, попробуйте еще раз.';
 
   @override
-  String get chat_archived_title => 'Архивированные чаты';
+  String get chat_archived_title => 'Архивированные чаты...';
 
   @override
-  String get chat_archived_empty => 'Нет архивного чата';
+  String get chat_archived_empty => 'Нет архивного чата...';
 
   @override
-  String get chat_add_member_title => 'Добавить участника';
+  String get chat_add_member_title => 'Добавить участника...';
 
   @override
-  String get chat_add_member_button => 'Добавить участника';
+  String get chat_add_member_button => 'Добавить участника...';
 
   @override
-  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного';
+  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3695,6 +3683,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get chat_leave_button => 'Оставлять';
 
   @override
+  String get chat_last_moderator_message =>
+      'Прежде чем покинуть группу, вы должны назначить другого участника модератором.';
+
+  @override
   String get chat_promote_member_button => 'Продвигать участника';
 
   @override
@@ -3731,58 +3723,154 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get feed_filter_title => 'Фильтровать сообщения';
 
   @override
-  String get feed_filter_content_type => 'Content Type';
+  String get feed_filter_content_type => 'Тип контента';
 
   @override
   String get feed_filter_all => 'All';
 
   @override
-  String get feed_filter_images => 'Images';
+  String get feed_filter_images => 'Изображения';
 
   @override
-  String get feed_filter_videos => 'Videos';
+  String get feed_filter_videos => 'Видео';
 
   @override
-  String get feed_filter_text => 'Text';
+  String get feed_filter_text => 'Текст';
 
   @override
-  String get feed_filter_sort_by => 'Sort By';
+  String get feed_filter_sort_by => 'Сортировать по';
 
   @override
-  String get feed_filter_latest_first => 'Latest First';
+  String get feed_filter_latest_first => 'Последнее Сначала';
 
   @override
-  String get feed_filter_oldest_first => 'Oldest First';
+  String get feed_filter_oldest_first => 'Сначала самый старый';
 
   @override
-  String get feed_filter_clear_all => 'Clear All';
+  String get feed_filter_clear_all => 'Очистить все';
 
   @override
-  String get feed_filter_apply => 'Apply Filters';
+  String get feed_filter_apply => 'Применить фильтры';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Ваша лента пуста';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description => 'Найти или создать';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Обзор';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Создать';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Ваше исследование пусто';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Группы пока нет';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description => 'Найдите группу или создайте свою';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Давайте создавать свои группы..';
+
+  @override
+  String get general_open_settings => 'Открыть настройки';
+
+  @override
+  String get general_remove => 'Удалять';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Публикация успешно опубликована';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'ты уверен, что хочешь отменить? Ваши изменения не будут сохранены.';
+
+  @override
+  String get story_remove_link_message =>
+      'Эта ссылка будет удалена из истории.';
+
+  @override
+  String get empty_my_communities_title => 'Нет сообществ';
+
+  @override
+  String get empty_my_communities_description =>
+      'Присоединяйтесь к сообществам, чтобы увидеть их здесь.';
+
+  @override
+  String get empty_my_communities_cta => 'Исследуйте сообщества...';
+
+  @override
+  String get empty_group_chats_title => 'Нет групп';
+
+  @override
+  String get empty_group_chats_description => 'Начать групповой чат с друзьями';
+
+  @override
+  String get empty_group_chats_cta => 'Создать групповой чат...';
+
+  @override
+  String get empty_all_chats_title => 'Пока нет разговоров';
+
+  @override
+  String get empty_all_chats_description => 'Давайте для начала создадим чат.';
+
+  @override
+  String get empty_all_chats_cta => 'Создать новый чат...';
+
+  @override
+  String get empty_archived_chats_title => 'Нет архивного чата';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Архивированные чаты появятся здесь';
+
+  @override
+  String get empty_comments_title => 'Комментариев пока нет';
+
+  @override
+  String get empty_comments_description =>
+      'Будьте первым, кто оставит комментарий';
+
+  @override
+  String get empty_search_title => 'Результаты не найдены';
+
+  @override
+  String get empty_search_description =>
+      'Попробуйте выполнить поиск по другим ключевым словам';
+
+  @override
+  String get empty_search_cta => 'Очистить поиск...';
+
+  @override
+  String get empty_category_communities_description =>
+      'В этой категории сообществ не найдено. Попробуйте изучить другие категории или создать свою собственную.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Ваше исследование пусто';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Найдите сообщество или создайте свое.';
+
+  @override
+  String get empty_explore_title_no_communities => 'Сообществ пока нет';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Будьте первым, кто создаст сообщество';
+
+  @override
+  String get cta_create_community => 'Создать сообщество...';
 
   @override
   String get shared_post_media_indicator => 'Этот пост содержит медиа';

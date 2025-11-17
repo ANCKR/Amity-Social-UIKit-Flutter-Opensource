@@ -113,13 +113,13 @@ class AppLocalizationsFa extends AppLocalizations {
       'همه اعضا از گروه حذف خواهند شد. تمامی پست ها، پیام ها، واکنش ها و رسانه های اشتراک گذاری شده در گروه حذف خواهند شد. این قابل واگرد نیست.';
 
   @override
-  String get global_search_hint => 'جستجوی انجمن و کاربر';
+  String get global_search_hint => 'جستجوی انجمن و کاربر...';
 
   @override
-  String get search_my_community_hint => 'جامعه من را جستجو کنید';
+  String get search_my_community_hint => 'جامعه من را جستجو کنید...';
 
   @override
-  String get search_no_results => 'هیچ نتیجه ای یافت نشد';
+  String get search_no_results => 'هیچ نتیجه ای یافت نشد...';
 
   @override
   String get title_communities => 'جوامع';
@@ -282,7 +282,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'نظرسنجی باید حداقل دارای $minOptions گزینه باشد.';
   }
 
   @override
@@ -337,7 +337,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'این $content برای همیشه حذف خواهد شد.';
   }
 
   @override
@@ -390,16 +390,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String get community_placeholder_members => '1.2K عضو';
 
   @override
-  String get community_create => 'ایجاد انجمن';
+  String get community_create => 'ایجاد انجمن...';
 
   @override
   String get community_name => 'نام انجمن';
 
   @override
-  String get community_name_hint => 'انجمن خود را نام ببرید';
+  String get community_name_hint => 'انجمن خود را نام ببرید...';
 
   @override
-  String get community_description_hint => 'توضیحات را وارد کنید';
+  String get community_description_hint => 'توضیحات را وارد کنید...';
 
   @override
   String get community_edit => 'انجمن را ویرایش کنید';
@@ -793,12 +793,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'شما به محدودیت آپلود $maxUploads عکس رسیده اید. هر تصویر اضافی ذخیره نخواهد شد.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'به محدودیت آپلود $maxUploads ویدیو رسیده اید. هر ویدیوی اضافی ذخیره نخواهد شد.';
   }
 
   @override
@@ -810,12 +810,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'سوال نظرسنجی نمی تواند از $maxQuestionLength نویسه بیشتر باشد.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'گزینه نظرسنجی نمی تواند بیش از $maxQuestionLength نویسه باشد.';
   }
 
   @override
@@ -864,7 +864,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get member_add => 'اضافه کردن عضو';
 
   @override
-  String get search_user_hint => 'جستجوی کاربر';
+  String get search_user_hint => 'جستجوی کاربر...';
 
   @override
   String get profile_edit => 'ویرایش نمایه';
@@ -1038,7 +1038,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName نمی تواند پیام را برای شما ارسال کند. به آنها اطلاع داده نمی شود که آنها را مسدود کرده اید.';
   }
 
   @override
@@ -1046,7 +1046,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName اکنون می تواند پیام را برای شما ارسال کند. به آنها اطلاع داده نمی شود که شما آنها را رفع انسداد کرده اید.';
   }
 
   @override
@@ -1060,7 +1060,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return 'درخواست های $count نیاز به تایید شما دارند';
   }
 
   @override
@@ -1087,7 +1087,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName نمی‌تواند پست‌ها و نظراتی را که ایجاد کرده‌اید ببیند. به آنها اطلاع داده نمی شود که آنها را مسدود کرده اید.';
   }
 
   @override
@@ -1098,7 +1098,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName اکنون می‌تواند پست‌ها و نظراتی را که ایجاد کرده‌اید ببیند. به آنها اطلاع داده نمی شود که شما آنها را رفع انسداد کرده اید.';
   }
 
   @override
@@ -1137,7 +1137,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'رد کردن پست در انتظار، پست انتخابی را برای همیشه از انجمن حذف می کند.';
 
   @override
   String get community_pending_posts_empty => 'هیچ پست معلقی وجود ندارد';
@@ -1171,14 +1171,14 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'گزینه $optionNumber';
   }
 
   @override
   String get poll_add_option => 'افزودن گزینه';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'انتخاب چندگانه';
 
   @override
   String get poll_multiple_selection_description =>
@@ -1186,7 +1186,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'پایان در $endDate';
   }
 
   @override
@@ -1277,7 +1277,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'در حال پاسخ به $displayName';
   }
 
   @override
@@ -1314,7 +1314,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get group_title => 'گروه';
 
   @override
-  String get group_create => 'ایجاد گروه';
+  String get group_create => 'ایجاد گروه...';
 
   @override
   String get group_edit => 'ویرایش گروه';
@@ -1323,10 +1323,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get group_name => 'نام گروه';
 
   @override
-  String get group_name_hint => 'گروه خود را نام ببرید';
+  String get group_name_hint => 'گروه خود را نام ببرید...';
 
   @override
-  String get group_description_hint => 'توضیحات را وارد کنید';
+  String get group_description_hint => 'توضیحات را وارد کنید...';
 
   @override
   String get group_about => 'درباره';
@@ -1451,7 +1451,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'رد کردن پست در انتظار، پست انتخابی را برای همیشه از گروه حذف می کند.';
 
   @override
   String get group_pending_posts_empty => 'هیچ پست معلقی وجود ندارد';
@@ -1627,279 +1627,280 @@ class AppLocalizationsFa extends AppLocalizations {
   String get category_all => 'همه دسته ها';
 
   @override
-  String get general_search => 'Search';
+  String get general_search => 'جستجو کنید...';
 
   @override
-  String get general_error_title => 'Something went wrong';
+  String get general_error_title => 'مشکلی پیش آمد';
 
   @override
-  String get general_error_retry => 'Please try again.';
+  String get general_error_retry => 'لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'چت های آرشیو شده...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'بدون چت بایگانی...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'اضافه کردن عضو...';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'اضافه کردن عضو...';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست...';
 
   @override
   String get chat_unban_confirmation_message =>
-      'Are you sure you want to unban this user? They will be able to rejoin the group again.';
+      'آیا مطمئنید که می خواهید این کاربر را لغو ممنوعیت کنید؟ آنها می توانند دوباره به گروه بپیوندند.';
 
   @override
-  String get chat_unban_button => 'Unban';
+  String get chat_unban_button => 'لغو ممنوعیت';
 
   @override
-  String get chat_group_settings_title => 'Group Settings';
+  String get chat_group_settings_title => 'تنظیمات گروه';
 
   @override
-  String get chat_group_settings_section => 'Group settings';
+  String get chat_group_settings_section => 'تنظیمات گروه';
 
   @override
-  String get chat_group_profile_updated => 'Group profile updated.';
+  String get chat_group_profile_updated => 'نمایه گروه به روز شد.';
 
   @override
   String get chat_group_profile_update_failed =>
-      'Failed to update group profile. Please try again.';
+      'نمایه گروه به روز نشد. لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_group_notification_updated => 'Group notification updated.';
+  String get chat_group_notification_updated => 'اعلان گروه به روز شد.';
 
   @override
   String get chat_group_notification_update_failed =>
-      'Failed to update group notification. Please try again.';
+      'اعلان گروه به روز نشد. لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_member_permissions_updated => 'Member permissions updated.';
+  String get chat_member_permissions_updated => 'مجوزهای اعضا به روز شد.';
 
   @override
   String get chat_member_permissions_update_failed =>
-      'Failed to update member permissions. Please try again.';
+      'مجوزهای اعضا به روز نشد. لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_member_list_updated => 'Member list updated.';
+  String get chat_member_list_updated => 'لیست اعضا به روز شد';
 
   @override
   String get chat_member_list_update_failed =>
-      'Failed to update member list. Please try again.';
+      'لیست اعضا به روز نشد. لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_banned_users_updated => 'Banned users updated.';
+  String get chat_banned_users_updated => 'کاربران ممنوعه آپدیت شدند';
 
   @override
   String get chat_banned_users_update_failed =>
-      'Failed to update banned users. Please try again.';
+      'به روز رسانی کاربران ممنوع شده انجام نشد. لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_your_preferences => 'Your preferences';
+  String get chat_your_preferences => 'ترجیحات شما';
 
   @override
-  String get chat_leave_group_title => 'Leave Group';
+  String get chat_leave_group_title => 'ترک گروه';
 
   @override
   String get chat_leave_group_message =>
-      'If you leave this group, you will no longer see new activities or participate in this group.';
+      'اگر از این گروه خارج شوید، دیگر فعالیت های جدیدی را مشاهده نخواهید کرد و در این گروه شرکت نخواهید کرد.';
 
   @override
-  String get chat_leave_button => 'Leave';
+  String get chat_leave_button => 'ترک کنید';
 
   @override
   String get chat_last_moderator_message =>
-      'You must promote another member to moderator before leaving.';
+      'قبل از خروج باید عضو دیگری را به ناظم ارتقا دهید.';
 
   @override
-  String get chat_promote_member_button => 'Promote member';
+  String get chat_promote_member_button => 'ارتقاء عضو';
 
   @override
-  String get chat_group_left_success => 'Group chat left.';
+  String get chat_group_left_success => 'چت گروهی سمت چپ.';
 
   @override
   String get chat_group_left_failed =>
-      'Failed to leave group chat. Please try again.';
+      'ترک چت گروهی انجام نشد. لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_messaging_section => 'Messaging';
+  String get chat_messaging_section => 'پیام رسانی';
 
   @override
   String get chat_permission_everyone_description =>
-      'Everyone can send a message in the group.';
+      'همه می توانند در گروه پیام ارسال کنند.';
 
   @override
   String get chat_permission_moderators_description =>
-      'Members who are not moderators can read messages but cannot send any messages.';
+      'اعضایی که ناظر نیستند می توانند پیام ها را بخوانند اما نمی توانند هیچ پیامی ارسال کنند.';
 
   @override
   String get chat_notification_default_description =>
-      'By default, members in this community will receive notifications, but they can choose to turn them off.';
+      'به‌طور پیش‌فرض، اعضای این انجمن اعلان‌هایی را دریافت می‌کنند، اما می‌توانند انتخاب کنند که آنها را خاموش کنند.';
 
   @override
   String get chat_notification_silent_description =>
-      'No notifications for everyone in this channel. Members can\'t turn on notifications in the channel.';
+      'هیچ اعلانی برای همه در این کانال وجود ندارد. اعضا نمی‌توانند اعلان‌ها را در کانال روشن کنند.';
 
   @override
   String get chat_notification_subscribe_description =>
-      'All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.';
+      'همه اعضا امکان دریافت اعلان ها را دارند، اما باید آنها را فعال کنند. به طور پیش فرض، اعلان ها برای هر عضو خاموش است.';
 
   @override
-  String get feed_filter_title => 'Filter Posts';
+  String get feed_filter_title => 'فیلتر کردن پست ها';
 
   @override
-  String get feed_filter_content_type => 'Content Type';
+  String get feed_filter_content_type => 'نوع محتوا';
 
   @override
-  String get feed_filter_all => 'All';
+  String get feed_filter_all => 'همه';
 
   @override
-  String get feed_filter_images => 'Images';
+  String get feed_filter_images => 'تصاویر';
 
   @override
-  String get feed_filter_videos => 'Videos';
+  String get feed_filter_videos => 'ویدیوها';
 
   @override
-  String get feed_filter_text => 'Text';
+  String get feed_filter_text => 'متن';
 
   @override
-  String get feed_filter_sort_by => 'Sort By';
+  String get feed_filter_sort_by => 'مرتب سازی بر اساس';
 
   @override
-  String get feed_filter_latest_first => 'Latest First';
+  String get feed_filter_latest_first => 'آخرین اول';
 
   @override
-  String get feed_filter_oldest_first => 'Oldest First';
+  String get feed_filter_oldest_first => 'قدیمی ترین اول';
 
   @override
-  String get feed_filter_clear_all => 'Clear All';
+  String get feed_filter_clear_all => 'پاک کردن همه';
 
   @override
-  String get feed_filter_apply => 'Apply Filters';
+  String get feed_filter_apply => 'اعمال فیلترها';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'فید شما خالی است';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description =>
+      'گروه را پیدا کنید یا گروه خود را ایجاد کنید';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'کاوش گروه';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'گروه ایجاد کنید...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'کاوش شما خالی است';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'هنوز گروهی وجود ندارد';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'گروه را پیدا کنید یا گروه خود را ایجاد کنید';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description =>
+      'بیایید گروه های خود را ایجاد کنیم..';
 
   @override
-  String get general_open_settings => 'Open settings';
+  String get general_open_settings => 'تنظیمات را باز کنید';
 
   @override
-  String get general_remove => 'Remove';
+  String get general_remove => 'حذف کنید';
 
   @override
-  String get general_yes => 'Yes';
+  String get general_yes => 'بله';
 
   @override
-  String get general_no => 'No';
+  String get general_no => 'خیر';
 
   @override
-  String get post_share_success => 'Post shared successfully';
+  String get post_share_success => 'پست با موفقیت به اشتراک گذاشته شد';
 
   @override
   String get story_unsaved_changes_message =>
-      'are you sure you want to cancel? Your Changes won\'t be saved.';
+      'آیا مطمئن هستید که می خواهید لغو کنید؟ تغییرات شما ذخیره نمی شود.';
 
   @override
-  String get story_remove_link_message =>
-      'This link will be removed from story.';
+  String get story_remove_link_message => 'این لینک از استوری حذف خواهد شد.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'هنوز انجمنی وجود ندارد';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'برای دیدن آنها در اینجا به انجمن ها بپیوندید';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'جوامع را کاوش کنید...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'هنوز چت گروهی وجود ندارد';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description => 'یک چت گروهی با دوستان شروع کنید';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'ایجاد چت گروهی...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'هنوز مکالمه ای وجود ندارد';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'بیایید برای شروع چت ایجاد کنیم.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'ایجاد چت جدید...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'بدون چت بایگانی';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'چت های بایگانی شده در اینجا ظاهر می شوند';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'هنوز نظری وجود ندارد';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'اولین نفری باشید که نظر می دهد';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'هیچ نتیجه ای یافت نشد';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'سعی کنید با کلمات کلیدی مختلف جستجو کنید';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'جستجو را پاک کنید...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'هیچ انجمنی در این دسته یافت نشد. سعی کنید دسته بندی های دیگر را کاوش کنید یا دسته های خود را ایجاد کنید.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'کاوش شما خالی است';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'انجمن را پیدا کنید یا انجمن خود را ایجاد کنید';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'هنوز انجمنی وجود ندارد';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'اولین کسی باشید که یک انجمن ایجاد می کند';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'جامعه ایجاد کنید...';
 
   @override
   String get shared_post_media_indicator => 'این پست حاوی رسانه است';
@@ -2065,13 +2066,13 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
       'همه اعضا از گروه حذف خواهند شد. تمامی پست ها، پیام ها، واکنش ها و رسانه های اشتراک گذاری شده در گروه حذف خواهند شد. این قابل واگرد نیست.';
 
   @override
-  String get global_search_hint => 'جستجوی انجمن و کاربر';
+  String get global_search_hint => 'جستجوی انجمن و کاربر...';
 
   @override
-  String get search_my_community_hint => 'جامعه من را جستجو کنید';
+  String get search_my_community_hint => 'جامعه من را جستجو کنید...';
 
   @override
-  String get search_no_results => 'هیچ نتیجه ای یافت نشد';
+  String get search_no_results => 'هیچ نتیجه ای یافت نشد...';
 
   @override
   String get title_communities => 'جوامع';
@@ -2234,7 +2235,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'نظرسنجی باید حداقل دارای $minOptions گزینه باشد.';
   }
 
   @override
@@ -2289,7 +2290,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'این $content برای همیشه حذف خواهد شد.';
   }
 
   @override
@@ -2342,16 +2343,16 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get community_placeholder_members => '1.2K عضو';
 
   @override
-  String get community_create => 'ایجاد انجمن';
+  String get community_create => 'ایجاد انجمن...';
 
   @override
   String get community_name => 'نام انجمن';
 
   @override
-  String get community_name_hint => 'انجمن خود را نام ببرید';
+  String get community_name_hint => 'انجمن خود را نام ببرید...';
 
   @override
-  String get community_description_hint => 'توضیحات را وارد کنید';
+  String get community_description_hint => 'توضیحات را وارد کنید...';
 
   @override
   String get community_edit => 'انجمن را ویرایش کنید';
@@ -2745,12 +2746,12 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return 'شما به محدودیت آپلود $maxUploads عکس رسیده اید. هر تصویر اضافی ذخیره نخواهد شد.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return 'به محدودیت آپلود $maxUploads ویدیو رسیده اید. هر ویدیوی اضافی ذخیره نخواهد شد.';
   }
 
   @override
@@ -2762,12 +2763,12 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'سوال نظرسنجی نمی تواند از $maxQuestionLength نویسه بیشتر باشد.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'گزینه نظرسنجی نمی تواند بیش از $maxQuestionLength نویسه باشد.';
   }
 
   @override
@@ -2816,7 +2817,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get member_add => 'اضافه کردن عضو';
 
   @override
-  String get search_user_hint => 'جستجوی کاربر';
+  String get search_user_hint => 'جستجوی کاربر...';
 
   @override
   String get profile_edit => 'ویرایش نمایه';
@@ -2990,7 +2991,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName نمی تواند پیام را برای شما ارسال کند. به آنها اطلاع داده نمی شود که آنها را مسدود کرده اید.';
   }
 
   @override
@@ -2998,7 +2999,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName اکنون می تواند پیام را برای شما ارسال کند. به آنها اطلاع داده نمی شود که شما آنها را رفع انسداد کرده اید.';
   }
 
   @override
@@ -3012,7 +3013,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return 'درخواست های $count نیاز به تایید شما دارند';
   }
 
   @override
@@ -3039,7 +3040,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName نمی‌تواند پست‌ها و نظراتی را که ایجاد کرده‌اید ببیند. به آنها اطلاع داده نمی شود که آنها را مسدود کرده اید.';
   }
 
   @override
@@ -3050,7 +3051,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName اکنون می‌تواند پست‌ها و نظراتی را که ایجاد کرده‌اید ببیند. به آنها اطلاع داده نمی شود که شما آنها را رفع انسداد کرده اید.';
   }
 
   @override
@@ -3089,7 +3090,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'رد کردن پست در انتظار، پست انتخابی را برای همیشه از انجمن حذف می کند.';
 
   @override
   String get community_pending_posts_empty => 'هیچ پست معلقی وجود ندارد';
@@ -3123,14 +3124,14 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'گزینه $optionNumber';
   }
 
   @override
   String get poll_add_option => 'افزودن گزینه';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'انتخاب چندگانه';
 
   @override
   String get poll_multiple_selection_description =>
@@ -3138,7 +3139,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return 'پایان در $endDate';
   }
 
   @override
@@ -3229,7 +3230,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return 'در حال پاسخ به $displayName';
   }
 
   @override
@@ -3266,7 +3267,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get group_title => 'گروه';
 
   @override
-  String get group_create => 'ایجاد گروه';
+  String get group_create => 'ایجاد گروه...';
 
   @override
   String get group_edit => 'ویرایش گروه';
@@ -3275,10 +3276,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get group_name => 'نام گروه';
 
   @override
-  String get group_name_hint => 'گروه خود را نام ببرید';
+  String get group_name_hint => 'گروه خود را نام ببرید...';
 
   @override
-  String get group_description_hint => 'توضیحات را وارد کنید';
+  String get group_description_hint => 'توضیحات را وارد کنید...';
 
   @override
   String get group_about => 'درباره';
@@ -3403,7 +3404,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'رد کردن پست در انتظار، پست انتخابی را برای همیشه از گروه حذف می کند.';
 
   @override
   String get group_pending_posts_empty => 'هیچ پست معلقی وجود ندارد';
@@ -3579,7 +3580,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get category_all => 'همه دسته ها';
 
   @override
-  String get general_search => 'جستجو کنید';
+  String get general_search => 'جستجو کنید...';
 
   @override
   String get general_error_title => 'مشکلی پیش آمد';
@@ -3588,19 +3589,19 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get general_error_retry => 'لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_archived_title => 'چت های آرشیو شده';
+  String get chat_archived_title => 'چت های آرشیو شده...';
 
   @override
-  String get chat_archived_empty => 'بدون چت بایگانی';
+  String get chat_archived_empty => 'بدون چت بایگانی...';
 
   @override
-  String get chat_add_member_title => 'اضافه کردن عضو';
+  String get chat_add_member_title => 'اضافه کردن عضو...';
 
   @override
-  String get chat_add_member_button => 'اضافه کردن عضو';
+  String get chat_add_member_button => 'اضافه کردن عضو...';
 
   @override
-  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست';
+  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3662,6 +3663,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String get chat_leave_button => 'ترک کنید';
+
+  @override
+  String get chat_last_moderator_message =>
+      'قبل از خروج باید عضو دیگری را به ناظم ارتقا دهید.';
 
   @override
   String get chat_promote_member_button => 'ارتقاء عضو';
@@ -3740,7 +3745,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get feed_empty_explore_button => 'کاوش گروه';
 
   @override
-  String get feed_empty_create_button => 'گروه ایجاد کنید';
+  String get feed_empty_create_button => 'گروه ایجاد کنید...';
 
   @override
   String get explore_empty_title => 'کاوش شما خالی است';
@@ -3755,6 +3760,100 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   @override
   String get explore_no_group_description =>
       'بیایید گروه های خود را ایجاد کنیم..';
+
+  @override
+  String get general_open_settings => 'تنظیمات را باز کنید';
+
+  @override
+  String get general_remove => 'حذف کنید';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'پست با موفقیت به اشتراک گذاشته شد';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'آیا مطمئن هستید که می خواهید لغو کنید؟ تغییرات شما ذخیره نمی شود.';
+
+  @override
+  String get story_remove_link_message => 'این لینک از استوری حذف خواهد شد.';
+
+  @override
+  String get empty_my_communities_title => 'هنوز انجمنی وجود ندارد';
+
+  @override
+  String get empty_my_communities_description =>
+      'برای دیدن آنها در اینجا به انجمن ها بپیوندید';
+
+  @override
+  String get empty_my_communities_cta => 'جوامع را کاوش کنید...';
+
+  @override
+  String get empty_group_chats_title => 'هنوز چت گروهی وجود ندارد';
+
+  @override
+  String get empty_group_chats_description => 'یک چت گروهی با دوستان شروع کنید';
+
+  @override
+  String get empty_group_chats_cta => 'ایجاد چت گروهی...';
+
+  @override
+  String get empty_all_chats_title => 'هنوز مکالمه ای وجود ندارد';
+
+  @override
+  String get empty_all_chats_description => 'بیایید برای شروع چت ایجاد کنیم.';
+
+  @override
+  String get empty_all_chats_cta => 'ایجاد چت جدید...';
+
+  @override
+  String get empty_archived_chats_title => 'بدون چت بایگانی';
+
+  @override
+  String get empty_archived_chats_description =>
+      'چت های بایگانی شده در اینجا ظاهر می شوند';
+
+  @override
+  String get empty_comments_title => 'هنوز نظری وجود ندارد';
+
+  @override
+  String get empty_comments_description => 'اولین نفری باشید که نظر می دهد';
+
+  @override
+  String get empty_search_title => 'هیچ نتیجه ای یافت نشد';
+
+  @override
+  String get empty_search_description =>
+      'سعی کنید با کلمات کلیدی مختلف جستجو کنید';
+
+  @override
+  String get empty_search_cta => 'جستجو را پاک کنید...';
+
+  @override
+  String get empty_category_communities_description =>
+      'هیچ انجمنی در این دسته یافت نشد. سعی کنید دسته بندی های دیگر را کاوش کنید یا دسته های خود را ایجاد کنید.';
+
+  @override
+  String get empty_explore_title_no_categories => 'کاوش شما خالی است';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'انجمن را پیدا کنید یا انجمن خود را ایجاد کنید';
+
+  @override
+  String get empty_explore_title_no_communities => 'هنوز انجمنی وجود ندارد';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'اولین کسی باشید که یک انجمن ایجاد می کند';
+
+  @override
+  String get cta_create_community => 'جامعه ایجاد کنید...';
 
   @override
   String get shared_post_media_indicator => 'این پست حاوی رسانه است';

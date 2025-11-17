@@ -113,13 +113,13 @@ class AppLocalizationsTr extends AppLocalizations {
       'Gruptaki tüm üyeler çıkarılacaktır. Grupta paylaşılan tüm gönderiler, mesajlar, tepkiler ve medyalar silinecek. Bu geri alınamaz.';
 
   @override
-  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın';
+  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın...';
 
   @override
-  String get search_my_community_hint => 'Topluluğumda ara';
+  String get search_my_community_hint => 'Topluluğumda ara...';
 
   @override
-  String get search_no_results => 'Sonuç bulunamadı';
+  String get search_no_results => 'Sonuç bulunamadı...';
 
   @override
   String get title_communities => 'Topluluklar';
@@ -281,7 +281,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String poll_options_description(int minOptions) {
-    return 'Poll must contain at least $minOptions options.';
+    return 'Anket en az $minOptions seçenek içermelidir.';
   }
 
   @override
@@ -336,7 +336,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String comment_delete_description(String content) {
-    return 'This $content will be permanently deleted.';
+    return 'Bu $content kalıcı olarak silinecek.';
   }
 
   @override
@@ -392,16 +392,16 @@ class AppLocalizationsTr extends AppLocalizations {
   String get community_placeholder_members => '1,2 bin üye';
 
   @override
-  String get community_create => 'Topluluk Oluştur';
+  String get community_create => 'Topluluk Oluştur...';
 
   @override
   String get community_name => 'Topluluk adı';
 
   @override
-  String get community_name_hint => 'Topluluğunuza ad verin';
+  String get community_name_hint => 'Topluluğunuza ad verin...';
 
   @override
-  String get community_description_hint => 'Açıklamayı girin';
+  String get community_description_hint => 'Açıklamayı girin...';
 
   @override
   String get community_edit => 'Topluluğu Düzenle';
@@ -796,12 +796,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String error_max_upload_image_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads images. Any additional images will not be saved.';
+    return '$maxUploads resim yükleme sınırına ulaştınız. Hiçbir ek resim kaydedilmeyecektir.';
   }
 
   @override
   String error_max_upload_videos_reached_description(int maxUploads) {
-    return 'You’ve reached the upload limit of $maxUploads videos. Any additional videos will not be saved.';
+    return '$maxUploads video yükleme sınırına ulaştınız. Ek videolar kaydedilmeyecek.';
   }
 
   @override
@@ -813,12 +813,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String error_max_poll_characters(int maxQuestionLength) {
-    return 'Poll question cannot exceed $maxQuestionLength characters.';
+    return 'Anket sorusu $maxQuestionLength karakteri aşamaz.';
   }
 
   @override
   String error_max_poll_option_characters(int maxQuestionLength) {
-    return 'Poll option cannot exceed $maxQuestionLength characters.';
+    return 'Anket seçeneği $maxQuestionLength karakteri aşamaz.';
   }
 
   @override
@@ -868,7 +868,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get member_add => 'Üye ekle';
 
   @override
-  String get search_user_hint => 'Kullanıcı ara';
+  String get search_user_hint => 'Kullanıcı ara...';
 
   @override
   String get profile_edit => 'Profili düzenle';
@@ -1045,7 +1045,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String chat_block_user_description(String displayName) {
-    return '$displayName won\'t be able to send you the message. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName size mesajı gönderemeyecek. Onları engellediğinize dair bildirim almayacaklar.';
   }
 
   @override
@@ -1054,7 +1054,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String chat_unblock_user_description(String displayName) {
-    return '$displayName will now be able to send you the message. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName artık size mesajı gönderebilecek. Engellemeyi kaldırdığınız konusunda bilgilendirilmeyecekler.';
   }
 
   @override
@@ -1068,7 +1068,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String user_follow_request_approval(String count) {
-    return '$count requests need your approval';
+    return '$count isteklerinizin onaylanması gerekiyor';
   }
 
   @override
@@ -1095,7 +1095,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String user_block_confirm_description(String displayName) {
-    return '$displayName won\'t be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve blocked them.';
+    return '$displayName, oluşturduğunuz gönderileri ve yorumları göremeyecektir. Onları engellediğinize dair bildirim almayacaklar.';
   }
 
   @override
@@ -1107,7 +1107,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String user_unblock_confirm_description(String displayName) {
-    return '$displayName will now be able to see posts and comments that you\'ve created. They won\'t be notified that you\'ve unblocked them.';
+    return '$displayName artık oluşturduğunuz gönderileri ve yorumları görebilecek. Engellemeyi kaldırdığınız konusunda bilgilendirilmeyecekler.';
   }
 
   @override
@@ -1146,7 +1146,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get community_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from community.';
+      'Bekleyen gönderiyi reddetmek, seçilen gönderiyi topluluktan kalıcı olarak silecektir.';
 
   @override
   String get community_pending_posts_empty => 'Bekleyen gönderi yok';
@@ -1180,14 +1180,14 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String poll_option_hint(int optionNumber) {
-    return 'Option $optionNumber';
+    return 'Seçenek $optionNumber';
   }
 
   @override
   String get poll_add_option => 'Seçenek ekle';
 
   @override
-  String get poll_multiple_selection_title => 'Multiple selection';
+  String get poll_multiple_selection_title => 'Çoklu seçim';
 
   @override
   String get poll_multiple_selection_description =>
@@ -1195,7 +1195,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String poll_ends_on(String endDate) {
-    return 'Ends on $endDate';
+    return '$endDate tarihinde bitiyor';
   }
 
   @override
@@ -1288,7 +1288,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String message_replying_to(String displayName) {
-    return 'Replying to $displayName';
+    return '$displayName yanıtlanıyor';
   }
 
   @override
@@ -1324,7 +1324,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get group_title => 'Grup';
 
   @override
-  String get group_create => 'Grup Oluştur';
+  String get group_create => 'Grup Oluştur...';
 
   @override
   String get group_edit => 'Grubu Düzenle';
@@ -1333,10 +1333,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get group_name => 'Grup adı';
 
   @override
-  String get group_name_hint => 'Grubunuza ad verin';
+  String get group_name_hint => 'Grubunuza ad verin...';
 
   @override
-  String get group_description_hint => 'Açıklamayı girin';
+  String get group_description_hint => 'Açıklamayı girin...';
 
   @override
   String get group_about => 'Hakkında';
@@ -1460,7 +1460,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get group_pending_posts_warning =>
-      'Decline pending post will permanently delete the selected post from group.';
+      'Bekleyen gönderiyi reddet, seçilen gönderiyi gruptan kalıcı olarak silecektir.';
 
   @override
   String get group_pending_posts_empty => 'Bekleyen gönderi yok';
@@ -1636,189 +1636,192 @@ class AppLocalizationsTr extends AppLocalizations {
   String get category_all => 'Tüm Kategoriler';
 
   @override
-  String get general_search => 'Search';
+  String get general_search => 'Aramak';
 
   @override
-  String get general_error_title => 'Something went wrong';
+  String get general_error_title => 'Bir şeyler ters gitti';
 
   @override
-  String get general_error_retry => 'Please try again.';
+  String get general_error_retry => 'Lütfen tekrar deneyin.';
 
   @override
-  String get chat_archived_title => 'Archived chats';
+  String get chat_archived_title => 'Arşivlenmiş sohbetler...';
 
   @override
-  String get chat_archived_empty => 'No archive chat';
+  String get chat_archived_empty => 'Arşiv sohbeti yok...';
 
   @override
-  String get chat_add_member_title => 'Add Member';
+  String get chat_add_member_title => 'Üye Ekle';
 
   @override
-  String get chat_add_member_button => 'Add Member';
+  String get chat_add_member_button => 'Üye Ekle';
 
   @override
-  String get chat_banned_users_empty => 'Nothing here to see yet';
+  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok...';
 
   @override
   String get chat_unban_confirmation_message =>
-      'Are you sure you want to unban this user? They will be able to rejoin the group again.';
+      'Bu kullanıcının yasağını kaldırmak istediğinizden emin misiniz? Gruba tekrar katılabilecekler.';
 
   @override
-  String get chat_unban_button => 'Unban';
+  String get chat_unban_button => 'Yasağı kaldır';
 
   @override
-  String get chat_group_settings_title => 'Group Settings';
+  String get chat_group_settings_title => 'Grup Ayarları';
 
   @override
-  String get chat_group_settings_section => 'Group settings';
+  String get chat_group_settings_section => 'Grup ayarları';
 
   @override
-  String get chat_group_profile_updated => 'Group profile updated.';
+  String get chat_group_profile_updated => 'Grup profili güncellendi.';
 
   @override
   String get chat_group_profile_update_failed =>
-      'Failed to update group profile. Please try again.';
+      'Grup profili güncellenemedi. Lütfen tekrar deneyin.';
 
   @override
-  String get chat_group_notification_updated => 'Group notification updated.';
+  String get chat_group_notification_updated => 'Grup bildirimi güncellendi.';
 
   @override
   String get chat_group_notification_update_failed =>
-      'Failed to update group notification. Please try again.';
+      'Grup bildirimi güncellenemedi. Lütfen tekrar deneyin.';
 
   @override
-  String get chat_member_permissions_updated => 'Member permissions updated.';
+  String get chat_member_permissions_updated => 'Üye izinleri güncellendi.';
 
   @override
   String get chat_member_permissions_update_failed =>
-      'Failed to update member permissions. Please try again.';
+      'Üye izinleri güncellenemedi. Lütfen tekrar deneyin.';
 
   @override
-  String get chat_member_list_updated => 'Member list updated.';
+  String get chat_member_list_updated => 'Üye listesi güncellendi.';
 
   @override
   String get chat_member_list_update_failed =>
-      'Failed to update member list. Please try again.';
+      'Üye listesi güncellenemedi. Lütfen tekrar deneyin.';
 
   @override
-  String get chat_banned_users_updated => 'Banned users updated.';
+  String get chat_banned_users_updated =>
+      'Yasaklanan kullanıcılar güncellendi.';
 
   @override
   String get chat_banned_users_update_failed =>
-      'Failed to update banned users. Please try again.';
+      'Yasaklanan kullanıcılar güncellenemedi. Lütfen tekrar deneyin.';
 
   @override
-  String get chat_your_preferences => 'Your preferences';
+  String get chat_your_preferences => 'Tercihleriniz';
 
   @override
-  String get chat_leave_group_title => 'Leave Group';
+  String get chat_leave_group_title => 'Gruptan Ayrıl';
 
   @override
   String get chat_leave_group_message =>
-      'If you leave this group, you will no longer see new activities or participate in this group.';
+      'Bu gruptan ayrılırsanız artık yeni etkinlikleri göremez veya bu gruba katılamazsınız.';
 
   @override
-  String get chat_leave_button => 'Leave';
+  String get chat_leave_button => 'Ayrılmak';
 
   @override
   String get chat_last_moderator_message =>
-      'You must promote another member to moderator before leaving.';
+      'Ayrılmadan önce başka bir üyeyi moderatörlüğe terfi ettirmelisiniz.';
 
   @override
-  String get chat_promote_member_button => 'Promote member';
+  String get chat_promote_member_button => 'Üyeyi yükselt';
 
   @override
-  String get chat_group_left_success => 'Group chat left.';
+  String get chat_group_left_success => 'Grup sohbeti kaldı.';
 
   @override
   String get chat_group_left_failed =>
-      'Failed to leave group chat. Please try again.';
+      'Grup sohbetinden çıkılamadı. Lütfen tekrar deneyin.';
 
   @override
-  String get chat_messaging_section => 'Messaging';
+  String get chat_messaging_section => 'Mesajlaşma';
 
   @override
   String get chat_permission_everyone_description =>
-      'Everyone can send a message in the group.';
+      'Grupta herkes mesaj gönderebilir.';
 
   @override
   String get chat_permission_moderators_description =>
-      'Members who are not moderators can read messages but cannot send any messages.';
+      'Moderatör olmayan üyeler mesajları okuyabilir ancak mesaj gönderemezler.';
 
   @override
   String get chat_notification_default_description =>
-      'By default, members in this community will receive notifications, but they can choose to turn them off.';
+      'Varsayılan olarak bu topluluktaki üyeler bildirim alır ancak bunları kapatmayı seçebilirler.';
 
   @override
   String get chat_notification_silent_description =>
-      'No notifications for everyone in this channel. Members can\'t turn on notifications in the channel.';
+      'Bu kanaldaki herkes için bildirim yok. Üyeler kanalda bildirimleri açamaz.';
 
   @override
   String get chat_notification_subscribe_description =>
-      'All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.';
+      'Tüm üyelerin bildirim alma seçeneği vardır ancak bunları etkinleştirmeleri gerekir. Varsayılan olarak bildirimler her üye için kapalıdır.';
 
   @override
-  String get feed_filter_title => 'Filter Posts';
+  String get feed_filter_title => 'Gönderileri Filtrele';
 
   @override
-  String get feed_filter_content_type => 'Content Type';
+  String get feed_filter_content_type => 'İçerik Türü';
 
   @override
   String get feed_filter_all => 'All';
 
   @override
-  String get feed_filter_images => 'Images';
+  String get feed_filter_images => 'Görseller';
 
   @override
-  String get feed_filter_videos => 'Videos';
+  String get feed_filter_videos => 'Videolar';
 
   @override
-  String get feed_filter_text => 'Text';
+  String get feed_filter_text => 'Metin';
 
   @override
-  String get feed_filter_sort_by => 'Sort By';
+  String get feed_filter_sort_by => 'Göre sırala';
 
   @override
-  String get feed_filter_latest_first => 'Latest First';
+  String get feed_filter_latest_first => 'En Son İlk';
 
   @override
-  String get feed_filter_oldest_first => 'Oldest First';
+  String get feed_filter_oldest_first => 'En Eski İlk';
 
   @override
-  String get feed_filter_clear_all => 'Clear All';
+  String get feed_filter_clear_all => 'Tümünü Temizle';
 
   @override
-  String get feed_filter_apply => 'Apply Filters';
+  String get feed_filter_apply => 'Filtreleri Uygula';
 
   @override
-  String get feed_empty_title => 'Your feed is empty';
+  String get feed_empty_title => 'Feed\'iniz boş';
 
   @override
-  String get feed_empty_description => 'Find group or create your own';
+  String get feed_empty_description =>
+      'Grup bulun veya kendinizinkini oluşturun';
 
   @override
-  String get feed_empty_explore_button => 'Explore group';
+  String get feed_empty_explore_button => 'Grubu keşfedin...';
 
   @override
-  String get feed_empty_create_button => 'Create group';
+  String get feed_empty_create_button => 'Grup oluştur...';
 
   @override
-  String get explore_empty_title => 'Your explore is empty';
+  String get explore_empty_title => 'Keşfetmeniz boş';
 
   @override
-  String get explore_no_group_title => 'No group yet';
+  String get explore_no_group_title => 'Henüz grup yok';
 
   @override
-  String get explore_empty_description => 'Find group or create your own';
+  String get explore_empty_description =>
+      'Grup bulun veya kendinizinkini oluşturun';
 
   @override
-  String get explore_no_group_description => 'Let\'s create your own groups..';
+  String get explore_no_group_description => 'Kendi gruplarınızı oluşturalım..';
 
   @override
-  String get general_open_settings => 'Open settings';
+  String get general_open_settings => 'Ayarları aç';
 
   @override
-  String get general_remove => 'Remove';
+  String get general_remove => 'Kaldırmak';
 
   @override
   String get general_yes => 'Yes';
@@ -1827,88 +1830,88 @@ class AppLocalizationsTr extends AppLocalizations {
   String get general_no => 'No';
 
   @override
-  String get post_share_success => 'Post shared successfully';
+  String get post_share_success => 'Gönderi başarıyla paylaşıldı';
 
   @override
   String get story_unsaved_changes_message =>
-      'are you sure you want to cancel? Your Changes won\'t be saved.';
+      'iptal etmek istediğinden emin misin? Değişiklikleriniz kaydedilmeyecek.';
 
   @override
   String get story_remove_link_message =>
-      'This link will be removed from story.';
+      'Bu bağlantı hikayeden kaldırılacaktır.';
 
   @override
-  String get empty_my_communities_title => 'No communities yet';
+  String get empty_my_communities_title => 'Henüz topluluk yok';
 
   @override
   String get empty_my_communities_description =>
-      'Join communities to see them here';
+      'Onları burada görmek için topluluklara katılın';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities';
+  String get empty_my_communities_cta => 'Toplulukları keşfedin...';
 
   @override
-  String get empty_group_chats_title => 'No group chats yet';
+  String get empty_group_chats_title => 'Henüz grup sohbeti yok';
 
   @override
-  String get empty_group_chats_description => 'Start a group chat with friends';
+  String get empty_group_chats_description =>
+      'Arkadaşlarınızla grup sohbeti başlatın';
 
   @override
-  String get empty_group_chats_cta => 'Create group chat';
+  String get empty_group_chats_cta => 'Grup sohbeti oluştur...';
 
   @override
-  String get empty_all_chats_title => 'No conversation yet';
+  String get empty_all_chats_title => 'Henüz konuşma yok';
 
   @override
-  String get empty_all_chats_description =>
-      'Let\'s create chat to get started.';
+  String get empty_all_chats_description => 'Başlamak için sohbet oluşturalım.';
 
   @override
-  String get empty_all_chats_cta => 'Create new chat';
+  String get empty_all_chats_cta => 'Yeni sohbet oluştur...';
 
   @override
-  String get empty_archived_chats_title => 'No archive chat';
+  String get empty_archived_chats_title => 'Arşiv sohbeti yok';
 
   @override
   String get empty_archived_chats_description =>
-      'Archived chats will appear here';
+      'Arşivlenen sohbetler burada görünecek';
 
   @override
-  String get empty_comments_title => 'No comments yet';
+  String get empty_comments_title => 'Henüz yorum yok';
 
   @override
-  String get empty_comments_description => 'Be the first to comment';
+  String get empty_comments_description => 'İlk yorum yapan siz olun';
 
   @override
-  String get empty_search_title => 'No results found';
+  String get empty_search_title => 'Sonuç bulunamadı';
 
   @override
   String get empty_search_description =>
-      'Try searching with different keywords';
+      'Farklı anahtar kelimelerle aramayı deneyin';
 
   @override
-  String get empty_search_cta => 'Clear search';
+  String get empty_search_cta => 'Aramayı temizle...';
 
   @override
   String get empty_category_communities_description =>
-      'No communities found in this category. Try exploring other categories or create your own.';
+      'Bu kategoride topluluk bulunamadı. Diğer kategorileri keşfetmeyi deneyin veya kendinizinkini oluşturun.';
 
   @override
-  String get empty_explore_title_no_categories => 'Your explore is empty';
+  String get empty_explore_title_no_categories => 'Keşfetmeniz boş';
 
   @override
   String get empty_explore_description_no_categories =>
-      'Find community or create your own';
+      'Topluluk bulun veya kendinizinkini oluşturun';
 
   @override
-  String get empty_explore_title_no_communities => 'No communities yet';
+  String get empty_explore_title_no_communities => 'Henüz topluluk yok';
 
   @override
   String get empty_explore_description_no_communities =>
-      'Be the first to create a community';
+      'Bir topluluk oluşturan ilk kişi olun';
 
   @override
-  String get cta_create_community => 'Create community';
+  String get cta_create_community => 'Topluluk oluştur...';
 
   @override
   String get shared_post_media_indicator => 'Bu gönderi medya içeriyor';
@@ -2073,13 +2076,13 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Gruptaki tüm üyeler çıkarılacaktır. Grupta paylaşılan tüm gönderiler, mesajlar, tepkiler ve medyalar silinecek. Bu geri alınamaz.';
 
   @override
-  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın';
+  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın...';
 
   @override
-  String get search_my_community_hint => 'Topluluğumda ara';
+  String get search_my_community_hint => 'Topluluğumda ara...';
 
   @override
-  String get search_no_results => 'Sonuç bulunamadı';
+  String get search_no_results => 'Sonuç bulunamadı...';
 
   @override
   String get title_communities => 'Topluluklar';
@@ -2352,16 +2355,16 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get community_placeholder_members => '1,2 bin üye';
 
   @override
-  String get community_create => 'Topluluk Oluştur';
+  String get community_create => 'Topluluk Oluştur...';
 
   @override
   String get community_name => 'Topluluk adı';
 
   @override
-  String get community_name_hint => 'Topluluğunuza ad verin';
+  String get community_name_hint => 'Topluluğunuza ad verin...';
 
   @override
-  String get community_description_hint => 'Açıklamayı girin';
+  String get community_description_hint => 'Açıklamayı girin...';
 
   @override
   String get community_edit => 'Topluluğu Düzenle';
@@ -2828,7 +2831,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get member_add => 'Üye ekle';
 
   @override
-  String get search_user_hint => 'Kullanıcı ara';
+  String get search_user_hint => 'Kullanıcı ara...';
 
   @override
   String get profile_edit => 'Profili düzenle';
@@ -3284,7 +3287,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get group_title => 'Grup';
 
   @override
-  String get group_create => 'Grup Oluştur';
+  String get group_create => 'Grup Oluştur...';
 
   @override
   String get group_edit => 'Grubu Düzenle';
@@ -3293,10 +3296,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get group_name => 'Grup adı';
 
   @override
-  String get group_name_hint => 'Grubunuza ad verin';
+  String get group_name_hint => 'Grubunuza ad verin...';
 
   @override
-  String get group_description_hint => 'Açıklamayı girin';
+  String get group_description_hint => 'Açıklamayı girin...';
 
   @override
   String get group_about => 'Hakkında';
@@ -3605,10 +3608,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get general_error_retry => 'Lütfen tekrar deneyin.';
 
   @override
-  String get chat_archived_title => 'Arşivlenmiş sohbetler';
+  String get chat_archived_title => 'Arşivlenmiş sohbetler...';
 
   @override
-  String get chat_archived_empty => 'Arşiv sohbeti yok';
+  String get chat_archived_empty => 'Arşiv sohbeti yok...';
 
   @override
   String get chat_add_member_title => 'Üye Ekle';
@@ -3617,7 +3620,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get chat_add_member_button => 'Üye Ekle';
 
   @override
-  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok';
+  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok...';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3680,6 +3683,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
 
   @override
   String get chat_leave_button => 'Ayrılmak';
+
+  @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
 
   @override
   String get chat_promote_member_button => 'Üyeyi yükselt';
@@ -3755,10 +3762,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Grup bulun veya kendinizinkini oluşturun';
 
   @override
-  String get feed_empty_explore_button => 'Grubu keşfedin';
+  String get feed_empty_explore_button => 'Grubu keşfedin...';
 
   @override
-  String get feed_empty_create_button => 'Grup oluştur';
+  String get feed_empty_create_button => 'Grup oluştur...';
 
   @override
   String get explore_empty_title => 'Keşfetmeniz boş';
@@ -3772,6 +3779,102 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
 
   @override
   String get explore_no_group_description => 'Kendi gruplarınızı oluşturalım..';
+
+  @override
+  String get general_open_settings => 'Open settings';
+
+  @override
+  String get general_remove => 'Remove';
+
+  @override
+  String get general_yes => 'Yes';
+
+  @override
+  String get general_no => 'No';
+
+  @override
+  String get post_share_success => 'Post shared successfully';
+
+  @override
+  String get story_unsaved_changes_message =>
+      'are you sure you want to cancel? Your Changes won\'t be saved.';
+
+  @override
+  String get story_remove_link_message =>
+      'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'Henüz topluluk yok';
+
+  @override
+  String get empty_my_communities_description =>
+      'Onları burada görmek için topluluklara katılın';
+
+  @override
+  String get empty_my_communities_cta => 'Toplulukları keşfedin...';
+
+  @override
+  String get empty_group_chats_title => 'Henüz grup sohbeti yok';
+
+  @override
+  String get empty_group_chats_description =>
+      'Arkadaşlarınızla grup sohbeti başlatın';
+
+  @override
+  String get empty_group_chats_cta => 'Grup sohbeti oluştur...';
+
+  @override
+  String get empty_all_chats_title => 'Henüz konuşma yok';
+
+  @override
+  String get empty_all_chats_description => 'Başlamak için sohbet oluşturalım.';
+
+  @override
+  String get empty_all_chats_cta => 'Yeni sohbet oluştur...';
+
+  @override
+  String get empty_archived_chats_title => 'Arşiv sohbeti yok';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Arşivlenen sohbetler burada görünecek';
+
+  @override
+  String get empty_comments_title => 'Henüz yorum yok';
+
+  @override
+  String get empty_comments_description => 'İlk yorum yapan siz olun';
+
+  @override
+  String get empty_search_title => 'Sonuç bulunamadı';
+
+  @override
+  String get empty_search_description =>
+      'Farklı anahtar kelimelerle aramayı deneyin';
+
+  @override
+  String get empty_search_cta => 'Aramayı temizle...';
+
+  @override
+  String get empty_category_communities_description =>
+      'Bu kategoride topluluk bulunamadı. Diğer kategorileri keşfetmeyi deneyin veya kendinizinkini oluşturun.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Keşfetmeniz boş';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Topluluk bulun veya kendinizinkini oluşturun';
+
+  @override
+  String get empty_explore_title_no_communities => 'Henüz topluluk yok';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Bir topluluk oluşturan ilk kişi olun';
+
+  @override
+  String get cta_create_community => 'Create community...';
 
   @override
   String get shared_post_media_indicator => 'Bu gönderi medya içeriyor';

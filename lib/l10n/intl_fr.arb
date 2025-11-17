@@ -120,15 +120,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Communauté de recherche et utilisateur",
+  "global_search_hint": "Communauté de recherche et utilisateur...",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Rechercher dans ma communauté",
+  "search_my_community_hint": "Rechercher dans ma communauté...",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Aucun résultat trouvé",
+  "search_no_results": "Aucun résultat trouvé...",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Créer une communauté",
+  "community_create": "Créer une communauté...",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -469,11 +469,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Nommez votre communauté",
+  "community_name_hint": "Nommez votre communauté...",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Entrez la description",
+  "community_description_hint": "Entrez la description...",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -939,11 +939,11 @@
       }
     }
   },
-  "error_edit_post": "Échec de la modification du message. Veuillez réessayer.",
+  "error_edit_post": "Échec de la modification",
   "@error_edit_post": {
     "description": "Error message when editing a post fails"
   },
-  "error_create_post": "Échec de la création du message. Veuillez réessayer.",
+  "error_create_post": "Échec de la création",
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
@@ -1025,7 +1025,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Rechercher un utilisateur",
+  "search_user_hint": "Rechercher un utilisateur...",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1037,7 +1037,7 @@
   "@profile_update_success": {
     "description": "Success message when profile is updated"
   },
-  "profile_update_failed": "Échec de l'enregistrement de votre profil. Veuillez réessayer.",
+  "profile_update_failed": "Échec de la sauvegarde",
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
@@ -1074,7 +1074,7 @@
   "@user_unreport_success": {
     "description": "success toast message for unreporting user"
   },
-  "user_unreport_error": "Échec de la suppression du signalement de l'utilisateur. Veuillez réessayer.",
+  "user_unreport_error": "Échec du signalement",
   "@user_unreport_error": {
     "description": "error toast message for unreporting user"
   },
@@ -1150,7 +1150,7 @@
   "@member_add_success": {
     "description": "Success message when adding member to community"
   },
-  "member_add_error": "Échec de l'ajout du membre. Veuillez réessayer.",
+  "member_add_error": "Échec de l'ajout",
   "@member_add_error": {
     "description": "Error message when adding member fails"
   },
@@ -1158,7 +1158,7 @@
   "@moderator_promote_success": {
     "description": "Success message when promoting member to moderator"
   },
-  "moderator_promote_error": "Échec de la promotion du membre. Veuillez réessayer.",
+  "moderator_promote_error": "Échec de la promotion",
   "@moderator_promote_error": {
     "description": "Error message when promoting member fails"
   },
@@ -1202,7 +1202,7 @@
   "@user_feed_blocked_title": {
     "description": "Title for blocked user feed empty state"
   },
-  "user_feed_blocked_description": "Débloquez pour voir leurs publications.",
+  "user_feed_blocked_description": "Débloquer pour voir",
   "@user_feed_blocked_description": {
     "description": "Description for blocked user feed empty state"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Créer un groupe",
+  "group_create": "Créer un groupe...",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1607,11 +1607,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Nommez votre groupe",
+  "group_name_hint": "Nommez votre groupe...",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Entrez la description",
+  "group_description_hint": "Entrez la description...",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -2064,23 +2064,23 @@
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
   },
-  "chat_add_member_button": "Ajouter un membre",
+  "chat_add_member_button": "Ajouter un membre...",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
-  "chat_add_member_title": "Ajouter un membre",
+  "chat_add_member_title": "Ajouter un membre...",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
-  "chat_archived_empty": "Pas de chat d'archive",
+  "chat_archived_empty": "Pas de chat d'archive...",
   "@chat_archived_empty": {
     "description": "Empty state for archived chats"
   },
-  "chat_archived_title": "Discussions archivées",
+  "chat_archived_title": "Discussions archivées...",
   "@chat_archived_title": {
     "description": "Title for archived chats page"
   },
-  "chat_banned_users_empty": "Il n'y a encore rien à voir ici",
+  "chat_banned_users_empty": "Il n'y a encore rien à voir ici...",
   "@chat_banned_users_empty": {
     "description": "Empty state for banned users"
   },
@@ -2196,11 +2196,11 @@
   "@chat_your_preferences": {
     "description": "Section header for user preferences"
   },
-  "cta_create_community": "Créer une communauté",
+  "cta_create_community": "Créer une communauté...",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "Créer une nouvelle discussion",
+  "empty_all_chats_cta": "Créer une nouvelle discussion...",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2228,7 +2228,7 @@
   "@empty_comments_description": {
     "description": "Description for empty comments list"
   },
-  "empty_comments_title": "Pas encore de commentaires",
+  "empty_comments_title": "Aucun commentaire",
   "@empty_comments_title": {
     "description": "Title for empty comments list"
   },
@@ -2248,7 +2248,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "Créer une discussion de groupe",
+  "empty_group_chats_cta": "Créer une discussion de groupe...",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2256,11 +2256,11 @@
   "@empty_group_chats_description": {
     "description": "Description for empty group chats list"
   },
-  "empty_group_chats_title": "Pas encore de discussions de groupe",
+  "empty_group_chats_title": "Aucun groupe",
   "@empty_group_chats_title": {
     "description": "Title for empty group chats list"
   },
-  "empty_my_communities_cta": "Explorez les communautés",
+  "empty_my_communities_cta": "Explorez les communautés...",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },
@@ -2268,11 +2268,11 @@
   "@empty_my_communities_description": {
     "description": "Description for empty my communities list"
   },
-  "empty_my_communities_title": "Aucune communauté pour l'instant",
+  "empty_my_communities_title": "Aucune communauté",
   "@empty_my_communities_title": {
     "description": "Title for empty my communities list"
   },
-  "empty_search_cta": "Effacer la recherche",
+  "empty_search_cta": "Effacer la recherche...",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },
@@ -2300,15 +2300,15 @@
   "@explore_no_group_title": {
     "description": "Title when no groups exist"
   },
-  "feed_empty_create_button": "Créer un groupe",
+  "feed_empty_create_button": "Créer",
   "@feed_empty_create_button": {
     "description": "Button text to create a new group"
   },
-  "feed_empty_description": "Trouvez un groupe ou créez le vôtre",
+  "feed_empty_description": "Trouver ou créer un groupe",
   "@feed_empty_description": {
     "description": "Description shown when feed is empty"
   },
-  "feed_empty_explore_button": "Explorer le groupe",
+  "feed_empty_explore_button": "Explorer",
   "@feed_empty_explore_button": {
     "description": "Button text to explore groups"
   },
