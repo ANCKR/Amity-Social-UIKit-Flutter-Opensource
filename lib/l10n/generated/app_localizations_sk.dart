@@ -113,13 +113,13 @@ class AppLocalizationsSk extends AppLocalizations {
       'Všetci členovia budú odstránení zo skupiny. Všetky príspevky, správy, reakcie a médiá zdieľané v skupine budú odstránené. Toto sa nedá vrátiť späť.';
 
   @override
-  String get global_search_hint => 'Vyhľadajte komunitu a používateľa...';
+  String get global_search_hint => 'Vyhľadajte komunitu a používateľa';
 
   @override
-  String get search_my_community_hint => 'Prehľadať moju komunitu...';
+  String get search_my_community_hint => 'Prehľadať moju komunitu';
 
   @override
-  String get search_no_results => 'Nenašli sa žiadne výsledky...';
+  String get search_no_results => 'Nenašli sa žiadne výsledky';
 
   @override
   String get title_communities => 'komunity';
@@ -155,7 +155,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get post_edit => 'Upraviť príspevok';
 
   @override
-  String get post_create_hint => 'Čo sa deje...';
+  String get post_create_hint => 'Čo sa deje';
 
   @override
   String get post_delete => 'Odstrániť príspevok';
@@ -194,7 +194,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'Príspevok bude natrvalo odstránený. Nedá sa to vrátiť späť.';
 
   @override
-  String get post_write_comment => 'Napíšte komentár...';
+  String get post_write_comment => 'Napíšte komentár';
 
   @override
   String get poll_duration => 'Trvanie prieskumu';
@@ -292,7 +292,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get poll_question_hint => 'Aká je vaša anketová otázka?';
 
   @override
-  String get comment_create_hint => 'Povedz niečo pekné...';
+  String get comment_create_hint => 'Povedz niečo pekné';
 
   @override
   String get comment_reply => 'Odpovedzte';
@@ -399,10 +399,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get community_name => 'Názov komunity';
 
   @override
-  String get community_name_hint => 'Pomenujte svoju komunitu...';
+  String get community_name_hint => 'Pomenujte svoju komunitu';
 
   @override
-  String get community_description_hint => 'Zadajte popis...';
+  String get community_description_hint => 'Zadajte popis';
 
   @override
   String get community_edit => 'Upraviť komunitu';
@@ -493,10 +493,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get message_send => 'Odoslať';
 
   @override
-  String get message_typing => 'píše...';
+  String get message_typing => 'píše';
 
   @override
-  String get message_placeholder => 'Napíšte správu...';
+  String get message_placeholder => 'Napíšte správu';
 
   @override
   String get settings_title => 'Nastavenia';
@@ -594,7 +594,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get general_add => 'Pridať';
 
   @override
-  String get general_loading => 'Načítava sa...';
+  String get general_loading => 'Načítava sa';
 
   @override
   String get general_leave => 'Odísť';
@@ -871,7 +871,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get member_add => 'Pridať člena';
 
   @override
-  String get search_user_hint => 'Vyhľadať používateľa...';
+  String get search_user_hint => 'Vyhľadať používateľa';
 
   @override
   String get profile_edit => 'Upraviť profil';
@@ -1268,7 +1268,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get chat_tab_groups => 'skupiny';
 
   @override
-  String get chat_waiting_for_network => 'Čaká sa na sieť...';
+  String get chat_waiting_for_network => 'Čaká sa na sieť';
 
   @override
   String get chat_direct_chat => 'Priamy chat';
@@ -1297,7 +1297,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get message_media => 'Médiá';
 
   @override
-  String get chat_loading => 'Načítava sa čet...';
+  String get chat_loading => 'Načítava sa čet';
 
   @override
   String get chat_blocked_message => 'Tejto osobe nemôžete posielať správy.';
@@ -1334,10 +1334,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get group_name => 'Názov skupiny';
 
   @override
-  String get group_name_hint => 'Pomenujte svoju skupinu...';
+  String get group_name_hint => 'Pomenujte svoju skupinu';
 
   @override
-  String get group_description_hint => 'Zadajte popis...';
+  String get group_description_hint => 'Zadajte popis';
 
   @override
   String get group_about => 'O';
@@ -1649,10 +1649,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Žiadny archívny rozhovor...';
+  String get chat_archived_empty => 'Žiadny archívny rozhovor';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1661,7 +1661,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť...';
+  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1969,6 +1969,12 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Vytvorte svoj prvý príspevok';
+
+  @override
+  String get search_posts_hint => 'Vyhľadajte príspevky';
+
+  @override
+  String get search_adjust_hint => 'Skúste upraviť vyhľadávanie';
 }
 
 /// The translations for Slovak, as used in Slovakia (`sk_SK`).
@@ -2080,13 +2086,13 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
       'Všetci členovia budú odstránení zo skupiny. Všetky príspevky, správy, reakcie a médiá zdieľané v skupine budú odstránené. Toto sa nedá vrátiť späť.';
 
   @override
-  String get global_search_hint => 'Vyhľadajte komunitu a používateľa...';
+  String get global_search_hint => 'Vyhľadajte komunitu a používateľa';
 
   @override
-  String get search_my_community_hint => 'Prehľadať moju komunitu...';
+  String get search_my_community_hint => 'Prehľadať moju komunitu';
 
   @override
-  String get search_no_results => 'Nenašli sa žiadne výsledky...';
+  String get search_no_results => 'Nenašli sa žiadne výsledky';
 
   @override
   String get title_communities => 'komunity';
@@ -2122,7 +2128,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get post_edit => 'Upraviť príspevok';
 
   @override
-  String get post_create_hint => 'Čo sa deje...';
+  String get post_create_hint => 'Čo sa deje';
 
   @override
   String get post_delete => 'Odstrániť príspevok';
@@ -2161,7 +2167,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
       'Príspevok bude natrvalo odstránený. Nedá sa to vrátiť späť.';
 
   @override
-  String get post_write_comment => 'Napíšte komentár...';
+  String get post_write_comment => 'Napíšte komentár';
 
   @override
   String get poll_duration => 'Trvanie prieskumu';
@@ -2259,7 +2265,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get poll_question_hint => 'Aká je vaša anketová otázka?';
 
   @override
-  String get comment_create_hint => 'Povedz niečo pekné...';
+  String get comment_create_hint => 'Povedz niečo pekné';
 
   @override
   String get comment_reply => 'Odpovedzte';
@@ -2366,10 +2372,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get community_name => 'Názov komunity';
 
   @override
-  String get community_name_hint => 'Pomenujte svoju komunitu...';
+  String get community_name_hint => 'Pomenujte svoju komunitu';
 
   @override
-  String get community_description_hint => 'Zadajte popis...';
+  String get community_description_hint => 'Zadajte popis';
 
   @override
   String get community_edit => 'Upraviť komunitu';
@@ -2460,10 +2466,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get message_send => 'Odoslať';
 
   @override
-  String get message_typing => 'píše...';
+  String get message_typing => 'píše';
 
   @override
-  String get message_placeholder => 'Napíšte správu...';
+  String get message_placeholder => 'Napíšte správu';
 
   @override
   String get settings_title => 'Nastavenia';
@@ -2561,7 +2567,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get general_add => 'Pridať';
 
   @override
-  String get general_loading => 'Načítava sa...';
+  String get general_loading => 'Načítava sa';
 
   @override
   String get general_leave => 'Odísť';
@@ -2838,7 +2844,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get member_add => 'Pridať člena';
 
   @override
-  String get search_user_hint => 'Vyhľadať používateľa...';
+  String get search_user_hint => 'Vyhľadať používateľa';
 
   @override
   String get profile_edit => 'Upraviť profil';
@@ -3235,7 +3241,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get chat_tab_groups => 'skupiny';
 
   @override
-  String get chat_waiting_for_network => 'Čaká sa na sieť...';
+  String get chat_waiting_for_network => 'Čaká sa na sieť';
 
   @override
   String get chat_direct_chat => 'Priamy chat';
@@ -3264,7 +3270,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get message_media => 'Médiá';
 
   @override
-  String get chat_loading => 'Načítava sa čet...';
+  String get chat_loading => 'Načítava sa čet';
 
   @override
   String get chat_blocked_message => 'Tejto osobe nemôžete posielať správy.';
@@ -3301,10 +3307,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get group_name => 'Názov skupiny';
 
   @override
-  String get group_name_hint => 'Pomenujte svoju skupinu...';
+  String get group_name_hint => 'Pomenujte svoju skupinu';
 
   @override
-  String get group_description_hint => 'Zadajte popis...';
+  String get group_description_hint => 'Zadajte popis';
 
   @override
   String get group_about => 'O';
@@ -3616,10 +3622,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get general_error_retry => 'Skúste to znova.';
 
   @override
-  String get chat_archived_title => 'Archivované rozhovory...';
+  String get chat_archived_title => 'Archivované rozhovory';
 
   @override
-  String get chat_archived_empty => 'Žiadny archívny rozhovor...';
+  String get chat_archived_empty => 'Žiadny archívny rozhovor';
 
   @override
   String get chat_add_member_title => 'Pridať člena';
@@ -3628,7 +3634,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
   String get chat_add_member_button => 'Pridať člena';
 
   @override
-  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť...';
+  String get chat_banned_users_empty => 'Zatiaľ tu nie je nič vidieť';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3940,4 +3946,10 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
 
   @override
   String get feed_empty_create_first_post => 'Vytvorte svoj prvý príspevok';
+
+  @override
+  String get search_posts_hint => 'Vyhľadajte príspevky';
+
+  @override
+  String get search_adjust_hint => 'Skúste upraviť vyhľadávanie';
 }

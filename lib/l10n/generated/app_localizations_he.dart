@@ -111,13 +111,13 @@ class AppLocalizationsHe extends AppLocalizations {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user...';
+  String get global_search_hint => 'Search community and user';
 
   @override
-  String get search_my_community_hint => 'Search my community...';
+  String get search_my_community_hint => 'Search my community';
 
   @override
-  String get search_no_results => 'לא נמצאו תוצאות...';
+  String get search_no_results => 'לא נמצאו תוצאות';
 
   @override
   String get title_communities => 'Communities';
@@ -153,7 +153,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get post_edit => 'Edit Post';
 
   @override
-  String get post_create_hint => 'What\'s going on...';
+  String get post_create_hint => 'What\'s going on';
 
   @override
   String get post_delete => 'Delete Post';
@@ -192,7 +192,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'The post will be permanently deleted. It cannot be undone.';
 
   @override
-  String get post_write_comment => 'Write a comment...';
+  String get post_write_comment => 'Write a comment';
 
   @override
   String get poll_duration => 'Poll duration';
@@ -290,7 +290,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get poll_question_hint => 'What\'s your poll question?';
 
   @override
-  String get comment_create_hint => 'Say something nice...';
+  String get comment_create_hint => 'Say something nice';
 
   @override
   String get comment_reply => 'Reply';
@@ -398,10 +398,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community...';
+  String get community_name_hint => 'Name your community';
 
   @override
-  String get community_description_hint => 'Enter description...';
+  String get community_description_hint => 'Enter description';
 
   @override
   String get community_edit => 'Edit Community';
@@ -492,10 +492,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get message_send => 'Send';
 
   @override
-  String get message_typing => 'is typing...';
+  String get message_typing => 'is typing';
 
   @override
-  String get message_placeholder => 'Type a message...';
+  String get message_placeholder => 'Type a message';
 
   @override
   String get settings_title => 'Settings';
@@ -593,7 +593,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get general_add => 'Add';
 
   @override
-  String get general_loading => 'Loading...';
+  String get general_loading => 'Loading';
 
   @override
   String get general_leave => 'Leave';
@@ -865,7 +865,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get member_add => 'Add member';
 
   @override
-  String get search_user_hint => 'Search user...';
+  String get search_user_hint => 'Search user';
 
   @override
   String get profile_edit => 'Edit profile';
@@ -1256,7 +1256,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get chat_tab_groups => 'קבוצות';
 
   @override
-  String get chat_waiting_for_network => 'Waiting for network...';
+  String get chat_waiting_for_network => 'Waiting for network';
 
   @override
   String get chat_direct_chat => 'Direct chat';
@@ -1285,7 +1285,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Loading chat...';
+  String get chat_loading => 'Loading chat';
 
   @override
   String get chat_blocked_message => 'You can\'t send messages to this person.';
@@ -1323,10 +1323,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group...';
+  String get group_name_hint => 'Name your group';
 
   @override
-  String get group_description_hint => 'Enter description...';
+  String get group_description_hint => 'Enter description';
 
   @override
   String get group_about => 'About';
@@ -1635,10 +1635,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'אין צ\'אט בארכיון...';
+  String get chat_archived_empty => 'אין צ\'אט בארכיון';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1647,7 +1647,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות...';
+  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1949,6 +1949,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'צור את הפוסט הראשון שלך';
+
+  @override
+  String get search_posts_hint => 'חפש פוסטים';
+
+  @override
+  String get search_adjust_hint => 'נסה להתאים את החיפוש שלך';
 }
 
 /// The translations for Hebrew, as used in Israel (`he_IL`).
@@ -2058,13 +2064,13 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user...';
+  String get global_search_hint => 'Search community and user';
 
   @override
-  String get search_my_community_hint => 'Search my community...';
+  String get search_my_community_hint => 'Search my community';
 
   @override
-  String get search_no_results => 'לא נמצאו תוצאות...';
+  String get search_no_results => 'לא נמצאו תוצאות';
 
   @override
   String get title_communities => 'Communities';
@@ -2100,7 +2106,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get post_edit => 'Edit Post';
 
   @override
-  String get post_create_hint => 'What\'s going on...';
+  String get post_create_hint => 'What\'s going on';
 
   @override
   String get post_delete => 'Delete Post';
@@ -2139,7 +2145,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'The post will be permanently deleted. It cannot be undone.';
 
   @override
-  String get post_write_comment => 'Write a comment...';
+  String get post_write_comment => 'Write a comment';
 
   @override
   String get poll_duration => 'Poll duration';
@@ -2237,7 +2243,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get poll_question_hint => 'What\'s your poll question?';
 
   @override
-  String get comment_create_hint => 'Say something nice...';
+  String get comment_create_hint => 'Say something nice';
 
   @override
   String get comment_reply => 'Reply';
@@ -2345,10 +2351,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community...';
+  String get community_name_hint => 'Name your community';
 
   @override
-  String get community_description_hint => 'Enter description...';
+  String get community_description_hint => 'Enter description';
 
   @override
   String get community_edit => 'Edit Community';
@@ -2439,10 +2445,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get message_send => 'Send';
 
   @override
-  String get message_typing => 'is typing...';
+  String get message_typing => 'is typing';
 
   @override
-  String get message_placeholder => 'Type a message...';
+  String get message_placeholder => 'Type a message';
 
   @override
   String get settings_title => 'Settings';
@@ -2540,7 +2546,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get general_add => 'Add';
 
   @override
-  String get general_loading => 'Loading...';
+  String get general_loading => 'Loading';
 
   @override
   String get general_leave => 'Leave';
@@ -2812,7 +2818,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get member_add => 'Add member';
 
   @override
-  String get search_user_hint => 'Search user...';
+  String get search_user_hint => 'Search user';
 
   @override
   String get profile_edit => 'Edit profile';
@@ -3203,7 +3209,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get chat_tab_groups => 'קבוצות';
 
   @override
-  String get chat_waiting_for_network => 'Waiting for network...';
+  String get chat_waiting_for_network => 'Waiting for network';
 
   @override
   String get chat_direct_chat => 'Direct chat';
@@ -3232,7 +3238,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Loading chat...';
+  String get chat_loading => 'Loading chat';
 
   @override
   String get chat_blocked_message => 'You can\'t send messages to this person.';
@@ -3270,10 +3276,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group...';
+  String get group_name_hint => 'Name your group';
 
   @override
-  String get group_description_hint => 'Enter description...';
+  String get group_description_hint => 'Enter description';
 
   @override
   String get group_about => 'About';
@@ -3582,10 +3588,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get general_error_retry => 'אנא נסה שוב.';
 
   @override
-  String get chat_archived_title => 'צ\'אטים בארכיון...';
+  String get chat_archived_title => 'צ\'אטים בארכיון';
 
   @override
-  String get chat_archived_empty => 'אין צ\'אט בארכיון...';
+  String get chat_archived_empty => 'אין צ\'אט בארכיון';
 
   @override
   String get chat_add_member_title => 'הוסף חבר';
@@ -3594,7 +3600,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get chat_add_member_button => 'הוסף חבר';
 
   @override
-  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות...';
+  String get chat_banned_users_empty => 'אין כאן עדיין מה לראות';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3896,4 +3902,10 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
 
   @override
   String get feed_empty_create_first_post => 'צור את הפוסט הראשון שלך';
+
+  @override
+  String get search_posts_hint => 'חפש פוסטים';
+
+  @override
+  String get search_adjust_hint => 'נסה להתאים את החיפוש שלך';
 }

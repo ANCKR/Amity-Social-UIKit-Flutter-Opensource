@@ -113,13 +113,13 @@ class AppLocalizationsNl extends AppLocalizations {
       'Alle leden worden uit de groep verwijderd. Alle berichten, berichten, reacties en media die in de groep worden gedeeld, worden verwijderd. Dit kan niet ongedaan worden gemaakt.';
 
   @override
-  String get global_search_hint => 'Zoekgemeenschap en gebruiker...';
+  String get global_search_hint => 'Zoekgemeenschap en gebruiker';
 
   @override
-  String get search_my_community_hint => 'Zoek in mijn gemeenschap...';
+  String get search_my_community_hint => 'Zoek in mijn gemeenschap';
 
   @override
-  String get search_no_results => 'Geen resultaten gevonden...';
+  String get search_no_results => 'Geen resultaten gevonden';
 
   @override
   String get title_communities => 'Gemeenschappen';
@@ -155,7 +155,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get post_edit => 'Bewerk bericht';
 
   @override
-  String get post_create_hint => 'Wat is er aan de hand...';
+  String get post_create_hint => 'Wat is er aan de hand';
 
   @override
   String get post_delete => 'Bericht verwijderen';
@@ -194,7 +194,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Het bericht wordt definitief verwijderd. Het kan niet ongedaan worden gemaakt.';
 
   @override
-  String get post_write_comment => 'Schrijf een reactie...';
+  String get post_write_comment => 'Schrijf een reactie';
 
   @override
   String get poll_duration => 'Duur van de enquête';
@@ -293,7 +293,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get poll_question_hint => 'Wat is uw pollvraag?';
 
   @override
-  String get comment_create_hint => 'Zeg iets aardigs...';
+  String get comment_create_hint => 'Zeg iets aardigs';
 
   @override
   String get comment_reply => 'Antwoord';
@@ -401,10 +401,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get community_name => 'Gemeenschapsnaam';
 
   @override
-  String get community_name_hint => 'Geef uw gemeenschap een naam...';
+  String get community_name_hint => 'Geef uw gemeenschap een naam';
 
   @override
-  String get community_description_hint => 'Voer een beschrijving in...';
+  String get community_description_hint => 'Voer een beschrijving in';
 
   @override
   String get community_edit => 'Gemeenschap bewerken';
@@ -496,10 +496,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get message_send => 'Versturen';
 
   @override
-  String get message_typing => 'is aan het typen...';
+  String get message_typing => 'is aan het typen';
 
   @override
-  String get message_placeholder => 'Typ een bericht...';
+  String get message_placeholder => 'Typ een bericht';
 
   @override
   String get settings_title => 'Instellingen';
@@ -598,7 +598,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get general_add => 'Toevoegen';
 
   @override
-  String get general_loading => 'Laden...';
+  String get general_loading => 'Laden';
 
   @override
   String get general_leave => 'Vertrekken';
@@ -873,7 +873,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get member_add => 'Lid toevoegen';
 
   @override
-  String get search_user_hint => 'Zoek gebruiker...';
+  String get search_user_hint => 'Zoek gebruiker';
 
   @override
   String get profile_edit => 'Profiel bewerken';
@@ -1261,7 +1261,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get chat_tab_groups => 'Groepen';
 
   @override
-  String get chat_waiting_for_network => 'Waiting for network...';
+  String get chat_waiting_for_network => 'Waiting for network';
 
   @override
   String get chat_direct_chat => 'Direct chat';
@@ -1290,7 +1290,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Loading chat...';
+  String get chat_loading => 'Loading chat';
 
   @override
   String get chat_blocked_message => 'You can\'t send messages to this person.';
@@ -1328,10 +1328,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group...';
+  String get group_name_hint => 'Name your group';
 
   @override
-  String get group_description_hint => 'Enter description...';
+  String get group_description_hint => 'Enter description';
 
   @override
   String get group_about => 'About';
@@ -1641,10 +1641,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Geen archiefchat...';
+  String get chat_archived_empty => 'Geen archiefchat';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1653,7 +1653,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Hier is nog niets te zien...';
+  String get chat_banned_users_empty => 'Hier is nog niets te zien';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1962,6 +1962,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Maak je eerste bericht';
+
+  @override
+  String get search_posts_hint => 'Zoek berichten';
+
+  @override
+  String get search_adjust_hint => 'Probeer uw zoekopdracht aan te passen';
 }
 
 /// The translations for Dutch Flemish, as used in Netherlands (`nl_NL`).
@@ -2073,13 +2079,13 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Alle leden worden uit de groep verwijderd. Alle berichten, berichten, reacties en media die in de groep worden gedeeld, worden verwijderd. Dit kan niet ongedaan worden gemaakt.';
 
   @override
-  String get global_search_hint => 'Zoekgemeenschap en gebruiker...';
+  String get global_search_hint => 'Zoekgemeenschap en gebruiker';
 
   @override
-  String get search_my_community_hint => 'Zoek in mijn gemeenschap...';
+  String get search_my_community_hint => 'Zoek in mijn gemeenschap';
 
   @override
-  String get search_no_results => 'Geen resultaten gevonden...';
+  String get search_no_results => 'Geen resultaten gevonden';
 
   @override
   String get title_communities => 'Gemeenschappen';
@@ -2115,7 +2121,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get post_edit => 'Bewerk bericht';
 
   @override
-  String get post_create_hint => 'Wat is er aan de hand...';
+  String get post_create_hint => 'Wat is er aan de hand';
 
   @override
   String get post_delete => 'Bericht verwijderen';
@@ -2154,7 +2160,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Het bericht wordt definitief verwijderd. Het kan niet ongedaan worden gemaakt.';
 
   @override
-  String get post_write_comment => 'Schrijf een reactie...';
+  String get post_write_comment => 'Schrijf een reactie';
 
   @override
   String get poll_duration => 'Duur van de enquête';
@@ -2253,7 +2259,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get poll_question_hint => 'Wat is uw pollvraag?';
 
   @override
-  String get comment_create_hint => 'Zeg iets aardigs...';
+  String get comment_create_hint => 'Zeg iets aardigs';
 
   @override
   String get comment_reply => 'Antwoord';
@@ -2361,10 +2367,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get community_name => 'Gemeenschapsnaam';
 
   @override
-  String get community_name_hint => 'Geef uw gemeenschap een naam...';
+  String get community_name_hint => 'Geef uw gemeenschap een naam';
 
   @override
-  String get community_description_hint => 'Voer een beschrijving in...';
+  String get community_description_hint => 'Voer een beschrijving in';
 
   @override
   String get community_edit => 'Gemeenschap bewerken';
@@ -2456,10 +2462,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get message_send => 'Versturen';
 
   @override
-  String get message_typing => 'is aan het typen...';
+  String get message_typing => 'is aan het typen';
 
   @override
-  String get message_placeholder => 'Typ een bericht...';
+  String get message_placeholder => 'Typ een bericht';
 
   @override
   String get settings_title => 'Instellingen';
@@ -2558,7 +2564,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get general_add => 'Toevoegen';
 
   @override
-  String get general_loading => 'Laden...';
+  String get general_loading => 'Laden';
 
   @override
   String get general_leave => 'Vertrekken';
@@ -2833,7 +2839,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get member_add => 'Lid toevoegen';
 
   @override
-  String get search_user_hint => 'Zoek gebruiker...';
+  String get search_user_hint => 'Zoek gebruiker';
 
   @override
   String get profile_edit => 'Profiel bewerken';
@@ -3221,7 +3227,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get chat_tab_groups => 'Groepen';
 
   @override
-  String get chat_waiting_for_network => 'Waiting for network...';
+  String get chat_waiting_for_network => 'Waiting for network';
 
   @override
   String get chat_direct_chat => 'Direct chat';
@@ -3250,7 +3256,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Loading chat...';
+  String get chat_loading => 'Loading chat';
 
   @override
   String get chat_blocked_message => 'You can\'t send messages to this person.';
@@ -3288,10 +3294,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group...';
+  String get group_name_hint => 'Name your group';
 
   @override
-  String get group_description_hint => 'Enter description...';
+  String get group_description_hint => 'Enter description';
 
   @override
   String get group_about => 'About';
@@ -3601,10 +3607,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get general_error_retry => 'Probeer het opnieuw.';
 
   @override
-  String get chat_archived_title => 'Gearchiveerde chats...';
+  String get chat_archived_title => 'Gearchiveerde chats';
 
   @override
-  String get chat_archived_empty => 'Geen archiefchat...';
+  String get chat_archived_empty => 'Geen archiefchat';
 
   @override
   String get chat_add_member_title => 'Lid toevoegen';
@@ -3613,7 +3619,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get chat_add_member_button => 'Lid toevoegen';
 
   @override
-  String get chat_banned_users_empty => 'Hier is nog niets te zien...';
+  String get chat_banned_users_empty => 'Hier is nog niets te zien';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3923,4 +3929,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
 
   @override
   String get feed_empty_create_first_post => 'Maak je eerste bericht';
+
+  @override
+  String get search_posts_hint => 'Zoek berichten';
+
+  @override
+  String get search_adjust_hint => 'Probeer uw zoekopdracht aan te passen';
 }

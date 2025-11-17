@@ -113,13 +113,13 @@ class AppLocalizationsFa extends AppLocalizations {
       'همه اعضا از گروه حذف خواهند شد. تمامی پست ها، پیام ها، واکنش ها و رسانه های اشتراک گذاری شده در گروه حذف خواهند شد. این قابل واگرد نیست.';
 
   @override
-  String get global_search_hint => 'جستجوی انجمن و کاربر...';
+  String get global_search_hint => 'جستجوی انجمن و کاربر';
 
   @override
-  String get search_my_community_hint => 'جامعه من را جستجو کنید...';
+  String get search_my_community_hint => 'جامعه من را جستجو کنید';
 
   @override
-  String get search_no_results => 'هیچ نتیجه ای یافت نشد...';
+  String get search_no_results => 'هیچ نتیجه ای یافت نشد';
 
   @override
   String get title_communities => 'جوامع';
@@ -155,7 +155,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get post_edit => 'ویرایش پست';
 
   @override
-  String get post_create_hint => 'چه خبره...';
+  String get post_create_hint => 'چه خبره';
 
   @override
   String get post_delete => 'حذف پست';
@@ -193,7 +193,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'پست برای همیشه حذف خواهد شد. نمی توان آن را واگرد کرد.';
 
   @override
-  String get post_write_comment => 'نظر بنویسید...';
+  String get post_write_comment => 'نظر بنویسید';
 
   @override
   String get poll_duration => 'مدت نظرسنجی';
@@ -292,7 +292,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get poll_question_hint => 'سوال نظرسنجی شما چیست؟';
 
   @override
-  String get comment_create_hint => 'یه چیز قشنگ بگو...';
+  String get comment_create_hint => 'یه چیز قشنگ بگو';
 
   @override
   String get comment_reply => 'پاسخ دهید';
@@ -396,10 +396,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get community_name => 'نام انجمن';
 
   @override
-  String get community_name_hint => 'انجمن خود را نام ببرید...';
+  String get community_name_hint => 'انجمن خود را نام ببرید';
 
   @override
-  String get community_description_hint => 'توضیحات را وارد کنید...';
+  String get community_description_hint => 'توضیحات را وارد کنید';
 
   @override
   String get community_edit => 'انجمن را ویرایش کنید';
@@ -490,10 +490,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get message_send => 'ارسال کنید';
 
   @override
-  String get message_typing => 'در حال تایپ است...';
+  String get message_typing => 'در حال تایپ است';
 
   @override
-  String get message_placeholder => 'یک پیام تایپ کنید...';
+  String get message_placeholder => 'یک پیام تایپ کنید';
 
   @override
   String get settings_title => 'تنظیمات';
@@ -591,7 +591,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get general_add => 'اضافه کنید';
 
   @override
-  String get general_loading => 'در حال بارگیری...';
+  String get general_loading => 'در حال بارگیری';
 
   @override
   String get general_leave => 'ترک کنید';
@@ -864,7 +864,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get member_add => 'اضافه کردن عضو';
 
   @override
-  String get search_user_hint => 'جستجوی کاربر...';
+  String get search_user_hint => 'جستجوی کاربر';
 
   @override
   String get profile_edit => 'ویرایش نمایه';
@@ -1255,7 +1255,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chat_tab_groups => 'گروه ها';
 
   @override
-  String get chat_waiting_for_network => 'در انتظار شبکه...';
+  String get chat_waiting_for_network => 'در انتظار شبکه';
 
   @override
   String get chat_direct_chat => 'چت مستقیم';
@@ -1284,7 +1284,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get message_media => 'رسانه ها';
 
   @override
-  String get chat_loading => 'در حال بارگیری چت...';
+  String get chat_loading => 'در حال بارگیری چت';
 
   @override
   String get chat_blocked_message =>
@@ -1323,10 +1323,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get group_name => 'نام گروه';
 
   @override
-  String get group_name_hint => 'گروه خود را نام ببرید...';
+  String get group_name_hint => 'گروه خود را نام ببرید';
 
   @override
-  String get group_description_hint => 'توضیحات را وارد کنید...';
+  String get group_description_hint => 'توضیحات را وارد کنید';
 
   @override
   String get group_about => 'درباره';
@@ -1636,10 +1636,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get general_error_retry => 'لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_archived_title => 'چت های آرشیو شده...';
+  String get chat_archived_title => 'چت های آرشیو شده';
 
   @override
-  String get chat_archived_empty => 'بدون چت بایگانی...';
+  String get chat_archived_empty => 'بدون چت بایگانی';
 
   @override
   String get chat_add_member_title => 'اضافه کردن عضو';
@@ -1648,7 +1648,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chat_add_member_button => 'اضافه کردن عضو';
 
   @override
-  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست...';
+  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1955,6 +1955,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'اولین پست خود را ایجاد کنید';
+
+  @override
+  String get search_posts_hint => 'جستجوی پست ها';
+
+  @override
+  String get search_adjust_hint => 'سعی کنید جستجوی خود را تنظیم کنید';
 }
 
 /// The translations for Persian, as used in Islamic Republic of Iran (`fa_IR`).
@@ -2066,13 +2072,13 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
       'همه اعضا از گروه حذف خواهند شد. تمامی پست ها، پیام ها، واکنش ها و رسانه های اشتراک گذاری شده در گروه حذف خواهند شد. این قابل واگرد نیست.';
 
   @override
-  String get global_search_hint => 'جستجوی انجمن و کاربر...';
+  String get global_search_hint => 'جستجوی انجمن و کاربر';
 
   @override
-  String get search_my_community_hint => 'جامعه من را جستجو کنید...';
+  String get search_my_community_hint => 'جامعه من را جستجو کنید';
 
   @override
-  String get search_no_results => 'هیچ نتیجه ای یافت نشد...';
+  String get search_no_results => 'هیچ نتیجه ای یافت نشد';
 
   @override
   String get title_communities => 'جوامع';
@@ -2108,7 +2114,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get post_edit => 'ویرایش پست';
 
   @override
-  String get post_create_hint => 'چه خبره...';
+  String get post_create_hint => 'چه خبره';
 
   @override
   String get post_delete => 'حذف پست';
@@ -2146,7 +2152,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
       'پست برای همیشه حذف خواهد شد. نمی توان آن را واگرد کرد.';
 
   @override
-  String get post_write_comment => 'نظر بنویسید...';
+  String get post_write_comment => 'نظر بنویسید';
 
   @override
   String get poll_duration => 'مدت نظرسنجی';
@@ -2245,7 +2251,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get poll_question_hint => 'سوال نظرسنجی شما چیست؟';
 
   @override
-  String get comment_create_hint => 'یه چیز قشنگ بگو...';
+  String get comment_create_hint => 'یه چیز قشنگ بگو';
 
   @override
   String get comment_reply => 'پاسخ دهید';
@@ -2349,10 +2355,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get community_name => 'نام انجمن';
 
   @override
-  String get community_name_hint => 'انجمن خود را نام ببرید...';
+  String get community_name_hint => 'انجمن خود را نام ببرید';
 
   @override
-  String get community_description_hint => 'توضیحات را وارد کنید...';
+  String get community_description_hint => 'توضیحات را وارد کنید';
 
   @override
   String get community_edit => 'انجمن را ویرایش کنید';
@@ -2443,10 +2449,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get message_send => 'ارسال کنید';
 
   @override
-  String get message_typing => 'در حال تایپ است...';
+  String get message_typing => 'در حال تایپ است';
 
   @override
-  String get message_placeholder => 'یک پیام تایپ کنید...';
+  String get message_placeholder => 'یک پیام تایپ کنید';
 
   @override
   String get settings_title => 'تنظیمات';
@@ -2544,7 +2550,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get general_add => 'اضافه کنید';
 
   @override
-  String get general_loading => 'در حال بارگیری...';
+  String get general_loading => 'در حال بارگیری';
 
   @override
   String get general_leave => 'ترک کنید';
@@ -2817,7 +2823,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get member_add => 'اضافه کردن عضو';
 
   @override
-  String get search_user_hint => 'جستجوی کاربر...';
+  String get search_user_hint => 'جستجوی کاربر';
 
   @override
   String get profile_edit => 'ویرایش نمایه';
@@ -3208,7 +3214,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get chat_tab_groups => 'گروه ها';
 
   @override
-  String get chat_waiting_for_network => 'در انتظار شبکه...';
+  String get chat_waiting_for_network => 'در انتظار شبکه';
 
   @override
   String get chat_direct_chat => 'چت مستقیم';
@@ -3237,7 +3243,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get message_media => 'رسانه ها';
 
   @override
-  String get chat_loading => 'در حال بارگیری چت...';
+  String get chat_loading => 'در حال بارگیری چت';
 
   @override
   String get chat_blocked_message =>
@@ -3276,10 +3282,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get group_name => 'نام گروه';
 
   @override
-  String get group_name_hint => 'گروه خود را نام ببرید...';
+  String get group_name_hint => 'گروه خود را نام ببرید';
 
   @override
-  String get group_description_hint => 'توضیحات را وارد کنید...';
+  String get group_description_hint => 'توضیحات را وارد کنید';
 
   @override
   String get group_about => 'درباره';
@@ -3589,10 +3595,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get general_error_retry => 'لطفا دوباره امتحان کنید.';
 
   @override
-  String get chat_archived_title => 'چت های آرشیو شده...';
+  String get chat_archived_title => 'چت های آرشیو شده';
 
   @override
-  String get chat_archived_empty => 'بدون چت بایگانی...';
+  String get chat_archived_empty => 'بدون چت بایگانی';
 
   @override
   String get chat_add_member_title => 'اضافه کردن عضو';
@@ -3601,7 +3607,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get chat_add_member_button => 'اضافه کردن عضو';
 
   @override
-  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست...';
+  String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3908,4 +3914,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
 
   @override
   String get feed_empty_create_first_post => 'اولین پست خود را ایجاد کنید';
+
+  @override
+  String get search_posts_hint => 'جستجوی پست ها';
+
+  @override
+  String get search_adjust_hint => 'سعی کنید جستجوی خود را تنظیم کنید';
 }

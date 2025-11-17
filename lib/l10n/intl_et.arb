@@ -1,5 +1,4 @@
 {
-  "@@locale": "et",
   "community_title": "kogukond",
   "@community_title": {
     "description": "Title for the homepage"
@@ -120,15 +119,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Otsige kogukonnast ja kasutajast...",
+  "global_search_hint": "Otsige kogukonnast ja kasutajast",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Otsi minu kogukonnast...",
+  "search_my_community_hint": "Otsi minu kogukonnast",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Tulemusi ei leitud...",
+  "search_no_results": "Tulemusi ei leitud",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -176,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "Mis toimub...",
+  "post_create_hint": "Mis toimub",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -224,7 +223,7 @@
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "Kirjutage kommentaar...",
+  "post_write_comment": "Kirjutage kommentaar",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -339,7 +338,7 @@
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
   },
-  "comment_create_hint": "Ütle midagi ilusat...",
+  "comment_create_hint": "Ütle midagi ilusat",
   "@comment_create_hint": {
     "description": "Hint text for comment input"
   },
@@ -469,11 +468,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Nimetage oma kogukond...",
+  "community_name_hint": "Nimetage oma kogukond",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Sisesta kirjeldus...",
+  "community_description_hint": "Sisesta kirjeldus",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -575,11 +574,11 @@
   "@message_send": {
     "description": "Label for send message button"
   },
-  "message_typing": "kirjutab...",
+  "message_typing": "kirjutab",
   "@message_typing": {
     "description": "Label for typing indicator"
   },
-  "message_placeholder": "Sisestage sõnum...",
+  "message_placeholder": "Sisestage sõnum",
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
@@ -695,7 +694,7 @@
   "@general_add": {
     "description": "Label for add button"
   },
-  "general_loading": "Laadimine...",
+  "general_loading": "Laadimine",
   "@general_loading": {
     "description": "Label for loading states"
   },
@@ -1025,7 +1024,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Otsi kasutajat...",
+  "search_user_hint": "Otsi kasutajat",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1518,7 +1517,7 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "Võrguühenduse ootel...",
+  "chat_waiting_for_network": "Võrguühenduse ootel",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
@@ -1559,7 +1558,7 @@
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "Vestluse laadimine...",
+  "chat_loading": "Vestluse laadimine",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1607,11 +1606,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Nimetage oma rühm...",
+  "group_name_hint": "Nimetage oma rühm",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Sisesta kirjeldus...",
+  "group_description_hint": "Sisesta kirjeldus",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -2072,15 +2071,15 @@
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
-  "chat_archived_empty": "Arhiivivestlust pole...",
+  "chat_archived_empty": "Arhiivivestlust pole",
   "@chat_archived_empty": {
     "description": "Empty state for archived chats"
   },
-  "chat_archived_title": "Arhiveeritud vestlused...",
+  "chat_archived_title": "Arhiveeritud vestlused",
   "@chat_archived_title": {
     "description": "Title for archived chats page"
   },
-  "chat_banned_users_empty": "Siin pole veel midagi näha...",
+  "chat_banned_users_empty": "Siin pole veel midagi näha",
   "@chat_banned_users_empty": {
     "description": "Empty state for banned users"
   },
@@ -2399,5 +2398,13 @@
   "story_unsaved_changes_message": "kas soovite kindlasti tühistada? Teie muudatusi ei salvestata.",
   "@story_unsaved_changes_message": {
     "description": "Warning message for unsaved changes in story"
+  },
+  "search_posts_hint": "Otsi postitusi",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Proovige oma otsingut kohandada",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

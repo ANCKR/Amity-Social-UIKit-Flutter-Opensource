@@ -113,13 +113,13 @@ class AppLocalizationsBg extends AppLocalizations {
       'Всички членове ще бъдат премахнати от групата. Всички публикации, съобщения, реакции и медии, споделени в групата, ще бъдат изтрити. Това не може да бъде отменено.';
 
   @override
-  String get global_search_hint => 'Търсете общност и потребител...';
+  String get global_search_hint => 'Търсете общност и потребител';
 
   @override
-  String get search_my_community_hint => 'Търсене в моята общност...';
+  String get search_my_community_hint => 'Търсене в моята общност';
 
   @override
-  String get search_no_results => 'Няма намерени резултати...';
+  String get search_no_results => 'Няма намерени резултати';
 
   @override
   String get title_communities => 'Общности';
@@ -155,7 +155,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get post_edit => 'Редактиране на публикацията';
 
   @override
-  String get post_create_hint => 'какво става...';
+  String get post_create_hint => 'какво става';
 
   @override
   String get post_delete => 'Изтриване на публикация';
@@ -194,7 +194,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Публикацията ще бъде изтрита за постоянно. Не може да се отмени.';
 
   @override
-  String get post_write_comment => 'Напишете коментар...';
+  String get post_write_comment => 'Напишете коментар';
 
   @override
   String get poll_duration => 'Продължителност на анкетата';
@@ -293,7 +293,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get poll_question_hint => 'Какъв е вашият въпрос в анкетата?';
 
   @override
-  String get comment_create_hint => 'Кажете нещо хубаво...';
+  String get comment_create_hint => 'Кажете нещо хубаво';
 
   @override
   String get comment_reply => 'Отговорете';
@@ -400,10 +400,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get community_name => 'Име на общността';
 
   @override
-  String get community_name_hint => 'Назовете вашата общност...';
+  String get community_name_hint => 'Назовете вашата общност';
 
   @override
-  String get community_description_hint => 'Въведете описание...';
+  String get community_description_hint => 'Въведете описание';
 
   @override
   String get community_edit => 'Редактиране на общността';
@@ -494,10 +494,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get message_send => 'Изпратете';
 
   @override
-  String get message_typing => 'пише...';
+  String get message_typing => 'пише';
 
   @override
-  String get message_placeholder => 'Въведете съобщение...';
+  String get message_placeholder => 'Въведете съобщение';
 
   @override
   String get settings_title => 'Настройки';
@@ -595,7 +595,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get general_add => 'Добавете';
 
   @override
-  String get general_loading => 'Зареждане...';
+  String get general_loading => 'Зареждане';
 
   @override
   String get general_leave => 'тръгвай';
@@ -873,7 +873,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get member_add => 'Добавете член';
 
   @override
-  String get search_user_hint => 'Търсене на потребител...';
+  String get search_user_hint => 'Търсене на потребител';
 
   @override
   String get profile_edit => 'Редактиране на профил';
@@ -1272,7 +1272,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get chat_tab_groups => 'Групи';
 
   @override
-  String get chat_waiting_for_network => 'Изчаква се мрежа...';
+  String get chat_waiting_for_network => 'Изчаква се мрежа';
 
   @override
   String get chat_direct_chat => 'Директен чат';
@@ -1301,7 +1301,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get message_media => 'Медия';
 
   @override
-  String get chat_loading => 'Чатът се зарежда...';
+  String get chat_loading => 'Чатът се зарежда';
 
   @override
   String get chat_blocked_message =>
@@ -1340,10 +1340,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get group_name => 'Име на групата';
 
   @override
-  String get group_name_hint => 'Назовете групата си...';
+  String get group_name_hint => 'Назовете групата си';
 
   @override
-  String get group_description_hint => 'Въведете описание...';
+  String get group_description_hint => 'Въведете описание';
 
   @override
   String get group_about => 'За';
@@ -1654,10 +1654,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get general_error_retry => 'Моля, опитайте отново.';
 
   @override
-  String get chat_archived_title => 'Архивирани чатове...';
+  String get chat_archived_title => 'Архивирани чатове';
 
   @override
-  String get chat_archived_empty => 'Без архивен чат...';
+  String get chat_archived_empty => 'Без архивен чат';
 
   @override
   String get chat_add_member_title => 'Добавяне на член';
@@ -1666,7 +1666,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get chat_add_member_button => 'Добавяне на член';
 
   @override
-  String get chat_banned_users_empty => 'Все още няма нищо за гледане...';
+  String get chat_banned_users_empty => 'Все още няма нищо за гледане';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1979,6 +1979,12 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Създайте първата си публикация';
+
+  @override
+  String get search_posts_hint => 'Търсене на публикации';
+
+  @override
+  String get search_adjust_hint => 'Опитайте да коригирате търсенето си';
 }
 
 /// The translations for Bulgarian, as used in Bulgaria (`bg_BG`).
@@ -2090,13 +2096,13 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Всички членове ще бъдат премахнати от групата. Всички публикации, съобщения, реакции и медии, споделени в групата, ще бъдат изтрити. Това не може да бъде отменено.';
 
   @override
-  String get global_search_hint => 'Търсете общност и потребител...';
+  String get global_search_hint => 'Търсете общност и потребител';
 
   @override
-  String get search_my_community_hint => 'Търсене в моята общност...';
+  String get search_my_community_hint => 'Търсене в моята общност';
 
   @override
-  String get search_no_results => 'Няма намерени резултати...';
+  String get search_no_results => 'Няма намерени резултати';
 
   @override
   String get title_communities => 'Общности';
@@ -2132,7 +2138,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get post_edit => 'Редактиране на публикацията';
 
   @override
-  String get post_create_hint => 'какво става...';
+  String get post_create_hint => 'какво става';
 
   @override
   String get post_delete => 'Изтриване на публикация';
@@ -2171,7 +2177,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Публикацията ще бъде изтрита за постоянно. Не може да се отмени.';
 
   @override
-  String get post_write_comment => 'Напишете коментар...';
+  String get post_write_comment => 'Напишете коментар';
 
   @override
   String get poll_duration => 'Продължителност на анкетата';
@@ -2270,7 +2276,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get poll_question_hint => 'Какъв е вашият въпрос в анкетата?';
 
   @override
-  String get comment_create_hint => 'Кажете нещо хубаво...';
+  String get comment_create_hint => 'Кажете нещо хубаво';
 
   @override
   String get comment_reply => 'Отговорете';
@@ -2377,10 +2383,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get community_name => 'Име на общността';
 
   @override
-  String get community_name_hint => 'Назовете вашата общност...';
+  String get community_name_hint => 'Назовете вашата общност';
 
   @override
-  String get community_description_hint => 'Въведете описание...';
+  String get community_description_hint => 'Въведете описание';
 
   @override
   String get community_edit => 'Редактиране на общността';
@@ -2471,10 +2477,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get message_send => 'Изпратете';
 
   @override
-  String get message_typing => 'пише...';
+  String get message_typing => 'пише';
 
   @override
-  String get message_placeholder => 'Въведете съобщение...';
+  String get message_placeholder => 'Въведете съобщение';
 
   @override
   String get settings_title => 'Настройки';
@@ -2572,7 +2578,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get general_add => 'Добавете';
 
   @override
-  String get general_loading => 'Зареждане...';
+  String get general_loading => 'Зареждане';
 
   @override
   String get general_leave => 'тръгвай';
@@ -2850,7 +2856,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get member_add => 'Добавете член';
 
   @override
-  String get search_user_hint => 'Търсене на потребител...';
+  String get search_user_hint => 'Търсене на потребител';
 
   @override
   String get profile_edit => 'Редактиране на профил';
@@ -3249,7 +3255,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get chat_tab_groups => 'Групи';
 
   @override
-  String get chat_waiting_for_network => 'Изчаква се мрежа...';
+  String get chat_waiting_for_network => 'Изчаква се мрежа';
 
   @override
   String get chat_direct_chat => 'Директен чат';
@@ -3278,7 +3284,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get message_media => 'Медия';
 
   @override
-  String get chat_loading => 'Чатът се зарежда...';
+  String get chat_loading => 'Чатът се зарежда';
 
   @override
   String get chat_blocked_message =>
@@ -3317,10 +3323,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get group_name => 'Име на групата';
 
   @override
-  String get group_name_hint => 'Назовете групата си...';
+  String get group_name_hint => 'Назовете групата си';
 
   @override
-  String get group_description_hint => 'Въведете описание...';
+  String get group_description_hint => 'Въведете описание';
 
   @override
   String get group_about => 'За';
@@ -3631,10 +3637,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get general_error_retry => 'Моля, опитайте отново.';
 
   @override
-  String get chat_archived_title => 'Архивирани чатове...';
+  String get chat_archived_title => 'Архивирани чатове';
 
   @override
-  String get chat_archived_empty => 'Без архивен чат...';
+  String get chat_archived_empty => 'Без архивен чат';
 
   @override
   String get chat_add_member_title => 'Добавяне на член';
@@ -3643,7 +3649,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get chat_add_member_button => 'Добавяне на член';
 
   @override
-  String get chat_banned_users_empty => 'Все още няма нищо за гледане...';
+  String get chat_banned_users_empty => 'Все още няма нищо за гледане';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3956,4 +3962,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
 
   @override
   String get feed_empty_create_first_post => 'Създайте първата си публикация';
+
+  @override
+  String get search_posts_hint => 'Търсене на публикации';
+
+  @override
+  String get search_adjust_hint => 'Опитайте да коригирате търсенето си';
 }

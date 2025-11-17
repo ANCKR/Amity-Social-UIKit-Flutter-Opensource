@@ -1,5 +1,4 @@
 {
-  "@@locale": "da_DK",
   "community_title": "Fællesskab",
   "@community_title": {
     "description": "Title for the homepage"
@@ -120,15 +119,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Søg efter fællesskab og bruger...",
+  "global_search_hint": "Søg efter fællesskab og bruger",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Søg i mit fællesskab...",
+  "search_my_community_hint": "Søg i mit fællesskab",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Ingen resultater fundet...",
+  "search_no_results": "Ingen resultater fundet",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -176,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "Hvad sker der...",
+  "post_create_hint": "Hvad sker der",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -224,7 +223,7 @@
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "Skriv en kommentar...",
+  "post_write_comment": "Skriv en kommentar",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -339,7 +338,7 @@
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
   },
-  "comment_create_hint": "Sig noget pænt...",
+  "comment_create_hint": "Sig noget pænt",
   "@comment_create_hint": {
     "description": "Hint text for comment input"
   },
@@ -469,11 +468,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Navngiv dit fællesskab...",
+  "community_name_hint": "Navngiv dit fællesskab",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Indtast beskrivelse...",
+  "community_description_hint": "Indtast beskrivelse",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -575,11 +574,11 @@
   "@message_send": {
     "description": "Label for send message button"
   },
-  "message_typing": "skriver...",
+  "message_typing": "skriver",
   "@message_typing": {
     "description": "Label for typing indicator"
   },
-  "message_placeholder": "Skriv en besked...",
+  "message_placeholder": "Skriv en besked",
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
@@ -695,7 +694,7 @@
   "@general_add": {
     "description": "Label for add button"
   },
-  "general_loading": "Indlæser...",
+  "general_loading": "Indlæser",
   "@general_loading": {
     "description": "Label for loading states"
   },
@@ -1025,7 +1024,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Søg bruger...",
+  "search_user_hint": "Søg bruger",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1518,7 +1517,7 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "Venter på netværk...",
+  "chat_waiting_for_network": "Venter på netværk",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
@@ -1559,7 +1558,7 @@
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "Indlæser chat...",
+  "chat_loading": "Indlæser chat",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1607,11 +1606,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Navngiv din gruppe...",
+  "group_name_hint": "Navngiv din gruppe",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Indtast beskrivelse...",
+  "group_description_hint": "Indtast beskrivelse",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,11 +1988,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Arkiverede chats...",
+  "chat_archived_title": "Arkiverede chats",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Ingen arkivchat...",
+  "chat_archived_empty": "Ingen arkivchat",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,7 +2004,7 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Intet her at se endnu...",
+  "chat_banned_users_empty": "Intet her at se endnu",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2399,5 +2398,13 @@
   "story_unsaved_changes_message": "er du sikker på, at du vil annullere? Dine ændringer vil ikke blive gemt.",
   "@story_unsaved_changes_message": {
     "description": "Warning message for unsaved changes in story"
+  },
+  "search_posts_hint": "Søg efter indlæg",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Prøv at justere din søgning",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

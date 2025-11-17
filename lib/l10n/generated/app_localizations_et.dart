@@ -113,13 +113,13 @@ class AppLocalizationsEt extends AppLocalizations {
       'Kõik liikmed eemaldatakse grupist. Kõik grupis jagatud postitused, sõnumid, reaktsioonid ja meedia kustutatakse. Seda ei saa tagasi võtta.';
 
   @override
-  String get global_search_hint => 'Otsige kogukonnast ja kasutajast...';
+  String get global_search_hint => 'Otsige kogukonnast ja kasutajast';
 
   @override
-  String get search_my_community_hint => 'Otsi minu kogukonnast...';
+  String get search_my_community_hint => 'Otsi minu kogukonnast';
 
   @override
-  String get search_no_results => 'Tulemusi ei leitud...';
+  String get search_no_results => 'Tulemusi ei leitud';
 
   @override
   String get title_communities => 'kogukonnad';
@@ -155,7 +155,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get post_edit => 'Redigeeri postitust';
 
   @override
-  String get post_create_hint => 'Mis toimub...';
+  String get post_create_hint => 'Mis toimub';
 
   @override
   String get post_delete => 'Kustuta postitus';
@@ -193,7 +193,7 @@ class AppLocalizationsEt extends AppLocalizations {
       'Postitus kustutatakse jäädavalt. Seda ei saa tagasi võtta.';
 
   @override
-  String get post_write_comment => 'Kirjutage kommentaar...';
+  String get post_write_comment => 'Kirjutage kommentaar';
 
   @override
   String get poll_duration => 'Küsitluse kestus';
@@ -292,7 +292,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get poll_question_hint => 'Mis on teie küsitluse küsimus?';
 
   @override
-  String get comment_create_hint => 'Ütle midagi ilusat...';
+  String get comment_create_hint => 'Ütle midagi ilusat';
 
   @override
   String get comment_reply => 'Vasta';
@@ -399,10 +399,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get community_name => 'kogukonna nimi';
 
   @override
-  String get community_name_hint => 'Nimetage oma kogukond...';
+  String get community_name_hint => 'Nimetage oma kogukond';
 
   @override
-  String get community_description_hint => 'Sisesta kirjeldus...';
+  String get community_description_hint => 'Sisesta kirjeldus';
 
   @override
   String get community_edit => 'Redigeeri kogukonda';
@@ -493,10 +493,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get message_send => 'Saada';
 
   @override
-  String get message_typing => 'kirjutab...';
+  String get message_typing => 'kirjutab';
 
   @override
-  String get message_placeholder => 'Sisestage sõnum...';
+  String get message_placeholder => 'Sisestage sõnum';
 
   @override
   String get settings_title => 'Seaded';
@@ -594,7 +594,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get general_add => 'Lisa';
 
   @override
-  String get general_loading => 'Laadimine...';
+  String get general_loading => 'Laadimine';
 
   @override
   String get general_leave => 'Lahku';
@@ -872,7 +872,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get member_add => 'Lisa liige';
 
   @override
-  String get search_user_hint => 'Otsi kasutajat...';
+  String get search_user_hint => 'Otsi kasutajat';
 
   @override
   String get profile_edit => 'Redigeeri profiili';
@@ -1269,7 +1269,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get chat_tab_groups => 'Grupid';
 
   @override
-  String get chat_waiting_for_network => 'Võrguühenduse ootel...';
+  String get chat_waiting_for_network => 'Võrguühenduse ootel';
 
   @override
   String get chat_direct_chat => 'Otsevestlus';
@@ -1298,7 +1298,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get message_media => 'Meedia';
 
   @override
-  String get chat_loading => 'Vestluse laadimine...';
+  String get chat_loading => 'Vestluse laadimine';
 
   @override
   String get chat_blocked_message =>
@@ -1337,10 +1337,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get group_name => 'Grupi nimi';
 
   @override
-  String get group_name_hint => 'Nimetage oma rühm...';
+  String get group_name_hint => 'Nimetage oma rühm';
 
   @override
-  String get group_description_hint => 'Sisesta kirjeldus...';
+  String get group_description_hint => 'Sisesta kirjeldus';
 
   @override
   String get group_about => 'Umbes';
@@ -1651,10 +1651,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get general_error_retry => 'Palun proovi uuesti.';
 
   @override
-  String get chat_archived_title => 'Arhiveeritud vestlused...';
+  String get chat_archived_title => 'Arhiveeritud vestlused';
 
   @override
-  String get chat_archived_empty => 'Arhiivivestlust pole...';
+  String get chat_archived_empty => 'Arhiivivestlust pole';
 
   @override
   String get chat_add_member_title => 'Lisa liige';
@@ -1663,7 +1663,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get chat_add_member_button => 'Lisa liige';
 
   @override
-  String get chat_banned_users_empty => 'Siin pole veel midagi näha...';
+  String get chat_banned_users_empty => 'Siin pole veel midagi näha';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1968,6 +1968,12 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Loo oma esimene postitus';
+
+  @override
+  String get search_posts_hint => 'Otsi postitusi';
+
+  @override
+  String get search_adjust_hint => 'Proovige oma otsingut kohandada';
 }
 
 /// The translations for Estonian, as used in Estonia (`et_EE`).
@@ -2079,13 +2085,13 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
       'Kõik liikmed eemaldatakse grupist. Kõik grupis jagatud postitused, sõnumid, reaktsioonid ja meedia kustutatakse. Seda ei saa tagasi võtta.';
 
   @override
-  String get global_search_hint => 'Otsige kogukonnast ja kasutajast...';
+  String get global_search_hint => 'Otsige kogukonnast ja kasutajast';
 
   @override
-  String get search_my_community_hint => 'Otsi minu kogukonnast...';
+  String get search_my_community_hint => 'Otsi minu kogukonnast';
 
   @override
-  String get search_no_results => 'Tulemusi ei leitud...';
+  String get search_no_results => 'Tulemusi ei leitud';
 
   @override
   String get title_communities => 'kogukonnad';
@@ -2121,7 +2127,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get post_edit => 'Redigeeri postitust';
 
   @override
-  String get post_create_hint => 'Mis toimub...';
+  String get post_create_hint => 'Mis toimub';
 
   @override
   String get post_delete => 'Kustuta postitus';
@@ -2159,7 +2165,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
       'Postitus kustutatakse jäädavalt. Seda ei saa tagasi võtta.';
 
   @override
-  String get post_write_comment => 'Kirjutage kommentaar...';
+  String get post_write_comment => 'Kirjutage kommentaar';
 
   @override
   String get poll_duration => 'Küsitluse kestus';
@@ -2258,7 +2264,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get poll_question_hint => 'Mis on teie küsitluse küsimus?';
 
   @override
-  String get comment_create_hint => 'Ütle midagi ilusat...';
+  String get comment_create_hint => 'Ütle midagi ilusat';
 
   @override
   String get comment_reply => 'Vasta';
@@ -2365,10 +2371,10 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get community_name => 'kogukonna nimi';
 
   @override
-  String get community_name_hint => 'Nimetage oma kogukond...';
+  String get community_name_hint => 'Nimetage oma kogukond';
 
   @override
-  String get community_description_hint => 'Sisesta kirjeldus...';
+  String get community_description_hint => 'Sisesta kirjeldus';
 
   @override
   String get community_edit => 'Redigeeri kogukonda';
@@ -2459,10 +2465,10 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get message_send => 'Saada';
 
   @override
-  String get message_typing => 'kirjutab...';
+  String get message_typing => 'kirjutab';
 
   @override
-  String get message_placeholder => 'Sisestage sõnum...';
+  String get message_placeholder => 'Sisestage sõnum';
 
   @override
   String get settings_title => 'Seaded';
@@ -2560,7 +2566,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get general_add => 'Lisa';
 
   @override
-  String get general_loading => 'Laadimine...';
+  String get general_loading => 'Laadimine';
 
   @override
   String get general_leave => 'Lahku';
@@ -2838,7 +2844,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get member_add => 'Lisa liige';
 
   @override
-  String get search_user_hint => 'Otsi kasutajat...';
+  String get search_user_hint => 'Otsi kasutajat';
 
   @override
   String get profile_edit => 'Redigeeri profiili';
@@ -3235,7 +3241,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get chat_tab_groups => 'Grupid';
 
   @override
-  String get chat_waiting_for_network => 'Võrguühenduse ootel...';
+  String get chat_waiting_for_network => 'Võrguühenduse ootel';
 
   @override
   String get chat_direct_chat => 'Otsevestlus';
@@ -3264,7 +3270,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get message_media => 'Meedia';
 
   @override
-  String get chat_loading => 'Vestluse laadimine...';
+  String get chat_loading => 'Vestluse laadimine';
 
   @override
   String get chat_blocked_message =>
@@ -3303,10 +3309,10 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get group_name => 'Grupi nimi';
 
   @override
-  String get group_name_hint => 'Nimetage oma rühm...';
+  String get group_name_hint => 'Nimetage oma rühm';
 
   @override
-  String get group_description_hint => 'Sisesta kirjeldus...';
+  String get group_description_hint => 'Sisesta kirjeldus';
 
   @override
   String get group_about => 'Umbes';
@@ -3617,10 +3623,10 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get general_error_retry => 'Palun proovi uuesti.';
 
   @override
-  String get chat_archived_title => 'Arhiveeritud vestlused...';
+  String get chat_archived_title => 'Arhiveeritud vestlused';
 
   @override
-  String get chat_archived_empty => 'Arhiivivestlust pole...';
+  String get chat_archived_empty => 'Arhiivivestlust pole';
 
   @override
   String get chat_add_member_title => 'Lisa liige';
@@ -3629,7 +3635,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get chat_add_member_button => 'Lisa liige';
 
   @override
-  String get chat_banned_users_empty => 'Siin pole veel midagi näha...';
+  String get chat_banned_users_empty => 'Siin pole veel midagi näha';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3934,4 +3940,10 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
 
   @override
   String get feed_empty_create_first_post => 'Loo oma esimene postitus';
+
+  @override
+  String get search_posts_hint => 'Otsi postitusi';
+
+  @override
+  String get search_adjust_hint => 'Proovige oma otsingut kohandada';
 }

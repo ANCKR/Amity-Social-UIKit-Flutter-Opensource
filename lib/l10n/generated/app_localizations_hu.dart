@@ -113,14 +113,13 @@ class AppLocalizationsHu extends AppLocalizations {
       'Az összes tagot eltávolítjuk a csoportból. A csoportban megosztott összes bejegyzés, üzenet, reakció és média törlődik. Ezt nem lehet visszavonni.';
 
   @override
-  String get global_search_hint =>
-      'Keresés a közösségben és a felhasználóban...';
+  String get global_search_hint => 'Keresés a közösségben és a felhasználóban';
 
   @override
-  String get search_my_community_hint => 'Keresés a közösségemben...';
+  String get search_my_community_hint => 'Keresés a közösségemben';
 
   @override
-  String get search_no_results => 'Nincs találat...';
+  String get search_no_results => 'Nincs találat';
 
   @override
   String get title_communities => 'közösségek';
@@ -156,7 +155,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get post_edit => 'Bejegyzés szerkesztése';
 
   @override
-  String get post_create_hint => 'Mi folyik itt...';
+  String get post_create_hint => 'Mi folyik itt';
 
   @override
   String get post_delete => 'Bejegyzés törlése';
@@ -194,7 +193,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'A bejegyzés véglegesen törlődik. Nem lehet visszavonni.';
 
   @override
-  String get post_write_comment => 'Írj megjegyzést...';
+  String get post_write_comment => 'Írj megjegyzést';
 
   @override
   String get poll_duration => 'Szavazás időtartama';
@@ -293,7 +292,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get poll_question_hint => 'Mi a szavazás kérdése?';
 
   @override
-  String get comment_create_hint => 'Mondj valami szépet...';
+  String get comment_create_hint => 'Mondj valami szépet';
 
   @override
   String get comment_reply => 'Válasz';
@@ -403,10 +402,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get community_name => 'Közösség neve';
 
   @override
-  String get community_name_hint => 'Nevezze el közösségét...';
+  String get community_name_hint => 'Nevezze el közösségét';
 
   @override
-  String get community_description_hint => 'Írja be a leírást...';
+  String get community_description_hint => 'Írja be a leírást';
 
   @override
   String get community_edit => 'Közösség szerkesztése';
@@ -497,10 +496,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get message_send => 'Elküld';
 
   @override
-  String get message_typing => 'gépel...';
+  String get message_typing => 'gépel';
 
   @override
-  String get message_placeholder => 'Írjon be egy üzenetet...';
+  String get message_placeholder => 'Írjon be egy üzenetet';
 
   @override
   String get settings_title => 'Beállítások elemre';
@@ -598,7 +597,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get general_add => 'Hozzáadás';
 
   @override
-  String get general_loading => 'Terhelés...';
+  String get general_loading => 'Terhelés';
 
   @override
   String get general_leave => 'Szabadság';
@@ -876,7 +875,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get member_add => 'Tag hozzáadása lehetőségre';
 
   @override
-  String get search_user_hint => 'Felhasználó keresése...';
+  String get search_user_hint => 'Felhasználó keresése';
 
   @override
   String get profile_edit => 'Profil szerkesztése';
@@ -1274,7 +1273,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get chat_tab_groups => 'Csoportok';
 
   @override
-  String get chat_waiting_for_network => 'Várakozás a hálózatra...';
+  String get chat_waiting_for_network => 'Várakozás a hálózatra';
 
   @override
   String get chat_direct_chat => 'Közvetlen csevegés';
@@ -1303,7 +1302,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get message_media => 'Média';
 
   @override
-  String get chat_loading => 'Csevegés betöltése...';
+  String get chat_loading => 'Csevegés betöltése';
 
   @override
   String get chat_blocked_message => 'Ennek a személynek nem küldhet üzenetet.';
@@ -1341,10 +1340,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get group_name => 'Csoport neve';
 
   @override
-  String get group_name_hint => 'Nevezze el a csoportot...';
+  String get group_name_hint => 'Nevezze el a csoportot';
 
   @override
-  String get group_description_hint => 'Írja be a leírást...';
+  String get group_description_hint => 'Írja be a leírást';
 
   @override
   String get group_about => 'Körülbelül';
@@ -1656,10 +1655,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Nincs archív csevegés...';
+  String get chat_archived_empty => 'Nincs archív csevegés';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1668,7 +1667,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Itt még nincs látnivaló...';
+  String get chat_banned_users_empty => 'Itt még nincs látnivaló';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1976,6 +1975,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Hozd létre az első bejegyzésedet';
+
+  @override
+  String get search_posts_hint => 'Keresés a bejegyzésekben';
+
+  @override
+  String get search_adjust_hint => 'Próbálja módosítani a keresést';
 }
 
 /// The translations for Hungarian, as used in Hungary (`hu_HU`).
@@ -2087,14 +2092,13 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Az összes tagot eltávolítjuk a csoportból. A csoportban megosztott összes bejegyzés, üzenet, reakció és média törlődik. Ezt nem lehet visszavonni.';
 
   @override
-  String get global_search_hint =>
-      'Keresés a közösségben és a felhasználóban...';
+  String get global_search_hint => 'Keresés a közösségben és a felhasználóban';
 
   @override
-  String get search_my_community_hint => 'Keresés a közösségemben...';
+  String get search_my_community_hint => 'Keresés a közösségemben';
 
   @override
-  String get search_no_results => 'Nincs találat...';
+  String get search_no_results => 'Nincs találat';
 
   @override
   String get title_communities => 'közösségek';
@@ -2130,7 +2134,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get post_edit => 'Bejegyzés szerkesztése';
 
   @override
-  String get post_create_hint => 'Mi folyik itt...';
+  String get post_create_hint => 'Mi folyik itt';
 
   @override
   String get post_delete => 'Bejegyzés törlése';
@@ -2168,7 +2172,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'A bejegyzés véglegesen törlődik. Nem lehet visszavonni.';
 
   @override
-  String get post_write_comment => 'Írj megjegyzést...';
+  String get post_write_comment => 'Írj megjegyzést';
 
   @override
   String get poll_duration => 'Szavazás időtartama';
@@ -2267,7 +2271,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get poll_question_hint => 'Mi a szavazás kérdése?';
 
   @override
-  String get comment_create_hint => 'Mondj valami szépet...';
+  String get comment_create_hint => 'Mondj valami szépet';
 
   @override
   String get comment_reply => 'Válasz';
@@ -2377,10 +2381,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get community_name => 'Közösség neve';
 
   @override
-  String get community_name_hint => 'Nevezze el közösségét...';
+  String get community_name_hint => 'Nevezze el közösségét';
 
   @override
-  String get community_description_hint => 'Írja be a leírást...';
+  String get community_description_hint => 'Írja be a leírást';
 
   @override
   String get community_edit => 'Közösség szerkesztése';
@@ -2471,10 +2475,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get message_send => 'Elküld';
 
   @override
-  String get message_typing => 'gépel...';
+  String get message_typing => 'gépel';
 
   @override
-  String get message_placeholder => 'Írjon be egy üzenetet...';
+  String get message_placeholder => 'Írjon be egy üzenetet';
 
   @override
   String get settings_title => 'Beállítások elemre';
@@ -2572,7 +2576,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get general_add => 'Hozzáadás';
 
   @override
-  String get general_loading => 'Terhelés...';
+  String get general_loading => 'Terhelés';
 
   @override
   String get general_leave => 'Szabadság';
@@ -2850,7 +2854,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get member_add => 'Tag hozzáadása lehetőségre';
 
   @override
-  String get search_user_hint => 'Felhasználó keresése...';
+  String get search_user_hint => 'Felhasználó keresése';
 
   @override
   String get profile_edit => 'Profil szerkesztése';
@@ -3248,7 +3252,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get chat_tab_groups => 'Csoportok';
 
   @override
-  String get chat_waiting_for_network => 'Várakozás a hálózatra...';
+  String get chat_waiting_for_network => 'Várakozás a hálózatra';
 
   @override
   String get chat_direct_chat => 'Közvetlen csevegés';
@@ -3277,7 +3281,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get message_media => 'Média';
 
   @override
-  String get chat_loading => 'Csevegés betöltése...';
+  String get chat_loading => 'Csevegés betöltése';
 
   @override
   String get chat_blocked_message => 'Ennek a személynek nem küldhet üzenetet.';
@@ -3315,10 +3319,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get group_name => 'Csoport neve';
 
   @override
-  String get group_name_hint => 'Nevezze el a csoportot...';
+  String get group_name_hint => 'Nevezze el a csoportot';
 
   @override
-  String get group_description_hint => 'Írja be a leírást...';
+  String get group_description_hint => 'Írja be a leírást';
 
   @override
   String get group_about => 'Körülbelül';
@@ -3630,10 +3634,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get general_error_retry => 'Kérjük, próbálja újra.';
 
   @override
-  String get chat_archived_title => 'Archivált csevegések...';
+  String get chat_archived_title => 'Archivált csevegések';
 
   @override
-  String get chat_archived_empty => 'Nincs archív csevegés...';
+  String get chat_archived_empty => 'Nincs archív csevegés';
 
   @override
   String get chat_add_member_title => 'Tag hozzáadása lehetőségre';
@@ -3642,7 +3646,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get chat_add_member_button => 'Tag hozzáadása lehetőségre';
 
   @override
-  String get chat_banned_users_empty => 'Itt még nincs látnivaló...';
+  String get chat_banned_users_empty => 'Itt még nincs látnivaló';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3951,4 +3955,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
 
   @override
   String get feed_empty_create_first_post => 'Hozd létre az első bejegyzésedet';
+
+  @override
+  String get search_posts_hint => 'Keresés a bejegyzésekben';
+
+  @override
+  String get search_adjust_hint => 'Próbálja módosítani a keresést';
 }

@@ -111,13 +111,13 @@ class AppLocalizationsNo extends AppLocalizations {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user...';
+  String get global_search_hint => 'Search community and user';
 
   @override
-  String get search_my_community_hint => 'Search my community...';
+  String get search_my_community_hint => 'Search my community';
 
   @override
-  String get search_no_results => 'Ingen resultater funnet...';
+  String get search_no_results => 'Ingen resultater funnet';
 
   @override
   String get title_communities => 'Communities';
@@ -153,7 +153,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get post_edit => 'Edit Post';
 
   @override
-  String get post_create_hint => 'What\'s going on...';
+  String get post_create_hint => 'What\'s going on';
 
   @override
   String get post_delete => 'Delete Post';
@@ -192,7 +192,7 @@ class AppLocalizationsNo extends AppLocalizations {
       'The post will be permanently deleted. It cannot be undone.';
 
   @override
-  String get post_write_comment => 'Write a comment...';
+  String get post_write_comment => 'Write a comment';
 
   @override
   String get poll_duration => 'Poll duration';
@@ -290,7 +290,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get poll_question_hint => 'What\'s your poll question?';
 
   @override
-  String get comment_create_hint => 'Say something nice...';
+  String get comment_create_hint => 'Say something nice';
 
   @override
   String get comment_reply => 'Reply';
@@ -398,10 +398,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community...';
+  String get community_name_hint => 'Name your community';
 
   @override
-  String get community_description_hint => 'Enter description...';
+  String get community_description_hint => 'Enter description';
 
   @override
   String get community_edit => 'Edit Community';
@@ -492,10 +492,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get message_send => 'Sende';
 
   @override
-  String get message_typing => 'skriver...';
+  String get message_typing => 'skriver';
 
   @override
-  String get message_placeholder => 'Skriv inn en melding...';
+  String get message_placeholder => 'Skriv inn en melding';
 
   @override
   String get settings_title => 'Innstillinger';
@@ -594,7 +594,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get general_add => 'Legge til';
 
   @override
-  String get general_loading => 'Laster inn...';
+  String get general_loading => 'Laster inn';
 
   @override
   String get general_leave => 'Forlate';
@@ -870,7 +870,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get member_add => 'Legg til medlem';
 
   @override
-  String get search_user_hint => 'Søk bruker...';
+  String get search_user_hint => 'Søk bruker';
 
   @override
   String get profile_edit => 'Rediger profil';
@@ -1269,7 +1269,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get chat_tab_groups => 'Grupper';
 
   @override
-  String get chat_waiting_for_network => 'Venter på nettverk...';
+  String get chat_waiting_for_network => 'Venter på nettverk';
 
   @override
   String get chat_direct_chat => 'Direkte chat';
@@ -1298,7 +1298,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Laster chat...';
+  String get chat_loading => 'Laster chat';
 
   @override
   String get chat_blocked_message =>
@@ -1337,10 +1337,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get group_name => 'Gruppenavn';
 
   @override
-  String get group_name_hint => 'Gi gruppen et navn...';
+  String get group_name_hint => 'Gi gruppen et navn';
 
   @override
-  String get group_description_hint => 'Skriv inn beskrivelse...';
+  String get group_description_hint => 'Skriv inn beskrivelse';
 
   @override
   String get group_about => 'Om';
@@ -1650,10 +1650,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchat...';
+  String get chat_archived_empty => 'Ingen arkivchat';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1662,7 +1662,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Ingenting her å se ennå...';
+  String get chat_banned_users_empty => 'Ingenting her å se ennå';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1965,6 +1965,12 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Opprett ditt første innlegg';
+
+  @override
+  String get search_posts_hint => 'Søk etter innlegg';
+
+  @override
+  String get search_adjust_hint => 'Prøv å justere søket';
 }
 
 /// The translations for Norwegian, as used in Norway (`no_NO`).
@@ -2074,13 +2080,13 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user...';
+  String get global_search_hint => 'Search community and user';
 
   @override
-  String get search_my_community_hint => 'Search my community...';
+  String get search_my_community_hint => 'Search my community';
 
   @override
-  String get search_no_results => 'Ingen resultater funnet...';
+  String get search_no_results => 'Ingen resultater funnet';
 
   @override
   String get title_communities => 'Communities';
@@ -2116,7 +2122,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get post_edit => 'Edit Post';
 
   @override
-  String get post_create_hint => 'What\'s going on...';
+  String get post_create_hint => 'What\'s going on';
 
   @override
   String get post_delete => 'Delete Post';
@@ -2155,7 +2161,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
       'The post will be permanently deleted. It cannot be undone.';
 
   @override
-  String get post_write_comment => 'Write a comment...';
+  String get post_write_comment => 'Write a comment';
 
   @override
   String get poll_duration => 'Poll duration';
@@ -2253,7 +2259,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get poll_question_hint => 'What\'s your poll question?';
 
   @override
-  String get comment_create_hint => 'Say something nice...';
+  String get comment_create_hint => 'Say something nice';
 
   @override
   String get comment_reply => 'Reply';
@@ -2361,10 +2367,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community...';
+  String get community_name_hint => 'Name your community';
 
   @override
-  String get community_description_hint => 'Enter description...';
+  String get community_description_hint => 'Enter description';
 
   @override
   String get community_edit => 'Edit Community';
@@ -2455,10 +2461,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get message_send => 'Sende';
 
   @override
-  String get message_typing => 'skriver...';
+  String get message_typing => 'skriver';
 
   @override
-  String get message_placeholder => 'Skriv inn en melding...';
+  String get message_placeholder => 'Skriv inn en melding';
 
   @override
   String get settings_title => 'Innstillinger';
@@ -2557,7 +2563,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get general_add => 'Legge til';
 
   @override
-  String get general_loading => 'Laster inn...';
+  String get general_loading => 'Laster inn';
 
   @override
   String get general_leave => 'Forlate';
@@ -2833,7 +2839,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get member_add => 'Legg til medlem';
 
   @override
-  String get search_user_hint => 'Søk bruker...';
+  String get search_user_hint => 'Søk bruker';
 
   @override
   String get profile_edit => 'Rediger profil';
@@ -3232,7 +3238,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get chat_tab_groups => 'Grupper';
 
   @override
-  String get chat_waiting_for_network => 'Venter på nettverk...';
+  String get chat_waiting_for_network => 'Venter på nettverk';
 
   @override
   String get chat_direct_chat => 'Direkte chat';
@@ -3261,7 +3267,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Laster chat...';
+  String get chat_loading => 'Laster chat';
 
   @override
   String get chat_blocked_message =>
@@ -3300,10 +3306,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get group_name => 'Gruppenavn';
 
   @override
-  String get group_name_hint => 'Gi gruppen et navn...';
+  String get group_name_hint => 'Gi gruppen et navn';
 
   @override
-  String get group_description_hint => 'Skriv inn beskrivelse...';
+  String get group_description_hint => 'Skriv inn beskrivelse';
 
   @override
   String get group_about => 'Om';
@@ -3613,10 +3619,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get general_error_retry => 'Vennligst prøv igjen.';
 
   @override
-  String get chat_archived_title => 'Arkiverte chatter...';
+  String get chat_archived_title => 'Arkiverte chatter';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchat...';
+  String get chat_archived_empty => 'Ingen arkivchat';
 
   @override
   String get chat_add_member_title => 'Legg til medlem';
@@ -3625,7 +3631,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get chat_add_member_button => 'Legg til medlem';
 
   @override
-  String get chat_banned_users_empty => 'Ingenting her å se ennå...';
+  String get chat_banned_users_empty => 'Ingenting her å se ennå';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3928,4 +3934,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
 
   @override
   String get feed_empty_create_first_post => 'Opprett ditt første innlegg';
+
+  @override
+  String get search_posts_hint => 'Søk etter innlegg';
+
+  @override
+  String get search_adjust_hint => 'Prøv å justere søket';
 }

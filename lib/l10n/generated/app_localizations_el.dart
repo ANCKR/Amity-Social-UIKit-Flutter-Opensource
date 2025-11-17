@@ -113,13 +113,13 @@ class AppLocalizationsEl extends AppLocalizations {
       'Όλα τα μέλη θα αφαιρεθούν από την ομάδα. Όλες οι αναρτήσεις, τα μηνύματα, οι αντιδράσεις και τα μέσα που κοινοποιούνται στην ομάδα θα διαγραφούν. Αυτό δεν μπορεί να αναιρεθεί.';
 
   @override
-  String get global_search_hint => 'Αναζήτηση κοινότητας και χρήστη...';
+  String get global_search_hint => 'Αναζήτηση κοινότητας και χρήστη';
 
   @override
-  String get search_my_community_hint => 'Αναζήτηση στην κοινότητά μου...';
+  String get search_my_community_hint => 'Αναζήτηση στην κοινότητά μου';
 
   @override
-  String get search_no_results => 'Δεν βρέθηκαν αποτελέσματα...';
+  String get search_no_results => 'Δεν βρέθηκαν αποτελέσματα';
 
   @override
   String get title_communities => 'Κοινότητες';
@@ -155,7 +155,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get post_edit => 'Επεξεργασία ανάρτησης';
 
   @override
-  String get post_create_hint => 'Τι συμβαίνει...';
+  String get post_create_hint => 'Τι συμβαίνει';
 
   @override
   String get post_delete => 'Διαγραφή ανάρτησης';
@@ -194,7 +194,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Η ανάρτηση θα διαγραφεί οριστικά. Δεν μπορεί να αναιρεθεί.';
 
   @override
-  String get post_write_comment => 'Γράψε ένα σχόλιο...';
+  String get post_write_comment => 'Γράψε ένα σχόλιο';
 
   @override
   String get poll_duration => 'Διάρκεια δημοσκόπησης';
@@ -292,7 +292,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get poll_question_hint => 'Ποια είναι η ερώτηση της δημοσκόπησης;';
 
   @override
-  String get comment_create_hint => 'Πες κάτι ωραίο...';
+  String get comment_create_hint => 'Πες κάτι ωραίο';
 
   @override
   String get comment_reply => 'Απάντηση';
@@ -402,10 +402,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get community_name => 'Όνομα κοινότητας';
 
   @override
-  String get community_name_hint => 'Ονομάστε την κοινότητά σας...';
+  String get community_name_hint => 'Ονομάστε την κοινότητά σας';
 
   @override
-  String get community_description_hint => 'Εισαγάγετε περιγραφή...';
+  String get community_description_hint => 'Εισαγάγετε περιγραφή';
 
   @override
   String get community_edit => 'Επεξεργασία Κοινότητας';
@@ -496,10 +496,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get message_send => 'Στέλνω';
 
   @override
-  String get message_typing => 'πληκτρολογεί...';
+  String get message_typing => 'πληκτρολογεί';
 
   @override
-  String get message_placeholder => 'Πληκτρολογήστε ένα μήνυμα...';
+  String get message_placeholder => 'Πληκτρολογήστε ένα μήνυμα';
 
   @override
   String get settings_title => 'Ρυθμίσεις';
@@ -598,7 +598,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get general_add => 'Προσθέτω';
 
   @override
-  String get general_loading => 'Φόρτωση...';
+  String get general_loading => 'Φόρτωση';
 
   @override
   String get general_leave => 'Αδεια';
@@ -878,7 +878,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get member_add => 'Προσθήκη μέλους';
 
   @override
-  String get search_user_hint => 'Αναζήτηση χρήστη...';
+  String get search_user_hint => 'Αναζήτηση χρήστη';
 
   @override
   String get profile_edit => 'Επεξεργασία προφίλ';
@@ -1278,7 +1278,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get chat_tab_groups => 'Ομάδες';
 
   @override
-  String get chat_waiting_for_network => 'Αναμονή για δίκτυο...';
+  String get chat_waiting_for_network => 'Αναμονή για δίκτυο';
 
   @override
   String get chat_direct_chat => 'Απευθείας συνομιλία';
@@ -1307,7 +1307,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get message_media => 'Μέσα ενημέρωσης';
 
   @override
-  String get chat_loading => 'Φόρτωση συνομιλίας...';
+  String get chat_loading => 'Φόρτωση συνομιλίας';
 
   @override
   String get chat_blocked_message =>
@@ -1346,10 +1346,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get group_name => 'Όνομα ομάδας';
 
   @override
-  String get group_name_hint => 'Ονομάστε την ομάδα σας...';
+  String get group_name_hint => 'Ονομάστε την ομάδα σας';
 
   @override
-  String get group_description_hint => 'Εισαγάγετε περιγραφή...';
+  String get group_description_hint => 'Εισαγάγετε περιγραφή';
 
   @override
   String get group_about => 'Για';
@@ -1663,10 +1663,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get general_error_retry => 'Δοκιμάστε ξανά.';
 
   @override
-  String get chat_archived_title => 'Αρχειοθετημένες συνομιλίες...';
+  String get chat_archived_title => 'Αρχειοθετημένες συνομιλίες';
 
   @override
-  String get chat_archived_empty => 'Δεν υπάρχει συνομιλία με αρχείο...';
+  String get chat_archived_empty => 'Δεν υπάρχει συνομιλία με αρχείο';
 
   @override
   String get chat_add_member_title => 'Προσθήκη μέλους';
@@ -1675,8 +1675,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get chat_add_member_button => 'Προσθήκη μέλους';
 
   @override
-  String get chat_banned_users_empty =>
-      'Δεν υπάρχει τίποτα για να δείτε ακόμα...';
+  String get chat_banned_users_empty => 'Δεν υπάρχει τίποτα για να δείτε ακόμα';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1993,6 +1992,13 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get feed_empty_create_first_post =>
       'Δημιουργήστε την πρώτη σας ανάρτηση';
+
+  @override
+  String get search_posts_hint => 'Αναζήτηση αναρτήσεων';
+
+  @override
+  String get search_adjust_hint =>
+      'Δοκιμάστε να προσαρμόσετε την αναζήτησή σας';
 }
 
 /// The translations for Modern Greek, as used in Greece (`el_GR`).
@@ -2104,13 +2110,13 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Όλα τα μέλη θα αφαιρεθούν από την ομάδα. Όλες οι αναρτήσεις, τα μηνύματα, οι αντιδράσεις και τα μέσα που κοινοποιούνται στην ομάδα θα διαγραφούν. Αυτό δεν μπορεί να αναιρεθεί.';
 
   @override
-  String get global_search_hint => 'Αναζήτηση κοινότητας και χρήστη...';
+  String get global_search_hint => 'Αναζήτηση κοινότητας και χρήστη';
 
   @override
-  String get search_my_community_hint => 'Αναζήτηση στην κοινότητά μου...';
+  String get search_my_community_hint => 'Αναζήτηση στην κοινότητά μου';
 
   @override
-  String get search_no_results => 'Δεν βρέθηκαν αποτελέσματα...';
+  String get search_no_results => 'Δεν βρέθηκαν αποτελέσματα';
 
   @override
   String get title_communities => 'Κοινότητες';
@@ -2146,7 +2152,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get post_edit => 'Επεξεργασία ανάρτησης';
 
   @override
-  String get post_create_hint => 'Τι συμβαίνει...';
+  String get post_create_hint => 'Τι συμβαίνει';
 
   @override
   String get post_delete => 'Διαγραφή ανάρτησης';
@@ -2185,7 +2191,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Η ανάρτηση θα διαγραφεί οριστικά. Δεν μπορεί να αναιρεθεί.';
 
   @override
-  String get post_write_comment => 'Γράψε ένα σχόλιο...';
+  String get post_write_comment => 'Γράψε ένα σχόλιο';
 
   @override
   String get poll_duration => 'Διάρκεια δημοσκόπησης';
@@ -2283,7 +2289,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get poll_question_hint => 'Ποια είναι η ερώτηση της δημοσκόπησης;';
 
   @override
-  String get comment_create_hint => 'Πες κάτι ωραίο...';
+  String get comment_create_hint => 'Πες κάτι ωραίο';
 
   @override
   String get comment_reply => 'Απάντηση';
@@ -2393,10 +2399,10 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get community_name => 'Όνομα κοινότητας';
 
   @override
-  String get community_name_hint => 'Ονομάστε την κοινότητά σας...';
+  String get community_name_hint => 'Ονομάστε την κοινότητά σας';
 
   @override
-  String get community_description_hint => 'Εισαγάγετε περιγραφή...';
+  String get community_description_hint => 'Εισαγάγετε περιγραφή';
 
   @override
   String get community_edit => 'Επεξεργασία Κοινότητας';
@@ -2487,10 +2493,10 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get message_send => 'Στέλνω';
 
   @override
-  String get message_typing => 'πληκτρολογεί...';
+  String get message_typing => 'πληκτρολογεί';
 
   @override
-  String get message_placeholder => 'Πληκτρολογήστε ένα μήνυμα...';
+  String get message_placeholder => 'Πληκτρολογήστε ένα μήνυμα';
 
   @override
   String get settings_title => 'Ρυθμίσεις';
@@ -2589,7 +2595,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get general_add => 'Προσθέτω';
 
   @override
-  String get general_loading => 'Φόρτωση...';
+  String get general_loading => 'Φόρτωση';
 
   @override
   String get general_leave => 'Αδεια';
@@ -2869,7 +2875,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get member_add => 'Προσθήκη μέλους';
 
   @override
-  String get search_user_hint => 'Αναζήτηση χρήστη...';
+  String get search_user_hint => 'Αναζήτηση χρήστη';
 
   @override
   String get profile_edit => 'Επεξεργασία προφίλ';
@@ -3269,7 +3275,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get chat_tab_groups => 'Ομάδες';
 
   @override
-  String get chat_waiting_for_network => 'Αναμονή για δίκτυο...';
+  String get chat_waiting_for_network => 'Αναμονή για δίκτυο';
 
   @override
   String get chat_direct_chat => 'Απευθείας συνομιλία';
@@ -3298,7 +3304,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get message_media => 'Μέσα ενημέρωσης';
 
   @override
-  String get chat_loading => 'Φόρτωση συνομιλίας...';
+  String get chat_loading => 'Φόρτωση συνομιλίας';
 
   @override
   String get chat_blocked_message =>
@@ -3337,10 +3343,10 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get group_name => 'Όνομα ομάδας';
 
   @override
-  String get group_name_hint => 'Ονομάστε την ομάδα σας...';
+  String get group_name_hint => 'Ονομάστε την ομάδα σας';
 
   @override
-  String get group_description_hint => 'Εισαγάγετε περιγραφή...';
+  String get group_description_hint => 'Εισαγάγετε περιγραφή';
 
   @override
   String get group_about => 'Για';
@@ -3654,10 +3660,10 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get general_error_retry => 'Δοκιμάστε ξανά.';
 
   @override
-  String get chat_archived_title => 'Αρχειοθετημένες συνομιλίες...';
+  String get chat_archived_title => 'Αρχειοθετημένες συνομιλίες';
 
   @override
-  String get chat_archived_empty => 'Δεν υπάρχει συνομιλία με αρχείο...';
+  String get chat_archived_empty => 'Δεν υπάρχει συνομιλία με αρχείο';
 
   @override
   String get chat_add_member_title => 'Προσθήκη μέλους';
@@ -3666,8 +3672,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get chat_add_member_button => 'Προσθήκη μέλους';
 
   @override
-  String get chat_banned_users_empty =>
-      'Δεν υπάρχει τίποτα για να δείτε ακόμα...';
+  String get chat_banned_users_empty => 'Δεν υπάρχει τίποτα για να δείτε ακόμα';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3984,4 +3989,11 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   @override
   String get feed_empty_create_first_post =>
       'Δημιουργήστε την πρώτη σας ανάρτηση';
+
+  @override
+  String get search_posts_hint => 'Αναζήτηση αναρτήσεων';
+
+  @override
+  String get search_adjust_hint =>
+      'Δοκιμάστε να προσαρμόσετε την αναζήτησή σας';
 }

@@ -113,13 +113,13 @@ class AppLocalizationsDa extends AppLocalizations {
       'Alle medlemmer vil blive fjernet fra gruppen. Alle opslag, beskeder, reaktioner og medier, der deles i gruppen, slettes. Dette kan ikke fortrydes.';
 
   @override
-  String get global_search_hint => 'Søg efter fællesskab og bruger...';
+  String get global_search_hint => 'Søg efter fællesskab og bruger';
 
   @override
-  String get search_my_community_hint => 'Søg i mit fællesskab...';
+  String get search_my_community_hint => 'Søg i mit fællesskab';
 
   @override
-  String get search_no_results => 'Ingen resultater fundet...';
+  String get search_no_results => 'Ingen resultater fundet';
 
   @override
   String get title_communities => 'Fællesskaber';
@@ -155,7 +155,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get post_edit => 'Rediger indlæg';
 
   @override
-  String get post_create_hint => 'Hvad sker der...';
+  String get post_create_hint => 'Hvad sker der';
 
   @override
   String get post_delete => 'Slet indlæg';
@@ -193,7 +193,7 @@ class AppLocalizationsDa extends AppLocalizations {
       'Indlægget slettes permanent. Det kan ikke fortrydes.';
 
   @override
-  String get post_write_comment => 'Skriv en kommentar...';
+  String get post_write_comment => 'Skriv en kommentar';
 
   @override
   String get poll_duration => 'Afstemningens varighed';
@@ -292,7 +292,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get poll_question_hint => 'Hvad er dit afstemningsspørgsmål?';
 
   @override
-  String get comment_create_hint => 'Sig noget pænt...';
+  String get comment_create_hint => 'Sig noget pænt';
 
   @override
   String get comment_reply => 'Svar';
@@ -399,10 +399,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get community_name => 'Fællesskabsnavn';
 
   @override
-  String get community_name_hint => 'Navngiv dit fællesskab...';
+  String get community_name_hint => 'Navngiv dit fællesskab';
 
   @override
-  String get community_description_hint => 'Indtast beskrivelse...';
+  String get community_description_hint => 'Indtast beskrivelse';
 
   @override
   String get community_edit => 'Rediger fællesskab';
@@ -493,10 +493,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get message_send => 'Sende';
 
   @override
-  String get message_typing => 'skriver...';
+  String get message_typing => 'skriver';
 
   @override
-  String get message_placeholder => 'Skriv en besked...';
+  String get message_placeholder => 'Skriv en besked';
 
   @override
   String get settings_title => 'Indstillinger';
@@ -594,7 +594,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get general_add => 'Tilføje';
 
   @override
-  String get general_loading => 'Indlæser...';
+  String get general_loading => 'Indlæser';
 
   @override
   String get general_leave => 'Forlade';
@@ -871,7 +871,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get member_add => 'Tilføj medlem';
 
   @override
-  String get search_user_hint => 'Søg bruger...';
+  String get search_user_hint => 'Søg bruger';
 
   @override
   String get profile_edit => 'Rediger profil';
@@ -1268,7 +1268,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get chat_tab_groups => 'Grupper';
 
   @override
-  String get chat_waiting_for_network => 'Venter på netværk...';
+  String get chat_waiting_for_network => 'Venter på netværk';
 
   @override
   String get chat_direct_chat => 'Direkte chat';
@@ -1297,7 +1297,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get message_media => 'Medier';
 
   @override
-  String get chat_loading => 'Indlæser chat...';
+  String get chat_loading => 'Indlæser chat';
 
   @override
   String get chat_blocked_message =>
@@ -1336,10 +1336,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get group_name => 'Gruppenavn';
 
   @override
-  String get group_name_hint => 'Navngiv din gruppe...';
+  String get group_name_hint => 'Navngiv din gruppe';
 
   @override
-  String get group_description_hint => 'Indtast beskrivelse...';
+  String get group_description_hint => 'Indtast beskrivelse';
 
   @override
   String get group_about => 'Om';
@@ -1650,10 +1650,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get general_error_retry => 'Prøv venligst igen.';
 
   @override
-  String get chat_archived_title => 'Arkiverede chats...';
+  String get chat_archived_title => 'Arkiverede chats';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchat...';
+  String get chat_archived_empty => 'Ingen arkivchat';
 
   @override
   String get chat_add_member_title => 'Tilføj medlem';
@@ -1662,7 +1662,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get chat_add_member_button => 'Tilføj medlem';
 
   @override
-  String get chat_banned_users_empty => 'Intet her at se endnu...';
+  String get chat_banned_users_empty => 'Intet her at se endnu';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1966,6 +1966,12 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Opret dit første opslag';
+
+  @override
+  String get search_posts_hint => 'Søg efter indlæg';
+
+  @override
+  String get search_adjust_hint => 'Prøv at justere din søgning';
 }
 
 /// The translations for Danish, as used in Denmark (`da_DK`).
@@ -2077,13 +2083,13 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
       'Alle medlemmer vil blive fjernet fra gruppen. Alle opslag, beskeder, reaktioner og medier, der deles i gruppen, slettes. Dette kan ikke fortrydes.';
 
   @override
-  String get global_search_hint => 'Søg efter fællesskab og bruger...';
+  String get global_search_hint => 'Søg efter fællesskab og bruger';
 
   @override
-  String get search_my_community_hint => 'Søg i mit fællesskab...';
+  String get search_my_community_hint => 'Søg i mit fællesskab';
 
   @override
-  String get search_no_results => 'Ingen resultater fundet...';
+  String get search_no_results => 'Ingen resultater fundet';
 
   @override
   String get title_communities => 'Fællesskaber';
@@ -2119,7 +2125,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get post_edit => 'Rediger indlæg';
 
   @override
-  String get post_create_hint => 'Hvad sker der...';
+  String get post_create_hint => 'Hvad sker der';
 
   @override
   String get post_delete => 'Slet indlæg';
@@ -2157,7 +2163,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
       'Indlægget slettes permanent. Det kan ikke fortrydes.';
 
   @override
-  String get post_write_comment => 'Skriv en kommentar...';
+  String get post_write_comment => 'Skriv en kommentar';
 
   @override
   String get poll_duration => 'Afstemningens varighed';
@@ -2256,7 +2262,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get poll_question_hint => 'Hvad er dit afstemningsspørgsmål?';
 
   @override
-  String get comment_create_hint => 'Sig noget pænt...';
+  String get comment_create_hint => 'Sig noget pænt';
 
   @override
   String get comment_reply => 'Svar';
@@ -2363,10 +2369,10 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get community_name => 'Fællesskabsnavn';
 
   @override
-  String get community_name_hint => 'Navngiv dit fællesskab...';
+  String get community_name_hint => 'Navngiv dit fællesskab';
 
   @override
-  String get community_description_hint => 'Indtast beskrivelse...';
+  String get community_description_hint => 'Indtast beskrivelse';
 
   @override
   String get community_edit => 'Rediger fællesskab';
@@ -2457,10 +2463,10 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get message_send => 'Sende';
 
   @override
-  String get message_typing => 'skriver...';
+  String get message_typing => 'skriver';
 
   @override
-  String get message_placeholder => 'Skriv en besked...';
+  String get message_placeholder => 'Skriv en besked';
 
   @override
   String get settings_title => 'Indstillinger';
@@ -2558,7 +2564,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get general_add => 'Tilføje';
 
   @override
-  String get general_loading => 'Indlæser...';
+  String get general_loading => 'Indlæser';
 
   @override
   String get general_leave => 'Forlade';
@@ -2835,7 +2841,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get member_add => 'Tilføj medlem';
 
   @override
-  String get search_user_hint => 'Søg bruger...';
+  String get search_user_hint => 'Søg bruger';
 
   @override
   String get profile_edit => 'Rediger profil';
@@ -3232,7 +3238,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get chat_tab_groups => 'Grupper';
 
   @override
-  String get chat_waiting_for_network => 'Venter på netværk...';
+  String get chat_waiting_for_network => 'Venter på netværk';
 
   @override
   String get chat_direct_chat => 'Direkte chat';
@@ -3261,7 +3267,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get message_media => 'Medier';
 
   @override
-  String get chat_loading => 'Indlæser chat...';
+  String get chat_loading => 'Indlæser chat';
 
   @override
   String get chat_blocked_message =>
@@ -3300,10 +3306,10 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get group_name => 'Gruppenavn';
 
   @override
-  String get group_name_hint => 'Navngiv din gruppe...';
+  String get group_name_hint => 'Navngiv din gruppe';
 
   @override
-  String get group_description_hint => 'Indtast beskrivelse...';
+  String get group_description_hint => 'Indtast beskrivelse';
 
   @override
   String get group_about => 'Om';
@@ -3614,10 +3620,10 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get general_error_retry => 'Prøv venligst igen.';
 
   @override
-  String get chat_archived_title => 'Arkiverede chats...';
+  String get chat_archived_title => 'Arkiverede chats';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchat...';
+  String get chat_archived_empty => 'Ingen arkivchat';
 
   @override
   String get chat_add_member_title => 'Tilføj medlem';
@@ -3626,7 +3632,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
   String get chat_add_member_button => 'Tilføj medlem';
 
   @override
-  String get chat_banned_users_empty => 'Intet her at se endnu...';
+  String get chat_banned_users_empty => 'Intet her at se endnu';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3930,4 +3936,10 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
 
   @override
   String get feed_empty_create_first_post => 'Opret dit første opslag';
+
+  @override
+  String get search_posts_hint => 'Søg efter indlæg';
+
+  @override
+  String get search_adjust_hint => 'Prøv at justere din søgning';
 }

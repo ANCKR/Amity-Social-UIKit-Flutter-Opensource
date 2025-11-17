@@ -1,5 +1,4 @@
 {
-  "@@locale": "ro_RO",
   "community_title": "Comunitate",
   "@community_title": {
     "description": "Title for the homepage"
@@ -120,15 +119,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Căutați în comunitate și utilizator...",
+  "global_search_hint": "Căutați în comunitate și utilizator",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Caută în comunitatea mea...",
+  "search_my_community_hint": "Caută în comunitatea mea",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Nu s-au găsit rezultate...",
+  "search_no_results": "Nu s-au găsit rezultate",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -176,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "Ce se întâmplă...",
+  "post_create_hint": "Ce se întâmplă",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -224,7 +223,7 @@
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "Scrie un comentariu...",
+  "post_write_comment": "Scrie un comentariu",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -339,7 +338,7 @@
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
   },
-  "comment_create_hint": "Spune ceva frumos...",
+  "comment_create_hint": "Spune ceva frumos",
   "@comment_create_hint": {
     "description": "Hint text for comment input"
   },
@@ -469,11 +468,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Denumiți-vă comunitatea...",
+  "community_name_hint": "Denumiți-vă comunitatea",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Introduceți descrierea...",
+  "community_description_hint": "Introduceți descrierea",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -575,11 +574,11 @@
   "@message_send": {
     "description": "Label for send message button"
   },
-  "message_typing": "tasteaza...",
+  "message_typing": "tasteaza",
   "@message_typing": {
     "description": "Label for typing indicator"
   },
-  "message_placeholder": "Tastați un mesaj...",
+  "message_placeholder": "Tastați un mesaj",
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
@@ -695,7 +694,7 @@
   "@general_add": {
     "description": "Label for add button"
   },
-  "general_loading": "Încărcare...",
+  "general_loading": "Încărcare",
   "@general_loading": {
     "description": "Label for loading states"
   },
@@ -1025,7 +1024,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Caută utilizator...",
+  "search_user_hint": "Caută utilizator",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1518,7 +1517,7 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "Se așteaptă rețeaua...",
+  "chat_waiting_for_network": "Se așteaptă rețeaua",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
@@ -1559,7 +1558,7 @@
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "Se încarcă chatul...",
+  "chat_loading": "Se încarcă chatul",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1607,11 +1606,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Denumiți-vă grupul...",
+  "group_name_hint": "Denumiți-vă grupul",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Introduceți descrierea...",
+  "group_description_hint": "Introduceți descrierea",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,11 +1988,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Chat-uri arhivate...",
+  "chat_archived_title": "Chat-uri arhivate",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Nicio arhivă de chat...",
+  "chat_archived_empty": "Nicio arhivă de chat",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,7 +2004,7 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Nimic aici de văzut încă...",
+  "chat_banned_users_empty": "Nimic aici de văzut încă",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2399,5 +2398,13 @@
   "empty_explore_description_no_communities": "Fii primul care creează o comunitate",
   "@empty_explore_description_no_communities": {
     "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Căutați postări",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Încercați să vă ajustați căutarea",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

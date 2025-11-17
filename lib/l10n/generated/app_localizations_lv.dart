@@ -112,13 +112,13 @@ class AppLocalizationsLv extends AppLocalizations {
       'Visi dalībnieki tiks noņemti no grupas. Visas grupā kopīgotās ziņas, ziņojumi, reakcijas un multivides materiāli tiks dzēsti. Šo darbību nevar atsaukt.';
 
   @override
-  String get global_search_hint => 'Meklēt kopienu un lietotāju...';
+  String get global_search_hint => 'Meklēt kopienu un lietotāju';
 
   @override
-  String get search_my_community_hint => 'Meklēt manā kopienā...';
+  String get search_my_community_hint => 'Meklēt manā kopienā';
 
   @override
-  String get search_no_results => 'Nav atrasts neviens rezultāts...';
+  String get search_no_results => 'Nav atrasts neviens rezultāts';
 
   @override
   String get title_communities => 'kopienas';
@@ -154,7 +154,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get post_edit => 'Rediģēt ziņu';
 
   @override
-  String get post_create_hint => 'Kas notiek...';
+  String get post_create_hint => 'Kas notiek';
 
   @override
   String get post_delete => 'Dzēst ziņu';
@@ -193,7 +193,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Ziņa tiks neatgriezeniski izdzēsta. To nevar atsaukt.';
 
   @override
-  String get post_write_comment => 'Rakstiet komentāru...';
+  String get post_write_comment => 'Rakstiet komentāru';
 
   @override
   String get poll_duration => 'Aptaujas ilgums';
@@ -292,7 +292,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get poll_question_hint => 'Kāds ir tavs aptaujas jautājums?';
 
   @override
-  String get comment_create_hint => 'Pasaki kaut ko jauku...';
+  String get comment_create_hint => 'Pasaki kaut ko jauku';
 
   @override
   String get comment_reply => 'Atbildēt';
@@ -398,10 +398,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get community_name => 'Kopienas nosaukums';
 
   @override
-  String get community_name_hint => 'Nosauciet savu kopienu...';
+  String get community_name_hint => 'Nosauciet savu kopienu';
 
   @override
-  String get community_description_hint => 'Ievadiet aprakstu...';
+  String get community_description_hint => 'Ievadiet aprakstu';
 
   @override
   String get community_edit => 'Rediģēt kopienu';
@@ -492,10 +492,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get message_send => 'Sūtīt';
 
   @override
-  String get message_typing => 'raksta...';
+  String get message_typing => 'raksta';
 
   @override
-  String get message_placeholder => 'Ierakstiet ziņojumu...';
+  String get message_placeholder => 'Ierakstiet ziņojumu';
 
   @override
   String get settings_title => 'Iestatījumi';
@@ -593,7 +593,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get general_add => 'Pievienot';
 
   @override
-  String get general_loading => 'Notiek ielāde...';
+  String get general_loading => 'Notiek ielāde';
 
   @override
   String get general_leave => 'Aiziet';
@@ -871,7 +871,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get member_add => 'Pievienot dalībnieku';
 
   @override
-  String get search_user_hint => 'Meklēt lietotāju...';
+  String get search_user_hint => 'Meklēt lietotāju';
 
   @override
   String get profile_edit => 'Rediģēt profilu';
@@ -1270,7 +1270,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get chat_tab_groups => 'Grupas';
 
   @override
-  String get chat_waiting_for_network => 'Gaida tīklu...';
+  String get chat_waiting_for_network => 'Gaida tīklu';
 
   @override
   String get chat_direct_chat => 'Tiešā tērzēšana';
@@ -1299,7 +1299,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get message_media => 'Plašsaziņas līdzekļi';
 
   @override
-  String get chat_loading => 'Notiek tērzēšanas ielāde...';
+  String get chat_loading => 'Notiek tērzēšanas ielāde';
 
   @override
   String get chat_blocked_message =>
@@ -1338,10 +1338,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get group_name => 'Grupas nosaukums';
 
   @override
-  String get group_name_hint => 'Nosauciet savu grupu...';
+  String get group_name_hint => 'Nosauciet savu grupu';
 
   @override
-  String get group_description_hint => 'Ievadiet aprakstu...';
+  String get group_description_hint => 'Ievadiet aprakstu';
 
   @override
   String get group_about => 'Par';
@@ -1654,10 +1654,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Nav arhīva tērzēšanas...';
+  String get chat_archived_empty => 'Nav arhīva tērzēšanas';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1666,7 +1666,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Šeit vēl nav ko redzēt...';
+  String get chat_banned_users_empty => 'Šeit vēl nav ko redzēt';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1971,6 +1971,12 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Izveidojiet savu pirmo ierakstu';
+
+  @override
+  String get search_posts_hint => 'Meklēt ziņas';
+
+  @override
+  String get search_adjust_hint => 'Mēģiniet pielāgot meklēšanu';
 }
 
 /// The translations for Latvian, as used in Latvia (`lv_LV`).
@@ -2081,13 +2087,13 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
       'Visi dalībnieki tiks noņemti no grupas. Visas grupā kopīgotās ziņas, ziņojumi, reakcijas un multivides materiāli tiks dzēsti. Šo darbību nevar atsaukt.';
 
   @override
-  String get global_search_hint => 'Meklēt kopienu un lietotāju...';
+  String get global_search_hint => 'Meklēt kopienu un lietotāju';
 
   @override
-  String get search_my_community_hint => 'Meklēt manā kopienā...';
+  String get search_my_community_hint => 'Meklēt manā kopienā';
 
   @override
-  String get search_no_results => 'Nav atrasts neviens rezultāts...';
+  String get search_no_results => 'Nav atrasts neviens rezultāts';
 
   @override
   String get title_communities => 'kopienas';
@@ -2123,7 +2129,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get post_edit => 'Rediģēt ziņu';
 
   @override
-  String get post_create_hint => 'Kas notiek...';
+  String get post_create_hint => 'Kas notiek';
 
   @override
   String get post_delete => 'Dzēst ziņu';
@@ -2162,7 +2168,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
       'Ziņa tiks neatgriezeniski izdzēsta. To nevar atsaukt.';
 
   @override
-  String get post_write_comment => 'Rakstiet komentāru...';
+  String get post_write_comment => 'Rakstiet komentāru';
 
   @override
   String get poll_duration => 'Aptaujas ilgums';
@@ -2261,7 +2267,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get poll_question_hint => 'Kāds ir tavs aptaujas jautājums?';
 
   @override
-  String get comment_create_hint => 'Pasaki kaut ko jauku...';
+  String get comment_create_hint => 'Pasaki kaut ko jauku';
 
   @override
   String get comment_reply => 'Atbildēt';
@@ -2367,10 +2373,10 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get community_name => 'Kopienas nosaukums';
 
   @override
-  String get community_name_hint => 'Nosauciet savu kopienu...';
+  String get community_name_hint => 'Nosauciet savu kopienu';
 
   @override
-  String get community_description_hint => 'Ievadiet aprakstu...';
+  String get community_description_hint => 'Ievadiet aprakstu';
 
   @override
   String get community_edit => 'Rediģēt kopienu';
@@ -2461,10 +2467,10 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get message_send => 'Sūtīt';
 
   @override
-  String get message_typing => 'raksta...';
+  String get message_typing => 'raksta';
 
   @override
-  String get message_placeholder => 'Ierakstiet ziņojumu...';
+  String get message_placeholder => 'Ierakstiet ziņojumu';
 
   @override
   String get settings_title => 'Iestatījumi';
@@ -2562,7 +2568,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get general_add => 'Pievienot';
 
   @override
-  String get general_loading => 'Notiek ielāde...';
+  String get general_loading => 'Notiek ielāde';
 
   @override
   String get general_leave => 'Aiziet';
@@ -2840,7 +2846,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get member_add => 'Pievienot dalībnieku';
 
   @override
-  String get search_user_hint => 'Meklēt lietotāju...';
+  String get search_user_hint => 'Meklēt lietotāju';
 
   @override
   String get profile_edit => 'Rediģēt profilu';
@@ -3239,7 +3245,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get chat_tab_groups => 'Grupas';
 
   @override
-  String get chat_waiting_for_network => 'Gaida tīklu...';
+  String get chat_waiting_for_network => 'Gaida tīklu';
 
   @override
   String get chat_direct_chat => 'Tiešā tērzēšana';
@@ -3268,7 +3274,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get message_media => 'Plašsaziņas līdzekļi';
 
   @override
-  String get chat_loading => 'Notiek tērzēšanas ielāde...';
+  String get chat_loading => 'Notiek tērzēšanas ielāde';
 
   @override
   String get chat_blocked_message =>
@@ -3307,10 +3313,10 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get group_name => 'Grupas nosaukums';
 
   @override
-  String get group_name_hint => 'Nosauciet savu grupu...';
+  String get group_name_hint => 'Nosauciet savu grupu';
 
   @override
-  String get group_description_hint => 'Ievadiet aprakstu...';
+  String get group_description_hint => 'Ievadiet aprakstu';
 
   @override
   String get group_about => 'Par';
@@ -3623,10 +3629,10 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get general_error_retry => 'Lūdzu, mēģiniet vēlreiz.';
 
   @override
-  String get chat_archived_title => 'Arhivētās tērzēšanas sarunas...';
+  String get chat_archived_title => 'Arhivētās tērzēšanas sarunas';
 
   @override
-  String get chat_archived_empty => 'Nav arhīva tērzēšanas...';
+  String get chat_archived_empty => 'Nav arhīva tērzēšanas';
 
   @override
   String get chat_add_member_title => 'Pievienot dalībnieku';
@@ -3635,7 +3641,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
   String get chat_add_member_button => 'Pievienot dalībnieku';
 
   @override
-  String get chat_banned_users_empty => 'Šeit vēl nav ko redzēt...';
+  String get chat_banned_users_empty => 'Šeit vēl nav ko redzēt';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3941,4 +3947,10 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
 
   @override
   String get feed_empty_create_first_post => 'Izveidojiet savu pirmo ierakstu';
+
+  @override
+  String get search_posts_hint => 'Meklēt ziņas';
+
+  @override
+  String get search_adjust_hint => 'Mēģiniet pielāgot meklēšanu';
 }

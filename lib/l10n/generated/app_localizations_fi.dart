@@ -112,13 +112,13 @@ class AppLocalizationsFi extends AppLocalizations {
       'Kaikki jäsenet poistetaan ryhmästä. Kaikki ryhmässä jaetut viestit, viestit, reaktiot ja media poistetaan. Tätä ei voi kumota.';
 
   @override
-  String get global_search_hint => 'Hae yhteisöstä ja käyttäjästä...';
+  String get global_search_hint => 'Hae yhteisöstä ja käyttäjästä';
 
   @override
-  String get search_my_community_hint => 'Hae yhteisöstäni...';
+  String get search_my_community_hint => 'Hae yhteisöstäni';
 
   @override
-  String get search_no_results => 'Tuloksia ei löytynyt...';
+  String get search_no_results => 'Tuloksia ei löytynyt';
 
   @override
   String get title_communities => 'yhteisöt';
@@ -154,7 +154,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get post_edit => 'Muokkaa viestiä';
 
   @override
-  String get post_create_hint => 'Mitä tapahtuu...';
+  String get post_create_hint => 'Mitä tapahtuu';
 
   @override
   String get post_delete => 'Poista viesti';
@@ -192,7 +192,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Viesti poistetaan pysyvästi. Sitä ei voi kumota.';
 
   @override
-  String get post_write_comment => 'Kirjoita kommentti...';
+  String get post_write_comment => 'Kirjoita kommentti';
 
   @override
   String get poll_duration => 'Äänestyksen kesto';
@@ -290,7 +290,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get poll_question_hint => 'Mikä on kyselysi?';
 
   @override
-  String get comment_create_hint => 'Sano jotain kivaa...';
+  String get comment_create_hint => 'Sano jotain kivaa';
 
   @override
   String get comment_reply => 'Vastata';
@@ -397,10 +397,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get community_name => 'Yhteisön nimi';
 
   @override
-  String get community_name_hint => 'Nimeä yhteisösi...';
+  String get community_name_hint => 'Nimeä yhteisösi';
 
   @override
-  String get community_description_hint => 'Anna kuvaus...';
+  String get community_description_hint => 'Anna kuvaus';
 
   @override
   String get community_edit => 'Muokkaa yhteisöä';
@@ -491,10 +491,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get message_send => 'Lähetä';
 
   @override
-  String get message_typing => 'kirjoittaa...';
+  String get message_typing => 'kirjoittaa';
 
   @override
-  String get message_placeholder => 'Kirjoita viesti...';
+  String get message_placeholder => 'Kirjoita viesti';
 
   @override
   String get settings_title => 'Asetukset';
@@ -592,7 +592,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get general_add => 'Lisätä';
 
   @override
-  String get general_loading => 'Ladataan...';
+  String get general_loading => 'Ladataan';
 
   @override
   String get general_leave => 'Lähde';
@@ -869,7 +869,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get member_add => 'Lisää jäsen';
 
   @override
-  String get search_user_hint => 'Etsi käyttäjä...';
+  String get search_user_hint => 'Etsi käyttäjä';
 
   @override
   String get profile_edit => 'Muokkaa profiilia';
@@ -1265,7 +1265,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chat_tab_groups => 'ryhmät';
 
   @override
-  String get chat_waiting_for_network => 'Odotetaan verkkoa...';
+  String get chat_waiting_for_network => 'Odotetaan verkkoa';
 
   @override
   String get chat_direct_chat => 'Suora chat';
@@ -1294,7 +1294,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Ladataan chattia...';
+  String get chat_loading => 'Ladataan chattia';
 
   @override
   String get chat_blocked_message =>
@@ -1333,10 +1333,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get group_name => 'Ryhmän nimi';
 
   @override
-  String get group_name_hint => 'Nimeä ryhmäsi...';
+  String get group_name_hint => 'Nimeä ryhmäsi';
 
   @override
-  String get group_description_hint => 'Kirjoita kuvaus...';
+  String get group_description_hint => 'Kirjoita kuvaus';
 
   @override
   String get group_about => 'Noin';
@@ -1646,10 +1646,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get general_error_retry => 'Yritä uudelleen.';
 
   @override
-  String get chat_archived_title => 'Arkistoidut keskustelut...';
+  String get chat_archived_title => 'Arkistoidut keskustelut';
 
   @override
-  String get chat_archived_empty => 'Ei arkiston chattia...';
+  String get chat_archived_empty => 'Ei arkiston chattia';
 
   @override
   String get chat_add_member_title => 'Lisää jäsen';
@@ -1658,8 +1658,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chat_add_member_button => 'Lisää jäsen';
 
   @override
-  String get chat_banned_users_empty =>
-      'Täällä ei ole vielä mitään nähtävää...';
+  String get chat_banned_users_empty => 'Täällä ei ole vielä mitään nähtävää';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1962,6 +1961,12 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Luo ensimmäinen julkaisusi';
+
+  @override
+  String get search_posts_hint => 'Hae viestejä';
+
+  @override
+  String get search_adjust_hint => 'Yritä muokata hakuasi';
 }
 
 /// The translations for Finnish, as used in Finland (`fi_FI`).
@@ -2072,13 +2077,13 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
       'Kaikki jäsenet poistetaan ryhmästä. Kaikki ryhmässä jaetut viestit, viestit, reaktiot ja media poistetaan. Tätä ei voi kumota.';
 
   @override
-  String get global_search_hint => 'Hae yhteisöstä ja käyttäjästä...';
+  String get global_search_hint => 'Hae yhteisöstä ja käyttäjästä';
 
   @override
-  String get search_my_community_hint => 'Hae yhteisöstäni...';
+  String get search_my_community_hint => 'Hae yhteisöstäni';
 
   @override
-  String get search_no_results => 'Tuloksia ei löytynyt...';
+  String get search_no_results => 'Tuloksia ei löytynyt';
 
   @override
   String get title_communities => 'yhteisöt';
@@ -2114,7 +2119,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get post_edit => 'Muokkaa viestiä';
 
   @override
-  String get post_create_hint => 'Mitä tapahtuu...';
+  String get post_create_hint => 'Mitä tapahtuu';
 
   @override
   String get post_delete => 'Poista viesti';
@@ -2152,7 +2157,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
       'Viesti poistetaan pysyvästi. Sitä ei voi kumota.';
 
   @override
-  String get post_write_comment => 'Kirjoita kommentti...';
+  String get post_write_comment => 'Kirjoita kommentti';
 
   @override
   String get poll_duration => 'Äänestyksen kesto';
@@ -2250,7 +2255,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get poll_question_hint => 'Mikä on kyselysi?';
 
   @override
-  String get comment_create_hint => 'Sano jotain kivaa...';
+  String get comment_create_hint => 'Sano jotain kivaa';
 
   @override
   String get comment_reply => 'Vastata';
@@ -2357,10 +2362,10 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get community_name => 'Yhteisön nimi';
 
   @override
-  String get community_name_hint => 'Nimeä yhteisösi...';
+  String get community_name_hint => 'Nimeä yhteisösi';
 
   @override
-  String get community_description_hint => 'Anna kuvaus...';
+  String get community_description_hint => 'Anna kuvaus';
 
   @override
   String get community_edit => 'Muokkaa yhteisöä';
@@ -2451,10 +2456,10 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get message_send => 'Lähetä';
 
   @override
-  String get message_typing => 'kirjoittaa...';
+  String get message_typing => 'kirjoittaa';
 
   @override
-  String get message_placeholder => 'Kirjoita viesti...';
+  String get message_placeholder => 'Kirjoita viesti';
 
   @override
   String get settings_title => 'Asetukset';
@@ -2552,7 +2557,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get general_add => 'Lisätä';
 
   @override
-  String get general_loading => 'Ladataan...';
+  String get general_loading => 'Ladataan';
 
   @override
   String get general_leave => 'Lähde';
@@ -2829,7 +2834,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get member_add => 'Lisää jäsen';
 
   @override
-  String get search_user_hint => 'Etsi käyttäjä...';
+  String get search_user_hint => 'Etsi käyttäjä';
 
   @override
   String get profile_edit => 'Muokkaa profiilia';
@@ -3225,7 +3230,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get chat_tab_groups => 'ryhmät';
 
   @override
-  String get chat_waiting_for_network => 'Odotetaan verkkoa...';
+  String get chat_waiting_for_network => 'Odotetaan verkkoa';
 
   @override
   String get chat_direct_chat => 'Suora chat';
@@ -3254,7 +3259,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Ladataan chattia...';
+  String get chat_loading => 'Ladataan chattia';
 
   @override
   String get chat_blocked_message =>
@@ -3293,10 +3298,10 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get group_name => 'Ryhmän nimi';
 
   @override
-  String get group_name_hint => 'Nimeä ryhmäsi...';
+  String get group_name_hint => 'Nimeä ryhmäsi';
 
   @override
-  String get group_description_hint => 'Kirjoita kuvaus...';
+  String get group_description_hint => 'Kirjoita kuvaus';
 
   @override
   String get group_about => 'Noin';
@@ -3606,10 +3611,10 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get general_error_retry => 'Yritä uudelleen.';
 
   @override
-  String get chat_archived_title => 'Arkistoidut keskustelut...';
+  String get chat_archived_title => 'Arkistoidut keskustelut';
 
   @override
-  String get chat_archived_empty => 'Ei arkiston chattia...';
+  String get chat_archived_empty => 'Ei arkiston chattia';
 
   @override
   String get chat_add_member_title => 'Lisää jäsen';
@@ -3618,8 +3623,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get chat_add_member_button => 'Lisää jäsen';
 
   @override
-  String get chat_banned_users_empty =>
-      'Täällä ei ole vielä mitään nähtävää...';
+  String get chat_banned_users_empty => 'Täällä ei ole vielä mitään nähtävää';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3922,4 +3926,10 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
 
   @override
   String get feed_empty_create_first_post => 'Luo ensimmäinen julkaisusi';
+
+  @override
+  String get search_posts_hint => 'Hae viestejä';
+
+  @override
+  String get search_adjust_hint => 'Yritä muokata hakuasi';
 }

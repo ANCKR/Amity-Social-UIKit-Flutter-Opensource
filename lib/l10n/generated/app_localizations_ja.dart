@@ -109,13 +109,13 @@ class AppLocalizationsJa extends AppLocalizations {
       'すべてのメンバーがグループから削除されます。グループ内で共有されたすべての投稿、メッセージ、反応、メディアが削除されます。これを元に戻すことはできません。';
 
   @override
-  String get global_search_hint => 'コミュニティとユーザーを検索する...';
+  String get global_search_hint => 'コミュニティとユーザーを検索する';
 
   @override
-  String get search_my_community_hint => '私のコミュニティを検索...';
+  String get search_my_community_hint => '私のコミュニティを検索';
 
   @override
-  String get search_no_results => '結果が見つかりませんでした...';
+  String get search_no_results => '結果が見つかりませんでした';
 
   @override
   String get title_communities => 'コミュニティ';
@@ -151,7 +151,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get post_edit => '投稿の編集';
 
   @override
-  String get post_create_hint => 'どうしたの...';
+  String get post_create_hint => 'どうしたの';
 
   @override
   String get post_delete => '投稿の削除';
@@ -187,7 +187,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get post_discard_description => '投稿は完全に削除されます。元に戻すことはできません。';
 
   @override
-  String get post_write_comment => 'コメントを書いてください...';
+  String get post_write_comment => 'コメントを書いてください';
 
   @override
   String get poll_duration => 'ポーリング期間';
@@ -283,7 +283,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get poll_question_hint => '世論調査の質問は何ですか?';
 
   @override
-  String get comment_create_hint => 'いいこと言ってよ…';
+  String get comment_create_hint => 'いいこと言ってよ';
 
   @override
   String get comment_reply => '返事';
@@ -385,10 +385,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get community_name => 'コミュニティ名';
 
   @override
-  String get community_name_hint => 'コミュニティに名前を付けます...';
+  String get community_name_hint => 'コミュニティに名前を付けます';
 
   @override
-  String get community_description_hint => '説明を入力してください...';
+  String get community_description_hint => '説明を入力してください';
 
   @override
   String get community_edit => 'コミュニティの編集';
@@ -476,10 +476,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get message_send => '送信';
 
   @override
-  String get message_typing => '入力中です...';
+  String get message_typing => '入力中です';
 
   @override
-  String get message_placeholder => 'メッセージを入力してください...';
+  String get message_placeholder => 'メッセージを入力してください';
 
   @override
   String get settings_title => '設定';
@@ -575,7 +575,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get general_add => '追加';
 
   @override
-  String get general_loading => '読み込み中...';
+  String get general_loading => '読み込み中';
 
   @override
   String get general_leave => '離れる';
@@ -1222,7 +1222,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get chat_tab_groups => 'グループ';
 
   @override
-  String get chat_waiting_for_network => 'ネットワークを待っています...';
+  String get chat_waiting_for_network => 'ネットワークを待っています';
 
   @override
   String get chat_direct_chat => 'ダイレクトチャット';
@@ -1251,7 +1251,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get message_media => 'メディア';
 
   @override
-  String get chat_loading => 'チャットを読み込み中...';
+  String get chat_loading => 'チャットを読み込み中';
 
   @override
   String get chat_blocked_message => 'この人にはメッセージを送信できません。';
@@ -1287,10 +1287,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get group_name => 'グループ名';
 
   @override
-  String get group_name_hint => 'グループに名前を付けます...';
+  String get group_name_hint => 'グループに名前を付けます';
 
   @override
-  String get group_description_hint => '説明を入力してください...';
+  String get group_description_hint => '説明を入力してください';
 
   @override
   String get group_about => 'について';
@@ -1591,10 +1591,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'アーカイブチャットはありません...';
+  String get chat_archived_empty => 'アーカイブチャットはありません';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1603,7 +1603,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません...';
+  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1903,6 +1903,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => '最初の投稿を作成';
+
+  @override
+  String get search_posts_hint => '投稿の検索';
+
+  @override
+  String get search_adjust_hint => '検索を調整してみてください';
 }
 
 /// The translations for Japanese, as used in Japan (`ja_JP`).
@@ -2010,13 +2016,13 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
       'すべてのメンバーがグループから削除されます。グループ内で共有されたすべての投稿、メッセージ、反応、メディアが削除されます。これを元に戻すことはできません。';
 
   @override
-  String get global_search_hint => 'コミュニティとユーザーを検索する...';
+  String get global_search_hint => 'コミュニティとユーザーを検索する';
 
   @override
-  String get search_my_community_hint => '私のコミュニティを検索...';
+  String get search_my_community_hint => '私のコミュニティを検索';
 
   @override
-  String get search_no_results => '結果が見つかりませんでした...';
+  String get search_no_results => '結果が見つかりませんでした';
 
   @override
   String get title_communities => 'コミュニティ';
@@ -2052,7 +2058,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get post_edit => '投稿の編集';
 
   @override
-  String get post_create_hint => 'どうしたの...';
+  String get post_create_hint => 'どうしたの';
 
   @override
   String get post_delete => '投稿の削除';
@@ -2088,7 +2094,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get post_discard_description => '投稿は完全に削除されます。元に戻すことはできません。';
 
   @override
-  String get post_write_comment => 'コメントを書いてください...';
+  String get post_write_comment => 'コメントを書いてください';
 
   @override
   String get poll_duration => 'ポーリング期間';
@@ -2184,7 +2190,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get poll_question_hint => '世論調査の質問は何ですか?';
 
   @override
-  String get comment_create_hint => 'いいこと言ってよ…';
+  String get comment_create_hint => 'いいこと言ってよ';
 
   @override
   String get comment_reply => '返事';
@@ -2286,10 +2292,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get community_name => 'コミュニティ名';
 
   @override
-  String get community_name_hint => 'コミュニティに名前を付けます...';
+  String get community_name_hint => 'コミュニティに名前を付けます';
 
   @override
-  String get community_description_hint => '説明を入力してください...';
+  String get community_description_hint => '説明を入力してください';
 
   @override
   String get community_edit => 'コミュニティの編集';
@@ -2377,10 +2383,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get message_send => '送信';
 
   @override
-  String get message_typing => '入力中です...';
+  String get message_typing => '入力中です';
 
   @override
-  String get message_placeholder => 'メッセージを入力してください...';
+  String get message_placeholder => 'メッセージを入力してください';
 
   @override
   String get settings_title => '設定';
@@ -2476,7 +2482,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get general_add => '追加';
 
   @override
-  String get general_loading => '読み込み中...';
+  String get general_loading => '読み込み中';
 
   @override
   String get general_leave => '離れる';
@@ -3123,7 +3129,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get chat_tab_groups => 'グループ';
 
   @override
-  String get chat_waiting_for_network => 'ネットワークを待っています...';
+  String get chat_waiting_for_network => 'ネットワークを待っています';
 
   @override
   String get chat_direct_chat => 'ダイレクトチャット';
@@ -3152,7 +3158,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get message_media => 'メディア';
 
   @override
-  String get chat_loading => 'チャットを読み込み中...';
+  String get chat_loading => 'チャットを読み込み中';
 
   @override
   String get chat_blocked_message => 'この人にはメッセージを送信できません。';
@@ -3188,10 +3194,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get group_name => 'グループ名';
 
   @override
-  String get group_name_hint => 'グループに名前を付けます...';
+  String get group_name_hint => 'グループに名前を付けます';
 
   @override
-  String get group_description_hint => '説明を入力してください...';
+  String get group_description_hint => '説明を入力してください';
 
   @override
   String get group_about => 'について';
@@ -3492,10 +3498,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get general_error_retry => 'もう一度試してください。';
 
   @override
-  String get chat_archived_title => 'アーカイブされたチャット...';
+  String get chat_archived_title => 'アーカイブされたチャット';
 
   @override
-  String get chat_archived_empty => 'アーカイブチャットはありません...';
+  String get chat_archived_empty => 'アーカイブチャットはありません';
 
   @override
   String get chat_add_member_title => 'メンバーを追加';
@@ -3504,7 +3510,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get chat_add_member_button => 'メンバーを追加';
 
   @override
-  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません...';
+  String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3798,4 +3804,10 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
 
   @override
   String get feed_empty_create_first_post => '最初の投稿を作成';
+
+  @override
+  String get search_posts_hint => '投稿の検索';
+
+  @override
+  String get search_adjust_hint => '検索を調整してみてください';
 }

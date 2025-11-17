@@ -112,13 +112,13 @@ class AppLocalizationsUk extends AppLocalizations {
       'Усіх учасників буде видалено з групи. Усі дописи, повідомлення, реакції та медіа-файли, опубліковані в групі, будуть видалені. Це неможливо скасувати.';
 
   @override
-  String get global_search_hint => 'Пошук спільноти та користувача...';
+  String get global_search_hint => 'Пошук спільноти та користувача';
 
   @override
-  String get search_my_community_hint => 'Пошук у моїй спільноті...';
+  String get search_my_community_hint => 'Пошук у моїй спільноті';
 
   @override
-  String get search_no_results => 'Результатів не знайдено...';
+  String get search_no_results => 'Результатів не знайдено';
 
   @override
   String get title_communities => 'Спільноти';
@@ -154,7 +154,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get post_edit => 'Редагувати допис';
 
   @override
-  String get post_create_hint => 'Що відбувається...';
+  String get post_create_hint => 'Що відбувається';
 
   @override
   String get post_delete => 'Видалити публікацію';
@@ -192,7 +192,7 @@ class AppLocalizationsUk extends AppLocalizations {
       'Пост буде видалено назавжди. Це не можна скасувати.';
 
   @override
-  String get post_write_comment => 'Напишіть коментар...';
+  String get post_write_comment => 'Напишіть коментар';
 
   @override
   String get poll_duration => 'Тривалість опитування';
@@ -291,7 +291,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get poll_question_hint => 'Яке ваше запитання опитування?';
 
   @override
-  String get comment_create_hint => 'Скажи щось приємне...';
+  String get comment_create_hint => 'Скажи щось приємне';
 
   @override
   String get comment_reply => 'Відповісти';
@@ -395,10 +395,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get community_name => 'Назва спільноти';
 
   @override
-  String get community_name_hint => 'Назвіть свою спільноту...';
+  String get community_name_hint => 'Назвіть свою спільноту';
 
   @override
-  String get community_description_hint => 'Введіть опис...';
+  String get community_description_hint => 'Введіть опис';
 
   @override
   String get community_edit => 'Редагувати спільноту';
@@ -489,10 +489,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get message_send => 'Надіслати';
 
   @override
-  String get message_typing => 'друкує...';
+  String get message_typing => 'друкує';
 
   @override
-  String get message_placeholder => 'Введіть повідомлення...';
+  String get message_placeholder => 'Введіть повідомлення';
 
   @override
   String get settings_title => 'Налаштування';
@@ -590,7 +590,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get general_add => 'додати';
 
   @override
-  String get general_loading => 'Завантаження...';
+  String get general_loading => 'Завантаження';
 
   @override
   String get general_leave => 'Залиште';
@@ -867,7 +867,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get member_add => 'Додати учасника';
 
   @override
-  String get search_user_hint => 'Пошук користувача...';
+  String get search_user_hint => 'Пошук користувача';
 
   @override
   String get profile_edit => 'Редагувати профіль';
@@ -1266,7 +1266,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get chat_tab_groups => 'Групи';
 
   @override
-  String get chat_waiting_for_network => 'Очікування мережі...';
+  String get chat_waiting_for_network => 'Очікування мережі';
 
   @override
   String get chat_direct_chat => 'Прямий чат';
@@ -1295,7 +1295,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get message_media => 'ЗМІ';
 
   @override
-  String get chat_loading => 'Завантаження чату...';
+  String get chat_loading => 'Завантаження чату';
 
   @override
   String get chat_blocked_message =>
@@ -1333,10 +1333,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get group_name => 'Назва групи';
 
   @override
-  String get group_name_hint => 'Назвіть свою групу...';
+  String get group_name_hint => 'Назвіть свою групу';
 
   @override
-  String get group_description_hint => 'Введіть опис...';
+  String get group_description_hint => 'Введіть опис';
 
   @override
   String get group_about => 'про';
@@ -1646,10 +1646,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get general_error_retry => 'Спробуйте ще раз.';
 
   @override
-  String get chat_archived_title => 'Архівні чати...';
+  String get chat_archived_title => 'Архівні чати';
 
   @override
-  String get chat_archived_empty => 'Немає архівного чату...';
+  String get chat_archived_empty => 'Немає архівного чату';
 
   @override
   String get chat_add_member_title => 'Додати учасника';
@@ -1658,7 +1658,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get chat_add_member_button => 'Додати учасника';
 
   @override
-  String get chat_banned_users_empty => 'Тут ще нічого не видно...';
+  String get chat_banned_users_empty => 'Тут ще нічого не видно';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1962,6 +1962,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Створіть свій перший допис';
+
+  @override
+  String get search_posts_hint => 'Пошук повідомлень';
+
+  @override
+  String get search_adjust_hint => 'Спробуйте налаштувати пошук';
 }
 
 /// The translations for Ukrainian, as used in Ukraine (`uk_UA`).
@@ -2072,13 +2078,13 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
       'Усіх учасників буде видалено з групи. Усі дописи, повідомлення, реакції та медіа-файли, опубліковані в групі, будуть видалені. Це неможливо скасувати.';
 
   @override
-  String get global_search_hint => 'Пошук спільноти та користувача...';
+  String get global_search_hint => 'Пошук спільноти та користувача';
 
   @override
-  String get search_my_community_hint => 'Пошук у моїй спільноті...';
+  String get search_my_community_hint => 'Пошук у моїй спільноті';
 
   @override
-  String get search_no_results => 'Результатів не знайдено...';
+  String get search_no_results => 'Результатів не знайдено';
 
   @override
   String get title_communities => 'Спільноти';
@@ -2114,7 +2120,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get post_edit => 'Редагувати допис';
 
   @override
-  String get post_create_hint => 'Що відбувається...';
+  String get post_create_hint => 'Що відбувається';
 
   @override
   String get post_delete => 'Видалити публікацію';
@@ -2152,7 +2158,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
       'Пост буде видалено назавжди. Це не можна скасувати.';
 
   @override
-  String get post_write_comment => 'Напишіть коментар...';
+  String get post_write_comment => 'Напишіть коментар';
 
   @override
   String get poll_duration => 'Тривалість опитування';
@@ -2251,7 +2257,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get poll_question_hint => 'Яке ваше запитання опитування?';
 
   @override
-  String get comment_create_hint => 'Скажи щось приємне...';
+  String get comment_create_hint => 'Скажи щось приємне';
 
   @override
   String get comment_reply => 'Відповісти';
@@ -2355,10 +2361,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get community_name => 'Назва спільноти';
 
   @override
-  String get community_name_hint => 'Назвіть свою спільноту...';
+  String get community_name_hint => 'Назвіть свою спільноту';
 
   @override
-  String get community_description_hint => 'Введіть опис...';
+  String get community_description_hint => 'Введіть опис';
 
   @override
   String get community_edit => 'Редагувати спільноту';
@@ -2449,10 +2455,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get message_send => 'Надіслати';
 
   @override
-  String get message_typing => 'друкує...';
+  String get message_typing => 'друкує';
 
   @override
-  String get message_placeholder => 'Введіть повідомлення...';
+  String get message_placeholder => 'Введіть повідомлення';
 
   @override
   String get settings_title => 'Налаштування';
@@ -2550,7 +2556,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get general_add => 'додати';
 
   @override
-  String get general_loading => 'Завантаження...';
+  String get general_loading => 'Завантаження';
 
   @override
   String get general_leave => 'Залиште';
@@ -2827,7 +2833,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get member_add => 'Додати учасника';
 
   @override
-  String get search_user_hint => 'Пошук користувача...';
+  String get search_user_hint => 'Пошук користувача';
 
   @override
   String get profile_edit => 'Редагувати профіль';
@@ -3226,7 +3232,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get chat_tab_groups => 'Групи';
 
   @override
-  String get chat_waiting_for_network => 'Очікування мережі...';
+  String get chat_waiting_for_network => 'Очікування мережі';
 
   @override
   String get chat_direct_chat => 'Прямий чат';
@@ -3255,7 +3261,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get message_media => 'ЗМІ';
 
   @override
-  String get chat_loading => 'Завантаження чату...';
+  String get chat_loading => 'Завантаження чату';
 
   @override
   String get chat_blocked_message =>
@@ -3293,10 +3299,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get group_name => 'Назва групи';
 
   @override
-  String get group_name_hint => 'Назвіть свою групу...';
+  String get group_name_hint => 'Назвіть свою групу';
 
   @override
-  String get group_description_hint => 'Введіть опис...';
+  String get group_description_hint => 'Введіть опис';
 
   @override
   String get group_about => 'про';
@@ -3606,10 +3612,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get general_error_retry => 'Спробуйте ще раз.';
 
   @override
-  String get chat_archived_title => 'Архівні чати...';
+  String get chat_archived_title => 'Архівні чати';
 
   @override
-  String get chat_archived_empty => 'Немає архівного чату...';
+  String get chat_archived_empty => 'Немає архівного чату';
 
   @override
   String get chat_add_member_title => 'Додати учасника';
@@ -3618,7 +3624,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get chat_add_member_button => 'Додати учасника';
 
   @override
-  String get chat_banned_users_empty => 'Тут ще нічого не видно...';
+  String get chat_banned_users_empty => 'Тут ще нічого не видно';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3922,4 +3928,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
 
   @override
   String get feed_empty_create_first_post => 'Створіть свій перший допис';
+
+  @override
+  String get search_posts_hint => 'Пошук повідомлень';
+
+  @override
+  String get search_adjust_hint => 'Спробуйте налаштувати пошук';
 }

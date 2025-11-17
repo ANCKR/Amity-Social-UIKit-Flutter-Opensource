@@ -113,13 +113,13 @@ class AppLocalizationsRu extends AppLocalizations {
       'Все участники будут удалены из группы. Все публикации, сообщения, реакции и медиафайлы, опубликованные в группе, будут удалены. Это невозможно отменить.';
 
   @override
-  String get global_search_hint => 'Поиск сообщества и пользователя...';
+  String get global_search_hint => 'Поиск сообщества и пользователя';
 
   @override
-  String get search_my_community_hint => 'Искать в моем сообществе...';
+  String get search_my_community_hint => 'Искать в моем сообществе';
 
   @override
-  String get search_no_results => 'Результаты не найдены...';
+  String get search_no_results => 'Результаты не найдены';
 
   @override
   String get title_communities => 'Сообщества';
@@ -155,7 +155,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get post_edit => 'Редактировать сообщение';
 
   @override
-  String get post_create_hint => 'Что происходит...';
+  String get post_create_hint => 'Что происходит';
 
   @override
   String get post_delete => 'Удалить сообщение';
@@ -193,7 +193,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Пост будет удален навсегда. Это невозможно отменить.';
 
   @override
-  String get post_write_comment => 'Напишите комментарий...';
+  String get post_write_comment => 'Напишите комментарий';
 
   @override
   String get poll_duration => 'Продолжительность опроса';
@@ -292,7 +292,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get poll_question_hint => 'Какой у вас вопрос для опроса?';
 
   @override
-  String get comment_create_hint => 'Скажи что-нибудь приятное...';
+  String get comment_create_hint => 'Скажи что-нибудь приятное';
 
   @override
   String get comment_reply => 'Отвечать';
@@ -397,10 +397,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get community_name => 'Название сообщества';
 
   @override
-  String get community_name_hint => 'Назовите свое сообщество...';
+  String get community_name_hint => 'Назовите свое сообщество';
 
   @override
-  String get community_description_hint => 'Введите описание...';
+  String get community_description_hint => 'Введите описание';
 
   @override
   String get community_edit => 'Редактировать сообщество';
@@ -491,10 +491,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message_send => 'Отправлять';
 
   @override
-  String get message_typing => 'печатает...';
+  String get message_typing => 'печатает';
 
   @override
-  String get message_placeholder => 'Введите сообщение...';
+  String get message_placeholder => 'Введите сообщение';
 
   @override
   String get settings_title => 'Настройки';
@@ -593,7 +593,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get general_add => 'Добавлять';
 
   @override
-  String get general_loading => 'Загрузка...';
+  String get general_loading => 'Загрузка';
 
   @override
   String get general_leave => 'Оставлять';
@@ -869,7 +869,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get member_add => 'Добавить участника';
 
   @override
-  String get search_user_hint => 'Поиск пользователя...';
+  String get search_user_hint => 'Поиск пользователя';
 
   @override
   String get profile_edit => 'Редактировать профиль';
@@ -1264,7 +1264,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get chat_tab_groups => 'Группы';
 
   @override
-  String get chat_waiting_for_network => 'Ожидание сети...';
+  String get chat_waiting_for_network => 'Ожидание сети';
 
   @override
   String get chat_direct_chat => 'Прямой чат';
@@ -1293,7 +1293,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get message_media => 'СМИ';
 
   @override
-  String get chat_loading => 'Загрузка чата...';
+  String get chat_loading => 'Загрузка чата';
 
   @override
   String get chat_blocked_message =>
@@ -1331,10 +1331,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get group_name => 'Название группы';
 
   @override
-  String get group_name_hint => 'Назовите свою группу...';
+  String get group_name_hint => 'Назовите свою группу';
 
   @override
-  String get group_description_hint => 'Введите описание...';
+  String get group_description_hint => 'Введите описание';
 
   @override
   String get group_about => 'О';
@@ -1645,10 +1645,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Нет архивного чата...';
+  String get chat_archived_empty => 'Нет архивного чата';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1657,7 +1657,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного...';
+  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1962,6 +1962,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Создайте свой первый пост';
+
+  @override
+  String get search_posts_hint => 'Поиск сообщений';
+
+  @override
+  String get search_adjust_hint => 'Попробуйте настроить поиск';
 }
 
 /// The translations for Russian, as used in Russian Federation (`ru_RU`).
@@ -2073,13 +2079,13 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Все участники будут удалены из группы. Все публикации, сообщения, реакции и медиафайлы, опубликованные в группе, будут удалены. Это невозможно отменить.';
 
   @override
-  String get global_search_hint => 'Поиск сообщества и пользователя...';
+  String get global_search_hint => 'Поиск сообщества и пользователя';
 
   @override
-  String get search_my_community_hint => 'Искать в моем сообществе...';
+  String get search_my_community_hint => 'Искать в моем сообществе';
 
   @override
-  String get search_no_results => 'Результаты не найдены...';
+  String get search_no_results => 'Результаты не найдены';
 
   @override
   String get title_communities => 'Сообщества';
@@ -2115,7 +2121,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get post_edit => 'Редактировать сообщение';
 
   @override
-  String get post_create_hint => 'Что происходит...';
+  String get post_create_hint => 'Что происходит';
 
   @override
   String get post_delete => 'Удалить сообщение';
@@ -2153,7 +2159,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Пост будет удален навсегда. Это невозможно отменить.';
 
   @override
-  String get post_write_comment => 'Напишите комментарий...';
+  String get post_write_comment => 'Напишите комментарий';
 
   @override
   String get poll_duration => 'Продолжительность опроса';
@@ -2252,7 +2258,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get poll_question_hint => 'Какой у вас вопрос для опроса?';
 
   @override
-  String get comment_create_hint => 'Скажи что-нибудь приятное...';
+  String get comment_create_hint => 'Скажи что-нибудь приятное';
 
   @override
   String get comment_reply => 'Отвечать';
@@ -2357,10 +2363,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get community_name => 'Название сообщества';
 
   @override
-  String get community_name_hint => 'Назовите свое сообщество...';
+  String get community_name_hint => 'Назовите свое сообщество';
 
   @override
-  String get community_description_hint => 'Введите описание...';
+  String get community_description_hint => 'Введите описание';
 
   @override
   String get community_edit => 'Редактировать сообщество';
@@ -2451,10 +2457,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get message_send => 'Отправлять';
 
   @override
-  String get message_typing => 'печатает...';
+  String get message_typing => 'печатает';
 
   @override
-  String get message_placeholder => 'Введите сообщение...';
+  String get message_placeholder => 'Введите сообщение';
 
   @override
   String get settings_title => 'Настройки';
@@ -2553,7 +2559,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get general_add => 'Добавлять';
 
   @override
-  String get general_loading => 'Загрузка...';
+  String get general_loading => 'Загрузка';
 
   @override
   String get general_leave => 'Оставлять';
@@ -2829,7 +2835,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get member_add => 'Добавить участника';
 
   @override
-  String get search_user_hint => 'Поиск пользователя...';
+  String get search_user_hint => 'Поиск пользователя';
 
   @override
   String get profile_edit => 'Редактировать профиль';
@@ -3224,7 +3230,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get chat_tab_groups => 'Группы';
 
   @override
-  String get chat_waiting_for_network => 'Ожидание сети...';
+  String get chat_waiting_for_network => 'Ожидание сети';
 
   @override
   String get chat_direct_chat => 'Прямой чат';
@@ -3253,7 +3259,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get message_media => 'СМИ';
 
   @override
-  String get chat_loading => 'Загрузка чата...';
+  String get chat_loading => 'Загрузка чата';
 
   @override
   String get chat_blocked_message =>
@@ -3291,10 +3297,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get group_name => 'Название группы';
 
   @override
-  String get group_name_hint => 'Назовите свою группу...';
+  String get group_name_hint => 'Назовите свою группу';
 
   @override
-  String get group_description_hint => 'Введите описание...';
+  String get group_description_hint => 'Введите описание';
 
   @override
   String get group_about => 'О';
@@ -3605,10 +3611,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get general_error_retry => 'Пожалуйста, попробуйте еще раз.';
 
   @override
-  String get chat_archived_title => 'Архивированные чаты...';
+  String get chat_archived_title => 'Архивированные чаты';
 
   @override
-  String get chat_archived_empty => 'Нет архивного чата...';
+  String get chat_archived_empty => 'Нет архивного чата';
 
   @override
   String get chat_add_member_title => 'Добавить участника';
@@ -3617,7 +3623,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get chat_add_member_button => 'Добавить участника';
 
   @override
-  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного...';
+  String get chat_banned_users_empty => 'Здесь пока нет ничего интересного';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3924,4 +3930,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
 
   @override
   String get feed_empty_create_first_post => 'Создайте свой первый пост';
+
+  @override
+  String get search_posts_hint => 'Поиск сообщений';
+
+  @override
+  String get search_adjust_hint => 'Попробуйте настроить поиск';
 }

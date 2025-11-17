@@ -113,13 +113,13 @@ class AppLocalizationsSq extends AppLocalizations {
       'Të gjithë anëtarët do të hiqen nga grupi. Të gjitha postimet, mesazhet, reagimet dhe mediat e ndara në grup do të fshihen. Kjo nuk mund të zhbëhet.';
 
   @override
-  String get global_search_hint => 'Kërko komunitetin dhe përdoruesin...';
+  String get global_search_hint => 'Kërko komunitetin dhe përdoruesin';
 
   @override
-  String get search_my_community_hint => 'Kërko komunitetin tim...';
+  String get search_my_community_hint => 'Kërko komunitetin tim';
 
   @override
-  String get search_no_results => 'Nuk u gjet asnjë rezultat...';
+  String get search_no_results => 'Nuk u gjet asnjë rezultat';
 
   @override
   String get title_communities => 'Komunitetet';
@@ -155,7 +155,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get post_edit => 'Redakto postimin';
 
   @override
-  String get post_create_hint => 'Çfarë po ndodh...';
+  String get post_create_hint => 'Çfarë po ndodh';
 
   @override
   String get post_delete => 'Fshi postimin';
@@ -193,7 +193,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Postimi do të fshihet përgjithmonë. Nuk mund të zhbëhet.';
 
   @override
-  String get post_write_comment => 'Shkruaj nje koment...';
+  String get post_write_comment => 'Shkruaj nje koment';
 
   @override
   String get poll_duration => 'Kohëzgjatja e sondazhit';
@@ -292,7 +292,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get poll_question_hint => 'Cila është pyetja juaj e sondazhit?';
 
   @override
-  String get comment_create_hint => 'Thuaj dicka te bukur...';
+  String get comment_create_hint => 'Thuaj dicka te bukur';
 
   @override
   String get comment_reply => 'Përgjigju';
@@ -402,10 +402,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get community_name => 'Emri i komunitetit';
 
   @override
-  String get community_name_hint => 'Emërtoni komunitetin tuaj...';
+  String get community_name_hint => 'Emërtoni komunitetin tuaj';
 
   @override
-  String get community_description_hint => 'Fut përshkrimin...';
+  String get community_description_hint => 'Fut përshkrimin';
 
   @override
   String get community_edit => 'Redakto komunitetin';
@@ -496,10 +496,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get message_send => 'Dërgo';
 
   @override
-  String get message_typing => 'po shkruan...';
+  String get message_typing => 'po shkruan';
 
   @override
-  String get message_placeholder => 'Shkruani një mesazh...';
+  String get message_placeholder => 'Shkruani një mesazh';
 
   @override
   String get settings_title => 'Cilësimet';
@@ -597,7 +597,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get general_add => 'Shto';
 
   @override
-  String get general_loading => 'Po ngarkohet...';
+  String get general_loading => 'Po ngarkohet';
 
   @override
   String get general_leave => 'Largohu';
@@ -875,7 +875,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get member_add => 'Shto një anëtar';
 
   @override
-  String get search_user_hint => 'Kërko përdorues...';
+  String get search_user_hint => 'Kërko përdorues';
 
   @override
   String get profile_edit => 'Redakto profilin';
@@ -1274,7 +1274,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chat_tab_groups => 'Grupet';
 
   @override
-  String get chat_waiting_for_network => 'Në pritje të rrjetit...';
+  String get chat_waiting_for_network => 'Në pritje të rrjetit';
 
   @override
   String get chat_direct_chat => 'Bisedë e drejtpërdrejtë';
@@ -1303,7 +1303,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Biseda po ngarkohet...';
+  String get chat_loading => 'Biseda po ngarkohet';
 
   @override
   String get chat_blocked_message =>
@@ -1342,10 +1342,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get group_name => 'Emri i grupit';
 
   @override
-  String get group_name_hint => 'Emërtoni grupin tuaj...';
+  String get group_name_hint => 'Emërtoni grupin tuaj';
 
   @override
-  String get group_description_hint => 'Fut përshkrimin...';
+  String get group_description_hint => 'Fut përshkrimin';
 
   @override
   String get group_about => 'Rreth';
@@ -1655,10 +1655,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get general_error_retry => 'Ju lutemi provoni përsëri.';
 
   @override
-  String get chat_archived_title => 'Bisedat e arkivuara...';
+  String get chat_archived_title => 'Bisedat e arkivuara';
 
   @override
-  String get chat_archived_empty => 'Asnjë bisedë arkivore...';
+  String get chat_archived_empty => 'Asnjë bisedë arkivore';
 
   @override
   String get chat_add_member_title => 'Shto Anëtar';
@@ -1667,7 +1667,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chat_add_member_button => 'Shto Anëtar';
 
   @override
-  String get chat_banned_users_empty => 'Nuk ka asgjë për të parë ende këtu...';
+  String get chat_banned_users_empty => 'Nuk ka asgjë për të parë ende këtu';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1976,6 +1976,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Krijo postimin tënd të parë';
+
+  @override
+  String get search_posts_hint => 'Kërko postimet';
+
+  @override
+  String get search_adjust_hint => 'Provoni të rregulloni kërkimin tuaj';
 }
 
 /// The translations for Albanian, as used in Albania (`sq_AL`).
@@ -2087,13 +2093,13 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Të gjithë anëtarët do të hiqen nga grupi. Të gjitha postimet, mesazhet, reagimet dhe mediat e ndara në grup do të fshihen. Kjo nuk mund të zhbëhet.';
 
   @override
-  String get global_search_hint => 'Kërko komunitetin dhe përdoruesin...';
+  String get global_search_hint => 'Kërko komunitetin dhe përdoruesin';
 
   @override
-  String get search_my_community_hint => 'Kërko komunitetin tim...';
+  String get search_my_community_hint => 'Kërko komunitetin tim';
 
   @override
-  String get search_no_results => 'Nuk u gjet asnjë rezultat...';
+  String get search_no_results => 'Nuk u gjet asnjë rezultat';
 
   @override
   String get title_communities => 'Komunitetet';
@@ -2129,7 +2135,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get post_edit => 'Redakto postimin';
 
   @override
-  String get post_create_hint => 'Çfarë po ndodh...';
+  String get post_create_hint => 'Çfarë po ndodh';
 
   @override
   String get post_delete => 'Fshi postimin';
@@ -2167,7 +2173,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Postimi do të fshihet përgjithmonë. Nuk mund të zhbëhet.';
 
   @override
-  String get post_write_comment => 'Shkruaj nje koment...';
+  String get post_write_comment => 'Shkruaj nje koment';
 
   @override
   String get poll_duration => 'Kohëzgjatja e sondazhit';
@@ -2266,7 +2272,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get poll_question_hint => 'Cila është pyetja juaj e sondazhit?';
 
   @override
-  String get comment_create_hint => 'Thuaj dicka te bukur...';
+  String get comment_create_hint => 'Thuaj dicka te bukur';
 
   @override
   String get comment_reply => 'Përgjigju';
@@ -2376,10 +2382,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get community_name => 'Emri i komunitetit';
 
   @override
-  String get community_name_hint => 'Emërtoni komunitetin tuaj...';
+  String get community_name_hint => 'Emërtoni komunitetin tuaj';
 
   @override
-  String get community_description_hint => 'Fut përshkrimin...';
+  String get community_description_hint => 'Fut përshkrimin';
 
   @override
   String get community_edit => 'Redakto komunitetin';
@@ -2470,10 +2476,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get message_send => 'Dërgo';
 
   @override
-  String get message_typing => 'po shkruan...';
+  String get message_typing => 'po shkruan';
 
   @override
-  String get message_placeholder => 'Shkruani një mesazh...';
+  String get message_placeholder => 'Shkruani një mesazh';
 
   @override
   String get settings_title => 'Cilësimet';
@@ -2571,7 +2577,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get general_add => 'Shto';
 
   @override
-  String get general_loading => 'Po ngarkohet...';
+  String get general_loading => 'Po ngarkohet';
 
   @override
   String get general_leave => 'Largohu';
@@ -2849,7 +2855,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get member_add => 'Shto një anëtar';
 
   @override
-  String get search_user_hint => 'Kërko përdorues...';
+  String get search_user_hint => 'Kërko përdorues';
 
   @override
   String get profile_edit => 'Redakto profilin';
@@ -3248,7 +3254,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get chat_tab_groups => 'Grupet';
 
   @override
-  String get chat_waiting_for_network => 'Në pritje të rrjetit...';
+  String get chat_waiting_for_network => 'Në pritje të rrjetit';
 
   @override
   String get chat_direct_chat => 'Bisedë e drejtpërdrejtë';
@@ -3277,7 +3283,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Biseda po ngarkohet...';
+  String get chat_loading => 'Biseda po ngarkohet';
 
   @override
   String get chat_blocked_message =>
@@ -3316,10 +3322,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get group_name => 'Emri i grupit';
 
   @override
-  String get group_name_hint => 'Emërtoni grupin tuaj...';
+  String get group_name_hint => 'Emërtoni grupin tuaj';
 
   @override
-  String get group_description_hint => 'Fut përshkrimin...';
+  String get group_description_hint => 'Fut përshkrimin';
 
   @override
   String get group_about => 'Rreth';
@@ -3629,10 +3635,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get general_error_retry => 'Ju lutemi provoni përsëri.';
 
   @override
-  String get chat_archived_title => 'Bisedat e arkivuara...';
+  String get chat_archived_title => 'Bisedat e arkivuara';
 
   @override
-  String get chat_archived_empty => 'Asnjë bisedë arkivore...';
+  String get chat_archived_empty => 'Asnjë bisedë arkivore';
 
   @override
   String get chat_add_member_title => 'Shto Anëtar';
@@ -3641,7 +3647,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get chat_add_member_button => 'Shto Anëtar';
 
   @override
-  String get chat_banned_users_empty => 'Nuk ka asgjë për të parë ende këtu...';
+  String get chat_banned_users_empty => 'Nuk ka asgjë për të parë ende këtu';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3950,4 +3956,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
 
   @override
   String get feed_empty_create_first_post => 'Krijo postimin tënd të parë';
+
+  @override
+  String get search_posts_hint => 'Kërko postimet';
+
+  @override
+  String get search_adjust_hint => 'Provoni të rregulloni kërkimin tuaj';
 }

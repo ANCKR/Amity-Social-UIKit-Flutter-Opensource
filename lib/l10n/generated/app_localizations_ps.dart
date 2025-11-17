@@ -113,13 +113,13 @@ class AppLocalizationsPs extends AppLocalizations {
       'ټول غړي به له ګروپ څخه ایستل کیږي. ټول پوسټونه، پیغامونه، غبرګونونه، او په ګروپ کې شریک شوي رسنۍ به حذف شي. دا نشي رد کیدی.';
 
   @override
-  String get global_search_hint => 'ټولنه او کارن لټون...';
+  String get global_search_hint => 'ټولنه او کارن لټون';
 
   @override
-  String get search_my_community_hint => 'زما ټولنه وپلټئ...';
+  String get search_my_community_hint => 'زما ټولنه وپلټئ';
 
   @override
-  String get search_no_results => 'هیڅ پایله ونه موندل شوه...';
+  String get search_no_results => 'هیڅ پایله ونه موندل شوه';
 
   @override
   String get title_communities => 'ټولنې';
@@ -155,7 +155,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get post_edit => 'پوسټ ایډیټ کړئ';
 
   @override
-  String get post_create_hint => 'څه تیریږي...';
+  String get post_create_hint => 'څه تیریږي';
 
   @override
   String get post_delete => 'پوسټ ړنګ کړئ';
@@ -193,7 +193,7 @@ class AppLocalizationsPs extends AppLocalizations {
       'پوسټ به د تل لپاره حذف شي. دا نشي رد کیدی.';
 
   @override
-  String get post_write_comment => 'تبصره ولیکئ ...';
+  String get post_write_comment => 'تبصره ولیکئ ';
 
   @override
   String get poll_duration => 'د ټولپوښتنې موده';
@@ -292,7 +292,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get poll_question_hint => 'ستاسو د ټولپوښتنې پوښتنه څه ده؟';
 
   @override
-  String get comment_create_hint => 'ښه څه ووایه ...';
+  String get comment_create_hint => 'ښه څه ووایه ';
 
   @override
   String get comment_reply => 'ځواب ورکړئ';
@@ -398,10 +398,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get community_name => 'د ټولنې نوم';
 
   @override
-  String get community_name_hint => 'خپلې ټولنې ته نوم ورکړئ...';
+  String get community_name_hint => 'خپلې ټولنې ته نوم ورکړئ';
 
   @override
-  String get community_description_hint => 'توضیحات دننه کړئ...';
+  String get community_description_hint => 'توضیحات دننه کړئ';
 
   @override
   String get community_edit => 'د ټولنې سمون';
@@ -492,10 +492,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get message_send => 'لیږل';
 
   @override
-  String get message_typing => 'ټایپ کوي...';
+  String get message_typing => 'ټایپ کوي';
 
   @override
-  String get message_placeholder => 'یو پیغام ولیکئ ...';
+  String get message_placeholder => 'یو پیغام ولیکئ ';
 
   @override
   String get settings_title => 'ترتیبات';
@@ -593,7 +593,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get general_add => 'اضافه کړئ';
 
   @override
-  String get general_loading => 'بار کول...';
+  String get general_loading => 'بار کول';
 
   @override
   String get general_leave => 'پریږده';
@@ -870,7 +870,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get member_add => 'غړی اضافه کړئ';
 
   @override
-  String get search_user_hint => 'د کارونکي لټون...';
+  String get search_user_hint => 'د کارونکي لټون';
 
   @override
   String get profile_edit => 'پروفایل ایډیټ کړئ';
@@ -1266,7 +1266,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get chat_tab_groups => 'ګروپونه';
 
   @override
-  String get chat_waiting_for_network => 'د شبکې په انتظار...';
+  String get chat_waiting_for_network => 'د شبکې په انتظار';
 
   @override
   String get chat_direct_chat => 'مستقیم خبرې اترې';
@@ -1295,7 +1295,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get message_media => 'رسنۍ';
 
   @override
-  String get chat_loading => 'چټ پورته کول...';
+  String get chat_loading => 'چټ پورته کول';
 
   @override
   String get chat_blocked_message => 'تاسو نشئ کولی دې کس ته پیغامونه واستوئ.';
@@ -1333,10 +1333,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get group_name => 'د ګروپ نوم';
 
   @override
-  String get group_name_hint => 'خپل ګروپ ته نوم ورکړئ...';
+  String get group_name_hint => 'خپل ګروپ ته نوم ورکړئ';
 
   @override
-  String get group_description_hint => 'توضیحات دننه کړئ...';
+  String get group_description_hint => 'توضیحات دننه کړئ';
 
   @override
   String get group_about => 'په اړه';
@@ -1646,10 +1646,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get general_error_retry => 'مهرباني وکړئ بیا هڅه وکړئ.';
 
   @override
-  String get chat_archived_title => 'آرشیف شوي چټونه...';
+  String get chat_archived_title => 'آرشیف شوي چټونه';
 
   @override
-  String get chat_archived_empty => 'هیڅ آرشیف چیٹ نشته...';
+  String get chat_archived_empty => 'هیڅ آرشیف چیٹ نشته';
 
   @override
   String get chat_add_member_title => 'غړی اضافه کړئ';
@@ -1658,7 +1658,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get chat_add_member_button => 'غړی اضافه کړئ';
 
   @override
-  String get chat_banned_users_empty => 'دلته د لیدلو لپاره هیڅ شی نشته...';
+  String get chat_banned_users_empty => 'دلته د لیدلو لپاره هیڅ شی نشته';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1962,6 +1962,12 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'خپل لومړی پوسټ جوړ کړئ';
+
+  @override
+  String get search_posts_hint => 'پوسټونه وپلټئ';
+
+  @override
+  String get search_adjust_hint => 'هڅه وکړئ خپل لټون تنظیم کړئ';
 }
 
 /// The translations for Pushto Pashto, as used in Afghanistan (`ps_AF`).
@@ -2073,13 +2079,13 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
       'ټول غړي به له ګروپ څخه ایستل کیږي. ټول پوسټونه، پیغامونه، غبرګونونه، او په ګروپ کې شریک شوي رسنۍ به حذف شي. دا نشي رد کیدی.';
 
   @override
-  String get global_search_hint => 'ټولنه او کارن لټون...';
+  String get global_search_hint => 'ټولنه او کارن لټون';
 
   @override
-  String get search_my_community_hint => 'زما ټولنه وپلټئ...';
+  String get search_my_community_hint => 'زما ټولنه وپلټئ';
 
   @override
-  String get search_no_results => 'هیڅ پایله ونه موندل شوه...';
+  String get search_no_results => 'هیڅ پایله ونه موندل شوه';
 
   @override
   String get title_communities => 'ټولنې';
@@ -2115,7 +2121,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get post_edit => 'پوسټ ایډیټ کړئ';
 
   @override
-  String get post_create_hint => 'څه تیریږي...';
+  String get post_create_hint => 'څه تیریږي';
 
   @override
   String get post_delete => 'پوسټ ړنګ کړئ';
@@ -2153,7 +2159,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
       'پوسټ به د تل لپاره حذف شي. دا نشي رد کیدی.';
 
   @override
-  String get post_write_comment => 'تبصره ولیکئ ...';
+  String get post_write_comment => 'تبصره ولیکئ ';
 
   @override
   String get poll_duration => 'د ټولپوښتنې موده';
@@ -2252,7 +2258,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get poll_question_hint => 'ستاسو د ټولپوښتنې پوښتنه څه ده؟';
 
   @override
-  String get comment_create_hint => 'ښه څه ووایه ...';
+  String get comment_create_hint => 'ښه څه ووایه ';
 
   @override
   String get comment_reply => 'ځواب ورکړئ';
@@ -2358,10 +2364,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get community_name => 'د ټولنې نوم';
 
   @override
-  String get community_name_hint => 'خپلې ټولنې ته نوم ورکړئ...';
+  String get community_name_hint => 'خپلې ټولنې ته نوم ورکړئ';
 
   @override
-  String get community_description_hint => 'توضیحات دننه کړئ...';
+  String get community_description_hint => 'توضیحات دننه کړئ';
 
   @override
   String get community_edit => 'د ټولنې سمون';
@@ -2452,10 +2458,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get message_send => 'لیږل';
 
   @override
-  String get message_typing => 'ټایپ کوي...';
+  String get message_typing => 'ټایپ کوي';
 
   @override
-  String get message_placeholder => 'یو پیغام ولیکئ ...';
+  String get message_placeholder => 'یو پیغام ولیکئ ';
 
   @override
   String get settings_title => 'ترتیبات';
@@ -2553,7 +2559,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get general_add => 'اضافه کړئ';
 
   @override
-  String get general_loading => 'بار کول...';
+  String get general_loading => 'بار کول';
 
   @override
   String get general_leave => 'پریږده';
@@ -2830,7 +2836,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get member_add => 'غړی اضافه کړئ';
 
   @override
-  String get search_user_hint => 'د کارونکي لټون...';
+  String get search_user_hint => 'د کارونکي لټون';
 
   @override
   String get profile_edit => 'پروفایل ایډیټ کړئ';
@@ -3226,7 +3232,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get chat_tab_groups => 'ګروپونه';
 
   @override
-  String get chat_waiting_for_network => 'د شبکې په انتظار...';
+  String get chat_waiting_for_network => 'د شبکې په انتظار';
 
   @override
   String get chat_direct_chat => 'مستقیم خبرې اترې';
@@ -3255,7 +3261,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get message_media => 'رسنۍ';
 
   @override
-  String get chat_loading => 'چټ پورته کول...';
+  String get chat_loading => 'چټ پورته کول';
 
   @override
   String get chat_blocked_message => 'تاسو نشئ کولی دې کس ته پیغامونه واستوئ.';
@@ -3293,10 +3299,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get group_name => 'د ګروپ نوم';
 
   @override
-  String get group_name_hint => 'خپل ګروپ ته نوم ورکړئ...';
+  String get group_name_hint => 'خپل ګروپ ته نوم ورکړئ';
 
   @override
-  String get group_description_hint => 'توضیحات دننه کړئ...';
+  String get group_description_hint => 'توضیحات دننه کړئ';
 
   @override
   String get group_about => 'په اړه';
@@ -3606,10 +3612,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get general_error_retry => 'مهرباني وکړئ بیا هڅه وکړئ.';
 
   @override
-  String get chat_archived_title => 'آرشیف شوي چټونه...';
+  String get chat_archived_title => 'آرشیف شوي چټونه';
 
   @override
-  String get chat_archived_empty => 'هیڅ آرشیف چیٹ نشته...';
+  String get chat_archived_empty => 'هیڅ آرشیف چیٹ نشته';
 
   @override
   String get chat_add_member_title => 'غړی اضافه کړئ';
@@ -3618,7 +3624,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get chat_add_member_button => 'غړی اضافه کړئ';
 
   @override
-  String get chat_banned_users_empty => 'دلته د لیدلو لپاره هیڅ شی نشته...';
+  String get chat_banned_users_empty => 'دلته د لیدلو لپاره هیڅ شی نشته';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3923,4 +3929,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
 
   @override
   String get feed_empty_create_first_post => 'خپل لومړی پوسټ جوړ کړئ';
+
+  @override
+  String get search_posts_hint => 'پوسټونه وپلټئ';
+
+  @override
+  String get search_adjust_hint => 'هڅه وکړئ خپل لټون تنظیم کړئ';
 }

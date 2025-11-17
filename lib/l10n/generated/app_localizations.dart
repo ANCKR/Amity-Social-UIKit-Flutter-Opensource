@@ -388,19 +388,19 @@ abstract class AppLocalizations {
   /// Hint text for the search communities and users field on the homepage
   ///
   /// In en_US, this message translates to:
-  /// **'Search community and user...'**
+  /// **'Search community and user'**
   String get global_search_hint;
 
   /// Hint text for searching my communities
   ///
   /// In en_US, this message translates to:
-  /// **'Search my community...'**
+  /// **'Search my community'**
   String get search_my_community_hint;
 
   /// Message displayed when no search results are found
   ///
   /// In en_US, this message translates to:
-  /// **'No results found...'**
+  /// **'No results found'**
   String get search_no_results;
 
   /// Title for the communities section
@@ -472,7 +472,7 @@ abstract class AppLocalizations {
   /// Hint text for post creation input field
   ///
   /// In en_US, this message translates to:
-  /// **'What\'s going on...'**
+  /// **'What\'s going on'**
   String get post_create_hint;
 
   /// Label for delete post button
@@ -544,7 +544,7 @@ abstract class AppLocalizations {
   /// Placeholder for comment input
   ///
   /// In en_US, this message translates to:
-  /// **'Write a comment...'**
+  /// **'Write a comment'**
   String get post_write_comment;
 
   /// Label for poll duration
@@ -682,7 +682,7 @@ abstract class AppLocalizations {
   /// Hint text for comment input
   ///
   /// In en_US, this message translates to:
-  /// **'Say something nice...'**
+  /// **'Say something nice'**
   String get comment_create_hint;
 
   /// Label for reply button
@@ -862,13 +862,13 @@ abstract class AppLocalizations {
   /// Hint text for community name input
   ///
   /// In en_US, this message translates to:
-  /// **'Name your community...'**
+  /// **'Name your community'**
   String get community_name_hint;
 
   /// Hint text for community description input
   ///
   /// In en_US, this message translates to:
-  /// **'Enter description...'**
+  /// **'Enter description'**
   String get community_description_hint;
 
   /// Label for edit community button
@@ -994,13 +994,13 @@ abstract class AppLocalizations {
   /// Label for typing indicator
   ///
   /// In en_US, this message translates to:
-  /// **'is typing...'**
+  /// **'is typing'**
   String get message_typing;
 
   /// Placeholder for message input
   ///
   /// In en_US, this message translates to:
-  /// **'Type a message...'**
+  /// **'Type a message'**
   String get message_placeholder;
 
   /// Title for settings screen
@@ -1174,7 +1174,7 @@ abstract class AppLocalizations {
   /// Label for loading states
   ///
   /// In en_US, this message translates to:
-  /// **'Loading...'**
+  /// **'Loading'**
   String get general_loading;
 
   /// Label for leave button
@@ -1594,7 +1594,7 @@ abstract class AppLocalizations {
   /// Hint text for searching users
   ///
   /// In en_US, this message translates to:
-  /// **'Search user...'**
+  /// **'Search user'**
   String get search_user_hint;
 
   /// Button text for editing user profile
@@ -2278,7 +2278,7 @@ abstract class AppLocalizations {
   /// Message shown when waiting for network connection
   ///
   /// In en_US, this message translates to:
-  /// **'Waiting for network...'**
+  /// **'Waiting for network'**
   String get chat_waiting_for_network;
 
   /// Menu option for creating direct chat
@@ -2332,7 +2332,7 @@ abstract class AppLocalizations {
   /// Loading message shown when chat is initializing
   ///
   /// In en_US, this message translates to:
-  /// **'Loading chat...'**
+  /// **'Loading chat'**
   String get chat_loading;
 
   /// Message shown when user is blocked and cannot send messages
@@ -2404,13 +2404,13 @@ abstract class AppLocalizations {
   /// Hint text for group name input
   ///
   /// In en_US, this message translates to:
-  /// **'Name your group...'**
+  /// **'Name your group'**
   String get group_name_hint;
 
   /// Hint text for group description input
   ///
   /// In en_US, this message translates to:
-  /// **'Enter description...'**
+  /// **'Enter description'**
   String get group_description_hint;
 
   /// Label for group about section
@@ -2950,13 +2950,13 @@ abstract class AppLocalizations {
   /// Title for archived chats page
   ///
   /// In en_US, this message translates to:
-  /// **'Archived chats...'**
+  /// **'Archived chats'**
   String get chat_archived_title;
 
   /// Empty state for archived chats
   ///
   /// In en_US, this message translates to:
-  /// **'No archive chat...'**
+  /// **'No archive chat'**
   String get chat_archived_empty;
 
   /// Title for add member page
@@ -2974,7 +2974,7 @@ abstract class AppLocalizations {
   /// Empty state for banned users
   ///
   /// In en_US, this message translates to:
-  /// **'Nothing here to see yet...'**
+  /// **'Nothing here to see yet'**
   String get chat_banned_users_empty;
 
   /// Confirmation message for unbanning user
@@ -3510,6 +3510,18 @@ abstract class AppLocalizations {
   /// In en_US, this message translates to:
   /// **'Create your first post'**
   String get feed_empty_create_first_post;
+
+  /// Hint text for searching posts in global feed
+  ///
+  /// In en_US, this message translates to:
+  /// **'Search posts'**
+  String get search_posts_hint;
+
+  /// Message shown when search returns no results
+  ///
+  /// In en_US, this message translates to:
+  /// **'Try adjusting your search'**
+  String get search_adjust_hint;
 }
 
 class _AppLocalizationsDelegate

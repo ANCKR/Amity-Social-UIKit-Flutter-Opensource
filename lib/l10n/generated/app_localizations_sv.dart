@@ -113,13 +113,13 @@ class AppLocalizationsSv extends AppLocalizations {
       'Alla medlemmar kommer att tas bort från gruppen. Alla inlägg, meddelanden, reaktioner och media som delas i gruppen kommer att raderas. Detta kan inte ångras.';
 
   @override
-  String get global_search_hint => 'Sök efter community och användare...';
+  String get global_search_hint => 'Sök efter community och användare';
 
   @override
-  String get search_my_community_hint => 'Sök i mitt samhälle...';
+  String get search_my_community_hint => 'Sök i mitt samhälle';
 
   @override
-  String get search_no_results => 'Inga resultat hittades...';
+  String get search_no_results => 'Inga resultat hittades';
 
   @override
   String get title_communities => 'gemenskaper';
@@ -155,7 +155,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get post_edit => 'Redigera inlägg';
 
   @override
-  String get post_create_hint => 'Vad händer...';
+  String get post_create_hint => 'Vad händer';
 
   @override
   String get post_delete => 'Ta bort inlägg';
@@ -194,7 +194,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Inlägget kommer att raderas permanent. Det går inte att ångra.';
 
   @override
-  String get post_write_comment => 'Skriv en kommentar...';
+  String get post_write_comment => 'Skriv en kommentar';
 
   @override
   String get poll_duration => 'Omröstningens varaktighet';
@@ -293,7 +293,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get poll_question_hint => 'Vad är din enkätfråga?';
 
   @override
-  String get comment_create_hint => 'Säg något trevligt...';
+  String get comment_create_hint => 'Säg något trevligt';
 
   @override
   String get comment_reply => 'Svar';
@@ -402,10 +402,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get community_name => 'Gemenskapens namn';
 
   @override
-  String get community_name_hint => 'Namnge din gemenskap...';
+  String get community_name_hint => 'Namnge din gemenskap';
 
   @override
-  String get community_description_hint => 'Ange beskrivning...';
+  String get community_description_hint => 'Ange beskrivning';
 
   @override
   String get community_edit => 'Redigera grupp';
@@ -496,10 +496,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get message_send => 'Skicka';
 
   @override
-  String get message_typing => 'skriver...';
+  String get message_typing => 'skriver';
 
   @override
-  String get message_placeholder => 'Skriv ett meddelande...';
+  String get message_placeholder => 'Skriv ett meddelande';
 
   @override
   String get settings_title => 'Inställningar';
@@ -597,7 +597,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get general_add => 'Tillägga';
 
   @override
-  String get general_loading => 'Belastning...';
+  String get general_loading => 'Belastning';
 
   @override
   String get general_leave => 'Lämna';
@@ -873,7 +873,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get member_add => 'Lägg till medlem';
 
   @override
-  String get search_user_hint => 'Sök användare...';
+  String get search_user_hint => 'Sök användare';
 
   @override
   String get profile_edit => 'Redigera profil';
@@ -1273,7 +1273,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get chat_tab_groups => 'Grupper';
 
   @override
-  String get chat_waiting_for_network => 'Väntar på nätverk...';
+  String get chat_waiting_for_network => 'Väntar på nätverk';
 
   @override
   String get chat_direct_chat => 'Direkt chatt';
@@ -1302,7 +1302,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Laddar chatt...';
+  String get chat_loading => 'Laddar chatt';
 
   @override
   String get chat_blocked_message =>
@@ -1341,10 +1341,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get group_name => 'Gruppnamn';
 
   @override
-  String get group_name_hint => 'Namnge din grupp...';
+  String get group_name_hint => 'Namnge din grupp';
 
   @override
-  String get group_description_hint => 'Ange beskrivning...';
+  String get group_description_hint => 'Ange beskrivning';
 
   @override
   String get group_about => 'Om';
@@ -1655,10 +1655,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get general_error_retry => 'Försök igen.';
 
   @override
-  String get chat_archived_title => 'Arkiverade chattar...';
+  String get chat_archived_title => 'Arkiverade chattar';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchatt...';
+  String get chat_archived_empty => 'Ingen arkivchatt';
 
   @override
   String get chat_add_member_title => 'Lägg till medlem';
@@ -1667,7 +1667,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get chat_add_member_button => 'Lägg till medlem';
 
   @override
-  String get chat_banned_users_empty => 'Inget här att se ännu...';
+  String get chat_banned_users_empty => 'Inget här att se ännu';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1973,6 +1973,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Skapa ditt första inlägg';
+
+  @override
+  String get search_posts_hint => 'Sök efter inlägg';
+
+  @override
+  String get search_adjust_hint => 'Prova att justera din sökning';
 }
 
 /// The translations for Swedish, as used in Sweden (`sv_SE`).
@@ -2084,13 +2090,13 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
       'Alla medlemmar kommer att tas bort från gruppen. Alla inlägg, meddelanden, reaktioner och media som delas i gruppen kommer att raderas. Detta kan inte ångras.';
 
   @override
-  String get global_search_hint => 'Sök efter community och användare...';
+  String get global_search_hint => 'Sök efter community och användare';
 
   @override
-  String get search_my_community_hint => 'Sök i mitt samhälle...';
+  String get search_my_community_hint => 'Sök i mitt samhälle';
 
   @override
-  String get search_no_results => 'Inga resultat hittades...';
+  String get search_no_results => 'Inga resultat hittades';
 
   @override
   String get title_communities => 'gemenskaper';
@@ -2126,7 +2132,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get post_edit => 'Redigera inlägg';
 
   @override
-  String get post_create_hint => 'Vad händer...';
+  String get post_create_hint => 'Vad händer';
 
   @override
   String get post_delete => 'Ta bort inlägg';
@@ -2165,7 +2171,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
       'Inlägget kommer att raderas permanent. Det går inte att ångra.';
 
   @override
-  String get post_write_comment => 'Skriv en kommentar...';
+  String get post_write_comment => 'Skriv en kommentar';
 
   @override
   String get poll_duration => 'Omröstningens varaktighet';
@@ -2264,7 +2270,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get poll_question_hint => 'Vad är din enkätfråga?';
 
   @override
-  String get comment_create_hint => 'Säg något trevligt...';
+  String get comment_create_hint => 'Säg något trevligt';
 
   @override
   String get comment_reply => 'Svar';
@@ -2373,10 +2379,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get community_name => 'Gemenskapens namn';
 
   @override
-  String get community_name_hint => 'Namnge din gemenskap...';
+  String get community_name_hint => 'Namnge din gemenskap';
 
   @override
-  String get community_description_hint => 'Ange beskrivning...';
+  String get community_description_hint => 'Ange beskrivning';
 
   @override
   String get community_edit => 'Redigera grupp';
@@ -2467,10 +2473,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get message_send => 'Skicka';
 
   @override
-  String get message_typing => 'skriver...';
+  String get message_typing => 'skriver';
 
   @override
-  String get message_placeholder => 'Skriv ett meddelande...';
+  String get message_placeholder => 'Skriv ett meddelande';
 
   @override
   String get settings_title => 'Inställningar';
@@ -2568,7 +2574,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get general_add => 'Tillägga';
 
   @override
-  String get general_loading => 'Belastning...';
+  String get general_loading => 'Belastning';
 
   @override
   String get general_leave => 'Lämna';
@@ -2844,7 +2850,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get member_add => 'Lägg till medlem';
 
   @override
-  String get search_user_hint => 'Sök användare...';
+  String get search_user_hint => 'Sök användare';
 
   @override
   String get profile_edit => 'Redigera profil';
@@ -3244,7 +3250,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get chat_tab_groups => 'Grupper';
 
   @override
-  String get chat_waiting_for_network => 'Väntar på nätverk...';
+  String get chat_waiting_for_network => 'Väntar på nätverk';
 
   @override
   String get chat_direct_chat => 'Direkt chatt';
@@ -3273,7 +3279,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Laddar chatt...';
+  String get chat_loading => 'Laddar chatt';
 
   @override
   String get chat_blocked_message =>
@@ -3312,10 +3318,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get group_name => 'Gruppnamn';
 
   @override
-  String get group_name_hint => 'Namnge din grupp...';
+  String get group_name_hint => 'Namnge din grupp';
 
   @override
-  String get group_description_hint => 'Ange beskrivning...';
+  String get group_description_hint => 'Ange beskrivning';
 
   @override
   String get group_about => 'Om';
@@ -3626,10 +3632,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get general_error_retry => 'Försök igen.';
 
   @override
-  String get chat_archived_title => 'Arkiverade chattar...';
+  String get chat_archived_title => 'Arkiverade chattar';
 
   @override
-  String get chat_archived_empty => 'Ingen arkivchatt...';
+  String get chat_archived_empty => 'Ingen arkivchatt';
 
   @override
   String get chat_add_member_title => 'Lägg till medlem';
@@ -3638,7 +3644,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get chat_add_member_button => 'Lägg till medlem';
 
   @override
-  String get chat_banned_users_empty => 'Inget här att se ännu...';
+  String get chat_banned_users_empty => 'Inget här att se ännu';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3944,4 +3950,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
 
   @override
   String get feed_empty_create_first_post => 'Skapa ditt första inlägg';
+
+  @override
+  String get search_posts_hint => 'Sök efter inlägg';
+
+  @override
+  String get search_adjust_hint => 'Prova att justera din sökning';
 }

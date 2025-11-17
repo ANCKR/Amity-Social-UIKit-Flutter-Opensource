@@ -113,13 +113,13 @@ class AppLocalizationsLt extends AppLocalizations {
       'Visi nariai bus pašalinti iš grupės. Visi grupėje bendrinami įrašai, pranešimai, reakcijos ir medija bus ištrinti. To negalima anuliuoti.';
 
   @override
-  String get global_search_hint => 'Ieškoti bendruomenės ir vartotojo...';
+  String get global_search_hint => 'Ieškoti bendruomenės ir vartotojo';
 
   @override
-  String get search_my_community_hint => 'Ieškoti mano bendruomenėje...';
+  String get search_my_community_hint => 'Ieškoti mano bendruomenėje';
 
   @override
-  String get search_no_results => 'Rezultatų nerasta...';
+  String get search_no_results => 'Rezultatų nerasta';
 
   @override
   String get title_communities => 'bendruomenės';
@@ -155,7 +155,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get post_edit => 'Redaguoti įrašą';
 
   @override
-  String get post_create_hint => 'Kas vyksta...';
+  String get post_create_hint => 'Kas vyksta';
 
   @override
   String get post_delete => 'Ištrinti įrašą';
@@ -194,7 +194,7 @@ class AppLocalizationsLt extends AppLocalizations {
       'Įrašas bus ištrintas visam laikui. To negalima anuliuoti.';
 
   @override
-  String get post_write_comment => 'Rašyk komentarą...';
+  String get post_write_comment => 'Rašyk komentarą';
 
   @override
   String get poll_duration => 'Apklausos trukmė';
@@ -293,7 +293,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get poll_question_hint => 'Koks tavo apklausos klausimas?';
 
   @override
-  String get comment_create_hint => 'Pasakyk ką nors gražaus...';
+  String get comment_create_hint => 'Pasakyk ką nors gražaus';
 
   @override
   String get comment_reply => 'Atsakyti';
@@ -400,10 +400,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get community_name => 'Bendruomenės pavadinimas';
 
   @override
-  String get community_name_hint => 'Pavadinkite savo bendruomenę...';
+  String get community_name_hint => 'Pavadinkite savo bendruomenę';
 
   @override
-  String get community_description_hint => 'Įveskite aprašymą...';
+  String get community_description_hint => 'Įveskite aprašymą';
 
   @override
   String get community_edit => 'Redaguoti bendruomenę';
@@ -493,10 +493,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get message_send => 'Siųsti';
 
   @override
-  String get message_typing => 'rašo...';
+  String get message_typing => 'rašo';
 
   @override
-  String get message_placeholder => 'Įveskite žinutę...';
+  String get message_placeholder => 'Įveskite žinutę';
 
   @override
   String get settings_title => 'Nustatymai';
@@ -594,7 +594,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get general_add => 'Pridėti';
 
   @override
-  String get general_loading => 'Įkeliama...';
+  String get general_loading => 'Įkeliama';
 
   @override
   String get general_leave => 'Palikti';
@@ -871,7 +871,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get member_add => 'Pridėti narį';
 
   @override
-  String get search_user_hint => 'Ieškoti vartotojo...';
+  String get search_user_hint => 'Ieškoti vartotojo';
 
   @override
   String get profile_edit => 'Redaguoti profilį';
@@ -1267,7 +1267,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get chat_tab_groups => 'Grupės';
 
   @override
-  String get chat_waiting_for_network => 'Laukiama tinklo...';
+  String get chat_waiting_for_network => 'Laukiama tinklo';
 
   @override
   String get chat_direct_chat => 'Tiesioginis pokalbis';
@@ -1296,7 +1296,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get message_media => 'Žiniasklaida';
 
   @override
-  String get chat_loading => 'Įkeliamas pokalbis...';
+  String get chat_loading => 'Įkeliamas pokalbis';
 
   @override
   String get chat_blocked_message => 'Negalite siųsti pranešimų šiam asmeniui.';
@@ -1333,10 +1333,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get group_name => 'Grupės pavadinimas';
 
   @override
-  String get group_name_hint => 'Pavadinkite savo grupę...';
+  String get group_name_hint => 'Pavadinkite savo grupę';
 
   @override
-  String get group_description_hint => 'Įveskite aprašymą...';
+  String get group_description_hint => 'Įveskite aprašymą';
 
   @override
   String get group_about => 'Apie';
@@ -1647,10 +1647,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Nėra archyvo pokalbio...';
+  String get chat_archived_empty => 'Nėra archyvo pokalbio';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1659,7 +1659,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Čia dar nėra ką pamatyti...';
+  String get chat_banned_users_empty => 'Čia dar nėra ką pamatyti';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1965,6 +1965,12 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Sukurkite savo pirmąjį įrašą';
+
+  @override
+  String get search_posts_hint => 'Ieškoti įrašų';
+
+  @override
+  String get search_adjust_hint => 'Pabandykite pakoreguoti paiešką';
 }
 
 /// The translations for Lithuanian, as used in Lithuania (`lt_LT`).
@@ -2076,13 +2082,13 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
       'Visi nariai bus pašalinti iš grupės. Visi grupėje bendrinami įrašai, pranešimai, reakcijos ir medija bus ištrinti. To negalima anuliuoti.';
 
   @override
-  String get global_search_hint => 'Ieškoti bendruomenės ir vartotojo...';
+  String get global_search_hint => 'Ieškoti bendruomenės ir vartotojo';
 
   @override
-  String get search_my_community_hint => 'Ieškoti mano bendruomenėje...';
+  String get search_my_community_hint => 'Ieškoti mano bendruomenėje';
 
   @override
-  String get search_no_results => 'Rezultatų nerasta...';
+  String get search_no_results => 'Rezultatų nerasta';
 
   @override
   String get title_communities => 'bendruomenės';
@@ -2118,7 +2124,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get post_edit => 'Redaguoti įrašą';
 
   @override
-  String get post_create_hint => 'Kas vyksta...';
+  String get post_create_hint => 'Kas vyksta';
 
   @override
   String get post_delete => 'Ištrinti įrašą';
@@ -2157,7 +2163,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
       'Įrašas bus ištrintas visam laikui. To negalima anuliuoti.';
 
   @override
-  String get post_write_comment => 'Rašyk komentarą...';
+  String get post_write_comment => 'Rašyk komentarą';
 
   @override
   String get poll_duration => 'Apklausos trukmė';
@@ -2256,7 +2262,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get poll_question_hint => 'Koks tavo apklausos klausimas?';
 
   @override
-  String get comment_create_hint => 'Pasakyk ką nors gražaus...';
+  String get comment_create_hint => 'Pasakyk ką nors gražaus';
 
   @override
   String get comment_reply => 'Atsakyti';
@@ -2363,10 +2369,10 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get community_name => 'Bendruomenės pavadinimas';
 
   @override
-  String get community_name_hint => 'Pavadinkite savo bendruomenę...';
+  String get community_name_hint => 'Pavadinkite savo bendruomenę';
 
   @override
-  String get community_description_hint => 'Įveskite aprašymą...';
+  String get community_description_hint => 'Įveskite aprašymą';
 
   @override
   String get community_edit => 'Redaguoti bendruomenę';
@@ -2456,10 +2462,10 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get message_send => 'Siųsti';
 
   @override
-  String get message_typing => 'rašo...';
+  String get message_typing => 'rašo';
 
   @override
-  String get message_placeholder => 'Įveskite žinutę...';
+  String get message_placeholder => 'Įveskite žinutę';
 
   @override
   String get settings_title => 'Nustatymai';
@@ -2557,7 +2563,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get general_add => 'Pridėti';
 
   @override
-  String get general_loading => 'Įkeliama...';
+  String get general_loading => 'Įkeliama';
 
   @override
   String get general_leave => 'Palikti';
@@ -2834,7 +2840,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get member_add => 'Pridėti narį';
 
   @override
-  String get search_user_hint => 'Ieškoti vartotojo...';
+  String get search_user_hint => 'Ieškoti vartotojo';
 
   @override
   String get profile_edit => 'Redaguoti profilį';
@@ -3230,7 +3236,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get chat_tab_groups => 'Grupės';
 
   @override
-  String get chat_waiting_for_network => 'Laukiama tinklo...';
+  String get chat_waiting_for_network => 'Laukiama tinklo';
 
   @override
   String get chat_direct_chat => 'Tiesioginis pokalbis';
@@ -3259,7 +3265,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get message_media => 'Žiniasklaida';
 
   @override
-  String get chat_loading => 'Įkeliamas pokalbis...';
+  String get chat_loading => 'Įkeliamas pokalbis';
 
   @override
   String get chat_blocked_message => 'Negalite siųsti pranešimų šiam asmeniui.';
@@ -3296,10 +3302,10 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get group_name => 'Grupės pavadinimas';
 
   @override
-  String get group_name_hint => 'Pavadinkite savo grupę...';
+  String get group_name_hint => 'Pavadinkite savo grupę';
 
   @override
-  String get group_description_hint => 'Įveskite aprašymą...';
+  String get group_description_hint => 'Įveskite aprašymą';
 
   @override
   String get group_about => 'Apie';
@@ -3610,10 +3616,10 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get general_error_retry => 'Bandykite dar kartą.';
 
   @override
-  String get chat_archived_title => 'Archyvuoti pokalbiai...';
+  String get chat_archived_title => 'Archyvuoti pokalbiai';
 
   @override
-  String get chat_archived_empty => 'Nėra archyvo pokalbio...';
+  String get chat_archived_empty => 'Nėra archyvo pokalbio';
 
   @override
   String get chat_add_member_title => 'Pridėti narį';
@@ -3622,7 +3628,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get chat_add_member_button => 'Pridėti narį';
 
   @override
-  String get chat_banned_users_empty => 'Čia dar nėra ką pamatyti...';
+  String get chat_banned_users_empty => 'Čia dar nėra ką pamatyti';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3929,4 +3935,10 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
 
   @override
   String get feed_empty_create_first_post => 'Sukurkite savo pirmąjį įrašą';
+
+  @override
+  String get search_posts_hint => 'Ieškoti įrašų';
+
+  @override
+  String get search_adjust_hint => 'Pabandykite pakoreguoti paiešką';
 }

@@ -113,13 +113,13 @@ class AppLocalizationsAr extends AppLocalizations {
       'سيتم إزالة جميع الأعضاء من المجموعة. سيتم حذف جميع المنشورات والرسائل والتفاعلات والوسائط المشتركة في المجموعة. لا يمكن التراجع عن هذا.';
 
   @override
-  String get global_search_hint => 'بحث المجتمع والمستخدم...';
+  String get global_search_hint => 'بحث المجتمع والمستخدم';
 
   @override
-  String get search_my_community_hint => 'ابحث في مجتمعي...';
+  String get search_my_community_hint => 'ابحث في مجتمعي';
 
   @override
-  String get search_no_results => 'لم يتم العثور على نتائج...';
+  String get search_no_results => 'لم يتم العثور على نتائج';
 
   @override
   String get title_communities => 'المجتمعات';
@@ -155,7 +155,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get post_edit => 'تحرير المشاركة';
 
   @override
-  String get post_create_hint => 'ماذا يحدث هنا...';
+  String get post_create_hint => 'ماذا يحدث هنا';
 
   @override
   String get post_delete => 'حذف المشاركة';
@@ -192,7 +192,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'سيتم حذف المنشور نهائيا. لا يمكن التراجع عنه.';
 
   @override
-  String get post_write_comment => 'أكتب تعليق...';
+  String get post_write_comment => 'أكتب تعليق';
 
   @override
   String get poll_duration => 'مدة الاستطلاع';
@@ -291,7 +291,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get poll_question_hint => 'ما هو سؤال الاستطلاع الخاص بك؟';
 
   @override
-  String get comment_create_hint => 'قل شيئاً جميلاً..';
+  String get comment_create_hint => 'قل شيئاً جميلاً';
 
   @override
   String get comment_reply => 'رد';
@@ -394,10 +394,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get community_name => 'اسم المجتمع';
 
   @override
-  String get community_name_hint => 'قم بتسمية مجتمعك...';
+  String get community_name_hint => 'قم بتسمية مجتمعك';
 
   @override
-  String get community_description_hint => 'أدخل الوصف...';
+  String get community_description_hint => 'أدخل الوصف';
 
   @override
   String get community_edit => 'تحرير المجتمع';
@@ -487,10 +487,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get message_send => 'يرسل';
 
   @override
-  String get message_typing => 'يكتب...';
+  String get message_typing => 'يكتب';
 
   @override
-  String get message_placeholder => 'اكتب رسالة...';
+  String get message_placeholder => 'اكتب رسالة';
 
   @override
   String get settings_title => 'إعدادات';
@@ -588,7 +588,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get general_add => 'يضيف';
 
   @override
-  String get general_loading => 'تحميل...';
+  String get general_loading => 'تحميل';
 
   @override
   String get general_leave => 'يترك';
@@ -863,7 +863,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get member_add => 'إضافة عضو';
 
   @override
-  String get search_user_hint => 'مستخدم البحث...';
+  String get search_user_hint => 'مستخدم البحث';
 
   @override
   String get profile_edit => 'تحرير الملف الشخصي';
@@ -1256,7 +1256,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get chat_tab_groups => 'المجموعات';
 
   @override
-  String get chat_waiting_for_network => 'في انتظار الشبكة...';
+  String get chat_waiting_for_network => 'في انتظار الشبكة';
 
   @override
   String get chat_direct_chat => 'الدردشة المباشرة';
@@ -1285,7 +1285,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get message_media => 'وسائط';
 
   @override
-  String get chat_loading => 'جارٍ تحميل الدردشة...';
+  String get chat_loading => 'جارٍ تحميل الدردشة';
 
   @override
   String get chat_blocked_message => 'لا يمكنك إرسال رسائل إلى هذا الشخص.';
@@ -1322,10 +1322,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get group_name => 'اسم المجموعة';
 
   @override
-  String get group_name_hint => 'قم بتسمية مجموعتك...';
+  String get group_name_hint => 'قم بتسمية مجموعتك';
 
   @override
-  String get group_description_hint => 'أدخل الوصف...';
+  String get group_description_hint => 'أدخل الوصف';
 
   @override
   String get group_about => 'عن';
@@ -1634,10 +1634,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get general_error_retry => 'يرجى المحاولة مرة أخرى.';
 
   @override
-  String get chat_archived_title => 'الدردشات المؤرشفة...';
+  String get chat_archived_title => 'الدردشات المؤرشفة';
 
   @override
-  String get chat_archived_empty => 'لا توجد دردشة أرشيفية...';
+  String get chat_archived_empty => 'لا توجد دردشة أرشيفية';
 
   @override
   String get chat_add_member_title => 'إضافة عضو';
@@ -1646,7 +1646,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get chat_add_member_button => 'إضافة عضو';
 
   @override
-  String get chat_banned_users_empty => 'لا شيء هنا لنرى بعد...';
+  String get chat_banned_users_empty => 'لا شيء هنا لنرى بعد';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1949,6 +1949,12 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'أنشئ منشورك الأول';
+
+  @override
+  String get search_posts_hint => 'بحث في المشاركات';
+
+  @override
+  String get search_adjust_hint => 'حاول تعديل بحثك';
 }
 
 /// The translations for Arabic, as used in Egypt (`ar_EG`).
@@ -2060,13 +2066,13 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
       'سيتم إزالة جميع الأعضاء من المجموعة. سيتم حذف جميع المنشورات والرسائل والتفاعلات والوسائط المشتركة في المجموعة. لا يمكن التراجع عن هذا.';
 
   @override
-  String get global_search_hint => 'بحث المجتمع والمستخدم...';
+  String get global_search_hint => 'بحث المجتمع والمستخدم';
 
   @override
-  String get search_my_community_hint => 'ابحث في مجتمعي...';
+  String get search_my_community_hint => 'ابحث في مجتمعي';
 
   @override
-  String get search_no_results => 'لم يتم العثور على نتائج...';
+  String get search_no_results => 'لم يتم العثور على نتائج';
 
   @override
   String get title_communities => 'المجتمعات';
@@ -2102,7 +2108,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get post_edit => 'تحرير المشاركة';
 
   @override
-  String get post_create_hint => 'ماذا يحدث هنا...';
+  String get post_create_hint => 'ماذا يحدث هنا';
 
   @override
   String get post_delete => 'حذف المشاركة';
@@ -2139,7 +2145,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
       'سيتم حذف المنشور نهائيا. لا يمكن التراجع عنه.';
 
   @override
-  String get post_write_comment => 'أكتب تعليق...';
+  String get post_write_comment => 'أكتب تعليق';
 
   @override
   String get poll_duration => 'مدة الاستطلاع';
@@ -2238,7 +2244,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get poll_question_hint => 'ما هو سؤال الاستطلاع الخاص بك؟';
 
   @override
-  String get comment_create_hint => 'قل شيئاً جميلاً..';
+  String get comment_create_hint => 'قل شيئاً جميلاً';
 
   @override
   String get comment_reply => 'رد';
@@ -2341,10 +2347,10 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get community_name => 'اسم المجتمع';
 
   @override
-  String get community_name_hint => 'قم بتسمية مجتمعك...';
+  String get community_name_hint => 'قم بتسمية مجتمعك';
 
   @override
-  String get community_description_hint => 'أدخل الوصف...';
+  String get community_description_hint => 'أدخل الوصف';
 
   @override
   String get community_edit => 'تحرير المجتمع';
@@ -2434,10 +2440,10 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get message_send => 'يرسل';
 
   @override
-  String get message_typing => 'يكتب...';
+  String get message_typing => 'يكتب';
 
   @override
-  String get message_placeholder => 'اكتب رسالة...';
+  String get message_placeholder => 'اكتب رسالة';
 
   @override
   String get settings_title => 'إعدادات';
@@ -2535,7 +2541,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get general_add => 'يضيف';
 
   @override
-  String get general_loading => 'تحميل...';
+  String get general_loading => 'تحميل';
 
   @override
   String get general_leave => 'يترك';
@@ -2810,7 +2816,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get member_add => 'إضافة عضو';
 
   @override
-  String get search_user_hint => 'مستخدم البحث...';
+  String get search_user_hint => 'مستخدم البحث';
 
   @override
   String get profile_edit => 'تحرير الملف الشخصي';
@@ -3203,7 +3209,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get chat_tab_groups => 'المجموعات';
 
   @override
-  String get chat_waiting_for_network => 'في انتظار الشبكة...';
+  String get chat_waiting_for_network => 'في انتظار الشبكة';
 
   @override
   String get chat_direct_chat => 'الدردشة المباشرة';
@@ -3232,7 +3238,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get message_media => 'وسائط';
 
   @override
-  String get chat_loading => 'جارٍ تحميل الدردشة...';
+  String get chat_loading => 'جارٍ تحميل الدردشة';
 
   @override
   String get chat_blocked_message => 'لا يمكنك إرسال رسائل إلى هذا الشخص.';
@@ -3269,10 +3275,10 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get group_name => 'اسم المجموعة';
 
   @override
-  String get group_name_hint => 'قم بتسمية مجموعتك...';
+  String get group_name_hint => 'قم بتسمية مجموعتك';
 
   @override
-  String get group_description_hint => 'أدخل الوصف...';
+  String get group_description_hint => 'أدخل الوصف';
 
   @override
   String get group_about => 'عن';
@@ -3581,10 +3587,10 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get general_error_retry => 'يرجى المحاولة مرة أخرى.';
 
   @override
-  String get chat_archived_title => 'الدردشات المؤرشفة...';
+  String get chat_archived_title => 'الدردشات المؤرشفة';
 
   @override
-  String get chat_archived_empty => 'لا توجد دردشة أرشيفية...';
+  String get chat_archived_empty => 'لا توجد دردشة أرشيفية';
 
   @override
   String get chat_add_member_title => 'إضافة عضو';
@@ -3593,7 +3599,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get chat_add_member_button => 'إضافة عضو';
 
   @override
-  String get chat_banned_users_empty => 'لا شيء هنا لنرى بعد...';
+  String get chat_banned_users_empty => 'لا شيء هنا لنرى بعد';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3896,4 +3902,10 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
 
   @override
   String get feed_empty_create_first_post => 'أنشئ منشورك الأول';
+
+  @override
+  String get search_posts_hint => 'بحث في المشاركات';
+
+  @override
+  String get search_adjust_hint => 'حاول تعديل بحثك';
 }

@@ -1,5 +1,4 @@
 {
-  "@@locale": "vi_VN",
   "community_title": "Cộng đồng",
   "@community_title": {
     "description": "Title for the homepage"
@@ -120,15 +119,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Tìm kiếm cộng đồng và người dùng...",
+  "global_search_hint": "Tìm kiếm cộng đồng và người dùng",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Tìm kiếm cộng đồng của tôi...",
+  "search_my_community_hint": "Tìm kiếm cộng đồng của tôi",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Không tìm thấy kết quả nào...",
+  "search_no_results": "Không tìm thấy kết quả nào",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -176,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "Chuyện gì đang xảy ra vậy...",
+  "post_create_hint": "Chuyện gì đang xảy ra vậy",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -224,7 +223,7 @@
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "Viết bình luận...",
+  "post_write_comment": "Viết bình luận",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -339,7 +338,7 @@
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
   },
-  "comment_create_hint": "Hãy nói điều gì đó tốt đẹp...",
+  "comment_create_hint": "Hãy nói điều gì đó tốt đẹp",
   "@comment_create_hint": {
     "description": "Hint text for comment input"
   },
@@ -469,11 +468,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Đặt tên cho cộng đồng của bạn...",
+  "community_name_hint": "Đặt tên cho cộng đồng của bạn",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Nhập mô tả...",
+  "community_description_hint": "Nhập mô tả",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -575,11 +574,11 @@
   "@message_send": {
     "description": "Label for send message button"
   },
-  "message_typing": "đang gõ...",
+  "message_typing": "đang gõ",
   "@message_typing": {
     "description": "Label for typing indicator"
   },
-  "message_placeholder": "Nhập tin nhắn...",
+  "message_placeholder": "Nhập tin nhắn",
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
@@ -695,7 +694,7 @@
   "@general_add": {
     "description": "Label for add button"
   },
-  "general_loading": "Đang tải...",
+  "general_loading": "Đang tải",
   "@general_loading": {
     "description": "Label for loading states"
   },
@@ -1025,7 +1024,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Tìm kiếm người dùng...",
+  "search_user_hint": "Tìm kiếm người dùng",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1518,7 +1517,7 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "Đang chờ mạng...",
+  "chat_waiting_for_network": "Đang chờ mạng",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
@@ -1559,7 +1558,7 @@
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "Đang tải cuộc trò chuyện...",
+  "chat_loading": "Đang tải cuộc trò chuyện",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1607,11 +1606,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Đặt tên cho nhóm của bạn...",
+  "group_name_hint": "Đặt tên cho nhóm của bạn",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Nhập mô tả...",
+  "group_description_hint": "Nhập mô tả",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,11 +1988,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "Cuộc trò chuyện đã lưu trữ...",
+  "chat_archived_title": "Cuộc trò chuyện đã lưu trữ",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "Không có cuộc trò chuyện lưu trữ...",
+  "chat_archived_empty": "Không có cuộc trò chuyện lưu trữ",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,7 +2004,7 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "Chưa có gì ở đây để xem...",
+  "chat_banned_users_empty": "Chưa có gì ở đây để xem",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2399,5 +2398,13 @@
   "empty_explore_description_no_communities": "Hãy là người đầu tiên tạo ra một cộng đồng",
   "@empty_explore_description_no_communities": {
     "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Tìm kiếm bài viết",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Hãy thử điều chỉnh tìm kiếm của bạn",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

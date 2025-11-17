@@ -113,13 +113,13 @@ class AppLocalizationsVi extends AppLocalizations {
       'Tất cả các thành viên sẽ bị loại khỏi nhóm. Tất cả các bài đăng, tin nhắn, phản ứng và phương tiện được chia sẻ trong nhóm sẽ bị xóa. Điều này không thể hoàn tác được.';
 
   @override
-  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng...';
+  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng';
 
   @override
-  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi...';
+  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi';
 
   @override
-  String get search_no_results => 'Không tìm thấy kết quả nào...';
+  String get search_no_results => 'Không tìm thấy kết quả nào';
 
   @override
   String get title_communities => 'Cộng đồng';
@@ -155,7 +155,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get post_edit => 'Chỉnh sửa bài đăng';
 
   @override
-  String get post_create_hint => 'Chuyện gì đang xảy ra vậy...';
+  String get post_create_hint => 'Chuyện gì đang xảy ra vậy';
 
   @override
   String get post_delete => 'Xóa bài đăng';
@@ -193,7 +193,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bài viết sẽ bị xóa vĩnh viễn. Nó không thể được hoàn tác.';
 
   @override
-  String get post_write_comment => 'Viết bình luận...';
+  String get post_write_comment => 'Viết bình luận';
 
   @override
   String get poll_duration => 'Thời lượng thăm dò ý kiến';
@@ -292,7 +292,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get poll_question_hint => 'Câu hỏi thăm dò ý kiến ​​của bạn là gì?';
 
   @override
-  String get comment_create_hint => 'Hãy nói điều gì đó tốt đẹp...';
+  String get comment_create_hint => 'Hãy nói điều gì đó tốt đẹp';
 
   @override
   String get comment_reply => 'Hồi đáp';
@@ -398,10 +398,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get community_name => 'Tên cộng đồng';
 
   @override
-  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn...';
+  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn';
 
   @override
-  String get community_description_hint => 'Nhập mô tả...';
+  String get community_description_hint => 'Nhập mô tả';
 
   @override
   String get community_edit => 'Chỉnh sửa cộng đồng';
@@ -492,10 +492,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get message_send => 'Gửi';
 
   @override
-  String get message_typing => 'đang gõ...';
+  String get message_typing => 'đang gõ';
 
   @override
-  String get message_placeholder => 'Nhập tin nhắn...';
+  String get message_placeholder => 'Nhập tin nhắn';
 
   @override
   String get settings_title => 'Cài đặt';
@@ -593,7 +593,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get general_add => 'Thêm vào';
 
   @override
-  String get general_loading => 'Đang tải...';
+  String get general_loading => 'Đang tải';
 
   @override
   String get general_leave => 'Rời khỏi';
@@ -868,7 +868,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get member_add => 'Thêm thành viên';
 
   @override
-  String get search_user_hint => 'Tìm kiếm người dùng...';
+  String get search_user_hint => 'Tìm kiếm người dùng';
 
   @override
   String get profile_edit => 'Chỉnh sửa hồ sơ';
@@ -1269,7 +1269,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chat_tab_groups => 'Nhóm';
 
   @override
-  String get chat_waiting_for_network => 'Đang chờ mạng...';
+  String get chat_waiting_for_network => 'Đang chờ mạng';
 
   @override
   String get chat_direct_chat => 'Trò chuyện trực tiếp';
@@ -1298,7 +1298,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get message_media => 'Phương tiện truyền thông';
 
   @override
-  String get chat_loading => 'Đang tải cuộc trò chuyện...';
+  String get chat_loading => 'Đang tải cuộc trò chuyện';
 
   @override
   String get chat_blocked_message =>
@@ -1336,10 +1336,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get group_name => 'Tên nhóm';
 
   @override
-  String get group_name_hint => 'Đặt tên cho nhóm của bạn...';
+  String get group_name_hint => 'Đặt tên cho nhóm của bạn';
 
   @override
-  String get group_description_hint => 'Nhập mô tả...';
+  String get group_description_hint => 'Nhập mô tả';
 
   @override
   String get group_about => 'Về';
@@ -1649,10 +1649,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get general_error_retry => 'Vui lòng thử lại.';
 
   @override
-  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ...';
+  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ';
 
   @override
-  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ...';
+  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ';
 
   @override
   String get chat_add_member_title => 'Thêm thành viên';
@@ -1661,7 +1661,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chat_add_member_button => 'Thêm thành viên';
 
   @override
-  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem...';
+  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1968,6 +1968,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Tạo bài đăng đầu tiên của bạn';
+
+  @override
+  String get search_posts_hint => 'Tìm kiếm bài viết';
+
+  @override
+  String get search_adjust_hint => 'Hãy thử điều chỉnh tìm kiếm của bạn';
 }
 
 /// The translations for Vietnamese, as used in Viet Nam (`vi_VN`).
@@ -2079,13 +2085,13 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Tất cả các thành viên sẽ bị loại khỏi nhóm. Tất cả các bài đăng, tin nhắn, phản ứng và phương tiện được chia sẻ trong nhóm sẽ bị xóa. Điều này không thể hoàn tác được.';
 
   @override
-  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng...';
+  String get global_search_hint => 'Tìm kiếm cộng đồng và người dùng';
 
   @override
-  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi...';
+  String get search_my_community_hint => 'Tìm kiếm cộng đồng của tôi';
 
   @override
-  String get search_no_results => 'Không tìm thấy kết quả nào...';
+  String get search_no_results => 'Không tìm thấy kết quả nào';
 
   @override
   String get title_communities => 'Cộng đồng';
@@ -2121,7 +2127,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get post_edit => 'Chỉnh sửa bài đăng';
 
   @override
-  String get post_create_hint => 'Chuyện gì đang xảy ra vậy...';
+  String get post_create_hint => 'Chuyện gì đang xảy ra vậy';
 
   @override
   String get post_delete => 'Xóa bài đăng';
@@ -2159,7 +2165,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Bài viết sẽ bị xóa vĩnh viễn. Nó không thể được hoàn tác.';
 
   @override
-  String get post_write_comment => 'Viết bình luận...';
+  String get post_write_comment => 'Viết bình luận';
 
   @override
   String get poll_duration => 'Thời lượng thăm dò ý kiến';
@@ -2258,7 +2264,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get poll_question_hint => 'Câu hỏi thăm dò ý kiến ​​của bạn là gì?';
 
   @override
-  String get comment_create_hint => 'Hãy nói điều gì đó tốt đẹp...';
+  String get comment_create_hint => 'Hãy nói điều gì đó tốt đẹp';
 
   @override
   String get comment_reply => 'Hồi đáp';
@@ -2364,10 +2370,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get community_name => 'Tên cộng đồng';
 
   @override
-  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn...';
+  String get community_name_hint => 'Đặt tên cho cộng đồng của bạn';
 
   @override
-  String get community_description_hint => 'Nhập mô tả...';
+  String get community_description_hint => 'Nhập mô tả';
 
   @override
   String get community_edit => 'Chỉnh sửa cộng đồng';
@@ -2458,10 +2464,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get message_send => 'Gửi';
 
   @override
-  String get message_typing => 'đang gõ...';
+  String get message_typing => 'đang gõ';
 
   @override
-  String get message_placeholder => 'Nhập tin nhắn...';
+  String get message_placeholder => 'Nhập tin nhắn';
 
   @override
   String get settings_title => 'Cài đặt';
@@ -2559,7 +2565,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get general_add => 'Thêm vào';
 
   @override
-  String get general_loading => 'Đang tải...';
+  String get general_loading => 'Đang tải';
 
   @override
   String get general_leave => 'Rời khỏi';
@@ -2834,7 +2840,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get member_add => 'Thêm thành viên';
 
   @override
-  String get search_user_hint => 'Tìm kiếm người dùng...';
+  String get search_user_hint => 'Tìm kiếm người dùng';
 
   @override
   String get profile_edit => 'Chỉnh sửa hồ sơ';
@@ -3235,7 +3241,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get chat_tab_groups => 'Nhóm';
 
   @override
-  String get chat_waiting_for_network => 'Đang chờ mạng...';
+  String get chat_waiting_for_network => 'Đang chờ mạng';
 
   @override
   String get chat_direct_chat => 'Trò chuyện trực tiếp';
@@ -3264,7 +3270,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get message_media => 'Phương tiện truyền thông';
 
   @override
-  String get chat_loading => 'Đang tải cuộc trò chuyện...';
+  String get chat_loading => 'Đang tải cuộc trò chuyện';
 
   @override
   String get chat_blocked_message =>
@@ -3302,10 +3308,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get group_name => 'Tên nhóm';
 
   @override
-  String get group_name_hint => 'Đặt tên cho nhóm của bạn...';
+  String get group_name_hint => 'Đặt tên cho nhóm của bạn';
 
   @override
-  String get group_description_hint => 'Nhập mô tả...';
+  String get group_description_hint => 'Nhập mô tả';
 
   @override
   String get group_about => 'Về';
@@ -3615,10 +3621,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get general_error_retry => 'Vui lòng thử lại.';
 
   @override
-  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ...';
+  String get chat_archived_title => 'Cuộc trò chuyện đã lưu trữ';
 
   @override
-  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ...';
+  String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ';
 
   @override
   String get chat_add_member_title => 'Thêm thành viên';
@@ -3627,7 +3633,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get chat_add_member_button => 'Thêm thành viên';
 
   @override
-  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem...';
+  String get chat_banned_users_empty => 'Chưa có gì ở đây để xem';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3934,4 +3940,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
 
   @override
   String get feed_empty_create_first_post => 'Tạo bài đăng đầu tiên của bạn';
+
+  @override
+  String get search_posts_hint => 'Tìm kiếm bài viết';
+
+  @override
+  String get search_adjust_hint => 'Hãy thử điều chỉnh tìm kiếm của bạn';
 }

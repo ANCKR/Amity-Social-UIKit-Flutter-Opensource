@@ -113,13 +113,13 @@ class AppLocalizationsTr extends AppLocalizations {
       'Gruptaki tüm üyeler çıkarılacaktır. Grupta paylaşılan tüm gönderiler, mesajlar, tepkiler ve medyalar silinecek. Bu geri alınamaz.';
 
   @override
-  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın...';
+  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın';
 
   @override
-  String get search_my_community_hint => 'Topluluğumda ara...';
+  String get search_my_community_hint => 'Topluluğumda ara';
 
   @override
-  String get search_no_results => 'Sonuç bulunamadı...';
+  String get search_no_results => 'Sonuç bulunamadı';
 
   @override
   String get title_communities => 'Topluluklar';
@@ -155,7 +155,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get post_edit => 'Gönderiyi Düzenle';
 
   @override
-  String get post_create_hint => 'Neler oluyor...';
+  String get post_create_hint => 'Neler oluyor';
 
   @override
   String get post_delete => 'Gönderiyi Sil';
@@ -193,7 +193,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Gönderi kalıcı olarak silinecek. Bu işlem geri alınamaz.';
 
   @override
-  String get post_write_comment => 'Bir yorum yazın...';
+  String get post_write_comment => 'Bir yorum yazın';
 
   @override
   String get poll_duration => 'Anket süresi';
@@ -291,7 +291,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get poll_question_hint => 'Anket sorunuz nedir?';
 
   @override
-  String get comment_create_hint => 'Güzel bir şey söyle...';
+  String get comment_create_hint => 'Güzel bir şey söyle';
 
   @override
   String get comment_reply => 'Cevap vermek';
@@ -398,10 +398,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get community_name => 'Topluluk adı';
 
   @override
-  String get community_name_hint => 'Topluluğunuza ad verin...';
+  String get community_name_hint => 'Topluluğunuza ad verin';
 
   @override
-  String get community_description_hint => 'Açıklamayı girin...';
+  String get community_description_hint => 'Açıklamayı girin';
 
   @override
   String get community_edit => 'Topluluğu Düzenle';
@@ -492,10 +492,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get message_send => 'Göndermek';
 
   @override
-  String get message_typing => 'yazıyor...';
+  String get message_typing => 'yazıyor';
 
   @override
-  String get message_placeholder => 'Bir mesaj yazın...';
+  String get message_placeholder => 'Bir mesaj yazın';
 
   @override
   String get settings_title => 'Ayarlar';
@@ -593,7 +593,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get general_add => 'Eklemek';
 
   @override
-  String get general_loading => 'Yükleniyor...';
+  String get general_loading => 'Yükleniyor';
 
   @override
   String get general_leave => 'Ayrılmak';
@@ -868,7 +868,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get member_add => 'Üye ekle';
 
   @override
-  String get search_user_hint => 'Kullanıcı ara...';
+  String get search_user_hint => 'Kullanıcı ara';
 
   @override
   String get profile_edit => 'Profili düzenle';
@@ -1266,7 +1266,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get chat_tab_groups => 'Gruplar';
 
   @override
-  String get chat_waiting_for_network => 'Ağ bekleniyor...';
+  String get chat_waiting_for_network => 'Ağ bekleniyor';
 
   @override
   String get chat_direct_chat => 'Doğrudan sohbet';
@@ -1295,7 +1295,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get message_media => 'Medya';
 
   @override
-  String get chat_loading => 'Sohbet yükleniyor...';
+  String get chat_loading => 'Sohbet yükleniyor';
 
   @override
   String get chat_blocked_message => 'Bu kişiye mesaj gönderemezsiniz.';
@@ -1333,10 +1333,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get group_name => 'Grup adı';
 
   @override
-  String get group_name_hint => 'Grubunuza ad verin...';
+  String get group_name_hint => 'Grubunuza ad verin';
 
   @override
-  String get group_description_hint => 'Açıklamayı girin...';
+  String get group_description_hint => 'Açıklamayı girin';
 
   @override
   String get group_about => 'Hakkında';
@@ -1645,10 +1645,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get general_error_retry => 'Lütfen tekrar deneyin.';
 
   @override
-  String get chat_archived_title => 'Arşivlenmiş sohbetler...';
+  String get chat_archived_title => 'Arşivlenmiş sohbetler';
 
   @override
-  String get chat_archived_empty => 'Arşiv sohbeti yok...';
+  String get chat_archived_empty => 'Arşiv sohbeti yok';
 
   @override
   String get chat_add_member_title => 'Üye Ekle';
@@ -1657,7 +1657,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get chat_add_member_button => 'Üye Ekle';
 
   @override
-  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok...';
+  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1965,6 +1965,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'İlk gönderinizi oluşturun';
+
+  @override
+  String get search_posts_hint => 'Gönderilerde ara';
+
+  @override
+  String get search_adjust_hint => 'Aramanızı ayarlamayı deneyin';
 }
 
 /// The translations for Turkish, as used in Turkey (`tr_TR`).
@@ -2076,13 +2082,13 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Gruptaki tüm üyeler çıkarılacaktır. Grupta paylaşılan tüm gönderiler, mesajlar, tepkiler ve medyalar silinecek. Bu geri alınamaz.';
 
   @override
-  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın...';
+  String get global_search_hint => 'Topluluğu ve kullanıcıyı arayın';
 
   @override
-  String get search_my_community_hint => 'Topluluğumda ara...';
+  String get search_my_community_hint => 'Topluluğumda ara';
 
   @override
-  String get search_no_results => 'Sonuç bulunamadı...';
+  String get search_no_results => 'Sonuç bulunamadı';
 
   @override
   String get title_communities => 'Topluluklar';
@@ -2118,7 +2124,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get post_edit => 'Gönderiyi Düzenle';
 
   @override
-  String get post_create_hint => 'Neler oluyor...';
+  String get post_create_hint => 'Neler oluyor';
 
   @override
   String get post_delete => 'Gönderiyi Sil';
@@ -2156,7 +2162,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Gönderi kalıcı olarak silinecek. Bu işlem geri alınamaz.';
 
   @override
-  String get post_write_comment => 'Bir yorum yazın...';
+  String get post_write_comment => 'Bir yorum yazın';
 
   @override
   String get poll_duration => 'Anket süresi';
@@ -2254,7 +2260,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get poll_question_hint => 'Anket sorunuz nedir?';
 
   @override
-  String get comment_create_hint => 'Güzel bir şey söyle...';
+  String get comment_create_hint => 'Güzel bir şey söyle';
 
   @override
   String get comment_reply => 'Cevap vermek';
@@ -2361,10 +2367,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get community_name => 'Topluluk adı';
 
   @override
-  String get community_name_hint => 'Topluluğunuza ad verin...';
+  String get community_name_hint => 'Topluluğunuza ad verin';
 
   @override
-  String get community_description_hint => 'Açıklamayı girin...';
+  String get community_description_hint => 'Açıklamayı girin';
 
   @override
   String get community_edit => 'Topluluğu Düzenle';
@@ -2455,10 +2461,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get message_send => 'Göndermek';
 
   @override
-  String get message_typing => 'yazıyor...';
+  String get message_typing => 'yazıyor';
 
   @override
-  String get message_placeholder => 'Bir mesaj yazın...';
+  String get message_placeholder => 'Bir mesaj yazın';
 
   @override
   String get settings_title => 'Ayarlar';
@@ -2556,7 +2562,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get general_add => 'Eklemek';
 
   @override
-  String get general_loading => 'Yükleniyor...';
+  String get general_loading => 'Yükleniyor';
 
   @override
   String get general_leave => 'Ayrılmak';
@@ -2831,7 +2837,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get member_add => 'Üye ekle';
 
   @override
-  String get search_user_hint => 'Kullanıcı ara...';
+  String get search_user_hint => 'Kullanıcı ara';
 
   @override
   String get profile_edit => 'Profili düzenle';
@@ -3229,7 +3235,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get chat_tab_groups => 'Gruplar';
 
   @override
-  String get chat_waiting_for_network => 'Ağ bekleniyor...';
+  String get chat_waiting_for_network => 'Ağ bekleniyor';
 
   @override
   String get chat_direct_chat => 'Doğrudan sohbet';
@@ -3258,7 +3264,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get message_media => 'Medya';
 
   @override
-  String get chat_loading => 'Sohbet yükleniyor...';
+  String get chat_loading => 'Sohbet yükleniyor';
 
   @override
   String get chat_blocked_message => 'Bu kişiye mesaj gönderemezsiniz.';
@@ -3296,10 +3302,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get group_name => 'Grup adı';
 
   @override
-  String get group_name_hint => 'Grubunuza ad verin...';
+  String get group_name_hint => 'Grubunuza ad verin';
 
   @override
-  String get group_description_hint => 'Açıklamayı girin...';
+  String get group_description_hint => 'Açıklamayı girin';
 
   @override
   String get group_about => 'Hakkında';
@@ -3608,10 +3614,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get general_error_retry => 'Lütfen tekrar deneyin.';
 
   @override
-  String get chat_archived_title => 'Arşivlenmiş sohbetler...';
+  String get chat_archived_title => 'Arşivlenmiş sohbetler';
 
   @override
-  String get chat_archived_empty => 'Arşiv sohbeti yok...';
+  String get chat_archived_empty => 'Arşiv sohbeti yok';
 
   @override
   String get chat_add_member_title => 'Üye Ekle';
@@ -3620,7 +3626,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get chat_add_member_button => 'Üye Ekle';
 
   @override
-  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok...';
+  String get chat_banned_users_empty => 'Burada henüz görülecek bir şey yok';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3928,4 +3934,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
 
   @override
   String get feed_empty_create_first_post => 'İlk gönderinizi oluşturun';
+
+  @override
+  String get search_posts_hint => 'Gönderilerde ara';
+
+  @override
+  String get search_adjust_hint => 'Aramanızı ayarlamayı deneyin';
 }

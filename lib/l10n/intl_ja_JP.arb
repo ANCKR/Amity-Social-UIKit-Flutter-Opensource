@@ -1,5 +1,4 @@
 {
-  "@@locale": "ja_JP",
   "community_title": "コミュニティ",
   "@community_title": {
     "description": "Title for the homepage"
@@ -120,15 +119,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "コミュニティとユーザーを検索する...",
+  "global_search_hint": "コミュニティとユーザーを検索する",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "私のコミュニティを検索...",
+  "search_my_community_hint": "私のコミュニティを検索",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "結果が見つかりませんでした...",
+  "search_no_results": "結果が見つかりませんでした",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -176,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "どうしたの...",
+  "post_create_hint": "どうしたの",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -224,7 +223,7 @@
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "コメントを書いてください...",
+  "post_write_comment": "コメントを書いてください",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -339,7 +338,7 @@
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
   },
-  "comment_create_hint": "いいこと言ってよ…",
+  "comment_create_hint": "いいこと言ってよ",
   "@comment_create_hint": {
     "description": "Hint text for comment input"
   },
@@ -469,11 +468,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "コミュニティに名前を付けます...",
+  "community_name_hint": "コミュニティに名前を付けます",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "説明を入力してください...",
+  "community_description_hint": "説明を入力してください",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -575,11 +574,11 @@
   "@message_send": {
     "description": "Label for send message button"
   },
-  "message_typing": "入力中です...",
+  "message_typing": "入力中です",
   "@message_typing": {
     "description": "Label for typing indicator"
   },
-  "message_placeholder": "メッセージを入力してください...",
+  "message_placeholder": "メッセージを入力してください",
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
@@ -695,7 +694,7 @@
   "@general_add": {
     "description": "Label for add button"
   },
-  "general_loading": "読み込み中...",
+  "general_loading": "読み込み中",
   "@general_loading": {
     "description": "Label for loading states"
   },
@@ -1518,7 +1517,7 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "ネットワークを待っています...",
+  "chat_waiting_for_network": "ネットワークを待っています",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
@@ -1559,7 +1558,7 @@
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "チャットを読み込み中...",
+  "chat_loading": "チャットを読み込み中",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1607,11 +1606,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "グループに名前を付けます...",
+  "group_name_hint": "グループに名前を付けます",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "説明を入力してください...",
+  "group_description_hint": "説明を入力してください",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -1989,11 +1988,11 @@
   "@general_error_retry": {
     "description": "Translation for: Please try again."
   },
-  "chat_archived_title": "アーカイブされたチャット...",
+  "chat_archived_title": "アーカイブされたチャット",
   "@chat_archived_title": {
     "description": "Translation for: Archived chats"
   },
-  "chat_archived_empty": "アーカイブチャットはありません...",
+  "chat_archived_empty": "アーカイブチャットはありません",
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
@@ -2005,7 +2004,7 @@
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
-  "chat_banned_users_empty": "ここにはまだ見るべきものはありません...",
+  "chat_banned_users_empty": "ここにはまだ見るべきものはありません",
   "@chat_banned_users_empty": {
     "description": "Translation for: Nothing here to see yet"
   },
@@ -2399,5 +2398,13 @@
   "story_unsaved_changes_message": "キャンセルしてもよろしいですか?変更は保存されません。",
   "@story_unsaved_changes_message": {
     "description": "Warning message for unsaved changes in story"
+  },
+  "search_posts_hint": "投稿の検索",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "検索を調整してみてください",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

@@ -113,13 +113,13 @@ class AppLocalizationsId extends AppLocalizations {
       'Semua anggota akan dikeluarkan dari grup. Semua postingan, pesan, reaksi, dan media yang dibagikan di grup akan dihapus. Hal ini tidak dapat dibatalkan.';
 
   @override
-  String get global_search_hint => 'Komunitas pencarian dan pengguna...';
+  String get global_search_hint => 'Komunitas pencarian dan pengguna';
 
   @override
-  String get search_my_community_hint => 'Telusuri komunitas saya...';
+  String get search_my_community_hint => 'Telusuri komunitas saya';
 
   @override
-  String get search_no_results => 'Tidak ada hasil yang ditemukan...';
+  String get search_no_results => 'Tidak ada hasil yang ditemukan';
 
   @override
   String get title_communities => 'Komunitas';
@@ -155,7 +155,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get post_edit => 'Sunting Posting';
 
   @override
-  String get post_create_hint => 'Apa yang terjadi...';
+  String get post_create_hint => 'Apa yang terjadi';
 
   @override
   String get post_delete => 'Hapus Postingan';
@@ -194,7 +194,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Postingan tersebut akan dihapus secara permanen. Hal ini tidak dapat dibatalkan.';
 
   @override
-  String get post_write_comment => 'Tulis komentar...';
+  String get post_write_comment => 'Tulis komentar';
 
   @override
   String get poll_duration => 'Durasi jajak pendapat';
@@ -293,7 +293,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get poll_question_hint => 'Apa pertanyaan jajak pendapat Anda?';
 
   @override
-  String get comment_create_hint => 'Katakan sesuatu yang baik...';
+  String get comment_create_hint => 'Katakan sesuatu yang baik';
 
   @override
   String get comment_reply => 'Membalas';
@@ -399,10 +399,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get community_name => 'Nama komunitas';
 
   @override
-  String get community_name_hint => 'Beri nama komunitas Anda...';
+  String get community_name_hint => 'Beri nama komunitas Anda';
 
   @override
-  String get community_description_hint => 'Masukkan deskripsi...';
+  String get community_description_hint => 'Masukkan deskripsi';
 
   @override
   String get community_edit => 'Sunting Komunitas';
@@ -493,10 +493,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get message_send => 'Mengirim';
 
   @override
-  String get message_typing => 'sedang mengetik...';
+  String get message_typing => 'sedang mengetik';
 
   @override
-  String get message_placeholder => 'Ketik pesan...';
+  String get message_placeholder => 'Ketik pesan';
 
   @override
   String get settings_title => 'Pengaturan';
@@ -594,7 +594,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get general_add => 'Menambahkan';
 
   @override
-  String get general_loading => 'Memuat...';
+  String get general_loading => 'Memuat';
 
   @override
   String get general_leave => 'Meninggalkan';
@@ -868,7 +868,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get member_add => 'Tambahkan anggota';
 
   @override
-  String get search_user_hint => 'Cari pengguna...';
+  String get search_user_hint => 'Cari pengguna';
 
   @override
   String get profile_edit => 'Sunting profil';
@@ -1268,7 +1268,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get chat_tab_groups => 'Grup';
 
   @override
-  String get chat_waiting_for_network => 'Menunggu jaringan...';
+  String get chat_waiting_for_network => 'Menunggu jaringan';
 
   @override
   String get chat_direct_chat => 'Obrolan langsung';
@@ -1297,7 +1297,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Memuat obrolan...';
+  String get chat_loading => 'Memuat obrolan';
 
   @override
   String get chat_blocked_message =>
@@ -1336,10 +1336,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get group_name => 'Nama grup';
 
   @override
-  String get group_name_hint => 'Beri nama grup Anda...';
+  String get group_name_hint => 'Beri nama grup Anda';
 
   @override
-  String get group_description_hint => 'Masukkan deskripsi...';
+  String get group_description_hint => 'Masukkan deskripsi';
 
   @override
   String get group_about => 'Tentang';
@@ -1649,10 +1649,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Tidak ada obrolan arsip...';
+  String get chat_archived_empty => 'Tidak ada obrolan arsip';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1661,8 +1661,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty =>
-      'Belum ada yang bisa dilihat di sini...';
+  String get chat_banned_users_empty => 'Belum ada yang bisa dilihat di sini';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1969,6 +1968,12 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Buat postingan pertama Anda';
+
+  @override
+  String get search_posts_hint => 'Cari postingan';
+
+  @override
+  String get search_adjust_hint => 'Coba sesuaikan pencarian Anda';
 }
 
 /// The translations for Indonesian, as used in Indonesia (`id_ID`).
@@ -2080,13 +2085,13 @@ class AppLocalizationsIdId extends AppLocalizationsId {
       'Semua anggota akan dikeluarkan dari grup. Semua postingan, pesan, reaksi, dan media yang dibagikan di grup akan dihapus. Hal ini tidak dapat dibatalkan.';
 
   @override
-  String get global_search_hint => 'Komunitas pencarian dan pengguna...';
+  String get global_search_hint => 'Komunitas pencarian dan pengguna';
 
   @override
-  String get search_my_community_hint => 'Telusuri komunitas saya...';
+  String get search_my_community_hint => 'Telusuri komunitas saya';
 
   @override
-  String get search_no_results => 'Tidak ada hasil yang ditemukan...';
+  String get search_no_results => 'Tidak ada hasil yang ditemukan';
 
   @override
   String get title_communities => 'Komunitas';
@@ -2122,7 +2127,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get post_edit => 'Sunting Posting';
 
   @override
-  String get post_create_hint => 'Apa yang terjadi...';
+  String get post_create_hint => 'Apa yang terjadi';
 
   @override
   String get post_delete => 'Hapus Postingan';
@@ -2161,7 +2166,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
       'Postingan tersebut akan dihapus secara permanen. Hal ini tidak dapat dibatalkan.';
 
   @override
-  String get post_write_comment => 'Tulis komentar...';
+  String get post_write_comment => 'Tulis komentar';
 
   @override
   String get poll_duration => 'Durasi jajak pendapat';
@@ -2260,7 +2265,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get poll_question_hint => 'Apa pertanyaan jajak pendapat Anda?';
 
   @override
-  String get comment_create_hint => 'Katakan sesuatu yang baik...';
+  String get comment_create_hint => 'Katakan sesuatu yang baik';
 
   @override
   String get comment_reply => 'Membalas';
@@ -2366,10 +2371,10 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get community_name => 'Nama komunitas';
 
   @override
-  String get community_name_hint => 'Beri nama komunitas Anda...';
+  String get community_name_hint => 'Beri nama komunitas Anda';
 
   @override
-  String get community_description_hint => 'Masukkan deskripsi...';
+  String get community_description_hint => 'Masukkan deskripsi';
 
   @override
   String get community_edit => 'Sunting Komunitas';
@@ -2460,10 +2465,10 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get message_send => 'Mengirim';
 
   @override
-  String get message_typing => 'sedang mengetik...';
+  String get message_typing => 'sedang mengetik';
 
   @override
-  String get message_placeholder => 'Ketik pesan...';
+  String get message_placeholder => 'Ketik pesan';
 
   @override
   String get settings_title => 'Pengaturan';
@@ -2561,7 +2566,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get general_add => 'Menambahkan';
 
   @override
-  String get general_loading => 'Memuat...';
+  String get general_loading => 'Memuat';
 
   @override
   String get general_leave => 'Meninggalkan';
@@ -2835,7 +2840,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get member_add => 'Tambahkan anggota';
 
   @override
-  String get search_user_hint => 'Cari pengguna...';
+  String get search_user_hint => 'Cari pengguna';
 
   @override
   String get profile_edit => 'Sunting profil';
@@ -3235,7 +3240,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get chat_tab_groups => 'Grup';
 
   @override
-  String get chat_waiting_for_network => 'Menunggu jaringan...';
+  String get chat_waiting_for_network => 'Menunggu jaringan';
 
   @override
   String get chat_direct_chat => 'Obrolan langsung';
@@ -3264,7 +3269,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Memuat obrolan...';
+  String get chat_loading => 'Memuat obrolan';
 
   @override
   String get chat_blocked_message =>
@@ -3303,10 +3308,10 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get group_name => 'Nama grup';
 
   @override
-  String get group_name_hint => 'Beri nama grup Anda...';
+  String get group_name_hint => 'Beri nama grup Anda';
 
   @override
-  String get group_description_hint => 'Masukkan deskripsi...';
+  String get group_description_hint => 'Masukkan deskripsi';
 
   @override
   String get group_about => 'Tentang';
@@ -3616,10 +3621,10 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get general_error_retry => 'Silakan coba lagi.';
 
   @override
-  String get chat_archived_title => 'Obrolan yang diarsipkan...';
+  String get chat_archived_title => 'Obrolan yang diarsipkan';
 
   @override
-  String get chat_archived_empty => 'Tidak ada obrolan arsip...';
+  String get chat_archived_empty => 'Tidak ada obrolan arsip';
 
   @override
   String get chat_add_member_title => 'Tambahkan Anggota';
@@ -3628,8 +3633,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
   String get chat_add_member_button => 'Tambahkan Anggota';
 
   @override
-  String get chat_banned_users_empty =>
-      'Belum ada yang bisa dilihat di sini...';
+  String get chat_banned_users_empty => 'Belum ada yang bisa dilihat di sini';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3936,4 +3940,10 @@ class AppLocalizationsIdId extends AppLocalizationsId {
 
   @override
   String get feed_empty_create_first_post => 'Buat postingan pertama Anda';
+
+  @override
+  String get search_posts_hint => 'Cari postingan';
+
+  @override
+  String get search_adjust_hint => 'Coba sesuaikan pencarian Anda';
 }

@@ -1,5 +1,4 @@
 {
-  "@@locale": "pl",
   "community_title": "Wspólnota",
   "@community_title": {
     "description": "Title for the homepage"
@@ -120,15 +119,15 @@
   "@group_close_description": {
     "description": "Confirmation message for closing a group"
   },
-  "global_search_hint": "Przeszukaj społeczność i użytkownika...",
+  "global_search_hint": "Przeszukaj społeczność i użytkownika",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Przeszukaj moją społeczność...",
+  "search_my_community_hint": "Przeszukaj moją społeczność",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
-  "search_no_results": "Nie znaleziono żadnych wyników...",
+  "search_no_results": "Nie znaleziono żadnych wyników",
   "@search_no_results": {
     "description": "Message displayed when no search results are found"
   },
@@ -176,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "Co się dzieje...",
+  "post_create_hint": "Co się dzieje",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -224,7 +223,7 @@
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "Napisz komentarz...",
+  "post_write_comment": "Napisz komentarz",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -339,7 +338,7 @@
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
   },
-  "comment_create_hint": "Powiedz coś miłego...",
+  "comment_create_hint": "Powiedz coś miłego",
   "@comment_create_hint": {
     "description": "Hint text for comment input"
   },
@@ -469,11 +468,11 @@
   "@community_name": {
     "description": "Label for community name"
   },
-  "community_name_hint": "Nazwij swoją społeczność...",
+  "community_name_hint": "Nazwij swoją społeczność",
   "@community_name_hint": {
     "description": "Hint text for community name input"
   },
-  "community_description_hint": "Wprowadź opis...",
+  "community_description_hint": "Wprowadź opis",
   "@community_description_hint": {
     "description": "Hint text for community description input"
   },
@@ -575,11 +574,11 @@
   "@message_send": {
     "description": "Label for send message button"
   },
-  "message_typing": "pisze...",
+  "message_typing": "pisze",
   "@message_typing": {
     "description": "Label for typing indicator"
   },
-  "message_placeholder": "Wpisz wiadomość...",
+  "message_placeholder": "Wpisz wiadomość",
   "@message_placeholder": {
     "description": "Placeholder for message input"
   },
@@ -695,7 +694,7 @@
   "@general_add": {
     "description": "Label for add button"
   },
-  "general_loading": "Załadunek...",
+  "general_loading": "Załadunek",
   "@general_loading": {
     "description": "Label for loading states"
   },
@@ -1025,7 +1024,7 @@
   "@member_add": {
     "description": "Button text and title for adding members"
   },
-  "search_user_hint": "Wyszukaj użytkownika...",
+  "search_user_hint": "Wyszukaj użytkownika",
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
@@ -1518,7 +1517,7 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "Czekam na sieć...",
+  "chat_waiting_for_network": "Czekam na sieć",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
@@ -1559,7 +1558,7 @@
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "Ładowanie czatu...",
+  "chat_loading": "Ładowanie czatu",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1607,11 +1606,11 @@
   "@group_name": {
     "description": "Label for group name"
   },
-  "group_name_hint": "Nazwij swoją grupę...",
+  "group_name_hint": "Nazwij swoją grupę",
   "@group_name_hint": {
     "description": "Hint text for group name input"
   },
-  "group_description_hint": "Wprowadź opis...",
+  "group_description_hint": "Wprowadź opis",
   "@group_description_hint": {
     "description": "Hint text for group description input"
   },
@@ -2292,7 +2291,7 @@
   "@empty_search_description": {
     "description": "Description for empty search results"
   },
-  "chat_archived_empty": "Brak czatu archiwalnego...",
+  "chat_archived_empty": "Brak czatu archiwalnego",
   "@chat_archived_empty": {
     "description": "Empty state for archived chats"
   },
@@ -2324,7 +2323,7 @@
   "@chat_permission_moderators_description": {
     "description": "Description for moderators-only permission"
   },
-  "chat_banned_users_empty": "Nie ma tu jeszcze nic do zobaczenia...",
+  "chat_banned_users_empty": "Nie ma tu jeszcze nic do zobaczenia",
   "@chat_banned_users_empty": {
     "description": "Empty state for banned users"
   },
@@ -2348,7 +2347,7 @@
   "@chat_notification_subscribe_description": {
     "description": "Description for subscribe mode"
   },
-  "chat_archived_title": "Zarchiwizowane czaty...",
+  "chat_archived_title": "Zarchiwizowane czaty",
   "@chat_archived_title": {
     "description": "Title for archived chats page"
   },
@@ -2399,5 +2398,13 @@
   "empty_explore_description_no_communities": "Bądź pierwszą osobą, która stworzy społeczność",
   "@empty_explore_description_no_communities": {
     "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Wyszukaj posty",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Spróbuj dostosować wyszukiwanie",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

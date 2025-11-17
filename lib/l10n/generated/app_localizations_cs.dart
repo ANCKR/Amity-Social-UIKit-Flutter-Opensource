@@ -113,13 +113,13 @@ class AppLocalizationsCs extends AppLocalizations {
       'Všichni členové budou odebráni ze skupiny. Všechny příspěvky, zprávy, reakce a média sdílená ve skupině budou smazány. Toto nelze vrátit zpět.';
 
   @override
-  String get global_search_hint => 'Hledat komunitu a uživatele...';
+  String get global_search_hint => 'Hledat komunitu a uživatele';
 
   @override
-  String get search_my_community_hint => 'Prohledejte moji komunitu...';
+  String get search_my_community_hint => 'Prohledejte moji komunitu';
 
   @override
-  String get search_no_results => 'Nebyly nalezeny žádné výsledky...';
+  String get search_no_results => 'Nebyly nalezeny žádné výsledky';
 
   @override
   String get title_communities => 'společenství';
@@ -155,7 +155,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get post_edit => 'Upravit příspěvek';
 
   @override
-  String get post_create_hint => 'Co se děje...';
+  String get post_create_hint => 'Co se děje';
 
   @override
   String get post_delete => 'Smazat příspěvek';
@@ -193,7 +193,7 @@ class AppLocalizationsCs extends AppLocalizations {
       'Příspěvek bude trvale smazán. Nelze to vrátit zpět.';
 
   @override
-  String get post_write_comment => 'Napište komentář...';
+  String get post_write_comment => 'Napište komentář';
 
   @override
   String get poll_duration => 'Doba trvání ankety';
@@ -292,7 +292,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get poll_question_hint => 'Jaká je vaše anketní otázka?';
 
   @override
-  String get comment_create_hint => 'Řekni něco hezkého...';
+  String get comment_create_hint => 'Řekni něco hezkého';
 
   @override
   String get comment_reply => 'Odpověď';
@@ -398,10 +398,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get community_name => 'Název komunity';
 
   @override
-  String get community_name_hint => 'Pojmenujte svou komunitu...';
+  String get community_name_hint => 'Pojmenujte svou komunitu';
 
   @override
-  String get community_description_hint => 'Zadejte popis...';
+  String get community_description_hint => 'Zadejte popis';
 
   @override
   String get community_edit => 'Upravit komunitu';
@@ -492,10 +492,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get message_send => 'Poslat';
 
   @override
-  String get message_typing => 'píše...';
+  String get message_typing => 'píše';
 
   @override
-  String get message_placeholder => 'Napište zprávu...';
+  String get message_placeholder => 'Napište zprávu';
 
   @override
   String get settings_title => 'Nastavení';
@@ -592,7 +592,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get general_add => 'Přidat';
 
   @override
-  String get general_loading => 'Načítání...';
+  String get general_loading => 'Načítání';
 
   @override
   String get general_leave => 'Dovolená';
@@ -870,7 +870,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get member_add => 'Přidat člena';
 
   @override
-  String get search_user_hint => 'Hledat uživatele...';
+  String get search_user_hint => 'Hledat uživatele';
 
   @override
   String get profile_edit => 'Upravit profil';
@@ -1267,7 +1267,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chat_tab_groups => 'Skupiny';
 
   @override
-  String get chat_waiting_for_network => 'Čekání na síť...';
+  String get chat_waiting_for_network => 'Čekání na síť';
 
   @override
   String get chat_direct_chat => 'Přímý chat';
@@ -1296,7 +1296,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get message_media => 'Média';
 
   @override
-  String get chat_loading => 'Načítání chatu...';
+  String get chat_loading => 'Načítání chatu';
 
   @override
   String get chat_blocked_message => 'Tomuto člověku nemůžete posílat zprávy.';
@@ -1333,10 +1333,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get group_name => 'Název skupiny';
 
   @override
-  String get group_name_hint => 'Pojmenujte svou skupinu...';
+  String get group_name_hint => 'Pojmenujte svou skupinu';
 
   @override
-  String get group_description_hint => 'Zadejte popis...';
+  String get group_description_hint => 'Zadejte popis';
 
   @override
   String get group_about => 'O';
@@ -1648,10 +1648,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get general_error_retry => 'Zkuste to prosím znovu.';
 
   @override
-  String get chat_archived_title => 'Archivované chaty...';
+  String get chat_archived_title => 'Archivované chaty';
 
   @override
-  String get chat_archived_empty => 'Žádný archivní chat...';
+  String get chat_archived_empty => 'Žádný archivní chat';
 
   @override
   String get chat_add_member_title => 'Přidat člena';
@@ -1660,7 +1660,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chat_add_member_button => 'Přidat člena';
 
   @override
-  String get chat_banned_users_empty => 'Zatím tu není nic k vidění...';
+  String get chat_banned_users_empty => 'Zatím tu není nic k vidění';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1969,6 +1969,12 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Vytvořte svůj první příspěvek';
+
+  @override
+  String get search_posts_hint => 'Hledat příspěvky';
+
+  @override
+  String get search_adjust_hint => 'Zkuste upravit vyhledávání';
 }
 
 /// The translations for Czech, as used in the Czechia Czech Republic (`cs_CZ`).
@@ -2080,13 +2086,13 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
       'Všichni členové budou odebráni ze skupiny. Všechny příspěvky, zprávy, reakce a média sdílená ve skupině budou smazány. Toto nelze vrátit zpět.';
 
   @override
-  String get global_search_hint => 'Hledat komunitu a uživatele...';
+  String get global_search_hint => 'Hledat komunitu a uživatele';
 
   @override
-  String get search_my_community_hint => 'Prohledejte moji komunitu...';
+  String get search_my_community_hint => 'Prohledejte moji komunitu';
 
   @override
-  String get search_no_results => 'Nebyly nalezeny žádné výsledky...';
+  String get search_no_results => 'Nebyly nalezeny žádné výsledky';
 
   @override
   String get title_communities => 'společenství';
@@ -2122,7 +2128,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get post_edit => 'Upravit příspěvek';
 
   @override
-  String get post_create_hint => 'Co se děje...';
+  String get post_create_hint => 'Co se děje';
 
   @override
   String get post_delete => 'Smazat příspěvek';
@@ -2160,7 +2166,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
       'Příspěvek bude trvale smazán. Nelze to vrátit zpět.';
 
   @override
-  String get post_write_comment => 'Napište komentář...';
+  String get post_write_comment => 'Napište komentář';
 
   @override
   String get poll_duration => 'Doba trvání ankety';
@@ -2259,7 +2265,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get poll_question_hint => 'Jaká je vaše anketní otázka?';
 
   @override
-  String get comment_create_hint => 'Řekni něco hezkého...';
+  String get comment_create_hint => 'Řekni něco hezkého';
 
   @override
   String get comment_reply => 'Odpověď';
@@ -2365,10 +2371,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get community_name => 'Název komunity';
 
   @override
-  String get community_name_hint => 'Pojmenujte svou komunitu...';
+  String get community_name_hint => 'Pojmenujte svou komunitu';
 
   @override
-  String get community_description_hint => 'Zadejte popis...';
+  String get community_description_hint => 'Zadejte popis';
 
   @override
   String get community_edit => 'Upravit komunitu';
@@ -2459,10 +2465,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get message_send => 'Poslat';
 
   @override
-  String get message_typing => 'píše...';
+  String get message_typing => 'píše';
 
   @override
-  String get message_placeholder => 'Napište zprávu...';
+  String get message_placeholder => 'Napište zprávu';
 
   @override
   String get settings_title => 'Nastavení';
@@ -2559,7 +2565,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get general_add => 'Přidat';
 
   @override
-  String get general_loading => 'Načítání...';
+  String get general_loading => 'Načítání';
 
   @override
   String get general_leave => 'Dovolená';
@@ -2837,7 +2843,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get member_add => 'Přidat člena';
 
   @override
-  String get search_user_hint => 'Hledat uživatele...';
+  String get search_user_hint => 'Hledat uživatele';
 
   @override
   String get profile_edit => 'Upravit profil';
@@ -3234,7 +3240,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get chat_tab_groups => 'Skupiny';
 
   @override
-  String get chat_waiting_for_network => 'Čekání na síť...';
+  String get chat_waiting_for_network => 'Čekání na síť';
 
   @override
   String get chat_direct_chat => 'Přímý chat';
@@ -3263,7 +3269,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get message_media => 'Média';
 
   @override
-  String get chat_loading => 'Načítání chatu...';
+  String get chat_loading => 'Načítání chatu';
 
   @override
   String get chat_blocked_message => 'Tomuto člověku nemůžete posílat zprávy.';
@@ -3300,10 +3306,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get group_name => 'Název skupiny';
 
   @override
-  String get group_name_hint => 'Pojmenujte svou skupinu...';
+  String get group_name_hint => 'Pojmenujte svou skupinu';
 
   @override
-  String get group_description_hint => 'Zadejte popis...';
+  String get group_description_hint => 'Zadejte popis';
 
   @override
   String get group_about => 'O';
@@ -3615,10 +3621,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get general_error_retry => 'Zkuste to prosím znovu.';
 
   @override
-  String get chat_archived_title => 'Archivované chaty...';
+  String get chat_archived_title => 'Archivované chaty';
 
   @override
-  String get chat_archived_empty => 'Žádný archivní chat...';
+  String get chat_archived_empty => 'Žádný archivní chat';
 
   @override
   String get chat_add_member_title => 'Přidat člena';
@@ -3627,7 +3633,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get chat_add_member_button => 'Přidat člena';
 
   @override
-  String get chat_banned_users_empty => 'Zatím tu není nic k vidění...';
+  String get chat_banned_users_empty => 'Zatím tu není nic k vidění';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3936,4 +3942,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
 
   @override
   String get feed_empty_create_first_post => 'Vytvořte svůj první příspěvek';
+
+  @override
+  String get search_posts_hint => 'Hledat příspěvky';
+
+  @override
+  String get search_adjust_hint => 'Zkuste upravit vyhledávání';
 }

@@ -113,13 +113,13 @@ class AppLocalizationsFr extends AppLocalizations {
       'Tous les membres seront supprimés du groupe. Toutes les publications, messages, réactions et médias partagés dans le groupe seront supprimés. Cela ne peut pas être annulé.';
 
   @override
-  String get global_search_hint => 'Communauté de recherche et utilisateur...';
+  String get global_search_hint => 'Communauté de recherche et utilisateur';
 
   @override
-  String get search_my_community_hint => 'Rechercher dans ma communauté...';
+  String get search_my_community_hint => 'Rechercher dans ma communauté';
 
   @override
-  String get search_no_results => 'Aucun résultat trouvé...';
+  String get search_no_results => 'Aucun résultat trouvé';
 
   @override
   String get title_communities => 'Communautés';
@@ -155,7 +155,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get post_edit => 'Modifier le message';
 
   @override
-  String get post_create_hint => 'Que se passe-t-il...';
+  String get post_create_hint => 'Que se passe-t-il';
 
   @override
   String get post_delete => 'Supprimer le message';
@@ -194,7 +194,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'Le message sera définitivement supprimé. Cela ne peut pas être annulé.';
 
   @override
-  String get post_write_comment => 'Écrivez un commentaire...';
+  String get post_write_comment => 'Écrivez un commentaire';
 
   @override
   String get poll_duration => 'Durée du sondage';
@@ -292,7 +292,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get poll_question_hint => 'Quelle est votre question de sondage ?';
 
   @override
-  String get comment_create_hint => 'Dis quelque chose de gentil...';
+  String get comment_create_hint => 'Dis quelque chose de gentil';
 
   @override
   String get comment_reply => 'Répondre';
@@ -402,10 +402,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get community_name => 'Nom de la communauté';
 
   @override
-  String get community_name_hint => 'Nommez votre communauté...';
+  String get community_name_hint => 'Nommez votre communauté';
 
   @override
-  String get community_description_hint => 'Entrez la description...';
+  String get community_description_hint => 'Entrez la description';
 
   @override
   String get community_edit => 'Modifier la communauté';
@@ -496,10 +496,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get message_send => 'Envoyer';
 
   @override
-  String get message_typing => 'est en train de taper...';
+  String get message_typing => 'est en train de taper';
 
   @override
-  String get message_placeholder => 'Tapez un message...';
+  String get message_placeholder => 'Tapez un message';
 
   @override
   String get settings_title => 'Paramètres';
@@ -598,7 +598,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get general_add => 'Ajouter';
 
   @override
-  String get general_loading => 'Chargement...';
+  String get general_loading => 'Chargement';
 
   @override
   String get general_leave => 'Partir';
@@ -874,7 +874,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get member_add => 'Ajouter un membre';
 
   @override
-  String get search_user_hint => 'Rechercher un utilisateur...';
+  String get search_user_hint => 'Rechercher un utilisateur';
 
   @override
   String get profile_edit => 'Modifier le profil';
@@ -1270,7 +1270,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get chat_tab_groups => 'Groupes';
 
   @override
-  String get chat_waiting_for_network => 'En attente du réseau...';
+  String get chat_waiting_for_network => 'En attente du réseau';
 
   @override
   String get chat_direct_chat => 'Chat direct';
@@ -1299,7 +1299,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get message_media => 'Médias';
 
   @override
-  String get chat_loading => 'Chargement du chat...';
+  String get chat_loading => 'Chargement du chat';
 
   @override
   String get chat_blocked_message =>
@@ -1338,10 +1338,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get group_name => 'Nom du groupe';
 
   @override
-  String get group_name_hint => 'Nommez votre groupe...';
+  String get group_name_hint => 'Nommez votre groupe';
 
   @override
-  String get group_description_hint => 'Entrez la description...';
+  String get group_description_hint => 'Entrez la description';
 
   @override
   String get group_about => 'À propos';
@@ -1652,10 +1652,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get general_error_retry => 'Veuillez réessayer.';
 
   @override
-  String get chat_archived_title => 'Discussions archivées...';
+  String get chat_archived_title => 'Discussions archivées';
 
   @override
-  String get chat_archived_empty => 'Pas de chat d\'archive...';
+  String get chat_archived_empty => 'Pas de chat d\'archive';
 
   @override
   String get chat_add_member_title => 'Ajouter un membre';
@@ -1664,7 +1664,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get chat_add_member_button => 'Ajouter un membre';
 
   @override
-  String get chat_banned_users_empty => 'Il n\'y a encore rien à voir ici...';
+  String get chat_banned_users_empty => 'Il n\'y a encore rien à voir ici';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1974,6 +1974,12 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Créez votre première publication';
+
+  @override
+  String get search_posts_hint => 'Rechercher des articles';
+
+  @override
+  String get search_adjust_hint => 'Essayez d\'ajuster votre recherche';
 }
 
 /// The translations for French, as used in France (`fr_FR`).
@@ -2085,13 +2091,13 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
       'Tous les membres seront supprimés du groupe. Toutes les publications, messages, réactions et médias partagés dans le groupe seront supprimés. Cela ne peut pas être annulé.';
 
   @override
-  String get global_search_hint => 'Communauté de recherche et utilisateur...';
+  String get global_search_hint => 'Communauté de recherche et utilisateur';
 
   @override
-  String get search_my_community_hint => 'Rechercher dans ma communauté...';
+  String get search_my_community_hint => 'Rechercher dans ma communauté';
 
   @override
-  String get search_no_results => 'Aucun résultat trouvé...';
+  String get search_no_results => 'Aucun résultat trouvé';
 
   @override
   String get title_communities => 'Communautés';
@@ -2127,7 +2133,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get post_edit => 'Modifier le message';
 
   @override
-  String get post_create_hint => 'Que se passe-t-il...';
+  String get post_create_hint => 'Que se passe-t-il';
 
   @override
   String get post_delete => 'Supprimer le message';
@@ -2166,7 +2172,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
       'Le message sera définitivement supprimé. Cela ne peut pas être annulé.';
 
   @override
-  String get post_write_comment => 'Écrivez un commentaire...';
+  String get post_write_comment => 'Écrivez un commentaire';
 
   @override
   String get poll_duration => 'Durée du sondage';
@@ -2264,7 +2270,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get poll_question_hint => 'Quelle est votre question de sondage ?';
 
   @override
-  String get comment_create_hint => 'Dis quelque chose de gentil...';
+  String get comment_create_hint => 'Dis quelque chose de gentil';
 
   @override
   String get comment_reply => 'Répondre';
@@ -2374,10 +2380,10 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get community_name => 'Nom de la communauté';
 
   @override
-  String get community_name_hint => 'Nommez votre communauté...';
+  String get community_name_hint => 'Nommez votre communauté';
 
   @override
-  String get community_description_hint => 'Entrez la description...';
+  String get community_description_hint => 'Entrez la description';
 
   @override
   String get community_edit => 'Modifier la communauté';
@@ -2468,10 +2474,10 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get message_send => 'Envoyer';
 
   @override
-  String get message_typing => 'est en train de taper...';
+  String get message_typing => 'est en train de taper';
 
   @override
-  String get message_placeholder => 'Tapez un message...';
+  String get message_placeholder => 'Tapez un message';
 
   @override
   String get settings_title => 'Paramètres';
@@ -2570,7 +2576,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get general_add => 'Ajouter';
 
   @override
-  String get general_loading => 'Chargement...';
+  String get general_loading => 'Chargement';
 
   @override
   String get general_leave => 'Partir';
@@ -2846,7 +2852,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get member_add => 'Ajouter un membre';
 
   @override
-  String get search_user_hint => 'Rechercher un utilisateur...';
+  String get search_user_hint => 'Rechercher un utilisateur';
 
   @override
   String get profile_edit => 'Modifier le profil';
@@ -3242,7 +3248,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get chat_tab_groups => 'Groupes';
 
   @override
-  String get chat_waiting_for_network => 'En attente du réseau...';
+  String get chat_waiting_for_network => 'En attente du réseau';
 
   @override
   String get chat_direct_chat => 'Chat direct';
@@ -3271,7 +3277,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get message_media => 'Médias';
 
   @override
-  String get chat_loading => 'Chargement du chat...';
+  String get chat_loading => 'Chargement du chat';
 
   @override
   String get chat_blocked_message =>
@@ -3310,10 +3316,10 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get group_name => 'Nom du groupe';
 
   @override
-  String get group_name_hint => 'Nommez votre groupe...';
+  String get group_name_hint => 'Nommez votre groupe';
 
   @override
-  String get group_description_hint => 'Entrez la description...';
+  String get group_description_hint => 'Entrez la description';
 
   @override
   String get group_about => 'À propos';
@@ -3624,10 +3630,10 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get general_error_retry => 'Veuillez réessayer.';
 
   @override
-  String get chat_archived_title => 'Discussions archivées...';
+  String get chat_archived_title => 'Discussions archivées';
 
   @override
-  String get chat_archived_empty => 'Pas de chat d\'archive...';
+  String get chat_archived_empty => 'Pas de chat d\'archive';
 
   @override
   String get chat_add_member_title => 'Ajouter un membre';
@@ -3636,7 +3642,7 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
   String get chat_add_member_button => 'Ajouter un membre';
 
   @override
-  String get chat_banned_users_empty => 'Il n\'y a encore rien à voir ici...';
+  String get chat_banned_users_empty => 'Il n\'y a encore rien à voir ici';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3946,4 +3952,10 @@ class AppLocalizationsFrFr extends AppLocalizationsFr {
 
   @override
   String get feed_empty_create_first_post => 'Créez votre première publication';
+
+  @override
+  String get search_posts_hint => 'Rechercher des articles';
+
+  @override
+  String get search_adjust_hint => 'Essayez d\'ajuster votre recherche';
 }

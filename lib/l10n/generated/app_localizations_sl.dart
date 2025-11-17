@@ -113,13 +113,13 @@ class AppLocalizationsSl extends AppLocalizations {
       'Vsi člani bodo odstranjeni iz skupine. Vse objave, sporočila, odzivi in ​​mediji, ki so v skupni rabi v skupini, bodo izbrisani. Tega ni mogoče razveljaviti.';
 
   @override
-  String get global_search_hint => 'Iskanje skupnosti in uporabnika...';
+  String get global_search_hint => 'Iskanje skupnosti in uporabnika';
 
   @override
-  String get search_my_community_hint => 'Preišči mojo skupnost...';
+  String get search_my_community_hint => 'Preišči mojo skupnost';
 
   @override
-  String get search_no_results => 'Ni rezultatov...';
+  String get search_no_results => 'Ni rezultatov';
 
   @override
   String get title_communities => 'skupnosti';
@@ -155,7 +155,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get post_edit => 'Uredi objavo';
 
   @override
-  String get post_create_hint => 'kaj se dogaja...';
+  String get post_create_hint => 'kaj se dogaja';
 
   @override
   String get post_delete => 'Izbriši objavo';
@@ -193,7 +193,7 @@ class AppLocalizationsSl extends AppLocalizations {
       'Objava bo trajno izbrisana. Ni ga mogoče razveljaviti.';
 
   @override
-  String get post_write_comment => 'Napišite komentar ...';
+  String get post_write_comment => 'Napišite komentar ';
 
   @override
   String get poll_duration => 'Trajanje ankete';
@@ -292,7 +292,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get poll_question_hint => 'Kakšno je vaše anketno vprašanje?';
 
   @override
-  String get comment_create_hint => 'Povej kaj lepega...';
+  String get comment_create_hint => 'Povej kaj lepega';
 
   @override
   String get comment_reply => 'Odgovori';
@@ -397,10 +397,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get community_name => 'Ime skupnosti';
 
   @override
-  String get community_name_hint => 'Poimenujte svojo skupnost...';
+  String get community_name_hint => 'Poimenujte svojo skupnost';
 
   @override
-  String get community_description_hint => 'Vnesite opis...';
+  String get community_description_hint => 'Vnesite opis';
 
   @override
   String get community_edit => 'Uredi skupnost';
@@ -491,10 +491,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get message_send => 'Pošlji';
 
   @override
-  String get message_typing => 'tipka ...';
+  String get message_typing => 'tipka ';
 
   @override
-  String get message_placeholder => 'Vnesite sporočilo ...';
+  String get message_placeholder => 'Vnesite sporočilo ';
 
   @override
   String get settings_title => 'nastavitve';
@@ -592,7 +592,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get general_add => 'Dodaj';
 
   @override
-  String get general_loading => 'Nalaganje...';
+  String get general_loading => 'Nalaganje';
 
   @override
   String get general_leave => 'Pusti';
@@ -870,7 +870,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get member_add => 'Dodaj člana';
 
   @override
-  String get search_user_hint => 'Išči uporabnika...';
+  String get search_user_hint => 'Išči uporabnika';
 
   @override
   String get profile_edit => 'Uredi profil';
@@ -1265,7 +1265,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get chat_tab_groups => 'Skupine';
 
   @override
-  String get chat_waiting_for_network => 'Waiting for network...';
+  String get chat_waiting_for_network => 'Waiting for network';
 
   @override
   String get chat_direct_chat => 'Direct chat';
@@ -1294,7 +1294,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get message_media => 'Media';
 
   @override
-  String get chat_loading => 'Loading chat...';
+  String get chat_loading => 'Loading chat';
 
   @override
   String get chat_blocked_message => 'You can\'t send messages to this person.';
@@ -1332,10 +1332,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get group_name => 'Group name';
 
   @override
-  String get group_name_hint => 'Name your group...';
+  String get group_name_hint => 'Name your group';
 
   @override
-  String get group_description_hint => 'Enter description...';
+  String get group_description_hint => 'Enter description';
 
   @override
   String get group_about => 'About';
@@ -1646,10 +1646,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Brez arhivskega klepeta...';
+  String get chat_archived_empty => 'Brez arhivskega klepeta';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1658,7 +1658,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti...';
+  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1964,6 +1964,12 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Ustvarite svojo prvo objavo';
+
+  @override
+  String get search_posts_hint => 'Iskanje objav';
+
+  @override
+  String get search_adjust_hint => 'Poskusite prilagoditi iskanje';
 }
 
 /// The translations for Slovenian, as used in Slovenia (`sl_SI`).
@@ -2075,13 +2081,13 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
       'Vsi člani bodo odstranjeni iz skupine. Vse objave, sporočila, odzivi in ​​mediji, ki so v skupni rabi v skupini, bodo izbrisani. Tega ni mogoče razveljaviti.';
 
   @override
-  String get global_search_hint => 'Iskanje skupnosti in uporabnika...';
+  String get global_search_hint => 'Iskanje skupnosti in uporabnika';
 
   @override
-  String get search_my_community_hint => 'Preišči mojo skupnost...';
+  String get search_my_community_hint => 'Preišči mojo skupnost';
 
   @override
-  String get search_no_results => 'Ni rezultatov...';
+  String get search_no_results => 'Ni rezultatov';
 
   @override
   String get title_communities => 'skupnosti';
@@ -2117,7 +2123,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get post_edit => 'Uredi objavo';
 
   @override
-  String get post_create_hint => 'kaj se dogaja...';
+  String get post_create_hint => 'kaj se dogaja';
 
   @override
   String get post_delete => 'Izbriši objavo';
@@ -2155,7 +2161,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
       'Objava bo trajno izbrisana. Ni ga mogoče razveljaviti.';
 
   @override
-  String get post_write_comment => 'Napišite komentar ...';
+  String get post_write_comment => 'Napišite komentar ';
 
   @override
   String get poll_duration => 'Trajanje ankete';
@@ -2254,7 +2260,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get poll_question_hint => 'Kakšno je vaše anketno vprašanje?';
 
   @override
-  String get comment_create_hint => 'Povej kaj lepega...';
+  String get comment_create_hint => 'Povej kaj lepega';
 
   @override
   String get comment_reply => 'Odgovori';
@@ -2359,10 +2365,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get community_name => 'Ime skupnosti';
 
   @override
-  String get community_name_hint => 'Poimenujte svojo skupnost...';
+  String get community_name_hint => 'Poimenujte svojo skupnost';
 
   @override
-  String get community_description_hint => 'Vnesite opis...';
+  String get community_description_hint => 'Vnesite opis';
 
   @override
   String get community_edit => 'Uredi skupnost';
@@ -2453,10 +2459,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get message_send => 'Pošlji';
 
   @override
-  String get message_typing => 'tipka ...';
+  String get message_typing => 'tipka ';
 
   @override
-  String get message_placeholder => 'Vnesite sporočilo ...';
+  String get message_placeholder => 'Vnesite sporočilo ';
 
   @override
   String get settings_title => 'nastavitve';
@@ -2554,7 +2560,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get general_add => 'Dodaj';
 
   @override
-  String get general_loading => 'Nalaganje...';
+  String get general_loading => 'Nalaganje';
 
   @override
   String get general_leave => 'Pusti';
@@ -2832,7 +2838,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get member_add => 'Dodaj člana';
 
   @override
-  String get search_user_hint => 'Išči uporabnika...';
+  String get search_user_hint => 'Išči uporabnika';
 
   @override
   String get profile_edit => 'Uredi profil';
@@ -3227,7 +3233,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get chat_tab_groups => 'Skupine';
 
   @override
-  String get chat_waiting_for_network => 'Čakanje na omrežje ...';
+  String get chat_waiting_for_network => 'Čakanje na omrežje ';
 
   @override
   String get chat_direct_chat => 'Neposredni klepet';
@@ -3256,7 +3262,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get message_media => 'Mediji';
 
   @override
-  String get chat_loading => 'Nalaganje klepeta ...';
+  String get chat_loading => 'Nalaganje klepeta ';
 
   @override
   String get chat_blocked_message => 'Tej osebi ne morete pošiljati sporočil.';
@@ -3294,10 +3300,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get group_name => 'Ime skupine';
 
   @override
-  String get group_name_hint => 'Poimenujte svojo skupino...';
+  String get group_name_hint => 'Poimenujte svojo skupino';
 
   @override
-  String get group_description_hint => 'Vnesite opis...';
+  String get group_description_hint => 'Vnesite opis';
 
   @override
   String get group_about => 'O tem';
@@ -3609,10 +3615,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get general_error_retry => 'prosim poskusite znova';
 
   @override
-  String get chat_archived_title => 'Arhivirani klepeti...';
+  String get chat_archived_title => 'Arhivirani klepeti';
 
   @override
-  String get chat_archived_empty => 'Brez arhivskega klepeta...';
+  String get chat_archived_empty => 'Brez arhivskega klepeta';
 
   @override
   String get chat_add_member_title => 'Dodaj člana';
@@ -3621,7 +3627,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
   String get chat_add_member_button => 'Dodaj člana';
 
   @override
-  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti...';
+  String get chat_banned_users_empty => 'Tukaj še ni ničesar za videti';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3930,4 +3936,10 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String get feed_empty_create_first_post => 'Ustvarite svojo prvo objavo';
+
+  @override
+  String get search_posts_hint => 'Iskanje objav';
+
+  @override
+  String get search_adjust_hint => 'Poskusite prilagoditi iskanje';
 }

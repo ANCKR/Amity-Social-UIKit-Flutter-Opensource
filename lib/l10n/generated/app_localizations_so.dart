@@ -111,13 +111,13 @@ class AppLocalizationsSo extends AppLocalizations {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user...';
+  String get global_search_hint => 'Search community and user';
 
   @override
-  String get search_my_community_hint => 'Search my community...';
+  String get search_my_community_hint => 'Search my community';
 
   @override
-  String get search_no_results => 'Natiijooyin ma helin...';
+  String get search_no_results => 'Natiijooyin ma helin';
 
   @override
   String get title_communities => 'Communities';
@@ -153,7 +153,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get post_edit => 'Edit Post';
 
   @override
-  String get post_create_hint => 'What\'s going on...';
+  String get post_create_hint => 'What\'s going on';
 
   @override
   String get post_delete => 'Delete Post';
@@ -192,7 +192,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'The post will be permanently deleted. It cannot be undone.';
 
   @override
-  String get post_write_comment => 'Write a comment...';
+  String get post_write_comment => 'Write a comment';
 
   @override
   String get poll_duration => 'Poll duration';
@@ -290,7 +290,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get poll_question_hint => 'What\'s your poll question?';
 
   @override
-  String get comment_create_hint => 'Say something nice...';
+  String get comment_create_hint => 'Say something nice';
 
   @override
   String get comment_reply => 'Reply';
@@ -398,10 +398,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community...';
+  String get community_name_hint => 'Name your community';
 
   @override
-  String get community_description_hint => 'Enter description...';
+  String get community_description_hint => 'Enter description';
 
   @override
   String get community_edit => 'Edit Community';
@@ -492,10 +492,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get message_send => 'Send';
 
   @override
-  String get message_typing => 'is typing...';
+  String get message_typing => 'is typing';
 
   @override
-  String get message_placeholder => 'Type a message...';
+  String get message_placeholder => 'Type a message';
 
   @override
   String get settings_title => 'Settings';
@@ -593,7 +593,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get general_add => 'Add';
 
   @override
-  String get general_loading => 'Loading...';
+  String get general_loading => 'Loading';
 
   @override
   String get general_leave => 'Leave';
@@ -870,7 +870,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get member_add => 'Ku dar xubin';
 
   @override
-  String get search_user_hint => 'Raadi isticmaale...';
+  String get search_user_hint => 'Raadi isticmaale';
 
   @override
   String get profile_edit => 'Tafatir astaanta';
@@ -1272,7 +1272,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get chat_tab_groups => 'Kooxo';
 
   @override
-  String get chat_waiting_for_network => 'Sugitaanka shabakadda ...';
+  String get chat_waiting_for_network => 'Sugitaanka shabakadda ';
 
   @override
   String get chat_direct_chat => 'Wadahadal toos ah';
@@ -1301,7 +1301,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get message_media => 'Warbaahinta';
 
   @override
-  String get chat_loading => 'Loading sheekada ...';
+  String get chat_loading => 'Loading sheekada ';
 
   @override
   String get chat_blocked_message => 'Ma u diri kartid farriimaha qofkan.';
@@ -1338,10 +1338,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get group_name => 'Magaca Kooxda';
 
   @override
-  String get group_name_hint => 'Magacaw kooxdaada...';
+  String get group_name_hint => 'Magacaw kooxdaada';
 
   @override
-  String get group_description_hint => 'Gali sharraxaad...';
+  String get group_description_hint => 'Gali sharraxaad';
 
   @override
   String get group_about => 'Ku saabsan';
@@ -1655,10 +1655,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get general_error_retry => 'Please try again.';
 
   @override
-  String get chat_archived_title => 'Archived chats...';
+  String get chat_archived_title => 'Archived chats';
 
   @override
-  String get chat_archived_empty => 'Majiraan sheekaysi...';
+  String get chat_archived_empty => 'Majiraan sheekaysi';
 
   @override
   String get chat_add_member_title => 'Add Member';
@@ -1667,7 +1667,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_banned_users_empty => 'Waxba uma jiraan inaan wali arko...';
+  String get chat_banned_users_empty => 'Waxba uma jiraan inaan wali arko';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1978,6 +1978,12 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get feed_empty_create_first_post => 'Samee qoraalkaaga ugu horreeyay';
+
+  @override
+  String get search_posts_hint => 'Raadi qoraalada';
+
+  @override
+  String get search_adjust_hint => 'Isku day inaad hagaajiso raadintaada';
 }
 
 /// The translations for Somali, as used in Somalia (`so_SO`).
@@ -2087,13 +2093,13 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.';
 
   @override
-  String get global_search_hint => 'Search community and user...';
+  String get global_search_hint => 'Search community and user';
 
   @override
-  String get search_my_community_hint => 'Search my community...';
+  String get search_my_community_hint => 'Search my community';
 
   @override
-  String get search_no_results => 'Natiijooyin ma helin...';
+  String get search_no_results => 'Natiijooyin ma helin';
 
   @override
   String get title_communities => 'Communities';
@@ -2129,7 +2135,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get post_edit => 'Edit Post';
 
   @override
-  String get post_create_hint => 'What\'s going on...';
+  String get post_create_hint => 'What\'s going on';
 
   @override
   String get post_delete => 'Delete Post';
@@ -2168,7 +2174,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'The post will be permanently deleted. It cannot be undone.';
 
   @override
-  String get post_write_comment => 'Write a comment...';
+  String get post_write_comment => 'Write a comment';
 
   @override
   String get poll_duration => 'Poll duration';
@@ -2266,7 +2272,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get poll_question_hint => 'What\'s your poll question?';
 
   @override
-  String get comment_create_hint => 'Say something nice...';
+  String get comment_create_hint => 'Say something nice';
 
   @override
   String get comment_reply => 'Reply';
@@ -2374,10 +2380,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get community_name => 'Community name';
 
   @override
-  String get community_name_hint => 'Name your community...';
+  String get community_name_hint => 'Name your community';
 
   @override
-  String get community_description_hint => 'Enter description...';
+  String get community_description_hint => 'Enter description';
 
   @override
   String get community_edit => 'Edit Community';
@@ -2468,10 +2474,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get message_send => 'Send';
 
   @override
-  String get message_typing => 'is typing...';
+  String get message_typing => 'is typing';
 
   @override
-  String get message_placeholder => 'Type a message...';
+  String get message_placeholder => 'Type a message';
 
   @override
   String get settings_title => 'Settings';
@@ -2569,7 +2575,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get general_add => 'Add';
 
   @override
-  String get general_loading => 'Loading...';
+  String get general_loading => 'Loading';
 
   @override
   String get general_leave => 'Leave';
@@ -2846,7 +2852,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get member_add => 'Ku dar xubin';
 
   @override
-  String get search_user_hint => 'Raadi isticmaale...';
+  String get search_user_hint => 'Raadi isticmaale';
 
   @override
   String get profile_edit => 'Tafatir astaanta';
@@ -3248,7 +3254,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get chat_tab_groups => 'Kooxo';
 
   @override
-  String get chat_waiting_for_network => 'Sugitaanka shabakadda ...';
+  String get chat_waiting_for_network => 'Sugitaanka shabakadda ';
 
   @override
   String get chat_direct_chat => 'Wadahadal toos ah';
@@ -3277,7 +3283,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get message_media => 'Warbaahinta';
 
   @override
-  String get chat_loading => 'Loading sheekada ...';
+  String get chat_loading => 'Loading sheekada ';
 
   @override
   String get chat_blocked_message => 'Ma u diri kartid farriimaha qofkan.';
@@ -3314,10 +3320,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get group_name => 'Magaca Kooxda';
 
   @override
-  String get group_name_hint => 'Magacaw kooxdaada...';
+  String get group_name_hint => 'Magacaw kooxdaada';
 
   @override
-  String get group_description_hint => 'Gali sharraxaad...';
+  String get group_description_hint => 'Gali sharraxaad';
 
   @override
   String get group_about => 'Ku saabsan';
@@ -3631,10 +3637,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get general_error_retry => 'Fadlan isku day mar labaad.';
 
   @override
-  String get chat_archived_title => 'Sheekaysiga la iibiyay...';
+  String get chat_archived_title => 'Sheekaysiga la iibiyay';
 
   @override
-  String get chat_archived_empty => 'Majiraan sheekaysi...';
+  String get chat_archived_empty => 'Majiraan sheekaysi';
 
   @override
   String get chat_add_member_title => 'Ku dar xubin';
@@ -3643,7 +3649,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get chat_add_member_button => 'Ku dar xubin';
 
   @override
-  String get chat_banned_users_empty => 'Waxba uma jiraan inaan wali arko...';
+  String get chat_banned_users_empty => 'Waxba uma jiraan inaan wali arko';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3959,4 +3965,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
 
   @override
   String get feed_empty_create_first_post => 'Samee qoraalkaaga ugu horreeyay';
+
+  @override
+  String get search_posts_hint => 'Raadi qoraalada';
+
+  @override
+  String get search_adjust_hint => 'Isku day inaad hagaajiso raadintaada';
 }
