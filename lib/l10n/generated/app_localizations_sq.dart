@@ -743,9 +743,9 @@ class AppLocalizationsSq extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count anëtarët',
+      one: '1 anëtar',
+      zero: 'Nuk ka anëtarë',
     );
     return '$_temp0';
   }
@@ -755,8 +755,8 @@ class AppLocalizationsSq extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'postimet',
+      one: 'postim',
     );
     return '$_temp0';
   }
@@ -766,8 +766,8 @@ class AppLocalizationsSq extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'anëtarët',
+      one: 'anëtar',
     );
     return '$_temp0';
   }
@@ -2723,9 +2723,9 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count anëtarët',
+      one: '1 anëtar',
+      zero: 'Nuk ka anëtarë',
     );
     return '$_temp0';
   }
@@ -2735,8 +2735,8 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'postimet',
+      one: 'postim',
     );
     return '$_temp0';
   }
@@ -2746,8 +2746,8 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'anëtarët',
+      one: 'anëtar',
     );
     return '$_temp0';
   }

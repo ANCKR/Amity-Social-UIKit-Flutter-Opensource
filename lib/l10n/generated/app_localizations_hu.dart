@@ -743,9 +743,9 @@ class AppLocalizationsHu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count tagjai',
+      one: '1 tag',
+      zero: 'Nincsenek tagok',
     );
     return '$_temp0';
   }
@@ -755,8 +755,8 @@ class AppLocalizationsHu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'hozzászólások',
+      one: 'hozzászólás',
     );
     return '$_temp0';
   }
@@ -766,8 +766,8 @@ class AppLocalizationsHu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'tagjai',
+      one: 'tag',
     );
     return '$_temp0';
   }
@@ -2722,9 +2722,9 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count tagjai',
+      one: '1 tag',
+      zero: 'Nincsenek tagok',
     );
     return '$_temp0';
   }
@@ -2734,8 +2734,8 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'hozzászólások',
+      one: 'hozzászólás',
     );
     return '$_temp0';
   }
@@ -2745,8 +2745,8 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'tagjai',
+      one: 'tag',
     );
     return '$_temp0';
   }

@@ -861,7 +861,7 @@
       }
     }
   },
-  "community_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "community_members_count": "{count, plural, =0{Немає учасників} =1{1 член} other{{count} членів}}",
   "@community_members_count": {
     "description": "Plural form for community members count",
     "placeholders": {
@@ -870,7 +870,7 @@
       }
     }
   },
-  "profile_posts_count": "{count, plural, =1{post} other{posts}}",
+  "profile_posts_count": "{count, plural, =1{пост} other{пости}}",
   "@profile_posts_count": {
     "description": "Plural form for user posts count",
     "placeholders": {
@@ -879,7 +879,7 @@
       }
     }
   },
-  "profile_members_count": "{count, plural, =1{member} other{members}}",
+  "profile_members_count": "{count, plural, =1{член} other{членів}}",
   "@profile_members_count": {
     "description": "Plural form for member count",
     "placeholders": {

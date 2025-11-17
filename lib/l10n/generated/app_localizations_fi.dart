@@ -738,9 +738,9 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count jäseniä',
+      one: '1 jäsen',
+      zero: 'Ei jäseniä',
     );
     return '$_temp0';
   }
@@ -750,8 +750,8 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'viestit',
+      one: 'lähettää',
     );
     return '$_temp0';
   }
@@ -761,8 +761,8 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'jäseniä',
+      one: 'jäsen',
     );
     return '$_temp0';
   }
@@ -2703,9 +2703,9 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count jäseniä',
+      one: '1 jäsen',
+      zero: 'Ei jäseniä',
     );
     return '$_temp0';
   }
@@ -2715,8 +2715,8 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'viestit',
+      one: 'lähettää',
     );
     return '$_temp0';
   }
@@ -2726,8 +2726,8 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'jäseniä',
+      one: 'jäsen',
     );
     return '$_temp0';
   }

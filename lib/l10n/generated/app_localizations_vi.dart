@@ -739,9 +739,9 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count thành viên',
+      one: '1 thành viên',
+      zero: 'Không có thành viên',
     );
     return '$_temp0';
   }
@@ -751,8 +751,8 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'bài viết',
+      one: 'bưu kiện',
     );
     return '$_temp0';
   }
@@ -762,8 +762,8 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'thành viên',
+      one: 'thành viên',
     );
     return '$_temp0';
   }
@@ -2711,9 +2711,9 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count thành viên',
+      one: '1 thành viên',
+      zero: 'Không có thành viên',
     );
     return '$_temp0';
   }
@@ -2723,8 +2723,8 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'bài viết',
+      one: 'bưu kiện',
     );
     return '$_temp0';
   }
@@ -2734,8 +2734,8 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'thành viên',
+      one: 'thành viên',
     );
     return '$_temp0';
   }

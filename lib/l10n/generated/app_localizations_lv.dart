@@ -739,9 +739,9 @@ class AppLocalizationsLv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count biedriem',
+      one: '1 biedrs',
+      zero: 'Nav dalībnieku',
     );
     return '$_temp0';
   }
@@ -751,8 +751,8 @@ class AppLocalizationsLv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'ziņas',
+      one: 'pastu',
     );
     return '$_temp0';
   }
@@ -762,8 +762,8 @@ class AppLocalizationsLv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'biedriem',
+      one: 'biedrs',
     );
     return '$_temp0';
   }
@@ -2714,9 +2714,9 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count biedriem',
+      one: '1 biedrs',
+      zero: 'Nav dalībnieku',
     );
     return '$_temp0';
   }
@@ -2726,8 +2726,8 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'posts',
-      one: 'post',
+      other: 'ziņas',
+      one: 'pastu',
     );
     return '$_temp0';
   }
@@ -2737,8 +2737,8 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'members',
-      one: 'member',
+      other: 'biedriem',
+      one: 'biedrs',
     );
     return '$_temp0';
   }
