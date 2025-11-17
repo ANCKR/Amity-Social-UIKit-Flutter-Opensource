@@ -1,7 +1,11 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/repository/translation_repo.dart';
+import 'package:amity_uikit_beta_service/utils/translation_cache.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
+import 'package:amity_uikit_beta_service/v4/social/common/translation_button.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/my_community/my_community_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
@@ -44,6 +48,13 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
   bool _isReacting = false;
   AmityCommunity? _targetCommunity;
 
+  // Translation state for share comment
+  bool _isTranslatingComment = false;
+  bool _isCommentTranslated = false;
+  String? _translatedComment;
+  final _translationService = TranslationService();
+  final _translationCache = TranslationCache();
+
   @override
   void initState() {
     super.initState();
@@ -57,7 +68,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     }
 
     try {
-      final originalPost = await PostSharingService.getOriginalPost(widget.sharedPost);
+      final originalPost =
+          await PostSharingService.getOriginalPost(widget.sharedPost);
       if (mounted) {
         setState(() {
           _originalPost = originalPost;
@@ -79,7 +91,9 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
       final communityName = metadata?['sharedToCommunityName'] as String?;
 
       // Only fetch community if we have an ID but no name (for backwards compatibility)
-      if (communityId != null && communityId.isNotEmpty && communityName == null) {
+      if (communityId != null &&
+          communityId.isNotEmpty &&
+          communityName == null) {
         final community = await AmitySocialClient.newCommunityRepository()
             .getCommunity(communityId);
 
@@ -94,6 +108,58 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     }
   }
 
+  Future<void> _handleCommentTranslation(String comment) async {
+    final postId = widget.sharedPost.postId ?? '';
+    final cacheKey = '${postId}_comment';
+
+    print('========================================');
+    print('🌐 SHARED POST COMMENT TRANSLATION');
+    print('Post ID: $postId');
+    print('Comment: $comment');
+    print('Currently translated: $_isCommentTranslated');
+    print('========================================');
+
+    if (_isCommentTranslated) {
+      // Show original
+      setState(() {
+        _isCommentTranslated = false;
+      });
+      return;
+    }
+
+    // Check cache first
+    final targetLang = Localizations.localeOf(context).languageCode;
+    final cached = _translationCache.get(cacheKey, targetLang);
+    if (cached != null) {
+      print('✅ Using cached translation');
+      setState(() {
+        _translatedComment = cached;
+        _isCommentTranslated = true;
+      });
+      return;
+    }
+
+    // Translate
+    setState(() {
+      _isTranslatingComment = true;
+    });
+
+    final translated = await _translationService.translateText(
+      text: comment,
+      targetLang: targetLang,
+    );
+
+    if (mounted) {
+      setState(() {
+        _isTranslatingComment = false;
+        if (translated != null) {
+          _translatedComment = translated;
+          _isCommentTranslated = true;
+          _translationCache.put(cacheKey, targetLang, translated);
+        }
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -125,8 +191,7 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
             _buildOriginalPostPreview(context, theme),
 
             // Action buttons (like, comment)
-            if (_originalPost != null)
-              _buildActionButtons(context, theme),
+            if (_originalPost != null) _buildActionButtons(context, theme),
           ],
         ),
       ),
@@ -137,9 +202,13 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     // Read community info from metadata first, then fallback to fetched community
     final metadata = widget.sharedPost.metadata;
     final targetCommunityId = metadata?['sharedToCommunityId'] as String?;
-    final targetCommunityName = metadata?['sharedToCommunityName'] as String? ?? _targetCommunity?.displayName;
-    final targetCommunityIsOfficial = metadata?['sharedToCommunityIsOfficial'] as bool? ?? _targetCommunity?.isOfficial;
-    final hasTargetCommunity = targetCommunityId != null && targetCommunityName != null;
+    final targetCommunityName = metadata?['sharedToCommunityName'] as String? ??
+        _targetCommunity?.displayName;
+    final targetCommunityIsOfficial =
+        metadata?['sharedToCommunityIsOfficial'] as bool? ??
+            _targetCommunity?.isOfficial;
+    final hasTargetCommunity =
+        targetCommunityId != null && targetCommunityName != null;
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -148,7 +217,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
           // Sharer avatar
           AmityUserAvatar(
             avatarUrl: widget.sharedPost.postedUser?.avatarUrl ?? "",
-            displayName: widget.sharedPost.postedUser?.displayName ?? "Unknown User",
+            displayName:
+                widget.sharedPost.postedUser?.displayName ?? "Unknown User",
             isDeletedUser: false,
           ),
           const SizedBox(width: 12),
@@ -164,7 +234,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                     children: [
                       Flexible(
                         child: Text(
-                          widget.sharedPost.postedUser?.displayName ?? "Unknown User",
+                          widget.sharedPost.postedUser?.displayName ??
+                              "Unknown User",
                           style: AmityTextStyle.bodyBold(theme.baseColor),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -197,7 +268,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                               Flexible(
                                 child: Text(
                                   targetCommunityName,
-                                  style: AmityTextStyle.bodyBold(theme.baseColor),
+                                  style:
+                                      AmityTextStyle.bodyBold(theme.baseColor),
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
@@ -237,19 +309,39 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
             package: 'amity_uikit_beta_service',
             width: 16,
             height: 16,
-            colorFilter: ColorFilter.mode(theme.baseColorShade2, BlendMode.srcIn),
+            colorFilter:
+                ColorFilter.mode(theme.baseColorShade2, BlendMode.srcIn),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildShareComment(BuildContext context, String shareComment, dynamic theme) {
+  Widget _buildShareComment(
+      BuildContext context, String shareComment, dynamic theme) {
+    // Use translated text if available, otherwise show original
+    final displayText = _isCommentTranslated && _translatedComment != null
+        ? _translatedComment!
+        : shareComment;
+
     return Container(
       padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
-      child: Text(
-        shareComment,
-        style: AmityTextStyle.body(theme.baseColor),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            displayText,
+            style: AmityTextStyle.body(theme.baseColor),
+          ),
+          const SizedBox(height: 8),
+          TranslationButton(
+            isTranslated: _isCommentTranslated,
+            isLoading: _isTranslatingComment,
+            error: null,
+            theme: theme,
+            onTap: () => _handleCommentTranslation(shareComment),
+          ),
+        ],
       ),
     );
   }
@@ -278,7 +370,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
 
   /// Navigate to the original post detail page
   void _navigateToOriginalPost(BuildContext context) {
-    final originalPostId = PostSharingService.getOriginalPostId(widget.sharedPost);
+    final originalPostId =
+        PostSharingService.getOriginalPostId(widget.sharedPost);
     if (originalPostId != null && originalPostId.isNotEmpty) {
       Navigator.of(context).push(
         MaterialPageRoute(
@@ -386,8 +479,10 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                         ),
                         const SizedBox(width: 4),
                         Text(
-                          (originalPost.commentCount ?? 0).formattedCompactString(),
-                          style: AmityTextStyle.subtitleBold(theme.baseColorShade2),
+                          (originalPost.commentCount ?? 0)
+                              .formattedCompactString(),
+                          style: AmityTextStyle.subtitleBold(
+                              theme.baseColorShade2),
                         ),
                       ],
                     ),
@@ -403,9 +498,11 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
 
   Widget _buildMetadataPreview(BuildContext context, dynamic theme) {
     try {
-      final originalPostData = PostSharingService.getOriginalPostData(widget.sharedPost);
-      final originalAuthorInfo = PostSharingService.getOriginalAuthorInfo(widget.sharedPost);
-      
+      final originalPostData =
+          PostSharingService.getOriginalPostData(widget.sharedPost);
+      final originalAuthorInfo =
+          PostSharingService.getOriginalAuthorInfo(widget.sharedPost);
+
       return Container(
         padding: const EdgeInsets.all(12),
         width: double.infinity, // Ensure full width
@@ -417,7 +514,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
               children: [
                 AmityUserAvatar(
                   avatarUrl: originalAuthorInfo['avatarUrl'] ?? "",
-                  displayName: originalAuthorInfo['displayName'] ?? "Unknown User",
+                  displayName:
+                      originalAuthorInfo['displayName'] ?? "Unknown User",
                   isDeletedUser: false,
                 ),
                 const SizedBox(width: 8),
@@ -433,7 +531,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                       ),
                       if (originalPostData?['createdAt'] != null)
                         Text(
-                          _formatOriginalPostTime(originalPostData!['createdAt'].toString()),
+                          _formatOriginalPostTime(
+                              originalPostData!['createdAt'].toString()),
                           style: AmityTextStyle.caption(theme.baseColorShade2),
                         ),
                     ],
@@ -441,11 +540,11 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                 ),
               ],
             ),
-            
+
             const SizedBox(height: 8),
-            
+
             // Original post text content
-            if (originalPostData?['text'] != null && 
+            if (originalPostData?['text'] != null &&
                 (originalPostData!['text'] as String).isNotEmpty)
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
@@ -456,11 +555,12 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
-            
+
             // Display actual media if available, otherwise show fallback
-            if (originalPostData?['mediaUrls'] != null && 
+            if (originalPostData?['mediaUrls'] != null &&
                 (originalPostData!['mediaUrls'] as List).isNotEmpty)
-              _buildMediaContent(context, originalPostData['mediaUrls'] as List, theme)
+              _buildMediaContent(
+                  context, originalPostData['mediaUrls'] as List, theme)
             else if (originalPostData?['hasChildren'] == true)
               Container(
                 margin: const EdgeInsets.only(top: 8),
@@ -478,7 +578,7 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      'This post contains media',
+                      context.l10n.shared_post_media_indicator,
                       style: AmityTextStyle.caption(theme.baseColorShade1),
                     ),
                   ],
@@ -504,7 +604,7 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
             ),
             const SizedBox(width: 8),
             Text(
-              'Unable to load shared post',
+              context.l10n.shared_post_load_error,
               style: AmityTextStyle.caption(theme.baseColorShade2),
             ),
           ],
@@ -513,7 +613,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     }
   }
 
-  Widget _buildMediaContent(BuildContext context, List mediaUrls, dynamic theme) {
+  Widget _buildMediaContent(
+      BuildContext context, List mediaUrls, dynamic theme) {
     if (mediaUrls.isEmpty) {
       return const SizedBox.shrink();
     }
@@ -524,9 +625,10 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
         children: [
           // Display up to 4 media items in a grid
           ...mediaUrls.take(4).map<Widget>((media) {
-            return _buildMediaItem(context, Map<String, dynamic>.from(media), theme);
+            return _buildMediaItem(
+                context, Map<String, dynamic>.from(media), theme);
           }).toList(),
-          
+
           // Show "+X more" if there are more than 4 items
           if (mediaUrls.length > 4)
             Container(
@@ -541,10 +643,11 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     );
   }
 
-  Widget _buildMediaItem(BuildContext context, Map<String, dynamic> media, dynamic theme) {
+  Widget _buildMediaItem(
+      BuildContext context, Map<String, dynamic> media, dynamic theme) {
     final mediaType = media['type'] as String?;
     final url = media['url'] as String?;
-    
+
     // For videos, we allow empty URLs (show placeholder)
     if (url == null || (url.isEmpty && mediaType != 'video')) {
       return const SizedBox.shrink();
@@ -562,9 +665,10 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     }
   }
 
-  Widget _buildImageItem(BuildContext context, Map<String, dynamic> imageData, dynamic theme) {
+  Widget _buildImageItem(
+      BuildContext context, Map<String, dynamic> imageData, dynamic theme) {
     final url = imageData['url'] as String;
-    
+
     return Container(
       margin: const EdgeInsets.only(top: 8),
       constraints: const BoxConstraints(
@@ -584,7 +688,8 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     );
   }
 
-  Widget _buildVideoItem(BuildContext context, Map<String, dynamic> videoData, dynamic theme) {
+  Widget _buildVideoItem(
+      BuildContext context, Map<String, dynamic> videoData, dynamic theme) {
     return Container(
       margin: const EdgeInsets.only(top: 8),
       height: 120,
@@ -609,7 +714,7 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                 color: theme.baseColorShade2,
               ),
             ),
-            
+
             // Play button overlay
             Positioned(
               top: 0,
@@ -628,7 +733,7 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                 ),
               ),
             ),
-            
+
             // Video label
             Positioned(
               bottom: 8,
@@ -640,7 +745,7 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Text(
-                  'Video',
+                  context.l10n.media_type_video,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 12,
@@ -655,10 +760,11 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     );
   }
 
-  Widget _buildFileItem(BuildContext context, Map<String, dynamic> fileData, dynamic theme) {
+  Widget _buildFileItem(
+      BuildContext context, Map<String, dynamic> fileData, dynamic theme) {
     final fileName = fileData['fileName'] as String? ?? 'File';
     final fileSize = fileData['fileSize'] as int?;
-    
+
     return Container(
       margin: const EdgeInsets.only(top: 8),
       padding: const EdgeInsets.all(12),
@@ -711,16 +817,16 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
       final difference = now.difference(postTime);
 
       if (difference.inMinutes < 1) {
-        return 'Just now';
+        return context.l10n.timestamp_just_now_full;
       } else if (difference.inMinutes < 60) {
-        return '${difference.inMinutes}m ago';
+        return context.l10n.timestamp_minutes_ago(difference.inMinutes);
       } else if (difference.inHours < 24) {
-        return '${difference.inHours}h ago';
+        return context.l10n.timestamp_hours_ago(difference.inHours);
       } else {
-        return '${difference.inDays}d ago';
+        return context.l10n.timestamp_days_ago(difference.inDays);
       }
     } catch (e) {
-      return 'Some time ago';
+      return context.l10n.timestamp_some_time_ago;
     }
   }
 
@@ -730,16 +836,16 @@ class _SharedPostWrapperState extends State<SharedPostWrapper> {
     final difference = now.difference(postTime);
 
     if (difference.inMinutes < 1) {
-      return 'Just now';
+      return context.l10n.timestamp_just_now_full;
     } else if (difference.inMinutes < 60) {
-      return '${difference.inMinutes}m';
+      return context.l10n.timestamp_minutes_short(difference.inMinutes);
     } else if (difference.inHours < 24) {
-      return '${difference.inHours}h';
+      return context.l10n.timestamp_hours_short(difference.inHours);
     } else if (difference.inDays < 7) {
-      return '${difference.inDays}d';
+      return context.l10n.timestamp_days_short(difference.inDays);
     } else {
       final weeks = difference.inDays ~/ 7;
-      return '${weeks}w';
+      return context.l10n.timestamp_weeks_short(weeks);
     }
   }
 }

@@ -1911,6 +1911,59 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get cta_create_community => 'Create community';
+
+  @override
+  String get shared_post_media_indicator => 'This post contains media';
+
+  @override
+  String get shared_post_load_error => 'Unable to load shared post';
+
+  @override
+  String get media_type_video => 'Video';
+
+  @override
+  String get timestamp_just_now_full => 'Just now';
+
+  @override
+  String timestamp_minutes_ago(int minutes) {
+    return '${minutes}m ago';
+  }
+
+  @override
+  String timestamp_hours_ago(int hours) {
+    return '${hours}h ago';
+  }
+
+  @override
+  String timestamp_days_ago(int days) {
+    return '${days}d ago';
+  }
+
+  @override
+  String get timestamp_some_time_ago => 'Some time ago';
+
+  @override
+  String timestamp_minutes_short(int minutes) {
+    return '${minutes}m';
+  }
+
+  @override
+  String timestamp_hours_short(int hours) {
+    return '${hours}h';
+  }
+
+  @override
+  String timestamp_days_short(int days) {
+    return '${days}d';
+  }
+
+  @override
+  String timestamp_weeks_short(int weeks) {
+    return '${weeks}w';
+  }
+
+  @override
+  String get feed_empty_create_first_post => 'Create your first post';
 }
 
 /// The translations for Slovenian, as used in Slovenia (`sl_SI`).
@@ -3724,4 +3777,57 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
 
   @override
   String get explore_no_group_description => 'Ustvarimo svoje skupine..';
+
+  @override
+  String get shared_post_media_indicator => 'This post contains media';
+
+  @override
+  String get shared_post_load_error => 'Unable to load shared post';
+
+  @override
+  String get media_type_video => 'Video';
+
+  @override
+  String get timestamp_just_now_full => 'Just now';
+
+  @override
+  String timestamp_minutes_ago(int minutes) {
+    return '${minutes}m ago';
+  }
+
+  @override
+  String timestamp_hours_ago(int hours) {
+    return '${hours}h ago';
+  }
+
+  @override
+  String timestamp_days_ago(int days) {
+    return '${days}d ago';
+  }
+
+  @override
+  String get timestamp_some_time_ago => 'Some time ago';
+
+  @override
+  String timestamp_minutes_short(int minutes) {
+    return '${minutes}m';
+  }
+
+  @override
+  String timestamp_hours_short(int hours) {
+    return '${hours}h';
+  }
+
+  @override
+  String timestamp_days_short(int days) {
+    return '${days}d';
+  }
+
+  @override
+  String timestamp_weeks_short(int weeks) {
+    return '${weeks}w';
+  }
+
+  @override
+  String get feed_empty_create_first_post => 'Create your first post';
 }

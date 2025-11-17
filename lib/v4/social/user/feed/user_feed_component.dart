@@ -138,9 +138,9 @@ class UserFeedComponent extends NewBaseComponent {
           // Own profile - show button to create post
           return UserFeedEmptyStateInfo(
             context.l10n.feed_no_posts,
-            "Create your first post to get started",
+            context.l10n.feed_empty_create_first_post,
             "assets/Icons/amity_ic_feed_empty.svg",
-            buttonText: "Create Post",
+            buttonText: context.l10n.post_create,
             buttonIcon: "assets/Icons/amity_ic_create_post_button.svg",
             onButtonTap: () {
               Navigator.push(

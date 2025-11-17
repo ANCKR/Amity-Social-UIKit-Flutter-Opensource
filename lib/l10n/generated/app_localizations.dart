@@ -3432,6 +3432,84 @@ abstract class AppLocalizations {
   /// In en_US, this message translates to:
   /// **'Create community'**
   String get cta_create_community;
+
+  /// Text shown when shared post contains media but can't display preview
+  ///
+  /// In en_US, this message translates to:
+  /// **'This post contains media'**
+  String get shared_post_media_indicator;
+
+  /// Error message when shared post data cannot be loaded
+  ///
+  /// In en_US, this message translates to:
+  /// **'Unable to load shared post'**
+  String get shared_post_load_error;
+
+  /// Label for video content type
+  ///
+  /// In en_US, this message translates to:
+  /// **'Video'**
+  String get media_type_video;
+
+  /// Full timestamp text for content posted just now
+  ///
+  /// In en_US, this message translates to:
+  /// **'Just now'**
+  String get timestamp_just_now_full;
+
+  /// Timestamp for content posted minutes ago
+  ///
+  /// In en_US, this message translates to:
+  /// **'{minutes}m ago'**
+  String timestamp_minutes_ago(int minutes);
+
+  /// Timestamp for content posted hours ago
+  ///
+  /// In en_US, this message translates to:
+  /// **'{hours}h ago'**
+  String timestamp_hours_ago(int hours);
+
+  /// Timestamp for content posted days ago
+  ///
+  /// In en_US, this message translates to:
+  /// **'{days}d ago'**
+  String timestamp_days_ago(int days);
+
+  /// Fallback timestamp when date parsing fails
+  ///
+  /// In en_US, this message translates to:
+  /// **'Some time ago'**
+  String get timestamp_some_time_ago;
+
+  /// Short timestamp for minutes
+  ///
+  /// In en_US, this message translates to:
+  /// **'{minutes}m'**
+  String timestamp_minutes_short(int minutes);
+
+  /// Short timestamp for hours
+  ///
+  /// In en_US, this message translates to:
+  /// **'{hours}h'**
+  String timestamp_hours_short(int hours);
+
+  /// Short timestamp for days
+  ///
+  /// In en_US, this message translates to:
+  /// **'{days}d'**
+  String timestamp_days_short(int days);
+
+  /// Short timestamp for weeks
+  ///
+  /// In en_US, this message translates to:
+  /// **'{weeks}w'**
+  String timestamp_weeks_short(int weeks);
+
+  /// Description text encouraging user to create their first post
+  ///
+  /// In en_US, this message translates to:
+  /// **'Create your first post'**
+  String get feed_empty_create_first_post;
 }
 
 class _AppLocalizationsDelegate

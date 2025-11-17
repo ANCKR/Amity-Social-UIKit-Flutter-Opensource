@@ -1,3 +1,4 @@
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
@@ -43,13 +44,13 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                 SizedBox(
                   width: 252,
                   child: Text(
-                    'Your feed is empty',
+                    context.l10n.feed_empty_title,
                     textAlign: TextAlign.center,
                     style: AmityTextStyle.titleBold(theme.baseColorShade1),
                   ),
                 ),
                 Text(
-                  'Find community or create your own ',
+                  context.l10n.feed_empty_description,
                   textAlign: TextAlign.center,
                   style: AmityTextStyle.caption(theme.baseColorShade1),
                 ),
@@ -107,7 +108,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                 ),
                               ),
                               Text(
-                                'Explore community',
+                                context.l10n.empty_my_communities_cta,
                                 style: AmityTextStyle.subtitleBold(Colors.white),
                               ),
                             ],
@@ -134,7 +135,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                'Create community',
+                                context.l10n.cta_create_community,
                                 style: AmityTextStyle.subtitle(theme.primaryColor),
                               ),
                             ],
