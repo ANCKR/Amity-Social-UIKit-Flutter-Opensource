@@ -1977,23 +1977,23 @@
   "@story_discard_action": {
     "description": "Button text for discarding story"
   },
-  "shared_post_media_indicator": "This post contains media",
+  "shared_post_media_indicator": "Этот пост содержит медиа",
   "@shared_post_media_indicator": {
     "description": "Text shown when shared post contains media but can't display preview"
   },
-  "shared_post_load_error": "Unable to load shared post",
+  "shared_post_load_error": "Не удалось загрузить общий пост",
   "@shared_post_load_error": {
     "description": "Error message when shared post data cannot be loaded"
   },
-  "media_type_video": "Video",
+  "media_type_video": "Видео",
   "@media_type_video": {
     "description": "Label for video content type"
   },
-  "timestamp_just_now_full": "Just now",
+  "timestamp_just_now_full": "Только что",
   "@timestamp_just_now_full": {
     "description": "Full timestamp text for content posted just now"
   },
-  "timestamp_minutes_ago": "{minutes}m ago",
+  "timestamp_minutes_ago": "{minutes} мин назад",
   "@timestamp_minutes_ago": {
     "description": "Timestamp for content posted minutes ago",
     "placeholders": {
@@ -2002,7 +2002,7 @@
       }
     }
   },
-  "timestamp_hours_ago": "{hours}h ago",
+  "timestamp_hours_ago": "{hours} ч назад",
   "@timestamp_hours_ago": {
     "description": "Timestamp for content posted hours ago",
     "placeholders": {
@@ -2011,7 +2011,7 @@
       }
     }
   },
-  "timestamp_days_ago": "{days}d ago",
+  "timestamp_days_ago": "{days} д назад",
   "@timestamp_days_ago": {
     "description": "Timestamp for content posted days ago",
     "placeholders": {
@@ -2020,11 +2020,11 @@
       }
     }
   },
-  "timestamp_some_time_ago": "Some time ago",
+  "timestamp_some_time_ago": "Некоторое время назад",
   "@timestamp_some_time_ago": {
     "description": "Fallback timestamp when date parsing fails"
   },
-  "timestamp_minutes_short": "{minutes}m",
+  "timestamp_minutes_short": "{minutes} мин",
   "@timestamp_minutes_short": {
     "description": "Short timestamp for minutes",
     "placeholders": {
@@ -2033,7 +2033,7 @@
       }
     }
   },
-  "timestamp_hours_short": "{hours}h",
+  "timestamp_hours_short": "{hours} ч",
   "@timestamp_hours_short": {
     "description": "Short timestamp for hours",
     "placeholders": {
@@ -2042,7 +2042,7 @@
       }
     }
   },
-  "timestamp_days_short": "{days}d",
+  "timestamp_days_short": "{days} д",
   "@timestamp_days_short": {
     "description": "Short timestamp for days",
     "placeholders": {
@@ -2051,7 +2051,7 @@
       }
     }
   },
-  "timestamp_weeks_short": "{weeks}w",
+  "timestamp_weeks_short": "{weeks} нед",
   "@timestamp_weeks_short": {
     "description": "Short timestamp for weeks",
     "placeholders": {
@@ -2060,7 +2060,7 @@
       }
     }
   },
-  "feed_empty_create_first_post": "Create your first post",
+  "feed_empty_create_first_post": "Создайте свой первый пост",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
   }

@@ -1921,57 +1921,59 @@ class AppLocalizationsSo extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator =>
+      'Qoralkan wuxuu ka kooban yahay warbaahinta';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error =>
+      'Lama soo rari karo qoraalka la wadaagay';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Fiidiyow';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Hadda';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes daqiiqo kahor';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours saac kahor';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days maalmood kahor';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Waqti ka hor';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes dq';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours s';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days m';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks t';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Samee qoraalkaaga ugu horreeyay';
 }
 
 /// The translations for Somali, as used in Somalia (`so_SO`).
@@ -3797,55 +3799,57 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'Aynu abuurno kooxo kuu gaar ah ..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator =>
+      'Qoralkan wuxuu ka kooban yahay warbaahinta';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error =>
+      'Lama soo rari karo qoraalka la wadaagay';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Fiidiyow';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Hadda';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes daqiiqo kahor';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours saac kahor';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days maalmood kahor';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Waqti ka hor';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes dq';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours s';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days m';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks t';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Samee qoraalkaaga ugu horreeyay';
 }

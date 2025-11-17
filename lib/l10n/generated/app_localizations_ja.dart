@@ -1857,57 +1857,57 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'この投稿にはメディアが含まれています';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => '共有投稿を読み込めません';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => '動画';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'たった今';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes分前';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours時間前';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days日前';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'しばらく前';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes分';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours時間';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days日';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks週';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => '最初の投稿を作成';
 }
 
 /// The translations for Japanese, as used in Japan (`ja_JP`).
@@ -3660,55 +3660,55 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get explore_no_group_description => '独自のグループを作成しましょう。';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'この投稿にはメディアが含まれています';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => '共有投稿を読み込めません';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => '動画';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'たった今';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes分前';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours時間前';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days日前';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'しばらく前';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes分';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours時間';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days日';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks週';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => '最初の投稿を作成';
 }

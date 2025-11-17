@@ -1921,57 +1921,57 @@ class AppLocalizationsSq extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Ky postim përmban media';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'Nuk mund të ngarkohet postimi i ndarë';
 
   @override
   String get media_type_video => 'Video';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Sapo';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes min më parë';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours orë më parë';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days ditë më parë';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Pak kohë më parë';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes min';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours orë';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days ditë';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks javë';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Krijo postimin tënd të parë';
 }
 
 /// The translations for Albanian, as used in Albania (`sq_AL`).
@@ -3794,55 +3794,55 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get explore_no_group_description => 'Le të krijojmë grupet tuaja..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Ky postim përmban media';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'Nuk mund të ngarkohet postimi i ndarë';
 
   @override
   String get media_type_video => 'Video';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Sapo';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes min më parë';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours orë më parë';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days ditë më parë';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Pak kohë më parë';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes min';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours orë';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days ditë';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks javë';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Krijo postimin tënd të parë';
 }

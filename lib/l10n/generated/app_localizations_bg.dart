@@ -1920,57 +1920,58 @@ class AppLocalizationsBg extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Тази публикация съдържа медия';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error =>
+      'Неуспешно зареждане на споделена публикация';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Видео';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Току-що';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'Преди $minutes мин';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'Преди $hours ч';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'Преди $days д';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Преди известно време';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes мин';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours ч';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days д';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks с';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Създайте първата си публикация';
 }
 
 /// The translations for Bulgarian, as used in Bulgaria (`bg_BG`).
@@ -3796,55 +3797,56 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Нека създадем ваши собствени групи..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Тази публикация съдържа медия';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error =>
+      'Неуспешно зареждане на споделена публикация';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Видео';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Току-що';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'Преди $minutes мин';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'Преди $hours ч';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'Преди $days д';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Преди известно време';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes мин';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours ч';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days д';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks с';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Създайте първата си публикация';
 }

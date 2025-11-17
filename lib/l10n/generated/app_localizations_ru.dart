@@ -1917,57 +1917,57 @@ class AppLocalizationsRu extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Этот пост содержит медиа';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'Не удалось загрузить общий пост';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Видео';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Только что';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes мин назад';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours ч назад';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days д назад';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Некоторое время назад';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes мин';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours ч';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days д';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks нед';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Создайте свой первый пост';
 }
 
 /// The translations for Russian, as used in Russian Federation (`ru_RU`).
@@ -3785,55 +3785,55 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get explore_no_group_description => 'Let\'s create your own groups..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Этот пост содержит медиа';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'Не удалось загрузить общий пост';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Видео';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Только что';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes мин назад';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours ч назад';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days д назад';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Некоторое время назад';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes мин';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours ч';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days д';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks нед';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Создайте свой первый пост';
 }

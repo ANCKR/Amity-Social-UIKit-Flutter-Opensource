@@ -1912,57 +1912,57 @@ class AppLocalizationsPs extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'دا پوسټ رسنۍ لري';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'شریک شوی پوسټ بار نشو کولی';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'ویډیو';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'همدا اوس';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes دقیقې مخکې';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours ساعته مخکې';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days ورځې مخکې';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'یو څه وخت مخکې';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes د';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours س';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days و';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks ا';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'خپل لومړی پوسټ جوړ کړئ';
 }
 
 /// The translations for Pushto Pashto, as used in Afghanistan (`ps_AF`).
@@ -3773,55 +3773,55 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get explore_no_group_description => 'راځئ خپل ګروپونه جوړ کړو..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'دا پوسټ رسنۍ لري';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'شریک شوی پوسټ بار نشو کولی';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'ویډیو';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'همدا اوس';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return '$minutes دقیقې مخکې';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return '$hours ساعته مخکې';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return '$days ورځې مخکې';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'یو څه وخت مخکې';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes د';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours س';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days و';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks ا';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'خپل لومړی پوسټ جوړ کړئ';
 }

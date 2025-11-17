@@ -1913,57 +1913,57 @@ class AppLocalizationsLt extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Šiame įraše yra medija';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'Nepavyko įkelti bendrinamo įrašo';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Vaizdo įrašas';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Ką tik';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'Prieš $minutes min';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'Prieš $hours val';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'Prieš $days d';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Prieš kurį laiką';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes min';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours val';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days d';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks sav';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Sukurkite savo pirmąjį įrašą';
 }
 
 /// The translations for Lithuanian, as used in Lithuania (`lt_LT`).
@@ -3776,55 +3776,55 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
   String get explore_no_group_description => 'Sukurkime savo grupes..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Šiame įraše yra medija';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'Nepavyko įkelti bendrinamo įrašo';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'Vaizdo įrašas';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Ką tik';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'Prieš $minutes min';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'Prieš $hours val';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'Prieš $days d';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Prieš kurį laiką';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes min';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours val';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days d';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks sav';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Sukurkite savo pirmąjį įrašą';
 }

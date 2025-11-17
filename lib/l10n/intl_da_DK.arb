@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "Afstemningen skal indeholde mindst {minOptions} muligheder.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Denne {content} vil blive slettet permanent.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Du har nået uploadgrænsen på {maxUploads} billeder. Eventuelle yderligere billeder vil ikke blive gemt.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Du har nået uploadgrænsen på {maxUploads} videoer. Eventuelle yderligere videoer vil ikke blive gemt.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -947,7 +947,7 @@
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "Afstemningsspørgsmålet må ikke overstige {maxQuestionLength} tegn.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "Afstemningsindstillingen må ikke overstige {maxQuestionLength} tegn.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} vil ikke være i stand til at sende dig beskeden. De får ikke besked om, at du har blokeret dem.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "{displayName} vil nu være i stand til at sende dig beskeden. De får ikke besked om, at du har fjernet blokeringen af ​​dem.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "{count} anmodninger kræver din godkendelse",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} vil ikke kunne se indlæg og kommentarer, som du har oprettet. De får ikke besked om, at du har blokeret dem.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} vil nu kunne se indlæg og kommentarer, som du har oprettet. De får ikke besked om, at du har fjernet blokeringen af ​​dem.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Afvis afventende indlæg vil permanent slette det valgte indlæg fra fællesskabet.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Mulighed {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Flere valg",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Slutter {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Svarer til {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Afvis afventende indlæg vil permanent slette det valgte indlæg fra gruppen.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -2201,11 +2201,11 @@
   "@explore_no_group_description": {
     "description": "Translation for: Let's create your own groups.."
   },
-  "shared_post_media_indicator": "This post contains media",
+  "shared_post_media_indicator": "Dette opslag indeholder medier",
   "@shared_post_media_indicator": {
     "description": "Text shown when shared post contains media but can't display preview"
   },
-  "shared_post_load_error": "Unable to load shared post",
+  "shared_post_load_error": "Kan ikke indlæse delt opslag",
   "@shared_post_load_error": {
     "description": "Error message when shared post data cannot be loaded"
   },
@@ -2213,11 +2213,11 @@
   "@media_type_video": {
     "description": "Label for video content type"
   },
-  "timestamp_just_now_full": "Just now",
+  "timestamp_just_now_full": "Lige nu",
   "@timestamp_just_now_full": {
     "description": "Full timestamp text for content posted just now"
   },
-  "timestamp_minutes_ago": "{minutes}m ago",
+  "timestamp_minutes_ago": "{minutes} min siden",
   "@timestamp_minutes_ago": {
     "description": "Timestamp for content posted minutes ago",
     "placeholders": {
@@ -2226,7 +2226,7 @@
       }
     }
   },
-  "timestamp_hours_ago": "{hours}h ago",
+  "timestamp_hours_ago": "{hours} t siden",
   "@timestamp_hours_ago": {
     "description": "Timestamp for content posted hours ago",
     "placeholders": {
@@ -2235,7 +2235,7 @@
       }
     }
   },
-  "timestamp_days_ago": "{days}d ago",
+  "timestamp_days_ago": "{days} d siden",
   "@timestamp_days_ago": {
     "description": "Timestamp for content posted days ago",
     "placeholders": {
@@ -2244,11 +2244,11 @@
       }
     }
   },
-  "timestamp_some_time_ago": "Some time ago",
+  "timestamp_some_time_ago": "For nogen tid siden",
   "@timestamp_some_time_ago": {
     "description": "Fallback timestamp when date parsing fails"
   },
-  "timestamp_minutes_short": "{minutes}m",
+  "timestamp_minutes_short": "{minutes} min",
   "@timestamp_minutes_short": {
     "description": "Short timestamp for minutes",
     "placeholders": {
@@ -2257,7 +2257,7 @@
       }
     }
   },
-  "timestamp_hours_short": "{hours}h",
+  "timestamp_hours_short": "{hours} t",
   "@timestamp_hours_short": {
     "description": "Short timestamp for hours",
     "placeholders": {
@@ -2266,7 +2266,7 @@
       }
     }
   },
-  "timestamp_days_short": "{days}d",
+  "timestamp_days_short": "{days} d",
   "@timestamp_days_short": {
     "description": "Short timestamp for days",
     "placeholders": {
@@ -2275,7 +2275,7 @@
       }
     }
   },
-  "timestamp_weeks_short": "{weeks}w",
+  "timestamp_weeks_short": "{weeks} u",
   "@timestamp_weeks_short": {
     "description": "Short timestamp for weeks",
     "placeholders": {
@@ -2284,8 +2284,128 @@
       }
     }
   },
-  "feed_empty_create_first_post": "Create your first post",
+  "feed_empty_create_first_post": "Opret dit første opslag",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_last_moderator_message": "Du skal forfremme et andet medlem til moderator, før du forlader.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "cta_create_community": "Skab fællesskab",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_all_chats_cta": "Opret ny chat",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_all_chats_description": "Lad os oprette chat for at komme i gang.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_title": "Ingen samtale endnu",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Arkiverede chats vises her",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_archived_chats_title": "Ingen arkivchat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Der blev ikke fundet nogen fællesskaber i denne kategori. Prøv at udforske andre kategorier, eller opret din egen.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_description": "Vær den første til at kommentere",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_comments_title": "Ingen kommentarer endnu",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_explore_description_no_categories": "Find et fællesskab eller skab dit eget",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_communities": "Vær den første til at skabe et fællesskab",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Din udforskning er tom",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "Ingen fællesskaber endnu",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_group_chats_cta": "Opret gruppechat",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_description": "Start en gruppechat med venner",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_title": "Ingen gruppechats endnu",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_my_communities_cta": "Udforsk fællesskaber",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_my_communities_description": "Tilmeld dig fællesskaber for at se dem her",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_title": "Ingen fællesskaber endnu",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_search_cta": "Ryd søgning",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_search_description": "Prøv at søge med forskellige søgeord",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_title": "Ingen resultater fundet",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "general_no": "Ingen",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "general_open_settings": "Åbn indstillinger",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "Fjerne",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_yes": "Ja",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "post_share_success": "Indlægget blev delt",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_remove_link_message": "Dette link vil blive fjernet fra historien.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "story_unsaved_changes_message": "er du sikker på, at du vil annullere? Dine ændringer vil ikke blive gemt.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
   }
 }

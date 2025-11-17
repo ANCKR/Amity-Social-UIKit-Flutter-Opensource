@@ -1900,57 +1900,57 @@ class AppLocalizationsAr extends AppLocalizations {
   String get cta_create_community => 'Create community';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'تحتوي هذه المشاركة على وسائط';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'تعذر تحميل المشاركة المشتركة';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'فيديو';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'الآن';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'منذ $minutes د';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'منذ $hours س';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'منذ $days ي';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'منذ بعض الوقت';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes د';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours س';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days ي';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks أ';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'أنشئ منشورك الأول';
 }
 
 /// The translations for Arabic, as used in Egypt (`ar_EG`).
@@ -3750,55 +3750,55 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get explore_no_group_description => 'فلنقم بإنشاء مجموعاتكم الخاصة..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'تحتوي هذه المشاركة على وسائط';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error => 'تعذر تحميل المشاركة المشتركة';
 
   @override
-  String get media_type_video => 'Video';
+  String get media_type_video => 'فيديو';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'الآن';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'منذ $minutes د';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'منذ $hours س';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'منذ $days ي';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'منذ بعض الوقت';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes د';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours س';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days ي';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks أ';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'أنشئ منشورك الأول';
 }

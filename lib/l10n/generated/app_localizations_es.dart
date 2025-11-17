@@ -1917,57 +1917,58 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cta_create_community => 'Crear comunidad';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Esta publicación contiene medios';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error =>
+      'No se puede cargar la publicación compartida';
 
   @override
   String get media_type_video => 'Video';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Justo ahora';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'Hace $minutes min';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'Hace $hours h';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'Hace $days d';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Hace un tiempo';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes min';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours h';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days d';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks sem';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Crea tu primera publicación';
 }
 
 /// The translations for Spanish Castilian, as used in Spain (`es_ES`).
@@ -3785,55 +3786,56 @@ class AppLocalizationsEsEs extends AppLocalizationsEs {
   String get explore_no_group_description => 'Creemos tus propios grupos..';
 
   @override
-  String get shared_post_media_indicator => 'This post contains media';
+  String get shared_post_media_indicator => 'Esta publicación contiene medios';
 
   @override
-  String get shared_post_load_error => 'Unable to load shared post';
+  String get shared_post_load_error =>
+      'No se puede cargar la publicación compartida';
 
   @override
   String get media_type_video => 'Video';
 
   @override
-  String get timestamp_just_now_full => 'Just now';
+  String get timestamp_just_now_full => 'Justo ahora';
 
   @override
   String timestamp_minutes_ago(int minutes) {
-    return '${minutes}m ago';
+    return 'Hace $minutes min';
   }
 
   @override
   String timestamp_hours_ago(int hours) {
-    return '${hours}h ago';
+    return 'Hace $hours h';
   }
 
   @override
   String timestamp_days_ago(int days) {
-    return '${days}d ago';
+    return 'Hace $days d';
   }
 
   @override
-  String get timestamp_some_time_ago => 'Some time ago';
+  String get timestamp_some_time_ago => 'Hace un tiempo';
 
   @override
   String timestamp_minutes_short(int minutes) {
-    return '${minutes}m';
+    return '$minutes min';
   }
 
   @override
   String timestamp_hours_short(int hours) {
-    return '${hours}h';
+    return '$hours h';
   }
 
   @override
   String timestamp_days_short(int days) {
-    return '${days}d';
+    return '$days d';
   }
 
   @override
   String timestamp_weeks_short(int weeks) {
-    return '${weeks}w';
+    return '$weeks sem';
   }
 
   @override
-  String get feed_empty_create_first_post => 'Create your first post';
+  String get feed_empty_create_first_post => 'Crea tu primera publicación';
 }

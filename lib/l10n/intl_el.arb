@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "Η δημοσκόπηση πρέπει να περιέχει τουλάχιστον {minOptions} επιλογές.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "Αυτό το {content} θα διαγραφεί οριστικά.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "Έχετε συμπληρώσει το όριο μεταφόρτωσης των {maxUploads} εικόνων. Τυχόν πρόσθετες εικόνες δεν θα αποθηκευτούν.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "Έχετε συμπληρώσει το όριο μεταφόρτωσης των {maxUploads} βίντεο. Τυχόν επιπλέον βίντεο δεν θα αποθηκευτούν.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -947,7 +947,7 @@
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "Η ερώτηση δημοσκόπησης δεν μπορεί να υπερβαίνει τους {maxQuestionLength} χαρακτήρες.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "Η επιλογή δημοσκόπησης δεν μπορεί να υπερβαίνει τους {maxQuestionLength} χαρακτήρες.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "Ο {displayName} δεν θα μπορεί να σας στείλει το μήνυμα. Δεν θα ειδοποιηθούν ότι τους έχετε αποκλείσει.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "Το {displayName} θα μπορεί πλέον να σας στείλει το μήνυμα. Δεν θα ειδοποιηθούν ότι τους έχετε ξεμπλοκάρει.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "Τα {count} αιτήματα χρειάζονται την έγκρισή σας",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "Το {displayName} δεν θα μπορεί να δει αναρτήσεις και σχόλια που έχετε δημιουργήσει. Δεν θα ειδοποιηθούν ότι τους έχετε αποκλείσει.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "Το {displayName} θα μπορεί πλέον να βλέπει τις αναρτήσεις και τα σχόλια που έχετε δημιουργήσει. Δεν θα ειδοποιηθούν ότι τους έχετε ξεμπλοκάρει.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "Η απόρριψη εκκρεμούς ανάρτησης θα διαγράψει οριστικά την επιλεγμένη ανάρτηση από την κοινότητα.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "Επιλογή {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "Πολλαπλή επιλογή",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "Λήγει στις {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "Απάντηση σε {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "Η απόρριψη εκκρεμούς ανάρτησης θα διαγράψει οριστικά την επιλεγμένη ανάρτηση από την ομάδα.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1977,23 +1977,23 @@
   "@story_discard_action": {
     "description": "Button text for discarding story"
   },
-  "shared_post_media_indicator": "This post contains media",
+  "shared_post_media_indicator": "Αυτή η ανάρτηση περιέχει πολυμέσα",
   "@shared_post_media_indicator": {
     "description": "Text shown when shared post contains media but can't display preview"
   },
-  "shared_post_load_error": "Unable to load shared post",
+  "shared_post_load_error": "Αδυναμία φόρτωσης κοινόχρηστης ανάρτησης",
   "@shared_post_load_error": {
     "description": "Error message when shared post data cannot be loaded"
   },
-  "media_type_video": "Video",
+  "media_type_video": "Βίντεο",
   "@media_type_video": {
     "description": "Label for video content type"
   },
-  "timestamp_just_now_full": "Just now",
+  "timestamp_just_now_full": "Μόλις τώρα",
   "@timestamp_just_now_full": {
     "description": "Full timestamp text for content posted just now"
   },
-  "timestamp_minutes_ago": "{minutes}m ago",
+  "timestamp_minutes_ago": "Πριν από {minutes} λεπτά",
   "@timestamp_minutes_ago": {
     "description": "Timestamp for content posted minutes ago",
     "placeholders": {
@@ -2002,7 +2002,7 @@
       }
     }
   },
-  "timestamp_hours_ago": "{hours}h ago",
+  "timestamp_hours_ago": "Πριν από {hours} ώρες",
   "@timestamp_hours_ago": {
     "description": "Timestamp for content posted hours ago",
     "placeholders": {
@@ -2011,7 +2011,7 @@
       }
     }
   },
-  "timestamp_days_ago": "{days}d ago",
+  "timestamp_days_ago": "Πριν από {days} ημέρες",
   "@timestamp_days_ago": {
     "description": "Timestamp for content posted days ago",
     "placeholders": {
@@ -2020,11 +2020,11 @@
       }
     }
   },
-  "timestamp_some_time_ago": "Some time ago",
+  "timestamp_some_time_ago": "Πριν από λίγο",
   "@timestamp_some_time_ago": {
     "description": "Fallback timestamp when date parsing fails"
   },
-  "timestamp_minutes_short": "{minutes}m",
+  "timestamp_minutes_short": "{minutes} λ",
   "@timestamp_minutes_short": {
     "description": "Short timestamp for minutes",
     "placeholders": {
@@ -2033,7 +2033,7 @@
       }
     }
   },
-  "timestamp_hours_short": "{hours}h",
+  "timestamp_hours_short": "{hours} ώ",
   "@timestamp_hours_short": {
     "description": "Short timestamp for hours",
     "placeholders": {
@@ -2042,7 +2042,7 @@
       }
     }
   },
-  "timestamp_days_short": "{days}d",
+  "timestamp_days_short": "{days} η",
   "@timestamp_days_short": {
     "description": "Short timestamp for days",
     "placeholders": {
@@ -2051,7 +2051,7 @@
       }
     }
   },
-  "timestamp_weeks_short": "{weeks}w",
+  "timestamp_weeks_short": "{weeks} ε",
   "@timestamp_weeks_short": {
     "description": "Short timestamp for weeks",
     "placeholders": {
@@ -2060,8 +2060,344 @@
       }
     }
   },
-  "feed_empty_create_first_post": "Create your first post",
+  "feed_empty_create_first_post": "Δημιουργήστε την πρώτη σας ανάρτηση",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_add_member_button": "Προσθήκη μέλους",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_add_member_title": "Προσθήκη μέλους",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "chat_archived_empty": "Δεν υπάρχει συνομιλία με αρχείο",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_archived_title": "Αρχειοθετημένες συνομιλίες",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "chat_banned_users_empty": "Δεν υπάρχει τίποτα για να δείτε ακόμα",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_banned_users_update_failed": "Η ενημέρωση των αποκλεισμένων χρηστών απέτυχε. Δοκιμάστε ξανά.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_banned_users_updated": "Ενημερώθηκαν οι αποκλεισμένοι χρήστες.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "chat_group_left_failed": "Αποτυχία αποχώρησης από την ομαδική συνομιλία. Δοκιμάστε ξανά.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_left_success": "Αποχώρησε η ομαδική συνομιλία.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_group_notification_update_failed": "Η ενημέρωση της ειδοποίησης ομάδας απέτυχε. Δοκιμάστε ξανά.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "chat_group_notification_updated": "Η ομαδική ειδοποίηση ενημερώθηκε.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_group_profile_update_failed": "Η ενημέρωση του προφίλ ομάδας απέτυχε. Δοκιμάστε ξανά.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "chat_group_profile_updated": "Το προφίλ ομάδας ενημερώθηκε.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Ρυθμίσεις ομάδας",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "chat_group_settings_title": "Ρυθμίσεις ομάδας",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "chat_last_moderator_message": "Πρέπει να προωθήσετε ένα άλλο μέλος σε συντονιστή πριν αποχωρήσετε.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_leave_button": "Αδεια",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_leave_group_message": "Εάν αποχωρήσετε από αυτήν την ομάδα, δεν θα βλέπετε πλέον νέες δραστηριότητες ούτε θα συμμετέχετε σε αυτήν την ομάδα.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_leave_group_title": "Αποχώρηση από την ομάδα",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_member_list_update_failed": "Η ενημέρωση της λίστας μελών απέτυχε. Δοκιμάστε ξανά.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "chat_member_list_updated": "Η λίστα μελών ενημερώθηκε.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "chat_member_permissions_update_failed": "Απέτυχε η ενημέρωση των δικαιωμάτων μελών. Δοκιμάστε ξανά.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "chat_member_permissions_updated": "Τα δικαιώματα μελών ενημερώθηκαν.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_messaging_section": "Μηνύματα",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "chat_notification_default_description": "Από προεπιλογή, τα μέλη αυτής της κοινότητας θα λαμβάνουν ειδοποιήσεις, αλλά μπορούν να επιλέξουν να τις απενεργοποιήσουν.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "chat_notification_silent_description": "Δεν υπάρχουν ειδοποιήσεις για όλους σε αυτό το κανάλι. Τα μέλη δεν μπορούν να ενεργοποιήσουν τις ειδοποιήσεις στο κανάλι.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "chat_notification_subscribe_description": "Όλα τα μέλη έχουν την επιλογή να λαμβάνουν ειδοποιήσεις, αλλά πρέπει να τις ενεργοποιήσουν. Από προεπιλογή, οι ειδοποιήσεις είναι απενεργοποιημένες για κάθε μέλος.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_permission_everyone_description": "Όλοι μπορούν να στείλουν ένα μήνυμα στην ομάδα.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "chat_permission_moderators_description": "Τα μέλη που δεν είναι συντονιστές μπορούν να διαβάσουν μηνύματα αλλά δεν μπορούν να στείλουν μηνύματα.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_promote_member_button": "Προώθηση μέλους",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "chat_unban_button": "Κατάργηση απαγόρευσης",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "chat_unban_confirmation_message": "Είστε βέβαιοι ότι θέλετε να καταργήσετε την απαγόρευση αυτού του χρήστη; Θα μπορέσουν να ενταχθούν ξανά στην ομάδα.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "chat_your_preferences": "τις προτιμήσεις σας",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "cta_create_community": "Δημιουργία κοινότητας",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_all_chats_cta": "Δημιουργία νέας συνομιλίας",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_all_chats_description": "Ας δημιουργήσουμε συνομιλία για να ξεκινήσουμε.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_title": "Καμία συζήτηση ακόμα",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Οι αρχειοθετημένες συνομιλίες θα εμφανίζονται εδώ",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_archived_chats_title": "Δεν υπάρχει συνομιλία με αρχείο",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Δεν βρέθηκαν κοινότητες σε αυτήν την κατηγορία. Δοκιμάστε να εξερευνήσετε άλλες κατηγορίες ή δημιουργήστε τη δική σας.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_description": "Γίνε ο πρώτος που θα σχολιάσει",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_comments_title": "Δεν υπάρχουν ακόμη σχόλια",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_explore_description_no_categories": "Βρείτε κοινότητα ή δημιουργήστε τη δική σας",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_communities": "Γίνετε ο πρώτος που θα δημιουργήσει μια κοινότητα",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Η εξερεύνησή σας είναι άδεια",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "Δεν υπάρχουν ακόμη κοινότητες",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_group_chats_cta": "Δημιουργία ομαδικής συνομιλίας",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_description": "Ξεκινήστε μια ομαδική συνομιλία με φίλους",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_title": "Δεν υπάρχουν ακόμη ομαδικές συνομιλίες",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_my_communities_cta": "Εξερευνήστε τις κοινότητες",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_my_communities_description": "Εγγραφείτε σε κοινότητες για να τα δείτε εδώ",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_title": "Δεν υπάρχουν ακόμη κοινότητες",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_search_cta": "Εκκαθάριση αναζήτησης",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_search_description": "Δοκιμάστε να κάνετε αναζήτηση με διαφορετικές λέξεις-κλειδιά",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_title": "Δεν βρέθηκαν αποτελέσματα",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "explore_empty_description": "Βρείτε ομάδα ή δημιουργήστε τη δική σας",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "explore_empty_title": "Η εξερεύνησή σας είναι άδεια",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "explore_no_group_description": "Ας δημιουργήσουμε τις δικές σας ομάδες..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "explore_no_group_title": "Καμία ομάδα ακόμα",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "feed_empty_create_button": "Δημιουργία ομάδας",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "feed_empty_description": "Βρείτε ομάδα ή δημιουργήστε τη δική σας",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "feed_empty_explore_button": "Ομάδα εξερεύνησης",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "feed_empty_title": "Η ροή σας είναι άδεια",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "feed_filter_all": "Ολοι",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "feed_filter_apply": "Εφαρμογή φίλτρων",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_clear_all": "Εκκαθάριση όλων",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "feed_filter_content_type": "Τύπος περιεχομένου",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "feed_filter_images": "εικόνες",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "feed_filter_latest_first": "Τελευταία Πρώτα",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "feed_filter_oldest_first": "Πρώτος παλαιότερος",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "feed_filter_sort_by": "Ταξινόμηση κατά",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "feed_filter_text": "Κείμενο",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_filter_title": "Φιλτράρισμα αναρτήσεων",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "feed_filter_videos": "Βίντεο",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "general_error_retry": "Δοκιμάστε ξανά.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "general_error_title": "Κάτι πήγε στραβά",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "general_no": "Οχι",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "general_open_settings": "Ανοίξτε τις ρυθμίσεις",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "Αφαιρώ",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_search": "Ερευνα",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "general_yes": "Ναί",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "post_share_success": "Η ανάρτηση κοινοποιήθηκε με επιτυχία",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_remove_link_message": "Αυτός ο σύνδεσμος θα αφαιρεθεί από την ιστορία.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "story_unsaved_changes_message": "είστε σίγουροι ότι θέλετε να ακυρώσετε; Οι Αλλαγές σας δεν θα αποθηκευτούν.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
   }
 }

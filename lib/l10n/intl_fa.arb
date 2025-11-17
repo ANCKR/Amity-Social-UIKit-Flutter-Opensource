@@ -322,7 +322,7 @@
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
-  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "poll_options_description": "نظرسنجی باید حداقل دارای {minOptions} گزینه باشد.",
   "@poll_options_description": {
     "description": "Description for poll options",
     "placeholders": {
@@ -392,7 +392,7 @@
   "@comment_reply_delete": {
     "description": "Label for delete reply button"
   },
-  "comment_delete_description": "This {content} will be permanently deleted.",
+  "comment_delete_description": "این {content} برای همیشه حذف خواهد شد.",
   "@comment_delete_description": {
     "description": "Confirmation message for deleting a comment",
     "placeholders": {
@@ -921,7 +921,7 @@
   "@error_max_upload_reached": {
     "description": "Error message when maximum upload limit is reached"
   },
-  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "error_max_upload_image_reached_description": "شما به محدودیت آپلود {maxUploads} عکس رسیده اید. هر تصویر اضافی ذخیره نخواهد شد.",
   "@error_max_upload_image_reached_description": {
     "description": "Error message description when maximum upload images limit is reached",
     "placeholders": {
@@ -930,7 +930,7 @@
       }
     }
   },
-  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "error_max_upload_videos_reached_description": "به محدودیت آپلود {maxUploads} ویدیو رسیده اید. هر ویدیوی اضافی ذخیره نخواهد شد.",
   "@error_max_upload_videos_reached_description": {
     "description": "Error message description when maximum upload videos limit is reached",
     "placeholders": {
@@ -947,7 +947,7 @@
   "@error_create_post": {
     "description": "Error message when creating a post fails"
   },
-  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_characters": "سوال نظرسنجی نمی تواند از {maxQuestionLength} نویسه بیشتر باشد.",
   "@error_max_poll_characters": {
     "description": "Error message when poll question exceeds maximum characters",
     "placeholders": {
@@ -956,7 +956,7 @@
       }
     }
   },
-  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "error_max_poll_option_characters": "گزینه نظرسنجی نمی تواند بیش از {maxQuestionLength} نویسه باشد.",
   "@error_max_poll_option_characters": {
     "description": "Error message when poll option exceeds maximum characters",
     "placeholders": {
@@ -1234,7 +1234,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "chat_block_user_description": "{displayName} نمی تواند پیام را برای شما ارسال کند. به آنها اطلاع داده نمی شود که آنها را مسدود کرده اید.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1247,7 +1247,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "chat_unblock_user_description": "{displayName} اکنون می تواند پیام را برای شما ارسال کند. به آنها اطلاع داده نمی شود که شما آنها را رفع انسداد کرده اید.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1268,7 +1268,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} requests need your approval",
+  "user_follow_request_approval": "درخواست های {count} نیاز به تایید شما دارند",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1305,7 +1305,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "user_block_confirm_description": "{displayName} نمی‌تواند پست‌ها و نظراتی را که ایجاد کرده‌اید ببیند. به آنها اطلاع داده نمی شود که آنها را مسدود کرده اید.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1322,7 +1322,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "user_unblock_confirm_description": "{displayName} اکنون می‌تواند پست‌ها و نظراتی را که ایجاد کرده‌اید ببیند. به آنها اطلاع داده نمی شود که شما آنها را رفع انسداد کرده اید.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1371,7 +1371,7 @@
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "community_pending_posts_warning": "رد کردن پست در انتظار، پست انتخابی را برای همیشه از انجمن حذف می کند.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1411,7 +1411,7 @@
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
-  "poll_option_hint": "Option {optionNumber}",
+  "poll_option_hint": "گزینه {optionNumber}",
   "@poll_option_hint": {
     "description": "Hint text for poll option input field",
     "placeholders": {
@@ -1424,7 +1424,7 @@
   "@poll_add_option": {
     "description": "Button text for adding a new poll option"
   },
-  "poll_multiple_selection_title": "Multiple selection",
+  "poll_multiple_selection_title": "انتخاب چندگانه",
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
@@ -1432,7 +1432,7 @@
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
-  "poll_ends_on": "Ends on {endDate}",
+  "poll_ends_on": "پایان در {endDate}",
   "@poll_ends_on": {
     "description": "Text showing when poll ends with formatted date",
     "placeholders": {
@@ -1546,7 +1546,7 @@
   "@message_replied_message": {
     "description": "Title for replied message display"
   },
-  "message_replying_to": "Replying to {displayName}",
+  "message_replying_to": "در حال پاسخ به {displayName}",
   "@message_replying_to": {
     "description": "Text shown when replying to a message",
     "placeholders": {
@@ -1753,7 +1753,7 @@
   "@group_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "group_pending_posts_warning": "رد کردن پست در انتظار، پست انتخابی را برای همیشه از گروه حذف می کند.",
   "@group_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1977,23 +1977,23 @@
   "@story_discard_action": {
     "description": "Button text for discarding story"
   },
-  "shared_post_media_indicator": "This post contains media",
+  "shared_post_media_indicator": "این پست حاوی رسانه است",
   "@shared_post_media_indicator": {
     "description": "Text shown when shared post contains media but can't display preview"
   },
-  "shared_post_load_error": "Unable to load shared post",
+  "shared_post_load_error": "بارگذاری پست اشتراک‌گذاری شده ممکن نیست",
   "@shared_post_load_error": {
     "description": "Error message when shared post data cannot be loaded"
   },
-  "media_type_video": "Video",
+  "media_type_video": "ویدیو",
   "@media_type_video": {
     "description": "Label for video content type"
   },
-  "timestamp_just_now_full": "Just now",
+  "timestamp_just_now_full": "همین الان",
   "@timestamp_just_now_full": {
     "description": "Full timestamp text for content posted just now"
   },
-  "timestamp_minutes_ago": "{minutes}m ago",
+  "timestamp_minutes_ago": "{minutes} دقیقه پیش",
   "@timestamp_minutes_ago": {
     "description": "Timestamp for content posted minutes ago",
     "placeholders": {
@@ -2002,7 +2002,7 @@
       }
     }
   },
-  "timestamp_hours_ago": "{hours}h ago",
+  "timestamp_hours_ago": "{hours} ساعت پیش",
   "@timestamp_hours_ago": {
     "description": "Timestamp for content posted hours ago",
     "placeholders": {
@@ -2011,7 +2011,7 @@
       }
     }
   },
-  "timestamp_days_ago": "{days}d ago",
+  "timestamp_days_ago": "{days} روز پیش",
   "@timestamp_days_ago": {
     "description": "Timestamp for content posted days ago",
     "placeholders": {
@@ -2020,11 +2020,11 @@
       }
     }
   },
-  "timestamp_some_time_ago": "Some time ago",
+  "timestamp_some_time_ago": "مدتی پیش",
   "@timestamp_some_time_ago": {
     "description": "Fallback timestamp when date parsing fails"
   },
-  "timestamp_minutes_short": "{minutes}m",
+  "timestamp_minutes_short": "{minutes} د",
   "@timestamp_minutes_short": {
     "description": "Short timestamp for minutes",
     "placeholders": {
@@ -2033,7 +2033,7 @@
       }
     }
   },
-  "timestamp_hours_short": "{hours}h",
+  "timestamp_hours_short": "{hours} س",
   "@timestamp_hours_short": {
     "description": "Short timestamp for hours",
     "placeholders": {
@@ -2042,7 +2042,7 @@
       }
     }
   },
-  "timestamp_days_short": "{days}d",
+  "timestamp_days_short": "{days} ر",
   "@timestamp_days_short": {
     "description": "Short timestamp for days",
     "placeholders": {
@@ -2051,7 +2051,7 @@
       }
     }
   },
-  "timestamp_weeks_short": "{weeks}w",
+  "timestamp_weeks_short": "{weeks} ه",
   "@timestamp_weeks_short": {
     "description": "Short timestamp for weeks",
     "placeholders": {
@@ -2060,8 +2060,344 @@
       }
     }
   },
-  "feed_empty_create_first_post": "Create your first post",
+  "feed_empty_create_first_post": "اولین پست خود را ایجاد کنید",
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
+  },
+  "chat_add_member_button": "اضافه کردن عضو",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_add_member_title": "اضافه کردن عضو",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "chat_archived_empty": "بدون چت بایگانی",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_archived_title": "چت های آرشیو شده",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "chat_banned_users_empty": "هنوز چیزی برای دیدن اینجا نیست",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_banned_users_update_failed": "به روز رسانی کاربران ممنوع شده انجام نشد. لطفا دوباره امتحان کنید.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_banned_users_updated": "کاربران ممنوعه آپدیت شدند",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "chat_group_left_failed": "ترک چت گروهی انجام نشد. لطفا دوباره امتحان کنید.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_left_success": "چت گروهی سمت چپ.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_group_notification_update_failed": "اعلان گروه به روز نشد. لطفا دوباره امتحان کنید.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "chat_group_notification_updated": "اعلان گروه به روز شد.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_group_profile_update_failed": "نمایه گروه به روز نشد. لطفا دوباره امتحان کنید.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "chat_group_profile_updated": "نمایه گروه به روز شد.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "تنظیمات گروه",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "chat_group_settings_title": "تنظیمات گروه",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "chat_last_moderator_message": "قبل از خروج باید عضو دیگری را به ناظم ارتقا دهید.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_leave_button": "ترک کنید",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_leave_group_message": "اگر از این گروه خارج شوید، دیگر فعالیت های جدیدی را مشاهده نخواهید کرد و در این گروه شرکت نخواهید کرد.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_leave_group_title": "ترک گروه",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_member_list_update_failed": "لیست اعضا به روز نشد. لطفا دوباره امتحان کنید.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "chat_member_list_updated": "لیست اعضا به روز شد",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "chat_member_permissions_update_failed": "مجوزهای اعضا به روز نشد. لطفا دوباره امتحان کنید.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "chat_member_permissions_updated": "مجوزهای اعضا به روز شد.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_messaging_section": "پیام رسانی",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "chat_notification_default_description": "به‌طور پیش‌فرض، اعضای این انجمن اعلان‌هایی را دریافت می‌کنند، اما می‌توانند انتخاب کنند که آنها را خاموش کنند.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "chat_notification_silent_description": "هیچ اعلانی برای همه در این کانال وجود ندارد. اعضا نمی‌توانند اعلان‌ها را در کانال روشن کنند.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "chat_notification_subscribe_description": "همه اعضا امکان دریافت اعلان ها را دارند، اما باید آنها را فعال کنند. به طور پیش فرض، اعلان ها برای هر عضو خاموش است.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_permission_everyone_description": "همه می توانند در گروه پیام ارسال کنند.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "chat_permission_moderators_description": "اعضایی که ناظر نیستند می توانند پیام ها را بخوانند اما نمی توانند هیچ پیامی ارسال کنند.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_promote_member_button": "ارتقاء عضو",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "chat_unban_button": "لغو ممنوعیت",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "chat_unban_confirmation_message": "آیا مطمئنید که می خواهید این کاربر را لغو ممنوعیت کنید؟ آنها می توانند دوباره به گروه بپیوندند.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "chat_your_preferences": "ترجیحات شما",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "cta_create_community": "جامعه ایجاد کنید",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_all_chats_cta": "ایجاد چت جدید",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_all_chats_description": "بیایید برای شروع چت ایجاد کنیم.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_title": "هنوز مکالمه ای وجود ندارد",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "چت های بایگانی شده در اینجا ظاهر می شوند",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_archived_chats_title": "بدون چت بایگانی",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "هیچ انجمنی در این دسته یافت نشد. سعی کنید دسته بندی های دیگر را کاوش کنید یا دسته های خود را ایجاد کنید.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_description": "اولین نفری باشید که نظر می دهد",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_comments_title": "هنوز نظری وجود ندارد",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_explore_description_no_categories": "انجمن را پیدا کنید یا انجمن خود را ایجاد کنید",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_communities": "اولین کسی باشید که یک انجمن ایجاد می کند",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "کاوش شما خالی است",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "هنوز انجمنی وجود ندارد",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_group_chats_cta": "ایجاد چت گروهی",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_description": "یک چت گروهی با دوستان شروع کنید",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_title": "هنوز چت گروهی وجود ندارد",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_my_communities_cta": "جوامع را کاوش کنید",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_my_communities_description": "برای دیدن آنها در اینجا به انجمن ها بپیوندید",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_title": "هنوز انجمنی وجود ندارد",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_search_cta": "جستجو را پاک کنید",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_search_description": "سعی کنید با کلمات کلیدی مختلف جستجو کنید",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_title": "هیچ نتیجه ای یافت نشد",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "explore_empty_description": "گروه را پیدا کنید یا گروه خود را ایجاد کنید",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "explore_empty_title": "کاوش شما خالی است",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "explore_no_group_description": "بیایید گروه های خود را ایجاد کنیم..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "explore_no_group_title": "هنوز گروهی وجود ندارد",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "feed_empty_create_button": "گروه ایجاد کنید",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "feed_empty_description": "گروه را پیدا کنید یا گروه خود را ایجاد کنید",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "feed_empty_explore_button": "کاوش گروه",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "feed_empty_title": "فید شما خالی است",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "feed_filter_all": "همه",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "feed_filter_apply": "اعمال فیلترها",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_clear_all": "پاک کردن همه",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "feed_filter_content_type": "نوع محتوا",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "feed_filter_images": "تصاویر",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "feed_filter_latest_first": "آخرین اول",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "feed_filter_oldest_first": "قدیمی ترین اول",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "feed_filter_sort_by": "مرتب سازی بر اساس",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "feed_filter_text": "متن",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_filter_title": "فیلتر کردن پست ها",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "feed_filter_videos": "ویدیوها",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "general_error_retry": "لطفا دوباره امتحان کنید.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "general_error_title": "مشکلی پیش آمد",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "general_no": "خیر",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "general_open_settings": "تنظیمات را باز کنید",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "حذف کنید",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_search": "جستجو کنید",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "general_yes": "بله",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "post_share_success": "پست با موفقیت به اشتراک گذاشته شد",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_remove_link_message": "این لینک از استوری حذف خواهد شد.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "story_unsaved_changes_message": "آیا مطمئن هستید که می خواهید لغو کنید؟ تغییرات شما ذخیره نمی شود.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
   }
 }
