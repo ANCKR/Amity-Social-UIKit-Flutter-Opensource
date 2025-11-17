@@ -11,7 +11,6 @@ import 'package:amity_uikit_beta_service/v4/utils/config_provider_widget.dart';
 import 'package:amity_uikit_beta_service/v4/utils/create_story/bloc/create_story_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:video_player/video_player.dart';
 
@@ -89,13 +88,6 @@ class _AmityViewCommunityStoryPageState extends State<AmityViewCommunityStoryPag
                 AmityCustomSnackBar.show(
                   context,
                   'Story deleted',
-                  SvgPicture.asset(
-                    'assets/Icons/ic_check_circled_white.svg',
-                    package: 'amity_uikit_beta_service',
-                    height: 20,
-                    color: Colors.white,
-                  ),
-                  textColor: Colors.white,
                 );
               }
               if (state is ActiveStoriesFetchedState) {
@@ -218,7 +210,7 @@ class _AmityViewCommunityStoryPageState extends State<AmityViewCommunityStoryPag
                                                 commentCount: stories[index].commentCount,
                                                 reactionCount: stories[index].reactionCount,
                                                 onStoryDelete: () {
-                                                  AmityCustomSnackBar.show(context, 'Story deleted', SvgPicture.asset('assets/Icons/ic_check_circled_white.svg', package: 'amity_uikit_beta_service', height: 20, color: Colors.white), textColor: Colors.white);
+                                                  AmityCustomSnackBar.show(context, 'Story deleted');
                                                   AmityStorySingleSegmentTimerElement.currentValue = -1;
                                                   BlocProvider.of<StoryVideoPlayerBloc>(context).add(const DisposeStoryVideoPlayerEvent());
 
@@ -255,13 +247,6 @@ class _AmityViewCommunityStoryPageState extends State<AmityViewCommunityStoryPag
                                   AmityCustomSnackBar.show(
                                     context,
                                     'Story deleted',
-                                    SvgPicture.asset(
-                                      'assets/Icons/ic_check_circled_white.svg',
-                                      package: 'amity_uikit_beta_service',
-                                      height: 20,
-                                      color: Colors.white,
-                                    ),
-                                    textColor: Colors.white,
                                   );
                                   AmityStorySingleSegmentTimerElement.currentValue = -1;
                                   BlocProvider.of<StoryVideoPlayerBloc>(context).add(const DisposeStoryVideoPlayerEvent());

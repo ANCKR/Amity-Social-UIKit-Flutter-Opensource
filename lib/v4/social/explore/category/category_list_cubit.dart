@@ -13,7 +13,9 @@ class CategoryListCubit extends Cubit<CategoryState> {
 
   Future<void> loadCategories() async {
     try {
-      emit(state.copyWith(isLoading: true, hasError: false));
+      if (!isClosed) {
+        emit(state.copyWith(isLoading: true, hasError: false));
+      }
 
       final categories = await AmitySocialClient.newCommunityRepository()
           .getCategories()
@@ -22,16 +24,20 @@ class CategoryListCubit extends Cubit<CategoryState> {
           .getPagingData()
           .then((value) => value.data);
 
-      emit(state.copyWith(
-        isLoading: false,
-        categories: categories,
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          isLoading: false,
+          categories: categories,
+        ));
+      }
     } catch (e) {
-      emit(state.copyWith(
-        isLoading: false,
-        hasError: true,
-        errorMessage: e.toString(),
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          isLoading: false,
+          hasError: true,
+          errorMessage: e.toString(),
+        ));
+      }
     }
   }
 

@@ -4,6 +4,7 @@ import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/my_community/bloc/my_community_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/social/my_community/my_communities_empty_state.dart';
 import 'package:amity_uikit_beta_service/v4/social/shared/community_list.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
 import 'package:amity_uikit_beta_service/v4/utils/network_image.dart';
@@ -34,6 +35,11 @@ class AmityMyCommunitiesComponent extends NewBaseComponent {
             if (state is MyCommunityLoading) {
               return communitySkeletonList(theme, configProvider);
             } else if (state is MyCommunityLoaded) {
+              // Show empty state if no communities
+              if (state.list.isEmpty) {
+                return MyCommunitiesEmptyState(theme: theme);
+              }
+
               return Expanded(
                 child: Column(
                   children: [

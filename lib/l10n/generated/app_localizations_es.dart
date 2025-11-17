@@ -21,7 +21,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Comunidades Unidas';
 
   @override
   String get tab_feed => 'Feed';
@@ -1539,6 +1539,80 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get error_close_group_description =>
       'Algo salió mal. Por favor, inténtalo de nuevo más tarde.';
+
+  @override
+  String get empty_my_communities_title => 'Aún no hay comunidades';
+
+  @override
+  String get empty_my_communities_description =>
+      'Únete a comunidades para verlas aquí';
+
+  @override
+  String get empty_my_communities_cta => 'Explorar comunidades';
+
+  @override
+  String get empty_group_chats_title => 'Aún no hay chats grupales';
+
+  @override
+  String get empty_group_chats_description =>
+      'Inicia un chat grupal con amigos';
+
+  @override
+  String get empty_group_chats_cta => 'Crear chat grupal';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Los chats archivados aparecerán aquí';
+
+  @override
+  String get empty_comments_title => 'Aún no hay comentarios';
+
+  @override
+  String get empty_comments_description => 'Sé el primero en comentar';
+
+  @override
+  String get empty_category_communities_description =>
+      'No se encontraron comunidades en esta categoría. Prueba explorar otras categorías o crea la tuya propia.';
+
+  @override
+  String get empty_search_title => 'No se encontraron resultados';
+
+  @override
+  String get empty_search_description =>
+      'Prueba con diferentes palabras clave o explora comunidades';
+
+  @override
+  String get empty_search_cta => 'Explorar comunidades';
+
+  @override
+  String get empty_all_chats_title => 'Aún no hay conversaciones';
+
+  @override
+  String get empty_all_chats_description =>
+      'Vamos a crear un chat para empezar.';
+
+  @override
+  String get empty_all_chats_cta => 'Crear nuevo chat';
+
+  @override
+  String get empty_archived_chats_title => 'No hay chats archivados';
+
+  @override
+  String get cta_create_community => 'Crear comunidad';
+
+  @override
+  String get empty_explore_title_no_categories => 'Tu exploración está vacía';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Encuentra comunidades o crea la tuya propia';
+
+  @override
+  String get empty_explore_title_no_communities => 'Aún no hay comunidades';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Vamos a crear tus propias comunidades..';
 }
 
 /// The translations for Spanish Castilian, as used in Chile (`es_CL`).
@@ -1558,7 +1632,7 @@ class AppLocalizationsEsCl extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Comunidades Unidas';
 
   @override
   String get tab_feed => 'Feed';
@@ -2658,7 +2732,7 @@ class AppLocalizationsEsCo extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Comunidades Unidas';
 
   @override
   String get tab_feed => 'Feed';
@@ -3749,7 +3823,7 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Comunidades Unidas';
 
   @override
   String get tab_feed => 'Feed';
@@ -4840,7 +4914,7 @@ class AppLocalizationsEsPe extends AppLocalizationsEs {
   String get tab_my_communities => 'Mis Comunidades';
 
   @override
-  String get tab_my_groups => 'Mis Grupos';
+  String get tab_my_groups => 'Comunidades Unidas';
 
   @override
   String get tab_feed => 'Feed';

@@ -49,7 +49,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                   ),
                 ),
                 Text(
-                  'Find group or create your own ',
+                  'Find community or create your own ',
                   textAlign: TextAlign.center,
                   style: AmityTextStyle.caption(theme.baseColorShade1),
                 ),
@@ -107,7 +107,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                 ),
                               ),
                               Text(
-                                'Explore group',
+                                'Explore community',
                                 style: AmityTextStyle.subtitleBold(Colors.white),
                               ),
                             ],
@@ -134,7 +134,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                'Create group',
+                                'Create community',
                                 style: AmityTextStyle.subtitle(theme.primaryColor),
                               ),
                             ],

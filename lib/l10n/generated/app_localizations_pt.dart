@@ -21,7 +21,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tab_my_communities => 'Minhas Comunidades';
 
   @override
-  String get tab_my_groups => 'Meus Grupos';
+  String get tab_my_groups => 'Comunidades Inscritas';
 
   @override
   String get tab_feed => 'Feed';
@@ -1530,6 +1530,79 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get error_close_group_description =>
       'Algo deu errado. Por favor, tente novamente mais tarde.';
+
+  @override
+  String get empty_my_communities_title => 'Ainda não há comunidades';
+
+  @override
+  String get empty_my_communities_description =>
+      'Entre em comunidades para vê-las aqui';
+
+  @override
+  String get empty_my_communities_cta => 'Explorar comunidades';
+
+  @override
+  String get empty_group_chats_title => 'Ainda não há chats em grupo';
+
+  @override
+  String get empty_group_chats_description =>
+      'Inicie um chat em grupo com amigos';
+
+  @override
+  String get empty_group_chats_cta => 'Criar chat em grupo';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Chats arquivados aparecerão aqui';
+
+  @override
+  String get empty_comments_title => 'Ainda não há comentários';
+
+  @override
+  String get empty_comments_description => 'Seja o primeiro a comentar';
+
+  @override
+  String get empty_category_communities_description =>
+      'Nenhuma comunidade encontrada nesta categoria. Tente explorar outras categorias ou crie a sua própria.';
+
+  @override
+  String get empty_search_title => 'Nenhum resultado encontrado';
+
+  @override
+  String get empty_search_description =>
+      'Tente palavras-chave diferentes ou navegue pelas comunidades';
+
+  @override
+  String get empty_search_cta => 'Navegar pelas comunidades';
+
+  @override
+  String get empty_all_chats_title => 'Ainda não há conversas';
+
+  @override
+  String get empty_all_chats_description => 'Vamos criar um chat para começar.';
+
+  @override
+  String get empty_all_chats_cta => 'Criar novo chat';
+
+  @override
+  String get empty_archived_chats_title => 'Nenhum chat arquivado';
+
+  @override
+  String get cta_create_community => 'Criar comunidade';
+
+  @override
+  String get empty_explore_title_no_categories => 'Sua exploração está vazia';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Encontre comunidades ou crie a sua própria';
+
+  @override
+  String get empty_explore_title_no_communities => 'Ainda não há comunidades';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Vamos criar as suas próprias comunidades..';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -1549,7 +1622,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get tab_my_communities => 'Minhas Comunidades';
 
   @override
-  String get tab_my_groups => 'Meus Grupos';
+  String get tab_my_groups => 'Comunidades Inscritas';
 
   @override
   String get tab_feed => 'Feed';

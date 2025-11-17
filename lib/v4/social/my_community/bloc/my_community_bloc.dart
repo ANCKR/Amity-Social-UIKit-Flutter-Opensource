@@ -25,7 +25,8 @@ class MyCommunityBloc extends Bloc<MyCommunityEvent, MyCommunityState> {
         .listen((communities) async {
       if (communityLiveCollection.isFetching == true && communities.isEmpty) {
         add(MyCommunityEventLoading());
-      } else if (communities.isNotEmpty) {
+      } else {
+        // Emit loaded state even if list is empty (to show empty state UI)
         var state = MyCommunityLoaded(
           list: communities,
           hasMoreItems: communityLiveCollection.hasNextPage(),

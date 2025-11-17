@@ -23,10 +23,12 @@ class BaseChatListComponent extends NewBaseComponent {
       {super.key,
       super.pageId,
       required super.componentId,
-      required this.chatListType});
+      required this.chatListType,
+      this.customEmptyState});
 
   final scrollController = ScrollController();
   final ChatListType chatListType;
+  final Widget? customEmptyState;
 
   @override
   Widget buildComponent(BuildContext context) {
@@ -52,7 +54,10 @@ class BaseChatListComponent extends NewBaseComponent {
         if (state.isLoading && state.channels.isEmpty) {
           return ChatListSkeletonLoadingView();
         } else if (!state.isLoading && state.channels.isEmpty) {
-          if (chatListType == ChatListType.ARCHIVED) {
+          // Use custom empty state if provided, otherwise use default
+          if (customEmptyState != null) {
+            return customEmptyState!;
+          } else if (chatListType == ChatListType.ARCHIVED) {
             return ArchivedChatListEmptyState(theme: theme);
           } else {
             return ChatListEmptyState(theme: theme);

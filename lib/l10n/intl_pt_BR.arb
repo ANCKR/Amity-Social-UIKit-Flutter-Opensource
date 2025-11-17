@@ -16,9 +16,9 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
-  "tab_my_groups": "Meus Grupos",
+  "tab_my_groups": "Comunidades Inscritas",
   "@tab_my_groups": {
-    "description": "Etiqueta para a aba meus grupos na navegação principal (substitui tab_my_communities)"
+    "description": "Etiqueta para a aba minhas comunidades na navegação principal"
   },
   "tab_feed": "Feed",
   "@tab_feed": {

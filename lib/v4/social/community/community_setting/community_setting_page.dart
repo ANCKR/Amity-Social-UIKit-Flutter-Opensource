@@ -85,10 +85,10 @@ class AmityCommunitySettingPage extends NewBasePage {
 
             // Community Permission Section
             if (state.shouldShowPostPermission || state.shouldShowStoryComments)
-              _getSectionTitleWidget(context.l10n.group_settings_permissions),
+              _getSectionTitleWidget(context.l10n.settings_permissions),
 
             if (state.shouldShowPostPermission)
-              CommunitySettingItem(context.l10n.group_post_permission,
+              CommunitySettingItem(context.l10n.community_post_permission,
                   'assets/Icons/amity_ic_post_permission_setting.svg',
                   onTap: () {
                 _goToPostPermissionSettingPage(context);
@@ -98,7 +98,7 @@ class AmityCommunitySettingPage extends NewBasePage {
                   elementId: 'post_permission'),
 
             if (state.shouldShowStoryComments)
-              CommunitySettingItem(context.l10n.group_allow_stories_comments,
+              CommunitySettingItem(context.l10n.settings_allow_stories_comments,
                   'assets/Icons/amity_ic_story_comment_setting.svg', onTap: () {
                 _goToStoryCommentSettingPage(context);
               }, pageId: pageId, componentId: '*', elementId: 'story_setting'),
@@ -107,12 +107,12 @@ class AmityCommunitySettingPage extends NewBasePage {
               _getDividerWidget(),
 
             // Leave Community
-            _getSettingDetailItemWidget(context.l10n.group_leave, null,
+            _getSettingDetailItemWidget(context.l10n.community_leave, null,
                 onTap: () {
               ConfirmationDialog().show(
                   context: context,
-                  title: context.l10n.group_leave,
-                  detailText: context.l10n.group_leave_description,
+                  title: context.l10n.community_leave,
+                  detailText: context.l10n.community_leave_description,
                   onConfirm: () {
                     context
                         .read<CommunitySettingPageBloc>()
@@ -138,12 +138,12 @@ class AmityCommunitySettingPage extends NewBasePage {
             // Close Community
             if (state.shouldShowCloseCommunity)
               _getSettingDetailItemWidget(
-                  context.l10n.group_setting_close_label,
-                  context.l10n.group_setting_close_description, onTap: () {
+                  context.l10n.community_setting_close_label,
+                  context.l10n.community_setting_close_description, onTap: () {
                 ConfirmationDialog().show(
                     context: context,
-                    title: context.l10n.group_close,
-                    detailText: context.l10n.group_close_description,
+                    title: context.l10n.community_close,
+                    detailText: context.l10n.community_close_description,
                     onConfirm: () {
                       context
                           .read<CommunitySettingPageBloc>()

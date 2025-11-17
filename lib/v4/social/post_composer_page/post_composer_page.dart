@@ -148,18 +148,26 @@ class AmityPostComposerPage extends NewBasePage {
               updatePostButtonStatus();
             }
 
+            // Calculate bottom sheet sizes accounting for navigation bar
+            final screenHeight = MediaQuery.of(context).size.height;
+            final bottomPadding = MediaQuery.of(context).padding.bottom;
+
+            // Collapsed height: drag handle + icons row with minimal padding
+            const collapsedHeight = 70.0;
+            double minBottomSheetSize = (collapsedHeight + bottomPadding) / screenHeight;
+
             double maxBottomSheetSize = 0.3;
-            double minBottomSheetSize = 0.125;
             if (selectedMediaType != null) {
-              // 0.8 per item
               maxBottomSheetSize = 0.22;
             }
 
             return Scaffold(
               backgroundColor: theme.backgroundColor,
               appBar: buildAppBar(context),
-              body: Stack(
-                children: [
+              body: SafeArea(
+                top: false,
+                child: Stack(
+                  children: [
                   Column(
                     children: [
                       Expanded(
@@ -226,6 +234,7 @@ class AmityPostComposerPage extends NewBasePage {
                         mediaType: selectedMediaType),
                   ),
                 ],
+                ),
               ),
             );
           },

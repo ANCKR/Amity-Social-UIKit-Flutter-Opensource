@@ -83,7 +83,7 @@ class AmityCommunityProfilePage extends NewBasePage {
                                 height: 32,
                                 width: 32,
                                 decoration: BoxDecoration(
-                                  color: Colors.black.withOpacity(0.5),
+                                  color: Colors.black.withValues(alpha: 0.5),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Center(
@@ -132,42 +132,44 @@ class AmityCommunityProfilePage extends NewBasePage {
                               ],
                             ),
                           ),
-                          actions: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 16),
-                              child: GestureDetector(
-                                onTap: () => {
-                                  if (state.community != null)
-                                    {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (context2) =>
-                                                  AmityCommunitySettingPage(
-                                                      community:
-                                                          state.community!)))
-                                    }
-                                },
-                                child: Container(
-                                  height: 32,
-                                  width: 32,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black.withOpacity(0.5),
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Center(
-                                    child: SvgPicture.asset(
-                                      "assets/Icons/amity_ic_post_item_option.svg",
-                                      package: 'amity_uikit_beta_service',
-                                      height: 18,
-                                      width: 18,
-                                      colorFilter: const ColorFilter.mode(
-                                          Colors.white, BlendMode.srcIn),
+                          actions: state.isJoined
+                              ? [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16),
+                                    child: GestureDetector(
+                                      onTap: () => {
+                                        if (state.community != null)
+                                          {
+                                            Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (context2) =>
+                                                        AmityCommunitySettingPage(
+                                                            community:
+                                                                state.community!)))
+                                          }
+                                      },
+                                      child: Container(
+                                        height: 32,
+                                        width: 32,
+                                        decoration: BoxDecoration(
+                                          color: Colors.black.withValues(alpha: 0.5),
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Center(
+                                          child: SvgPicture.asset(
+                                            "assets/Icons/amity_ic_post_item_option.svg",
+                                            package: 'amity_uikit_beta_service',
+                                            height: 18,
+                                            width: 18,
+                                            colorFilter: const ColorFilter.mode(
+                                                Colors.white, BlendMode.srcIn),
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ),
-                            ),
-                          ],
+                                ]
+                              : [],
                           flexibleSpace: Column(
                             children: [
                               Container(
@@ -181,6 +183,7 @@ class AmityCommunityProfilePage extends NewBasePage {
                                             community: state.community!,
                                             style: AmityCommunityHeaderStyle
                                                 .COLLAPSE,
+                                            isJoined: state.isJoined,
                                           ),
                                         ],
                                       )
@@ -194,6 +197,7 @@ class AmityCommunityProfilePage extends NewBasePage {
                     child: Container(
                         child: AmityCommunityHeaderComponent(
                       community: state.community,
+                      isJoined: state.isJoined,
                     )),
                   ),
                   SliverToBoxAdapter(

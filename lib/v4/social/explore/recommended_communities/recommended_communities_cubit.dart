@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_join_notifier.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/list_state/amity_list_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -8,6 +9,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
   ExploreComponentRefreshController? refreshController;
   late final StreamSubscription? _refreshSubscription;
+  late final StreamSubscription<String>? _joinSubscription;
+  late final StreamSubscription<String>? _leaveSubscription;
+  final _joinNotifier = CommunityJoinNotifier();
 
   RecommendedCommunitiesCubit(this.refreshController)
       : super(CommunityState(
@@ -21,51 +25,198 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
     _refreshSubscription = refreshController?.refreshStream.listen((event) {
       loadRecommendedCommunities();
     });
+
+    // Listen for join events from community profile page or other sections
+    _joinSubscription = CommunityJoinNotifier().onCommunityJoined.listen((communityId) async {
+      if (isClosed) return;
+
+      // Check if this community is in our list
+      final communityInList = state.communities.any((c) => c.communityId == communityId);
+      if (communityInList) {
+        // Community is in our list, update only this specific item
+        try {
+          final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+              .getCommunity(communityId);
+
+          final updatedCommunities = state.communities.map((community) {
+            if (community.communityId == communityId) {
+              return updatedCommunity;
+            }
+            return community;
+          }).toList();
+
+          if (!isClosed) {
+            emit(state.copyWith(communities: updatedCommunities));
+          }
+        } catch (e) {
+          // If fetch fails, reload the entire list
+          if (!isClosed) {
+            loadRecommendedCommunities();
+          }
+        }
+      }
+      // If not in our list, no need to refresh
+    });
+
+    // Listen for leave events from community settings page or other sections
+    _leaveSubscription = CommunityJoinNotifier().onCommunityLeft.listen((communityId) async {
+      if (isClosed) return;
+
+      // Check if this community is in our list
+      final communityInList = state.communities.any((c) => c.communityId == communityId);
+      if (communityInList) {
+        // Community is in our list, update only this specific item
+        try {
+          final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+              .getCommunity(communityId);
+
+          final updatedCommunities = state.communities.map((community) {
+            if (community.communityId == communityId) {
+              return updatedCommunity;
+            }
+            return community;
+          }).toList();
+
+          if (!isClosed) {
+            emit(state.copyWith(communities: updatedCommunities));
+          }
+        } catch (e) {
+          // If fetch fails, reload the entire list
+          if (!isClosed) {
+            loadRecommendedCommunities();
+          }
+        }
+      }
+      // If not in our list, no need to refresh
+    });
   }
 
   Future<void> loadRecommendedCommunities() async {
     try {
-      emit(state.copyWith(isLoading: true));
+      if (!isClosed) {
+        emit(state.copyWith(isLoading: true));
+      }
+
       final communities = await AmitySocialClient.newCommunityRepository()
           .getRecommendedCommunities()
           .then((communities) => communities.take(4).toList());
 
-      emit(state.copyWith(
-        isLoading: false,
-        communities: communities,
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          isLoading: false,
+          communities: communities,
+        ));
+      }
     } catch (e) {
-      emit(state.copyWith(
-        isLoading: false,
-        hasError: true,
-        errorMessage: e.toString(),
-      ));
+      if (!isClosed) {
+        emit(state.copyWith(
+          isLoading: false,
+          hasError: true,
+          errorMessage: e.toString(),
+        ));
+      }
     }
   }
 
-  Future<void> joinCommunity(String communityId) async {
+  Future<bool> joinCommunity(String communityId) async {
+    // Add community to loading set
+    final loadingIds = Set<String>.from(state.loadingCommunityIds)..add(communityId);
+    if (!isClosed) {
+      emit(state.copyWith(loadingCommunityIds: loadingIds));
+    }
+
     try {
       await AmitySocialClient.newCommunityRepository()
           .joinCommunity(communityId);
-      refreshController?.notifyRefresh();
+
+      // Fetch the updated community to get the latest isJoined status
+      final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+          .getCommunity(communityId);
+
+      // Update only the specific community in the list
+      final updatedCommunities = state.communities.map((community) {
+        if (community.communityId == communityId) {
+          return updatedCommunity;
+        }
+        return community;
+      }).toList();
+
+      // Remove from loading set and emit new state
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
+      if (!isClosed) {
+        emit(state.copyWith(
+          communities: updatedCommunities,
+          loadingCommunityIds: finalLoadingIds,
+          hasError: false,
+        ));
+      }
+
+      // Notify globally that user joined this community
+      _joinNotifier.notifyJoined(communityId);
+
+      return true;
     } catch (e) {
-      emit(state.copyWith(
-        hasError: true,
-        errorMessage: 'Failed to join community',
-      ));
+      // Remove from loading set on error
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
+      if (!isClosed) {
+        emit(state.copyWith(
+          loadingCommunityIds: finalLoadingIds,
+          hasError: true,
+          errorMessage: 'Failed to join community',
+        ));
+      }
+      return false;
     }
   }
 
-  Future<void> leaveCommunity(String communityId) async {
+  Future<bool> leaveCommunity(String communityId) async {
+    // Add community to loading set
+    final loadingIds = Set<String>.from(state.loadingCommunityIds)..add(communityId);
+    if (!isClosed) {
+      emit(state.copyWith(loadingCommunityIds: loadingIds));
+    }
+
     try {
       await AmitySocialClient.newCommunityRepository()
           .leaveCommunity(communityId);
-      refreshController?.notifyRefresh();
+
+      // Fetch the updated community to get the latest isJoined status
+      final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+          .getCommunity(communityId);
+
+      // Update only the specific community in the list
+      final updatedCommunities = state.communities.map((community) {
+        if (community.communityId == communityId) {
+          return updatedCommunity;
+        }
+        return community;
+      }).toList();
+
+      // Remove from loading set and emit new state
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
+      if (!isClosed) {
+        emit(state.copyWith(
+          communities: updatedCommunities,
+          loadingCommunityIds: finalLoadingIds,
+          hasError: false,
+        ));
+      }
+
+      // Notify globally that user left this community
+      _joinNotifier.notifyLeft(communityId);
+
+      return true;
     } catch (e) {
-      emit(state.copyWith(
-        hasError: true,
-        errorMessage: 'Failed to leave community',
-      ));
+      // Remove from loading set on error
+      final finalLoadingIds = Set<String>.from(state.loadingCommunityIds)..remove(communityId);
+      if (!isClosed) {
+        emit(state.copyWith(
+          loadingCommunityIds: finalLoadingIds,
+          hasError: true,
+          errorMessage: 'Failed to leave community',
+        ));
+      }
+      return false;
     }
   }
 
@@ -79,6 +230,8 @@ class RecommendedCommunitiesCubit extends Cubit<CommunityState> {
   @override
   Future<void> close() {
     _refreshSubscription?.cancel();
+    _joinSubscription?.cancel();
+    _leaveSubscription?.cancel();
     return super.close();
   }
 }

@@ -139,6 +139,17 @@ class AmityUIKit {
         .then((value) async {
       log("login success");
 
+      // Wait a bit for SDK session to be fully established
+      await Future.delayed(const Duration(milliseconds: 500));
+
+      // Clear and refresh feed for the new user
+      try {
+        context.read<GlobalFeedBloc>().add(GlobalFeedRefresh());
+        log("Feed refreshed for new user");
+      } catch (e) {
+        log("Warning: Could not refresh feed after login: $e");
+      }
+
       // await Provider.of<UserVM>(context, listen: false)
       //     .initAccessToken()
       //     .then((value) {
@@ -199,7 +210,20 @@ class AmityUIKit {
     return AmityCoreClient.getCurrentUser();
   }
 
-  void unRegisterDevice() {
+  void unRegisterDevice({BuildContext? context}) {
+    // Clear feed state before logout to prevent showing old data
+    if (context != null) {
+      try {
+        // Emit empty state to clear feed immediately
+        final bloc = context.read<GlobalFeedBloc>();
+        bloc.add(GlobalFeedRefresh());
+        log("Feed cleared on logout");
+      } catch (e) {
+        // If BLoC is not available in context, continue with logout
+        debugPrint('Warning: Could not clear feed state on logout: $e');
+      }
+    }
+
     AmityCoreClient.unregisterDeviceNotification();
     ParentMessageCache().clear();
     AmityCoreClient.logout();

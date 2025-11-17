@@ -86,6 +86,7 @@ class AmityDetailedMediaAttachmentComponent extends NewBaseComponent {
                 title: 'File',
                 onTap: onFileTap,
               ),
+            const SizedBox(height: 16), // Visual spacing (SafeArea handles system inset)
           ],
         ),
       ],

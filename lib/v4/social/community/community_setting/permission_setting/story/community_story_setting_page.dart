@@ -53,7 +53,7 @@ class AmityCommunityStorySettingPage extends NewBasePage {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      context.l10n.group_allow_stories_comments,
+                      context.l10n.settings_allow_stories_comments,
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
@@ -61,7 +61,7 @@ class AmityCommunityStorySettingPage extends NewBasePage {
                     ),
                     SizedBox(height: 4), // Reduced padding
                     Text(
-                      context.l10n.group_allow_stories_comments_description,
+                      context.l10n.settings_allow_stories_comments_description,
                       style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w400,
