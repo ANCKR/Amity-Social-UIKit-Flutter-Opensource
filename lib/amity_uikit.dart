@@ -30,6 +30,7 @@ import 'package:amity_uikit_beta_service/viewmodel/my_community_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/notification_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/pending_request_viewmodel.dart';
 import 'package:amity_uikit_beta_service/viewmodel/reply_viewmodel.dart';
+import 'package:amity_uikit_beta_service/repository/translation_repo.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -67,17 +68,20 @@ class AmityUIKit {
     String? customSocketEndpoint,
     String? customMqttEndpoint,
     String? customUploadEndpoint,
+    String? translationServerUrl,
+    String? translationApiKey,
   }) async {
     Stopwatch stopwatch = Stopwatch()..start();
     AmityRegionalHttpEndpoint? amityEndpoint;
     AmityRegionalMqttEndpoint? amityMqttEndpoint;
-    AmityUploadEndpoint? amityUploadEndpoint;    
+    AmityUploadEndpoint? amityUploadEndpoint;
 
     switch (region) {
       case AmityEndpointRegion.custom:
         if (customEndpoint != null &&
             customMqttEndpoint != null &&
-            customSocketEndpoint != null && customUploadEndpoint != null) {
+            customSocketEndpoint != null &&
+            customUploadEndpoint != null) {
           amityEndpoint = AmityRegionalHttpEndpoint.custom(customEndpoint);
           amityMqttEndpoint =
               AmityRegionalMqttEndpoint.custom(customMqttEndpoint);
@@ -123,6 +127,14 @@ class AmityUIKit {
           uploadEndpoint: amityUploadEndpoint!,
         ),
         sycInitialization: true);
+
+    // Initialize translation service
+    final translationService = TranslationService();
+    translationService.init(
+      baseUrl: translationServerUrl,
+      apiKey: translationApiKey,
+    );
+
     stopwatch.stop();
     log('setupAmityClient execution time: ${stopwatch.elapsedMilliseconds} ms');
   }
@@ -252,7 +264,8 @@ class AmityUIKitProvider extends StatelessWidget {
       providers: [
         BlocProvider<GlobalFeedBloc>(create: (context) => GlobalFeedBloc()),
         BlocProvider<AmityToastBloc>(create: (context) => AmityToastBloc()),
-        BlocProvider<UserRelationshipBloc>(create: (context) => UserRelationshipBloc()),
+        BlocProvider<UserRelationshipBloc>(
+            create: (context) => UserRelationshipBloc()),
         BlocProvider<PostSharingBloc>(create: (context) => PostSharingBloc()),
         BlocProvider<SocialHomeBloc>(create: (context) => SocialHomeBloc()),
         BlocProvider<CreateStoryPageBloc>(
@@ -312,9 +325,10 @@ class AmityUIKitProvider extends StatelessWidget {
         ),
       ],
       child: Builder(builder: (builderContext) {
-        return Consumer<ConfigProvider>(builder: (consumerContext, configProvider, _) {
+        return Consumer<ConfigProvider>(
+            builder: (consumerContext, configProvider, _) {
           configProvider.loadConfig();
-          
+
           // No MaterialApp - use the parent app's navigation system
           return child;
         });

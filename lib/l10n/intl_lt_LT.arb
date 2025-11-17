@@ -1,0 +1,2204 @@
+{
+  "@@locale": "lt_LT",
+  "community_title": "bendruomenė",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "Naujienų kanalas",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "Naršyti",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "Mano bendruomenės",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "Mano grupės",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Pašaras",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "bendruomenės leidimai",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Leidimas skelbti",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "Kas gali skelbti šioje bendruomenėje",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "Galite valdyti, kas gali kurti įrašus jūsų bendruomenėje.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Leisti komentuoti bendruomenės istorijas",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Įjunkite, kad gautumėte komentarų apie šios bendruomenės istorijas.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "Palikti bendruomenę",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Palikti bendruomenę. Nebegalėsite skelbti įrašų ir bendrauti šioje bendruomenėje.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Uždara bendruomenė",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Uždarius šią bendruomenę bus pašalintas bendruomenės puslapis ir visas jo turinys bei komentarai.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "Uždaryti bendruomenę?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "Visi nariai bus pašalinti iš bendruomenės. Visi bendruomenėje bendrinami įrašai, pranešimai, reakcijos ir medija bus ištrinti. To negalima anuliuoti.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Grupės leidimai",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Leidimas skelbti",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "Kas gali skelbti šioje grupėje",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "Galite valdyti, kas jūsų grupėje gali kurti įrašus.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Leisti komentuoti grupės istorijas",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Įjunkite, kad gautumėte komentarų apie šios grupės istorijas.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Išeiti iš grupės",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Palikite grupę. Nebegalėsite skelbti ir bendrauti šioje grupėje.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Uždaryti grupę",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Uždarius šią grupę bus pašalintas grupės puslapis ir visas jo turinys bei komentarai.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "Uždaryti grupę?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "Visi nariai bus pašalinti iš grupės. Visi grupėje bendrinami įrašai, pranešimai, reakcijos ir medija bus ištrinti. To negalima anuliuoti.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Ieškoti bendruomenės ir vartotojo",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "Ieškoti mano bendruomenėje",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "Rezultatų nerasta",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "bendruomenės",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "Vartotojai",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "Atšaukti",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "Gerai",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "Patvirtinti",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "Teminiai",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "Sekėjai",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "Sekant",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "Įrašai",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "Sukurti įrašą",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "Redaguoti įrašą",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "Kas vyksta...",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "Ištrinti įrašą",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "Šis įrašas bus visam laikui ištrintas.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "Ištrinti įrašą?",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "Ar norite ištrinti savo įrašą?",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "Pranešti apie įrašą",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "Nepranešti apie įrašą",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "Patinka",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "komentuoti",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "Dalintis",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "Atmesti šį įrašą?",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "Įrašas bus ištrintas visam laikui. To negalima anuliuoti.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "Rašyk komentarą...",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "Apklausos trukmė",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "Visada galite uždaryti apklausą prieš nustatytą trukmę.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "Tinkinta pabaigos data",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "Uždaryti apklausą",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "Ši apklausa uždaryta. Jūs nebegalite balsuoti.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "balsuoti",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "Žiūrėti rezultatus",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "Atgal į balsavimą",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "Žiūrėti visus rezultatus",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "Balsavote jūs",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "ir tu",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "paliko",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "Nepavyko balsuoti apklausoje. Bandykite dar kartą.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "Baigėsi",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "Pasirinkite vieną parinktį",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "Pasirinkite vieną ar daugiau parinkčių",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "Apklausos klausimas",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "Koks tavo apklausos klausimas?",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Pasakyk ką nors gražaus...",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Atsakyti",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Atsakant į",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Pranešti apie komentarą",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Nepranešti apie komentarą",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Pranešti apie atsakymą",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Nepranešti atsakymo",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Redaguoti komentarą",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Redaguoti atsakymą",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Ištrinti komentarą",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Ištrinti atsakymą",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "This {content} will be permanently deleted.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Jūsų komentare yra netinkamo žodžio. Peržiūrėkite ir ištrinkite.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "Ši istorija nebepasiekiama",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Sėkmingai sukurta bendruomenė.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "Nepavyko sukurti bendruomenės. Bandykite dar kartą.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Bendruomenė sėkmingai atnaujinta.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "Nepavyko išsaugoti bendruomenės profilio. Bandykite dar kartą.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "Sėkmingai paliko bendruomenę.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "Nepavyko išeiti iš bendruomenės.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "Bendruomenė sėkmingai uždaryta.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "Nepavyko uždaryti bendruomenės.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Prisijunk",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "Prisijungė",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "Rekomenduojama jums",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "Dabar populiaru",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1,2 tūkst. narių",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "Sukurti bendruomenę",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Bendruomenės pavadinimas",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Pavadinkite savo bendruomenę",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Įveskite aprašymą",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Redaguoti bendruomenę",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "nariai",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Privatus",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Viešas",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Kiekvienas gali prisijungti, peržiūrėti ir ieškoti šios bendruomenės įrašų.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Tik moderatorių pakviesti nariai gali prisijungti, peržiūrėti ir ieškoti šios bendruomenės įrašų.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "Apie",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "Kategorijos",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Pasirinkite kategoriją",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Pasirinkite kategoriją",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "Pridėti kategoriją",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "Laukiantys įrašai",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Jūsų įrašai laukia peržiūros",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Pagrindinė informacija",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "Išeiti nebaigęs?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Jūsų pažanga nebus išsaugota ir bendruomenė nebus sukurta.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Siųsti",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "rašo...",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Įveskite žinutę...",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "Nustatymai",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Pranešimai",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Nauji įrašai",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Gaukite pranešimus, kai kas nors sukuria naujus įrašus šioje bendruomenėje.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reaguoti į įrašus",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Gaukite pranešimus, kai kas nors reaguoja į jūsų įrašus šioje bendruomenėje.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "Reaguoti į komentarus",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Gaukite pranešimus, kai kam nors patinka jūsų komentaras šioje bendruomenėje.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Nauji komentarai",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Gaukite pranešimus, kai kas nors pakomentuoja jūsų įrašą šioje bendruomenėje.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Atsakymai",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Gaukite pranešimus, kai kas nors pakomentuoja jūsų komentarus šioje bendruomenėje.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Naujos istorijos",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Gaukite pranešimus, kai kas nors sukuria naują istoriją šioje bendruomenėje.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Istorijos reakcijos",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Gaukite pranešimus, kai kas nors reaguoja į jūsų istoriją šioje bendruomenėje.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Istorijos komentarai",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Gaukite pranešimus, kai kas nors pakomentuos jūsų istoriją šioje bendruomenėje.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Visi",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Tik moderatoriai",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Rašyti gali tik administratoriai",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "Privatumas",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Kalba",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "Išeiti nebaigęs?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Jūsų atlikti pakeitimai gali būti neišsaugomi.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "Keisti bendruomenės privatumo nustatymus?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Šioje bendruomenėje yra visame pasaulyje rodomų įrašų. Pakeitus bendruomenę iš viešosios į privačią, šie įrašai nebus rodomi visame pasaulyje.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Pridėti",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Įkeliama...",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Palikti",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Oi, kažkas nutiko",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Redaguota",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(redaguota)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Tęskite redagavimą",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Išmesti",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderatorius",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Išsaugoti",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Ištrinti",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Redaguoti",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Uždaryti",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "Atlikta",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Įrašas",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "komentarai",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Istorija",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Istorijos",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Apklausa",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Neprivaloma",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "Įjungta",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Išjungta",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Leisti pranešimą",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "Įjunkite, kad gautumėte tiesioginius pranešimus iš šios bendruomenės.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "pranešė",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...Žiūrėti daugiau",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Fotoaparatas",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Nuotrauka",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Vaizdo įrašas",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Skelbimas",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Mano laiko juosta",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Parinktys",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "Redaguoti visame pasaulyje rodomą įrašą?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "Jūsų redaguojamas įrašas buvo populiarus visame pasaulyje. Jei redaguosite savo įrašą, jį reikės patvirtinti iš naujo ir jis nebebus rodomas visame pasaulyje.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Pranešimas praneštas.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Įrašas nepraneštas.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{post} other{posts}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{member} other{members}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Blokuoti naudotoją",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Atblokuoti naudotoją",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "Nepavyko ištrinti įrašo. Bandykite dar kartą.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "Neįmanoma išeiti iš bendruomenės",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Jūs esate vienintelis moderatorius šioje grupėje. Norėdami išeiti iš bendruomenės, paskirkite kitus narius į moderatoriaus vaidmenį",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "Nepavyko uždaryti bendruomenės",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Kažkas nutiko. Bandykite dar kartą vėliau.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Pasiektas maksimalus įkėlimo limitas",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Nepavyko redaguoti įrašo. Bandykite dar kartą.",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Nepavyko sukurti įrašo. Bandykite dar kartą.",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "Nepavyko sukurti apklausos. Bandykite dar kartą.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "Nežinoma",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "Visi nariai",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "Moderatoriai",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "Ieškoti nario",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "Paaukštinti iki moderatoriaus",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "Pažeminti į narį",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "Pašalinti iš bendruomenės",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "Pranešti apie vartotoją",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "Nepranešti apie naudotoją",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "Dar nėra vaizdo įrašų",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "Dar nėra nuotraukų",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "Dar nėra prisegtų įrašų",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "Įrašų dar nėra",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "Pridėti narį",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "Ieškoti vartotojo",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "Redaguoti profilį",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "Sėkmingai atnaujintas jūsų profilis!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "Nepavyko išsaugoti jūsų profilio. Bandykite dar kartą.",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "Istorijos komentarai",
+  "post_item_bottom_nonmember_label": "Prisijunkite prie grupės, kad galėtumėte bendrauti su visais įrašais",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "Pranešimas įjungtas",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "Nepavyko įjungti pranešimo. Bandykite dar kartą.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "Pranešimas išjungtas",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "Nepavyko išjungti pranešimo. Bandykite dar kartą.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "Vartotojas pranešė.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "Nepavyko pranešti apie naudotoją. Bandykite dar kartą.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "Vartotojas nepraneštas.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "Nepavyko anuliuoti pranešimo apie naudotoją. Bandykite dar kartą.",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "Vartotojas užblokuotas.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "Nepavyko užblokuoti vartotojo. Bandykite dar kartą.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "Vartotojas atblokuotas.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "Nepavyko atblokuoti vartotojo. Bandykite dar kartą.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "Narių nerasta",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "Moderatoriaus paaukštinimas",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "Ar tikrai norite paaukštinti šį narį moderatoriumi? Jie gaus prieigą prie visų moderatoriaus funkcijų.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "Reklamuoti",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "Moderatoriaus pažeminimas",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "Ar tikrai norite pažeminti šį moderatorių? Jie praras prieigą prie visų moderatoriaus funkcijų.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "Pažeminti",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "Patvirtinkite pašalinimą",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "Ar tikrai norite pašalinti šį narį iš grupės? Jie žinos apie jų pašalinimą.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "Pašalinti",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "Patvirtinti draudimą",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "Ar tikrai norite uždrausti šį naudotoją? Jie bus pašalinti iš grupės ir negalės jos rasti arba vėl prisijungti, nebent bus panaikintas draudimas.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "Uždrausti",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "Narys sėkmingai pridėtas prie šios bendruomenės.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "Nepavyko pridėti nario. Bandykite dar kartą.",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "Sėkmingai paskirtas moderatoriumi.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "Nepavyko paaukštinti nario. Bandykite dar kartą.",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "Sėkmingai pažemintas į narį.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "Nepavyko pažeminti nario. Bandykite dar kartą.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "Narys pašalintas iš šios bendruomenės.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "Nepavyko pašalinti nario. Bandykite dar kartą.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "Vartotojas sekė.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "Oi, kažkas nutiko.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "Vartotojas nebestebimas.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "Oi, kažkas nutiko.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "Paskelbti į",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "Užblokavote šį naudotoją",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "Atblokuokite, kad pamatytumėte jų įrašus.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "Ši paskyra yra privati",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "Stebėkite šį vartotoją, kad pamatytumėte jo įrašus.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "Tik dabar",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "dabar",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "Įjunkite pranešimus",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "Išjungti pranešimus",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "Blokuoti naudotoją?",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "Atblokuoti naudotoją?",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "Atsiųsk nuotrauką",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "Siųsti vaizdo įrašą",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "Naujos sekimo užklausos",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "{count} requests need your approval",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "Nebestebėti",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "Neįmanoma sekti šio vartotojo",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "Oi! kažkas nutiko. Bandykite dar kartą vėliau.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "Sekite",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "Atšaukti užklausą",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "Sekant",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "Blokuoti naudotoją?",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "Blokuoti",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "Atblokuoti naudotoją?",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "Atblokuoti",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "Nebestebėti šio vartotojo?",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "Jei apsigalvosite, turėsite dar kartą pateikti užklausą sekti juos.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "Nebestebėti",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "Kategorija",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "Kol kas bendruomenės nėra",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "Laukiantys prašymai",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "Laukiančių užklausų nėra",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "Įgalinkite įrašo peržiūrą arba prisijunkite prie patvirtinimo bendruomenės nustatymuose, kad galėtumėte tvarkyti užklausas.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "Greitai pasirodys prisijungimo užklausų funkcija",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "Nėra laukiančių pranešimų",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "Priimti",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "Atmesti",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "Įrašas ištrintas.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "Nepavyko ištrinti įrašo. Bandykite dar kartą.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "Paštas priimtas.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "Nepavyko priimti pranešimo. Šį įrašą peržiūrėjo kitas moderatorius.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "Įrašas atmestas.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "Nepavyko atmesti įrašo. Šį įrašą peržiūrėjo kitas moderatorius.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "Option {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "Pridėti parinktį",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "Multiple selection",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "Leiskite dalyviams balsuoti daugiau nei už vieną variantą.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "Ends on {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "Baigiasi",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "Pasirinkite Data",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "Pasirinkite Laikas",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "Valanda",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "Minutė",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "Rodomas pavadinimas",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "Apie",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "Nepalaikomas vaizdo tipas",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "Įkelkite PNG arba JPG vaizdą.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "Netinkamas vaizdas",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "Pasirinkite kitą vaizdą, kurį norite įkelti.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "Neišsaugoti pakeitimai",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "Ar tikrai norite atmesti pakeitimus? Jie bus prarasti, kai išeisite iš šio puslapio.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "Pokalbis",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "Visi",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "Tiesioginis",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "Grupės",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "Laukiama tinklo...",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "Tiesioginis pokalbis",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "Grupinis pokalbis",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "Suarchyvuota",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "Redaguoti pranešimą",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "save",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "Atsakyta žinutė",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "Replying to {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "Žiniasklaida",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "Įkeliamas pokalbis...",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "Negalite siųsti pranešimų šiam asmeniui.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "Išjungėte pokalbių pranešimus",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "Archyvas",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "Išarchyvuoti",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "Šis pranešimas buvo ištrintas",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "Šio tipo pranešimo peržiūra nepalaikoma",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "Kol kas jokios žinutės",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "Grupė",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "Sukurti grupę",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "Redaguoti grupę",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "Grupės pavadinimas",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "Pavadinkite savo grupę",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "Įveskite aprašymą",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "Apie",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "nariai",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "Prisijunk",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "Prisijungė",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "Viešas",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "Privatus",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "Kiekvienas gali prisijungti, peržiūrėti ir ieškoti šios grupės įrašų.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "Tik moderatorių pakviesti nariai gali prisijungti, peržiūrėti ir ieškoti šios grupės įrašų.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "Rekomenduojama jums",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "Dabar populiaru",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1,2 tūkst. narių",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "Pagrindinė informacija",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "Išeiti nebaigęs?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "Jūsų pažanga nebus išsaugota ir jūsų grupė nebus sukurta.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "Laukiantys įrašai",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "Visi nariai",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "Moderatoriai",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "Ieškoti nario",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "Paaukštinti iki moderatoriaus",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "Pažeminti į narį",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "Pašalinti iš grupės",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "Istorijos komentarai",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Grupės dar nėra",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "Laukiantys prašymai",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "Laukiančių užklausų nėra",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "Įgalinkite įrašo peržiūrą arba prisijunkite prie patvirtinimo grupės nustatymuose, kad galėtumėte tvarkyti užklausas.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "Greitai pasirodys prisijungimo užklausų funkcija",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "Nėra laukiančių pranešimų",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "Priimti",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "Atmesti",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "Sėkmingai sukurta grupė.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "Nepavyko sukurti grupės. Bandykite dar kartą.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "Grupė sėkmingai atnaujinta.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "Nepavyko išsaugoti grupės profilio. Bandykite dar kartą.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "Sėkmingai išėjo iš grupės.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "Nepavyko išeiti iš grupės.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "Grupė sėkmingai uždaryta.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "Nepavyko uždaryti grupės.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "Įrašas ištrintas.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "Nepavyko ištrinti įrašo. Bandykite dar kartą.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "Paštas priimtas.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "Nepavyko priimti pranešimo. Šį įrašą peržiūrėjo kitas moderatorius.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "Įrašas atmestas.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "Nepavyko atmesti įrašo. Šį įrašą peržiūrėjo kitas moderatorius.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "Nepavyko išeiti iš grupės",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "Jūs esate vienintelis moderatorius šioje grupėje. Norėdami išeiti iš grupės, paskirkite kitus narius į moderatoriaus vaidmenį",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "Nepavyko uždaryti grupės",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "Kažkas nutiko. Bandykite dar kartą vėliau.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "Suarchyvuota per daug pokalbių",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Viešas",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Privatus",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "Failas",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Patvirtinti panaikinti draudimą",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Ištrinti šį pranešimą?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Visi",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Tik moderatoriai",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Numatytasis režimas",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Tylus režimas",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Prenumeratos režimas",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Grupės profilis",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Grupės pranešimai",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Narių leidimai",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Visi nariai",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Uždrausti vartotojai",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Palikti grupę",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Jūs esate paskutinis moderatorius",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "pranešimus",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Leisti pranešimus",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Išmesti šią istoriją?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "Istorija bus visam laikui ištrinta. To negalima anuliuoti.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "Pašalinti nuorodą?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Neišsaugoti pakeitimai",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Nepavyko įkelti istorijos",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Ištrinti šią istoriją?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Istorijos",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Įrašai išsiųsti peržiūrėti",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Suteikite prieigą prie failų",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Suteikite prieigą prie savo nuotraukų",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Suteikite prieigą prie savo vaizdo įrašų",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Pasiektas maksimalus įkėlimo limitas",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Visos kategorijos",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Išmesti",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "general_search": "Ieškoti",
+  "@general_search": {
+    "description": "Translation for: Search"
+  },
+  "general_error_title": "Kažkas nutiko",
+  "@general_error_title": {
+    "description": "Translation for: Something went wrong"
+  },
+  "general_error_retry": "Bandykite dar kartą.",
+  "@general_error_retry": {
+    "description": "Translation for: Please try again."
+  },
+  "chat_archived_title": "Archyvuoti pokalbiai",
+  "@chat_archived_title": {
+    "description": "Translation for: Archived chats"
+  },
+  "chat_archived_empty": "Nėra archyvo pokalbio",
+  "@chat_archived_empty": {
+    "description": "Translation for: No archive chat"
+  },
+  "chat_add_member_title": "Pridėti narį",
+  "@chat_add_member_title": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_add_member_button": "Pridėti narį",
+  "@chat_add_member_button": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_no_results_found": "Rezultatų nerasta",
+  "@chat_no_results_found": {
+    "description": "Translation for: No results found"
+  },
+  "chat_banned_users_empty": "Čia dar nėra ką pamatyti",
+  "@chat_banned_users_empty": {
+    "description": "Translation for: Nothing here to see yet"
+  },
+  "chat_confirm_unban_title": "Patvirtinti panaikinti draudimą",
+  "@chat_confirm_unban_title": {
+    "description": "Translation for: Confirm unban"
+  },
+  "chat_unban_confirmation_message": "Ar tikrai norite panaikinti šio naudotojo blokavimą? Jie vėl galės prisijungti prie grupės.",
+  "@chat_unban_confirmation_message": {
+    "description": "Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again."
+  },
+  "chat_unban_button": "Atšaukti draudimą",
+  "@chat_unban_button": {
+    "description": "Translation for: Unban"
+  },
+  "chat_group_settings_title": "Grupės nustatymai",
+  "@chat_group_settings_title": {
+    "description": "Translation for: Group Settings"
+  },
+  "chat_group_settings_section": "Grupės nustatymai",
+  "@chat_group_settings_section": {
+    "description": "Translation for: Group settings"
+  },
+  "chat_your_preferences": "Jūsų pageidavimai",
+  "@chat_your_preferences": {
+    "description": "Translation for: Your preferences"
+  },
+  "chat_leave_group_title": "Išeiti iš grupės",
+  "@chat_leave_group_title": {
+    "description": "Translation for: Leave group"
+  },
+  "chat_leave_group_message": "Jei išeisite iš šios grupės, nebematysite naujos veiklos ir nebedalyvausite šioje grupėje.",
+  "@chat_leave_group_message": {
+    "description": "Translation for: If you leave this group, you will no longer see new activities or participate in this group."
+  },
+  "chat_leave_button": "Palikti",
+  "@chat_leave_button": {
+    "description": "Translation for: Leave"
+  },
+  "chat_promote_member_button": "Paaukštinti narį",
+  "@chat_promote_member_button": {
+    "description": "Translation for: Promote member"
+  },
+  "chat_group_profile_updated": "Grupės profilis atnaujintas.",
+  "@chat_group_profile_updated": {
+    "description": "Translation for: Group profile updated."
+  },
+  "chat_group_notification_updated": "Atnaujintas grupės pranešimas.",
+  "@chat_group_notification_updated": {
+    "description": "Translation for: Group notification updated."
+  },
+  "chat_member_permissions_updated": "Narių leidimai atnaujinti.",
+  "@chat_member_permissions_updated": {
+    "description": "Translation for: Member permissions updated."
+  },
+  "chat_member_list_updated": "Narių sąrašas atnaujintas.",
+  "@chat_member_list_updated": {
+    "description": "Translation for: Member list updated."
+  },
+  "chat_banned_users_updated": "Atnaujinti uždrausti vartotojai.",
+  "@chat_banned_users_updated": {
+    "description": "Translation for: Banned users updated."
+  },
+  "chat_group_left_success": "Išėjo iš grupės pokalbio.",
+  "@chat_group_left_success": {
+    "description": "Translation for: Group chat left."
+  },
+  "chat_group_profile_update_failed": "Nepavyko atnaujinti grupės profilio. Bandykite dar kartą.",
+  "@chat_group_profile_update_failed": {
+    "description": "Translation for: Failed to update group profile. Please try again."
+  },
+  "chat_group_notification_update_failed": "Nepavyko atnaujinti grupės pranešimo. Bandykite dar kartą.",
+  "@chat_group_notification_update_failed": {
+    "description": "Translation for: Failed to update group notification. Please try again."
+  },
+  "chat_member_permissions_update_failed": "Nepavyko atnaujinti narių leidimų. Bandykite dar kartą.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Translation for: Failed to update member permissions. Please try again."
+  },
+  "chat_member_list_update_failed": "Nepavyko atnaujinti narių sąrašo. Bandykite dar kartą.",
+  "@chat_member_list_update_failed": {
+    "description": "Translation for: Failed to update member list. Please try again."
+  },
+  "chat_banned_users_update_failed": "Nepavyko atnaujinti uždraustų vartotojų. Bandykite dar kartą.",
+  "@chat_banned_users_update_failed": {
+    "description": "Translation for: Failed to update banned users. Please try again."
+  },
+  "chat_group_left_failed": "Nepavyko išeiti iš grupės pokalbio. Bandykite dar kartą.",
+  "@chat_group_left_failed": {
+    "description": "Translation for: Failed to leave group chat. Please try again."
+  },
+  "chat_messaging_section": "Susirašinėjimas žinutėmis",
+  "@chat_messaging_section": {
+    "description": "Translation for: Messaging"
+  },
+  "chat_permission_everyone_description": "Kiekvienas gali siųsti žinutę grupėje.",
+  "@chat_permission_everyone_description": {
+    "description": "Translation for: Everyone can send a message in the group."
+  },
+  "chat_permission_moderators_description": "Nariai, kurie nėra moderatoriai, gali skaityti pranešimus, bet negali siųsti jokių pranešimų.",
+  "@chat_permission_moderators_description": {
+    "description": "Translation for: Members who are not moderators can read messages but cannot send any messages."
+  },
+  "chat_notification_default_description": "Pagal numatytuosius nustatymus šios bendruomenės nariai gaus pranešimus, bet gali pasirinkti juos išjungti.",
+  "@chat_notification_default_description": {
+    "description": "Translation for: By default, members in this community will receive notifications, but they can choose to turn them off."
+  },
+  "chat_notification_silent_description": "Jokių pranešimų nėra visiems šio kanalo nariams. Nariai negali įjungti pranešimų kanale.",
+  "@chat_notification_silent_description": {
+    "description": "Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel."
+  },
+  "chat_notification_subscribe_description": "Visi nariai turi galimybę gauti pranešimus, tačiau jie turi juos įjungti. Pagal numatytuosius nustatymus kiekvieno nario pranešimai yra išjungti.",
+  "@chat_notification_subscribe_description": {
+    "description": "Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member."
+  },
+  "feed_filter_title": "Filtruoti įrašus",
+  "@feed_filter_title": {
+    "description": "Translation for: Filter Posts"
+  },
+  "feed_filter_content_type": "Turinio tipas",
+  "@feed_filter_content_type": {
+    "description": "Translation for: Content Type"
+  },
+  "feed_filter_all": "Visi",
+  "@feed_filter_all": {
+    "description": "Translation for: All"
+  },
+  "feed_filter_images": "Vaizdai",
+  "@feed_filter_images": {
+    "description": "Translation for: Images"
+  },
+  "feed_filter_videos": "Vaizdo įrašai",
+  "@feed_filter_videos": {
+    "description": "Translation for: Videos"
+  },
+  "feed_filter_text": "Tekstas",
+  "@feed_filter_text": {
+    "description": "Translation for: Text"
+  },
+  "feed_filter_sort_by": "Rūšiuoti pagal",
+  "@feed_filter_sort_by": {
+    "description": "Translation for: Sort By"
+  },
+  "feed_filter_latest_first": "Naujausias Pirmas",
+  "@feed_filter_latest_first": {
+    "description": "Translation for: Latest First"
+  },
+  "feed_filter_oldest_first": "Seniausi Pirma",
+  "@feed_filter_oldest_first": {
+    "description": "Translation for: Oldest First"
+  },
+  "feed_filter_clear_all": "Išvalyti viską",
+  "@feed_filter_clear_all": {
+    "description": "Translation for: Clear All"
+  },
+  "feed_filter_apply": "Taikyti filtrus",
+  "@feed_filter_apply": {
+    "description": "Translation for: Apply Filters"
+  },
+  "feed_empty_title": "Jūsų sklaidos kanalas tuščias",
+  "@feed_empty_title": {
+    "description": "Translation for: Your feed is empty"
+  },
+  "feed_empty_description": "Raskite grupę arba sukurkite savo",
+  "@feed_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "feed_empty_explore_button": "Naršyti grupę",
+  "@feed_empty_explore_button": {
+    "description": "Translation for: Explore group"
+  },
+  "feed_empty_create_button": "Sukurti grupę",
+  "@feed_empty_create_button": {
+    "description": "Translation for: Create group"
+  },
+  "explore_empty_title": "Jūsų tyrinėjimas tuščias",
+  "@explore_empty_title": {
+    "description": "Translation for: Your explore is empty"
+  },
+  "explore_no_group_title": "Grupės dar nėra",
+  "@explore_no_group_title": {
+    "description": "Translation for: No group yet"
+  },
+  "explore_empty_description": "Raskite grupę arba sukurkite savo",
+  "@explore_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "explore_no_group_description": "Sukurkime savo grupes..",
+  "@explore_no_group_description": {
+    "description": "Translation for: Let's create your own groups.."
+  }
+}

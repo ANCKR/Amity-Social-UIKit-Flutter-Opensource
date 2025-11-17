@@ -1,5 +1,7 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
+import 'package:amity_uikit_beta_service/repository/translation_repo.dart';
+import 'package:amity_uikit_beta_service/utils/translation_cache.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
@@ -13,6 +15,8 @@ part 'post_item_state.dart';
 class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
   AmityPost post;
   BuildContext context;
+  final _translationService = TranslationService();
+  final _translationCache = TranslationCache();
 
   PostItemBloc(this.context, this.post) : super(PostItemState(post: post)) {
     on<PostItemLoading>((event, emit) async {
@@ -77,6 +81,65 @@ class PostItemBloc extends Bloc<PostItemEvent, PostItemState> {
     on<PostItemLoaded>((event, emit) async {
       AmityPost post = event.post;
       emit(state.copyWith(post: post));
+    });
+
+    on<TranslatePost>((event, emit) async {
+      final postId = state.post.postId ?? '';
+
+      // Check cache first
+      final cached = _translationCache.get(postId, event.targetLang);
+      if (cached != null) {
+        emit(PostItemState(
+          post: state.post,
+          isReacting: state.isReacting,
+          isTranslated: true,
+          translatedText: cached,
+          isTranslating: false,
+        ));
+        return;
+      }
+
+      emit(PostItemState(
+        post: state.post,
+        isReacting: state.isReacting,
+        isTranslated: state.isTranslated,
+        translatedText: state.translatedText,
+        isTranslating: true,
+      ));
+
+      final translated = await _translationService.translateText(
+        text: event.text,
+        targetLang: event.targetLang,
+      );
+
+      if (translated != null) {
+        _translationCache.put(postId, event.targetLang, translated);
+        emit(PostItemState(
+          post: state.post,
+          isReacting: state.isReacting,
+          isTranslated: true,
+          translatedText: translated,
+          isTranslating: false,
+        ));
+      } else {
+        emit(PostItemState(
+          post: state.post,
+          isReacting: state.isReacting,
+          isTranslated: state.isTranslated,
+          translatedText: state.translatedText,
+          isTranslating: false,
+        ));
+      }
+    });
+
+    on<ShowOriginalPost>((event, emit) async {
+      emit(PostItemState(
+        post: state.post,
+        isReacting: state.isReacting,
+        isTranslating: false,
+        isTranslated: false,
+        translatedText: state.translatedText, // Keep cached translation
+      ));
     });
   }
 }
