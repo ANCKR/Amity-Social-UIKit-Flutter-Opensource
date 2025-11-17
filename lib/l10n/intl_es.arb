@@ -1976,5 +1976,93 @@
   "story_discard_action": "Desechar",
   "@story_discard_action": {
     "description": "Button text for discarding story"
+  },
+  "empty_my_communities_title": "Aún no hay comunidades",
+  "@empty_my_communities_title": {
+    "description": "Título para lista vacía de mis comunidades"
+  },
+  "empty_my_communities_description": "Únete a comunidades para verlas aquí",
+  "@empty_my_communities_description": {
+    "description": "Descripción para lista vacía de mis comunidades"
+  },
+  "empty_my_communities_cta": "Explorar comunidades",
+  "@empty_my_communities_cta": {
+    "description": "Texto del botón CTA para lista vacía de mis comunidades"
+  },
+  "empty_group_chats_title": "Aún no hay chats grupales",
+  "@empty_group_chats_title": {
+    "description": "Título para lista vacía de chats grupales"
+  },
+  "empty_group_chats_description": "Inicia un chat grupal con amigos",
+  "@empty_group_chats_description": {
+    "description": "Descripción para lista vacía de chats grupales"
+  },
+  "empty_group_chats_cta": "Crear chat grupal",
+  "@empty_group_chats_cta": {
+    "description": "Texto del botón CTA para lista vacía de chats grupales"
+  },
+  "empty_all_chats_title": "Aún no hay conversaciones",
+  "@empty_all_chats_title": {
+    "description": "Título para lista de chats vacía"
+  },
+  "empty_all_chats_description": "Vamos a crear un chat para empezar.",
+  "@empty_all_chats_description": {
+    "description": "Descripción para lista de chats vacía"
+  },
+  "empty_all_chats_cta": "Crear nuevo chat",
+  "@empty_all_chats_cta": {
+    "description": "Texto del botón CTA para lista de chats vacía"
+  },
+  "empty_archived_chats_title": "No hay chats archivados",
+  "@empty_archived_chats_title": {
+    "description": "Título para lista de chats archivados vacía"
+  },
+  "empty_archived_chats_description": "Los chats archivados aparecerán aquí",
+  "@empty_archived_chats_description": {
+    "description": "Descripción para lista vacía de chats archivados"
+  },
+  "empty_comments_title": "Aún no hay comentarios",
+  "@empty_comments_title": {
+    "description": "Título para lista vacía de comentarios"
+  },
+  "empty_comments_description": "Sé el primero en comentar",
+  "@empty_comments_description": {
+    "description": "Descripción para lista vacía de comentarios"
+  },
+  "empty_search_title": "No se encontraron resultados",
+  "@empty_search_title": {
+    "description": "Título para resultados de búsqueda vacíos"
+  },
+  "empty_search_description": "Prueba con diferentes palabras clave o explora comunidades",
+  "@empty_search_description": {
+    "description": "Descripción para resultados de búsqueda vacíos"
+  },
+  "empty_search_cta": "Explorar comunidades",
+  "@empty_search_cta": {
+    "description": "Texto del botón CTA para resultados de búsqueda vacíos"
+  },
+  "empty_category_communities_description": "No se encontraron comunidades en esta categoría. Prueba explorar otras categorías o crea la tuya propia.",
+  "@empty_category_communities_description": {
+    "description": "Descripción para comunidades vacías en categoría"
+  },
+  "empty_explore_title_no_categories": "Tu exploración está vacía",
+  "@empty_explore_title_no_categories": {
+    "description": "Título para página de exploración cuando no hay categorías"
+  },
+  "empty_explore_description_no_categories": "Encuentra comunidades o crea la tuya propia",
+  "@empty_explore_description_no_categories": {
+    "description": "Descripción para página de exploración cuando no hay categorías"
+  },
+  "empty_explore_title_no_communities": "Aún no hay comunidades",
+  "@empty_explore_title_no_communities": {
+    "description": "Título para página de exploración cuando hay categorías pero no comunidades"
+  },
+  "empty_explore_description_no_communities": "Sé el primero en crear una comunidad",
+  "@empty_explore_description_no_communities": {
+    "description": "Descripción para página de exploración cuando hay categorías pero no comunidades"
+  },
+  "cta_create_community": "Crear comunidad",
+  "@cta_create_community": {
+    "description": "Texto del botón CTA para crear comunidad"
   }
 }

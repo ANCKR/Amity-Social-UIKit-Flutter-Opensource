@@ -1662,13 +1662,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chat_add_member_button => 'Add Member';
 
   @override
-  String get chat_no_results_found => 'No results found';
-
-  @override
   String get chat_banned_users_empty => 'Nothing here to see yet';
-
-  @override
-  String get chat_confirm_unban_title => 'Confirm unban';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -1684,10 +1678,45 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chat_group_settings_section => 'Group settings';
 
   @override
+  String get chat_group_profile_updated => 'Group profile updated.';
+
+  @override
+  String get chat_group_profile_update_failed =>
+      'Failed to update group profile. Please try again.';
+
+  @override
+  String get chat_group_notification_updated => 'Group notification updated.';
+
+  @override
+  String get chat_group_notification_update_failed =>
+      'Failed to update group notification. Please try again.';
+
+  @override
+  String get chat_member_permissions_updated => 'Member permissions updated.';
+
+  @override
+  String get chat_member_permissions_update_failed =>
+      'Failed to update member permissions. Please try again.';
+
+  @override
+  String get chat_member_list_updated => 'Member list updated.';
+
+  @override
+  String get chat_member_list_update_failed =>
+      'Failed to update member list. Please try again.';
+
+  @override
+  String get chat_banned_users_updated => 'Banned users updated.';
+
+  @override
+  String get chat_banned_users_update_failed =>
+      'Failed to update banned users. Please try again.';
+
+  @override
   String get chat_your_preferences => 'Your preferences';
 
   @override
-  String get chat_leave_group_title => 'Leave group';
+  String get chat_leave_group_title => 'Leave Group';
 
   @override
   String get chat_leave_group_message =>
@@ -1697,45 +1726,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chat_leave_button => 'Leave';
 
   @override
+  String get chat_last_moderator_message =>
+      'You must promote another member to moderator before leaving.';
+
+  @override
   String get chat_promote_member_button => 'Promote member';
 
   @override
-  String get chat_group_profile_updated => 'Group profile updated.';
-
-  @override
-  String get chat_group_notification_updated => 'Group notification updated.';
-
-  @override
-  String get chat_member_permissions_updated => 'Member permissions updated.';
-
-  @override
-  String get chat_member_list_updated => 'Member list updated.';
-
-  @override
-  String get chat_banned_users_updated => 'Banned users updated.';
-
-  @override
   String get chat_group_left_success => 'Group chat left.';
-
-  @override
-  String get chat_group_profile_update_failed =>
-      'Failed to update group profile. Please try again.';
-
-  @override
-  String get chat_group_notification_update_failed =>
-      'Failed to update group notification. Please try again.';
-
-  @override
-  String get chat_member_permissions_update_failed =>
-      'Failed to update member permissions. Please try again.';
-
-  @override
-  String get chat_member_list_update_failed =>
-      'Failed to update member list. Please try again.';
-
-  @override
-  String get chat_banned_users_update_failed =>
-      'Failed to update banned users. Please try again.';
 
   @override
   String get chat_group_left_failed =>
@@ -1843,6 +1841,80 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get story_remove_link_message =>
       'This link will be removed from story.';
+
+  @override
+  String get empty_my_communities_title => 'Aún no hay comunidades';
+
+  @override
+  String get empty_my_communities_description =>
+      'Únete a comunidades para verlas aquí';
+
+  @override
+  String get empty_my_communities_cta => 'Explorar comunidades';
+
+  @override
+  String get empty_group_chats_title => 'Aún no hay chats grupales';
+
+  @override
+  String get empty_group_chats_description =>
+      'Inicia un chat grupal con amigos';
+
+  @override
+  String get empty_group_chats_cta => 'Crear chat grupal';
+
+  @override
+  String get empty_all_chats_title => 'Aún no hay conversaciones';
+
+  @override
+  String get empty_all_chats_description =>
+      'Vamos a crear un chat para empezar.';
+
+  @override
+  String get empty_all_chats_cta => 'Crear nuevo chat';
+
+  @override
+  String get empty_archived_chats_title => 'No hay chats archivados';
+
+  @override
+  String get empty_archived_chats_description =>
+      'Los chats archivados aparecerán aquí';
+
+  @override
+  String get empty_comments_title => 'Aún no hay comentarios';
+
+  @override
+  String get empty_comments_description => 'Sé el primero en comentar';
+
+  @override
+  String get empty_search_title => 'No se encontraron resultados';
+
+  @override
+  String get empty_search_description =>
+      'Prueba con diferentes palabras clave o explora comunidades';
+
+  @override
+  String get empty_search_cta => 'Explorar comunidades';
+
+  @override
+  String get empty_category_communities_description =>
+      'No se encontraron comunidades en esta categoría. Prueba explorar otras categorías o crea la tuya propia.';
+
+  @override
+  String get empty_explore_title_no_categories => 'Tu exploración está vacía';
+
+  @override
+  String get empty_explore_description_no_categories =>
+      'Encuentra comunidades o crea la tuya propia';
+
+  @override
+  String get empty_explore_title_no_communities => 'Aún no hay comunidades';
+
+  @override
+  String get empty_explore_description_no_communities =>
+      'Sé el primero en crear una comunidad';
+
+  @override
+  String get cta_create_community => 'Crear comunidad';
 }
 
 /// The translations for Spanish Castilian, as used in Spain (`es_ES`).
@@ -3503,13 +3575,7 @@ class AppLocalizationsEsEs extends AppLocalizationsEs {
   String get chat_add_member_button => 'Agregar miembro';
 
   @override
-  String get chat_no_results_found => 'No se encontraron resultados';
-
-  @override
   String get chat_banned_users_empty => 'No hay nada aquí que ver todavía.';
-
-  @override
-  String get chat_confirm_unban_title => 'Confirmar desbanear';
 
   @override
   String get chat_unban_confirmation_message =>
@@ -3523,6 +3589,43 @@ class AppLocalizationsEsEs extends AppLocalizationsEs {
 
   @override
   String get chat_group_settings_section => 'Configuración de grupo';
+
+  @override
+  String get chat_group_profile_updated => 'Perfil del grupo actualizado.';
+
+  @override
+  String get chat_group_profile_update_failed =>
+      'No se pudo actualizar el perfil del grupo. Por favor inténtalo de nuevo.';
+
+  @override
+  String get chat_group_notification_updated =>
+      'Notificación grupal actualizada.';
+
+  @override
+  String get chat_group_notification_update_failed =>
+      'No se pudo actualizar la notificación del grupo. Por favor inténtalo de nuevo.';
+
+  @override
+  String get chat_member_permissions_updated =>
+      'Permisos de miembros actualizados.';
+
+  @override
+  String get chat_member_permissions_update_failed =>
+      'No se pudieron actualizar los permisos de los miembros. Por favor inténtalo de nuevo.';
+
+  @override
+  String get chat_member_list_updated => 'Lista de miembros actualizada.';
+
+  @override
+  String get chat_member_list_update_failed =>
+      'No se pudo actualizar la lista de miembros. Por favor inténtalo de nuevo.';
+
+  @override
+  String get chat_banned_users_updated => 'Usuarios prohibidos actualizados.';
+
+  @override
+  String get chat_banned_users_update_failed =>
+      'No se pudieron actualizar los usuarios prohibidos. Por favor inténtalo de nuevo.';
 
   @override
   String get chat_your_preferences => 'Tus preferencias';
@@ -3541,44 +3644,7 @@ class AppLocalizationsEsEs extends AppLocalizationsEs {
   String get chat_promote_member_button => 'Promocionar miembro';
 
   @override
-  String get chat_group_profile_updated => 'Perfil del grupo actualizado.';
-
-  @override
-  String get chat_group_notification_updated =>
-      'Notificación grupal actualizada.';
-
-  @override
-  String get chat_member_permissions_updated =>
-      'Permisos de miembros actualizados.';
-
-  @override
-  String get chat_member_list_updated => 'Lista de miembros actualizada.';
-
-  @override
-  String get chat_banned_users_updated => 'Usuarios prohibidos actualizados.';
-
-  @override
   String get chat_group_left_success => 'Se acabó el chat grupal.';
-
-  @override
-  String get chat_group_profile_update_failed =>
-      'No se pudo actualizar el perfil del grupo. Por favor inténtalo de nuevo.';
-
-  @override
-  String get chat_group_notification_update_failed =>
-      'No se pudo actualizar la notificación del grupo. Por favor inténtalo de nuevo.';
-
-  @override
-  String get chat_member_permissions_update_failed =>
-      'No se pudieron actualizar los permisos de los miembros. Por favor inténtalo de nuevo.';
-
-  @override
-  String get chat_member_list_update_failed =>
-      'No se pudo actualizar la lista de miembros. Por favor inténtalo de nuevo.';
-
-  @override
-  String get chat_banned_users_update_failed =>
-      'No se pudieron actualizar los usuarios prohibidos. Por favor inténtalo de nuevo.';
 
   @override
   String get chat_group_left_failed =>

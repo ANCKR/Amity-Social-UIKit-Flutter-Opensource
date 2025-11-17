@@ -232,7 +232,7 @@ abstract class AppLocalizations {
   /// Label for the my communities tab in the main navigation
   ///
   /// In en_US, this message translates to:
-  /// **'My Groups'**
+  /// **'Joined Communities'**
   String get tab_my_groups;
 
   /// Label for the feed tab in the main navigation (shows content feeds)
@@ -1285,13 +1285,13 @@ abstract class AppLocalizations {
   /// **'Optional'**
   String get general_optional;
 
-  /// Label for on state
+  /// Generic on state label
   ///
   /// In en_US, this message translates to:
   /// **'On'**
   String get general_on;
 
-  /// Label for off state
+  /// Generic off state label
   ///
   /// In en_US, this message translates to:
   /// **'Off'**
@@ -2929,337 +2929,331 @@ abstract class AppLocalizations {
   /// **'All Categories'**
   String get category_all;
 
-  /// Translation for: Search
+  /// Generic search placeholder text
   ///
   /// In en_US, this message translates to:
   /// **'Search'**
   String get general_search;
 
-  /// Translation for: Something went wrong
+  /// Generic error title
   ///
   /// In en_US, this message translates to:
   /// **'Something went wrong'**
   String get general_error_title;
 
-  /// Translation for: Please try again.
+  /// Generic retry message
   ///
   /// In en_US, this message translates to:
   /// **'Please try again.'**
   String get general_error_retry;
 
-  /// Translation for: Archived chats
+  /// Title for archived chats page
   ///
   /// In en_US, this message translates to:
   /// **'Archived chats'**
   String get chat_archived_title;
 
-  /// Translation for: No archive chat
+  /// Empty state for archived chats
   ///
   /// In en_US, this message translates to:
   /// **'No archive chat'**
   String get chat_archived_empty;
 
-  /// Translation for: Add Member
+  /// Title for add member page
   ///
   /// In en_US, this message translates to:
   /// **'Add Member'**
   String get chat_add_member_title;
 
-  /// Translation for: Add Member
+  /// Button text to add members
   ///
   /// In en_US, this message translates to:
   /// **'Add Member'**
   String get chat_add_member_button;
 
-  /// Translation for: No results found
-  ///
-  /// In en_US, this message translates to:
-  /// **'No results found'**
-  String get chat_no_results_found;
-
-  /// Translation for: Nothing here to see yet
+  /// Empty state for banned users
   ///
   /// In en_US, this message translates to:
   /// **'Nothing here to see yet'**
   String get chat_banned_users_empty;
 
-  /// Translation for: Confirm unban
-  ///
-  /// In en_US, this message translates to:
-  /// **'Confirm unban'**
-  String get chat_confirm_unban_title;
-
-  /// Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again.
+  /// Confirmation message for unbanning user
   ///
   /// In en_US, this message translates to:
   /// **'Are you sure you want to unban this user? They will be able to rejoin the group again.'**
   String get chat_unban_confirmation_message;
 
-  /// Translation for: Unban
+  /// Button to unban user
   ///
   /// In en_US, this message translates to:
   /// **'Unban'**
   String get chat_unban_button;
 
-  /// Translation for: Group Settings
+  /// Title for group settings page
   ///
   /// In en_US, this message translates to:
   /// **'Group Settings'**
   String get chat_group_settings_title;
 
-  /// Translation for: Group settings
+  /// Section header for group settings
   ///
   /// In en_US, this message translates to:
   /// **'Group settings'**
   String get chat_group_settings_section;
 
-  /// Translation for: Your preferences
-  ///
-  /// In en_US, this message translates to:
-  /// **'Your preferences'**
-  String get chat_your_preferences;
-
-  /// Translation for: Leave group
-  ///
-  /// In en_US, this message translates to:
-  /// **'Leave group'**
-  String get chat_leave_group_title;
-
-  /// Translation for: If you leave this group, you will no longer see new activities or participate in this group.
-  ///
-  /// In en_US, this message translates to:
-  /// **'If you leave this group, you will no longer see new activities or participate in this group.'**
-  String get chat_leave_group_message;
-
-  /// Translation for: Leave
-  ///
-  /// In en_US, this message translates to:
-  /// **'Leave'**
-  String get chat_leave_button;
-
-  /// Translation for: Promote member
-  ///
-  /// In en_US, this message translates to:
-  /// **'Promote member'**
-  String get chat_promote_member_button;
-
-  /// Translation for: Group profile updated.
+  /// Success message for profile update
   ///
   /// In en_US, this message translates to:
   /// **'Group profile updated.'**
   String get chat_group_profile_updated;
 
-  /// Translation for: Group notification updated.
-  ///
-  /// In en_US, this message translates to:
-  /// **'Group notification updated.'**
-  String get chat_group_notification_updated;
-
-  /// Translation for: Member permissions updated.
-  ///
-  /// In en_US, this message translates to:
-  /// **'Member permissions updated.'**
-  String get chat_member_permissions_updated;
-
-  /// Translation for: Member list updated.
-  ///
-  /// In en_US, this message translates to:
-  /// **'Member list updated.'**
-  String get chat_member_list_updated;
-
-  /// Translation for: Banned users updated.
-  ///
-  /// In en_US, this message translates to:
-  /// **'Banned users updated.'**
-  String get chat_banned_users_updated;
-
-  /// Translation for: Group chat left.
-  ///
-  /// In en_US, this message translates to:
-  /// **'Group chat left.'**
-  String get chat_group_left_success;
-
-  /// Translation for: Failed to update group profile. Please try again.
+  /// Error message for profile update
   ///
   /// In en_US, this message translates to:
   /// **'Failed to update group profile. Please try again.'**
   String get chat_group_profile_update_failed;
 
-  /// Translation for: Failed to update group notification. Please try again.
+  /// Success message for notification update
+  ///
+  /// In en_US, this message translates to:
+  /// **'Group notification updated.'**
+  String get chat_group_notification_updated;
+
+  /// Error message for notification update
   ///
   /// In en_US, this message translates to:
   /// **'Failed to update group notification. Please try again.'**
   String get chat_group_notification_update_failed;
 
-  /// Translation for: Failed to update member permissions. Please try again.
+  /// Success message for permissions update
+  ///
+  /// In en_US, this message translates to:
+  /// **'Member permissions updated.'**
+  String get chat_member_permissions_updated;
+
+  /// Error message for permissions update
   ///
   /// In en_US, this message translates to:
   /// **'Failed to update member permissions. Please try again.'**
   String get chat_member_permissions_update_failed;
 
-  /// Translation for: Failed to update member list. Please try again.
+  /// Success message for member list update
+  ///
+  /// In en_US, this message translates to:
+  /// **'Member list updated.'**
+  String get chat_member_list_updated;
+
+  /// Error message for member list update
   ///
   /// In en_US, this message translates to:
   /// **'Failed to update member list. Please try again.'**
   String get chat_member_list_update_failed;
 
-  /// Translation for: Failed to update banned users. Please try again.
+  /// Success message for banned users update
+  ///
+  /// In en_US, this message translates to:
+  /// **'Banned users updated.'**
+  String get chat_banned_users_updated;
+
+  /// Error message for banned users update
   ///
   /// In en_US, this message translates to:
   /// **'Failed to update banned users. Please try again.'**
   String get chat_banned_users_update_failed;
 
-  /// Translation for: Failed to leave group chat. Please try again.
+  /// Section header for user preferences
+  ///
+  /// In en_US, this message translates to:
+  /// **'Your preferences'**
+  String get chat_your_preferences;
+
+  /// Title for leave group confirmation
+  ///
+  /// In en_US, this message translates to:
+  /// **'Leave Group'**
+  String get chat_leave_group_title;
+
+  /// Warning message for leaving group
+  ///
+  /// In en_US, this message translates to:
+  /// **'If you leave this group, you will no longer see new activities or participate in this group.'**
+  String get chat_leave_group_message;
+
+  /// Button to confirm leaving group
+  ///
+  /// In en_US, this message translates to:
+  /// **'Leave'**
+  String get chat_leave_button;
+
+  /// Message shown to last moderator
+  ///
+  /// In en_US, this message translates to:
+  /// **'You must promote another member to moderator before leaving.'**
+  String get chat_last_moderator_message;
+
+  /// Button to promote member
+  ///
+  /// In en_US, this message translates to:
+  /// **'Promote member'**
+  String get chat_promote_member_button;
+
+  /// Success message after leaving group
+  ///
+  /// In en_US, this message translates to:
+  /// **'Group chat left.'**
+  String get chat_group_left_success;
+
+  /// Error message when leaving fails
   ///
   /// In en_US, this message translates to:
   /// **'Failed to leave group chat. Please try again.'**
   String get chat_group_left_failed;
 
-  /// Translation for: Messaging
+  /// Section header for messaging settings
   ///
   /// In en_US, this message translates to:
   /// **'Messaging'**
   String get chat_messaging_section;
 
-  /// Translation for: Everyone can send a message in the group.
+  /// Description for everyone permission
   ///
   /// In en_US, this message translates to:
   /// **'Everyone can send a message in the group.'**
   String get chat_permission_everyone_description;
 
-  /// Translation for: Members who are not moderators can read messages but cannot send any messages.
+  /// Description for moderators-only permission
   ///
   /// In en_US, this message translates to:
   /// **'Members who are not moderators can read messages but cannot send any messages.'**
   String get chat_permission_moderators_description;
 
-  /// Translation for: By default, members in this community will receive notifications, but they can choose to turn them off.
+  /// Description for default notification mode
   ///
   /// In en_US, this message translates to:
   /// **'By default, members in this community will receive notifications, but they can choose to turn them off.'**
   String get chat_notification_default_description;
 
-  /// Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel.
+  /// Description for silent mode
   ///
   /// In en_US, this message translates to:
   /// **'No notifications for everyone in this channel. Members can\'t turn on notifications in the channel.'**
   String get chat_notification_silent_description;
 
-  /// Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.
+  /// Description for subscribe mode
   ///
   /// In en_US, this message translates to:
   /// **'All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.'**
   String get chat_notification_subscribe_description;
 
-  /// Translation for: Filter Posts
+  /// Title of the feed filter bottom sheet
   ///
   /// In en_US, this message translates to:
   /// **'Filter Posts'**
   String get feed_filter_title;
 
-  /// Translation for: Content Type
+  /// Section header for content type filters
   ///
   /// In en_US, this message translates to:
   /// **'Content Type'**
   String get feed_filter_content_type;
 
-  /// Translation for: All
+  /// Filter option to show all content types
   ///
   /// In en_US, this message translates to:
   /// **'All'**
   String get feed_filter_all;
 
-  /// Translation for: Images
+  /// Filter option to show only images
   ///
   /// In en_US, this message translates to:
   /// **'Images'**
   String get feed_filter_images;
 
-  /// Translation for: Videos
+  /// Filter option to show only videos
   ///
   /// In en_US, this message translates to:
   /// **'Videos'**
   String get feed_filter_videos;
 
-  /// Translation for: Text
+  /// Filter option to show only text posts
   ///
   /// In en_US, this message translates to:
   /// **'Text'**
   String get feed_filter_text;
 
-  /// Translation for: Sort By
+  /// Section header for sort options
   ///
   /// In en_US, this message translates to:
   /// **'Sort By'**
   String get feed_filter_sort_by;
 
-  /// Translation for: Latest First
+  /// Sort option to show latest posts first
   ///
   /// In en_US, this message translates to:
   /// **'Latest First'**
   String get feed_filter_latest_first;
 
-  /// Translation for: Oldest First
+  /// Sort option to show oldest posts first
   ///
   /// In en_US, this message translates to:
   /// **'Oldest First'**
   String get feed_filter_oldest_first;
 
-  /// Translation for: Clear All
+  /// Button text to clear all filters
   ///
   /// In en_US, this message translates to:
   /// **'Clear All'**
   String get feed_filter_clear_all;
 
-  /// Translation for: Apply Filters
+  /// Button text to apply selected filters
   ///
   /// In en_US, this message translates to:
   /// **'Apply Filters'**
   String get feed_filter_apply;
 
-  /// Translation for: Your feed is empty
+  /// Title shown when feed has no content
   ///
   /// In en_US, this message translates to:
   /// **'Your feed is empty'**
   String get feed_empty_title;
 
-  /// Translation for: Find group or create your own
+  /// Description shown when feed is empty
   ///
   /// In en_US, this message translates to:
   /// **'Find group or create your own'**
   String get feed_empty_description;
 
-  /// Translation for: Explore group
+  /// Button text to explore groups
   ///
   /// In en_US, this message translates to:
   /// **'Explore group'**
   String get feed_empty_explore_button;
 
-  /// Translation for: Create group
+  /// Button text to create a new group
   ///
   /// In en_US, this message translates to:
   /// **'Create group'**
   String get feed_empty_create_button;
 
-  /// Translation for: Your explore is empty
+  /// Title for empty explore state
   ///
   /// In en_US, this message translates to:
   /// **'Your explore is empty'**
   String get explore_empty_title;
 
-  /// Translation for: No group yet
+  /// Title when no groups exist
   ///
   /// In en_US, this message translates to:
   /// **'No group yet'**
   String get explore_no_group_title;
 
-  /// Translation for: Find group or create your own
+  /// Description for empty explore
   ///
   /// In en_US, this message translates to:
   /// **'Find group or create your own'**
   String get explore_empty_description;
 
-  /// Translation for: Let's create your own groups..
+  /// Encouragement to create groups
   ///
   /// In en_US, this message translates to:
   /// **'Let\'s create your own groups..'**
@@ -3306,6 +3300,138 @@ abstract class AppLocalizations {
   /// In en_US, this message translates to:
   /// **'This link will be removed from story.'**
   String get story_remove_link_message;
+
+  /// Title for empty my communities list
+  ///
+  /// In en_US, this message translates to:
+  /// **'No communities yet'**
+  String get empty_my_communities_title;
+
+  /// Description for empty my communities list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Join communities to see them here'**
+  String get empty_my_communities_description;
+
+  /// CTA button text for empty my communities list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Explore communities'**
+  String get empty_my_communities_cta;
+
+  /// Title for empty group chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'No group chats yet'**
+  String get empty_group_chats_title;
+
+  /// Description for empty group chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Start a group chat with friends'**
+  String get empty_group_chats_description;
+
+  /// CTA button text for empty group chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Create group chat'**
+  String get empty_group_chats_cta;
+
+  /// Title for empty all chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'No conversation yet'**
+  String get empty_all_chats_title;
+
+  /// Description for empty all chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Let\'s create chat to get started.'**
+  String get empty_all_chats_description;
+
+  /// CTA button text for empty all chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Create new chat'**
+  String get empty_all_chats_cta;
+
+  /// Title for empty archived chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'No archive chat'**
+  String get empty_archived_chats_title;
+
+  /// Description for empty archived chats list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Archived chats will appear here'**
+  String get empty_archived_chats_description;
+
+  /// Title for empty comments list
+  ///
+  /// In en_US, this message translates to:
+  /// **'No comments yet'**
+  String get empty_comments_title;
+
+  /// Description for empty comments list
+  ///
+  /// In en_US, this message translates to:
+  /// **'Be the first to comment'**
+  String get empty_comments_description;
+
+  /// Title for empty search results
+  ///
+  /// In en_US, this message translates to:
+  /// **'No results found'**
+  String get empty_search_title;
+
+  /// Description for empty search results
+  ///
+  /// In en_US, this message translates to:
+  /// **'Try searching with different keywords'**
+  String get empty_search_description;
+
+  /// CTA button text for empty search results
+  ///
+  /// In en_US, this message translates to:
+  /// **'Clear search'**
+  String get empty_search_cta;
+
+  /// Description for empty category communities
+  ///
+  /// In en_US, this message translates to:
+  /// **'No communities found in this category. Try exploring other categories or create your own.'**
+  String get empty_category_communities_description;
+
+  /// Title for empty explore when there are no categories
+  ///
+  /// In en_US, this message translates to:
+  /// **'Your explore is empty'**
+  String get empty_explore_title_no_categories;
+
+  /// Description for empty explore when there are no categories
+  ///
+  /// In en_US, this message translates to:
+  /// **'Find community or create your own'**
+  String get empty_explore_description_no_categories;
+
+  /// Title for empty explore when there are no communities
+  ///
+  /// In en_US, this message translates to:
+  /// **'No communities yet'**
+  String get empty_explore_title_no_communities;
+
+  /// Description for empty explore when there are no communities
+  ///
+  /// In en_US, this message translates to:
+  /// **'Be the first to create a community'**
+  String get empty_explore_description_no_communities;
+
+  /// CTA button text to create a community
+  ///
+  /// In en_US, this message translates to:
+  /// **'Create community'**
+  String get cta_create_community;
 }
 
 class _AppLocalizationsDelegate

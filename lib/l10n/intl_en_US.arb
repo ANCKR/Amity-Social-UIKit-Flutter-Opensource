@@ -16,9 +16,9 @@
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
-  "tab_my_groups": "My Groups",
+  "tab_my_groups": "Joined Communities",
   "@tab_my_groups": {
-    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+    "description": "Label for the my communities tab in the main navigation"
   },
   "tab_feed": "Feed",
   "@tab_feed": {
@@ -1979,227 +1979,231 @@
   },
   "general_search": "Search",
   "@general_search": {
-    "description": "Translation for: Search"
+    "description": "Generic search placeholder text"
+  },
+  "general_on": "On",
+  "@general_on": {
+    "description": "Generic on state label"
+  },
+  "general_off": "Off",
+  "@general_off": {
+    "description": "Generic off state label"
   },
   "general_error_title": "Something went wrong",
   "@general_error_title": {
-    "description": "Translation for: Something went wrong"
+    "description": "Generic error title"
   },
   "general_error_retry": "Please try again.",
   "@general_error_retry": {
-    "description": "Translation for: Please try again."
+    "description": "Generic retry message"
   },
   "chat_archived_title": "Archived chats",
   "@chat_archived_title": {
-    "description": "Translation for: Archived chats"
+    "description": "Title for archived chats page"
   },
   "chat_archived_empty": "No archive chat",
   "@chat_archived_empty": {
-    "description": "Translation for: No archive chat"
+    "description": "Empty state for archived chats"
   },
   "chat_add_member_title": "Add Member",
   "@chat_add_member_title": {
-    "description": "Translation for: Add Member"
+    "description": "Title for add member page"
   },
   "chat_add_member_button": "Add Member",
   "@chat_add_member_button": {
-    "description": "Translation for: Add Member"
-  },
-  "chat_no_results_found": "No results found",
-  "@chat_no_results_found": {
-    "description": "Translation for: No results found"
+    "description": "Button text to add members"
   },
   "chat_banned_users_empty": "Nothing here to see yet",
   "@chat_banned_users_empty": {
-    "description": "Translation for: Nothing here to see yet"
-  },
-  "chat_confirm_unban_title": "Confirm unban",
-  "@chat_confirm_unban_title": {
-    "description": "Translation for: Confirm unban"
+    "description": "Empty state for banned users"
   },
   "chat_unban_confirmation_message": "Are you sure you want to unban this user? They will be able to rejoin the group again.",
   "@chat_unban_confirmation_message": {
-    "description": "Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again."
+    "description": "Confirmation message for unbanning user"
   },
   "chat_unban_button": "Unban",
   "@chat_unban_button": {
-    "description": "Translation for: Unban"
+    "description": "Button to unban user"
   },
   "chat_group_settings_title": "Group Settings",
   "@chat_group_settings_title": {
-    "description": "Translation for: Group Settings"
+    "description": "Title for group settings page"
   },
   "chat_group_settings_section": "Group settings",
   "@chat_group_settings_section": {
-    "description": "Translation for: Group settings"
-  },
-  "chat_your_preferences": "Your preferences",
-  "@chat_your_preferences": {
-    "description": "Translation for: Your preferences"
-  },
-  "chat_leave_group_title": "Leave group",
-  "@chat_leave_group_title": {
-    "description": "Translation for: Leave group"
-  },
-  "chat_leave_group_message": "If you leave this group, you will no longer see new activities or participate in this group.",
-  "@chat_leave_group_message": {
-    "description": "Translation for: If you leave this group, you will no longer see new activities or participate in this group."
-  },
-  "chat_leave_button": "Leave",
-  "@chat_leave_button": {
-    "description": "Translation for: Leave"
-  },
-  "chat_promote_member_button": "Promote member",
-  "@chat_promote_member_button": {
-    "description": "Translation for: Promote member"
+    "description": "Section header for group settings"
   },
   "chat_group_profile_updated": "Group profile updated.",
   "@chat_group_profile_updated": {
-    "description": "Translation for: Group profile updated."
-  },
-  "chat_group_notification_updated": "Group notification updated.",
-  "@chat_group_notification_updated": {
-    "description": "Translation for: Group notification updated."
-  },
-  "chat_member_permissions_updated": "Member permissions updated.",
-  "@chat_member_permissions_updated": {
-    "description": "Translation for: Member permissions updated."
-  },
-  "chat_member_list_updated": "Member list updated.",
-  "@chat_member_list_updated": {
-    "description": "Translation for: Member list updated."
-  },
-  "chat_banned_users_updated": "Banned users updated.",
-  "@chat_banned_users_updated": {
-    "description": "Translation for: Banned users updated."
-  },
-  "chat_group_left_success": "Group chat left.",
-  "@chat_group_left_success": {
-    "description": "Translation for: Group chat left."
+    "description": "Success message for profile update"
   },
   "chat_group_profile_update_failed": "Failed to update group profile. Please try again.",
   "@chat_group_profile_update_failed": {
-    "description": "Translation for: Failed to update group profile. Please try again."
+    "description": "Error message for profile update"
+  },
+  "chat_group_notification_updated": "Group notification updated.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
   },
   "chat_group_notification_update_failed": "Failed to update group notification. Please try again.",
   "@chat_group_notification_update_failed": {
-    "description": "Translation for: Failed to update group notification. Please try again."
+    "description": "Error message for notification update"
+  },
+  "chat_member_permissions_updated": "Member permissions updated.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
   },
   "chat_member_permissions_update_failed": "Failed to update member permissions. Please try again.",
   "@chat_member_permissions_update_failed": {
-    "description": "Translation for: Failed to update member permissions. Please try again."
+    "description": "Error message for permissions update"
+  },
+  "chat_member_list_updated": "Member list updated.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
   },
   "chat_member_list_update_failed": "Failed to update member list. Please try again.",
   "@chat_member_list_update_failed": {
-    "description": "Translation for: Failed to update member list. Please try again."
+    "description": "Error message for member list update"
+  },
+  "chat_banned_users_updated": "Banned users updated.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
   },
   "chat_banned_users_update_failed": "Failed to update banned users. Please try again.",
   "@chat_banned_users_update_failed": {
-    "description": "Translation for: Failed to update banned users. Please try again."
+    "description": "Error message for banned users update"
+  },
+  "chat_your_preferences": "Your preferences",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "chat_leave_group_title": "Leave Group",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "If you leave this group, you will no longer see new activities or participate in this group.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_leave_button": "Leave",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_promote_member_button": "Promote member",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "chat_group_left_success": "Group chat left.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
   },
   "chat_group_left_failed": "Failed to leave group chat. Please try again.",
   "@chat_group_left_failed": {
-    "description": "Translation for: Failed to leave group chat. Please try again."
+    "description": "Error message when leaving fails"
   },
   "chat_messaging_section": "Messaging",
   "@chat_messaging_section": {
-    "description": "Translation for: Messaging"
+    "description": "Section header for messaging settings"
   },
   "chat_permission_everyone_description": "Everyone can send a message in the group.",
   "@chat_permission_everyone_description": {
-    "description": "Translation for: Everyone can send a message in the group."
+    "description": "Description for everyone permission"
   },
   "chat_permission_moderators_description": "Members who are not moderators can read messages but cannot send any messages.",
   "@chat_permission_moderators_description": {
-    "description": "Translation for: Members who are not moderators can read messages but cannot send any messages."
+    "description": "Description for moderators-only permission"
   },
   "chat_notification_default_description": "By default, members in this community will receive notifications, but they can choose to turn them off.",
   "@chat_notification_default_description": {
-    "description": "Translation for: By default, members in this community will receive notifications, but they can choose to turn them off."
+    "description": "Description for default notification mode"
   },
   "chat_notification_silent_description": "No notifications for everyone in this channel. Members can't turn on notifications in the channel.",
   "@chat_notification_silent_description": {
-    "description": "Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel."
+    "description": "Description for silent mode"
   },
   "chat_notification_subscribe_description": "All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member.",
   "@chat_notification_subscribe_description": {
-    "description": "Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member."
+    "description": "Description for subscribe mode"
   },
   "feed_filter_title": "Filter Posts",
   "@feed_filter_title": {
-    "description": "Translation for: Filter Posts"
+    "description": "Title of the feed filter bottom sheet"
   },
   "feed_filter_content_type": "Content Type",
   "@feed_filter_content_type": {
-    "description": "Translation for: Content Type"
+    "description": "Section header for content type filters"
   },
   "feed_filter_all": "All",
   "@feed_filter_all": {
-    "description": "Translation for: All"
+    "description": "Filter option to show all content types"
   },
   "feed_filter_images": "Images",
   "@feed_filter_images": {
-    "description": "Translation for: Images"
+    "description": "Filter option to show only images"
   },
   "feed_filter_videos": "Videos",
   "@feed_filter_videos": {
-    "description": "Translation for: Videos"
+    "description": "Filter option to show only videos"
   },
   "feed_filter_text": "Text",
   "@feed_filter_text": {
-    "description": "Translation for: Text"
+    "description": "Filter option to show only text posts"
   },
   "feed_filter_sort_by": "Sort By",
   "@feed_filter_sort_by": {
-    "description": "Translation for: Sort By"
+    "description": "Section header for sort options"
   },
   "feed_filter_latest_first": "Latest First",
   "@feed_filter_latest_first": {
-    "description": "Translation for: Latest First"
+    "description": "Sort option to show latest posts first"
   },
   "feed_filter_oldest_first": "Oldest First",
   "@feed_filter_oldest_first": {
-    "description": "Translation for: Oldest First"
+    "description": "Sort option to show oldest posts first"
   },
   "feed_filter_clear_all": "Clear All",
   "@feed_filter_clear_all": {
-    "description": "Translation for: Clear All"
+    "description": "Button text to clear all filters"
   },
   "feed_filter_apply": "Apply Filters",
   "@feed_filter_apply": {
-    "description": "Translation for: Apply Filters"
+    "description": "Button text to apply selected filters"
   },
   "feed_empty_title": "Your feed is empty",
   "@feed_empty_title": {
-    "description": "Translation for: Your feed is empty"
+    "description": "Title shown when feed has no content"
   },
   "feed_empty_description": "Find group or create your own",
   "@feed_empty_description": {
-    "description": "Translation for: Find group or create your own"
+    "description": "Description shown when feed is empty"
   },
   "feed_empty_explore_button": "Explore group",
   "@feed_empty_explore_button": {
-    "description": "Translation for: Explore group"
+    "description": "Button text to explore groups"
   },
   "feed_empty_create_button": "Create group",
   "@feed_empty_create_button": {
-    "description": "Translation for: Create group"
+    "description": "Button text to create a new group"
   },
   "explore_empty_title": "Your explore is empty",
   "@explore_empty_title": {
-    "description": "Translation for: Your explore is empty"
+    "description": "Title for empty explore state"
   },
   "explore_no_group_title": "No group yet",
   "@explore_no_group_title": {
-    "description": "Translation for: No group yet"
+    "description": "Title when no groups exist"
   },
   "explore_empty_description": "Find group or create your own",
   "@explore_empty_description": {
-    "description": "Translation for: Find group or create your own"
+    "description": "Description for empty explore"
   },
   "explore_no_group_description": "Let's create your own groups..",
   "@explore_no_group_description": {
-    "description": "Translation for: Let's create your own groups.."
+    "description": "Encouragement to create groups"
   },
   "general_open_settings": "Open settings",
   "@general_open_settings": {
@@ -2228,5 +2232,93 @@
   "story_remove_link_message": "This link will be removed from story.",
   "@story_remove_link_message": {
     "description": "Confirmation message when removing link from story"
+  },
+  "empty_my_communities_title": "No communities yet",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_my_communities_description": "Join communities to see them here",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_cta": "Explore communities",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_group_chats_title": "No group chats yet",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_group_chats_description": "Start a group chat with friends",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_cta": "Create group chat",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_all_chats_title": "No conversation yet",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_all_chats_description": "Let's create chat to get started.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_cta": "Create new chat",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_archived_chats_title": "No archive chat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_archived_chats_description": "Archived chats will appear here",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_comments_title": "No comments yet",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_comments_description": "Be the first to comment",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_search_title": "No results found",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_search_description": "Try searching with different keywords",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_cta": "Clear search",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_category_communities_description": "No communities found in this category. Try exploring other categories or create your own.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_explore_title_no_categories": "Your explore is empty",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_categories": "Find community or create your own",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "No communities yet",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_description_no_communities": "Be the first to create a community",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "cta_create_community": "Create community",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
   }
 }

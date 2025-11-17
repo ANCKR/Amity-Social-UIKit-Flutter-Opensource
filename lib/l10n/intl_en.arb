@@ -2232,5 +2232,93 @@
   "story_remove_link_message": "This link will be removed from story.",
   "@story_remove_link_message": {
     "description": "Confirmation message when removing link from story"
+  },
+  "empty_my_communities_title": "No communities yet",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_my_communities_description": "Join communities to see them here",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_cta": "Explore communities",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_group_chats_title": "No group chats yet",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_group_chats_description": "Start a group chat with friends",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_cta": "Create group chat",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_all_chats_title": "No conversation yet",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_all_chats_description": "Let's create chat to get started.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_cta": "Create new chat",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_archived_chats_title": "No archive chat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_archived_chats_description": "Archived chats will appear here",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_comments_title": "No comments yet",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_comments_description": "Be the first to comment",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_search_title": "No results found",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_search_description": "Try searching with different keywords",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_cta": "Clear search",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_category_communities_description": "No communities found in this category. Try exploring other categories or create your own.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_explore_title_no_categories": "Your explore is empty",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_categories": "Find community or create your own",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "No communities yet",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_description_no_communities": "Be the first to create a community",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "cta_create_community": "Create community",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
   }
 }
