@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Create Community...",
+  "community_create": "Create Community",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Create Group...",
+  "group_create": "Create Group",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1997,11 +1997,11 @@
   "@chat_archived_empty": {
     "description": "Empty state for archived chats"
   },
-  "chat_add_member_title": "Add Member...",
+  "chat_add_member_title": "Add Member",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
-  "chat_add_member_button": "Add Member...",
+  "chat_add_member_button": "Add Member",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
@@ -2173,11 +2173,11 @@
   "@feed_empty_description": {
     "description": "Description shown when feed is empty"
   },
-  "feed_empty_explore_button": "Explore group...",
+  "feed_empty_explore_button": "Explore group",
   "@feed_empty_explore_button": {
     "description": "Button text to explore groups"
   },
-  "feed_empty_create_button": "Create group...",
+  "feed_empty_create_button": "Create group",
   "@feed_empty_create_button": {
     "description": "Button text to create a new group"
   },
@@ -2245,7 +2245,7 @@
   "@empty_group_chats_description": {
     "description": "Description for empty group chats list"
   },
-  "empty_group_chats_cta": "Create group chat...",
+  "empty_group_chats_cta": "Create group chat",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2257,7 +2257,7 @@
   "@empty_all_chats_description": {
     "description": "Description for empty all chats list"
   },
-  "empty_all_chats_cta": "Create new chat...",
+  "empty_all_chats_cta": "Create new chat",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2285,7 +2285,7 @@
   "@empty_search_description": {
     "description": "Description for empty search results"
   },
-  "empty_search_cta": "Clear search...",
+  "empty_search_cta": "Clear search",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },
@@ -2309,7 +2309,7 @@
   "@empty_explore_description_no_communities": {
     "description": "Description for empty explore when there are no communities"
   },
-  "cta_create_community": "Create community...",
+  "cta_create_community": "Create community",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },

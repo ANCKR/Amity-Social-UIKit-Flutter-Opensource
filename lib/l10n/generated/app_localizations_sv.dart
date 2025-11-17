@@ -396,7 +396,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get community_placeholder_members => '1,2K medlemmar';
 
   @override
-  String get community_create => 'Skapa gemenskap...';
+  String get community_create => 'Skapa gemenskap';
 
   @override
   String get community_name => 'Gemenskapens namn';
@@ -1332,7 +1332,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get group_title => 'Grupp';
 
   @override
-  String get group_create => 'Skapa grupp...';
+  String get group_create => 'Skapa grupp';
 
   @override
   String get group_edit => 'Redigera grupp';
@@ -1661,10 +1661,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get chat_archived_empty => 'Ingen arkivchatt...';
 
   @override
-  String get chat_add_member_title => 'Lägg till medlem...';
+  String get chat_add_member_title => 'Lägg till medlem';
 
   @override
-  String get chat_add_member_button => 'Lägg till medlem...';
+  String get chat_add_member_button => 'Lägg till medlem';
 
   @override
   String get chat_banned_users_empty => 'Inget här att se ännu...';
@@ -1808,10 +1808,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get feed_empty_description => 'Hitta grupp eller skapa din egen';
 
   @override
-  String get feed_empty_explore_button => 'Utforska gruppen...';
+  String get feed_empty_explore_button => 'Utforska gruppen';
 
   @override
-  String get feed_empty_create_button => 'Skapa grupp...';
+  String get feed_empty_create_button => 'Skapa grupp';
 
   @override
   String get explore_empty_title => 'Din upptäckt är tom';
@@ -1866,7 +1866,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get empty_group_chats_description => 'Starta en gruppchatt med vänner';
 
   @override
-  String get empty_group_chats_cta => 'Skapa gruppchatt...';
+  String get empty_group_chats_cta => 'Skapa gruppchatt';
 
   @override
   String get empty_all_chats_title => 'Ingen konversation ännu';
@@ -1876,7 +1876,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Låt oss skapa en chatt för att komma igång.';
 
   @override
-  String get empty_all_chats_cta => 'Skapa ny chatt...';
+  String get empty_all_chats_cta => 'Skapa ny chatt';
 
   @override
   String get empty_archived_chats_title => 'Ingen arkivchatt';
@@ -1898,7 +1898,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get empty_search_description => 'Försök att söka med olika sökord';
 
   @override
-  String get empty_search_cta => 'Rensa sökning...';
+  String get empty_search_cta => 'Rensa sökning';
 
   @override
   String get empty_category_communities_description =>
@@ -1919,7 +1919,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Var den första att skapa en gemenskap';
 
   @override
-  String get cta_create_community => 'Skapa gemenskap...';
+  String get cta_create_community => 'Skapa gemenskap';
 
   @override
   String get shared_post_media_indicator => 'Det här inlägget innehåller media';
@@ -2367,7 +2367,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get community_placeholder_members => '1,2K medlemmar';
 
   @override
-  String get community_create => 'Skapa gemenskap...';
+  String get community_create => 'Skapa gemenskap';
 
   @override
   String get community_name => 'Gemenskapens namn';
@@ -3303,7 +3303,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get group_title => 'Grupp';
 
   @override
-  String get group_create => 'Skapa grupp...';
+  String get group_create => 'Skapa grupp';
 
   @override
   String get group_edit => 'Redigera grupp';
@@ -3632,10 +3632,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get chat_archived_empty => 'Ingen arkivchatt...';
 
   @override
-  String get chat_add_member_title => 'Lägg till medlem...';
+  String get chat_add_member_title => 'Lägg till medlem';
 
   @override
-  String get chat_add_member_button => 'Lägg till medlem...';
+  String get chat_add_member_button => 'Lägg till medlem';
 
   @override
   String get chat_banned_users_empty => 'Inget här att se ännu...';
@@ -3779,10 +3779,10 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get feed_empty_description => 'Hitta grupp eller skapa din egen';
 
   @override
-  String get feed_empty_explore_button => 'Utforska gruppen...';
+  String get feed_empty_explore_button => 'Utforska gruppen';
 
   @override
-  String get feed_empty_create_button => 'Skapa grupp...';
+  String get feed_empty_create_button => 'Skapa grupp';
 
   @override
   String get explore_empty_title => 'Din upptäckt är tom';
@@ -3837,7 +3837,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get empty_group_chats_description => 'Starta en gruppchatt med vänner';
 
   @override
-  String get empty_group_chats_cta => 'Skapa gruppchatt...';
+  String get empty_group_chats_cta => 'Skapa gruppchatt';
 
   @override
   String get empty_all_chats_title => 'Ingen konversation ännu';
@@ -3847,7 +3847,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
       'Låt oss skapa en chatt för att komma igång.';
 
   @override
-  String get empty_all_chats_cta => 'Skapa ny chatt...';
+  String get empty_all_chats_cta => 'Skapa ny chatt';
 
   @override
   String get empty_archived_chats_title => 'Ingen arkivchatt';
@@ -3869,7 +3869,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
   String get empty_search_description => 'Försök att söka med olika sökord';
 
   @override
-  String get empty_search_cta => 'Rensa sökning...';
+  String get empty_search_cta => 'Rensa sökning';
 
   @override
   String get empty_category_communities_description =>
@@ -3890,7 +3890,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
       'Var den första att skapa en gemenskap';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Det här inlägget innehåller media';

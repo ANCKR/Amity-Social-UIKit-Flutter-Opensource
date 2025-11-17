@@ -392,7 +392,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community...';
+  String get community_create => 'Create Community';
 
   @override
   String get community_name => 'Community name';
@@ -1328,7 +1328,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get group_title => 'Gruppe';
 
   @override
-  String get group_create => 'Opprett gruppe...';
+  String get group_create => 'Opprett gruppe';
 
   @override
   String get group_edit => 'Rediger gruppe';
@@ -1656,10 +1656,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get chat_archived_empty => 'Ingen arkivchat...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Ingenting her å se ennå...';
@@ -1802,10 +1802,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get feed_empty_description => 'Finn en gruppe eller lag din egen';
 
   @override
-  String get feed_empty_explore_button => 'Utforsk gruppen...';
+  String get feed_empty_explore_button => 'Utforsk gruppen';
 
   @override
-  String get feed_empty_create_button => 'Opprett gruppe...';
+  String get feed_empty_create_button => 'Opprett gruppe';
 
   @override
   String get explore_empty_title => 'Utforskingen din er tom';
@@ -1859,7 +1859,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get empty_group_chats_description => 'Start en gruppechat med venner';
 
   @override
-  String get empty_group_chats_cta => 'Opprett gruppechat...';
+  String get empty_group_chats_cta => 'Opprett gruppechat';
 
   @override
   String get empty_all_chats_title => 'Ingen samtale ennå';
@@ -1869,7 +1869,7 @@ class AppLocalizationsNo extends AppLocalizations {
       'La oss lage chat for å komme i gang.';
 
   @override
-  String get empty_all_chats_cta => 'Opprett ny chat...';
+  String get empty_all_chats_cta => 'Opprett ny chat';
 
   @override
   String get empty_archived_chats_title => 'Ingen arkivchat';
@@ -1911,7 +1911,7 @@ class AppLocalizationsNo extends AppLocalizations {
       'Vær den første til å opprette et fellesskap';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Dette innlegget inneholder media';
@@ -2355,7 +2355,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community...';
+  String get community_create => 'Create Community';
 
   @override
   String get community_name => 'Community name';
@@ -3291,7 +3291,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get group_title => 'Gruppe';
 
   @override
-  String get group_create => 'Opprett gruppe...';
+  String get group_create => 'Opprett gruppe';
 
   @override
   String get group_edit => 'Rediger gruppe';
@@ -3619,10 +3619,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get chat_archived_empty => 'Ingen arkivchat...';
 
   @override
-  String get chat_add_member_title => 'Legg til medlem...';
+  String get chat_add_member_title => 'Legg til medlem';
 
   @override
-  String get chat_add_member_button => 'Legg til medlem...';
+  String get chat_add_member_button => 'Legg til medlem';
 
   @override
   String get chat_banned_users_empty => 'Ingenting her å se ennå...';
@@ -3765,10 +3765,10 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get feed_empty_description => 'Finn en gruppe eller lag din egen';
 
   @override
-  String get feed_empty_explore_button => 'Utforsk gruppen...';
+  String get feed_empty_explore_button => 'Utforsk gruppen';
 
   @override
-  String get feed_empty_create_button => 'Opprett gruppe...';
+  String get feed_empty_create_button => 'Opprett gruppe';
 
   @override
   String get explore_empty_title => 'Utforskingen din er tom';
@@ -3822,7 +3822,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
   String get empty_group_chats_description => 'Start en gruppechat med venner';
 
   @override
-  String get empty_group_chats_cta => 'Opprett gruppechat...';
+  String get empty_group_chats_cta => 'Opprett gruppechat';
 
   @override
   String get empty_all_chats_title => 'Ingen samtale ennå';
@@ -3832,7 +3832,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
       'La oss lage chat for å komme i gang.';
 
   @override
-  String get empty_all_chats_cta => 'Opprett ny chat...';
+  String get empty_all_chats_cta => 'Opprett ny chat';
 
   @override
   String get empty_archived_chats_title => 'Ingen arkivchat';
@@ -3874,7 +3874,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
       'Vær den første til å opprette et fellesskap';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Dette innlegget inneholder media';

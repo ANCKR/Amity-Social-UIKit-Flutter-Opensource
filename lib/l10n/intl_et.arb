@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Looge kogukond...",
+  "community_create": "Looge kogukond",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -2064,11 +2064,11 @@
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
   },
-  "chat_add_member_button": "Lisa liige...",
+  "chat_add_member_button": "Lisa liige",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
-  "chat_add_member_title": "Lisa liige...",
+  "chat_add_member_title": "Lisa liige",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
@@ -2196,11 +2196,11 @@
   "@chat_your_preferences": {
     "description": "Section header for user preferences"
   },
-  "cta_create_community": "Looge kogukond...",
+  "cta_create_community": "Looge kogukond",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "Loo uus vestlus...",
+  "empty_all_chats_cta": "Loo uus vestlus",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2248,7 +2248,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "Looge grupivestlus...",
+  "empty_group_chats_cta": "Looge grupivestlus",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2272,7 +2272,7 @@
   "@empty_my_communities_title": {
     "description": "Title for empty my communities list"
   },
-  "empty_search_cta": "Tühjenda otsing...",
+  "empty_search_cta": "Tühjenda otsing",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },
@@ -2308,7 +2308,7 @@
   "@feed_empty_description": {
     "description": "Description shown when feed is empty"
   },
-  "feed_empty_explore_button": "Uurige rühma...",
+  "feed_empty_explore_button": "Uurige rühma",
   "@feed_empty_explore_button": {
     "description": "Button text to explore groups"
   },

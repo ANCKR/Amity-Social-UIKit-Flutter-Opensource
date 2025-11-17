@@ -850,7 +850,7 @@ abstract class AppLocalizations {
   /// Label for create community button
   ///
   /// In en_US, this message translates to:
-  /// **'Create Community...'**
+  /// **'Create Community'**
   String get community_create;
 
   /// Label for community name
@@ -2386,7 +2386,7 @@ abstract class AppLocalizations {
   /// Label for create group button
   ///
   /// In en_US, this message translates to:
-  /// **'Create Group...'**
+  /// **'Create Group'**
   String get group_create;
 
   /// Label for edit group button
@@ -2962,13 +2962,13 @@ abstract class AppLocalizations {
   /// Title for add member page
   ///
   /// In en_US, this message translates to:
-  /// **'Add Member...'**
+  /// **'Add Member'**
   String get chat_add_member_title;
 
   /// Button text to add members
   ///
   /// In en_US, this message translates to:
-  /// **'Add Member...'**
+  /// **'Add Member'**
   String get chat_add_member_button;
 
   /// Empty state for banned users
@@ -3226,13 +3226,13 @@ abstract class AppLocalizations {
   /// Button text to explore groups
   ///
   /// In en_US, this message translates to:
-  /// **'Explore group...'**
+  /// **'Explore group'**
   String get feed_empty_explore_button;
 
   /// Button text to create a new group
   ///
   /// In en_US, this message translates to:
-  /// **'Create group...'**
+  /// **'Create group'**
   String get feed_empty_create_button;
 
   /// Title for empty explore state
@@ -3334,7 +3334,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty group chats list
   ///
   /// In en_US, this message translates to:
-  /// **'Create group chat...'**
+  /// **'Create group chat'**
   String get empty_group_chats_cta;
 
   /// Title for empty all chats list
@@ -3352,7 +3352,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty all chats list
   ///
   /// In en_US, this message translates to:
-  /// **'Create new chat...'**
+  /// **'Create new chat'**
   String get empty_all_chats_cta;
 
   /// Title for empty archived chats list
@@ -3394,7 +3394,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty search results
   ///
   /// In en_US, this message translates to:
-  /// **'Clear search...'**
+  /// **'Clear search'**
   String get empty_search_cta;
 
   /// Description for empty category communities
@@ -3430,7 +3430,7 @@ abstract class AppLocalizations {
   /// CTA button text to create a community
   ///
   /// In en_US, this message translates to:
-  /// **'Create community...'**
+  /// **'Create community'**
   String get cta_create_community;
 
   /// Text shown when shared post contains media but can't display preview

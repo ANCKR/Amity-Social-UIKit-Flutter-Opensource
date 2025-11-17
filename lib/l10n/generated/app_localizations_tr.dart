@@ -392,7 +392,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get community_placeholder_members => '1,2 bin üye';
 
   @override
-  String get community_create => 'Topluluk Oluştur...';
+  String get community_create => 'Topluluk Oluştur';
 
   @override
   String get community_name => 'Topluluk adı';
@@ -1324,7 +1324,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get group_title => 'Grup';
 
   @override
-  String get group_create => 'Grup Oluştur...';
+  String get group_create => 'Grup Oluştur';
 
   @override
   String get group_edit => 'Grubu Düzenle';
@@ -1799,10 +1799,10 @@ class AppLocalizationsTr extends AppLocalizations {
       'Grup bulun veya kendinizinkini oluşturun';
 
   @override
-  String get feed_empty_explore_button => 'Grubu keşfedin...';
+  String get feed_empty_explore_button => 'Grubu keşfedin';
 
   @override
-  String get feed_empty_create_button => 'Grup oluştur...';
+  String get feed_empty_create_button => 'Grup oluştur';
 
   @override
   String get explore_empty_title => 'Keşfetmeniz boş';
@@ -1858,7 +1858,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Arkadaşlarınızla grup sohbeti başlatın';
 
   @override
-  String get empty_group_chats_cta => 'Grup sohbeti oluştur...';
+  String get empty_group_chats_cta => 'Grup sohbeti oluştur';
 
   @override
   String get empty_all_chats_title => 'Henüz konuşma yok';
@@ -1867,7 +1867,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get empty_all_chats_description => 'Başlamak için sohbet oluşturalım.';
 
   @override
-  String get empty_all_chats_cta => 'Yeni sohbet oluştur...';
+  String get empty_all_chats_cta => 'Yeni sohbet oluştur';
 
   @override
   String get empty_archived_chats_title => 'Arşiv sohbeti yok';
@@ -1890,7 +1890,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Farklı anahtar kelimelerle aramayı deneyin';
 
   @override
-  String get empty_search_cta => 'Aramayı temizle...';
+  String get empty_search_cta => 'Aramayı temizle';
 
   @override
   String get empty_category_communities_description =>
@@ -1911,7 +1911,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Bir topluluk oluşturan ilk kişi olun';
 
   @override
-  String get cta_create_community => 'Topluluk oluştur...';
+  String get cta_create_community => 'Topluluk oluştur';
 
   @override
   String get shared_post_media_indicator => 'Bu gönderi medya içeriyor';
@@ -2355,7 +2355,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get community_placeholder_members => '1,2 bin üye';
 
   @override
-  String get community_create => 'Topluluk Oluştur...';
+  String get community_create => 'Topluluk Oluştur';
 
   @override
   String get community_name => 'Topluluk adı';
@@ -3287,7 +3287,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get group_title => 'Grup';
 
   @override
-  String get group_create => 'Grup Oluştur...';
+  String get group_create => 'Grup Oluştur';
 
   @override
   String get group_edit => 'Grubu Düzenle';
@@ -3762,10 +3762,10 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Grup bulun veya kendinizinkini oluşturun';
 
   @override
-  String get feed_empty_explore_button => 'Grubu keşfedin...';
+  String get feed_empty_explore_button => 'Grubu keşfedin';
 
   @override
-  String get feed_empty_create_button => 'Grup oluştur...';
+  String get feed_empty_create_button => 'Grup oluştur';
 
   @override
   String get explore_empty_title => 'Keşfetmeniz boş';
@@ -3821,7 +3821,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Arkadaşlarınızla grup sohbeti başlatın';
 
   @override
-  String get empty_group_chats_cta => 'Grup sohbeti oluştur...';
+  String get empty_group_chats_cta => 'Grup sohbeti oluştur';
 
   @override
   String get empty_all_chats_title => 'Henüz konuşma yok';
@@ -3830,7 +3830,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
   String get empty_all_chats_description => 'Başlamak için sohbet oluşturalım.';
 
   @override
-  String get empty_all_chats_cta => 'Yeni sohbet oluştur...';
+  String get empty_all_chats_cta => 'Yeni sohbet oluştur';
 
   @override
   String get empty_archived_chats_title => 'Arşiv sohbeti yok';
@@ -3853,7 +3853,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Farklı anahtar kelimelerle aramayı deneyin';
 
   @override
-  String get empty_search_cta => 'Aramayı temizle...';
+  String get empty_search_cta => 'Aramayı temizle';
 
   @override
   String get empty_category_communities_description =>
@@ -3874,7 +3874,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Bir topluluk oluşturan ilk kişi olun';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Bu gönderi medya içeriyor';

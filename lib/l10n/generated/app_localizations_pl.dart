@@ -396,7 +396,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get community_placeholder_members => '1,2 tys. członków';
 
   @override
-  String get community_create => 'Utwórz społeczność...';
+  String get community_create => 'Utwórz społeczność';
 
   @override
   String get community_name => 'Nazwa społeczności';
@@ -1329,7 +1329,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get group_title => 'Grupa';
 
   @override
-  String get group_create => 'Utwórz grupę...';
+  String get group_create => 'Utwórz grupę';
 
   @override
   String get group_edit => 'Edytuj grupę';
@@ -1658,10 +1658,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get chat_archived_empty => 'Brak czatu archiwalnego...';
 
   @override
-  String get chat_add_member_title => 'Dodaj członka...';
+  String get chat_add_member_title => 'Dodaj członka';
 
   @override
-  String get chat_add_member_button => 'Dodaj członka...';
+  String get chat_add_member_button => 'Dodaj członka';
 
   @override
   String get chat_banned_users_empty =>
@@ -1808,7 +1808,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get feed_empty_description => 'Znajdź lub utwórz';
 
   @override
-  String get feed_empty_explore_button => 'Przeglądaj...';
+  String get feed_empty_explore_button => 'Przeglądaj';
 
   @override
   String get feed_empty_create_button => 'Utwórz';
@@ -1866,7 +1866,7 @@ class AppLocalizationsPl extends AppLocalizations {
       'Rozpocznij czat grupowy ze znajomymi';
 
   @override
-  String get empty_group_chats_cta => 'Utwórz czat grupowy...';
+  String get empty_group_chats_cta => 'Utwórz czat grupowy';
 
   @override
   String get empty_all_chats_title => 'Nie ma jeszcze rozmowy';
@@ -1875,7 +1875,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get empty_all_chats_description => 'Na początek utwórzmy czat.';
 
   @override
-  String get empty_all_chats_cta => 'Utwórz nowy czat...';
+  String get empty_all_chats_cta => 'Utwórz nowy czat';
 
   @override
   String get empty_archived_chats_title => 'Brak czatu archiwalnego';
@@ -1899,7 +1899,7 @@ class AppLocalizationsPl extends AppLocalizations {
       'Spróbuj wyszukiwać za pomocą różnych słów kluczowych';
 
   @override
-  String get empty_search_cta => 'Wyczyść wyszukiwanie...';
+  String get empty_search_cta => 'Wyczyść wyszukiwanie';
 
   @override
   String get empty_category_communities_description =>
@@ -1922,7 +1922,7 @@ class AppLocalizationsPl extends AppLocalizations {
       'Bądź pierwszą osobą, która stworzy społeczność';
 
   @override
-  String get cta_create_community => 'Utwórz społeczność...';
+  String get cta_create_community => 'Utwórz społeczność';
 
   @override
   String get shared_post_media_indicator => 'Ten post zawiera multimedia';
@@ -2371,7 +2371,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
   String get community_placeholder_members => '1,2 tys. członków';
 
   @override
-  String get community_create => 'Utwórz społeczność...';
+  String get community_create => 'Utwórz społeczność';
 
   @override
   String get community_name => 'Nazwa społeczności';
@@ -3304,7 +3304,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
   String get group_title => 'Grupa';
 
   @override
-  String get group_create => 'Utwórz grupę...';
+  String get group_create => 'Utwórz grupę';
 
   @override
   String get group_edit => 'Edytuj grupę';
@@ -3633,10 +3633,10 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
   String get chat_archived_empty => 'Brak czatu archiwalnego...';
 
   @override
-  String get chat_add_member_title => 'Dodaj członka...';
+  String get chat_add_member_title => 'Dodaj członka';
 
   @override
-  String get chat_add_member_button => 'Dodaj członka...';
+  String get chat_add_member_button => 'Dodaj członka';
 
   @override
   String get chat_banned_users_empty =>
@@ -3783,7 +3783,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
   String get feed_empty_description => 'Znajdź lub utwórz';
 
   @override
-  String get feed_empty_explore_button => 'Przeglądaj...';
+  String get feed_empty_explore_button => 'Przeglądaj';
 
   @override
   String get feed_empty_create_button => 'Utwórz';
@@ -3841,7 +3841,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
       'Rozpocznij czat grupowy ze znajomymi';
 
   @override
-  String get empty_group_chats_cta => 'Utwórz czat grupowy...';
+  String get empty_group_chats_cta => 'Utwórz czat grupowy';
 
   @override
   String get empty_all_chats_title => 'Nie ma jeszcze rozmowy';
@@ -3850,7 +3850,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
   String get empty_all_chats_description => 'Na początek utwórzmy czat.';
 
   @override
-  String get empty_all_chats_cta => 'Utwórz nowy czat...';
+  String get empty_all_chats_cta => 'Utwórz nowy czat';
 
   @override
   String get empty_archived_chats_title => 'Brak czatu archiwalnego';
@@ -3874,7 +3874,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
       'Spróbuj wyszukiwać za pomocą różnych słów kluczowych';
 
   @override
-  String get empty_search_cta => 'Wyczyść wyszukiwanie...';
+  String get empty_search_cta => 'Wyczyść wyszukiwanie';
 
   @override
   String get empty_category_communities_description =>
@@ -3897,7 +3897,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
       'Bądź pierwszą osobą, która stworzy społeczność';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Ten post zawiera multimedia';

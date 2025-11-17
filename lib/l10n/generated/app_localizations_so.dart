@@ -392,7 +392,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community...';
+  String get community_create => 'Create Community';
 
   @override
   String get community_name => 'Community name';
@@ -1329,7 +1329,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get group_title => 'Koox';
 
   @override
-  String get group_create => 'Abuur koox...';
+  String get group_create => 'Abuur koox';
 
   @override
   String get group_edit => 'Kooxda tafatirka';
@@ -1661,10 +1661,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get chat_archived_empty => 'Majiraan sheekaysi...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Waxba uma jiraan inaan wali arko...';
@@ -1807,10 +1807,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get feed_empty_description => 'Hel koox ama aad abuurto adigu';
 
   @override
-  String get feed_empty_explore_button => 'Sahamin koox...';
+  String get feed_empty_explore_button => 'Sahamin koox';
 
   @override
-  String get feed_empty_create_button => 'Abuur koox...';
+  String get feed_empty_create_button => 'Abuur koox';
 
   @override
   String get explore_empty_title => 'Sahamintaadu waa madhan tahay';
@@ -1866,7 +1866,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'Ku bilow koox wada hadal asxaabta';
 
   @override
-  String get empty_group_chats_cta => 'Abuur Wadahadal Kooxda...';
+  String get empty_group_chats_cta => 'Abuur Wadahadal Kooxda';
 
   @override
   String get empty_all_chats_title => 'Wadahadal weli lama wada hadal';
@@ -1876,7 +1876,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'Aynu ku abuurno wada sheekeysi si aan u bilowno.';
 
   @override
-  String get empty_all_chats_cta => 'Abuur sheeko cusub...';
+  String get empty_all_chats_cta => 'Abuur sheeko cusub';
 
   @override
   String get empty_archived_chats_title => 'Majiraan sheekaysi';
@@ -1900,7 +1900,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'Isku day inaad raadiso furayaasha ereyada kala duwan';
 
   @override
-  String get empty_search_cta => 'Raadinta cad...';
+  String get empty_search_cta => 'Raadinta cad';
 
   @override
   String get empty_category_communities_description =>
@@ -1922,7 +1922,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'Noqo kan ugu horreeya ee abuurista beel';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator =>
@@ -2368,7 +2368,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community...';
+  String get community_create => 'Create Community';
 
   @override
   String get community_name => 'Community name';
@@ -3305,7 +3305,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get group_title => 'Koox';
 
   @override
-  String get group_create => 'Abuur koox...';
+  String get group_create => 'Abuur koox';
 
   @override
   String get group_edit => 'Kooxda tafatirka';
@@ -3637,10 +3637,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get chat_archived_empty => 'Majiraan sheekaysi...';
 
   @override
-  String get chat_add_member_title => 'Ku dar xubin...';
+  String get chat_add_member_title => 'Ku dar xubin';
 
   @override
-  String get chat_add_member_button => 'Ku dar xubin...';
+  String get chat_add_member_button => 'Ku dar xubin';
 
   @override
   String get chat_banned_users_empty => 'Waxba uma jiraan inaan wali arko...';
@@ -3788,10 +3788,10 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
   String get feed_empty_description => 'Hel koox ama aad abuurto adigu';
 
   @override
-  String get feed_empty_explore_button => 'Sahamin koox...';
+  String get feed_empty_explore_button => 'Sahamin koox';
 
   @override
-  String get feed_empty_create_button => 'Abuur koox...';
+  String get feed_empty_create_button => 'Abuur koox';
 
   @override
   String get explore_empty_title => 'Sahamintaadu waa madhan tahay';
@@ -3847,7 +3847,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'Ku bilow koox wada hadal asxaabta';
 
   @override
-  String get empty_group_chats_cta => 'Abuur Wadahadal Kooxda...';
+  String get empty_group_chats_cta => 'Abuur Wadahadal Kooxda';
 
   @override
   String get empty_all_chats_title => 'Wadahadal weli lama wada hadal';
@@ -3857,7 +3857,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'Aynu ku abuurno wada sheekeysi si aan u bilowno.';
 
   @override
-  String get empty_all_chats_cta => 'Abuur sheeko cusub...';
+  String get empty_all_chats_cta => 'Abuur sheeko cusub';
 
   @override
   String get empty_archived_chats_title => 'Majiraan sheekaysi';
@@ -3881,7 +3881,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'Isku day inaad raadiso furayaasha ereyada kala duwan';
 
   @override
-  String get empty_search_cta => 'Raadinta cad...';
+  String get empty_search_cta => 'Raadinta cad';
 
   @override
   String get empty_category_communities_description =>
@@ -3903,7 +3903,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'Noqo kan ugu horreeya ee abuurista beel';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator =>

@@ -392,7 +392,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get community_placeholder_members => '1,2 tisíc členů';
 
   @override
-  String get community_create => 'Vytvořit komunitu...';
+  String get community_create => 'Vytvořit komunitu';
 
   @override
   String get community_name => 'Název komunity';
@@ -1324,7 +1324,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get group_title => 'Skupina';
 
   @override
-  String get group_create => 'Vytvořit skupinu...';
+  String get group_create => 'Vytvořit skupinu';
 
   @override
   String get group_edit => 'Upravit skupinu';
@@ -1654,10 +1654,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chat_archived_empty => 'Žádný archivní chat...';
 
   @override
-  String get chat_add_member_title => 'Přidat člena...';
+  String get chat_add_member_title => 'Přidat člena';
 
   @override
-  String get chat_add_member_button => 'Přidat člena...';
+  String get chat_add_member_button => 'Přidat člena';
 
   @override
   String get chat_banned_users_empty => 'Zatím tu není nic k vidění...';
@@ -1802,10 +1802,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get feed_empty_description => 'Najděte skupinu nebo vytvořte vlastní';
 
   @override
-  String get feed_empty_explore_button => 'Prozkoumat skupinu...';
+  String get feed_empty_explore_button => 'Prozkoumat skupinu';
 
   @override
-  String get feed_empty_create_button => 'Vytvořit skupinu...';
+  String get feed_empty_create_button => 'Vytvořit skupinu';
 
   @override
   String get explore_empty_title => 'Váš průzkum je prázdný';
@@ -1862,7 +1862,7 @@ class AppLocalizationsCs extends AppLocalizations {
       'Zahajte skupinový chat s přáteli';
 
   @override
-  String get empty_group_chats_cta => 'Vytvořte skupinový chat...';
+  String get empty_group_chats_cta => 'Vytvořte skupinový chat';
 
   @override
   String get empty_all_chats_title => 'Zatím žádná konverzace';
@@ -1871,7 +1871,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get empty_all_chats_description => 'Pro začátek vytvoříme chat.';
 
   @override
-  String get empty_all_chats_cta => 'Vytvořit nový chat...';
+  String get empty_all_chats_cta => 'Vytvořit nový chat';
 
   @override
   String get empty_archived_chats_title => 'Žádný archivní chat';
@@ -1894,7 +1894,7 @@ class AppLocalizationsCs extends AppLocalizations {
       'Zkuste hledat pomocí různých klíčových slov';
 
   @override
-  String get empty_search_cta => 'Vymazat vyhledávání...';
+  String get empty_search_cta => 'Vymazat vyhledávání';
 
   @override
   String get empty_category_communities_description =>
@@ -1915,7 +1915,7 @@ class AppLocalizationsCs extends AppLocalizations {
       'Buďte první, kdo vytvoří komunitu';
 
   @override
-  String get cta_create_community => 'Vytvořte komunitu...';
+  String get cta_create_community => 'Vytvořte komunitu';
 
   @override
   String get shared_post_media_indicator => 'Tento příspěvek obsahuje média';
@@ -2359,7 +2359,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get community_placeholder_members => '1,2 tisíc členů';
 
   @override
-  String get community_create => 'Vytvořit komunitu...';
+  String get community_create => 'Vytvořit komunitu';
 
   @override
   String get community_name => 'Název komunity';
@@ -3291,7 +3291,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get group_title => 'Skupina';
 
   @override
-  String get group_create => 'Vytvořit skupinu...';
+  String get group_create => 'Vytvořit skupinu';
 
   @override
   String get group_edit => 'Upravit skupinu';
@@ -3621,10 +3621,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get chat_archived_empty => 'Žádný archivní chat...';
 
   @override
-  String get chat_add_member_title => 'Přidat člena...';
+  String get chat_add_member_title => 'Přidat člena';
 
   @override
-  String get chat_add_member_button => 'Přidat člena...';
+  String get chat_add_member_button => 'Přidat člena';
 
   @override
   String get chat_banned_users_empty => 'Zatím tu není nic k vidění...';
@@ -3769,10 +3769,10 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get feed_empty_description => 'Najděte skupinu nebo vytvořte vlastní';
 
   @override
-  String get feed_empty_explore_button => 'Prozkoumat skupinu...';
+  String get feed_empty_explore_button => 'Prozkoumat skupinu';
 
   @override
-  String get feed_empty_create_button => 'Vytvořit skupinu...';
+  String get feed_empty_create_button => 'Vytvořit skupinu';
 
   @override
   String get explore_empty_title => 'Váš průzkum je prázdný';
@@ -3829,7 +3829,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
       'Zahajte skupinový chat s přáteli';
 
   @override
-  String get empty_group_chats_cta => 'Vytvořte skupinový chat...';
+  String get empty_group_chats_cta => 'Vytvořte skupinový chat';
 
   @override
   String get empty_all_chats_title => 'Zatím žádná konverzace';
@@ -3838,7 +3838,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
   String get empty_all_chats_description => 'Pro začátek vytvoříme chat.';
 
   @override
-  String get empty_all_chats_cta => 'Vytvořit nový chat...';
+  String get empty_all_chats_cta => 'Vytvořit nový chat';
 
   @override
   String get empty_archived_chats_title => 'Žádný archivní chat';
@@ -3861,7 +3861,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
       'Zkuste hledat pomocí různých klíčových slov';
 
   @override
-  String get empty_search_cta => 'Vymazat vyhledávání...';
+  String get empty_search_cta => 'Vymazat vyhledávání';
 
   @override
   String get empty_category_communities_description =>
@@ -3882,7 +3882,7 @@ class AppLocalizationsCsCz extends AppLocalizationsCs {
       'Buďte první, kdo vytvoří komunitu';
 
   @override
-  String get cta_create_community => 'Vytvořte komunitu...';
+  String get cta_create_community => 'Vytvořte komunitu';
 
   @override
   String get shared_post_media_indicator => 'Tento příspěvek obsahuje média';

@@ -397,7 +397,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get community_placeholder_members => '1,2 ezer tag';
 
   @override
-  String get community_create => 'Közösség létrehozása...';
+  String get community_create => 'Közösség létrehozása';
 
   @override
   String get community_name => 'Közösség neve';
@@ -1332,7 +1332,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get group_title => 'Csoport';
 
   @override
-  String get group_create => 'Csoport létrehozása...';
+  String get group_create => 'Csoport létrehozása';
 
   @override
   String get group_edit => 'Csoport szerkesztése';
@@ -1662,10 +1662,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get chat_archived_empty => 'Nincs archív csevegés...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Itt még nincs látnivaló...';
@@ -1809,10 +1809,10 @@ class AppLocalizationsHu extends AppLocalizations {
       'Keressen csoportot, vagy hozzon létre sajátot';
 
   @override
-  String get feed_empty_explore_button => 'Csoport felfedezése...';
+  String get feed_empty_explore_button => 'Csoport felfedezése';
 
   @override
-  String get feed_empty_create_button => 'Csoport létrehozása...';
+  String get feed_empty_create_button => 'Csoport létrehozása';
 
   @override
   String get explore_empty_title => 'A felfedezés üres';
@@ -1869,7 +1869,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'Indítson csoportos csevegést barátaival';
 
   @override
-  String get empty_group_chats_cta => 'Csoportos csevegés létrehozása...';
+  String get empty_group_chats_cta => 'Csoportos csevegés létrehozása';
 
   @override
   String get empty_all_chats_title => 'Még nincs beszélgetés';
@@ -1879,7 +1879,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'A kezdéshez hozzunk létre csevegést.';
 
   @override
-  String get empty_all_chats_cta => 'Új csevegés létrehozása...';
+  String get empty_all_chats_cta => 'Új csevegés létrehozása';
 
   @override
   String get empty_archived_chats_title => 'Nincs archív csevegés';
@@ -1901,7 +1901,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get empty_search_description => 'Próbáljon más kulcsszavakkal keresni';
 
   @override
-  String get empty_search_cta => 'Keresés törlése...';
+  String get empty_search_cta => 'Keresés törlése';
 
   @override
   String get empty_category_communities_description =>
@@ -1922,7 +1922,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'Légy az első, aki közösséget hoz létre';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Ez a bejegyzés médiát tartalmaz';
@@ -2371,7 +2371,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get community_placeholder_members => '1,2 ezer tag';
 
   @override
-  String get community_create => 'Közösség létrehozása...';
+  String get community_create => 'Közösség létrehozása';
 
   @override
   String get community_name => 'Közösség neve';
@@ -3306,7 +3306,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get group_title => 'Csoport';
 
   @override
-  String get group_create => 'Csoport létrehozása...';
+  String get group_create => 'Csoport létrehozása';
 
   @override
   String get group_edit => 'Csoport szerkesztése';
@@ -3636,10 +3636,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get chat_archived_empty => 'Nincs archív csevegés...';
 
   @override
-  String get chat_add_member_title => 'Tag hozzáadása lehetőségre...';
+  String get chat_add_member_title => 'Tag hozzáadása lehetőségre';
 
   @override
-  String get chat_add_member_button => 'Tag hozzáadása lehetőségre...';
+  String get chat_add_member_button => 'Tag hozzáadása lehetőségre';
 
   @override
   String get chat_banned_users_empty => 'Itt még nincs látnivaló...';
@@ -3784,10 +3784,10 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Keressen csoportot, vagy hozzon létre sajátot';
 
   @override
-  String get feed_empty_explore_button => 'Csoport felfedezése...';
+  String get feed_empty_explore_button => 'Csoport felfedezése';
 
   @override
-  String get feed_empty_create_button => 'Csoport létrehozása...';
+  String get feed_empty_create_button => 'Csoport létrehozása';
 
   @override
   String get explore_empty_title => 'A felfedezés üres';
@@ -3844,7 +3844,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Indítson csoportos csevegést barátaival';
 
   @override
-  String get empty_group_chats_cta => 'Csoportos csevegés létrehozása...';
+  String get empty_group_chats_cta => 'Csoportos csevegés létrehozása';
 
   @override
   String get empty_all_chats_title => 'Még nincs beszélgetés';
@@ -3854,7 +3854,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'A kezdéshez hozzunk létre csevegést.';
 
   @override
-  String get empty_all_chats_cta => 'Új csevegés létrehozása...';
+  String get empty_all_chats_cta => 'Új csevegés létrehozása';
 
   @override
   String get empty_archived_chats_title => 'Nincs archív csevegés';
@@ -3876,7 +3876,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
   String get empty_search_description => 'Próbáljon más kulcsszavakkal keresni';
 
   @override
-  String get empty_search_cta => 'Keresés törlése...';
+  String get empty_search_cta => 'Keresés törlése';
 
   @override
   String get empty_category_communities_description =>
@@ -3897,7 +3897,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Légy az első, aki közösséget hoz létre';
 
   @override
-  String get cta_create_community => 'Közösség létrehozása...';
+  String get cta_create_community => 'Közösség létrehozása';
 
   @override
   String get shared_post_media_indicator => 'Ez a bejegyzés médiát tartalmaz';

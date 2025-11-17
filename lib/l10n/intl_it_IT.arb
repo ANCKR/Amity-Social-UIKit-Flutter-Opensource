@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Crea comunità...",
+  "community_create": "Crea comunità",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Crea gruppo...",
+  "group_create": "Crea gruppo",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1997,11 +1997,11 @@
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Aggiungi membro...",
+  "chat_add_member_title": "Aggiungi membro",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Aggiungi membro...",
+  "chat_add_member_button": "Aggiungi membro",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
@@ -2284,11 +2284,11 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "cta_create_community": "Crea comunità...",
+  "cta_create_community": "Crea comunità",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "Crea una nuova chat...",
+  "empty_all_chats_cta": "Crea una nuova chat",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2336,7 +2336,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "Crea chat di gruppo...",
+  "empty_group_chats_cta": "Crea chat di gruppo",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2360,7 +2360,7 @@
   "@empty_my_communities_title": {
     "description": "Title for empty my communities list"
   },
-  "empty_search_cta": "Cancella ricerca...",
+  "empty_search_cta": "Cancella ricerca",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },

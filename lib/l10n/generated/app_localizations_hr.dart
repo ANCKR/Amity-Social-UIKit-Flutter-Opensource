@@ -393,7 +393,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get community_placeholder_members => '1,2 tisuća članova';
 
   @override
-  String get community_create => 'Stvorite zajednicu...';
+  String get community_create => 'Stvorite zajednicu';
 
   @override
   String get community_name => 'Naziv zajednice';
@@ -1325,7 +1325,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get group_title => 'Skupina';
 
   @override
-  String get group_create => 'Stvori grupu...';
+  String get group_create => 'Stvori grupu';
 
   @override
   String get group_edit => 'Uredi grupu';
@@ -1656,10 +1656,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get chat_archived_empty => 'Nema arhivskog razgovora...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Ovdje još nema ničega za vidjeti...';
@@ -1802,10 +1802,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get feed_empty_description => 'Pronađite grupu ili stvorite vlastitu';
 
   @override
-  String get feed_empty_explore_button => 'Istražite grupu...';
+  String get feed_empty_explore_button => 'Istražite grupu';
 
   @override
-  String get feed_empty_create_button => 'Stvori grupu...';
+  String get feed_empty_create_button => 'Stvori grupu';
 
   @override
   String get explore_empty_title => 'Vaše istraživanje je prazno';
@@ -1861,7 +1861,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Započnite grupni razgovor s prijateljima';
 
   @override
-  String get empty_group_chats_cta => 'Stvorite grupni chat...';
+  String get empty_group_chats_cta => 'Stvorite grupni chat';
 
   @override
   String get empty_all_chats_title => 'Još nema razgovora';
@@ -1870,7 +1870,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get empty_all_chats_description => 'Kreirajmo chat za početak.';
 
   @override
-  String get empty_all_chats_cta => 'Napravi novi chat...';
+  String get empty_all_chats_cta => 'Napravi novi chat';
 
   @override
   String get empty_archived_chats_title => 'Nema arhivskog razgovora';
@@ -1893,7 +1893,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Pokušajte pretraživati ​​s različitim ključnim riječima';
 
   @override
-  String get empty_search_cta => 'Očisti pretragu...';
+  String get empty_search_cta => 'Očisti pretragu';
 
   @override
   String get empty_category_communities_description =>
@@ -1914,7 +1914,7 @@ class AppLocalizationsHr extends AppLocalizations {
       'Budite prvi koji će stvoriti zajednicu';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Ova objava sadrži medije';
@@ -2361,7 +2361,7 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
   String get community_placeholder_members => '1,2 tisuća članova';
 
   @override
-  String get community_create => 'Stvorite zajednicu...';
+  String get community_create => 'Stvorite zajednicu';
 
   @override
   String get community_name => 'Naziv zajednice';
@@ -3293,7 +3293,7 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
   String get group_title => 'Skupina';
 
   @override
-  String get group_create => 'Stvori grupu...';
+  String get group_create => 'Stvori grupu';
 
   @override
   String get group_edit => 'Uredi grupu';
@@ -3624,10 +3624,10 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
   String get chat_archived_empty => 'Nema arhivskog razgovora...';
 
   @override
-  String get chat_add_member_title => 'Dodaj člana...';
+  String get chat_add_member_title => 'Dodaj člana';
 
   @override
-  String get chat_add_member_button => 'Dodaj člana...';
+  String get chat_add_member_button => 'Dodaj člana';
 
   @override
   String get chat_banned_users_empty => 'Ovdje još nema ničega za vidjeti...';
@@ -3771,10 +3771,10 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
   String get feed_empty_description => 'Pronađite grupu ili stvorite vlastitu';
 
   @override
-  String get feed_empty_explore_button => 'Istražite grupu...';
+  String get feed_empty_explore_button => 'Istražite grupu';
 
   @override
-  String get feed_empty_create_button => 'Stvori grupu...';
+  String get feed_empty_create_button => 'Stvori grupu';
 
   @override
   String get explore_empty_title => 'Vaše istraživanje je prazno';
@@ -3830,7 +3830,7 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
       'Započnite grupni razgovor s prijateljima';
 
   @override
-  String get empty_group_chats_cta => 'Stvorite grupni chat...';
+  String get empty_group_chats_cta => 'Stvorite grupni chat';
 
   @override
   String get empty_all_chats_title => 'Još nema razgovora';
@@ -3839,7 +3839,7 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
   String get empty_all_chats_description => 'Kreirajmo chat za početak.';
 
   @override
-  String get empty_all_chats_cta => 'Napravi novi chat...';
+  String get empty_all_chats_cta => 'Napravi novi chat';
 
   @override
   String get empty_archived_chats_title => 'Nema arhivskog razgovora';
@@ -3862,7 +3862,7 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
       'Pokušajte pretraživati ​​s različitim ključnim riječima';
 
   @override
-  String get empty_search_cta => 'Očisti pretragu...';
+  String get empty_search_cta => 'Očisti pretragu';
 
   @override
   String get empty_category_communities_description =>
@@ -3883,7 +3883,7 @@ class AppLocalizationsHrHr extends AppLocalizationsHr {
       'Budite prvi koji će stvoriti zajednicu';
 
   @override
-  String get cta_create_community => 'Stvorite zajednicu...';
+  String get cta_create_community => 'Stvorite zajednicu';
 
   @override
   String get shared_post_media_indicator => 'Ova objava sadrži medije';

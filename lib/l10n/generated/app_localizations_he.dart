@@ -392,7 +392,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community...';
+  String get community_create => 'Create Community';
 
   @override
   String get community_name => 'Community name';
@@ -1314,7 +1314,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group...';
+  String get group_create => 'Create Group';
 
   @override
   String get group_edit => 'Edit Group';
@@ -1641,10 +1641,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get chat_archived_empty => 'אין צ\'אט בארכיון...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'אין כאן עדיין מה לראות...';
@@ -1787,7 +1787,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get feed_empty_description => 'מצא קבוצה או צור קבוצה משלך';
 
   @override
-  String get feed_empty_explore_button => 'חקור את הקבוצה...';
+  String get feed_empty_explore_button => 'חקור את הקבוצה';
 
   @override
   String get feed_empty_create_button => 'צור קבוצה';
@@ -1844,7 +1844,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get empty_group_chats_description => 'התחל צ\'אט קבוצתי עם חברים';
 
   @override
-  String get empty_group_chats_cta => 'צור צ\'אט קבוצתי...';
+  String get empty_group_chats_cta => 'צור צ\'אט קבוצתי';
 
   @override
   String get empty_all_chats_title => 'עדיין אין שיחה';
@@ -1853,7 +1853,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get empty_all_chats_description => 'בואו ניצור צ\'אט כדי להתחיל.';
 
   @override
-  String get empty_all_chats_cta => 'צור צ\'אט חדש...';
+  String get empty_all_chats_cta => 'צור צ\'אט חדש';
 
   @override
   String get empty_archived_chats_title => 'אין צ\'אט בארכיון';
@@ -1895,7 +1895,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'היה הראשון ליצור קהילה';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'פוסט זה מכיל מדיה';
@@ -2339,7 +2339,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get community_placeholder_members => '1.2K members';
 
   @override
-  String get community_create => 'Create Community...';
+  String get community_create => 'Create Community';
 
   @override
   String get community_name => 'Community name';
@@ -3261,7 +3261,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group...';
+  String get group_create => 'Create Group';
 
   @override
   String get group_edit => 'Edit Group';
@@ -3734,7 +3734,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get feed_empty_description => 'מצא קבוצה או צור קבוצה משלך';
 
   @override
-  String get feed_empty_explore_button => 'חקור את הקבוצה...';
+  String get feed_empty_explore_button => 'חקור את הקבוצה';
 
   @override
   String get feed_empty_create_button => 'צור קבוצה';
@@ -3791,7 +3791,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get empty_group_chats_description => 'התחל צ\'אט קבוצתי עם חברים';
 
   @override
-  String get empty_group_chats_cta => 'צור צ\'אט קבוצתי...';
+  String get empty_group_chats_cta => 'צור צ\'אט קבוצתי';
 
   @override
   String get empty_all_chats_title => 'עדיין אין שיחה';
@@ -3800,7 +3800,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
   String get empty_all_chats_description => 'בואו ניצור צ\'אט כדי להתחיל.';
 
   @override
-  String get empty_all_chats_cta => 'צור צ\'אט חדש...';
+  String get empty_all_chats_cta => 'צור צ\'אט חדש';
 
   @override
   String get empty_archived_chats_title => 'אין צ\'אט בארכיון';
@@ -3842,7 +3842,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'היה הראשון ליצור קהילה';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'פוסט זה מכיל מדיה';

@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Crear comunidad...",
+  "community_create": "Crear comunidad",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Crear grupo...",
+  "group_create": "Crear grupo",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1997,7 +1997,7 @@
   "@empty_group_chats_description": {
     "description": "Descripción para lista vacía de chats grupales"
   },
-  "empty_group_chats_cta": "Crear chat grupal...",
+  "empty_group_chats_cta": "Crear chat grupal",
   "@empty_group_chats_cta": {
     "description": "Texto del botón CTA para lista vacía de chats grupales"
   },
@@ -2009,7 +2009,7 @@
   "@empty_all_chats_description": {
     "description": "Descripción para lista de chats vacía"
   },
-  "empty_all_chats_cta": "Crear nuevo chat...",
+  "empty_all_chats_cta": "Crear nuevo chat",
   "@empty_all_chats_cta": {
     "description": "Texto del botón CTA para lista de chats vacía"
   },
@@ -2037,7 +2037,7 @@
   "@empty_search_description": {
     "description": "Descripción para resultados de búsqueda vacíos"
   },
-  "empty_search_cta": "Explorar comunidades...",
+  "empty_search_cta": "Explorar comunidades",
   "@empty_search_cta": {
     "description": "Texto del botón CTA para resultados de búsqueda vacíos"
   },
@@ -2061,7 +2061,7 @@
   "@empty_explore_description_no_communities": {
     "description": "Descripción para página de exploración cuando hay categorías pero no comunidades"
   },
-  "cta_create_community": "Crear comunidad...",
+  "cta_create_community": "Crear comunidad",
   "@cta_create_community": {
     "description": "Texto del botón CTA para crear comunidad"
   },
@@ -2152,11 +2152,11 @@
   "@feed_empty_create_first_post": {
     "description": "Description text encouraging user to create their first post"
   },
-  "chat_add_member_button": "Agregar miembro...",
+  "chat_add_member_button": "Agregar miembro",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
-  "chat_add_member_title": "Agregar miembro...",
+  "chat_add_member_title": "Agregar miembro",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },

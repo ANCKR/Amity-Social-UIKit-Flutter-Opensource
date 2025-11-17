@@ -391,7 +391,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get community_placeholder_members => '1,2 тыс. участников';
 
   @override
-  String get community_create => 'Создать сообщество...';
+  String get community_create => 'Создать сообщество';
 
   @override
   String get community_name => 'Название сообщества';
@@ -1322,7 +1322,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get group_title => 'Группа';
 
   @override
-  String get group_create => 'Создать группу...';
+  String get group_create => 'Создать группу';
 
   @override
   String get group_edit => 'Редактировать группу';
@@ -1651,10 +1651,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get chat_archived_empty => 'Нет архивного чата...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Здесь пока нет ничего интересного...';
@@ -1854,7 +1854,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get empty_group_chats_description => 'Начать групповой чат с друзьями';
 
   @override
-  String get empty_group_chats_cta => 'Создать групповой чат...';
+  String get empty_group_chats_cta => 'Создать групповой чат';
 
   @override
   String get empty_all_chats_title => 'Пока нет разговоров';
@@ -1863,7 +1863,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get empty_all_chats_description => 'Давайте для начала создадим чат.';
 
   @override
-  String get empty_all_chats_cta => 'Создать новый чат...';
+  String get empty_all_chats_cta => 'Создать новый чат';
 
   @override
   String get empty_archived_chats_title => 'Нет архивного чата';
@@ -1887,7 +1887,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Попробуйте выполнить поиск по другим ключевым словам';
 
   @override
-  String get empty_search_cta => 'Очистить поиск...';
+  String get empty_search_cta => 'Очистить поиск';
 
   @override
   String get empty_category_communities_description =>
@@ -1908,7 +1908,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Будьте первым, кто создаст сообщество';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Этот пост содержит медиа';
@@ -2351,7 +2351,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get community_placeholder_members => '1,2 тыс. участников';
 
   @override
-  String get community_create => 'Создать сообщество...';
+  String get community_create => 'Создать сообщество';
 
   @override
   String get community_name => 'Название сообщества';
@@ -3282,7 +3282,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get group_title => 'Группа';
 
   @override
-  String get group_create => 'Создать группу...';
+  String get group_create => 'Создать группу';
 
   @override
   String get group_edit => 'Редактировать группу';
@@ -3611,10 +3611,10 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get chat_archived_empty => 'Нет архивного чата...';
 
   @override
-  String get chat_add_member_title => 'Добавить участника...';
+  String get chat_add_member_title => 'Добавить участника';
 
   @override
-  String get chat_add_member_button => 'Добавить участника...';
+  String get chat_add_member_button => 'Добавить участника';
 
   @override
   String get chat_banned_users_empty => 'Здесь пока нет ничего интересного...';
@@ -3816,7 +3816,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get empty_group_chats_description => 'Начать групповой чат с друзьями';
 
   @override
-  String get empty_group_chats_cta => 'Создать групповой чат...';
+  String get empty_group_chats_cta => 'Создать групповой чат';
 
   @override
   String get empty_all_chats_title => 'Пока нет разговоров';
@@ -3825,7 +3825,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
   String get empty_all_chats_description => 'Давайте для начала создадим чат.';
 
   @override
-  String get empty_all_chats_cta => 'Создать новый чат...';
+  String get empty_all_chats_cta => 'Создать новый чат';
 
   @override
   String get empty_archived_chats_title => 'Нет архивного чата';
@@ -3849,7 +3849,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Попробуйте выполнить поиск по другим ключевым словам';
 
   @override
-  String get empty_search_cta => 'Очистить поиск...';
+  String get empty_search_cta => 'Очистить поиск';
 
   @override
   String get empty_category_communities_description =>
@@ -3870,7 +3870,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Будьте первым, кто создаст сообщество';
 
   @override
-  String get cta_create_community => 'Создать сообщество...';
+  String get cta_create_community => 'Создать сообщество';
 
   @override
   String get shared_post_media_indicator => 'Этот пост содержит медиа';

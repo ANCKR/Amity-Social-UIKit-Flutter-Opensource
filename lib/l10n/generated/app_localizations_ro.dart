@@ -396,7 +396,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get community_placeholder_members => '1,2 mii de membri';
 
   @override
-  String get community_create => 'Creați o comunitate...';
+  String get community_create => 'Creați o comunitate';
 
   @override
   String get community_name => 'Numele comunității';
@@ -1336,7 +1336,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get group_title => 'Grup';
 
   @override
-  String get group_create => 'Creați grup...';
+  String get group_create => 'Creați grup';
 
   @override
   String get group_edit => 'Editați grupul';
@@ -1666,10 +1666,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get chat_archived_empty => 'Nicio arhivă de chat...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Nimic aici de văzut încă...';
@@ -1813,10 +1813,10 @@ class AppLocalizationsRo extends AppLocalizations {
       'Găsiți un grup sau creați-vă propriul grup';
 
   @override
-  String get feed_empty_explore_button => 'Explorați grupul...';
+  String get feed_empty_explore_button => 'Explorați grupul';
 
   @override
-  String get feed_empty_create_button => 'Creați grup...';
+  String get feed_empty_create_button => 'Creați grup';
 
   @override
   String get explore_empty_title => 'Explorarea ta este goală';
@@ -1873,7 +1873,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Începeți un chat de grup cu prietenii';
 
   @override
-  String get empty_group_chats_cta => 'Creați chat de grup...';
+  String get empty_group_chats_cta => 'Creați chat de grup';
 
   @override
   String get empty_all_chats_title => 'Nicio conversație încă';
@@ -1882,7 +1882,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get empty_all_chats_description => 'Să creăm chat pentru a începe.';
 
   @override
-  String get empty_all_chats_cta => 'Creați un chat nou...';
+  String get empty_all_chats_cta => 'Creați un chat nou';
 
   @override
   String get empty_archived_chats_title => 'Nu arhiva chat';
@@ -1905,7 +1905,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Încercați să căutați cu cuvinte cheie diferite';
 
   @override
-  String get empty_search_cta => 'Ștergeți căutarea...';
+  String get empty_search_cta => 'Ștergeți căutarea';
 
   @override
   String get empty_category_communities_description =>
@@ -1926,7 +1926,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Fii primul care creează o comunitate';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Această postare conține media';
@@ -2374,7 +2374,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
   String get community_placeholder_members => '1,2 mii de membri';
 
   @override
-  String get community_create => 'Creați o comunitate...';
+  String get community_create => 'Creați o comunitate';
 
   @override
   String get community_name => 'Numele comunității';
@@ -3314,7 +3314,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
   String get group_title => 'Grup';
 
   @override
-  String get group_create => 'Creați grup...';
+  String get group_create => 'Creați grup';
 
   @override
   String get group_edit => 'Editați grupul';
@@ -3644,10 +3644,10 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
   String get chat_archived_empty => 'Nicio arhivă de chat...';
 
   @override
-  String get chat_add_member_title => 'Adăugați membru...';
+  String get chat_add_member_title => 'Adăugați membru';
 
   @override
-  String get chat_add_member_button => 'Adăugați membru...';
+  String get chat_add_member_button => 'Adăugați membru';
 
   @override
   String get chat_banned_users_empty => 'Nimic aici de văzut încă...';
@@ -3795,10 +3795,10 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
       'Găsiți un grup sau creați-vă propriul dvs';
 
   @override
-  String get feed_empty_explore_button => 'Explorați grupul...';
+  String get feed_empty_explore_button => 'Explorați grupul';
 
   @override
-  String get feed_empty_create_button => 'Creați grup...';
+  String get feed_empty_create_button => 'Creați grup';
 
   @override
   String get explore_empty_title => 'Explorarea ta este goală';
@@ -3855,7 +3855,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
       'Începeți un chat de grup cu prietenii';
 
   @override
-  String get empty_group_chats_cta => 'Creați chat de grup...';
+  String get empty_group_chats_cta => 'Creați chat de grup';
 
   @override
   String get empty_all_chats_title => 'Nicio conversație încă';
@@ -3864,7 +3864,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
   String get empty_all_chats_description => 'Să creăm chat pentru a începe.';
 
   @override
-  String get empty_all_chats_cta => 'Creați un chat nou...';
+  String get empty_all_chats_cta => 'Creați un chat nou';
 
   @override
   String get empty_archived_chats_title => 'Nicio arhivă de chat';
@@ -3887,7 +3887,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
       'Încercați să căutați cu cuvinte cheie diferite';
 
   @override
-  String get empty_search_cta => 'Ștergeți căutarea...';
+  String get empty_search_cta => 'Ștergeți căutarea';
 
   @override
   String get empty_category_communities_description =>
@@ -3908,7 +3908,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
       'Fii primul care creează o comunitate';
 
   @override
-  String get cta_create_community => 'Creați o comunitate...';
+  String get cta_create_community => 'Creați o comunitate';
 
   @override
   String get shared_post_media_indicator => 'Această postare conține media';

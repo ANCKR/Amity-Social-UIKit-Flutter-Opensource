@@ -396,7 +396,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get community_placeholder_members => '1,2K μέλη';
 
   @override
-  String get community_create => 'Δημιουργία Κοινότητας...';
+  String get community_create => 'Δημιουργία Κοινότητας';
 
   @override
   String get community_name => 'Όνομα κοινότητας';
@@ -1337,7 +1337,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get group_title => 'Ομάδα';
 
   @override
-  String get group_create => 'Δημιουργία ομάδας...';
+  String get group_create => 'Δημιουργία ομάδας';
 
   @override
   String get group_edit => 'Επεξεργασία ομάδας';
@@ -1669,10 +1669,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get chat_archived_empty => 'Δεν υπάρχει συνομιλία με αρχείο...';
 
   @override
-  String get chat_add_member_title => 'Προσθήκη μέλους...';
+  String get chat_add_member_title => 'Προσθήκη μέλους';
 
   @override
-  String get chat_add_member_button => 'Προσθήκη μέλους...';
+  String get chat_add_member_button => 'Προσθήκη μέλους';
 
   @override
   String get chat_banned_users_empty =>
@@ -1820,10 +1820,10 @@ class AppLocalizationsEl extends AppLocalizations {
       'Βρείτε ομάδα ή δημιουργήστε τη δική σας';
 
   @override
-  String get feed_empty_explore_button => 'Ομάδα εξερεύνησης...';
+  String get feed_empty_explore_button => 'Ομάδα εξερεύνησης';
 
   @override
-  String get feed_empty_create_button => 'Δημιουργία ομάδας...';
+  String get feed_empty_create_button => 'Δημιουργία ομάδας';
 
   @override
   String get explore_empty_title => 'Η εξερεύνησή σας είναι άδεια';
@@ -1881,7 +1881,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ξεκινήστε μια ομαδική συνομιλία με φίλους';
 
   @override
-  String get empty_group_chats_cta => 'Δημιουργία ομαδικής συνομιλίας...';
+  String get empty_group_chats_cta => 'Δημιουργία ομαδικής συνομιλίας';
 
   @override
   String get empty_all_chats_title => 'Καμία συζήτηση ακόμα';
@@ -1891,7 +1891,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ας δημιουργήσουμε συνομιλία για να ξεκινήσουμε.';
 
   @override
-  String get empty_all_chats_cta => 'Δημιουργία νέας συνομιλίας...';
+  String get empty_all_chats_cta => 'Δημιουργία νέας συνομιλίας';
 
   @override
   String get empty_archived_chats_title => 'Δεν υπάρχει συνομιλία με αρχείο';
@@ -1914,7 +1914,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Δοκιμάστε να κάνετε αναζήτηση με διαφορετικές λέξεις-κλειδιά';
 
   @override
-  String get empty_search_cta => 'Εκκαθάριση αναζήτησης...';
+  String get empty_search_cta => 'Εκκαθάριση αναζήτησης';
 
   @override
   String get empty_category_communities_description =>
@@ -1937,7 +1937,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Γίνετε ο πρώτος που θα δημιουργήσει μια κοινότητα';
 
   @override
-  String get cta_create_community => 'Δημιουργία κοινότητας...';
+  String get cta_create_community => 'Δημιουργία κοινότητας';
 
   @override
   String get shared_post_media_indicator => 'Αυτή η ανάρτηση περιέχει πολυμέσα';
@@ -2387,7 +2387,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get community_placeholder_members => '1,2K μέλη';
 
   @override
-  String get community_create => 'Δημιουργία Κοινότητας...';
+  String get community_create => 'Δημιουργία Κοινότητας';
 
   @override
   String get community_name => 'Όνομα κοινότητας';
@@ -3328,7 +3328,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get group_title => 'Ομάδα';
 
   @override
-  String get group_create => 'Δημιουργία ομάδας...';
+  String get group_create => 'Δημιουργία ομάδας';
 
   @override
   String get group_edit => 'Επεξεργασία ομάδας';
@@ -3660,10 +3660,10 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
   String get chat_archived_empty => 'Δεν υπάρχει συνομιλία με αρχείο...';
 
   @override
-  String get chat_add_member_title => 'Προσθήκη μέλους...';
+  String get chat_add_member_title => 'Προσθήκη μέλους';
 
   @override
-  String get chat_add_member_button => 'Προσθήκη μέλους...';
+  String get chat_add_member_button => 'Προσθήκη μέλους';
 
   @override
   String get chat_banned_users_empty =>
@@ -3811,10 +3811,10 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Βρείτε ομάδα ή δημιουργήστε τη δική σας';
 
   @override
-  String get feed_empty_explore_button => 'Ομάδα εξερεύνησης...';
+  String get feed_empty_explore_button => 'Ομάδα εξερεύνησης';
 
   @override
-  String get feed_empty_create_button => 'Δημιουργία ομάδας...';
+  String get feed_empty_create_button => 'Δημιουργία ομάδας';
 
   @override
   String get explore_empty_title => 'Η εξερεύνησή σας είναι άδεια';
@@ -3872,7 +3872,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Ξεκινήστε μια ομαδική συνομιλία με φίλους';
 
   @override
-  String get empty_group_chats_cta => 'Δημιουργία ομαδικής συνομιλίας...';
+  String get empty_group_chats_cta => 'Δημιουργία ομαδικής συνομιλίας';
 
   @override
   String get empty_all_chats_title => 'Καμία συζήτηση ακόμα';
@@ -3882,7 +3882,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Ας δημιουργήσουμε συνομιλία για να ξεκινήσουμε.';
 
   @override
-  String get empty_all_chats_cta => 'Δημιουργία νέας συνομιλίας...';
+  String get empty_all_chats_cta => 'Δημιουργία νέας συνομιλίας';
 
   @override
   String get empty_archived_chats_title => 'Δεν υπάρχει συνομιλία με αρχείο';
@@ -3905,7 +3905,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Δοκιμάστε να κάνετε αναζήτηση με διαφορετικές λέξεις-κλειδιά';
 
   @override
-  String get empty_search_cta => 'Εκκαθάριση αναζήτησης...';
+  String get empty_search_cta => 'Εκκαθάριση αναζήτησης';
 
   @override
   String get empty_category_communities_description =>
@@ -3928,7 +3928,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Γίνετε ο πρώτος που θα δημιουργήσει μια κοινότητα';
 
   @override
-  String get cta_create_community => 'Δημιουργία κοινότητας...';
+  String get cta_create_community => 'Δημιουργία κοινότητας';
 
   @override
   String get shared_post_media_indicator => 'Αυτή η ανάρτηση περιέχει πολυμέσα';

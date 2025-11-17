@@ -395,7 +395,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get community_placeholder_members => '1,2K leden';
 
   @override
-  String get community_create => 'Creëer een gemeenschap...';
+  String get community_create => 'Creëer een gemeenschap';
 
   @override
   String get community_name => 'Gemeenschapsnaam';
@@ -1319,7 +1319,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group...';
+  String get group_create => 'Create Group';
 
   @override
   String get group_edit => 'Edit Group';
@@ -1647,10 +1647,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get chat_archived_empty => 'Geen archiefchat...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'Hier is nog niets te zien...';
@@ -1853,7 +1853,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Start een groepschat met vrienden';
 
   @override
-  String get empty_group_chats_cta => 'Groepschat maken...';
+  String get empty_group_chats_cta => 'Groepschat maken';
 
   @override
   String get empty_all_chats_title => 'Nog geen gesprek';
@@ -1863,7 +1863,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Laten we een chat maken om aan de slag te gaan.';
 
   @override
-  String get empty_all_chats_cta => 'Maak een nieuwe chat...';
+  String get empty_all_chats_cta => 'Maak een nieuwe chat';
 
   @override
   String get empty_archived_chats_title => 'Geen archiefchat';
@@ -1887,7 +1887,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Probeer te zoeken met verschillende trefwoorden';
 
   @override
-  String get empty_search_cta => 'Duidelijke zoekopdracht...';
+  String get empty_search_cta => 'Duidelijke zoekopdracht';
 
   @override
   String get empty_category_communities_description =>
@@ -1908,7 +1908,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Wees de eerste die een community creëert';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Dit bericht bevat media';
@@ -2355,7 +2355,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get community_placeholder_members => '1,2K leden';
 
   @override
-  String get community_create => 'Creëer een gemeenschap...';
+  String get community_create => 'Creëer een gemeenschap';
 
   @override
   String get community_name => 'Gemeenschapsnaam';
@@ -3279,7 +3279,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get group_title => 'Group';
 
   @override
-  String get group_create => 'Create Group...';
+  String get group_create => 'Create Group';
 
   @override
   String get group_edit => 'Edit Group';
@@ -3607,10 +3607,10 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
   String get chat_archived_empty => 'Geen archiefchat...';
 
   @override
-  String get chat_add_member_title => 'Lid toevoegen...';
+  String get chat_add_member_title => 'Lid toevoegen';
 
   @override
-  String get chat_add_member_button => 'Lid toevoegen...';
+  String get chat_add_member_button => 'Lid toevoegen';
 
   @override
   String get chat_banned_users_empty => 'Hier is nog niets te zien...';
@@ -3814,7 +3814,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Start een groepschat met vrienden';
 
   @override
-  String get empty_group_chats_cta => 'Groepschat maken...';
+  String get empty_group_chats_cta => 'Groepschat maken';
 
   @override
   String get empty_all_chats_title => 'Nog geen gesprek';
@@ -3824,7 +3824,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Laten we een chat maken om aan de slag te gaan.';
 
   @override
-  String get empty_all_chats_cta => 'Maak een nieuwe chat...';
+  String get empty_all_chats_cta => 'Maak een nieuwe chat';
 
   @override
   String get empty_archived_chats_title => 'Geen archiefchat';
@@ -3848,7 +3848,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Probeer te zoeken met verschillende trefwoorden';
 
   @override
-  String get empty_search_cta => 'Duidelijke zoekopdracht...';
+  String get empty_search_cta => 'Duidelijke zoekopdracht';
 
   @override
   String get empty_category_communities_description =>
@@ -3869,7 +3869,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Wees de eerste die een community creëert';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Dit bericht bevat media';

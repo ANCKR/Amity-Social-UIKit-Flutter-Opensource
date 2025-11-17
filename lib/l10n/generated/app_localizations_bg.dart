@@ -394,7 +394,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get community_placeholder_members => '1,2 хиляди членове';
 
   @override
-  String get community_create => 'Създаване на общност...';
+  String get community_create => 'Създаване на общност';
 
   @override
   String get community_name => 'Име на общността';
@@ -1331,7 +1331,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get group_title => 'Група';
 
   @override
-  String get group_create => 'Създаване на група...';
+  String get group_create => 'Създаване на група';
 
   @override
   String get group_edit => 'Редактиране на група';
@@ -1660,10 +1660,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get chat_archived_empty => 'Без архивен чат...';
 
   @override
-  String get chat_add_member_title => 'Добавяне на член...';
+  String get chat_add_member_title => 'Добавяне на член';
 
   @override
-  String get chat_add_member_button => 'Добавяне на член...';
+  String get chat_add_member_button => 'Добавяне на член';
 
   @override
   String get chat_banned_users_empty => 'Все още няма нищо за гледане...';
@@ -1811,10 +1811,10 @@ class AppLocalizationsBg extends AppLocalizations {
       'Намерете група или създайте своя собствена';
 
   @override
-  String get feed_empty_explore_button => 'Разгледайте групата...';
+  String get feed_empty_explore_button => 'Разгледайте групата';
 
   @override
-  String get feed_empty_create_button => 'Създайте група...';
+  String get feed_empty_create_button => 'Създайте група';
 
   @override
   String get explore_empty_title => 'Вашето изследване е празно';
@@ -1870,7 +1870,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get empty_group_chats_description => 'Започнете групов чат с приятели';
 
   @override
-  String get empty_group_chats_cta => 'Създайте групов чат...';
+  String get empty_group_chats_cta => 'Създайте групов чат';
 
   @override
   String get empty_all_chats_title => 'Все още няма разговор';
@@ -1880,7 +1880,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Нека създадем чат, за да започнем.';
 
   @override
-  String get empty_all_chats_cta => 'Създайте нов чат...';
+  String get empty_all_chats_cta => 'Създайте нов чат';
 
   @override
   String get empty_archived_chats_title => 'Без архивен чат';
@@ -1903,7 +1903,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Опитайте да търсите с различни ключови думи';
 
   @override
-  String get empty_search_cta => 'Изчистете търсенето...';
+  String get empty_search_cta => 'Изчистете търсенето';
 
   @override
   String get empty_category_communities_description =>
@@ -1924,7 +1924,7 @@ class AppLocalizationsBg extends AppLocalizations {
       'Бъдете първият, който създаде общност';
 
   @override
-  String get cta_create_community => 'Създайте общност...';
+  String get cta_create_community => 'Създайте общност';
 
   @override
   String get shared_post_media_indicator => 'Тази публикация съдържа медия';
@@ -2371,7 +2371,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get community_placeholder_members => '1,2 хиляди членове';
 
   @override
-  String get community_create => 'Създаване на общност...';
+  String get community_create => 'Създаване на общност';
 
   @override
   String get community_name => 'Име на общността';
@@ -3308,7 +3308,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get group_title => 'Група';
 
   @override
-  String get group_create => 'Създаване на група...';
+  String get group_create => 'Създаване на група';
 
   @override
   String get group_edit => 'Редактиране на група';
@@ -3637,10 +3637,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get chat_archived_empty => 'Без архивен чат...';
 
   @override
-  String get chat_add_member_title => 'Добавяне на член...';
+  String get chat_add_member_title => 'Добавяне на член';
 
   @override
-  String get chat_add_member_button => 'Добавяне на член...';
+  String get chat_add_member_button => 'Добавяне на член';
 
   @override
   String get chat_banned_users_empty => 'Все още няма нищо за гледане...';
@@ -3788,10 +3788,10 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Намерете група или създайте своя собствена';
 
   @override
-  String get feed_empty_explore_button => 'Разгледайте групата...';
+  String get feed_empty_explore_button => 'Разгледайте групата';
 
   @override
-  String get feed_empty_create_button => 'Създайте група...';
+  String get feed_empty_create_button => 'Създайте група';
 
   @override
   String get explore_empty_title => 'Вашето изследване е празно';
@@ -3847,7 +3847,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
   String get empty_group_chats_description => 'Започнете групов чат с приятели';
 
   @override
-  String get empty_group_chats_cta => 'Създайте групов чат...';
+  String get empty_group_chats_cta => 'Създайте групов чат';
 
   @override
   String get empty_all_chats_title => 'Все още няма разговор';
@@ -3857,7 +3857,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Нека създадем чат, за да започнем.';
 
   @override
-  String get empty_all_chats_cta => 'Създайте нов чат...';
+  String get empty_all_chats_cta => 'Създайте нов чат';
 
   @override
   String get empty_archived_chats_title => 'Без архивен чат';
@@ -3880,7 +3880,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Опитайте да търсите с различни ключови думи';
 
   @override
-  String get empty_search_cta => 'Изчистете търсенето...';
+  String get empty_search_cta => 'Изчистете търсенето';
 
   @override
   String get empty_category_communities_description =>
@@ -3901,7 +3901,7 @@ class AppLocalizationsBgBg extends AppLocalizationsBg {
       'Бъдете първият, който създаде общност';
 
   @override
-  String get cta_create_community => 'Създайте общност...';
+  String get cta_create_community => 'Създайте общност';
 
   @override
   String get shared_post_media_indicator => 'Тази публикация съдържа медия';

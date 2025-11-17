@@ -390,7 +390,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get community_placeholder_members => '1.2K عضو';
 
   @override
-  String get community_create => 'ایجاد انجمن...';
+  String get community_create => 'ایجاد انجمن';
 
   @override
   String get community_name => 'نام انجمن';
@@ -1314,7 +1314,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get group_title => 'گروه';
 
   @override
-  String get group_create => 'ایجاد گروه...';
+  String get group_create => 'ایجاد گروه';
 
   @override
   String get group_edit => 'ویرایش گروه';
@@ -1642,10 +1642,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chat_archived_empty => 'بدون چت بایگانی...';
 
   @override
-  String get chat_add_member_title => 'اضافه کردن عضو...';
+  String get chat_add_member_title => 'اضافه کردن عضو';
 
   @override
-  String get chat_add_member_button => 'اضافه کردن عضو...';
+  String get chat_add_member_button => 'اضافه کردن عضو';
 
   @override
   String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست...';
@@ -1792,7 +1792,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get feed_empty_explore_button => 'کاوش گروه';
 
   @override
-  String get feed_empty_create_button => 'گروه ایجاد کنید...';
+  String get feed_empty_create_button => 'گروه ایجاد کنید';
 
   @override
   String get explore_empty_title => 'کاوش شما خالی است';
@@ -1847,7 +1847,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get empty_group_chats_description => 'یک چت گروهی با دوستان شروع کنید';
 
   @override
-  String get empty_group_chats_cta => 'ایجاد چت گروهی...';
+  String get empty_group_chats_cta => 'ایجاد چت گروهی';
 
   @override
   String get empty_all_chats_title => 'هنوز مکالمه ای وجود ندارد';
@@ -1856,7 +1856,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get empty_all_chats_description => 'بیایید برای شروع چت ایجاد کنیم.';
 
   @override
-  String get empty_all_chats_cta => 'ایجاد چت جدید...';
+  String get empty_all_chats_cta => 'ایجاد چت جدید';
 
   @override
   String get empty_archived_chats_title => 'بدون چت بایگانی';
@@ -1879,7 +1879,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'سعی کنید با کلمات کلیدی مختلف جستجو کنید';
 
   @override
-  String get empty_search_cta => 'جستجو را پاک کنید...';
+  String get empty_search_cta => 'جستجو را پاک کنید';
 
   @override
   String get empty_category_communities_description =>
@@ -1900,7 +1900,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'اولین کسی باشید که یک انجمن ایجاد می کند';
 
   @override
-  String get cta_create_community => 'جامعه ایجاد کنید...';
+  String get cta_create_community => 'جامعه ایجاد کنید';
 
   @override
   String get shared_post_media_indicator => 'این پست حاوی رسانه است';
@@ -2343,7 +2343,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get community_placeholder_members => '1.2K عضو';
 
   @override
-  String get community_create => 'ایجاد انجمن...';
+  String get community_create => 'ایجاد انجمن';
 
   @override
   String get community_name => 'نام انجمن';
@@ -3267,7 +3267,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get group_title => 'گروه';
 
   @override
-  String get group_create => 'ایجاد گروه...';
+  String get group_create => 'ایجاد گروه';
 
   @override
   String get group_edit => 'ویرایش گروه';
@@ -3595,10 +3595,10 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get chat_archived_empty => 'بدون چت بایگانی...';
 
   @override
-  String get chat_add_member_title => 'اضافه کردن عضو...';
+  String get chat_add_member_title => 'اضافه کردن عضو';
 
   @override
-  String get chat_add_member_button => 'اضافه کردن عضو...';
+  String get chat_add_member_button => 'اضافه کردن عضو';
 
   @override
   String get chat_banned_users_empty => 'هنوز چیزی برای دیدن اینجا نیست...';
@@ -3745,7 +3745,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get feed_empty_explore_button => 'کاوش گروه';
 
   @override
-  String get feed_empty_create_button => 'گروه ایجاد کنید...';
+  String get feed_empty_create_button => 'گروه ایجاد کنید';
 
   @override
   String get explore_empty_title => 'کاوش شما خالی است';
@@ -3800,7 +3800,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get empty_group_chats_description => 'یک چت گروهی با دوستان شروع کنید';
 
   @override
-  String get empty_group_chats_cta => 'ایجاد چت گروهی...';
+  String get empty_group_chats_cta => 'ایجاد چت گروهی';
 
   @override
   String get empty_all_chats_title => 'هنوز مکالمه ای وجود ندارد';
@@ -3809,7 +3809,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
   String get empty_all_chats_description => 'بیایید برای شروع چت ایجاد کنیم.';
 
   @override
-  String get empty_all_chats_cta => 'ایجاد چت جدید...';
+  String get empty_all_chats_cta => 'ایجاد چت جدید';
 
   @override
   String get empty_archived_chats_title => 'بدون چت بایگانی';
@@ -3832,7 +3832,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
       'سعی کنید با کلمات کلیدی مختلف جستجو کنید';
 
   @override
-  String get empty_search_cta => 'جستجو را پاک کنید...';
+  String get empty_search_cta => 'جستجو را پاک کنید';
 
   @override
   String get empty_category_communities_description =>
@@ -3853,7 +3853,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
       'اولین کسی باشید که یک انجمن ایجاد می کند';
 
   @override
-  String get cta_create_community => 'جامعه ایجاد کنید...';
+  String get cta_create_community => 'جامعه ایجاد کنید';
 
   @override
   String get shared_post_media_indicator => 'این پست حاوی رسانه است';

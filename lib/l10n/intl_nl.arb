@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Creëer een gemeenschap...",
+  "community_create": "Creëer een gemeenschap",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Create Group...",
+  "group_create": "Create Group",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -2100,7 +2100,7 @@
   "@empty_group_chats_description": {
     "description": "Description for empty group chats list"
   },
-  "chat_add_member_button": "Add Member...",
+  "chat_add_member_button": "Add Member",
   "@chat_add_member_button": {
     "description": "Button text to add members"
   },
@@ -2108,7 +2108,7 @@
   "@chat_unban_confirmation_message": {
     "description": "Confirmation message for unbanning user"
   },
-  "empty_group_chats_cta": "Groepschat maken...",
+  "empty_group_chats_cta": "Groepschat maken",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2236,7 +2236,7 @@
   "@feed_empty_title": {
     "description": "Title shown when feed has no content"
   },
-  "chat_add_member_title": "Add Member...",
+  "chat_add_member_title": "Add Member",
   "@chat_add_member_title": {
     "description": "Title for add member page"
   },
@@ -2244,7 +2244,7 @@
   "@feed_filter_images": {
     "description": "Filter option to show only images"
   },
-  "empty_search_cta": "Duidelijke zoekopdracht...",
+  "empty_search_cta": "Duidelijke zoekopdracht",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },
@@ -2264,7 +2264,7 @@
   "@feed_empty_description": {
     "description": "Description shown when feed is empty"
   },
-  "cta_create_community": "Create community...",
+  "cta_create_community": "Create community",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
@@ -2316,7 +2316,7 @@
   "@general_error_retry": {
     "description": "Generic retry message"
   },
-  "empty_all_chats_cta": "Maak een nieuwe chat...",
+  "empty_all_chats_cta": "Maak een nieuwe chat",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },

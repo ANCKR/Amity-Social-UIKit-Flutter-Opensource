@@ -461,7 +461,7 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "community_create": "Vytvořit komunitu...",
+  "community_create": "Vytvořit komunitu",
   "@community_create": {
     "description": "Label for create community button"
   },
@@ -1595,7 +1595,7 @@
   "@group_title": {
     "description": "Title for groups (replaces community_title)"
   },
-  "group_create": "Vytvořit skupinu...",
+  "group_create": "Vytvořit skupinu",
   "@group_create": {
     "description": "Label for create group button"
   },
@@ -1997,11 +1997,11 @@
   "@chat_archived_empty": {
     "description": "Translation for: No archive chat"
   },
-  "chat_add_member_title": "Přidat člena...",
+  "chat_add_member_title": "Přidat člena",
   "@chat_add_member_title": {
     "description": "Translation for: Add Member"
   },
-  "chat_add_member_button": "Přidat člena...",
+  "chat_add_member_button": "Přidat člena",
   "@chat_add_member_button": {
     "description": "Translation for: Add Member"
   },
@@ -2169,11 +2169,11 @@
   "@feed_empty_description": {
     "description": "Translation for: Find group or create your own"
   },
-  "feed_empty_explore_button": "Prozkoumat skupinu...",
+  "feed_empty_explore_button": "Prozkoumat skupinu",
   "@feed_empty_explore_button": {
     "description": "Translation for: Explore group"
   },
-  "feed_empty_create_button": "Vytvořit skupinu...",
+  "feed_empty_create_button": "Vytvořit skupinu",
   "@feed_empty_create_button": {
     "description": "Translation for: Create group"
   },
@@ -2284,11 +2284,11 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "cta_create_community": "Vytvořte komunitu...",
+  "cta_create_community": "Vytvořte komunitu",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "Vytvořit nový chat...",
+  "empty_all_chats_cta": "Vytvořit nový chat",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2336,7 +2336,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "Vytvořte skupinový chat...",
+  "empty_group_chats_cta": "Vytvořte skupinový chat",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },
@@ -2360,7 +2360,7 @@
   "@empty_my_communities_title": {
     "description": "Title for empty my communities list"
   },
-  "empty_search_cta": "Vymazat vyhledávání...",
+  "empty_search_cta": "Vymazat vyhledávání",
   "@empty_search_cta": {
     "description": "CTA button text for empty search results"
   },

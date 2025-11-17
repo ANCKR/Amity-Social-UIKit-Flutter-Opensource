@@ -391,7 +391,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get community_placeholder_members => '1,2 000 jäsentä';
 
   @override
-  String get community_create => 'Luo yhteisö...';
+  String get community_create => 'Luo yhteisö';
 
   @override
   String get community_name => 'Yhteisön nimi';
@@ -1652,10 +1652,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chat_archived_empty => 'Ei arkiston chattia...';
 
   @override
-  String get chat_add_member_title => 'Lisää jäsen...';
+  String get chat_add_member_title => 'Lisää jäsen';
 
   @override
-  String get chat_add_member_button => 'Lisää jäsen...';
+  String get chat_add_member_button => 'Lisää jäsen';
 
   @override
   String get chat_banned_users_empty =>
@@ -1799,7 +1799,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get feed_empty_description => 'Etsi ryhmä tai luo oma';
 
   @override
-  String get feed_empty_explore_button => 'Tutustu ryhmään...';
+  String get feed_empty_explore_button => 'Tutustu ryhmään';
 
   @override
   String get feed_empty_create_button => 'Luo ryhmä';
@@ -1856,7 +1856,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Aloita ryhmäkeskustelu ystävien kanssa';
 
   @override
-  String get empty_group_chats_cta => 'Luo ryhmäkeskustelu...';
+  String get empty_group_chats_cta => 'Luo ryhmäkeskustelu';
 
   @override
   String get empty_all_chats_title => 'Ei keskustelua vielä';
@@ -1865,7 +1865,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get empty_all_chats_description => 'Aloitetaan luomalla chat.';
 
   @override
-  String get empty_all_chats_cta => 'Luo uusi chat...';
+  String get empty_all_chats_cta => 'Luo uusi chat';
 
   @override
   String get empty_archived_chats_title => 'Ei arkiston chattia';
@@ -1887,7 +1887,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get empty_search_description => 'Kokeile etsiä eri avainsanoilla';
 
   @override
-  String get empty_search_cta => 'Tyhjennä haku...';
+  String get empty_search_cta => 'Tyhjennä haku';
 
   @override
   String get empty_category_communities_description =>
@@ -1908,7 +1908,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Ole ensimmäinen, joka luo yhteisön';
 
   @override
-  String get cta_create_community => 'Luo yhteisö...';
+  String get cta_create_community => 'Luo yhteisö';
 
   @override
   String get shared_post_media_indicator => 'Tämä julkaisu sisältää mediaa';
@@ -2351,7 +2351,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get community_placeholder_members => '1,2 000 jäsentä';
 
   @override
-  String get community_create => 'Luo yhteisö...';
+  String get community_create => 'Luo yhteisö';
 
   @override
   String get community_name => 'Yhteisön nimi';
@@ -3612,10 +3612,10 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get chat_archived_empty => 'Ei arkiston chattia...';
 
   @override
-  String get chat_add_member_title => 'Lisää jäsen...';
+  String get chat_add_member_title => 'Lisää jäsen';
 
   @override
-  String get chat_add_member_button => 'Lisää jäsen...';
+  String get chat_add_member_button => 'Lisää jäsen';
 
   @override
   String get chat_banned_users_empty =>
@@ -3759,7 +3759,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get feed_empty_description => 'Etsi ryhmä tai luo oma';
 
   @override
-  String get feed_empty_explore_button => 'Tutustu ryhmään...';
+  String get feed_empty_explore_button => 'Tutustu ryhmään';
 
   @override
   String get feed_empty_create_button => 'Luo ryhmä';
@@ -3816,7 +3816,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
       'Aloita ryhmäkeskustelu ystävien kanssa';
 
   @override
-  String get empty_group_chats_cta => 'Luo ryhmäkeskustelu...';
+  String get empty_group_chats_cta => 'Luo ryhmäkeskustelu';
 
   @override
   String get empty_all_chats_title => 'Ei keskustelua vielä';
@@ -3825,7 +3825,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get empty_all_chats_description => 'Aloitetaan luomalla chat.';
 
   @override
-  String get empty_all_chats_cta => 'Luo uusi chat...';
+  String get empty_all_chats_cta => 'Luo uusi chat';
 
   @override
   String get empty_archived_chats_title => 'Ei arkiston chattia';
@@ -3847,7 +3847,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
   String get empty_search_description => 'Kokeile etsiä eri avainsanoilla';
 
   @override
-  String get empty_search_cta => 'Tyhjennä haku...';
+  String get empty_search_cta => 'Tyhjennä haku';
 
   @override
   String get empty_category_communities_description =>
@@ -3868,7 +3868,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
       'Ole ensimmäinen, joka luo yhteisön';
 
   @override
-  String get cta_create_community => 'Luo yhteisö...';
+  String get cta_create_community => 'Luo yhteisö';
 
   @override
   String get shared_post_media_indicator => 'Tämä julkaisu sisältää mediaa';

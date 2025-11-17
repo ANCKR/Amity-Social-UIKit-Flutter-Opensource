@@ -2284,11 +2284,11 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "cta_create_community": "コミュニティを作成する...",
+  "cta_create_community": "コミュニティを作成する",
   "@cta_create_community": {
     "description": "CTA button text to create a community"
   },
-  "empty_all_chats_cta": "新しいチャットを作成する...",
+  "empty_all_chats_cta": "新しいチャットを作成する",
   "@empty_all_chats_cta": {
     "description": "CTA button text for empty all chats list"
   },
@@ -2336,7 +2336,7 @@
   "@empty_explore_title_no_communities": {
     "description": "Title for empty explore when there are no communities"
   },
-  "empty_group_chats_cta": "グループチャットを作成する...",
+  "empty_group_chats_cta": "グループチャットを作成する",
   "@empty_group_chats_cta": {
     "description": "CTA button text for empty group chats list"
   },

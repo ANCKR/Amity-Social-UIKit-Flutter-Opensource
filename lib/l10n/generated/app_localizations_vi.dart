@@ -392,7 +392,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get community_placeholder_members => '1,2K thành viên';
 
   @override
-  String get community_create => 'Tạo cộng đồng...';
+  String get community_create => 'Tạo cộng đồng';
 
   @override
   String get community_name => 'Tên cộng đồng';
@@ -1655,10 +1655,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ...';
 
   @override
-  String get chat_add_member_title => 'Thêm thành viên...';
+  String get chat_add_member_title => 'Thêm thành viên';
 
   @override
-  String get chat_add_member_button => 'Thêm thành viên...';
+  String get chat_add_member_button => 'Thêm thành viên';
 
   @override
   String get chat_banned_users_empty => 'Chưa có gì ở đây để xem...';
@@ -1801,7 +1801,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get feed_empty_description => 'Tìm nhóm hoặc tạo nhóm của riêng bạn';
 
   @override
-  String get feed_empty_explore_button => 'Khám phá nhóm...';
+  String get feed_empty_explore_button => 'Khám phá nhóm';
 
   @override
   String get feed_empty_create_button => 'Tạo nhóm';
@@ -1860,7 +1860,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bắt đầu trò chuyện nhóm với bạn bè';
 
   @override
-  String get empty_group_chats_cta => 'Tạo cuộc trò chuyện nhóm...';
+  String get empty_group_chats_cta => 'Tạo cuộc trò chuyện nhóm';
 
   @override
   String get empty_all_chats_title => 'Chưa có cuộc trò chuyện nào';
@@ -1870,7 +1870,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Hãy tạo cuộc trò chuyện để bắt đầu.';
 
   @override
-  String get empty_all_chats_cta => 'Tạo cuộc trò chuyện mới...';
+  String get empty_all_chats_cta => 'Tạo cuộc trò chuyện mới';
 
   @override
   String get empty_archived_chats_title => 'Không có cuộc trò chuyện lưu trữ';
@@ -1893,7 +1893,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Hãy thử tìm kiếm với các từ khóa khác nhau';
 
   @override
-  String get empty_search_cta => 'Xóa tìm kiếm...';
+  String get empty_search_cta => 'Xóa tìm kiếm';
 
   @override
   String get empty_category_communities_description =>
@@ -1914,7 +1914,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Hãy là người đầu tiên tạo ra một cộng đồng';
 
   @override
-  String get cta_create_community => 'Tạo cộng đồng...';
+  String get cta_create_community => 'Tạo cộng đồng';
 
   @override
   String get shared_post_media_indicator => 'Bài đăng này có chứa phương tiện';
@@ -2358,7 +2358,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get community_placeholder_members => '1,2K thành viên';
 
   @override
-  String get community_create => 'Tạo cộng đồng...';
+  String get community_create => 'Tạo cộng đồng';
 
   @override
   String get community_name => 'Tên cộng đồng';
@@ -3621,10 +3621,10 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get chat_archived_empty => 'Không có cuộc trò chuyện lưu trữ...';
 
   @override
-  String get chat_add_member_title => 'Thêm thành viên...';
+  String get chat_add_member_title => 'Thêm thành viên';
 
   @override
-  String get chat_add_member_button => 'Thêm thành viên...';
+  String get chat_add_member_button => 'Thêm thành viên';
 
   @override
   String get chat_banned_users_empty => 'Chưa có gì ở đây để xem...';
@@ -3767,7 +3767,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
   String get feed_empty_description => 'Tìm nhóm hoặc tạo nhóm của riêng bạn';
 
   @override
-  String get feed_empty_explore_button => 'Khám phá nhóm...';
+  String get feed_empty_explore_button => 'Khám phá nhóm';
 
   @override
   String get feed_empty_create_button => 'Tạo nhóm';
@@ -3826,7 +3826,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Bắt đầu trò chuyện nhóm với bạn bè';
 
   @override
-  String get empty_group_chats_cta => 'Tạo cuộc trò chuyện nhóm...';
+  String get empty_group_chats_cta => 'Tạo cuộc trò chuyện nhóm';
 
   @override
   String get empty_all_chats_title => 'Chưa có cuộc trò chuyện nào';
@@ -3836,7 +3836,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Hãy tạo cuộc trò chuyện để bắt đầu.';
 
   @override
-  String get empty_all_chats_cta => 'Tạo cuộc trò chuyện mới...';
+  String get empty_all_chats_cta => 'Tạo cuộc trò chuyện mới';
 
   @override
   String get empty_archived_chats_title => 'Không có cuộc trò chuyện lưu trữ';
@@ -3859,7 +3859,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Hãy thử tìm kiếm với các từ khóa khác nhau';
 
   @override
-  String get empty_search_cta => 'Xóa tìm kiếm...';
+  String get empty_search_cta => 'Xóa tìm kiếm';
 
   @override
   String get empty_category_communities_description =>
@@ -3880,7 +3880,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Hãy là người đầu tiên tạo ra một cộng đồng';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Bài đăng này có chứa phương tiện';

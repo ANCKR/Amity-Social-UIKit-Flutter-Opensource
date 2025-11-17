@@ -389,7 +389,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get community_placeholder_members => '1,2 тисячі учасників';
 
   @override
-  String get community_create => 'Створити спільноту...';
+  String get community_create => 'Створити спільноту';
 
   @override
   String get community_name => 'Назва спільноти';
@@ -1324,7 +1324,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get group_title => 'Група';
 
   @override
-  String get group_create => 'Створити групу...';
+  String get group_create => 'Створити групу';
 
   @override
   String get group_edit => 'Редагувати групу';
@@ -1652,10 +1652,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get chat_archived_empty => 'Немає архівного чату...';
 
   @override
-  String get chat_add_member_title => 'Додати учасника...';
+  String get chat_add_member_title => 'Додати учасника';
 
   @override
-  String get chat_add_member_button => 'Додати учасника...';
+  String get chat_add_member_button => 'Додати учасника';
 
   @override
   String get chat_banned_users_empty => 'Тут ще нічого не видно...';
@@ -1798,10 +1798,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get feed_empty_description => 'Знайдіть групу або створіть власну';
 
   @override
-  String get feed_empty_explore_button => 'Дослідити групу...';
+  String get feed_empty_explore_button => 'Дослідити групу';
 
   @override
-  String get feed_empty_create_button => 'Створити групу...';
+  String get feed_empty_create_button => 'Створити групу';
 
   @override
   String get explore_empty_title => 'Ваше дослідження порожнє';
@@ -1855,7 +1855,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get empty_group_chats_description => 'Почніть груповий чат з друзями';
 
   @override
-  String get empty_group_chats_cta => 'Створити груповий чат...';
+  String get empty_group_chats_cta => 'Створити груповий чат';
 
   @override
   String get empty_all_chats_title => 'Розмови ще немає';
@@ -1864,7 +1864,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get empty_all_chats_description => 'Давайте створимо чат, щоб почати.';
 
   @override
-  String get empty_all_chats_cta => 'Створити новий чат...';
+  String get empty_all_chats_cta => 'Створити новий чат';
 
   @override
   String get empty_archived_chats_title => 'Немає архівного чату';
@@ -1887,7 +1887,7 @@ class AppLocalizationsUk extends AppLocalizations {
       'Спробуйте шукати за іншими ключовими словами';
 
   @override
-  String get empty_search_cta => 'Очистити пошук...';
+  String get empty_search_cta => 'Очистити пошук';
 
   @override
   String get empty_category_communities_description =>
@@ -1908,7 +1908,7 @@ class AppLocalizationsUk extends AppLocalizations {
       'Створіть спільноту першим';
 
   @override
-  String get cta_create_community => 'Створіть спільноту...';
+  String get cta_create_community => 'Створіть спільноту';
 
   @override
   String get shared_post_media_indicator => 'Цей допис містить медіа';
@@ -2349,7 +2349,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get community_placeholder_members => '1,2 тисячі учасників';
 
   @override
-  String get community_create => 'Створити спільноту...';
+  String get community_create => 'Створити спільноту';
 
   @override
   String get community_name => 'Назва спільноти';
@@ -3284,7 +3284,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get group_title => 'Група';
 
   @override
-  String get group_create => 'Створити групу...';
+  String get group_create => 'Створити групу';
 
   @override
   String get group_edit => 'Редагувати групу';
@@ -3612,10 +3612,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get chat_archived_empty => 'Немає архівного чату...';
 
   @override
-  String get chat_add_member_title => 'Додати учасника...';
+  String get chat_add_member_title => 'Додати учасника';
 
   @override
-  String get chat_add_member_button => 'Додати учасника...';
+  String get chat_add_member_button => 'Додати учасника';
 
   @override
   String get chat_banned_users_empty => 'Тут ще нічого не видно...';
@@ -3758,10 +3758,10 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get feed_empty_description => 'Знайдіть групу або створіть власну';
 
   @override
-  String get feed_empty_explore_button => 'Дослідити групу...';
+  String get feed_empty_explore_button => 'Дослідити групу';
 
   @override
-  String get feed_empty_create_button => 'Створити групу...';
+  String get feed_empty_create_button => 'Створити групу';
 
   @override
   String get explore_empty_title => 'Ваше дослідження порожнє';
@@ -3815,7 +3815,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get empty_group_chats_description => 'Почніть груповий чат з друзями';
 
   @override
-  String get empty_group_chats_cta => 'Створити груповий чат...';
+  String get empty_group_chats_cta => 'Створити груповий чат';
 
   @override
   String get empty_all_chats_title => 'Розмови ще немає';
@@ -3824,7 +3824,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
   String get empty_all_chats_description => 'Давайте створимо чат, щоб почати.';
 
   @override
-  String get empty_all_chats_cta => 'Створити новий чат...';
+  String get empty_all_chats_cta => 'Створити новий чат';
 
   @override
   String get empty_archived_chats_title => 'Немає архівного чату';
@@ -3847,7 +3847,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
       'Спробуйте шукати за іншими ключовими словами';
 
   @override
-  String get empty_search_cta => 'Очистити пошук...';
+  String get empty_search_cta => 'Очистити пошук';
 
   @override
   String get empty_category_communities_description =>
@@ -3868,7 +3868,7 @@ class AppLocalizationsUkUa extends AppLocalizationsUk {
       'Створіть спільноту першим';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Цей допис містить медіа';

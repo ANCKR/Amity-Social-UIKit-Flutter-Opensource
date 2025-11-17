@@ -396,7 +396,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get community_placeholder_members => '1.2K anëtarë';
 
   @override
-  String get community_create => 'Krijo Komunitet...';
+  String get community_create => 'Krijo Komunitet';
 
   @override
   String get community_name => 'Emri i komunitetit';
@@ -1333,7 +1333,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get group_title => 'Grupi';
 
   @override
-  String get group_create => 'Krijo grup...';
+  String get group_create => 'Krijo grup';
 
   @override
   String get group_edit => 'Redakto grupin';
@@ -1661,10 +1661,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chat_archived_empty => 'Asnjë bisedë arkivore...';
 
   @override
-  String get chat_add_member_title => 'Shto Anëtar...';
+  String get chat_add_member_title => 'Shto Anëtar';
 
   @override
-  String get chat_add_member_button => 'Shto Anëtar...';
+  String get chat_add_member_button => 'Shto Anëtar';
 
   @override
   String get chat_banned_users_empty => 'Nuk ka asgjë për të parë ende këtu...';
@@ -1810,10 +1810,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get feed_empty_description => 'Gjeni grupin ose krijoni tuajin';
 
   @override
-  String get feed_empty_explore_button => 'Eksploroni grupin...';
+  String get feed_empty_explore_button => 'Eksploroni grupin';
 
   @override
-  String get feed_empty_create_button => 'Krijo grup...';
+  String get feed_empty_create_button => 'Krijo grup';
 
   @override
   String get explore_empty_title => 'Eksplorimi juaj është bosh';
@@ -1868,7 +1868,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Filloni një bisedë në grup me miqtë';
 
   @override
-  String get empty_group_chats_cta => 'Krijo bisedë në grup...';
+  String get empty_group_chats_cta => 'Krijo bisedë në grup';
 
   @override
   String get empty_all_chats_title => 'Asnjë bisedë ende';
@@ -1878,7 +1878,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Le të krijojmë bisedë për të filluar.';
 
   @override
-  String get empty_all_chats_cta => 'Krijo një bisedë të re...';
+  String get empty_all_chats_cta => 'Krijo një bisedë të re';
 
   @override
   String get empty_archived_chats_title => 'Asnjë bisedë arkivore';
@@ -1901,7 +1901,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Provoni të kërkoni me fjalë kyçe të ndryshme';
 
   @override
-  String get empty_search_cta => 'Pastro kërkimin...';
+  String get empty_search_cta => 'Pastro kërkimin';
 
   @override
   String get empty_category_communities_description =>
@@ -1922,7 +1922,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Bëhu i pari që krijon një komunitet';
 
   @override
-  String get cta_create_community => 'Krijo komunitet...';
+  String get cta_create_community => 'Krijo komunitet';
 
   @override
   String get shared_post_media_indicator => 'Ky postim përmban media';
@@ -2370,7 +2370,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get community_placeholder_members => '1.2K anëtarë';
 
   @override
-  String get community_create => 'Krijo Komunitet...';
+  String get community_create => 'Krijo Komunitet';
 
   @override
   String get community_name => 'Emri i komunitetit';
@@ -3307,7 +3307,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get group_title => 'Grupi';
 
   @override
-  String get group_create => 'Krijo grup...';
+  String get group_create => 'Krijo grup';
 
   @override
   String get group_edit => 'Redakto grupin';
@@ -3635,10 +3635,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get chat_archived_empty => 'Asnjë bisedë arkivore...';
 
   @override
-  String get chat_add_member_title => 'Shto Anëtar...';
+  String get chat_add_member_title => 'Shto Anëtar';
 
   @override
-  String get chat_add_member_button => 'Shto Anëtar...';
+  String get chat_add_member_button => 'Shto Anëtar';
 
   @override
   String get chat_banned_users_empty => 'Nuk ka asgjë për të parë ende këtu...';
@@ -3784,10 +3784,10 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
   String get feed_empty_description => 'Gjeni grupin ose krijoni tuajin';
 
   @override
-  String get feed_empty_explore_button => 'Eksploroni grupin...';
+  String get feed_empty_explore_button => 'Eksploroni grupin';
 
   @override
-  String get feed_empty_create_button => 'Krijo grup...';
+  String get feed_empty_create_button => 'Krijo grup';
 
   @override
   String get explore_empty_title => 'Eksplorimi juaj është bosh';
@@ -3842,7 +3842,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Filloni një bisedë në grup me miqtë';
 
   @override
-  String get empty_group_chats_cta => 'Krijo bisedë në grup...';
+  String get empty_group_chats_cta => 'Krijo bisedë në grup';
 
   @override
   String get empty_all_chats_title => 'Asnjë bisedë ende';
@@ -3852,7 +3852,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Le të krijojmë bisedë për të filluar.';
 
   @override
-  String get empty_all_chats_cta => 'Krijo një bisedë të re...';
+  String get empty_all_chats_cta => 'Krijo një bisedë të re';
 
   @override
   String get empty_archived_chats_title => 'Asnjë bisedë arkivore';
@@ -3875,7 +3875,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Provoni të kërkoni me fjalë kyçe të ndryshme';
 
   @override
-  String get empty_search_cta => 'Pastro kërkimin...';
+  String get empty_search_cta => 'Pastro kërkimin';
 
   @override
   String get empty_category_communities_description =>
@@ -3896,7 +3896,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Bëhu i pari që krijon një komunitet';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'Ky postim përmban media';

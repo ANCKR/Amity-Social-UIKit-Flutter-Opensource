@@ -1597,10 +1597,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get chat_archived_empty => 'アーカイブチャットはありません...';
 
   @override
-  String get chat_add_member_title => 'Add Member...';
+  String get chat_add_member_title => 'Add Member';
 
   @override
-  String get chat_add_member_button => 'Add Member...';
+  String get chat_add_member_button => 'Add Member';
 
   @override
   String get chat_banned_users_empty => 'ここにはまだ見るべきものはありません...';
@@ -1799,7 +1799,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get empty_group_chats_description => '友達とグループチャットを開始する';
 
   @override
-  String get empty_group_chats_cta => 'グループチャットを作成する...';
+  String get empty_group_chats_cta => 'グループチャットを作成する';
 
   @override
   String get empty_all_chats_title => 'まだ会話はありません';
@@ -1808,7 +1808,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get empty_all_chats_description => 'まずはチャットを作成しましょう。';
 
   @override
-  String get empty_all_chats_cta => '新しいチャットを作成する...';
+  String get empty_all_chats_cta => '新しいチャットを作成する';
 
   @override
   String get empty_archived_chats_title => 'アーカイブチャットはありません';
@@ -1849,7 +1849,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get empty_explore_description_no_communities => '最初にコミュニティを作成してみませんか';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'この投稿にはメディアが含まれています';
@@ -3694,7 +3694,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get empty_group_chats_description => '友達とグループチャットを開始する';
 
   @override
-  String get empty_group_chats_cta => 'グループチャットを作成する...';
+  String get empty_group_chats_cta => 'グループチャットを作成する';
 
   @override
   String get empty_all_chats_title => 'まだ会話はありません';
@@ -3703,7 +3703,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get empty_all_chats_description => 'まずはチャットを作成しましょう。';
 
   @override
-  String get empty_all_chats_cta => '新しいチャットを作成する...';
+  String get empty_all_chats_cta => '新しいチャットを作成する';
 
   @override
   String get empty_archived_chats_title => 'アーカイブチャットはありません';
@@ -3744,7 +3744,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get empty_explore_description_no_communities => '最初にコミュニティを作成してみませんか';
 
   @override
-  String get cta_create_community => 'コミュニティを作成する...';
+  String get cta_create_community => 'コミュニティを作成する';
 
   @override
   String get shared_post_media_indicator => 'この投稿にはメディアが含まれています';

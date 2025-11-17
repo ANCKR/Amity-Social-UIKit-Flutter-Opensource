@@ -392,7 +392,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get community_placeholder_members => '1.2K غړي';
 
   @override
-  String get community_create => 'ټولنه جوړه کړئ...';
+  String get community_create => 'ټولنه جوړه کړئ';
 
   @override
   String get community_name => 'د ټولنې نوم';
@@ -1324,7 +1324,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get group_title => 'ګروپ';
 
   @override
-  String get group_create => 'ګروپ جوړ کړئ...';
+  String get group_create => 'ګروپ جوړ کړئ';
 
   @override
   String get group_edit => 'ایډیټ ګروپ';
@@ -1652,10 +1652,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get chat_archived_empty => 'هیڅ آرشیف چیٹ نشته...';
 
   @override
-  String get chat_add_member_title => 'غړی اضافه کړئ...';
+  String get chat_add_member_title => 'غړی اضافه کړئ';
 
   @override
-  String get chat_add_member_button => 'غړی اضافه کړئ...';
+  String get chat_add_member_button => 'غړی اضافه کړئ';
 
   @override
   String get chat_banned_users_empty => 'دلته د لیدلو لپاره هیڅ شی نشته...';
@@ -1798,10 +1798,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get feed_empty_description => 'ګروپ ومومئ یا خپل ځان جوړ کړئ';
 
   @override
-  String get feed_empty_explore_button => 'ګروپ وپلټئ...';
+  String get feed_empty_explore_button => 'ګروپ وپلټئ';
 
   @override
-  String get feed_empty_create_button => 'ګروپ جوړ کړئ...';
+  String get feed_empty_create_button => 'ګروپ جوړ کړئ';
 
   @override
   String get explore_empty_title => 'ستاسو سپړنه خالي ده';
@@ -1854,7 +1854,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get empty_group_chats_description => 'د ملګرو سره ډله ایز چیٹ پیل کړئ';
 
   @override
-  String get empty_group_chats_cta => 'ډله ایز چیٹ جوړ کړئ...';
+  String get empty_group_chats_cta => 'ډله ایز چیٹ جوړ کړئ';
 
   @override
   String get empty_all_chats_title => 'تر اوسه خبرې نه دي شوي';
@@ -1864,7 +1864,7 @@ class AppLocalizationsPs extends AppLocalizations {
       'راځئ چې د پیل کولو لپاره چیټ جوړ کړو.';
 
   @override
-  String get empty_all_chats_cta => 'نوې چیٹ جوړ کړئ...';
+  String get empty_all_chats_cta => 'نوې چیٹ جوړ کړئ';
 
   @override
   String get empty_archived_chats_title => 'هیڅ آرشیف چیٹ نشته';
@@ -1908,7 +1908,7 @@ class AppLocalizationsPs extends AppLocalizations {
       'د ټولنې د جوړولو لپاره لومړی شئ';
 
   @override
-  String get cta_create_community => 'ټولنه جوړه کړئ...';
+  String get cta_create_community => 'ټولنه جوړه کړئ';
 
   @override
   String get shared_post_media_indicator => 'دا پوسټ رسنۍ لري';
@@ -2352,7 +2352,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get community_placeholder_members => '1.2K غړي';
 
   @override
-  String get community_create => 'ټولنه جوړه کړئ...';
+  String get community_create => 'ټولنه جوړه کړئ';
 
   @override
   String get community_name => 'د ټولنې نوم';
@@ -3284,7 +3284,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get group_title => 'ګروپ';
 
   @override
-  String get group_create => 'ګروپ جوړ کړئ...';
+  String get group_create => 'ګروپ جوړ کړئ';
 
   @override
   String get group_edit => 'ایډیټ ګروپ';
@@ -3612,10 +3612,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get chat_archived_empty => 'هیڅ آرشیف چیٹ نشته...';
 
   @override
-  String get chat_add_member_title => 'غړی اضافه کړئ...';
+  String get chat_add_member_title => 'غړی اضافه کړئ';
 
   @override
-  String get chat_add_member_button => 'غړی اضافه کړئ...';
+  String get chat_add_member_button => 'غړی اضافه کړئ';
 
   @override
   String get chat_banned_users_empty => 'دلته د لیدلو لپاره هیڅ شی نشته...';
@@ -3758,10 +3758,10 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get feed_empty_description => 'ګروپ ومومئ یا خپل ځان جوړ کړئ';
 
   @override
-  String get feed_empty_explore_button => 'ګروپ وپلټئ...';
+  String get feed_empty_explore_button => 'ګروپ وپلټئ';
 
   @override
-  String get feed_empty_create_button => 'ګروپ جوړ کړئ...';
+  String get feed_empty_create_button => 'ګروپ جوړ کړئ';
 
   @override
   String get explore_empty_title => 'ستاسو سپړنه خالي ده';
@@ -3815,7 +3815,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
   String get empty_group_chats_description => 'د ملګرو سره ډله ایز چیٹ پیل کړئ';
 
   @override
-  String get empty_group_chats_cta => 'ډله ایز چیٹ جوړ کړئ...';
+  String get empty_group_chats_cta => 'ډله ایز چیٹ جوړ کړئ';
 
   @override
   String get empty_all_chats_title => 'تر اوسه خبرې نه دي شوي';
@@ -3825,7 +3825,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
       'راځئ چې د پیل کولو لپاره چیټ جوړ کړو.';
 
   @override
-  String get empty_all_chats_cta => 'نوې چیٹ جوړ کړئ...';
+  String get empty_all_chats_cta => 'نوې چیٹ جوړ کړئ';
 
   @override
   String get empty_archived_chats_title => 'هیڅ آرشیف چیٹ نشته';
@@ -3869,7 +3869,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
       'د ټولنې د جوړولو لپاره لومړی شئ';
 
   @override
-  String get cta_create_community => 'Create community...';
+  String get cta_create_community => 'Create community';
 
   @override
   String get shared_post_media_indicator => 'دا پوسټ رسنۍ لري';

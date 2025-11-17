@@ -388,7 +388,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get community_placeholder_members => '1.2 ألف عضو';
 
   @override
-  String get community_create => 'إنشاء مجتمع...';
+  String get community_create => 'إنشاء مجتمع';
 
   @override
   String get community_name => 'اسم المجتمع';
@@ -1313,7 +1313,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get group_title => 'مجموعة';
 
   @override
-  String get group_create => 'إنشاء مجموعة...';
+  String get group_create => 'إنشاء مجموعة';
 
   @override
   String get group_edit => 'تحرير المجموعة';
@@ -1786,10 +1786,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get feed_empty_description => 'ابحث عن مجموعة أو أنشئ مجموعة خاصة بك';
 
   @override
-  String get feed_empty_explore_button => 'استكشاف المجموعة...';
+  String get feed_empty_explore_button => 'استكشاف المجموعة';
 
   @override
-  String get feed_empty_create_button => 'إنشاء مجموعة...';
+  String get feed_empty_create_button => 'إنشاء مجموعة';
 
   @override
   String get explore_empty_title => 'الاستكشاف الخاص بك فارغ';
@@ -1843,7 +1843,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get empty_group_chats_description => 'ابدأ محادثة جماعية مع الأصدقاء';
 
   @override
-  String get empty_group_chats_cta => 'إنشاء دردشة جماعية...';
+  String get empty_group_chats_cta => 'إنشاء دردشة جماعية';
 
   @override
   String get empty_all_chats_title => 'لا توجد محادثة بعد';
@@ -1852,7 +1852,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get empty_all_chats_description => 'لنقم بإنشاء دردشة للبدء.';
 
   @override
-  String get empty_all_chats_cta => 'إنشاء دردشة جديدة...';
+  String get empty_all_chats_cta => 'إنشاء دردشة جديدة';
 
   @override
   String get empty_archived_chats_title => 'لا توجد دردشة أرشيفية';
@@ -1895,7 +1895,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'كن أول من أنشأ المجتمع';
 
   @override
-  String get cta_create_community => 'إنشاء المجتمع...';
+  String get cta_create_community => 'إنشاء المجتمع';
 
   @override
   String get shared_post_media_indicator => 'تحتوي هذه المشاركة على وسائط';
@@ -2335,7 +2335,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get community_placeholder_members => '1.2 ألف عضو';
 
   @override
-  String get community_create => 'إنشاء مجتمع...';
+  String get community_create => 'إنشاء مجتمع';
 
   @override
   String get community_name => 'اسم المجتمع';
@@ -3260,7 +3260,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get group_title => 'مجموعة';
 
   @override
-  String get group_create => 'إنشاء مجموعة...';
+  String get group_create => 'إنشاء مجموعة';
 
   @override
   String get group_edit => 'تحرير المجموعة';
@@ -3733,10 +3733,10 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get feed_empty_description => 'ابحث عن مجموعة أو أنشئ مجموعة خاصة بك';
 
   @override
-  String get feed_empty_explore_button => 'استكشاف المجموعة...';
+  String get feed_empty_explore_button => 'استكشاف المجموعة';
 
   @override
-  String get feed_empty_create_button => 'إنشاء مجموعة...';
+  String get feed_empty_create_button => 'إنشاء مجموعة';
 
   @override
   String get explore_empty_title => 'الاستكشاف الخاص بك فارغ';
@@ -3790,7 +3790,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get empty_group_chats_description => 'ابدأ محادثة جماعية مع الأصدقاء';
 
   @override
-  String get empty_group_chats_cta => 'إنشاء دردشة جماعية...';
+  String get empty_group_chats_cta => 'إنشاء دردشة جماعية';
 
   @override
   String get empty_all_chats_title => 'لا توجد محادثة بعد';
@@ -3799,7 +3799,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
   String get empty_all_chats_description => 'لنقم بإنشاء دردشة للبدء.';
 
   @override
-  String get empty_all_chats_cta => 'إنشاء دردشة جديدة...';
+  String get empty_all_chats_cta => 'إنشاء دردشة جديدة';
 
   @override
   String get empty_archived_chats_title => 'لا توجد دردشة أرشيفية';
@@ -3842,7 +3842,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
       'كن أول من أنشأ المجتمع';
 
   @override
-  String get cta_create_community => 'إنشاء المجتمع...';
+  String get cta_create_community => 'إنشاء المجتمع';
 
   @override
   String get shared_post_media_indicator => 'تحتوي هذه المشاركة على وسائط';

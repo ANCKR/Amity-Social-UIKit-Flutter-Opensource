@@ -393,7 +393,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get community_placeholder_members => '1,2 tuhat liiget';
 
   @override
-  String get community_create => 'Looge kogukond...';
+  String get community_create => 'Looge kogukond';
 
   @override
   String get community_name => 'kogukonna nimi';
@@ -1657,10 +1657,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get chat_archived_empty => 'Arhiivivestlust pole...';
 
   @override
-  String get chat_add_member_title => 'Lisa liige...';
+  String get chat_add_member_title => 'Lisa liige';
 
   @override
-  String get chat_add_member_button => 'Lisa liige...';
+  String get chat_add_member_button => 'Lisa liige';
 
   @override
   String get chat_banned_users_empty => 'Siin pole veel midagi näha...';
@@ -1804,7 +1804,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get feed_empty_description => 'Leidke rühm või looge oma';
 
   @override
-  String get feed_empty_explore_button => 'Uurige rühma...';
+  String get feed_empty_explore_button => 'Uurige rühma';
 
   @override
   String get feed_empty_create_button => 'Loo grupp';
@@ -1861,7 +1861,7 @@ class AppLocalizationsEt extends AppLocalizations {
       'Alustage sõpradega grupivestlust';
 
   @override
-  String get empty_group_chats_cta => 'Looge grupivestlus...';
+  String get empty_group_chats_cta => 'Looge grupivestlus';
 
   @override
   String get empty_all_chats_title => 'Vestlust veel pole';
@@ -1870,7 +1870,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get empty_all_chats_description => 'Alustamiseks loome vestluse.';
 
   @override
-  String get empty_all_chats_cta => 'Loo uus vestlus...';
+  String get empty_all_chats_cta => 'Loo uus vestlus';
 
   @override
   String get empty_archived_chats_title => 'Arhiivivestlust pole';
@@ -1893,7 +1893,7 @@ class AppLocalizationsEt extends AppLocalizations {
       'Proovige otsida erinevate märksõnadega';
 
   @override
-  String get empty_search_cta => 'Tühjenda otsing...';
+  String get empty_search_cta => 'Tühjenda otsing';
 
   @override
   String get empty_category_communities_description =>
@@ -1914,7 +1914,7 @@ class AppLocalizationsEt extends AppLocalizations {
       'Olge esimene, kes loob kogukonna';
 
   @override
-  String get cta_create_community => 'Looge kogukond...';
+  String get cta_create_community => 'Looge kogukond';
 
   @override
   String get shared_post_media_indicator => 'See postitus sisaldab meediat';
@@ -2359,7 +2359,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get community_placeholder_members => '1,2 tuhat liiget';
 
   @override
-  String get community_create => 'Looge kogukond...';
+  String get community_create => 'Looge kogukond';
 
   @override
   String get community_name => 'kogukonna nimi';
@@ -3623,10 +3623,10 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get chat_archived_empty => 'Arhiivivestlust pole...';
 
   @override
-  String get chat_add_member_title => 'Lisa liige...';
+  String get chat_add_member_title => 'Lisa liige';
 
   @override
-  String get chat_add_member_button => 'Lisa liige...';
+  String get chat_add_member_button => 'Lisa liige';
 
   @override
   String get chat_banned_users_empty => 'Siin pole veel midagi näha...';
@@ -3770,7 +3770,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get feed_empty_description => 'Leidke rühm või looge oma';
 
   @override
-  String get feed_empty_explore_button => 'Uurige rühma...';
+  String get feed_empty_explore_button => 'Uurige rühma';
 
   @override
   String get feed_empty_create_button => 'Loo grupp';
@@ -3827,7 +3827,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
       'Alustage sõpradega grupivestlust';
 
   @override
-  String get empty_group_chats_cta => 'Looge grupivestlus...';
+  String get empty_group_chats_cta => 'Looge grupivestlus';
 
   @override
   String get empty_all_chats_title => 'Vestlust veel pole';
@@ -3836,7 +3836,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
   String get empty_all_chats_description => 'Alustamiseks loome vestluse.';
 
   @override
-  String get empty_all_chats_cta => 'Loo uus vestlus...';
+  String get empty_all_chats_cta => 'Loo uus vestlus';
 
   @override
   String get empty_archived_chats_title => 'Arhiivivestlust pole';
@@ -3859,7 +3859,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
       'Proovige otsida erinevate märksõnadega';
 
   @override
-  String get empty_search_cta => 'Tühjenda otsing...';
+  String get empty_search_cta => 'Tühjenda otsing';
 
   @override
   String get empty_category_communities_description =>
@@ -3880,7 +3880,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
       'Olge esimene, kes loob kogukonna';
 
   @override
-  String get cta_create_community => 'Looge kogukond...';
+  String get cta_create_community => 'Looge kogukond';
 
   @override
   String get shared_post_media_indicator => 'See postitus sisaldab meediat';
