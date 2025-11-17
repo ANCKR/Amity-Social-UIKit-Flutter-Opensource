@@ -1852,7 +1852,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Bergabunglah dengan komunitas untuk melihatnya di sini';
 
   @override
-  String get empty_my_communities_cta => 'Jelajahi komunitas...';
+  String get empty_my_communities_cta => 'Jelajahi komunitas';
 
   @override
   String get empty_group_chats_title => 'Belum ada obrolan grup';
@@ -3819,7 +3819,7 @@ class AppLocalizationsIdId extends AppLocalizationsId {
       'Bergabunglah dengan komunitas untuk melihatnya di sini';
 
   @override
-  String get empty_my_communities_cta => 'Jelajahi komunitas...';
+  String get empty_my_communities_cta => 'Jelajahi komunitas';
 
   @override
   String get empty_group_chats_title => 'Belum ada obrolan grup';

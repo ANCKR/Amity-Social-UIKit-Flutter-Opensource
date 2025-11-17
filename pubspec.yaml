@@ -48,6 +48,7 @@ dependencies:
   video_thumbnail: ^0.5.3
   mime: ^1.0.4
   file_picker: ^9.0.2
+  auto_size_text: ^3.0.0
   open_file: ^3.5.10
   flutter_svg: ^2.0.9
   permission_handler: ^11.3.1

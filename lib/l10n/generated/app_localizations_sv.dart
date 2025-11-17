@@ -1857,7 +1857,7 @@ class AppLocalizationsSv extends AppLocalizations {
       'Gå med i grupper för att se dem här';
 
   @override
-  String get empty_my_communities_cta => 'Utforska samhällen...';
+  String get empty_my_communities_cta => 'Utforska samhällen';
 
   @override
   String get empty_group_chats_title => 'Inga gruppchattar än';
@@ -3828,7 +3828,7 @@ class AppLocalizationsSvSe extends AppLocalizationsSv {
       'Gå med i grupper för att se dem här';
 
   @override
-  String get empty_my_communities_cta => 'Utforska samhällen...';
+  String get empty_my_communities_cta => 'Utforska samhällen';
 
   @override
   String get empty_group_chats_title => 'Inga gruppchattar än';

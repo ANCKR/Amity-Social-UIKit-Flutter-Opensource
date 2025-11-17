@@ -2,6 +2,7 @@ import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 /// Standardized empty state widget for consistent UI across the app
 class AmityEmptyStateWidget extends StatelessWidget {
@@ -13,7 +14,8 @@ class AmityEmptyStateWidget extends StatelessWidget {
   final String? primaryButtonIcon; // SVG asset path for button icon
   final String? secondaryButtonText;
   final VoidCallback? onSecondaryButtonTap;
-  final String? customEmptyIcon; // Custom empty state icon (defaults to global feed icon)
+  final String?
+      customEmptyIcon; // Custom empty state icon (defaults to global feed icon)
 
   const AmityEmptyStateWidget({
     super.key,
@@ -47,17 +49,26 @@ class AmityEmptyStateWidget extends StatelessWidget {
             const SizedBox(height: 16),
             SizedBox(
               width: 252,
-              child: Text(
+              child: AutoSizeText(
                 title,
                 textAlign: TextAlign.center,
                 style: AmityTextStyle.titleBold(theme.baseColorShade1),
+                maxLines: 2,
+                minFontSize: 14,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
             const SizedBox(height: 4),
-            Text(
-              description,
-              textAlign: TextAlign.center,
-              style: AmityTextStyle.caption(theme.baseColorShade1),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: AutoSizeText(
+                description,
+                textAlign: TextAlign.center,
+                style: AmityTextStyle.caption(theme.baseColorShade1),
+                maxLines: 3,
+                minFontSize: 11,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
             const SizedBox(height: 17),
             Column(
@@ -81,7 +92,7 @@ class AmityEmptyStateWidget extends StatelessWidget {
     return GestureDetector(
       onTap: onPrimaryButtonTap,
       child: Container(
-        width: 220,
+        width: 240,
         padding: const EdgeInsets.only(
           top: 10,
           left: 12,
@@ -95,7 +106,7 @@ class AmityEmptyStateWidget extends StatelessWidget {
           ),
         ),
         child: Row(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -117,9 +128,15 @@ class AmityEmptyStateWidget extends StatelessWidget {
               ),
               const SizedBox(width: 4),
             ],
-            Text(
-              primaryButtonText!,
-              style: AmityTextStyle.subtitleBold(Colors.white),
+            Flexible(
+              child: AutoSizeText(
+                primaryButtonText!,
+                style: AmityTextStyle.subtitleBold(Colors.white),
+                maxLines: 1,
+                minFontSize: 10,
+                maxFontSize: 14,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ],
         ),
@@ -131,16 +148,22 @@ class AmityEmptyStateWidget extends StatelessWidget {
     return GestureDetector(
       onTap: onSecondaryButtonTap,
       child: Container(
-        width: 220,
+        width: 240,
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         child: Row(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              secondaryButtonText!,
-              style: AmityTextStyle.subtitle(theme.primaryColor),
+            Flexible(
+              child: AutoSizeText(
+                secondaryButtonText!,
+                style: AmityTextStyle.subtitle(theme.primaryColor),
+                maxLines: 1,
+                minFontSize: 10,
+                maxFontSize: 14,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ],
         ),

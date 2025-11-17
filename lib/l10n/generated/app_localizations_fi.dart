@@ -1846,7 +1846,7 @@ class AppLocalizationsFi extends AppLocalizations {
       'Liity yhteisöihin nähdäksesi ne täällä';
 
   @override
-  String get empty_my_communities_cta => 'Tutustu yhteisöihin...';
+  String get empty_my_communities_cta => 'Tutustu yhteisöihin';
 
   @override
   String get empty_group_chats_title => 'Ei vielä ryhmäkeskusteluja';
@@ -3806,7 +3806,7 @@ class AppLocalizationsFiFi extends AppLocalizationsFi {
       'Liity yhteisöihin nähdäksesi ne täällä';
 
   @override
-  String get empty_my_communities_cta => 'Tutustu yhteisöihin...';
+  String get empty_my_communities_cta => 'Tutustu yhteisöihin';
 
   @override
   String get empty_group_chats_title => 'Ei vielä ryhmäkeskusteluja';

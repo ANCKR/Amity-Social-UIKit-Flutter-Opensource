@@ -1843,7 +1843,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Sluit je aan bij communities om ze hier te bekijken';
 
   @override
-  String get empty_my_communities_cta => 'Ontdek gemeenschappen...';
+  String get empty_my_communities_cta => 'Ontdek gemeenschappen';
 
   @override
   String get empty_group_chats_title => 'Geen groepen';
@@ -3804,7 +3804,7 @@ class AppLocalizationsNlNl extends AppLocalizationsNl {
       'Sluit je aan bij communities om ze hier te bekijken';
 
   @override
-  String get empty_my_communities_cta => 'Ontdek gemeenschappen...';
+  String get empty_my_communities_cta => 'Ontdek gemeenschappen';
 
   @override
   String get empty_group_chats_title => 'Geen groepen';

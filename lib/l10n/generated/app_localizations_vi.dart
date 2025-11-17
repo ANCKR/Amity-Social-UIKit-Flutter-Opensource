@@ -1850,7 +1850,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Tham gia cộng đồng để xem chúng ở đây';
 
   @override
-  String get empty_my_communities_cta => 'Khám phá cộng đồng...';
+  String get empty_my_communities_cta => 'Khám phá cộng đồng';
 
   @override
   String get empty_group_chats_title => 'Chưa có cuộc trò chuyện nhóm nào';
@@ -3816,7 +3816,7 @@ class AppLocalizationsViVn extends AppLocalizationsVi {
       'Tham gia cộng đồng để xem chúng ở đây';
 
   @override
-  String get empty_my_communities_cta => 'Khám phá cộng đồng...';
+  String get empty_my_communities_cta => 'Khám phá cộng đồng';
 
   @override
   String get empty_group_chats_title => 'Chưa có cuộc trò chuyện nhóm nào';

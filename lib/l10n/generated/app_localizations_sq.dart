@@ -1858,7 +1858,7 @@ class AppLocalizationsSq extends AppLocalizations {
       'Bashkohuni me komunitetet për t\'i parë ato këtu';
 
   @override
-  String get empty_my_communities_cta => 'Eksploroni komunitetet...';
+  String get empty_my_communities_cta => 'Eksploroni komunitetet';
 
   @override
   String get empty_group_chats_title => 'Nuk ka ende biseda në grup';
@@ -3832,7 +3832,7 @@ class AppLocalizationsSqAl extends AppLocalizationsSq {
       'Bashkohuni me komunitetet për t\'i parë ato këtu';
 
   @override
-  String get empty_my_communities_cta => 'Eksploroni komunitetet...';
+  String get empty_my_communities_cta => 'Eksploroni komunitetet';
 
   @override
   String get empty_group_chats_title => 'Nuk ka ende biseda në grup';

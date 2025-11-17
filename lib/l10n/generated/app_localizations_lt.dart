@@ -1847,7 +1847,7 @@ class AppLocalizationsLt extends AppLocalizations {
       'Prisijunkite prie bendruomenių, kad pamatytumėte jas čia';
 
   @override
-  String get empty_my_communities_cta => 'Tyrinėkite bendruomenes...';
+  String get empty_my_communities_cta => 'Tyrinėkite bendruomenes';
 
   @override
   String get empty_group_chats_title => 'Grupinių pokalbių dar nėra';
@@ -3811,7 +3811,7 @@ class AppLocalizationsLtLt extends AppLocalizationsLt {
       'Prisijunkite prie bendruomenių, kad pamatytumėte jas čia';
 
   @override
-  String get empty_my_communities_cta => 'Tyrinėkite bendruomenes...';
+  String get empty_my_communities_cta => 'Tyrinėkite bendruomenes';
 
   @override
   String get empty_group_chats_title => 'Grupinių pokalbių dar nėra';

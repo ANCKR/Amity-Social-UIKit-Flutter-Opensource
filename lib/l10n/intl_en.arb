@@ -2233,7 +2233,7 @@
   "@empty_my_communities_description": {
     "description": "Description for empty my communities list"
   },
-  "empty_my_communities_cta": "Explore communities...",
+  "empty_my_communities_cta": "Explore communities",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },

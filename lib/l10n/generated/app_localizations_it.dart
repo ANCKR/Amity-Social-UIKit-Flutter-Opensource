@@ -1852,7 +1852,7 @@ class AppLocalizationsIt extends AppLocalizations {
       'Unisciti alle community per vederli qui';
 
   @override
-  String get empty_my_communities_cta => 'Esplora le comunità...';
+  String get empty_my_communities_cta => 'Esplora le comunità';
 
   @override
   String get empty_group_chats_title => 'Nessun gruppo';
@@ -3821,7 +3821,7 @@ class AppLocalizationsItIt extends AppLocalizationsIt {
       'Unisciti alle community per vederli qui';
 
   @override
-  String get empty_my_communities_cta => 'Esplora le comunità...';
+  String get empty_my_communities_cta => 'Esplora le comunità';
 
   @override
   String get empty_group_chats_title => 'Nessun gruppo';

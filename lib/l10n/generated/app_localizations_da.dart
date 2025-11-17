@@ -1851,7 +1851,7 @@ class AppLocalizationsDa extends AppLocalizations {
       'Tilmeld dig fællesskaber for at se dem her';
 
   @override
-  String get empty_my_communities_cta => 'Udforsk fællesskaber...';
+  String get empty_my_communities_cta => 'Udforsk fællesskaber';
 
   @override
   String get empty_group_chats_title => 'Ingen gruppechats endnu';
@@ -3815,7 +3815,7 @@ class AppLocalizationsDaDk extends AppLocalizationsDa {
       'Tilmeld dig fællesskaber for at se dem her';
 
   @override
-  String get empty_my_communities_cta => 'Udforsk fællesskaber...';
+  String get empty_my_communities_cta => 'Udforsk fællesskaber';
 
   @override
   String get empty_group_chats_title => 'Ingen gruppechats endnu';

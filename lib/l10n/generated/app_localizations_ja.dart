@@ -1790,7 +1790,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get empty_my_communities_description => 'コミュニティに参加してここで確認してください';
 
   @override
-  String get empty_my_communities_cta => 'コミュニティを探索する...';
+  String get empty_my_communities_cta => 'コミュニティを探索する';
 
   @override
   String get empty_group_chats_title => 'グループチャットはまだありません';
@@ -3685,7 +3685,7 @@ class AppLocalizationsJaJp extends AppLocalizationsJa {
   String get empty_my_communities_description => 'コミュニティに参加してここで確認してください';
 
   @override
-  String get empty_my_communities_cta => 'コミュニティを探索する...';
+  String get empty_my_communities_cta => 'コミュニティを探索する';
 
   @override
   String get empty_group_chats_title => 'グループチャットはまだありません';

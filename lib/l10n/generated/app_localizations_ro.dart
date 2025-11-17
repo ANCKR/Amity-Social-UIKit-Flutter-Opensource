@@ -1863,7 +1863,7 @@ class AppLocalizationsRo extends AppLocalizations {
       'Alăturați-vă comunităților pentru a le vedea aici';
 
   @override
-  String get empty_my_communities_cta => 'Explorați comunitățile...';
+  String get empty_my_communities_cta => 'Explorați comunitățile';
 
   @override
   String get empty_group_chats_title => 'Încă nu există discuții de grup';
@@ -3845,7 +3845,7 @@ class AppLocalizationsRoRo extends AppLocalizationsRo {
       'Alăturați-vă comunităților pentru a le vedea aici';
 
   @override
-  String get empty_my_communities_cta => 'Explorați comunitățile...';
+  String get empty_my_communities_cta => 'Explorați comunitățile';
 
   @override
   String get empty_group_chats_title => 'Încă nu există discuții de grup';

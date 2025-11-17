@@ -1856,7 +1856,7 @@ class AppLocalizationsSo extends AppLocalizations {
       'Ku soo biir bulshooyinka si aad halkan ugu aragto';
 
   @override
-  String get empty_my_communities_cta => 'Sahamiyaan bulshooyinka...';
+  String get empty_my_communities_cta => 'Sahamiyaan bulshooyinka';
 
   @override
   String get empty_group_chats_title => 'Ma jiro koox koox ah weli';
@@ -3837,7 +3837,7 @@ class AppLocalizationsSoSo extends AppLocalizationsSo {
       'Ku soo biir bulshooyinka si aad halkan ugu aragto';
 
   @override
-  String get empty_my_communities_cta => 'Sahamiyaan bulshooyinka...';
+  String get empty_my_communities_cta => 'Sahamiyaan bulshooyinka';
 
   @override
   String get empty_group_chats_title => 'Ma jiro koox koox ah weli';

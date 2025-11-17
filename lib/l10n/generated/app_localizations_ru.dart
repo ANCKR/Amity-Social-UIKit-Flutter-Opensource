@@ -1845,7 +1845,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Присоединяйтесь к сообществам, чтобы увидеть их здесь.';
 
   @override
-  String get empty_my_communities_cta => 'Исследуйте сообщества...';
+  String get empty_my_communities_cta => 'Исследуйте сообщества';
 
   @override
   String get empty_group_chats_title => 'Нет групп';
@@ -3807,7 +3807,7 @@ class AppLocalizationsRuRu extends AppLocalizationsRu {
       'Присоединяйтесь к сообществам, чтобы увидеть их здесь.';
 
   @override
-  String get empty_my_communities_cta => 'Исследуйте сообщества...';
+  String get empty_my_communities_cta => 'Исследуйте сообщества';
 
   @override
   String get empty_group_chats_title => 'Нет групп';

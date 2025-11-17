@@ -1851,7 +1851,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'Pripojte sa ku komunitám a uvidíte ich tu';
 
   @override
-  String get empty_my_communities_cta => 'Preskúmajte komunity...';
+  String get empty_my_communities_cta => 'Preskúmajte komunity';
 
   @override
   String get empty_group_chats_title => 'Zatiaľ žiadne skupinové rozhovory';
@@ -3822,7 +3822,7 @@ class AppLocalizationsSkSk extends AppLocalizationsSk {
       'Pripojte sa ku komunitám a uvidíte ich tu';
 
   @override
-  String get empty_my_communities_cta => 'Preskúmajte komunity...';
+  String get empty_my_communities_cta => 'Preskúmajte komunity';
 
   @override
   String get empty_group_chats_title => 'Zatiaľ žiadne skupinové rozhovory';

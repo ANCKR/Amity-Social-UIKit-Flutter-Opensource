@@ -1855,7 +1855,7 @@ class AppLocalizationsSr extends AppLocalizations {
       'Придружите се заједницама да бисте их видели овде';
 
   @override
-  String get empty_my_communities_cta => 'Истражите заједнице...';
+  String get empty_my_communities_cta => 'Истражите заједнице';
 
   @override
   String get empty_group_chats_title => 'Још нема групних ћаскања';
@@ -3828,7 +3828,7 @@ class AppLocalizationsSrRs extends AppLocalizationsSr {
       'Придружите се заједницама да бисте их видели овде';
 
   @override
-  String get empty_my_communities_cta => 'Истражите заједнице...';
+  String get empty_my_communities_cta => 'Истражите заједнице';
 
   @override
   String get empty_group_chats_title => 'Још нема групних ћаскања';

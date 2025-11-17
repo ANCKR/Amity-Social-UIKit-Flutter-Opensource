@@ -1851,7 +1851,7 @@ class AppLocalizationsEt extends AppLocalizations {
       'Liituge kogukondadega, et neid siin näha';
 
   @override
-  String get empty_my_communities_cta => 'Avastage kogukondi...';
+  String get empty_my_communities_cta => 'Avastage kogukondi';
 
   @override
   String get empty_group_chats_title => 'Grupivestlusi veel pole';
@@ -3817,7 +3817,7 @@ class AppLocalizationsEtEe extends AppLocalizationsEt {
       'Liituge kogukondadega, et neid siin näha';
 
   @override
-  String get empty_my_communities_cta => 'Avastage kogukondi...';
+  String get empty_my_communities_cta => 'Avastage kogukondi';
 
   @override
   String get empty_group_chats_title => 'Grupivestlusi veel pole';

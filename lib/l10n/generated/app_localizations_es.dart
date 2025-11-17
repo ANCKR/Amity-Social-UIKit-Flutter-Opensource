@@ -1846,7 +1846,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Únete a comunidades para verlas aquí';
 
   @override
-  String get empty_my_communities_cta => 'Explorar comunidades...';
+  String get empty_my_communities_cta => 'Explorar comunidades';
 
   @override
   String get empty_group_chats_title => 'Sin chats grupales';
@@ -3809,7 +3809,7 @@ class AppLocalizationsEsEs extends AppLocalizationsEs {
       'Únase a las comunidades para verlos aquí';
 
   @override
-  String get empty_my_communities_cta => 'Explorar comunidades...';
+  String get empty_my_communities_cta => 'Explorar comunidades';
 
   @override
   String get empty_group_chats_title => 'Sin chats grupales';

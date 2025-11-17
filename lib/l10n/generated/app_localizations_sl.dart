@@ -1847,7 +1847,7 @@ class AppLocalizationsSl extends AppLocalizations {
       'Pridružite se skupnostim, da jih vidite tukaj';
 
   @override
-  String get empty_my_communities_cta => 'Raziščite skupnosti...';
+  String get empty_my_communities_cta => 'Raziščite skupnosti';
 
   @override
   String get empty_group_chats_title => 'Ni še nobenih skupinskih klepetov';
@@ -3813,7 +3813,7 @@ class AppLocalizationsSlSi extends AppLocalizationsSl {
       'Pridružite se skupnostim, da jih vidite tukaj';
 
   @override
-  String get empty_my_communities_cta => 'Raziščite skupnosti...';
+  String get empty_my_communities_cta => 'Raziščite skupnosti';
 
   @override
   String get empty_group_chats_title => 'Ni še nobenih skupinskih klepetov';

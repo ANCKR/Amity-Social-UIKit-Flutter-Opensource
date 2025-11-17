@@ -1845,7 +1845,7 @@ class AppLocalizationsPs extends AppLocalizations {
       'د ټولنو سره یوځای شئ ترڅو دوی دلته وګورئ';
 
   @override
-  String get empty_my_communities_cta => 'ټولنې وپلټئ...';
+  String get empty_my_communities_cta => 'ټولنې وپلټئ';
 
   @override
   String get empty_group_chats_title => 'تر اوسه هیڅ ګروپ چیټ نشته';
@@ -3806,7 +3806,7 @@ class AppLocalizationsPsAf extends AppLocalizationsPs {
       'د ټولنو سره یوځای شئ ترڅو دوی دلته وګورئ';
 
   @override
-  String get empty_my_communities_cta => 'ټولنې وپلټئ...';
+  String get empty_my_communities_cta => 'ټولنې وپلټئ';
 
   @override
   String get empty_group_chats_title => 'تر اوسه هیڅ ګروپ چیټ نشته';

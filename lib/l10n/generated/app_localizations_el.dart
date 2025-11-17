@@ -1870,7 +1870,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Εγγραφείτε σε κοινότητες για να τα δείτε εδώ';
 
   @override
-  String get empty_my_communities_cta => 'Εξερευνήστε τις κοινότητες...';
+  String get empty_my_communities_cta => 'Εξερευνήστε τις κοινότητες';
 
   @override
   String get empty_group_chats_title =>
@@ -3861,7 +3861,7 @@ class AppLocalizationsElGr extends AppLocalizationsEl {
       'Εγγραφείτε σε κοινότητες για να τα δείτε εδώ';
 
   @override
-  String get empty_my_communities_cta => 'Εξερευνήστε τις κοινότητες...';
+  String get empty_my_communities_cta => 'Εξερευνήστε τις κοινότητες';
 
   @override
   String get empty_group_chats_title =>

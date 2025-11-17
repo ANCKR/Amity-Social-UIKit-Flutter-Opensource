@@ -1835,7 +1835,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'הצטרף לקהילות כדי לראות אותם כאן';
 
   @override
-  String get empty_my_communities_cta => 'חקור קהילות...';
+  String get empty_my_communities_cta => 'חקור קהילות';
 
   @override
   String get empty_group_chats_title => 'עדיין אין צ\'אטים קבוצתיים';
@@ -3782,7 +3782,7 @@ class AppLocalizationsHeIl extends AppLocalizationsHe {
       'הצטרף לקהילות כדי לראות אותם כאן';
 
   @override
-  String get empty_my_communities_cta => 'חקור קהילות...';
+  String get empty_my_communities_cta => 'חקור קהילות';
 
   @override
   String get empty_group_chats_title => 'עדיין אין צ\'אטים קבוצתיים';

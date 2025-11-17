@@ -2308,7 +2308,7 @@
   "@chat_last_moderator_message": {
     "description": "Message shown to last moderator"
   },
-  "empty_my_communities_cta": "Истражите заједнице...",
+  "empty_my_communities_cta": "Истражите заједнице",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },

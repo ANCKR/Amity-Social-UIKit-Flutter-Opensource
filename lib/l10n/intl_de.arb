@@ -2164,7 +2164,7 @@
   "@general_open_settings": {
     "description": "Button text to open device settings"
   },
-  "empty_my_communities_cta": "Entdecken Sie Communities...",
+  "empty_my_communities_cta": "Entdecken Sie Communities",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },

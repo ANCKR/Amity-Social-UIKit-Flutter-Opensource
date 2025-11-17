@@ -1848,7 +1848,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Onları burada görmek için topluluklara katılın';
 
   @override
-  String get empty_my_communities_cta => 'Toplulukları keşfedin...';
+  String get empty_my_communities_cta => 'Toplulukları keşfedin';
 
   @override
   String get empty_group_chats_title => 'Henüz grup sohbeti yok';
@@ -3811,7 +3811,7 @@ class AppLocalizationsTrTr extends AppLocalizationsTr {
       'Onları burada görmek için topluluklara katılın';
 
   @override
-  String get empty_my_communities_cta => 'Toplulukları keşfedin...';
+  String get empty_my_communities_cta => 'Toplulukları keşfedin';
 
   @override
   String get empty_group_chats_title => 'Henüz grup sohbeti yok';

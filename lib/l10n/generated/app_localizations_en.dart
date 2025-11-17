@@ -1836,7 +1836,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Join communities to see them here';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities...';
+  String get empty_my_communities_cta => 'Explore communities';
 
   @override
   String get empty_group_chats_title => 'No group chats yet';
@@ -3787,7 +3787,7 @@ class AppLocalizationsEnUs extends AppLocalizationsEn {
       'Join communities to see them here';
 
   @override
-  String get empty_my_communities_cta => 'Explore communities...';
+  String get empty_my_communities_cta => 'Explore communities';
 
   @override
   String get empty_group_chats_title => 'No group chats yet';

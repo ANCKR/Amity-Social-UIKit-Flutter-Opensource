@@ -1985,7 +1985,7 @@
   "@empty_my_communities_description": {
     "description": "Descrição para lista vazia de minhas comunidades"
   },
-  "empty_my_communities_cta": "Explorar comunidades...",
+  "empty_my_communities_cta": "Explorar comunidades",
   "@empty_my_communities_cta": {
     "description": "Texto do botão CTA para lista vazia de minhas comunidades"
   },

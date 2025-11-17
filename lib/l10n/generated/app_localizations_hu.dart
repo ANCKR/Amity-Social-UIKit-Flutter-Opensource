@@ -1859,7 +1859,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'Csatlakozz a közösségekhez, hogy itt láthasd őket';
 
   @override
-  String get empty_my_communities_cta => 'Fedezze fel a közösségeket...';
+  String get empty_my_communities_cta => 'Fedezze fel a közösségeket';
 
   @override
   String get empty_group_chats_title => 'Még nincs csoportos csevegés';
@@ -3834,7 +3834,7 @@ class AppLocalizationsHuHu extends AppLocalizationsHu {
       'Csatlakozz a közösségekhez, hogy itt láthasd őket';
 
   @override
-  String get empty_my_communities_cta => 'Fedezze fel a közösségeket...';
+  String get empty_my_communities_cta => 'Fedezze fel a közösségeket';
 
   @override
   String get empty_group_chats_title => 'Még nincs csoportos csevegés';

@@ -1854,7 +1854,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Pievienojieties kopienām, lai tās redzētu šeit';
 
   @override
-  String get empty_my_communities_cta => 'Izpētiet kopienas...';
+  String get empty_my_communities_cta => 'Izpētiet kopienas';
 
   @override
   String get empty_group_chats_title => 'Vēl nav nevienas grupas tērzēšanas';
@@ -3824,7 +3824,7 @@ class AppLocalizationsLvLv extends AppLocalizationsLv {
       'Pievienojieties kopienām, lai tās redzētu šeit';
 
   @override
-  String get empty_my_communities_cta => 'Izpētiet kopienas...';
+  String get empty_my_communities_cta => 'Izpētiet kopienas';
 
   @override
   String get empty_group_chats_title => 'Vēl nav nevienas grupas tērzēšanas';

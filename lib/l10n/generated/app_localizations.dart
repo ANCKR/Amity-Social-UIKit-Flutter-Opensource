@@ -3316,7 +3316,7 @@ abstract class AppLocalizations {
   /// CTA button text for empty my communities list
   ///
   /// In en_US, this message translates to:
-  /// **'Explore communities...'**
+  /// **'Explore communities'**
   String get empty_my_communities_cta;
 
   /// Title for empty group chats list

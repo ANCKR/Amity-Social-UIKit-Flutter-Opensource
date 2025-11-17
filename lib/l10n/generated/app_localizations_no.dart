@@ -1850,7 +1850,7 @@ class AppLocalizationsNo extends AppLocalizations {
       'Bli med i fellesskap for å se dem her';
 
   @override
-  String get empty_my_communities_cta => 'Utforsk fellesskap...';
+  String get empty_my_communities_cta => 'Utforsk fellesskap';
 
   @override
   String get empty_group_chats_title => 'Ingen gruppechatter ennå';
@@ -3813,7 +3813,7 @@ class AppLocalizationsNoNo extends AppLocalizationsNo {
       'Bli med i fellesskap for å se dem her';
 
   @override
-  String get empty_my_communities_cta => 'Utforsk fellesskap...';
+  String get empty_my_communities_cta => 'Utforsk fellesskap';
 
   @override
   String get empty_group_chats_title => 'Ingen gruppechatter ennå';

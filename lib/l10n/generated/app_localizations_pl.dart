@@ -1856,7 +1856,7 @@ class AppLocalizationsPl extends AppLocalizations {
       'Dołącz do społeczności, aby zobaczyć je tutaj';
 
   @override
-  String get empty_my_communities_cta => 'Przeglądaj społeczności...';
+  String get empty_my_communities_cta => 'Przeglądaj społeczności';
 
   @override
   String get empty_group_chats_title => 'Brak grup';
@@ -3831,7 +3831,7 @@ class AppLocalizationsPlPl extends AppLocalizationsPl {
       'Dołącz do społeczności, aby zobaczyć je tutaj';
 
   @override
-  String get empty_my_communities_cta => 'Przeglądaj społeczności...';
+  String get empty_my_communities_cta => 'Przeglądaj społeczności';
 
   @override
   String get empty_group_chats_title => 'Brak grup';

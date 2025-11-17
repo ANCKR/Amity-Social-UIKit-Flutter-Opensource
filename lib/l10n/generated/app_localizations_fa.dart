@@ -1838,7 +1838,7 @@ class AppLocalizationsFa extends AppLocalizations {
       'برای دیدن آنها در اینجا به انجمن ها بپیوندید';
 
   @override
-  String get empty_my_communities_cta => 'جوامع را کاوش کنید...';
+  String get empty_my_communities_cta => 'جوامع را کاوش کنید';
 
   @override
   String get empty_group_chats_title => 'هنوز چت گروهی وجود ندارد';
@@ -3791,7 +3791,7 @@ class AppLocalizationsFaIr extends AppLocalizationsFa {
       'برای دیدن آنها در اینجا به انجمن ها بپیوندید';
 
   @override
-  String get empty_my_communities_cta => 'جوامع را کاوش کنید...';
+  String get empty_my_communities_cta => 'جوامع را کاوش کنید';
 
   @override
   String get empty_group_chats_title => 'هنوز چت گروهی وجود ندارد';

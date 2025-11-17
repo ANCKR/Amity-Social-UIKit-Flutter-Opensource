@@ -2348,7 +2348,7 @@
   "@empty_group_chats_title": {
     "description": "Title for empty group chats list"
   },
-  "empty_my_communities_cta": "コミュニティを探索する...",
+  "empty_my_communities_cta": "コミュニティを探索する",
   "@empty_my_communities_cta": {
     "description": "CTA button text for empty my communities list"
   },

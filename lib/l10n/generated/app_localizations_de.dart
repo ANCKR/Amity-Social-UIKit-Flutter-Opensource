@@ -1853,7 +1853,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get empty_my_communities_description => 'Communitys beitreten';
 
   @override
-  String get empty_my_communities_cta => 'Entdecken Sie Communities...';
+  String get empty_my_communities_cta => 'Entdecken Sie Communities';
 
   @override
   String get empty_group_chats_title => 'Keine Gruppenchats';
@@ -3826,7 +3826,7 @@ class AppLocalizationsDeDe extends AppLocalizationsDe {
   String get empty_my_communities_description => 'Communitys beitreten';
 
   @override
-  String get empty_my_communities_cta => 'Entdecken Sie Communities...';
+  String get empty_my_communities_cta => 'Entdecken Sie Communities';
 
   @override
   String get empty_group_chats_title => 'Keine Gruppenchats';

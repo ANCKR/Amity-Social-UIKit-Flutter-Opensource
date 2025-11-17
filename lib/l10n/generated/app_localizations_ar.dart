@@ -1834,7 +1834,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'انضم إلى المجتمعات لرؤيتها هنا';
 
   @override
-  String get empty_my_communities_cta => 'استكشاف المجتمعات...';
+  String get empty_my_communities_cta => 'استكشاف المجتمعات';
 
   @override
   String get empty_group_chats_title => 'لا توجد محادثات جماعية حتى الآن';
@@ -3781,7 +3781,7 @@ class AppLocalizationsArEg extends AppLocalizationsAr {
       'انضم إلى المجتمعات لرؤيتها هنا';
 
   @override
-  String get empty_my_communities_cta => 'استكشاف المجتمعات...';
+  String get empty_my_communities_cta => 'استكشاف المجتمعات';
 
   @override
   String get empty_group_chats_title => 'لا توجد محادثات جماعية حتى الآن';
