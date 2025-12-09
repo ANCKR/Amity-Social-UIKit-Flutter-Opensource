@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'dart:developer';
 import 'package:amity_sdk/amity_sdk.dart';
 import 'livestream_api_client.dart';
+import 'livestream_api_client_sdk.dart'; // SDK-based client
 import '../domain/models/stream_details.dart';
 
 /// Singleton manager for livestream session, access token, and data caching
@@ -36,10 +36,14 @@ class LivestreamSessionManager {
   // Thumbnail URL cache (prevents repeated file API calls)
   final Map<String, _CachedThumbnail> _thumbnailCache = {};
 
-  // API client for authentication
-  final LivestreamApiClient _apiClient = LivestreamApiClient();
+  // API clients - choose one based on USE_SDK flag
+  final LivestreamApiClient _apiClient = LivestreamApiClient(); // REST API
+  final LivestreamSdkClient _sdkClient = LivestreamSdkClient(); // SDK
 
-  // Initialization state (using Completer to prevent race conditions)
+  // Toggle this to switch between REST API and SDK
+  static const bool USE_SDK = true; // Set to false to use REST API
+
+  // Initialization state (using Coempleter to prevent race conditions)
   Completer<void>? _initializationCompleter;
 
   // Cache durations
@@ -56,17 +60,24 @@ class LivestreamSessionManager {
   /// Safe to call multiple times - will wait for existing initialization.
   ///
   /// This should be called in AmityUIKit.registerDevice() after successful login.
+  ///
+  /// NOTE: Session initialization is ALWAYS needed for AmityVideoPlayer to work,
+  /// regardless of whether we use SDK or REST API for preview fetching.
+  /// The USE_SDK flag only affects PREVIEW data fetching, not authentication.
   Future<void> initializeSession() async {
+    // Always initialize session - AmityVideoPlayer needs authentication!
+    // USE_SDK only affects preview fetching, not player authentication
+
     // If already initializing, wait for existing operation
     if (_initializationCompleter != null &&
         !_initializationCompleter!.isCompleted) {
-      log('🎬 Livestream session already initializing, waiting...');
+      print('🎬 Livestream session already initializing, waiting...');
       return _initializationCompleter!.future;
     }
 
     // Skip if token is still valid
     if (_isTokenValid()) {
-      log('🎬 Livestream session already valid, skipping initialization');
+      print('🎬 Livestream session already valid, skipping initialization');
       return;
     }
 
@@ -75,19 +86,19 @@ class LivestreamSessionManager {
     try {
       final userId = AmityCoreClient.getCurrentUser().userId;
       if (userId == null) {
-        log('❌ Cannot initialize livestream session: No user ID');
+        print('❌ Cannot initialize livestream session: No user ID');
         return;
       }
 
-      log('');
-      log('🎬 ═══════════════════════════════════════════════════════');
-      log('🎬 Initializing livestream session for: $userId');
-      log('🎬 ═══════════════════════════════════════════════════════');
+      print('');
+      print('🎬 ═══════════════════════════════════════════════════════');
+      print('🎬 Initializing livestream session for: $userId (REST API mode)');
+      print('🎬 ═══════════════════════════════════════════════════════');
 
       // Step 1: Get auth token
       final authToken = await _apiClient.getAuthTokenForSession(userId);
       if (authToken == null) {
-        log('❌ Failed to get auth token for livestream session');
+        print('❌ Failed to get auth token for livestream session');
         return;
       }
 
@@ -95,7 +106,7 @@ class LivestreamSessionManager {
       final accessToken =
           await _apiClient.createSessionForToken(userId, authToken);
       if (accessToken == null) {
-        log('❌ Failed to create livestream session');
+        print('❌ Failed to create livestream session');
         return;
       }
 
@@ -103,14 +114,14 @@ class LivestreamSessionManager {
       _accessToken = accessToken;
       _tokenExpiry = DateTime.now().add(const Duration(hours: 1));
 
-      log('✅ Livestream session initialized successfully!');
-      log('   Token cached until: $_tokenExpiry');
-      log('🎬 ═══════════════════════════════════════════════════════');
-      log('');
+      print('✅ Livestream session initialized successfully!');
+      print('   Token cached until: $_tokenExpiry');
+      print('🎬 ═══════════════════════════════════════════════════════');
+      print('');
 
       _initializationCompleter?.complete();
     } catch (e) {
-      log('❌ Error initializing livestream session: $e');
+      print('❌ Error initializing livestream session: $e');
       _initializationCompleter?.completeError(e);
       rethrow;
     }
@@ -125,12 +136,12 @@ class LivestreamSessionManager {
   Future<String?> getAccessToken() async {
     // Return cached token if still valid
     if (_isTokenValid()) {
-      log('🎫 Using cached livestream access token');
+      print('🎫 Using cached livestream access token');
       return _accessToken;
     }
 
     // Token expired or not initialized, create new session
-    log('🔄 Livestream token expired or missing, creating new session...');
+    print('🔄 Livestream token expired or missing, creating new session...');
     await initializeSession();
     return _accessToken;
   }
@@ -154,41 +165,54 @@ class LivestreamSessionManager {
     String streamId, {
     bool forceRefresh = false,
   }) async {
-    log('📦 getStreamDetails called for: $streamId (forceRefresh: $forceRefresh)');
-    log('📦 Cache size: ${_streamDetailsCache.length}');
-    log('📦 Cache contains streamId: ${_streamDetailsCache.containsKey(streamId)}');
+    print(
+        '📦 getStreamDetails called for: $streamId (forceRefresh: $forceRefresh)');
+    print('📦 Cache size: ${_streamDetailsCache.length}');
+    print(
+        '📦 Cache contains streamId: ${_streamDetailsCache.containsKey(streamId)}');
 
     // Check cache first (unless force refresh)
     if (!forceRefresh && _streamDetailsCache.containsKey(streamId)) {
       final cached = _streamDetailsCache[streamId]!;
       final age = DateTime.now().difference(cached.fetchedAt);
 
-      log('📦 Found in cache! Age: ${age.inSeconds}s, Max age: ${_streamDetailsCacheDuration.inSeconds}s');
+      print(
+          '📦 Found in cache! Age: ${age.inSeconds}s, Max age: ${_streamDetailsCacheDuration.inSeconds}s');
 
       // Return cached if still fresh
       if (age < _streamDetailsCacheDuration) {
-        log('✅ CACHE HIT: Using cached stream details for: $streamId (age: ${age.inSeconds}s) - NO API CALL');
+        print(
+            '✅ CACHE HIT: Using cached stream details for: $streamId (age: ${age.inSeconds}s) - NO API CALL');
         return cached.details;
       } else {
-        log('⏰ CACHE EXPIRED for stream: $streamId (age: ${age.inSeconds}s)');
+        print('⏰ CACHE EXPIRED for stream: $streamId (age: ${age.inSeconds}s)');
       }
     } else {
-      log('❌ CACHE MISS for stream: $streamId');
+      print('❌ CACHE MISS for stream: $streamId');
     }
 
-    // Cache miss, expired, or force refresh - fetch from API
+    // Cache miss, expired, or force refresh - fetch from API or SDK
     if (forceRefresh) {
-      log('🔄 Force refresh: Fetching fresh stream details for: $streamId');
+      print('🔄 Force refresh: Fetching fresh stream details for: $streamId');
     } else {
-      log('🔄 Cache miss/expired: Fetching stream details from API for: $streamId');
+      print('🔄 Cache miss/expired: Fetching stream details for: $streamId');
     }
 
-    final details = await _apiClient.getStreamDetails(streamId);
+    // Choose between SDK or REST API based on flag
+    final StreamDetails details;
+    if (USE_SDK) {
+      print('🔧 Using SDK to fetch stream details');
+      details = await _sdkClient.getStreamDetails(streamId);
+    } else {
+      print('🌐 Using REST API to fetch stream details');
+      details = await _apiClient.getStreamDetails(streamId);
+    }
 
     // Cache it with size limit
     _addToStreamCache(streamId, details);
 
-    log('💾 Cached stream details for: $streamId (cache size now: ${_streamDetailsCache.length})');
+    print(
+        '💾 Cached stream details for: $streamId (cache size now: ${_streamDetailsCache.length})');
     return details;
   }
 
@@ -209,16 +233,16 @@ class LivestreamSessionManager {
       // Return cached if still fresh
       if (DateTime.now().difference(cached.fetchedAt) <
           _thumbnailCacheDuration) {
-        log('✅ Using cached thumbnail URL for: $fileId');
+        print('✅ Using cached thumbnail URL for: $fileId');
         return cached.url;
       }
     }
 
     // Cache miss, expired, or force refresh - fetch from API
     if (forceRefresh) {
-      log('🔄 Force refresh: Fetching fresh thumbnail URL for: $fileId');
+      print('🔄 Force refresh: Fetching fresh thumbnail URL for: $fileId');
     } else {
-      log('🔄 Fetching fresh thumbnail URL for: $fileId');
+      print('🔄 Fetching fresh thumbnail URL for: $fileId');
     }
 
     final fileDetails = await _apiClient.getFileDetails(fileId);
@@ -227,7 +251,7 @@ class LivestreamSessionManager {
     if (thumbnailUrl != null) {
       // Cache it with size limit
       _addToThumbnailCache(fileId, thumbnailUrl);
-      log('💾 Cached thumbnail URL for: $fileId');
+      print('💾 Cached thumbnail URL for: $fileId');
     }
 
     return thumbnailUrl;
@@ -239,9 +263,9 @@ class LivestreamSessionManager {
   /// Use this when user pulls to refresh the feed.
   void clearStreamCache() {
     if (_streamDetailsCache.isNotEmpty || _thumbnailCache.isNotEmpty) {
-      log('🔄 Clearing stream cache for refresh');
-      log('   - Clearing ${_streamDetailsCache.length} stream details');
-      log('   - Clearing ${_thumbnailCache.length} thumbnails');
+      print('🔄 Clearing stream cache for refresh');
+      print('   - Clearing ${_streamDetailsCache.length} stream details');
+      print('   - Clearing ${_thumbnailCache.length} thumbnails');
 
       _streamDetailsCache.clear();
       _thumbnailCache.clear();
@@ -257,11 +281,11 @@ class LivestreamSessionManager {
     if (_accessToken != null ||
         _streamDetailsCache.isNotEmpty ||
         _thumbnailCache.isNotEmpty) {
-      log('🎬 Clearing livestream session and caches');
-      log('   - Disposing API client and cancelling requests');
-      log('   - Clearing access token');
-      log('   - Clearing ${_streamDetailsCache.length} stream details');
-      log('   - Clearing ${_thumbnailCache.length} thumbnails');
+      print('🎬 Clearing livestream session and caches');
+      print('   - Disposing API client and cancelling requests');
+      print('   - Clearing access token');
+      print('   - Clearing ${_streamDetailsCache.length} stream details');
+      print('   - Clearing ${_thumbnailCache.length} thumbnails');
 
       // Cancel all in-flight requests
       _apiClient.dispose();
@@ -280,7 +304,7 @@ class LivestreamSessionManager {
     if (_streamDetailsCache.length >= _maxStreamCacheSize) {
       final oldestKey = _streamDetailsCache.keys.first;
       _streamDetailsCache.remove(oldestKey);
-      log('🗑️  Evicted oldest stream from cache: $oldestKey');
+      print('🗑️  Evicted oldest stream from cache: $oldestKey');
     }
 
     _streamDetailsCache[streamId] = _CachedStreamDetails(
@@ -295,7 +319,7 @@ class LivestreamSessionManager {
     if (_thumbnailCache.length >= _maxThumbnailCacheSize) {
       final oldestKey = _thumbnailCache.keys.first;
       _thumbnailCache.remove(oldestKey);
-      log('🗑️  Evicted oldest thumbnail from cache: $oldestKey');
+      print('🗑️  Evicted oldest thumbnail from cache: $oldestKey');
     }
 
     _thumbnailCache[fileId] = _CachedThumbnail(

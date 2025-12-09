@@ -64,7 +64,6 @@ class _PostContentLivestreamState extends State<PostContentLivestream> {
             builder: (context) => LivestreamPlayerScreen(
               streamId: widget.post.streamId!,
               livestreamData: widget.post,
-              initialStreamDetails: _cachedStreamDetails, // Pass cached data
             ),
           ),
         );
