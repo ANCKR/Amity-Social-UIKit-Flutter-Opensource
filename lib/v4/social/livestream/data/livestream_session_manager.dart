@@ -41,7 +41,7 @@ class LivestreamSessionManager {
   final LivestreamSdkClient _sdkClient = LivestreamSdkClient(); // SDK
 
   // Toggle this to switch between REST API and SDK
-  static const bool USE_SDK = true; // Set to false to use REST API
+  static const bool USE_SDK = false; // Set to false to use REST API
 
   // Initialization state (using Coempleter to prevent race conditions)
   Completer<void>? _initializationCompleter;

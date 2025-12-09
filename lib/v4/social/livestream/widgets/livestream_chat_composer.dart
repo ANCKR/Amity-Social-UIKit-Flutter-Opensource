@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Chat composer for livestream
-/// 
+///
 /// Simple text input with send button for live chat
 /// Dark theme styling for livestream context
 class LivestreamChatComposer extends StatefulWidget {
@@ -47,17 +47,34 @@ class _LivestreamChatComposerState extends State<LivestreamChatComposer> {
   }
 
   void _handleSend() {
+    print('');
+    print('═══════════════════════════════════════════════════════════');
+    print('🔘 [ChatComposer] _handleSend() CALLED');
+    print('   _hasText: $_hasText');
+    print('   widget.isEnabled: ${widget.isEnabled}');
+    print('   widget.isSending: ${widget.isSending}');
+    print('   Text: "${_controller.text}"');
+    print('═══════════════════════════════════════════════════════════');
+
     if (!_hasText || !widget.isEnabled || widget.isSending) {
+      print('⚠️ [ChatComposer] SEND BLOCKED:');
+      if (!_hasText) print('   - No text to send');
+      if (!widget.isEnabled) print('   - Widget is disabled');
+      if (widget.isSending) print('   - Already sending');
       return;
     }
 
     final text = _controller.text.trim();
     if (text.isNotEmpty) {
+      print('✅ [ChatComposer] Calling onSendMessage callback with: "$text"');
       widget.onSendMessage(text);
       _controller.clear();
       setState(() {
         _hasText = false;
       });
+      print('✅ [ChatComposer] Text field cleared');
+    } else {
+      print('⚠️ [ChatComposer] Text is empty after trim');
     }
   }
 
@@ -91,8 +108,8 @@ class _LivestreamChatComposerState extends State<LivestreamChatComposer> {
                   enabled: widget.isEnabled && !widget.isSending,
                   style: const TextStyle(color: Colors.white, fontSize: 14),
                   decoration: InputDecoration(
-                    hintText: widget.isEnabled 
-                        ? 'Say something...' 
+                    hintText: widget.isEnabled
+                        ? 'Say something...'
                         : 'Chat unavailable',
                     hintStyle: TextStyle(
                       color: Colors.grey.shade500,
@@ -108,7 +125,7 @@ class _LivestreamChatComposerState extends State<LivestreamChatComposer> {
               ),
             ),
             const SizedBox(width: 8),
-            
+
             // Send button
             _buildSendButton(),
           ],
@@ -119,7 +136,7 @@ class _LivestreamChatComposerState extends State<LivestreamChatComposer> {
 
   Widget _buildSendButton() {
     final canSend = _hasText && widget.isEnabled && !widget.isSending;
-    
+
     if (widget.isSending) {
       return SizedBox(
         width: 36,
@@ -157,4 +174,3 @@ class _LivestreamChatComposerState extends State<LivestreamChatComposer> {
     );
   }
 }
-

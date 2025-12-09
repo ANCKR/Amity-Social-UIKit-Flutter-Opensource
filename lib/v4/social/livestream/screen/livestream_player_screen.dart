@@ -2,6 +2,7 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:flutter/material.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_details.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/domain/models/stream_status.dart';
+import 'package:amity_uikit_beta_service/v4/social/livestream/data/livestream_session_manager.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_video_section.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_info_section.dart';
 import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream_actions_section.dart';
@@ -10,8 +11,8 @@ import 'package:amity_uikit_beta_service/v4/social/livestream/widgets/livestream
 /// Simple full-screen livestream player
 ///
 /// - Video player at top (AmityVideoPlayer handles everything)
-/// - Stream info below (fetched via SDK)
-/// - Actions and chat
+/// - Stream info below (fetched via REST API for complete data including channelId)
+/// - Actions and chat (requires channelId from REST API)
 class LivestreamPlayerScreen extends StatefulWidget {
   final String streamId;
   final LiveStreamData livestreamData;
@@ -36,42 +37,38 @@ class _LivestreamPlayerScreenState extends State<LivestreamPlayerScreen> {
     _fetchStreamInfo();
   }
 
-  /// Fetch basic stream info from SDK for display purposes
-  /// (The video player handles its own stream fetching internally)
+  /// Fetch stream info using LivestreamSessionManager (REST API mode)
+  /// This provides complete data including channelId for chat functionality
   Future<void> _fetchStreamInfo() async {
     try {
-      final amityStream = await AmityVideoClient.newStreamRepository()
-          .getStream(widget.streamId);
+      print(
+          '🎬 [LivestreamPlayer] Fetching stream info for: ${widget.streamId}');
+
+      // Use LivestreamSessionManager which respects USE_SDK flag
+      // In REST API mode, this returns complete data including channelId
+      final sessionManager = LivestreamSessionManager();
+      final streamDetails =
+          await sessionManager.getStreamDetails(widget.streamId);
 
       if (mounted) {
         setState(() {
-          _streamDetails = StreamDetails(
-            streamId: amityStream.streamId ?? widget.streamId,
-            title: amityStream.title,
-            description: amityStream.description,
-            status: _parseStatus(amityStream.status),
-            isLive: amityStream.isLive ?? false,
-            userId: amityStream.userId,
-            thumbnailFileId: amityStream.thumbnailFileId,
-            createdAt: amityStream.createdAt,
-            startedAt: amityStream.startedAt,
-            endedAt: amityStream.endedAt,
-            // Note: SDK doesn't provide channelId, so chat may not work
-            channelId: null,
-            thumbnailUrl: null,
-            hlsUrl: null,
-            rtmpUrl: null,
-            recordings: [],
-          );
+          _streamDetails = streamDetails;
           _isLoading = false;
         });
+
+        print('✅ [LivestreamPlayer] Stream info loaded:');
+        print('   - Title: ${streamDetails.title}');
+        print('   - Status: ${streamDetails.status}');
+        print('   - Is Live: ${streamDetails.isLive}');
+        print('   - Channel ID: ${streamDetails.channelId ?? "NOT AVAILABLE"}');
+        print('   - Has Chat: ${streamDetails.hasChatEnabled}');
       }
     } catch (e) {
-      print('Error fetching stream info: $e');
+      print('❌ [LivestreamPlayer] Error fetching stream info: $e');
       if (mounted) {
         setState(() {
           _isLoading = false;
-          // Use minimal fallback
+          // Use minimal fallback - chat won't work without channelId
           _streamDetails = StreamDetails(
             streamId: widget.streamId,
             title: 'Live Stream',
@@ -88,23 +85,6 @@ class _LivestreamPlayerScreenState extends State<LivestreamPlayerScreen> {
           );
         });
       }
-    }
-  }
-
-  StreamStatus _parseStatus(AmityStreamStatus? status) {
-    if (status == null) return StreamStatus.idle;
-    
-    // Convert enum to string and parse
-    final statusString = status.toString().split('.').last.toLowerCase();
-    switch (statusString) {
-      case 'live':
-        return StreamStatus.live;
-      case 'ended':
-        return StreamStatus.ended;
-      case 'recorded':
-        return StreamStatus.recorded;
-      default:
-        return StreamStatus.idle;
     }
   }
 

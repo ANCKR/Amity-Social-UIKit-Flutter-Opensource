@@ -7,7 +7,7 @@ import 'livestream_chat_message_item.dart';
 import 'livestream_chat_composer.dart';
 
 /// Live chat section for livestream
-/// 
+///
 /// Displays real-time chat messages and composer
 /// Requires channelId to be provided
 class LivestreamChatSection extends StatelessWidget {
@@ -20,14 +20,27 @@ class LivestreamChatSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('');
+    print('═══════════════════════════════════════════════════════════');
+    print('💬 [LivestreamChatSection] BUILD CALLED');
+    print('   Channel ID: ${channelId ?? "NULL"}');
+    print('   Channel ID isEmpty: ${channelId?.isEmpty ?? "N/A"}');
+    print('═══════════════════════════════════════════════════════════');
+
     // If no channelId, show disabled state
     if (channelId == null || channelId!.isEmpty) {
+      print('⚠️ [LivestreamChatSection] No channelId - showing disabled state');
       return _buildChatDisabled();
     }
 
+    print('✅ [LivestreamChatSection] Valid channelId - creating chat cubit');
+
     // Provide chat cubit
     return BlocProvider(
-      create: (context) => LivestreamChatCubit(channelId: channelId!),
+      create: (context) {
+        print('🔧 [LivestreamChatSection] Creating LivestreamChatCubit...');
+        return LivestreamChatCubit(channelId: channelId!);
+      },
       child: Container(
         color: Colors.black,
         child: Column(
@@ -35,12 +48,12 @@ class LivestreamChatSection extends StatelessWidget {
           children: [
             // Chat header
             _buildChatHeader(),
-            
+
             // Messages list
             Expanded(
               child: _LivestreamMessageList(),
             ),
-            
+
             // Chat composer
             _LivestreamComposerSection(),
           ],
@@ -82,7 +95,8 @@ class LivestreamChatSection extends StatelessWidget {
             builder: (context, state) {
               if (!state.isConnected) {
                 return Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: Colors.red.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(12),
@@ -261,7 +275,7 @@ class _LivestreamMessageList extends StatelessWidget {
         }
 
         final currentUserId = AmityCoreClient.getUserId();
-        
+
         return ListView.builder(
           reverse: true,
           padding: const EdgeInsets.symmetric(vertical: 8),
@@ -269,7 +283,7 @@ class _LivestreamMessageList extends StatelessWidget {
           itemBuilder: (context, index) {
             final message = state.messages[index];
             final isCurrentUser = message.userId == currentUserId;
-            
+
             return LivestreamChatMessageItem(
               message: message,
               isCurrentUser: isCurrentUser,
@@ -287,7 +301,14 @@ class _LivestreamComposerSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<LivestreamChatCubit, LivestreamChatState>(
       listener: (context, state) {
+        print('👂 [ComposerSection] State changed:');
+        print('   hasError: ${state.hasError}');
+        print('   errorMessage: ${state.errorMessage}');
+        print('   isSending: ${state.isSending}');
+
         if (state.hasError && state.errorMessage != null) {
+          print(
+              '🔴 [ComposerSection] Showing error snackbar: ${state.errorMessage}');
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(state.errorMessage!),
@@ -298,8 +319,17 @@ class _LivestreamComposerSection extends StatelessWidget {
         }
       },
       builder: (context, state) {
+        print('🔨 [ComposerSection] Building composer:');
+        print('   canSendMessage: ${state.canSendMessage}');
+        print('   isSending: ${state.isSending}');
+        print('   isConnected: ${state.isConnected}');
+
         return LivestreamChatComposer(
           onSendMessage: (text) {
+            print('');
+            print('🚀 [ComposerSection] onSendMessage CALLBACK TRIGGERED!');
+            print('   Text: "$text"');
+            print('   Calling cubit.sendMessage()...');
             context.read<LivestreamChatCubit>().sendMessage(text);
           },
           isEnabled: state.canSendMessage,
@@ -309,4 +339,3 @@ class _LivestreamComposerSection extends StatelessWidget {
     );
   }
 }
-
