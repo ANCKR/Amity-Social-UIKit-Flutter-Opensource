@@ -28,10 +28,10 @@ packages:
     dependency: transitive
     description:
       name: amity_video_player
-      sha256: "1eee7f5bd8ec9f0f9a0a50f27355e526b4bf7a02f58b0d8f1d061fba687de50d"
+      sha256: "093bc56cd76301220551d819cb76adde763ac43064df8c681b4bc2c0f07e8be6"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.3"
+    version: "0.0.4"
   animation_wrappers:
     dependency: transitive
     description:
@@ -548,14 +548,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_vlc_player:
+  flutter_vlc_player_16kb:
     dependency: transitive
     description:
-      name: flutter_vlc_player
-      sha256: "32c0109cc191a97246df759a8804a1051c4ca6909597833506f13587cb3bf1be"
+      name: flutter_vlc_player_16kb
+      sha256: "69f44e648ad2c1b551d32be452b8e75d54169c9d7f58e23a853964f7e2aee5c5"
       url: "https://pub.dev"
     source: hosted
-    version: "7.4.4"
+    version: "7.4.7"
   flutter_vlc_player_platform_interface:
     dependency: transitive
     description:
@@ -1673,5 +1673,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.8.0-0 <4.0.0"
+  dart: ">=3.8.0 <4.0.0"
   flutter: ">=3.32.0"
