@@ -14,6 +14,7 @@ import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
@@ -136,31 +137,31 @@ class _ChatTabs extends NewBaseComponent {
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4.0),
-      child: IntrinsicWidth(
-        child: ElevatedButton(
-          onPressed: () => tabController.animateTo(index),
-          style: ElevatedButton.styleFrom(
-            foregroundColor: isSelected ? Colors.white : theme.baseColorShade1,
-            backgroundColor:
-                isSelected ? theme.primaryColor : Colors.transparent,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(24),
-            ),
-            side: BorderSide(
-              color: isSelected ? theme.primaryColor : theme.baseColorShade4,
-              width: 1.0,
-            ),
-            elevation: 0,
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            minimumSize: Size.zero,
-            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      child: ElevatedButton(
+        onPressed: () => tabController.animateTo(index),
+        style: ElevatedButton.styleFrom(
+          foregroundColor: isSelected ? Colors.white : theme.baseColorShade1,
+          backgroundColor: isSelected ? theme.primaryColor : Colors.transparent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
           ),
-          child: Text(
-            localizedText,
-            style: isSelected 
-                ? AmityTextStyle.bodyBold(Colors.white)
-                : AmityTextStyle.body(theme.baseColorShade1),
+          side: BorderSide(
+            color: isSelected ? theme.primaryColor : theme.baseColorShade4,
+            width: 1.0,
           ),
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          minimumSize: Size.zero,
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        ),
+        child: AutoSizeText(
+          localizedText,
+          style: isSelected
+              ? AmityTextStyle.bodyBold(Colors.white)
+              : AmityTextStyle.body(theme.baseColorShade1),
+          maxLines: 1,
+          minFontSize: 11,
+          overflow: TextOverflow.ellipsis,
         ),
       ),
     );
@@ -178,7 +179,7 @@ class ChatHomePageNavigationBar extends NewBaseComponent {
       child: BlocBuilder<NetworkConnectivityBloc, NetworkConnectivityState>(
         builder: (context, state) {
           final isDarkTheme = Theme.of(context).brightness == Brightness.dark;
-          
+
           return AppBar(
             automaticallyImplyLeading: false,
             title: Row(
@@ -211,7 +212,8 @@ class ChatHomePageNavigationBar extends NewBaseComponent {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: AmityColors.getSocialHeaderGradient(isDarkTheme: isDarkTheme),
+                  colors: AmityColors.getSocialHeaderGradient(
+                      isDarkTheme: isDarkTheme),
                 ),
               ),
             ),

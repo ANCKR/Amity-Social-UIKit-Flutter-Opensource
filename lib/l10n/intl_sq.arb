@@ -1,0 +1,2410 @@
+{
+  "community_title": "Komuniteti",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "Newsfeed",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "Eksploroni",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "Komunitetet e Mia",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "Grupet e Mia",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Feed",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "Lejet e komunitetit",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Leje postimi",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "Kush mund të postojë në këtë komunitet",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "Ju mund të kontrolloni se kush mund të krijojë postime në komunitetin tuaj.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Lejo komentet në historitë e komunitetit",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Aktivizoje për të marrë komente mbi historitë në këtë komunitet.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "Largohu nga komuniteti",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Largohu nga komuniteti. Nuk do të mund të postosh më dhe të ndërveprosh në këtë komunitet.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Bashkësi e ngushtë",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Mbyllja e këtij komuniteti do të heqë faqen e komunitetit dhe të gjithë përmbajtjen dhe komentet e saj.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "Komuniteti i ngushtë?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "Të gjithë anëtarët do të hiqen nga komuniteti. Të gjitha postimet, mesazhet, reagimet dhe mediat e ndara në komunitet do të fshihen. Kjo nuk mund të zhbëhet.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Lejet e grupit",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Leje postimi",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "Kush mund të postojë në këtë grup",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "Ju mund të kontrolloni se kush mund të krijojë postime në grupin tuaj.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Lejo komentet në tregimet në grup",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Aktivizoje për të marrë komente mbi historitë në këtë grup.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Largohu nga grupi",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Largohu nga grupi. Nuk do të mund të postosh më dhe të ndërveprosh në këtë grup.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Mbylle grupin",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Mbyllja e këtij grupi do të heqë faqen e grupit dhe të gjithë përmbajtjen dhe komentet e tij.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "Të mbyllet grupi?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "Të gjithë anëtarët do të hiqen nga grupi. Të gjitha postimet, mesazhet, reagimet dhe mediat e ndara në grup do të fshihen. Kjo nuk mund të zhbëhet.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Kërko komunitetin dhe përdoruesin",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "Kërko komunitetin tim",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "Nuk u gjet asnjë rezultat",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "Komunitetet",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "Përdoruesit",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "Anulo",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "OK",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "Konfirmo",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "Të paraqitura",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "Ndjekësit",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "Në vijim",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "Postimet",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "Krijo postim",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "Redakto postimin",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "Çfarë po ndodh",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "Fshi postimin",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "Ky postim do të fshihet përgjithmonë.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "Të fshihet postimi?",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "Dëshironi të fshini postimin tuaj?",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "Raporto postimin",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "Mos raporto postimin",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "si",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "Koment",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "Shpërndaje",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "Të hiqet ky postim?",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "Postimi do të fshihet përgjithmonë. Nuk mund të zhbëhet.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "Shkruaj nje koment",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "Kohëzgjatja e sondazhit",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "Gjithmonë mund ta mbyllësh sondazhin përpara kohëzgjatjes së caktuar.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "Data e personalizuar e përfundimit",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "Mbyll sondazhin",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "Ky sondazh është mbyllur. Nuk mund të votoni më.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "Votoni",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "Shihni rezultatet",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "Kthehu për të votuar",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "Shihni rezultatet e plota",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "Votuar nga ju",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "dhe ju",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "majtas",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "Sondazhi dështoi për të votuar. Ju lutemi provoni përsëri.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "Përfundoi",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "Zgjidhni një opsion",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "Zgjidhni një ose më shumë opsione",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "Sondazhi duhet të përmbajë të paktën {minOptions} opsione.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "Pyetja e sondazhit",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "Cila është pyetja juaj e sondazhit?",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Thuaj dicka te bukur",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Përgjigju",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Duke iu përgjigjur",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Raporto komentin",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Mos raporto komentin",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Raportoni përgjigjen",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Mos raporto përgjigjen",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Redakto komentin",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Redakto përgjigjen",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Fshi komentin",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Fshi përgjigjen",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "Ky {content} do të fshihet përgjithmonë.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Komenti juaj përmban fjalë të papërshtatshme. Ju lutemi rishikoni dhe fshijeni atë.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "Ky histori nuk disponohet më",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Komuniteti u krijua me sukses.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "Dështoi në krijimin e komunitetit. Ju lutemi provoni përsëri.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Komuniteti u përditësua me sukses.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "Ruajtja e profilit të komunitetit dështoi. Ju lutemi provoni përsëri.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "U largua me sukses nga komuniteti.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "Dështoi të largohej nga komuniteti.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "U mbyll me sukses komunitetin.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "Dështoi në mbylljen e komunitetit.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Bashkohu",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "U bashkua",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "Rekomanduar për ju",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "Në trend tani",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1.2K anëtarë",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "Krijo Komunitet",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Emri i komunitetit",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Emërtoni komunitetin tuaj",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Fut përshkrimin",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Redakto komunitetin",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "Anëtarët",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Privat",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Publike",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Çdokush mund të bashkohet, të shikojë dhe të kërkojë postimet në këtë komunitet.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Vetëm anëtarët e ftuar nga moderatorët mund të bashkohen, shikojnë dhe kërkojnë postimet në këtë komunitet.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "Rreth",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "Kategoritë",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Zgjidhni kategorinë",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Zgjidhni Kategori",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "Shto kategori",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "Postime në pritje",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Postimet tuaja janë në pritje për shqyrtim",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Informacioni bazë",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "Të largohesh pa mbaruar?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Përparimi juaj nuk do të ruhet dhe komuniteti juaj nuk do të krijohet.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Dërgo",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "po shkruan",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Shkruani një mesazh",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "Cilësimet",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Njoftimet",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Postime të reja",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Merr njoftime kur dikush krijon postime të reja në këtë komunitet.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reagoni postimet",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Merr njoftime kur dikush reagon ndaj postimeve të tua në këtë komunitet.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "Reagon komentet",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Merr njoftime kur dikush e pëlqen komentin tënd në këtë komunitet.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Komentet e reja",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Merr njoftime kur dikush komenton postimin tënd në këtë komunitet.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Përgjigjet",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Merr njoftime kur dikush komenton komentet e tua në këtë komunitet.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Tregime të reja",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Merr njoftime kur dikush krijon një histori të re në këtë komunitet.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Reagimet e historisë",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Merr njoftime kur dikush reagon ndaj historisë tënde në këtë komunitet.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Komentet e historisë",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Merr njoftime kur dikush komenton historinë tuaj në këtë komunitet.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Të gjithë",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Vetëm moderatorë",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Vetëm administratorët mund të postojnë",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "Privatësia",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Gjuha",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "Të largohesh pa mbaruar?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Ndryshimet tuaja që keni bërë mund të mos ruhen.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "Të ndryshohen cilësimet e privatësisë së komunitetit?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Ky komunitet ka postime të paraqitura globalisht. Ndryshimi i komunitetit nga publik në privat do t'i heqë këto postime nga shfaqja globale.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Shto",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Po ngarkohet",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Largohu",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Mos, diçka shkoi keq",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Redaktuar",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(e redaktuar)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Vazhdoni të redaktoni",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Hidhni",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderator",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Ruaj",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Fshije",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Redakto",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Mbylle",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "U krye",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Posto",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "Komentet",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Histori",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Tregime",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Sondazh",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Fakultative",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "Aktiv",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Joaktiv",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Lejo njoftimin",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "Aktivizoje për të marrë njoftime shtytëse nga ky komunitet.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "raportuar",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...Shiko më shumë",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Kamera",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Foto",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Video",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Postimi",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Afati im kohor",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Opsionet",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "Të ndryshohet postimi i paraqitur globalisht?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "Postimi që po redaktoni është paraqitur globalisht. Nëse e redaktoni postimin tuaj, ai do të duhet të ri-miratohet dhe nuk do të shfaqet më globalisht.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Postimi u raportua.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Postimi i pareportuar.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{Nuk ka anëtarë} =1{1 anëtar} other{{count} anëtarët}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{postim} other{postimet}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{anëtar} other{anëtarët}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Blloko përdoruesin",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Zhblloko përdoruesin",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "Fshirja e postimit dështoi. Ju lutemi provoni përsëri.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "Nuk mund të largohem nga komuniteti",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Ju jeni moderatori i vetëm në këtë grup. Për të lënë komunitetin, emëroni anëtarë të tjerë në rolin e moderatorit",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "Komuniteti nuk mund të mbyllet",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Diçka shkoi keq. Ju lutemi provoni përsëri më vonë.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Është arritur kufiri maksimal i ngarkimit",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "Ke arritur kufirin e ngarkimit të {maxUploads} imazheve. Asnjë imazh shtesë nuk do të ruhet.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "Ke arritur kufirin e ngarkimit të {maxUploads} videove. Çdo video shtesë nuk do të ruhet.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Redaktimi i postimit dështoi. Ju lutemi provoni përsëri.",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Krijimi i postimit dështoi. Ju lutemi provoni përsëri.",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "Pyetja e sondazhit nuk mund të kalojë {maxQuestionLength} karaktere.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "Opsioni i sondazhit nuk mund të kalojë {maxQuestionLength} karaktere.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "Krijimi i sondazhit dështoi. Ju lutemi provoni përsëri.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "E panjohur",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "Të gjithë anëtarët",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "Moderatorët",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "Kërko anëtar",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "Promovoni te moderatori",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "Degradimi në anëtar",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "Hiqe nga komuniteti",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "Raporto përdoruesin",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "Mos raporto përdoruesin",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "Ende nuk ka video",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "Nuk ka ende foto",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "Asnjë postim i gozhduar ende",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "Ende nuk ka postime",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "Shto një anëtar",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "Kërko përdorues",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "Redakto profilin",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "U përditësua me sukses profilin tuaj!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "Ruajtja e profilit tuaj dështoi. Ju lutemi provoni përsëri.",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "Komentet e historisë",
+  "post_item_bottom_nonmember_label": "Bashkohuni në grup për të bashkëvepruar me të gjitha postimet",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "Njoftimi u aktivizua",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "Aktivizimi i njoftimit dështoi. Ju lutemi provoni përsëri.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "Njoftimi u çaktivizua",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "Çaktivizimi i njoftimit dështoi. Ju lutemi provoni përsëri.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "Përdoruesi është raportuar.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "Raportimi i përdoruesit dështoi. Ju lutemi provoni përsëri.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "Përdoruesi i paraportuar.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "Zhraportimi i përdoruesit dështoi. Ju lutemi provoni përsëri.",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "Përdoruesi u bllokua.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "Bllokimi i përdoruesit dështoi. Ju lutemi provoni përsëri.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "Përdoruesi u zhbllokua.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "Zhbllokimi i përdoruesit dështoi. Ju lutemi provoni përsëri.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "Nuk u gjet asnjë anëtar",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "Promovimi i moderatorit",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "Jeni i sigurt që dëshironi ta promovoni këtë anëtar në Moderator? Ata do të kenë akses në të gjitha veçoritë e moderatorit.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "Promovoni",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "Degradimi i moderatorit",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "Jeni i sigurt që dëshironi ta ulni këtë moderator? Ata do të humbasin qasjen në të gjitha veçoritë e moderatorit.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "Demoto",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "Konfirmo heqjen",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "Jeni i sigurt që dëshironi ta hiqni këtë anëtar nga grupi? Ata do të jenë të vetëdijshëm për heqjen e tyre.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "Hiq",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "Konfirmo ndalimin",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "Jeni i sigurt që dëshironi ta ndaloni këtë përdorues? Ata do të hiqen nga grupi dhe nuk do të mund ta gjejnë atë ose të ribashkohen nëse nuk ndalohen.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "Ndalimi",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "U shtua me sukses një anëtar në këtë komunitet.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "Shtimi i anëtarit dështoi. Ju lutemi provoni përsëri.",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "Promovuar me sukses në moderator.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "Promovimi i anëtarit dështoi. Ju lutemi provoni përsëri.",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "Degraduar me sukses në anëtar.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "Zbritja e anëtarit dështoi. Ju lutemi provoni përsëri.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "Anëtari u hoq nga ky komunitet.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "Heqja e anëtarit dështoi. Ju lutemi provoni përsëri.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "Përdoruesi ndoqi.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "Mos, diçka shkoi keq.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "Përdoruesi u hoq nga ndjekja.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "Mos, diçka shkoi keq.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "Postoni në",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "Ju e keni bllokuar këtë përdorues",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "Zhblloko për të parë postimet e tyre.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "Kjo llogari është private",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "Ndiqni këtë përdorues për të parë postimet e tij.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "Vetëm tani",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "tani",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "Aktivizo njoftimet",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "Çaktivizo njoftimet",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "Të bllokohet përdoruesi?",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} nuk do të jetë në gjendje t'ju dërgojë mesazhin. Ata nuk do të njoftohen se i keni bllokuar.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "Të zhbllokohet përdoruesi?",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} tani do të jetë në gjendje t'ju dërgojë mesazhin. Ata nuk do të njoftohen që i keni zhbllokuar.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "Dërgo një foto",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "Dërgo një video",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "Kërkesa të reja për ndjekje",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "Kërkesat e {count} kanë nevojë për miratimin tuaj",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "Unfollow",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "Ky përdorues nuk mund të ndiqet",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "Oops! diçka shkoi keq. Ju lutemi provoni përsëri më vonë.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "Ndiqni",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "Anulo Kërkesën",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "Në vijim",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "Të bllokohet përdoruesi?",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} nuk do të jetë në gjendje të shikojë postimet dhe komentet që keni krijuar. Ata nuk do të njoftohen se i keni bllokuar.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "Blloko",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "Të zhbllokohet përdoruesi?",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} tani do të mund të shikojë postimet dhe komentet që keni krijuar. Ata nuk do të njoftohen që i keni zhbllokuar.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "Zhblloko",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "Të anulohet ndjekja e këtij përdoruesi?",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "Nëse ndryshoni mendje, do t'ju duhet të kërkoni t'i ndiqni përsëri.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "Unfollow",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "Kategoria",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "Asnjë komunitet ende",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "Kërkesat në pritje",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "Nuk ka kërkesa në pritje",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "Aktivizo rishikimin e postimit ose miratimin e bashkimit në cilësimet e komunitetit për të menaxhuar kërkesat.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "Funksioni i kërkesave për bashkim vjen së shpejti",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "Refuzimi i postimit në pritje do të fshijë përgjithmonë postimin e zgjedhur nga komuniteti.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "Nuk ka postime në pritje",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "Pranoje",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "Rënia",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "Postimi u fshi.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "Fshirja e postimit dështoi. Ju lutemi provoni përsëri.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "Postimi u pranua.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "Dështoi në pranimin e postimit. Ky postim është rishikuar nga një moderator tjetër.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "Postimi u refuzua.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "Refuzimi i postimit dështoi. Ky postim është rishikuar nga një moderator tjetër.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "Opsioni {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "Shto opsion",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "Përzgjedhje e shumëfishtë",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "Lërini pjesëmarrësit të votojnë më shumë se një opsion.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "Përfundon më {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "Përfundon më",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "Zgjidhni Data",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "Zgjidhni Koha",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "Ora",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "Minuta",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "Emri i shfaqur",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "Rreth",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "Lloji i imazhit i pambështetur",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "Ju lutemi ngarkoni një imazh PNG ose JPG.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "Imazhi i papërshtatshëm",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "Ju lutemi zgjidhni një imazh tjetër për të ngarkuar.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "Ndryshime të paruajtura",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "Jeni i sigurt që dëshironi të refuzoni ndryshimet? Ato do të humbasin kur të largoheni nga kjo faqe.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "Biseda",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "Të gjitha",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "Direkt",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "Grupet",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "Në pritje të rrjetit",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "Bisedë e drejtpërdrejtë",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "Bisedë në grup",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "Arkivuar",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "Redaktimi i mesazhit",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "veten",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "Mesazhi u përgjigj",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "Duke iu përgjigjur {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "Media",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "Biseda po ngarkohet",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "Nuk mund t'i dërgosh mesazhe këtij personi.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "Ju keni çaktivizuar njoftimet për bisedë",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "Arkivi",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "Unarkivoj",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "Ky mesazh u fshi",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "Asnjë pamje paraprake nuk mbështetet për këtë lloj mesazhi",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "Asnjë mesazh ende",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "Grupi",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "Krijo grup",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "Redakto grupin",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "Emri i grupit",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "Emërtoni grupin tuaj",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "Fut përshkrimin",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "Rreth",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "Anëtarët",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "Bashkohu",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "U bashkua",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "Publike",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "Privat",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "Çdokush mund të bashkohet, të shikojë dhe të kërkojë postimet në këtë grup.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "Vetëm anëtarët e ftuar nga moderatorët mund të bashkohen, shikojnë dhe kërkojnë postimet në këtë grup.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "Rekomanduar për ju",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "Në trend tani",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1.2K anëtarë",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "Informacioni bazë",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "Të largohesh pa mbaruar?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "Përparimi juaj nuk do të ruhet dhe grupi juaj nuk do të krijohet.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "Postimet në pritje",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "Të gjithë anëtarët",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "Moderatorët",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "Kërko anëtar",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "Promovoni te moderatori",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "Degradimi në anëtar",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "Hiq nga grupi",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "Komentet e historisë",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Asnjë grup ende",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "Kërkesat në pritje",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "Nuk ka kërkesa në pritje",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "Aktivizo rishikimin e postimit ose miratimin e bashkimit në cilësimet e grupit për të menaxhuar kërkesat.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "Funksioni i kërkesave për bashkim vjen së shpejti",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "Refuzimi i postimit në pritje do të fshijë përgjithmonë postimin e zgjedhur nga grupi.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "Nuk ka postime në pritje",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "Pranoje",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "Rënia",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "Grupi u krijua me sukses.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "Krijimi i grupit dështoi. Ju lutemi provoni përsëri.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "Grupi u përditësua me sukses.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "Ruajtja e profilit të grupit dështoi. Ju lutemi provoni përsëri.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "U largua me sukses nga grupi.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "Dështoi të largohej nga grupi.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "Grupi u mbyll me sukses.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "Mbyllja e grupit dështoi.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "Postimi u fshi.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "Fshirja e postimit dështoi. Ju lutemi provoni përsëri.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "Postimi u pranua.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "Dështoi në pranimin e postimit. Ky postim është rishikuar nga një moderator tjetër.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "Postimi u refuzua.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "Refuzimi i postimit dështoi. Ky postim është rishikuar nga një moderator tjetër.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "Nuk mund të largohet nga grupi",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "Ju jeni moderatori i vetëm në këtë grup. Për t'u larguar nga grupi, emëroni anëtarë të tjerë në rolin e moderatorit",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "Grupi nuk mund të mbyllet",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "Diçka shkoi keq. Ju lutemi provoni përsëri më vonë.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "Shumë biseda u arkivuan",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Publike",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Privat",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "Skedari",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Konfirmo heqjen e ndalimit",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Të fshihet ky mesazh?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Të gjithë",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Vetëm moderatorë",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Modaliteti i parazgjedhur",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Modaliteti i heshtur",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Modaliteti i abonimit",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Profili i grupit",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Njoftimet në grup",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Lejet e anëtarëve",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Të gjithë anëtarët",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Përdorues të ndaluar",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Largohu nga grupi",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Je moderatori i fundit",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "njoftimet",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Lejo njoftimet",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Të hiqet kjo histori?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "Historia do të fshihet përgjithmonë. Nuk mund të zhbëhet.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "Të hiqet lidhja?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Ndryshime të paruajtura",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Ngarkimi i historisë dështoi",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Të fshihet kjo histori?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Tregime",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Postimet u dërguan për shqyrtim",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Lejo qasjen në skedarët tuaj",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Lejo qasjen në fotot tuaja",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Lejo qasjen në videot e tua",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Është arritur kufiri maksimal i ngarkimit",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Të gjitha kategoritë",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Hidhni",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "shared_post_media_indicator": "Ky postim përmban media",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "Nuk mund të ngarkohet postimi i ndarë",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "Video",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "Sapo",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "{minutes} min më parë",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "{hours} orë më parë",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "{days} ditë më parë",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "Pak kohë më parë",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} min",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} orë",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} ditë",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} javë",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "Krijo postimin tënd të parë",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "Lista e anëtarëve u përditësua.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "empty_archived_chats_title": "Asnjë bisedë arkivore",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "chat_last_moderator_message": "Ju duhet të promovoni një anëtar tjetër në moderator përpara se të largoheni.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "Përditësimi i njoftimit të grupit dështoi. Ju lutemi provoni përsëri.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "empty_explore_description_no_categories": "Gjeni komunitetin ose krijoni tuajin",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Le të krijojmë bisedë për të filluar.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "story_unsaved_changes_message": "je i sigurt që dëshiron ta anulosh? Ndryshimet tuaja nuk do të ruhen.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Asnjë bisedë ende",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_group_chats_description": "Filloni një bisedë në grup me miqtë",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "chat_add_member_button": "Shto Anëtar",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_unban_confirmation_message": "Jeni i sigurt që dëshironi ta zhbllokoni këtë përdorues? Ata do të mund t'i bashkohen sërish grupit.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "empty_group_chats_cta": "Krijo bisedë në grup",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "chat_notification_silent_description": "Nuk ka njoftime për të gjithë në këtë kanal. Anëtarët nuk mund të aktivizojnë njoftimet në kanal.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "empty_explore_title_no_categories": "Eksplorimi juaj është bosh",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "Kjo lidhje do të hiqet nga historia.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_banned_users_updated": "Përdoruesit e ndaluar u përditësuan.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "feed_filter_apply": "Aplikoni filtrat",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_sort_by": "Rendit sipas",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "empty_category_communities_description": "Nuk u gjet asnjë komunitet në këtë kategori. Provoni të eksploroni kategori të tjera ose krijoni tuajën.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "post_share_success": "Postimi u shpërnda me sukses",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "Eksplorimi juaj është bosh",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "empty_my_communities_title": "Nuk ka ende komunitete",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "general_error_title": "Diçka shkoi keq",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "Pastro të gjitha",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "general_open_settings": "Hap cilësimet",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "empty_my_communities_cta": "Eksploroni komunitetet",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_group_left_success": "Biseda në grup u largua.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_promote_member_button": "Promovoni një anëtar",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "empty_archived_chats_description": "Bisedat e arkivuara do të shfaqen këtu",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "chat_leave_group_title": "Largohu nga grupi",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "Nëse largoheni nga ky grup, nuk do të shihni më aktivitete të reja ose nuk do të merrni pjesë në këtë grup.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "feed_filter_title": "Filtro postimet",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "chat_member_list_update_failed": "Përditësimi i listës së anëtarëve dështoi. Ju lutemi provoni përsëri.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_filter_content_type": "Lloji i përmbajtjes",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "chat_member_permissions_update_failed": "Përditësimi i lejeve të anëtarëve dështoi. Ju lutemi provoni përsëri.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "Gjeni grupin ose krijoni tuajin",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_group_notification_updated": "Njoftimi i grupit u përditësua.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_messaging_section": "Mesazhimi",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "empty_my_communities_description": "Bashkohuni me komunitetet për t'i parë ato këtu",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_comments_description": "Bëhu i pari që komenton",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "feed_filter_text": "Teksti",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_empty_title": "Furnizimi juaj është bosh",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_add_member_title": "Shto Anëtar",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_filter_images": "Imazhet",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "empty_search_cta": "Pastro kërkimin",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "general_remove": "Hiq",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "Si parazgjedhje, anëtarët në këtë komunitet do të marrin njoftime, por ata mund të zgjedhin t'i çaktivizojnë ato.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "feed_empty_description": "Gjeni grupin ose krijoni tuajin",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "cta_create_community": "Krijo komunitet",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Nuk u gjet asnjë rezultat",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_title": "Nuk ka ende biseda në grup",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "feed_empty_create_button": "Krijo grup",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "general_search": "Kërko",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "chat_your_preferences": "Preferencat tuaja",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "empty_search_description": "Provoni të kërkoni me fjalë kyçe të ndryshme",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "chat_archived_empty": "Asnjë bisedë arkivore",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_banned_users_update_failed": "Përditësimi i përdoruesve të ndaluar dështoi. Ju lutemi provoni përsëri.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "Unbano",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "empty_comments_title": "Ende nuk ka komente",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "feed_filter_oldest_first": "Më i vjetri i pari",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_error_retry": "Ju lutemi provoni përsëri.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "empty_all_chats_cta": "Krijo një bisedë të re",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "chat_permission_moderators_description": "Anëtarët që nuk janë moderatorë mund të lexojnë mesazhe, por nuk mund të dërgojnë asnjë mesazh.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_banned_users_empty": "Nuk ka asgjë për të parë ende këtu",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "Lejet e anëtarëve u përditësuan.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_settings_title": "Cilësimet e grupit",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "Videot",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_latest_first": "Së pari e fundit",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "Të gjithë anëtarët kanë mundësinë për të marrë njoftime, por ata duhet t'i aktivizojnë ato. Si parazgjedhje, njoftimet janë çaktivizuar për çdo anëtar.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_archived_title": "Bisedat e arkivuara",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "feed_empty_explore_button": "Eksploroni grupin",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "Largohu",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "empty_explore_title_no_communities": "Nuk ka ende komunitete",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "chat_permission_everyone_description": "Të gjithë mund të dërgojnë një mesazh në grup.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "Asnjë grup ende",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_no_group_description": "Le të krijojmë grupet tuaja..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "chat_group_left_failed": "Dështoi të largohej nga biseda në grup. Ju lutemi provoni përsëri.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "Përditësimi i profilit të grupit dështoi. Ju lutemi provoni përsëri.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_group_profile_updated": "Profili i grupit u përditësua.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Cilësimet e grupit",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "empty_explore_description_no_communities": "Bëhu i pari që krijon një komunitet",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Kërko postimet",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Provoni të rregulloni kërkimin tuaj",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

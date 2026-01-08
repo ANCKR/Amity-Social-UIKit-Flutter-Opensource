@@ -12,11 +12,13 @@ import 'package:flutter_svg/svg.dart';
 class AmityCommunityCoverView extends BaseElement {
   final AmityCommunity? community;
   final AmityCommunityHeaderStyle style;
+  final bool isJoined;
 
   AmityCommunityCoverView({
     super.key,
     required this.community,
     required this.style,
+    this.isJoined = false,
   }) : super(elementId: "community_cover");
 
   @override
@@ -43,7 +45,7 @@ class AmityCommunityCoverView extends BaseElement {
                         height: 32,
                         width: 32,
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.5),
+                          color: Colors.black.withValues(alpha: 0.5),
                           shape: BoxShape.circle,
                         ),
                         child: Center(
@@ -57,33 +59,34 @@ class AmityCommunityCoverView extends BaseElement {
                       ),
                     ),
                     Flexible(flex: 1, child: Container()),
-                    GestureDetector(
-                      onTap: () => {
-                        if (community != null)
-                          {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context2) => AmityCommunitySettingPage(community: community!)))
-                          }
-                      },
-                      child: Container(
-                        height: 32,
-                        width: 32,
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.5),
-                          shape: BoxShape.circle,
-                        ),
-                        child: Center(
-                          child: SvgPicture.asset(
-                            "assets/Icons/amity_ic_post_item_option.svg",
-                            package: 'amity_uikit_beta_service',
-                            height: 18,
-                            width: 18,
-                            colorFilter: const ColorFilter.mode(
-                                Colors.white, BlendMode.srcIn),
+                    if (isJoined)
+                      GestureDetector(
+                        onTap: () => {
+                          if (community != null)
+                            {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context2) => AmityCommunitySettingPage(community: community!)))
+                            }
+                        },
+                        child: Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.black.withValues(alpha: 0.5),
+                            shape: BoxShape.circle,
+                          ),
+                          child: Center(
+                            child: SvgPicture.asset(
+                              "assets/Icons/amity_ic_post_item_option.svg",
+                              package: 'amity_uikit_beta_service',
+                              height: 18,
+                              width: 18,
+                              colorFilter: const ColorFilter.mode(
+                                  Colors.white, BlendMode.srcIn),
+                            ),
                           ),
                         ),
                       ),
-                    ),
                   ],
                 ),
               ),
@@ -103,26 +106,39 @@ class AmityCommunityCoverView extends BaseElement {
 
   Widget renderAvatarImage() {
     final url = community?.avatarImage?.getUrl(AmityImageSize.LARGE);
-    return (url != null)
-        ? Container(width: double.infinity,
-            height: double.infinity,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage(url),
-                fit: BoxFit.cover,
-              ),
-            )
-          )
-        : Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment(-0.14, -0.99),
-                end: Alignment(0.14, 0.99),
-                colors: [Color(0xFFA5A9B5), Color(0xFF898E9E)],
-              ),
-            ),
-          );
+
+    if (url != null && url.isNotEmpty) {
+      return Image.network(
+        url,
+        width: double.infinity,
+        height: double.infinity,
+        fit: BoxFit.cover,
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return _buildPlaceholder();
+        },
+        errorBuilder: (context, error, stackTrace) {
+          return _buildPlaceholder();
+        },
+      );
+    } else {
+      return _buildPlaceholder();
+    }
+  }
+
+  Widget _buildPlaceholder() {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: theme.baseColorShade3,
+      child: Center(
+        child: SvgPicture.asset(
+          'assets/Icons/amity_ic_default_community_avatar.svg',
+          package: 'amity_uikit_beta_service',
+          width: 80,
+          height: 48,
+        ),
+      ),
+    );
   }
 }

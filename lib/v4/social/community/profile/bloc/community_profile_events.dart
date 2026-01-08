@@ -32,7 +32,9 @@ class CommunityProfileEventCollapsed extends CommunityProfileEvent { }
 class CommunityProfileEventJoining extends CommunityProfileEvent {
   final String communityId;
 
-  const CommunityProfileEventJoining({required this.communityId});
+  const CommunityProfileEventJoining({
+    required this.communityId,
+  });
 
   @override
   List<Object> get props => [communityId];
@@ -52,3 +54,5 @@ class CommunityProfileEventTabSelected extends CommunityProfileEvent {
   @override
   List<Object> get props => [tab];
  }
+
+class CommunityProfileEventResetJoinFlags extends CommunityProfileEvent { }

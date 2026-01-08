@@ -57,28 +57,32 @@ class CategoryState extends AmityListState {
 // Community specific state
 class CommunityState extends AmityListState {
   final List<AmityCommunity> communities;
+  final Set<String> loadingCommunityIds; // Track which communities are currently loading
 
   const CommunityState({
     required super.isLoading,
     required super.hasError,
     super.errorMessage,
     required this.communities,
+    this.loadingCommunityIds = const {},
   }) : super(itemCount: communities.length);
 
   @override
-  List<Object?> get props => [...super.props, communities];
+  List<Object?> get props => [...super.props, communities, loadingCommunityIds];
 
   CommunityState copyWith({
     bool? isLoading,
     bool? hasError,
     String? errorMessage,
     List<AmityCommunity>? communities,
+    Set<String>? loadingCommunityIds,
   }) {
     return CommunityState(
       isLoading: isLoading ?? this.isLoading,
       hasError: hasError ?? this.hasError,
       errorMessage: errorMessage ?? this.errorMessage,
       communities: communities ?? this.communities,
+      loadingCommunityIds: loadingCommunityIds ?? this.loadingCommunityIds,
     );
   }
 }

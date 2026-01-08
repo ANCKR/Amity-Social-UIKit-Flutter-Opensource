@@ -1,6 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
-import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -111,13 +110,18 @@ class AmityMessageAvatar extends BaseElement {
       width: 32,
       height: 32,
       decoration: BoxDecoration(
-        color: theme.primaryColor.blend(ColorBlendingOption.shade2),
+        color: theme.primaryColor,
         shape: BoxShape.circle,
       ),
       child: Center(
         child: Text(
           displayName.isEmpty ? "" : displayName[0].toUpperCase(),
-          style: AmityTextStyle.custom(14, FontWeight.w600, Colors.white),
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            color: Colors.white,
+            height: 1.0,
+          ),
         ),
       ),
     );

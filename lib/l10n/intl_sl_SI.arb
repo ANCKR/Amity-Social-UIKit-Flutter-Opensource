@@ -1,0 +1,2410 @@
+{
+  "community_title": "Skupnost",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "Newsfeed",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "Raziščite",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "Moje skupnosti",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "Moje skupine",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Krma",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "Dovoljenja skupnosti",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Dovoljenje za objavo",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "Kdo lahko objavlja v tej skupnosti",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "Nadzirate lahko, kdo lahko ustvarja objave v vaši skupnosti.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Dovoli komentiranje zgodb skupnosti",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Vklopite, če želite prejemati komentarje o zgodbah v tej skupnosti.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "Zapusti skupnost",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Zapusti skupnost. Ne boste mogli več objavljati in komunicirati v tej skupnosti.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Zaprta skupnost",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Če zaprete to skupnost, boste odstranili stran skupnosti ter vso njeno vsebino in komentarje.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "Zapreti skupnost?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "Vsi člani bodo odstranjeni iz skupnosti. Vse objave, sporočila, reakcije in mediji, ki so v skupni rabi, bodo izbrisani. Tega ni mogoče razveljaviti.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Skupinska dovoljenja",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Dovoljenje za objavo",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "Kdo lahko objavlja v tej skupini",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "Nadzirate lahko, kdo lahko ustvarja objave v vaši skupini.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Dovoli komentiranje skupinskih zgodb",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Vklopite, če želite prejemati komentarje o zgodbah v tej skupini.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Zapusti skupino",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Zapusti skupino. Ne boste mogli več objavljati in komunicirati v tej skupini.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Zapri skupino",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Če zaprete to skupino, boste odstranili stran skupine ter vso njeno vsebino in komentarje.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "Zapreti skupino?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "Vsi člani bodo odstranjeni iz skupine. Vse objave, sporočila, odzivi in ​​mediji, ki so v skupni rabi v skupini, bodo izbrisani. Tega ni mogoče razveljaviti.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Iskanje skupnosti in uporabnika",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "Preišči mojo skupnost",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "Ni rezultatov",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "skupnosti",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "Uporabniki",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "Prekliči",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "OK",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "Potrdi",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "Predstavljeno",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "Sledilci",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "Sledim",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "Objave",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "Ustvari objavo",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "Uredi objavo",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "kaj se dogaja",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "Izbriši objavo",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "Ta objava bo trajno izbrisana.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "Želite izbrisati objavo?",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "Ali želite izbrisati svojo objavo?",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "Prijavi objavo",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "Prekliči prijavo objave",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "Všeč mi je",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "Komentiraj",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "Delite",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "Želite zavreči to objavo?",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "Objava bo trajno izbrisana. Ni ga mogoče razveljaviti.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "Napišite komentar ",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "Trajanje ankete",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "Anketo lahko vedno zaprete pred nastavljenim trajanjem.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "Končni datum po meri",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "Zapri anketo",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "Ta anketa je zaprta. Ne morete več glasovati.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "Glasujte",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "Glej rezultate",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "Nazaj na glasovanje",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "Oglejte si celotne rezultate",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "Glasovali ste vi",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "in ti",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "levo",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "Glasovanje ankete ni uspelo. prosim poskusite ponovno",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "Končano",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "Izberite eno možnost",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "Izberite eno ali več možnosti",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "Anketa mora vsebovati vsaj {minOptions} možnosti.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "Anketno vprašanje",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "Kakšno je vaše anketno vprašanje?",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Povej kaj lepega",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Odgovori",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Odgovarjam na",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Prijavi komentar",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Odjavi komentar",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Prijavi odgovor",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Prekliči prijavo odgovora",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Uredi komentar",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Uredi odgovor",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Izbriši komentar",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Izbriši odgovor",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "Ta {content} bo trajno izbrisan.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Vaš komentar vsebuje neprimerno besedo. Preglejte in izbrišite.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "Ta zgodba ni več na voljo",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Uspešno ustvarjena skupnost.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "Skupnosti ni bilo mogoče ustvariti. prosim poskusite ponovno",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Skupnost je bila uspešno posodobljena.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "Vašega profila skupnosti ni bilo mogoče shraniti. prosim poskusite ponovno",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "Uspešno zapustil skupnost.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "Ni uspelo zapustiti skupnosti.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "Skupnost je bila uspešno zaprta.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "Zapiranje skupnosti ni uspelo.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Pridruži se",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "Pridružen",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "Priporočeno za vas",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "Trenutno v trendu",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1,2 tisoč članov",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "Ustvari skupnost",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Ime skupnosti",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Poimenujte svojo skupnost",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Vnesite opis",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Uredi skupnost",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "člani",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Zasebno",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Javno",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Vsakdo se lahko pridruži, si ogleda in išče objave v tej skupnosti.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Samo člani, ki so jih povabili moderatorji, se lahko pridružijo, si ogledujejo in iščejo objave v tej skupnosti.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "O tem",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "kategorije",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Izberite kategorijo",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Izberite kategorijo",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "Dodaj kategorijo",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "Čakajoče objave",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Vaše objave čakajo na pregled",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Osnovne informacije",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "Zapustiti brez dokončanja?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Vaš napredek ne bo shranjen in vaša skupnost ne bo ustvarjena.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Pošlji",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "tipka ",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Vnesite sporočilo ",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "nastavitve",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Obvestila",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Nove objave",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Prejemajte obvestila, ko nekdo ustvari nove objave v tej skupnosti.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reagiraj na objave",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Prejemajte obvestila, ko se nekdo odzove na vaše objave v tej skupnosti.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "Odziv na komentarje",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Prejemajte obvestila, ko nekdo všečka vaš komentar v tej skupnosti.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Novi komentarji",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Prejemajte obvestila, ko nekdo komentira vašo objavo v tej skupnosti.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Odgovori",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Prejemajte obvestila, ko nekdo komentira vaše komentarje v tej skupnosti.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Nove zgodbe",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Prejemajte obvestila, ko nekdo ustvari novo zgodbo v tej skupnosti.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Reakcije na zgodbo",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Prejemajte obvestila, ko se nekdo odzove na vašo zgodbo v tej skupnosti.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Komentarji zgodbe",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Prejemajte obvestila, ko nekdo komentira vašo zgodbo v tej skupnosti.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Vsi",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Samo moderatorji",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Samo administratorji lahko objavljajo",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "Zasebnost",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Jezik",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "Zapustiti brez dokončanja?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Vaše spremembe, ki ste jih naredili, morda ne bodo shranjene.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "Spremeniti nastavitve zasebnosti skupnosti?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Ta skupnost ima globalno predstavljene objave. Če skupnost spremenite iz javne v zasebno, te objave ne bodo prikazane globalno.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Dodaj",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Nalaganje",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Pusti",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Ups, nekaj je šlo narobe",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Urejeno",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(urejeno)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Nadaljujte z urejanjem",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Zavrzi",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderator",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Shrani",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Izbriši",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Uredi",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Zapri",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "Končano",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Objavi",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "Komentarji",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Zgodba",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Zgodbe",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Anketa",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Neobvezno",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "Vklopljeno",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Izključeno",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Dovoli obvestilo",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "Vklopite, če želite prejemati potisna obvestila te skupnosti.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "poročali",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "... Poglej več",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Kamera",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Fotografija",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Video",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Objava",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Moja časovnica",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Možnosti",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "Želite urediti globalno predstavljeno objavo?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "Objava, ki jo urejate, je bila predstavljena globalno. Če uredite svojo objavo, jo boste morali ponovno odobriti in ne bo več globalno predstavljena.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Objava prijavljena.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Objava neprijavljena.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{Brez članov} =1{1 član} other{{count} člani}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{post} other{objave}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{član} other{člani}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Blokiraj uporabnika",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Odblokiraj uporabnika",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "Objave ni bilo mogoče izbrisati. prosim poskusite ponovno",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "Ni mogoče zapustiti skupnosti",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Ste edini moderator v tej skupini. Če želite zapustiti skupnost, predlagajte druge člane za vlogo moderatorja",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "Ni mogoče zapreti skupnosti",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Nekaj ​​je šlo narobe. Poskusite znova pozneje.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Dosežena je največja omejitev nalaganja",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "Dosegli ste omejitev nalaganja {maxUploads} slik. Dodatne slike ne bodo shranjene.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "Dosegli ste omejitev nalaganja {maxUploads} videoposnetkov. Dodatni videoposnetki ne bodo shranjeni.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Objave ni bilo mogoče urediti. prosim poskusite ponovno",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Objave ni bilo mogoče ustvariti. prosim poskusite ponovno",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "Anketno vprašanje ne sme presegati {maxQuestionLength} znakov.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "Anketna možnost ne sme presegati {maxQuestionLength} znakov.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "Ankete ni bilo mogoče ustvariti. prosim poskusite znova",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "Neznano",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "Vsi člani",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "Moderatorji",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "Član iskanja",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "Povišaj v moderatorja",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "Znižaj v člana",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "Odstrani iz skupnosti",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "Prijavite uporabnika",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "Prekliči prijavo uporabnika",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "Ni še videoposnetkov",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "Ni še fotografij",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "Ni še nobene pripete objave",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "Ni še nobene objave",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "Dodaj člana",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "Išči uporabnika",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "Uredi profil",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "Vaš profil je bil uspešno posodobljen!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "Vašega profila ni bilo mogoče shraniti. prosim poskusite ponovno",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "Komentarji zgodbe",
+  "post_item_bottom_nonmember_label": "Pridružite se skupini za interakcijo z vsemi objavami",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "Obveščanje je vklopljeno",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "Obvestila ni bilo mogoče vklopiti. prosim poskusite ponovno",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "Obvestilo je izklopljeno",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "Obvestila ni bilo mogoče izklopiti. prosim poskusite ponovno",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "Uporabnik prijavljen.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "Prijava uporabnika ni uspela. prosim poskusite ponovno",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "Uporabnik neprijavljen.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "Preklic prijave uporabnika ni uspel. prosim poskusite znova",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "Uporabnik blokiran.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "Blokiranje uporabnika ni uspelo. prosim poskusite znova",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "Uporabnik odblokiran.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "Odblokiranje uporabnika ni uspelo. prosim poskusite znova",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "Ni članov",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "Promocija moderatorja",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "Ali ste prepričani, da želite tega člana povišati v moderatorja? Dobili bodo dostop do vseh funkcij moderatorja.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "Spodbujati",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "Degradacija moderatorja",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "Ali ste prepričani, da želite tega moderatorja znižati? Izgubili bodo dostop do vseh funkcij moderatorja.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "Znižati",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "Potrdite odstranitev",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "Ali ste prepričani, da želite odstraniti tega člana iz skupine? Seznanjeni bodo z njihovo odstranitvijo.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "Odstrani",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "Potrdi prepoved",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "Ali ste prepričani, da želite izključiti tega uporabnika? Odstranjeni bodo iz skupine in je ne bodo mogli najti ali se ji znova pridružiti, razen če bodo prepovedani.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "prepoved",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "Član je bil uspešno dodan v to skupnost.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "Člana ni bilo mogoče dodati. prosim poskusite ponovno",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "Uspešno povišan v moderatorja.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "Napredovanje člana ni uspelo. prosim poskusite ponovno",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "Uspešno degradiran v člana.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "Člana ni bilo mogoče znižati. prosim poskusite znova",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "Član je odstranjen iz te skupnosti.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "Člana ni bilo mogoče odstraniti. prosim poskusite znova",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "Uporabnik je sledil.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "Ups, nekaj je šlo narobe.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "Uporabnik je prenehal spremljati.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "Ups, nekaj je šlo narobe.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "Objavi na",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "Tega uporabnika ste blokirali",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "Odblokirajte, če želite videti njihove objave.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "Ta račun je zaseben",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "Sledite temu uporabniku, če želite videti njegove objave.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "Pravkar",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "zdaj",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "Vklopi obvestila",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "Izklopite obvestila",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "Blokirati uporabnika?",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} vam ne bo mogel poslati sporočila. Ne bodo obveščeni, da ste jih blokirali.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "Odblokirati uporabnika?",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} vam bo zdaj lahko poslal sporočilo. Ne bodo obveščeni, da ste jih odblokirali.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "Pošlji fotografijo",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "Pošlji video",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "Nove zahteve za spremljanje",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "Zahteve {count} potrebujejo vašo odobritev",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "Prekliči spremljanje",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "Temu uporabniku ni mogoče slediti",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "Ups! nekaj je šlo narobe. Poskusite znova pozneje.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "Sledi",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "Prekliči zahtevo",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "Sledim",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "Blokirati uporabnika?",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} ne bo mogel videti objav in komentarjev, ki ste jih ustvarili. Ne bodo obveščeni, da ste jih blokirali.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "Blokiraj",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "Odblokirati uporabnika?",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} bo zdaj lahko videl objave in komentarje, ki ste jih ustvarili. Ne bodo obveščeni, da ste jih odblokirali.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "Odblokiraj",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "Želite prenehati spremljati tega uporabnika?",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "Če si premislite, boste morali zahtevati, da jih znova spremljate.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "Prekliči spremljanje",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "Kategorija",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "Ni še skupnosti",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "Čakajoče zahteve",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "Ni čakajočih zahtev",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "Omogočite pregled objave ali odobritev pridružitve v nastavitvah skupnosti za upravljanje zahtev.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "Funkcija prošenj za pridružitev bo kmalu na voljo",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "Če zavrnete čakajočo objavo, boste izbrano objavo trajno izbrisali iz skupnosti.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "Ni čakajočih objav",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "Sprejmi",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "Zavrni",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "Objava izbrisana.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "Objave ni bilo mogoče izbrisati. prosim poskusite ponovno",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "Objava sprejeta.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "Objave ni bilo mogoče sprejeti. To objavo je pregledal drug moderator.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "Objava zavrnjena.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "Zavrnitev objave ni uspela. To objavo je pregledal drug moderator.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "Možnost {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "Dodaj možnost",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "Večkratna izbira",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "Naj udeleženci glasujejo za več kot eno možnost.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "Konča se {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "Konča se dne",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "Izberite Datum",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "Izberite Čas",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "ura",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "minuta",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "Prikazno ime",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "O tem",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "Nepodprta vrsta slike",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "Naložite sliko PNG ali JPG.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "Neprimerna slika",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "Izberite drugo sliko za nalaganje.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "Neshranjene spremembe",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "Ali ste prepričani, da želite zavreči spremembe? Izgubljeni bodo, ko zapustite to stran.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "Klepetajte",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "Vse",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "Neposredno",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "Skupine",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "Čakanje na omrežje ",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "Neposredni klepet",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "Skupinski klepet",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "Arhivirano",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "Urejanje sporočila",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "sebe",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "Odgovorjeno sporočilo",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "Odgovarjanje na {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "Mediji",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "Nalaganje klepeta ",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "Tej osebi ne morete pošiljati sporočil.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "Onemogočili ste obvestila za klepet",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "Arhiv",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "Odstrani iz arhiva",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "To sporočilo je bilo izbrisano",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "Predogled za to vrsto sporočila ni podprt",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "Ni še sporočila",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "skupina",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "Ustvari skupino",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "Uredi skupino",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "Ime skupine",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "Poimenujte svojo skupino",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "Vnesite opis",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "O tem",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "člani",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "Pridruži se",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "Pridružen",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "Javno",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "Zasebno",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "Vsakdo se lahko pridruži, si ogleduje in išče objave v tej skupini.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "Samo člani, ki so jih povabili moderatorji, se lahko pridružijo, si ogledujejo in iščejo objave v tej skupini.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "Priporočeno za vas",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "Trenutno v trendu",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1,2 tisoč članov",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "Osnovne informacije",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "Zapustiti brez dokončanja?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "Vaš napredek ne bo shranjen in vaša skupina ne bo ustvarjena.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "Čakajoče objave",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "Vsi člani",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "Moderatorji",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "Član iskanja",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "Povišaj v moderatorja",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "Znižaj v člana",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "Odstrani iz skupine",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "Komentarji zgodbe",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Ni še skupine",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "Čakajoče zahteve",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "Ni čakajočih zahtev",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "Omogočite pregled objave ali odobritev pridružitve v nastavitvah skupine za upravljanje zahtev.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "Funkcija prošenj za pridružitev bo kmalu na voljo",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "Če zavrnete čakajočo objavo, boste trajno izbrisali izbrano objavo iz skupine.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "Ni čakajočih objav",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "Sprejmi",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "Zavrni",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "Uspešno ustvarjena skupina.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "Skupine ni bilo mogoče ustvariti. prosim poskusite ponovno",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "Skupina je bila uspešno posodobljena.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "Profila vaše skupine ni bilo mogoče shraniti. prosim poskusite ponovno",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "Uspešno zapustil skupino.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "Skupine ni bilo mogoče zapustiti.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "Skupina je bila uspešno zaprta.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "Skupine ni bilo mogoče zapreti.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "Objava izbrisana.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "Objave ni bilo mogoče izbrisati. prosim poskusite ponovno",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "Objava sprejeta.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "Objave ni bilo mogoče sprejeti. To objavo je pregledal drug moderator.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "Objava zavrnjena.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "Zavrnitev objave ni uspela. To objavo je pregledal drug moderator.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "Ni mogoče zapustiti skupine",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "Vi ste edini moderator v tej skupini. Če želite zapustiti skupino, predlagajte druge člane za vlogo moderatorja",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "Skupine ni mogoče zapreti",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "Nekaj ​​je šlo narobe. Poskusite znova pozneje.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "Arhiviranih je preveč klepetov",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Javno",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Zasebno",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "Datoteka",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Potrdi preklic prepovedi",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Želite izbrisati to sporočilo?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Vsi",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Samo moderatorji",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Privzeti način",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Tihi način",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Način naročanja",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Profil skupine",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Skupinska obvestila",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Dovoljenja članov",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Vsi člani",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Prepovedani uporabniki",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Zapusti skupino",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Ti si zadnji moderator",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "obvestila",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Dovoli obvestila",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Želite zavreči to zgodbo?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "Zgodba bo trajno izbrisana. Ni ga mogoče razveljaviti.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "Odstraniti povezavo?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Neshranjene spremembe",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Zgodbe ni bilo mogoče naložiti",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Želite izbrisati to zgodbo?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Zgodbe",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Objave poslane v pregled",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Dovolite dostop do svojih datotek",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Dovolite dostop do svojih fotografij",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Dovolite dostop do svojih videoposnetkov",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Dosežena je največja omejitev nalaganja",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Vse kategorije",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Zavrzi",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "general_search": "Iskanje",
+  "@general_search": {
+    "description": "Translation for: Search"
+  },
+  "general_error_title": "Nekaj ​​je šlo narobe",
+  "@general_error_title": {
+    "description": "Translation for: Something went wrong"
+  },
+  "general_error_retry": "prosim poskusite znova",
+  "@general_error_retry": {
+    "description": "Translation for: Please try again."
+  },
+  "chat_archived_title": "Arhivirani klepeti",
+  "@chat_archived_title": {
+    "description": "Translation for: Archived chats"
+  },
+  "chat_archived_empty": "Brez arhivskega klepeta",
+  "@chat_archived_empty": {
+    "description": "Translation for: No archive chat"
+  },
+  "chat_add_member_title": "Dodaj člana",
+  "@chat_add_member_title": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_add_member_button": "Dodaj člana",
+  "@chat_add_member_button": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_banned_users_empty": "Tukaj še ni ničesar za videti",
+  "@chat_banned_users_empty": {
+    "description": "Translation for: Nothing here to see yet"
+  },
+  "chat_unban_confirmation_message": "Ali ste prepričani, da želite preklicati prepoved tega uporabnika? Ponovno se bodo lahko pridružili skupini.",
+  "@chat_unban_confirmation_message": {
+    "description": "Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again."
+  },
+  "chat_unban_button": "Prekliči prepoved",
+  "@chat_unban_button": {
+    "description": "Translation for: Unban"
+  },
+  "chat_group_settings_title": "Nastavitve skupine",
+  "@chat_group_settings_title": {
+    "description": "Translation for: Group Settings"
+  },
+  "chat_group_settings_section": "Nastavitve skupine",
+  "@chat_group_settings_section": {
+    "description": "Translation for: Group settings"
+  },
+  "chat_group_profile_updated": "Profil skupine je posodobljen.",
+  "@chat_group_profile_updated": {
+    "description": "Translation for: Group profile updated."
+  },
+  "chat_group_profile_update_failed": "Posodobitev profila skupine ni uspela. prosim poskusite ponovno",
+  "@chat_group_profile_update_failed": {
+    "description": "Translation for: Failed to update group profile. Please try again."
+  },
+  "chat_group_notification_updated": "Obvestilo skupine je posodobljeno.",
+  "@chat_group_notification_updated": {
+    "description": "Translation for: Group notification updated."
+  },
+  "chat_group_notification_update_failed": "Obvestila skupine ni bilo mogoče posodobiti. prosim poskusite ponovno",
+  "@chat_group_notification_update_failed": {
+    "description": "Translation for: Failed to update group notification. Please try again."
+  },
+  "chat_member_permissions_updated": "Dovoljenja za člane so posodobljena.",
+  "@chat_member_permissions_updated": {
+    "description": "Translation for: Member permissions updated."
+  },
+  "chat_member_permissions_update_failed": "Posodobitev dovoljenj za člane ni uspela. prosim poskusite znova",
+  "@chat_member_permissions_update_failed": {
+    "description": "Translation for: Failed to update member permissions. Please try again."
+  },
+  "chat_member_list_updated": "Seznam članov posodobljen.",
+  "@chat_member_list_updated": {
+    "description": "Translation for: Member list updated."
+  },
+  "chat_member_list_update_failed": "Seznama članov ni bilo mogoče posodobiti. prosim poskusite znova",
+  "@chat_member_list_update_failed": {
+    "description": "Translation for: Failed to update member list. Please try again."
+  },
+  "chat_banned_users_updated": "Prepovedani uporabniki posodobljeni.",
+  "@chat_banned_users_updated": {
+    "description": "Translation for: Banned users updated."
+  },
+  "chat_banned_users_update_failed": "Prepovedanih uporabnikov ni bilo mogoče posodobiti. prosim poskusite ponovno",
+  "@chat_banned_users_update_failed": {
+    "description": "Translation for: Failed to update banned users. Please try again."
+  },
+  "chat_your_preferences": "Vaše želje",
+  "@chat_your_preferences": {
+    "description": "Translation for: Your preferences"
+  },
+  "chat_leave_group_title": "Zapusti skupino",
+  "@chat_leave_group_title": {
+    "description": "Translation for: Leave group"
+  },
+  "chat_leave_group_message": "Če zapustite to skupino, ne boste več videli novih dejavnosti ali sodelovali v tej skupini.",
+  "@chat_leave_group_message": {
+    "description": "Translation for: If you leave this group, you will no longer see new activities or participate in this group."
+  },
+  "chat_leave_button": "Pusti",
+  "@chat_leave_button": {
+    "description": "Translation for: Leave"
+  },
+  "chat_promote_member_button": "Povišaj člana",
+  "@chat_promote_member_button": {
+    "description": "Translation for: Promote member"
+  },
+  "chat_group_left_success": "Skupinski klepet je ostal.",
+  "@chat_group_left_success": {
+    "description": "Translation for: Group chat left."
+  },
+  "chat_group_left_failed": "Skupinskega klepeta ni bilo mogoče zapustiti. prosim poskusite ponovno",
+  "@chat_group_left_failed": {
+    "description": "Translation for: Failed to leave group chat. Please try again."
+  },
+  "chat_messaging_section": "Sporočila",
+  "@chat_messaging_section": {
+    "description": "Translation for: Messaging"
+  },
+  "chat_permission_everyone_description": "Vsakdo lahko pošlje sporočilo v skupini.",
+  "@chat_permission_everyone_description": {
+    "description": "Translation for: Everyone can send a message in the group."
+  },
+  "chat_permission_moderators_description": "Člani, ki niso moderatorji, lahko berejo sporočila, ne morejo pa jih pošiljati.",
+  "@chat_permission_moderators_description": {
+    "description": "Translation for: Members who are not moderators can read messages but cannot send any messages."
+  },
+  "chat_notification_default_description": "Člani te skupnosti bodo privzeto prejemali obvestila, vendar se lahko odločijo, da jih izklopijo.",
+  "@chat_notification_default_description": {
+    "description": "Translation for: By default, members in this community will receive notifications, but they can choose to turn them off."
+  },
+  "chat_notification_silent_description": "Ni obvestil za vse v tem kanalu. Člani ne morejo vklopiti obvestil v kanalu.",
+  "@chat_notification_silent_description": {
+    "description": "Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel."
+  },
+  "chat_notification_subscribe_description": "Vsi člani imajo možnost prejemanja obvestil, vendar jih morajo omogočiti. Obvestila so privzeto izklopljena za vsakega člana.",
+  "@chat_notification_subscribe_description": {
+    "description": "Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member."
+  },
+  "feed_filter_title": "Filtriraj objave",
+  "@feed_filter_title": {
+    "description": "Translation for: Filter Posts"
+  },
+  "feed_filter_content_type": "Vrsta vsebine",
+  "@feed_filter_content_type": {
+    "description": "Translation for: Content Type"
+  },
+  "feed_filter_all": "Vse",
+  "@feed_filter_all": {
+    "description": "Translation for: All"
+  },
+  "feed_filter_images": "Slike",
+  "@feed_filter_images": {
+    "description": "Translation for: Images"
+  },
+  "feed_filter_videos": "Videoposnetki",
+  "@feed_filter_videos": {
+    "description": "Translation for: Videos"
+  },
+  "feed_filter_text": "Besedilo",
+  "@feed_filter_text": {
+    "description": "Translation for: Text"
+  },
+  "feed_filter_sort_by": "Razvrsti po",
+  "@feed_filter_sort_by": {
+    "description": "Translation for: Sort By"
+  },
+  "feed_filter_latest_first": "Najprej najnovejše",
+  "@feed_filter_latest_first": {
+    "description": "Translation for: Latest First"
+  },
+  "feed_filter_oldest_first": "Najprej najstarejši",
+  "@feed_filter_oldest_first": {
+    "description": "Translation for: Oldest First"
+  },
+  "feed_filter_clear_all": "Počisti vse",
+  "@feed_filter_clear_all": {
+    "description": "Translation for: Clear All"
+  },
+  "feed_filter_apply": "Uporabi filtre",
+  "@feed_filter_apply": {
+    "description": "Translation for: Apply Filters"
+  },
+  "feed_empty_title": "Vaš vir je prazen",
+  "@feed_empty_title": {
+    "description": "Translation for: Your feed is empty"
+  },
+  "feed_empty_description": "Poiščite skupino ali ustvarite svojo",
+  "@feed_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "feed_empty_explore_button": "Raziščite skupino",
+  "@feed_empty_explore_button": {
+    "description": "Translation for: Explore group"
+  },
+  "feed_empty_create_button": "Ustvari skupino",
+  "@feed_empty_create_button": {
+    "description": "Translation for: Create group"
+  },
+  "explore_empty_title": "Vaše raziskovanje je prazno",
+  "@explore_empty_title": {
+    "description": "Translation for: Your explore is empty"
+  },
+  "explore_no_group_title": "Ni še skupine",
+  "@explore_no_group_title": {
+    "description": "Translation for: No group yet"
+  },
+  "explore_empty_description": "Poiščite skupino ali ustvarite svojo",
+  "@explore_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "explore_no_group_description": "Ustvarimo svoje skupine..",
+  "@explore_no_group_description": {
+    "description": "Translation for: Let's create your own groups.."
+  },
+  "shared_post_media_indicator": "Ta objava vsebuje medije",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "Deljene objave ni mogoče naložiti",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "Video",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "Pravkar",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "Pred {minutes} min",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "Pred {hours} h",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "Pred {days} d",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "Pred nekaj časa",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} min",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} h",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} d",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} t",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "Ustvarite svojo prvo objavo",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Brez arhivskega klepeta",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "V tej kategoriji ni najdenih skupnosti. Poskusite raziskati druge kategorije ali ustvarite svojo.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Še ni komentarjev",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Objava je uspešno deljena",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Ni še nobene skupnosti",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Bodite prvi in ​​komentirajte",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "Pred odhodom morate drugega člana povišati v moderatorja.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Raziščite skupnosti",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Odprite nastavitve",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Poiščite skupnost ali ustvarite svojo",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Za začetek ustvarimo klepet.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Počisti iskanje",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "ste prepričani, da želite preklicati? Vaše spremembe ne bodo shranjene.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Pogovora še ni",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Tukaj bodo prikazani arhivirani klepeti",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Ustvari nov klepet",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Odstrani",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Pridružite se skupnostim, da jih vidite tukaj",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Začnite skupinski klepet s prijatelji",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Ustvari skupnost",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Ni rezultatov",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Ustvari skupinski klepet",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Ni še nobenih skupinskih klepetov",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Ni še nobene skupnosti",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Vaše raziskovanje je prazno",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "Ta povezava bo odstranjena iz zgodbe.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Poskusite iskati z drugimi ključnimi besedami",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Bodite prvi, ki bo ustvaril skupnost",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Iskanje objav",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Poskusite prilagoditi iskanje",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

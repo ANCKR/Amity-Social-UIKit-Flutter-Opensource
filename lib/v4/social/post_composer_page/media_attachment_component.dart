@@ -23,7 +23,7 @@ class AmityMediaAttachmentComponent extends NewBaseComponent {
 
   @override
   Widget buildComponent(BuildContext context) {
-    
+
     final featureConfig = configProvider.getFeatureConfig();
     final isVideoPostEnabled = featureConfig.post.video.createEnabled;
     final isImagePostEnabled = featureConfig.post.image.createEnabled;
@@ -32,7 +32,12 @@ class AmityMediaAttachmentComponent extends NewBaseComponent {
     return Column(
       children: [
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 25),
+          padding: const EdgeInsets.only(
+            left: 25,
+            right: 25,
+            top: 8,
+            bottom: 16, // Visual spacing (sheet size already accounts for safe area)
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

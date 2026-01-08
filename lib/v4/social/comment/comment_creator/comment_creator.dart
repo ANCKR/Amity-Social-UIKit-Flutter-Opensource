@@ -5,9 +5,9 @@ import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/core/ui/mention/mention_field.dart';
+import 'package:amity_uikit_beta_service/v4/core/user_avatar.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_creator/bloc/comment_creator_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_creator/comment_creator_action.dart';
-import 'package:amity_uikit_beta_service/v4/utils/user_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -73,20 +73,89 @@ class _AmityCommentCreatorInternalState
   late MentionTextEditingController controller;
   late ScrollController scrollController;
   final focusNode = FocusNode();
+  bool _hasText = false;
+  bool _isFocused = false;
 
   @override
   void initState() {
     super.initState();
     controller = MentionTextEditingController();
     scrollController = ScrollController();
+
+    // Track text changes for send button state
+    controller.addListener(() {
+      final hasText = controller.text.trim().isNotEmpty;
+      if (_hasText != hasText) {
+        setState(() {
+          _hasText = hasText;
+        });
+      }
+    });
+
+    // Track focus changes for border visibility
+    focusNode.addListener(() {
+      if (_isFocused != focusNode.hasFocus) {
+        setState(() {
+          _isFocused = focusNode.hasFocus;
+        });
+      }
+    });
+
+    // Insert mention for reply-to user if replying
+    if (widget.replyTo != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _insertReplyMention(widget.replyTo!);
+      });
+    }
+  }
+
+  @override
+  void didUpdateWidget(AmityCommentCreatorInternal oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // If reply target changed, insert the new mention
+    if (widget.replyTo != null &&
+        widget.replyTo?.commentId != oldWidget.replyTo?.commentId) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _insertReplyMention(widget.replyTo!);
+      });
+    }
   }
 
   @override
   void dispose() {
     controller.dispose();
     scrollController.dispose();
-
+    focusNode.dispose();
     super.dispose();
+  }
+
+  /// Inserts a mention for the user being replied to
+  void _insertReplyMention(AmityComment replyTo) {
+    final user = replyTo.user;
+    if (user == null) return;
+
+    final displayName = user.displayName ?? 'User';
+    final userId = user.userId;
+    if (userId == null) return;
+
+    // Create mention text with @ symbol and a space after
+    final mentionText = '@$displayName ';
+
+    // Create mention metadata for the Amity SDK
+    final mentionMetadata = AmityUserMentionMetadata(
+      userId: userId,
+      index: 0,
+      length: mentionText.length - 1, // Exclude the trailing space
+    );
+
+    // Populate the controller with the mention
+    controller.populate(mentionText, [mentionMetadata]);
+
+    // Move cursor to the end so user can continue typing
+    controller.selection = TextSelection.collapsed(offset: mentionText.length);
+
+    // Request focus on the input field
+    focusNode.requestFocus();
   }
 
   @override
@@ -117,126 +186,125 @@ class _AmityCommentCreatorInternalState
       String referenceId,
       AmityCommentReferenceType referenceType,
       String? communityId) {
-    AmityUser user = AmityCoreClient.getCurrentUser();
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 8),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Container(
-                padding: const EdgeInsets.only(
-                    top: 0, left: 12, right: 8, bottom: 8),
+    AmityUser? user = AmityCoreClient.getCurrentUser();
+
+    return Container(
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        border: Border(
+          top: BorderSide(width: 1, color: Color(0xFFEBECEE)),
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            // User avatar (replaces plus button from chat)
+            Container(
+              padding: const EdgeInsets.only(bottom: 6, right: 12),
+              child: AmityUserAvatar(
+                avatarUrl: user?.avatarUrl,
+                displayName: user?.displayName ?? "",
+                isDeletedUser: user?.isDeleted ?? false,
+                characterTextStyle: AmityTextStyle.titleBold(Colors.white),
+                avatarSize: const Size(32, 32),
+              ),
+            ),
+            // Input field (matching chat style)
+            Expanded(
+              child: Container(
+                constraints: const BoxConstraints(minHeight: 45, maxHeight: 120),
+                decoration: ShapeDecoration(
+                  color: widget.theme.baseColorShade4,
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(color: widget.theme.backgroundColor),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                child: MediaQuery.removePadding(
+                  context: context,
+                  removeTop: true,
+                  removeBottom: true,
+                  child: Scrollbar(
+                    controller: scrollController,
+                    child: MentionTextField(
+                      theme: widget.theme,
+                      style: AmityTextStyle.body(widget.theme.baseColor),
+                      suggestionMaxRow: 2,
+                      suggestionDisplayMode: SuggestionDisplayMode.bottom,
+                      mentionContentType: MentionContentType.comment,
+                      communityId: communityId,
+                      controller: controller,
+                      scrollController: scrollController,
+                      focusNode: focusNode,
+                      onChanged: (value) {
+                        context
+                            .read<CommentCreatorBloc>()
+                            .add(CommentCreatorTextChage(text: value.trim()));
+                      },
+                      keyboardType: TextInputType.multiline,
+                      maxLines: null,
+                      minLines: 1,
+                      textAlignVertical: TextAlignVertical.bottom,
+                      decoration: InputDecoration(
+                        isDense: true,
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 10,
+                        ),
+                        hintText: context.l10n.comment_create_hint,
+                        border: InputBorder.none,
+                        hintStyle: AmityTextStyle.body(widget.theme.baseColorShade2),
+                      ),
+                      suggestionOverlayBottomPaddingWhenKeyboardClosed:
+                          45.0 + 16.0 + (state.replyTo != null ? 62.0 : 0.0),
+                      suggestionOverlayBottomPaddingWhenKeyboardOpen:
+                          45.0 + 16.0 + (state.replyTo != null ? 62.0 : 0.0),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            // Send button (matching chat SVG style)
+            GestureDetector(
+              onTap: () {
+                if (!_hasText) return;
+
+                context.read<CommentCreatorBloc>().add(CommentCreatorCreated(
+                      referenceId: referenceId,
+                      referenceType: referenceType,
+                      text: controller.text,
+                      mentionMetadataList: controller.getAmityMentionMetadata(),
+                      mentionUserIds: controller.getMentionUserIds(),
+                      toastBloc: context.read<AmityToastBloc>(),
+                      context: context,
+                    ));
+                controller.clear();
+              },
+              child: Container(
+                padding: const EdgeInsets.only(bottom: 6, left: 12),
                 child: SizedBox(
                   width: 32,
                   height: 32,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: AmityUserImage(
-                      user: user,
-                      theme: widget.theme,
-                      size: 32,
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  constraints: const BoxConstraints(maxHeight: 135),
-                  height: state.currentHeight,
-                  alignment: Alignment.centerLeft,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
-                  decoration: ShapeDecoration(
-                    color: widget.theme.baseColorShade4,
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(color: widget.theme.backgroundColor),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                  child: MediaQuery.removePadding(
-                    context: context,
-                    removeTop: true,
-                    removeBottom: true,
-                    child: Scrollbar(
-                      controller: scrollController,
-                      child: MentionTextField(
-                        theme: widget.theme,
-                        style: AmityTextStyle.body(widget.theme.baseColor),
-                        suggestionMaxRow: 2,
-                        suggestionDisplayMode: SuggestionDisplayMode.bottom,
-                        mentionContentType: MentionContentType.comment,
-                        communityId: communityId,
-                        controller: controller,
-                        scrollController: scrollController,
-                        onChanged: (value) {
-                          context
-                              .read<CommentCreatorBloc>()
-                              .add(CommentCreatorTextChage(text: value.trim()));
-                        },
-                        keyboardType: TextInputType.multiline,
-                        maxLines: null,
-                        minLines: 1,
-                        textAlignVertical: TextAlignVertical.bottom,
-                        decoration: InputDecoration(
-                          isDense: true,
-                          contentPadding: const EdgeInsets.symmetric(
-                              horizontal: 0, vertical: 0),
-                          hintText: context.l10n.comment_create_hint,
-                          border: InputBorder.none,
-                          hintStyle: AmityTextStyle.subtitle(widget.theme.baseColorShade2),
+                  child: (_hasText)
+                      ? SvgPicture.asset(
+                          "assets/Icons/amity_ic_sent_message_button.svg",
+                          colorFilter: ColorFilter.mode(
+                            widget.theme.primaryColor,
+                            BlendMode.srcIn,
+                          ),
+                          package: 'amity_uikit_beta_service',
+                        )
+                      : SvgPicture.asset(
+                          "assets/Icons/amity_ic_sent_message_button_disable.svg",
+                          package: 'amity_uikit_beta_service',
                         ),
-                        suggestionOverlayBottomPaddingWhenKeyboardClosed:
-                            state.currentHeight +
-                                16.0 +
-                                (state.replyTo != null ? 40.0 : 0.0),
-                        suggestionOverlayBottomPaddingWhenKeyboardOpen:
-                            state.currentHeight +
-                                16.0 +
-                                (state.replyTo != null ? 40.0 : 0.0),
-                      ),
-                    ),
-                  ),
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  context.read<CommentCreatorBloc>().add(CommentCreatorCreated(
-                        referenceId: referenceId,
-                        referenceType: referenceType,
-                        text: controller.text,
-                        mentionMetadataList:
-                            controller.getAmityMentionMetadata(),
-                        mentionUserIds: controller.getMentionUserIds(),
-                        toastBloc: context.read<AmityToastBloc>(),
-                        context: context,
-                      ));
-                  controller.clear();
-                },
-                child: Container(
-                  padding:
-                      const EdgeInsets.only(bottom: 12, right: 12, left: 8),
-                  clipBehavior: Clip.antiAlias,
-                  decoration:
-                      BoxDecoration(color: widget.theme.backgroundColor),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        context.l10n.general_post,
-                        style: AmityTextStyle.body(widget.theme.primaryColor),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -245,7 +313,7 @@ class _AmityCommentCreatorInternalState
     final commentCreator = comment.user?.displayName ?? "";
     return Container(
       width: double.infinity,
-      height: 40,
+      height: 62,
       padding: const EdgeInsets.only(top: 10, left: 16, right: 12, bottom: 10),
       decoration: BoxDecoration(color: widget.theme.baseColorShade4),
       child: Row(
@@ -260,11 +328,13 @@ class _AmityCommentCreatorInternalState
                   children: [
                     TextSpan(
                       text: context.l10n.comment_reply_to,
-                      style: AmityTextStyle.subtitle(widget.theme.baseColorShade1),
+                      style:
+                          AmityTextStyle.caption(widget.theme.baseColorShade1),
                     ),
                     TextSpan(
                       text: commentCreator,
-                      style: AmityTextStyle.subtitleBold(widget.theme.baseColorShade1),
+                      style: AmityTextStyle.caption(
+                          widget.theme.baseColorShade1),
                     ),
                   ],
                 ),

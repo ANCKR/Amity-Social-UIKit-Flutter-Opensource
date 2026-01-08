@@ -1,0 +1,2410 @@
+{
+  "community_title": "Gemeenschap",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "Nieuwsfeed",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "Ontdekken",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "Mijn gemeenschappen",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "Mijn groepen",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Voer",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "Community-machtigingen",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Toestemming plaatsen",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "Wie kan berichten plaatsen op deze community",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "U kunt bepalen wie berichten in uw community kan maken.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Sta reacties op communityverhalen toe",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Schakel dit in om reacties op verhalen in deze community te ontvangen.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "Verlaat de gemeenschap",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Verlaat de gemeenschap. Je kunt niet langer berichten plaatsen en communiceren in deze community.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Een hechte gemeenschap",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Als u deze community sluit, worden de communitypagina en alle inhoud en opmerkingen verwijderd.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "Een hechte gemeenschap?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "Alle leden worden uit de community verwijderd. Alle berichten, berichten, reacties en media die in de community worden gedeeld, worden verwijderd. Dit kan niet ongedaan worden gemaakt.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Groepsmachtigingen",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Toestemming plaatsen",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "Wie kan berichten plaatsen in deze groep",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "Je kunt bepalen wie berichten in je groep kan maken.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Sta reacties op groepsverhalen toe",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Schakel dit in om reacties op verhalen in deze groep te ontvangen.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Verlaat de groep",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Verlaat de groep. Je kunt niet langer berichten plaatsen en communiceren in deze groep.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Een hechte groep",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Als u deze groep sluit, worden de groepspagina en alle inhoud en opmerkingen verwijderd.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "Een hechte groep?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "Alle leden worden uit de groep verwijderd. Alle berichten, berichten, reacties en media die in de groep worden gedeeld, worden verwijderd. Dit kan niet ongedaan worden gemaakt.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Zoekgemeenschap en gebruiker",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "Zoek in mijn gemeenschap",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "Geen resultaten gevonden",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "Gemeenschappen",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "Gebruikers",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "Annuleren",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "OK",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "Bevestigen",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "Uitgelicht",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "Volgers",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "Volgende",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "Berichten",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "Bericht maken",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "Bewerk bericht",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "Wat is er aan de hand",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "Bericht verwijderen",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "Dit bericht wordt definitief verwijderd.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "Bericht verwijderen?",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "Wil je je bericht verwijderen?",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "Bericht melden",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "Rapport ongedaan maken",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "Leuk vinden",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "Opmerking",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "Deel",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "Dit bericht verwijderen?",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "Het bericht wordt definitief verwijderd. Het kan niet ongedaan worden gemaakt.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "Schrijf een reactie",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "Duur van de enquête",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "U kunt de poll altijd vóór de ingestelde duur sluiten.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "Aangepaste einddatum",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "Poll sluiten",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "Deze peiling is gesloten. U kunt niet meer stemmen.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "Stemmen",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "Zie resultaten",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "Terug om te stemmen",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "Zie volledige resultaten",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "Door jou gestemd",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "jij ook",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "links",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "Stemmen op opiniepeiling is niet gelukt. Probeer het opnieuw.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "Beëindigd",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "Selecteer één optie",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "Selecteer een of meer opties",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "Poll vraag",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "Wat is uw pollvraag?",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Zeg iets aardigs",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Antwoord",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Reageren op",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Reactie melden",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Reactie ongedaan maken",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Rapporteer antwoord",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Rapport ongedaan maken van antwoord",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Opmerking bewerken",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Antwoord bewerken",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Reactie verwijderen",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Antwoord verwijderen",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "This {content} will be permanently deleted.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Uw reactie bevat ongepast woord. Controleer en verwijder het.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "Dit verhaal is niet langer beschikbaar",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Met succes een community gecreëerd.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "Kan community niet maken. Probeer het opnieuw.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Community bijgewerkt.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "Kan uw communityprofiel niet opslaan. Probeer het opnieuw.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "Heeft de gemeenschap met succes verlaten.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "Het is niet gelukt de gemeenschap te verlaten.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "De community is succesvol gesloten.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "Kan de community niet sluiten.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Meedoen",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "Aangesloten",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "Aanbevolen voor jou",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "Trending nu",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1,2K leden",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "Creëer een gemeenschap",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Gemeenschapsnaam",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Geef uw gemeenschap een naam",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Voer een beschrijving in",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Gemeenschap bewerken",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "Leden",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Privé",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Openbaar",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Iedereen kan lid worden, de berichten in deze community bekijken en doorzoeken.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Alleen leden die door de moderators zijn uitgenodigd, kunnen lid worden van de berichten in deze community en deze bekijken en doorzoeken.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "Over",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "Categorieën",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Selecteer categorie",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Selecteer Categorie",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "Categorie toevoegen",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "In behandeling zijnde berichten",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Je berichten zijn in afwachting van beoordeling",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Basisinformatie",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "Vertrekken zonder af te ronden?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Je voortgang wordt niet opgeslagen en je community wordt niet gemaakt.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Versturen",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "is aan het typen",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Typ een bericht",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "Instellingen",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Meldingen",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Nieuwe berichten",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Ontvang meldingen wanneer iemand nieuwe berichten in deze community plaatst.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reageer op berichten",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Ontvang meldingen wanneer iemand reageert op uw berichten in deze community.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "Reageer op opmerkingen",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Ontvang meldingen wanneer iemand uw reactie in deze community leuk vindt.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Nieuwe opmerkingen",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Ontvang meldingen wanneer iemand op uw bericht in deze community reageert.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Antwoorden",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Ontvang meldingen wanneer iemand commentaar geeft op uw opmerkingen in deze community.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Nieuwe verhalen",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Ontvang meldingen wanneer iemand een nieuw verhaal in deze community maakt.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Verhaalreacties",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Ontvang meldingen wanneer iemand op jouw verhaal in deze community reageert.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Verhaal opmerkingen",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Ontvang meldingen wanneer iemand commentaar geeft op uw verhaal in deze community.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Iedereen",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Alleen moderatoren",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Alleen beheerders kunnen berichten plaatsen",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "Privacy",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Taal",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "Vertrekken zonder af te ronden?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Uw aangebrachte wijzigingen worden mogelijk niet opgeslagen.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "Privacyinstellingen van de community wijzigen?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Deze community heeft wereldwijd aanbevolen berichten. Als u de community wijzigt van openbaar naar privé, worden deze berichten niet meer wereldwijd weergegeven.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Toevoegen",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Laden",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Vertrekken",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Oeps, er is iets misgegaan",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Bewerkt",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(bewerkt)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Blijf bewerken",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Weggooien",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderator",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Redden",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Verwijderen",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Bewerking",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Dichtbij",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "Klaar",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Na",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "Opmerkingen",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Verhaal",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Verhalen",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Opiniepeiling",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Optioneel",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "Op",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Uit",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Melding toestaan",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "Schakel dit in om pushmeldingen van deze community te ontvangen.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "gemeld",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...Zie meer",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Camera",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Foto",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Video",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Posten",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Mijn tijdlijn",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Opties",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "Wereldwijd aanbevolen bericht bewerken?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "Het bericht dat je bewerkt, is wereldwijd uitgelicht. Als je je bericht bewerkt, moet het opnieuw worden goedgekeurd en wordt het niet langer wereldwijd weergegeven.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Bericht gerapporteerd.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Post niet gerapporteerd.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{Geen leden} =1{1 lid} other{{count} leden}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{na} other{berichten}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{lid} other{leden}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Gebruiker blokkeren",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Deblokkeer gebruiker",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "Kan bericht niet verwijderen. Probeer het opnieuw.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "Kan de gemeenschap niet verlaten",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Jij bent de enige moderator in deze groep. Als u de community wilt verlaten, nomineert u andere leden voor de rol van moderator",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "Kan community niet sluiten",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Er is iets misgegaan. Probeer het later opnieuw.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Maximale uploadlimiet bereikt",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Bewerken mislukt",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Maken mislukt",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "Kan geen enquête maken. Probeer het opnieuw.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "Onbekend",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "Alle leden",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "Moderators",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "Zoek lid",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "Promoveren tot moderator",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "Degraderen tot lid",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "Verwijderen uit de gemeenschap",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "Gebruiker rapporteren",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "Rapporteer gebruiker ongedaan",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "Nog geen video's",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "Nog geen foto's",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "Nog geen vastgezet bericht",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "Nog geen berichten",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "Lid toevoegen",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "Zoek gebruiker",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "Profiel bewerken",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "Je profiel is succesvol bijgewerkt!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "Opslaan mislukt",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "Verhaal opmerkingen",
+  "post_item_bottom_nonmember_label": "Word lid van de groep om met alle berichten te communiceren",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "Notification turned on",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "Failed to turn on notification. Please try again.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "Notification turned off",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "Failed to turn off notification. Please try again.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "User reported.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "Failed to report user. Please try again.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "User unreported.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "Rapportage mislukt",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "User blocked.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "Failed to block user. Please try again.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "User unblocked.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "Failed to unblock user. Please try again.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "Geen leden gevonden",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "Moderator promotion",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "Are you sure you want to promote this member to Moderator? They will gain access to all moderator features.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "Promote",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "Moderator demotion",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "Are you sure you want to demote this Moderator? They will lose access to all moderator features.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "Demote",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "Confirm removal",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "Are you sure you want to remove this member from the group? They will be aware of their removal.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "Remove",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "Confirm ban",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "Are you sure you want to ban this user? They will be removed from the group and won't be able to find it or rejoin unless they are unbanned.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "Ban",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "Successfully added member to this community.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "Toevoegen mislukt",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "Successfully promoted to moderator.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "Promotie mislukt",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "Successfully demoted to member.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "Failed to demote member. Please try again.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "Member removed from this community.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "Failed to remove member. Please try again.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "User followed.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "Oops, something went wrong.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "User unfollowed.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "Oops, something went wrong.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "Post to",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "You've blocked this user",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "Deblokkeren om te zien",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "This account is private",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "Follow this user to see their posts.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "Just now",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "now",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "Turn on notifications",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "Turn off notifications",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "Block user?",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "Unblock user?",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "Send a photo",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "Send a video",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "New follow requests",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "{count} requests need your approval",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "Unfollow",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "Unable to follow this user",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "Oops! something went wrong. Please try again later.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "Follow",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "Cancel Request",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "Following",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "Block user?",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "Block",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "Unblock user?",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "Unblock",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "Unfollow this user?",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "If you change your mind, you'll have to request to follow them again.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "Unfollow",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "Category",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "Nog geen gemeenschap",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "Pending Requests",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "Geen openstaande verzoeken beschikbaar",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "Schakel postbeoordeling in of sluit u aan bij goedkeuring in de community-instellingen om verzoeken te beheren.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "Join requests feature coming soon",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "Geen openstaande berichten",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "Accept",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "Decline",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "Post deleted.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "Failed to delete post. Please try again.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "Post accepted.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "Failed to accept post. This post has been reviewed by another moderator.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "Post declined.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "Failed to decline post. This post has been reviewed by another moderator.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "Option {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "Add option",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "Multiple selection",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "Let participants vote more than one option.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "Ends on {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "Ends on",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "Select Date",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "Select Time",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "Hour",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "Minute",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "Display Name",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "About",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "Unsupported image type",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "Please upload a PNG or JPG image.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "Inappropriate image",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "Please choose a different image to upload.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "Unsaved changes",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "Are you sure you want to discard the changes? They will be lost when you leave this page.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "Chat",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "Alles",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "Direct",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "Groepen",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "Waiting for network",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "Direct chat",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "Group chat",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "Archived",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "Editing message",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "yourself",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "Replied message",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "Replying to {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "Media",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "Loading chat",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "You can't send messages to this person.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "You have disabled notifications for chat",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "Archive",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "Unarchive",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "This message was deleted",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "Er wordt geen voorbeeld ondersteund voor dit berichttype",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "Nog geen bericht",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "Group",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "Create Group",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "Edit Group",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "Group name",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "Name your group",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "Enter description",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "About",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "Members",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "Join",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "Joined",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "Public",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "Private",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "Anyone can join, view and search the posts in this group.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "Only members invited by the moderators can join, view, and search the posts in this group.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "Recommended for you",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "Trending now",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1.2K members",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "Basic Info",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "Leave without finishing?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "Your progress won't be saved and your group won't be created.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "Pending Posts",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "All members",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "Moderators",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "Search member",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "Promote to moderator",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "Demote to member",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "Remove from group",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "Story comments",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Nog geen groep",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "Pending Requests",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "Geen openstaande verzoeken beschikbaar",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "Schakel postbeoordeling in of neem deel aan goedkeuring in de groepsinstellingen om verzoeken te beheren.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "Join requests feature coming soon",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "Geen openstaande berichten",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "Accept",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "Decline",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "Successfully created group.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "Failed to create group. Please try again.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "Successfully updated group.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "Failed to save your group profile. Please try again.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "Successfully left the group.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "Failed to leave the group.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "Successfully closed the group.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "Failed to close the group.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "Post deleted.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "Failed to delete post. Please try again.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "Post accepted.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "Failed to accept post. This post has been reviewed by another moderator.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "Post declined.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "Failed to decline post. This post has been reviewed by another moderator.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "Unable to leave group",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "You're the only moderator in this group. To leave group, nominate other members to moderator role",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "Unable to close group",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "Something went wrong. Please try again later.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "Te veel chats gearchiveerd",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Openbaar",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Privé",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "Bestand",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Bevestig het opheffen van de ban",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Dit bericht verwijderen?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Iedereen",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Alleen moderatoren",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Standaardmodus",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Stille modus",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Abonneermodus",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Groepsprofiel",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Groepsmeldingen",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Machtigingen van leden",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Alle leden",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Verbannen gebruikers",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Groep verlaten",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Jij bent de laatste moderator",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "meldingen",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Meldingen toestaan",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Dit verhaal weggooien?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "Het verhaal wordt definitief verwijderd. Het kan niet ongedaan worden gemaakt.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "Koppeling verwijderen?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Niet-opgeslagen wijzigingen",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Kan verhaal niet uploaden",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Dit verhaal verwijderen?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Verhalen",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Berichten verzonden ter beoordeling",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Geef toegang tot uw bestanden",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Geef toegang tot uw foto's",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Geef toegang tot je video's",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Maximale uploadlimiet bereikt",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Alle categorieën",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Weggooien",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "general_search": "Zoekopdracht...",
+  "@general_search": {
+    "description": "Translation for: Search"
+  },
+  "general_error_title": "Er is iets misgegaan",
+  "@general_error_title": {
+    "description": "Translation for: Something went wrong"
+  },
+  "general_error_retry": "Probeer het opnieuw.",
+  "@general_error_retry": {
+    "description": "Translation for: Please try again."
+  },
+  "chat_archived_title": "Gearchiveerde chats",
+  "@chat_archived_title": {
+    "description": "Translation for: Archived chats"
+  },
+  "chat_archived_empty": "Geen archiefchat",
+  "@chat_archived_empty": {
+    "description": "Translation for: No archive chat"
+  },
+  "chat_add_member_title": "Lid toevoegen",
+  "@chat_add_member_title": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_add_member_button": "Lid toevoegen",
+  "@chat_add_member_button": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_banned_users_empty": "Hier is nog niets te zien",
+  "@chat_banned_users_empty": {
+    "description": "Translation for: Nothing here to see yet"
+  },
+  "chat_unban_confirmation_message": "Weet je zeker dat je de ban van deze gebruiker wilt opheffen? Zij kunnen zich weer bij de groep voegen.",
+  "@chat_unban_confirmation_message": {
+    "description": "Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again."
+  },
+  "chat_unban_button": "Verbanning ongedaan maken",
+  "@chat_unban_button": {
+    "description": "Translation for: Unban"
+  },
+  "chat_group_settings_title": "Groepsinstellingen",
+  "@chat_group_settings_title": {
+    "description": "Translation for: Group Settings"
+  },
+  "chat_group_settings_section": "Groepsinstellingen",
+  "@chat_group_settings_section": {
+    "description": "Translation for: Group settings"
+  },
+  "chat_your_preferences": "Uw voorkeuren",
+  "@chat_your_preferences": {
+    "description": "Translation for: Your preferences"
+  },
+  "chat_leave_group_title": "Verlaat de groep",
+  "@chat_leave_group_title": {
+    "description": "Translation for: Leave group"
+  },
+  "chat_leave_group_message": "Als u deze groep verlaat, ziet u geen nieuwe activiteiten meer en neemt u niet meer deel aan deze groep.",
+  "@chat_leave_group_message": {
+    "description": "Translation for: If you leave this group, you will no longer see new activities or participate in this group."
+  },
+  "chat_leave_button": "Vertrekken",
+  "@chat_leave_button": {
+    "description": "Translation for: Leave"
+  },
+  "chat_promote_member_button": "Lid promoten",
+  "@chat_promote_member_button": {
+    "description": "Translation for: Promote member"
+  },
+  "chat_group_profile_updated": "Groepsprofiel bijgewerkt.",
+  "@chat_group_profile_updated": {
+    "description": "Translation for: Group profile updated."
+  },
+  "chat_group_notification_updated": "Groepsmelding bijgewerkt.",
+  "@chat_group_notification_updated": {
+    "description": "Translation for: Group notification updated."
+  },
+  "chat_member_permissions_updated": "Machtigingen voor leden bijgewerkt.",
+  "@chat_member_permissions_updated": {
+    "description": "Translation for: Member permissions updated."
+  },
+  "chat_member_list_updated": "Ledenlijst bijgewerkt.",
+  "@chat_member_list_updated": {
+    "description": "Translation for: Member list updated."
+  },
+  "chat_banned_users_updated": "Verbannen gebruikers bijgewerkt.",
+  "@chat_banned_users_updated": {
+    "description": "Translation for: Banned users updated."
+  },
+  "chat_group_left_success": "Groepschat links.",
+  "@chat_group_left_success": {
+    "description": "Translation for: Group chat left."
+  },
+  "chat_group_profile_update_failed": "Kan groepsprofiel niet updaten. Probeer het opnieuw.",
+  "@chat_group_profile_update_failed": {
+    "description": "Translation for: Failed to update group profile. Please try again."
+  },
+  "chat_group_notification_update_failed": "Kan groepsmelding niet updaten. Probeer het opnieuw.",
+  "@chat_group_notification_update_failed": {
+    "description": "Translation for: Failed to update group notification. Please try again."
+  },
+  "chat_member_permissions_update_failed": "Kan de lidrechten niet updaten. Probeer het opnieuw.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Translation for: Failed to update member permissions. Please try again."
+  },
+  "chat_member_list_update_failed": "Kan de ledenlijst niet bijwerken. Probeer het opnieuw.",
+  "@chat_member_list_update_failed": {
+    "description": "Translation for: Failed to update member list. Please try again."
+  },
+  "chat_banned_users_update_failed": "Kan verbannen gebruikers niet updaten. Probeer het opnieuw.",
+  "@chat_banned_users_update_failed": {
+    "description": "Translation for: Failed to update banned users. Please try again."
+  },
+  "chat_group_left_failed": "Kan groepschat niet verlaten. Probeer het opnieuw.",
+  "@chat_group_left_failed": {
+    "description": "Translation for: Failed to leave group chat. Please try again."
+  },
+  "chat_messaging_section": "Berichten",
+  "@chat_messaging_section": {
+    "description": "Translation for: Messaging"
+  },
+  "chat_permission_everyone_description": "Iedereen kan een bericht sturen in de groep.",
+  "@chat_permission_everyone_description": {
+    "description": "Translation for: Everyone can send a message in the group."
+  },
+  "chat_permission_moderators_description": "Leden die geen moderator zijn, kunnen berichten lezen, maar kunnen geen berichten verzenden.",
+  "@chat_permission_moderators_description": {
+    "description": "Translation for: Members who are not moderators can read messages but cannot send any messages."
+  },
+  "chat_notification_default_description": "Standaard ontvangen leden van deze community meldingen, maar ze kunnen ervoor kiezen deze uit te schakelen.",
+  "@chat_notification_default_description": {
+    "description": "Translation for: By default, members in this community will receive notifications, but they can choose to turn them off."
+  },
+  "chat_notification_silent_description": "Geen meldingen voor iedereen in dit kanaal. Leden kunnen geen meldingen inschakelen in het kanaal.",
+  "@chat_notification_silent_description": {
+    "description": "Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel."
+  },
+  "chat_notification_subscribe_description": "Alle leden hebben de mogelijkheid om meldingen te ontvangen, maar ze moeten deze inschakelen. Standaard zijn meldingen voor elk lid uitgeschakeld.",
+  "@chat_notification_subscribe_description": {
+    "description": "Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member."
+  },
+  "feed_filter_title": "Berichten filteren",
+  "@feed_filter_title": {
+    "description": "Translation for: Filter Posts"
+  },
+  "feed_filter_content_type": "Inhoudstype",
+  "@feed_filter_content_type": {
+    "description": "Translation for: Content Type"
+  },
+  "feed_filter_all": "Alle",
+  "@feed_filter_all": {
+    "description": "Translation for: All"
+  },
+  "feed_filter_images": "Afbeeldingen",
+  "@feed_filter_images": {
+    "description": "Translation for: Images"
+  },
+  "feed_filter_videos": "Video's",
+  "@feed_filter_videos": {
+    "description": "Translation for: Videos"
+  },
+  "feed_filter_text": "Tekst",
+  "@feed_filter_text": {
+    "description": "Translation for: Text"
+  },
+  "feed_filter_sort_by": "Sorteer op",
+  "@feed_filter_sort_by": {
+    "description": "Translation for: Sort By"
+  },
+  "feed_filter_latest_first": "Laatste eerst",
+  "@feed_filter_latest_first": {
+    "description": "Translation for: Latest First"
+  },
+  "feed_filter_oldest_first": "Oudste eerst",
+  "@feed_filter_oldest_first": {
+    "description": "Translation for: Oldest First"
+  },
+  "feed_filter_clear_all": "Alles wissen",
+  "@feed_filter_clear_all": {
+    "description": "Translation for: Clear All"
+  },
+  "feed_filter_apply": "Filters toepassen",
+  "@feed_filter_apply": {
+    "description": "Translation for: Apply Filters"
+  },
+  "feed_empty_title": "Je feed is leeg",
+  "@feed_empty_title": {
+    "description": "Translation for: Your feed is empty"
+  },
+  "feed_empty_description": "Zoek of maak groep",
+  "@feed_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "feed_empty_explore_button": "Verkennen",
+  "@feed_empty_explore_button": {
+    "description": "Translation for: Explore group"
+  },
+  "feed_empty_create_button": "Maken",
+  "@feed_empty_create_button": {
+    "description": "Translation for: Create group"
+  },
+  "explore_empty_title": "Je verkenning is leeg",
+  "@explore_empty_title": {
+    "description": "Translation for: Your explore is empty"
+  },
+  "explore_no_group_title": "Nog geen groep",
+  "@explore_no_group_title": {
+    "description": "Translation for: No group yet"
+  },
+  "explore_empty_description": "Zoek een groep of creëer uw eigen groep",
+  "@explore_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "explore_no_group_description": "Laten we uw eigen groepen maken..",
+  "@explore_no_group_description": {
+    "description": "Translation for: Let's create your own groups.."
+  },
+  "shared_post_media_indicator": "Dit bericht bevat media",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "Kan gedeeld bericht niet laden",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "Video",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "Zojuist",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "{minutes} min geleden",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "{hours} u geleden",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "{days} d geleden",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "Enige tijd geleden",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} min",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} u",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} d",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} w",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "Maak je eerste bericht",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Geen archiefchat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Er zijn geen communities gevonden in deze categorie. Probeer andere categorieën te verkennen of maak uw eigen categorieën.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Nog geen opmerkingen",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Geen communities",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Wees de eerste die commentaar geeft",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Ontdek gemeenschappen",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Vind een community of creëer je eigen community",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "Laten we een chat maken om aan de slag te gaan.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Duidelijke zoekopdracht",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Nog geen gesprek",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Gearchiveerde chats verschijnen hier",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Maak een nieuwe chat",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Sluit je aan bij communities om ze hier te bekijken",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Start een groepschat met vrienden",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Geen resultaten gevonden",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Groepschat maken",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Geen groepen",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Nog geen gemeenschappen",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Je verkenning is leeg",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Probeer te zoeken met verschillende trefwoorden",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Wees de eerste die een community creëert",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Zoek berichten",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Probeer uw zoekopdracht aan te passen",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

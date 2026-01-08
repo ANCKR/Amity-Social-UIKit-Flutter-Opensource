@@ -32,14 +32,15 @@ class AmityUserImage extends StatelessWidget {
 
   Widget _buildPlaceholder() {
     return Container(
-      color: theme.primaryColor.blend(ColorBlendingOption.shade2),
+      color: theme.primaryColor,
       child: Center(
         child: Text(
           displayName.trim().isNotEmpty ? displayName.trim()[0].toUpperCase() : '?',
           style: TextStyle(
             color: Colors.white,
             fontSize: _mapSizeToFontSize(size),
-            fontWeight: FontWeight.normal,
+            fontWeight: FontWeight.w600,
+            height: 1.0,
           ),
         ),
       ),

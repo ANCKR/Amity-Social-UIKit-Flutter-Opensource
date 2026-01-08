@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/comment/comment_creator/comment_creator.dart';
@@ -95,7 +96,7 @@ class _CommentTrayComponentState extends State<CommentTrayComponent> {
                   controller: widget.scrollController,
                   slivers: [
                     SliverAppBar(
-                      title: const Text('Comments'),
+                      title: Text(context.l10n.general_comments),
                       titleTextStyle: AmityTextStyle.titleBold(widget.theme.baseColor),
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(

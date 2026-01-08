@@ -1,0 +1,2410 @@
+{
+  "community_title": "Community",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "Newsfeed",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "Explore",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "My Communities",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "My Groups",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Feed",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "Community permissions",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Post permission",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "Who can post on this community",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "You can control who can create posts in your community.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Allow comments on community stories",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Turn on to receive comments on stories in this community.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "Leave community",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Leave the community. You will no longer be able to post and interact in this community.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Close community",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Closing this community will remove the community  page and all its content and comments.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "Close community?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "All members will be removed from the community. All posts, messages, reactions, and media shared in community will be deleted. This cannot be undone.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Group permissions",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Post permission",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "Who can post on this group",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "You can control who can create posts in your group.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Allow comments on group stories",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Turn on to receive comments on stories in this group.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Leave group",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Leave the group. You will no longer be able to post and interact in this group.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Close group",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Closing this group will remove the group page and all its content and comments.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "Close group?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "All members will be removed from the group. All posts, messages, reactions, and media shared in group will be deleted. This cannot be undone.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Search community and user",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "Search my community",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "Ingen resultater funnet",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "Communities",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "Users",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "Cancel",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "OK",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "Confirm",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "Featured",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "Followers",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "Following",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "Posts",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "Create Post",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "Edit Post",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "What's going on",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "Delete Post",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "This post will be permanently deleted.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "Delete Post?",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "Do you want to Delete your post?",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "Report post",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "Unreport post",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "Like",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "Comment",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "Share",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "Discard this post?",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "The post will be permanently deleted. It cannot be undone.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "Write a comment",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "Poll duration",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "You can always close the poll before the set duration.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "Custom end date",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "Close poll",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "This poll is closed. You can no longer vote.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "Vote",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "See results",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "Back to vote",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "See Full Results",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "Voted by you",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": " and you",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "left",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "Failed to vote poll. Please try again.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "Ended",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "Select one option",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "Select one or more options",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "Poll must contain at least {minOptions} options.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "Poll question",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "What's your poll question?",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Say something nice",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Reply",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Replying to ",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Report comment",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Unreport comment",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Report reply",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Unreport reply",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Edit comment",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Edit reply",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Delete comment",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Delete reply",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "This {content} will be permanently deleted.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Your comment contains inappropriate word. Please review and delete it.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "This story is no longer available",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Successfully created community.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "Failed to create community. Please try again.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Successfully updated community.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "Failed to save your community profile. Please try again.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "Successfully left the community.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "Failed to leave the community.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "Successfully closed the community.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "Failed to close the community.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Join",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "Joined",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "Recommended for you",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "Trending now",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1.2K members",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "Create Community",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Community name",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Name your community",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Enter description",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Edit Community",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "Members",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Private",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Public",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Alle kan bli med, se og søke i innleggene i dette fellesskapet.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Bare medlemmer invitert av moderatorene kan bli med, se og søke i innleggene i dette fellesskapet.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "Om",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "Kategorier",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Velg kategori",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Velg Kategori",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "Legg til kategori",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "Ventende innlegg",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Innleggene dine venter på vurdering",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Grunnleggende info",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "Forlate uten å fullføre?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Fremgangen din blir ikke lagret, og fellesskapet ditt blir ikke opprettet.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Sende",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "skriver",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Skriv inn en melding",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "Innstillinger",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Varsler",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Nye innlegg",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Motta varsler når noen lager nye innlegg i dette fellesskapet.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reager innlegg",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Motta varsler når noen reagerer på innleggene dine i dette fellesskapet.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "Reager kommentarer",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Motta varsler når noen liker kommentaren din i dette fellesskapet.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Nye kommentarer",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Motta varsler når noen kommenterer innlegget ditt i dette fellesskapet.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Svarer",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Motta varsler når noen kommenterer kommentarene dine i dette fellesskapet.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Nye historier",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Motta varsler når noen lager en ny historie i dette fellesskapet.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Historiereaksjoner",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Motta varsler når noen reagerer på historien din i dette fellesskapet.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Historiekommentarer",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Motta varsler når noen kommenterer historien din i dette fellesskapet.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Alle sammen",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Kun moderatorer",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Bare administratorer kan legge ut innlegg",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "Privatliv",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Språk",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "Forlate uten å fullføre?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Endringene du har gjort, blir kanskje ikke lagret.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "Vil du endre personverninnstillingene for fellesskapet?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Dette fellesskapet har globale innlegg. Å endre fellesskapet fra offentlig til privat vil fjerne disse innleggene fra å bli omtalt globalt.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Legge til",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Laster inn",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Forlate",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Beklager, noe gikk galt",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Redigert",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(redigert)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Fortsett å redigere",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Kast",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderator",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Spare",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Slett",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Redigere",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Lukke",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "Ferdig",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Stolpe",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "Kommentarer",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Historie",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Historier",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Avstemning",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Valgfri",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "På",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Av",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Tillat varsling",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "Slå på for å motta push-varsler fra dette fellesskapet.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "rapportert",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...Se mer",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Kamera",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Foto",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Video",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Innlegg",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Min tidslinje",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Alternativer",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "Redigere globalt omtalt innlegg?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "Innlegget du redigerer har blitt omtalt globalt. Hvis du redigerer innlegget ditt, må det godkjennes på nytt, og vil ikke lenger vises globalt.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Innlegg rapportert.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Innlegg urapportert.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{Ingen medlemmer} =1{1 medlem} other{{count} medlemmer}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{stolpe} other{innlegg}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{medlem} other{medlemmer}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Blokker bruker",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Opphev blokkering av bruker",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "Kunne ikke slette innlegget. Vennligst prøv igjen.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "Kan ikke forlate fellesskapet",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Du er den eneste moderatoren i denne gruppen. For å forlate fellesskapet, nominer andre medlemmer til moderatorrollen",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "Kan ikke lukke fellesskapet",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Noe gikk galt. Vennligst prøv igjen senere.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Maksimal opplastingsgrense nådd",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "You’ve reached the upload limit of {maxUploads} images. Any additional images will not be saved.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "You’ve reached the upload limit of {maxUploads} videos. Any additional videos will not be saved.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Kunne ikke redigere innlegget. Vennligst prøv igjen.",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Kunne ikke opprette innlegget. Vennligst prøv igjen.",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "Poll question cannot exceed {maxQuestionLength} characters.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "Poll option cannot exceed {maxQuestionLength} characters.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "Kunne ikke opprette avstemningen. Vennligst prøv igjen.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "Ukjent",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "Alle medlemmer",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "Moderatorer",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "Søk medlem",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "Oppgrader til moderator",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "Degrader til medlem",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "Fjern fra fellesskapet",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "Rapporter bruker",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "Urapportert bruker",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "Ingen videoer ennå",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "Ingen bilder ennå",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "Ingen festet innlegg ennå",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "Ingen innlegg ennå",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "Legg til medlem",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "Søk bruker",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "Rediger profil",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "Har oppdatert profilen din!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "Kunne ikke lagre profilen din. Vennligst prøv igjen.",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "Historiekommentarer",
+  "post_item_bottom_nonmember_label": "Bli med i gruppen for å samhandle med alle innlegg",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "Varsling er slått på",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "Kunne ikke slå på varsling. Vennligst prøv igjen.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "Varsling er slått av",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "Kunne ikke slå av varsling. Vennligst prøv igjen.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "Bruker rapportert.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "Kunne ikke rapportere bruker. Vennligst prøv igjen.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "Bruker er ikke rapportert.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "Kunne ikke oppheve rapportering av bruker. Vennligst prøv igjen.",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "Bruker blokkert.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "Kunne ikke blokkere bruker. Vennligst prøv igjen.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "Bruker opphevet blokkeringen.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "Kunne ikke oppheve blokkeringen av brukeren. Vennligst prøv igjen.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "Ingen medlemmer funnet",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "Moderatoropprykk",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "Er du sikker på at du vil promotere dette medlemmet til moderator? De vil få tilgang til alle moderatorfunksjoner.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "Reklamere",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "Moderator degradering",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "Er du sikker på at du vil degradere denne moderatoren? De vil miste tilgangen til alle moderatorfunksjoner.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "Degradere",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "Bekreft fjerning",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "Er du sikker på at du vil fjerne dette medlemmet fra gruppen? De vil være klar over at de er fjernet.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "Fjerne",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "Bekreft utestengelse",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "Er du sikker på at du vil utestenge denne brukeren? De vil bli fjernet fra gruppen og vil ikke kunne finne den eller bli med på nytt med mindre de blir fjernet.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "Forby",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "Medlemmet ble lagt til i dette fellesskapet.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "Kunne ikke legge til medlem. Vennligst prøv igjen.",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "Vellykket oppgradert til moderator.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "Kunne ikke promotere medlem. Vennligst prøv igjen.",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "Degradert til medlem.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "Kunne ikke degradere medlem. Vennligst prøv igjen.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "Medlem fjernet fra dette fellesskapet.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "Kunne ikke fjerne medlem. Vennligst prøv igjen.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "Bruker fulgte.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "Beklager, noe gikk galt.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "Bruker sluttet å følge.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "Beklager, noe gikk galt.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "Post til",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "Du har blokkert denne brukeren",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "Opphev blokkeringen for å se innleggene deres.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "Denne kontoen er privat",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "Følg denne brukeren for å se innleggene deres.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "Akkurat nå",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "nå",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "Slå på varsler",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "Slå av varsler",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "Blokkere bruker?",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} won't be able to send you the message. They won't be notified that you've blocked them.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "Vil du oppheve blokkeringen av brukeren?",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} will now be able to send you the message. They won't be notified that you've unblocked them.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "Send et bilde",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "Send en video",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "Nye oppfølgingsforespørsler",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "{count} requests need your approval",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "Slutt å følge",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "Kan ikke følge denne brukeren",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "Oops! noe gikk galt. Vennligst prøv igjen senere.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "Følge",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "Avbryt forespørsel",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "Følgende",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "Blokkere bruker?",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} won't be able to see posts and comments that you've created. They won't be notified that you've blocked them.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "Blokkere",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "Vil du oppheve blokkeringen av brukeren?",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} will now be able to see posts and comments that you've created. They won't be notified that you've unblocked them.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "Fjern blokkering",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "Vil du slutte å følge denne brukeren?",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "Hvis du ombestemmer deg, må du be om å følge dem igjen.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "Slutt å følge",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "Kategori",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "Ingen fellesskap ennå",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "Ventende forespørsler",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "Ingen ventende forespørsler tilgjengelig",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "Aktiver innlegg gjennomgang eller bli med i godkjenning i fellesskapsinnstillingene for å administrere forespørsler.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "Funksjonen for å bli medlem kommer snart",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "Decline pending post will permanently delete the selected post from community.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "Ingen ventende innlegg",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "Akseptere",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "Avslå",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "Innlegg slettet.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "Kunne ikke slette innlegget. Vennligst prøv igjen.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "Innlegg akseptert.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "Kunne ikke godta innlegget. Dette innlegget har blitt vurdert av en annen moderator.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "Innlegget ble avvist.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "Kunne ikke avvise innlegget. Dette innlegget har blitt vurdert av en annen moderator.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "Option {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "Legg til alternativ",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "Multiple selection",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "La deltakerne stemme mer enn ett alternativ.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "Ends on {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "Slutter på",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "Velg Dato",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "Velg Tid",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "Time",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "Minutt",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "Vist navn",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "Om",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "Bildetypen støttes ikke",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "Last opp et PNG- eller JPG-bilde.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "Upassende bilde",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "Velg et annet bilde å laste opp.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "Ulagrede endringer",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "Er du sikker på at du vil forkaste endringene? De vil gå tapt når du forlater denne siden.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "Chat",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "Alle",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "Direkte",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "Grupper",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "Venter på nettverk",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "Direkte chat",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "Gruppeprat",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "Arkivert",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "Redigerer melding",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "deg",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "Besvarte melding",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "Replying to {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "Media",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "Laster chat",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "Du kan ikke sende meldinger til denne personen.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "Du har deaktivert varsler for chat",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "Arkiv",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "Avarkiver",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "Denne meldingen ble slettet",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "Ingen forhåndsvisning støttes for denne meldingstypen",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "Ingen melding ennå",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "Gruppe",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "Opprett gruppe",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "Rediger gruppe",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "Gruppenavn",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "Gi gruppen et navn",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "Skriv inn beskrivelse",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "Om",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "Medlemmer",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "Bli med",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "Ble med",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "Offentlig",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "Privat",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "Alle kan bli med, se og søke i innleggene i denne gruppen.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "Bare medlemmer invitert av moderatorene kan bli med, se og søke i innleggene i denne gruppen.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "Anbefalt for deg",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "Trender nå",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1,2K medlemmer",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "Grunnleggende info",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "Forlate uten å fullføre?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "Fremgangen din blir ikke lagret, og gruppen din vil ikke bli opprettet.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "Ventende innlegg",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "Alle medlemmer",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "Moderatorer",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "Søk medlem",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "Oppgrader til moderator",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "Degrader til medlem",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "Fjern fra gruppen",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "Historiekommentarer",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Ingen gruppe ennå",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "Ventende forespørsler",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "Ingen ventende forespørsler tilgjengelig",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "Aktiver postgjennomgang eller bli med i godkjenning i gruppeinnstillinger for å administrere forespørsler.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "Funksjonen for å bli medlem kommer snart",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "Decline pending post will permanently delete the selected post from group.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "Ingen ventende innlegg",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "Akseptere",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "Avslå",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "Gruppen er opprettet.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "Kunne ikke opprette gruppe. Vennligst prøv igjen.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "Gruppen er oppdatert.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "Kunne ikke lagre gruppeprofilen din. Vennligst prøv igjen.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "Forlot gruppen.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "Kunne ikke forlate gruppen.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "Lukket gruppen.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "Kunne ikke lukke gruppen.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "Innlegg slettet.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "Kunne ikke slette innlegget. Vennligst prøv igjen.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "Innlegg akseptert.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "Kunne ikke godta innlegget. Dette innlegget har blitt vurdert av en annen moderator.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "Innlegget ble avvist.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "Kunne ikke avvise innlegget. Dette innlegget har blitt vurdert av en annen moderator.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "Kan ikke forlate gruppen",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "Du er den eneste moderatoren i denne gruppen. For å forlate gruppen, nominer andre medlemmer til moderatorrolle",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "Kan ikke lukke gruppen",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "Noe gikk galt. Vennligst prøv igjen senere.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "For mange chatter er arkivert",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Offentlig",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Privat",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "Fil",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Bekreft opphev forbud",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Vil du slette denne meldingen?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Alle sammen",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Kun moderatorer",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Standardmodus",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Stille modus",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Abonner-modus",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Gruppeprofil",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Gruppevarsler",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Medlemstillatelser",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Alle medlemmer",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Utestengte brukere",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Gå ut av gruppen",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Du er den siste moderatoren",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "varsler",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Tillat varsler",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Vil du forkaste denne historien?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "Historien slettes permanent. Det kan ikke angres.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "Vil du fjerne koblingen?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Ulagrede endringer",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Kunne ikke laste opp historien",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Vil du slette denne historien?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Historier",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Innlegg sendt til vurdering",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Gi tilgang til filene dine",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Gi tilgang til bildene dine",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Gi tilgang til videoene dine",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Maksimal opplastingsgrense nådd",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Alle kategorier",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Kast",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "general_search": "Søk",
+  "@general_search": {
+    "description": "Translation for: Search"
+  },
+  "general_error_title": "Noe gikk galt",
+  "@general_error_title": {
+    "description": "Translation for: Something went wrong"
+  },
+  "general_error_retry": "Vennligst prøv igjen.",
+  "@general_error_retry": {
+    "description": "Translation for: Please try again."
+  },
+  "chat_archived_title": "Arkiverte chatter",
+  "@chat_archived_title": {
+    "description": "Translation for: Archived chats"
+  },
+  "chat_archived_empty": "Ingen arkivchat",
+  "@chat_archived_empty": {
+    "description": "Translation for: No archive chat"
+  },
+  "chat_add_member_title": "Legg til medlem",
+  "@chat_add_member_title": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_add_member_button": "Legg til medlem",
+  "@chat_add_member_button": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_banned_users_empty": "Ingenting her å se ennå",
+  "@chat_banned_users_empty": {
+    "description": "Translation for: Nothing here to see yet"
+  },
+  "chat_unban_confirmation_message": "Er du sikker på at du vil oppheve utestengelsen av denne brukeren? De vil kunne bli med i gruppen igjen.",
+  "@chat_unban_confirmation_message": {
+    "description": "Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again."
+  },
+  "chat_unban_button": "Opphev utestengelsen",
+  "@chat_unban_button": {
+    "description": "Translation for: Unban"
+  },
+  "chat_group_settings_title": "Gruppeinnstillinger",
+  "@chat_group_settings_title": {
+    "description": "Translation for: Group Settings"
+  },
+  "chat_group_settings_section": "Gruppeinnstillinger",
+  "@chat_group_settings_section": {
+    "description": "Translation for: Group settings"
+  },
+  "chat_your_preferences": "Dine preferanser",
+  "@chat_your_preferences": {
+    "description": "Translation for: Your preferences"
+  },
+  "chat_leave_group_title": "Forlat gruppen",
+  "@chat_leave_group_title": {
+    "description": "Translation for: Leave group"
+  },
+  "chat_leave_group_message": "Hvis du forlater denne gruppen, vil du ikke lenger se nye aktiviteter eller delta i denne gruppen.",
+  "@chat_leave_group_message": {
+    "description": "Translation for: If you leave this group, you will no longer see new activities or participate in this group."
+  },
+  "chat_leave_button": "Forlate",
+  "@chat_leave_button": {
+    "description": "Translation for: Leave"
+  },
+  "chat_promote_member_button": "Promoter medlem",
+  "@chat_promote_member_button": {
+    "description": "Translation for: Promote member"
+  },
+  "chat_group_profile_updated": "Gruppeprofilen er oppdatert.",
+  "@chat_group_profile_updated": {
+    "description": "Translation for: Group profile updated."
+  },
+  "chat_group_notification_updated": "Gruppevarsling oppdatert.",
+  "@chat_group_notification_updated": {
+    "description": "Translation for: Group notification updated."
+  },
+  "chat_member_permissions_updated": "Medlemstillatelser oppdatert.",
+  "@chat_member_permissions_updated": {
+    "description": "Translation for: Member permissions updated."
+  },
+  "chat_member_list_updated": "Medlemsliste oppdatert.",
+  "@chat_member_list_updated": {
+    "description": "Translation for: Member list updated."
+  },
+  "chat_banned_users_updated": "Utestengte brukere oppdatert.",
+  "@chat_banned_users_updated": {
+    "description": "Translation for: Banned users updated."
+  },
+  "chat_group_left_success": "Gruppechat igjen.",
+  "@chat_group_left_success": {
+    "description": "Translation for: Group chat left."
+  },
+  "chat_group_profile_update_failed": "Kunne ikke oppdatere gruppeprofilen. Vennligst prøv igjen.",
+  "@chat_group_profile_update_failed": {
+    "description": "Translation for: Failed to update group profile. Please try again."
+  },
+  "chat_group_notification_update_failed": "Kunne ikke oppdatere gruppevarsel. Vennligst prøv igjen.",
+  "@chat_group_notification_update_failed": {
+    "description": "Translation for: Failed to update group notification. Please try again."
+  },
+  "chat_member_permissions_update_failed": "Kunne ikke oppdatere medlemstillatelser. Vennligst prøv igjen.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Translation for: Failed to update member permissions. Please try again."
+  },
+  "chat_member_list_update_failed": "Kunne ikke oppdatere medlemslisten. Vennligst prøv igjen.",
+  "@chat_member_list_update_failed": {
+    "description": "Translation for: Failed to update member list. Please try again."
+  },
+  "chat_banned_users_update_failed": "Kunne ikke oppdatere utestengte brukere. Vennligst prøv igjen.",
+  "@chat_banned_users_update_failed": {
+    "description": "Translation for: Failed to update banned users. Please try again."
+  },
+  "chat_group_left_failed": "Kunne ikke forlate gruppechatten. Vennligst prøv igjen.",
+  "@chat_group_left_failed": {
+    "description": "Translation for: Failed to leave group chat. Please try again."
+  },
+  "chat_messaging_section": "Meldinger",
+  "@chat_messaging_section": {
+    "description": "Translation for: Messaging"
+  },
+  "chat_permission_everyone_description": "Alle kan sende melding i gruppen.",
+  "@chat_permission_everyone_description": {
+    "description": "Translation for: Everyone can send a message in the group."
+  },
+  "chat_permission_moderators_description": "Medlemmer som ikke er moderatorer kan lese meldinger, men kan ikke sende meldinger.",
+  "@chat_permission_moderators_description": {
+    "description": "Translation for: Members who are not moderators can read messages but cannot send any messages."
+  },
+  "chat_notification_default_description": "Som standard vil medlemmer i dette fellesskapet motta varsler, men de kan velge å slå dem av.",
+  "@chat_notification_default_description": {
+    "description": "Translation for: By default, members in this community will receive notifications, but they can choose to turn them off."
+  },
+  "chat_notification_silent_description": "Ingen varsler for alle i denne kanalen. Medlemmer kan ikke slå på varsler i kanalen.",
+  "@chat_notification_silent_description": {
+    "description": "Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel."
+  },
+  "chat_notification_subscribe_description": "Alle medlemmer har muligheten til å motta varsler, men de må aktivere dem. Som standard er varsler slått av for hvert medlem.",
+  "@chat_notification_subscribe_description": {
+    "description": "Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member."
+  },
+  "feed_filter_title": "Filtrer innlegg",
+  "@feed_filter_title": {
+    "description": "Translation for: Filter Posts"
+  },
+  "feed_filter_content_type": "Innholdstype",
+  "@feed_filter_content_type": {
+    "description": "Translation for: Content Type"
+  },
+  "feed_filter_all": "Alle",
+  "@feed_filter_all": {
+    "description": "Translation for: All"
+  },
+  "feed_filter_images": "Bilder",
+  "@feed_filter_images": {
+    "description": "Translation for: Images"
+  },
+  "feed_filter_videos": "Videoer",
+  "@feed_filter_videos": {
+    "description": "Translation for: Videos"
+  },
+  "feed_filter_text": "Tekst",
+  "@feed_filter_text": {
+    "description": "Translation for: Text"
+  },
+  "feed_filter_sort_by": "Sorter etter",
+  "@feed_filter_sort_by": {
+    "description": "Translation for: Sort By"
+  },
+  "feed_filter_latest_first": "Siste først",
+  "@feed_filter_latest_first": {
+    "description": "Translation for: Latest First"
+  },
+  "feed_filter_oldest_first": "Eldste først",
+  "@feed_filter_oldest_first": {
+    "description": "Translation for: Oldest First"
+  },
+  "feed_filter_clear_all": "Fjern alle",
+  "@feed_filter_clear_all": {
+    "description": "Translation for: Clear All"
+  },
+  "feed_filter_apply": "Bruk filtre",
+  "@feed_filter_apply": {
+    "description": "Translation for: Apply Filters"
+  },
+  "feed_empty_title": "Feeden din er tom",
+  "@feed_empty_title": {
+    "description": "Translation for: Your feed is empty"
+  },
+  "feed_empty_description": "Finn en gruppe eller lag din egen",
+  "@feed_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "feed_empty_explore_button": "Utforsk gruppen",
+  "@feed_empty_explore_button": {
+    "description": "Translation for: Explore group"
+  },
+  "feed_empty_create_button": "Opprett gruppe",
+  "@feed_empty_create_button": {
+    "description": "Translation for: Create group"
+  },
+  "explore_empty_title": "Utforskingen din er tom",
+  "@explore_empty_title": {
+    "description": "Translation for: Your explore is empty"
+  },
+  "explore_no_group_title": "Ingen gruppe ennå",
+  "@explore_no_group_title": {
+    "description": "Translation for: No group yet"
+  },
+  "explore_empty_description": "Finn en gruppe eller lag din egen",
+  "@explore_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "explore_no_group_description": "La oss lage dine egne grupper..",
+  "@explore_no_group_description": {
+    "description": "Translation for: Let's create your own groups.."
+  },
+  "shared_post_media_indicator": "Dette innlegget inneholder media",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "Kan ikke laste delt innlegg",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "Video",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "Akkurat nå",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "{minutes} min siden",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "{hours} t siden",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "{days} d siden",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "For en stund siden",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} min",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} t",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} d",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} u",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "Opprett ditt første innlegg",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "empty_archived_chats_title": "Ingen arkivchat",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Ingen fellesskap funnet i denne kategorien. Prøv å utforske andre kategorier eller lag din egen.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_title": "Ingen kommentarer ennå",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "post_share_success": "Post shared successfully",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "empty_my_communities_title": "Ingen fellesskap ennå",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_comments_description": "Vær den første til å kommentere",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "chat_last_moderator_message": "You must promote another member to moderator before leaving.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "empty_my_communities_cta": "Utforsk fellesskap",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_open_settings": "Open settings",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "empty_explore_description_no_categories": "Finn fellesskap eller lag ditt eget",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "La oss lage chat for å komme i gang.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_search_cta": "Tøm søk",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "story_unsaved_changes_message": "are you sure you want to cancel? Your Changes won't be saved.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "Ingen samtale ennå",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Arkiverte chatter vises her",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_all_chats_cta": "Opprett ny chat",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "general_remove": "Remove",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "empty_my_communities_description": "Bli med i fellesskap for å se dem her",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "empty_group_chats_description": "Start en gruppechat med venner",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "cta_create_community": "Create community",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "Ingen resultater funnet",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_cta": "Opprett gruppechat",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_title": "Ingen gruppechatter ennå",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_explore_title_no_communities": "Ingen fellesskap ennå",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Utforskingen din er tom",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "This link will be removed from story.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "empty_search_description": "Prøv å søke med forskjellige søkeord",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_explore_description_no_communities": "Vær den første til å opprette et fellesskap",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "Søk etter innlegg",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Prøv å justere søket",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

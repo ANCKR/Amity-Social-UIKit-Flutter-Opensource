@@ -1,7 +1,7 @@
-import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/social/shared/amity_empty_state_widget.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class ArchivedChatListEmptyState extends StatelessWidget {
   final AmityThemeColor theme;
@@ -10,23 +10,11 @@ class ArchivedChatListEmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SvgPicture.asset(
-            'assets/Icons/amity_ic_archived_chat_empty.svg',
-            package: 'amity_uikit_beta_service',
-            width: 60,
-            height: 45,
-          ),
-          const SizedBox(height: 16),
-          Text("No archive chat",
-              style: AmityTextStyle.titleBold(theme.baseColorShade3)),
-        ],
-      ),
+    return AmityEmptyStateWidget(
+      theme: theme,
+      title: context.l10n.empty_archived_chats_title,
+      description: context.l10n.empty_archived_chats_description,
+      customEmptyIcon: 'assets/Icons/amity_ic_chat_empty_state.svg',
     );
   }
 }

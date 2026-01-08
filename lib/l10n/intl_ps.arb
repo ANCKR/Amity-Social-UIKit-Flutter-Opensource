@@ -1,0 +1,2410 @@
+{
+  "community_title": "ټولنه",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "نیوزفیډ",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "سپړنه",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "زما ټولنې",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "زما ګروپونه",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "فیډ",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "د ټولنې اجازه",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "د پوسټ اجازه",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "څوک په دې ټولنه کې پوسټ کولی شي",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "تاسو کولی شئ کنټرول کړئ چې څوک ستاسو په ټولنه کې پوسټونه رامینځته کولی شي.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "د ټولنې کیسې په اړه تبصرو ته اجازه ورکړئ",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "په دې ټولنه کې د کیسې په اړه د نظرونو ترلاسه کولو لپاره وګرځئ.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "ټولنه پریږده",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "ټولنه پریږده. تاسو به نور نشئ کولی په دې ټولنه کې پوسټ او اړیکه ونیسئ.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "ټولنه بنده کړه",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "د دې ټولنې تړل به د ټولنې پاڼه او د هغې ټول منځپانګې او تبصرې لرې کړي.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "ټولنه بنده کړئ؟",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "ټول غړي به د ټولنې څخه لیرې شي. ټول پوسټونه، پیغامونه، غبرګونونه، او په ټولنه کې شریک شوي رسنۍ به حذف شي. دا نشي رد کیدی.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "د ګروپ اجازه",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "د پوسټ اجازه",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "په دې ګروپ کې څوک پوسټ کولی شي",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "تاسو کولی شئ کنټرول کړئ چې څوک ستاسو په ګروپ کې پوسټونه رامینځته کولی شي.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "د ګروپ کیسې په اړه نظرونو ته اجازه ورکړئ",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "په دې ګروپ کې د کیسې په اړه د نظرونو ترلاسه کولو لپاره وګرځئ.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "ډله پریږده",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "ډله پریږده. تاسو به نور نشئ کولی په دې ګروپ کې پوسټ او اړیکه ونیسئ.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "ډله بنده کړه",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "د دې ګروپ بندول به د ګروپ پاڼه او د هغې ټول منځپانګې او تبصرې لرې کړي.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "ډله بنده کړئ؟",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "ټول غړي به له ګروپ څخه ایستل کیږي. ټول پوسټونه، پیغامونه، غبرګونونه، او په ګروپ کې شریک شوي رسنۍ به حذف شي. دا نشي رد کیدی.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "ټولنه او کارن لټون",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "زما ټولنه وپلټئ",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "هیڅ پایله ونه موندل شوه",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "ټولنې",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "کاروونکي",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "لغوه کړئ",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "سمه ده",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "تایید کړه",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "انځور شوی",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "پیروان",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "تعقیب",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "پوسټونه",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "پوسټ جوړ کړئ",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "پوسټ ایډیټ کړئ",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "څه تیریږي",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "پوسټ ړنګ کړئ",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "دا پوسټ به د تل لپاره حذف شي.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "پوسټ حذف کړئ؟",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "ایا تاسو غواړئ خپل پوسټ حذف کړئ؟",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "راپور پوسټ",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "بې راپوره پوسټ",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "لکه",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "تبصره",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "شریکول",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "دا پوسټ رد کړئ؟",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "پوسټ به د تل لپاره حذف شي. دا نشي رد کیدی.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "تبصره ولیکئ ",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "د ټولپوښتنې موده",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "تاسو کولی شئ تل د ټاکل شوي مودې څخه دمخه رایه وتړئ.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "دودیز پای نیټه",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "ټولپوښتنه بنده کړئ",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "دا ټولپوښتنه بنده ده. تاسو نور نشي کولی رایه ورکړئ.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "رایه ورکړئ",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "پایلې وګورئ",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "بیرته رای ورکولو ته",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "بشپړ پایلې وګورئ",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "ستاسو لخوا رایه ورکړه",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "او تاسو",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "پاتې",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "په رایه ورکولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "ختم شو",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "یو انتخاب غوره کړئ",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "یو یا څو انتخابونه غوره کړئ",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "ټولپوښتنه باید لږترلږه {minOptions} اختیارونه ولري.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "د ټولپوښتنې پوښتنه",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "ستاسو د ټولپوښتنې پوښتنه څه ده؟",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "ښه څه ووایه ",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "ځواب ورکړئ",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "ځواب ورکول",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "راپور تبصره",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "بې راپور تبصره",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "راپور ځواب",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "بې راپور ځواب",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "تبصره ایډیټ کړئ",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "ځواب سمول",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "تبصره حذف کړئ",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "ځواب ړنګ کړئ",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "دا {content} به د تل لپاره حذف شي.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "ستاسو نظر نامناسب کلمه لري. مهرباني وکړئ بیاکتنه وکړئ او حذف یې کړئ.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "دا کیسه نور شتون نلري",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "په بریالیتوب سره ټولنه جوړه کړه.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "د ټولنې په جوړولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "ټولنه په بریالیتوب سره تازه کړه.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "ستاسو د ټولنې پروفایل خوندي کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "په بریالیتوب سره ټولنه پریښوده.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "د ټولنې پریښودو کې پاتې راغلی.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "په بریالیتوب سره ټولنه وتړله.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "د ټولنې په تړلو کې پاتې راغلی.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "ګډون وکړئ",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "یوځای شو",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "ستاسو لپاره وړاندیز شوی",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "اوس تمایل",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1.2K غړي",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "ټولنه جوړه کړئ",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "د ټولنې نوم",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "خپلې ټولنې ته نوم ورکړئ",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "توضیحات دننه کړئ",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "د ټولنې سمون",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "غړي",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "شخصي",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "عامه",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "هرڅوک کولی شي پدې ټولنه کې شامل شي، پوسټونه وګوري او لټون وکړي.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "یوازې هغه غړي چې د مدیرانو لخوا رابلل شوي کولی شي پدې ټولنه کې شامل شي، وګورئ او پوسټونه وپلټئ.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "په اړه",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "کټګورۍ",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "کټګورۍ غوره کړئ",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "کټګورۍ غوره کړئ",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "کټګورۍ اضافه کړئ",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "پاتې پوسټونه",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "ستاسو پوسټونه د بیاکتنې لپاره پاتې دي",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "بنسټیز معلومات",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "له پای ته رسیدو پرته پریږدئ؟",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "ستاسو پرمختګ به خوندي نشي او ستاسو ټولنه به رامینځته نشي.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "لیږل",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "ټایپ کوي",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "یو پیغام ولیکئ ",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "ترتیبات",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "خبرتیاوې",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "نوي پوسټونه",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "خبرتیاوې ترلاسه کړئ کله چې یو څوک پدې ټولنه کې نوي پوسټونه رامینځته کړي.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "پوسټونو ته غبرګون ورکړئ",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "خبرتیاوې ترلاسه کړئ کله چې یو څوک پدې ټولنه کې ستاسو پوسټونو ته عکس العمل ښیې.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "نظرونو ته ځواب ووایی",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "خبرتیاوې ترلاسه کړئ کله چې یو څوک پدې ټولنه کې ستاسو نظر خوښوي.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "نوې تبصرې",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "خبرتیاوې ترلاسه کړئ کله چې څوک پدې ټولنه کې ستاسو په پوسټ تبصره کوي.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "ځوابونه",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "خبرتیاوې ترلاسه کړئ کله چې څوک پدې ټولنه کې ستاسو نظرونو ته تبصره کوي.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "نوې کیسې",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "خبرتیاوې ترلاسه کړئ کله چې څوک پدې ټولنه کې نوې کیسه رامینځته کوي.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "د کیسې عکس العملونه",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "خبرتیاوې ترلاسه کړئ کله چې یو څوک پدې ټولنه کې ستاسو کیسې ته غبرګون ښیې.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "د کیسې تبصرې",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "خبرتیاوې ترلاسه کړئ کله چې څوک پدې ټولنه کې ستاسو په کیسه تبصره کوي.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "هرڅوک",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "یوازې منځلاري",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "یوازې مدیران پوسټ کولی شي",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "محرمیت",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "ژبه",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "له پای ته رسیدو پرته پریږدئ؟",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "ستاسو بدلونونه چې تاسو یې کړي دي ممکن خوندي نشي.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "د ټولنې د محرمیت ترتیبات بدل کړئ؟",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "دا ټولنه په نړیواله کچه غوره پوسټونه لري. له عامه څخه خصوصي ته د ټولنې بدلول به دا پوسټونه په نړیواله کچه د ښودلو څخه لرې کړي.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "اضافه کړئ",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "بار کول",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "پریږده",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "اوف، یو څه غلط شو",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "ترمیم شوی",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "( تدوین )",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "ترمیم ته دوام ورکړئ",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "رد کړئ",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "منځګړی",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "خوندي کړئ",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "ړنګول",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "سمون",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "تړل",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "ترسره شو",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "پوسټ",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "تبصرې",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "کیسه",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "کیسې",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "ټولپوښتنه",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "اختیاري",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "پر",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "بند",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "خبرتیا ته اجازه ورکړئ",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "د دې ټولنې څخه د پش خبرتیاو ترلاسه کولو لپاره چالان کړئ.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "راپور ورکړی",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "... نور وګوره",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "کیمره",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "انځور",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "ویډیو",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "پوسټ کول",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "زما مهال ویش",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "اختیارونه",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "په نړیواله کچه ځانګړی شوی پوسټ سم کړئ؟",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "هغه پوسټ چې تاسو یې ایډیټ کوئ په نړیواله کچه ښودل شوی. که تاسو خپل پوسټ سم کړئ، نو دا به بیا تصویب ته اړتیا ولري، او نور به په نړیواله کچه نه ښودل کیږي.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "پوسټ راپور ورکړ.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "بې راپوره پوسټ.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{غړي نشته} =1{1 غړی} other{{count} غړي}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{پوسټ} other{پوسټونه}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{غړی} other{غړي}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "د کارونکي بلاک کول",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "د کارونکي بندول",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "د پوسټ ړنګولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "د ټولنې پریښودلو توان نلري",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "تاسو په دې ګروپ کې یوازینی مدیر یاست. د ټولنې پریښودو لپاره، نور غړي د مدیر رول ته وټاکئ",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "د ټولنې تړلو توان نلري",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "یو څه غلط شو. مهرباني وکړئ وروسته بیا هڅه وکړئ.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "د پورته کولو اعظمي حد ته رسیدلی",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "تاسو د {maxUploads} انځورونو د پورته کولو حد ته رسیدلی یاست. کوم اضافي عکسونه به خوندي نشي.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "تاسو د {maxUploads} ویډیوګانو اپلوډ حد ته رسیدلی یاست. کوم اضافي ویډیوګانې به خوندي نشي.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "د پوسټ په سمون کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "د پوسټ په جوړولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "د ټولپوښتنې پوښتنه د {maxQuestionLength} حروف څخه نشي کیدی.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "د رای ورکولو اختیار د {maxQuestionLength} حروف څخه زیات نشي.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "د ټولپوښتنې په جوړولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "نامعلوم",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "ټول غړي",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "منځلاري",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "د لټون غړي",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "مدیر ته وده ورکړئ",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "غړي ته راکم کړئ",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "له ټولنې څخه لرې کړئ",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "د کاروونکي راپور ورکړئ",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "د کارونکي راپور نه ورکول",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "تراوسه هیڅ ویډیو نشته",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "تراوسه هیڅ عکس نشته",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "تر اوسه کوم پوسټ نه دی شوی",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "تراوسه هیڅ پوسټ نشته",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "غړی اضافه کړئ",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "د کارونکي لټون",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "پروفایل ایډیټ کړئ",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "په بریالیتوب سره خپل پروفایل تازه کړ!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "ستاسو د پروفایل په خوندي کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "د کیسې تبصرې",
+  "post_item_bottom_nonmember_label": "د ټولو پوسټونو سره د تعامل لپاره ګروپ کې ګډون وکړئ",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "خبرتیا فعاله شوه",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "د خبرتیا په فعالولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "خبرتیا بنده شوه",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "د خبرتیا بندولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "کارن راپور ورکړ.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "د کاروونکي راپور ورکولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "کارن بې راپوره شوی.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "د کارونکي د راپور ورکولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "کارن بلاک شوی.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "د کاروونکي په بندولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "کارن بلاک شوی.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "د کارونکي په خلاصولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "هیڅ غړی ونه موندل شو",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "د مدیر ترویج",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "ایا تاسو ډاډه یاست چې تاسو غواړئ دا غړی مدیر ته وده ورکړئ؟ دوی به د مدیر ټولو ځانګړتیاو ته لاسرسی ومومي.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "ترویج",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "د مدیر تخفیف",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "ایا تاسو ډاډه یاست چې تاسو غواړئ دا مدیر کم کړئ؟ دوی به د منځګړیتوب ټولو ځانګړتیاو ته لاسرسی له لاسه ورکړي.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "کمول",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "لرې کول تایید کړئ",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "ایا تاسو واقعیا غواړئ چې دا غړی له ګروپ څخه لرې کړئ؟ دوی به د دوی د لرې کولو څخه خبر وي.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "لرې کړئ",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "بندیز تایید کړئ",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "ایا تاسو ډاډه یاست چې تاسو دا کارن منع کول غواړئ؟ دوی به له ګروپ څخه ویستل شي او نشي کولی دا ومومي یا بیا یوځای شي پرته لدې چې دوی منع شوي وي.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "بندیز",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "په بریالیتوب سره په دې ټولنه کې غړی شامل شو.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "د غړي په اضافه کولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "په بریالیتوب سره مدیر ته وده ورکړه.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "غړي ته وده ورکولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "په بریالیتوب سره غړیتوب ته ښکته شو.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "د غړي په ګوښه کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "غړي له دې ټولنې څخه ایستل شوي.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "د غړي په لرې کولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "کارن تعقیب کړ.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "اوف، یو څه غلط شو.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "کارن تعقیب شوی.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "اوف، یو څه غلط شو.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "ته پوسټ کړئ",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "تاسو دا کارن بلاک کړی دی",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "د دوی پوسټونو لیدو لپاره بلاک کړئ.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "دا حساب شخصي دی",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "دا کاروونکي تعقیب کړئ ترڅو د دوی پوسټونه وګورئ.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "همدا اوس",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "اوس",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "خبرتیاوې چالان کړئ",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "خبرتیاوې بندې کړئ",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "کاروونکي بلاک کړئ؟",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} به تاسو ته د پیغام لیږلو توان ونلري. دوی ته به خبر ورنکړل شي چې تاسو دوی بند کړي دي.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "د کارن بلاک کول؟",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} اوس به وکولای شي تاسو ته پیغام واستوي. دوی ته به خبر ورنکړل شي چې تاسو دوی بند کړي دي.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "یو عکس ولیږئ",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "ویډیو راولیږئ",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "د نوي تعقیب غوښتنې",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "{count} غوښتنې ستاسو تصویب ته اړتیا لري",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "غیر تعقیب کړئ",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "د دې کاروونکي تعقیب کولو توان نلري",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "اوف! یو څه غلط شو. مهرباني وکړئ وروسته بیا هڅه وکړئ.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "تعقیب کړئ",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "غوښتنه رد کړه",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "تعقیب",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "کاروونکي بلاک کړئ؟",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} به نشي کولی هغه پوسټونه او تبصرې وګوري چې تاسو جوړ کړي دي. دوی ته به خبر ورنکړل شي چې تاسو دوی بند کړي دي.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "بلاک",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "د کارن بلاک کول؟",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} به اوس وکولی شي هغه پوسټونه او تبصرې وګوري چې تاسو جوړ کړي دي. دوی ته به خبر ورنکړل شي چې تاسو دوی بند کړي دي.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "خلاصول",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "ایا دا کارن تعقیب کړئ؟",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "که تاسو خپل فکر بدل کړئ، نو تاسو به د دوی بیا تعقیبولو غوښتنه وکړئ.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "غیر تعقیب کړئ",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "کټګوري",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "تراوسه هیڅ ټولنه نشته",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "پاتې غوښتنې",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "هیڅ پاتې غوښتنې شتون نلري",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "د پوسټ بیاکتنې فعال کړئ یا د غوښتنې اداره کولو لپاره د ټولنې په ترتیباتو کې تصویب کې ګډون وکړئ.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "د ګډون غوښتنه فیچر ډیر ژر راځي",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "د پاتې پوسټ رد کول به د ټولنې څخه غوره شوی پوسټ د تل لپاره حذف کړي.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "هیڅ پاتې پوسټونه",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "ومنئ",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "کمول",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "پوسټ ړنګ شو.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "د پوسټ ړنګولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "پوسټ ومنل شو.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "د پوسټ په منلو کې پاتې راغلی. دا پوسټ د بل مدیر لخوا بیاکتنه شوی.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "پوسټ رد شو.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "د پوسټ په ردولو کې پاتې راغلی. دا پوسټ د بل مدیر لخوا بیاکتنه شوی.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "اختیار {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "اختیار اضافه کړئ",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "څو انتخاب",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "ګډون کوونکو ته اجازه ورکړئ چې له یو څخه زیات انتخاب رایه ورکړي.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "په {endDate} پای ته رسیږي",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "پای ته رسیږي",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "نیټه وټاکئ",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "وخت وټاکئ",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "ساعت",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "دقیقه",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "نوم څرګند کړه",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "په اړه",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "د نه ملاتړ شوي عکس ډول",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "مهرباني وکړئ د PNG یا JPG انځور پورته کړئ.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "نامناسب انځور",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "مهرباني وکړئ د پورته کولو لپاره یو بل عکس غوره کړئ.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "نه خوندي شوي بدلونونه",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "ایا تاسو ډاډه یاست چې بدلونونه رد کړئ؟ دوی به ورک شي کله چې تاسو دا پاڼه پریږدئ.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "چټ",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "ټول",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "مستقیم",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "ګروپونه",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "د شبکې په انتظار",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "مستقیم خبرې اترې",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "ګروپ چټ",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "آرشیف شوی",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "د پیغام ترمیم کول",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "خپل ځان",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "ځواب شوی پیغام",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "{displayName} ته ځواب ورکول",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "رسنۍ",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "چټ پورته کول",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "تاسو نشئ کولی دې کس ته پیغامونه واستوئ.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "تاسو د چیٹ لپاره خبرتیاوې غیر فعال کړي دي",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "آرشیف",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "بې آرشیف",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "دا پیغام ړنګ شو",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "د دې پیغام ډول لپاره هیڅ مخکتنه نه ده تائید شوې",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "تر اوسه کوم پیغام نشته",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "ګروپ",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "ګروپ جوړ کړئ",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "ایډیټ ګروپ",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "د ګروپ نوم",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "خپل ګروپ ته نوم ورکړئ",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "توضیحات دننه کړئ",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "په اړه",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "غړي",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "ګډون وکړئ",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "یوځای شو",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "عامه",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "شخصي",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "هر څوک کولی شي په دې ګروپ کې شامل شي، پوسټونه وګوري او لټون وکړي.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "یوازې هغه غړي چې د مدیرانو لخوا رابلل شوي په دې ګروپ کې شامل کیدی شي، پوسټونه وګوري او لټون وکړي.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "ستاسو لپاره وړاندیز شوی",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "اوس تمایل",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1.2K غړي",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "بنسټیز معلومات",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "له پای ته رسیدو پرته پریږدئ؟",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "ستاسو پرمختګ به خوندي نشي او ستاسو ډله به جوړه نشي.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "پاتې پوسټونه",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "ټول غړي",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "منځلاري",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "د لټون غړي",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "مدیر ته وده ورکړئ",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "غړي ته راکم کړئ",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "له ډلې څخه لرې کړئ",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "د کیسې تبصرې",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "تر اوسه کومه ډله نه ده",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "پاتې غوښتنې",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "هیڅ پاتې غوښتنې شتون نلري",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "د غوښتنې اداره کولو لپاره د پوسټ بیاکتنې فعال کړئ یا په ګروپ تنظیماتو کې تصویب کې شامل شئ.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "د ګډون غوښتنه فیچر ډیر ژر راځي",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "د پاتې پوسټ رد کول به د ډلې څخه غوره شوی پوسټ د تل لپاره حذف کړي.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "هیڅ پاتې پوسټونه",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "ومنئ",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "کمول",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "په بریالیتوب سره ګروپ جوړ شو.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "د ګروپ په جوړولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "ګروپ په بریالیتوب سره تازه شو.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "ستاسو د ګروپ پروفایل خوندي کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "په بریالیتوب سره ګروپ پریښود.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "د ډلې پریښودو کې پاتې راغلی.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "په بریالیتوب سره ډله بنده کړه.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "د ډلې په تړلو کې پاتې راغلی.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "پوسټ ړنګ شو.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "د پوسټ ړنګولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "پوسټ ومنل شو.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "د پوسټ په منلو کې پاتې راغلی. دا پوسټ د بل مدیر لخوا بیاکتنه شوی.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "پوسټ رد شو.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "د پوسټ په ردولو کې پاتې راغلی. دا پوسټ د بل مدیر لخوا بیاکتنه شوی.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "د ګروپ پریښودلو توان نلري",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "تاسو په دې ګروپ کې یوازینی مدیر یاست. د ګروپ پریښودو لپاره، نور غړي د مدیر رول ته وټاکئ",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "د ګروپ بندولو توان نلري",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "یو څه غلط شو. مهرباني وکړئ وروسته بیا هڅه وکړئ.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "ډیری چیټونه آرشیف شوي",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "عامه",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "شخصي",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "دوتنه",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "د بندیز تصدیق کول",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "دا پیغام ړنګ کړئ؟",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "هرڅوک",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "یوازې منځلاري",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "ډیفالټ حالت",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "خاموش حالت",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "د ګډون حالت",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "د ګروپ پروفایل",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "د ګروپ خبرتیاوې",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "د غړو اجازه",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "ټول غړي",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "منع شوي کاروونکي",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "ګروپ پریږده",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "تاسو وروستی مدیر یاست",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "خبرتیاوې",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "خبرتیاو ته اجازه ورکړئ",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "دا کیسه پریږدئ؟",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "کیسه به د تل لپاره حذف شي. دا نشي رد کیدی.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "لینک لرې کړئ؟",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "نه خوندي شوي بدلونونه",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "د کیسه پورته کولو کې پاتې راغلی",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "دا کیسه حذف کړئ؟",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "کیسې",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "پوسټونه د بیاکتنې لپاره لیږل شوي",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "خپلو فایلونو ته د لاسرسي اجازه ورکړئ",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "خپلو عکسونو ته د لاسرسي اجازه ورکړئ",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "خپلو ویډیوګانو ته د لاسرسي اجازه ورکړئ",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "د پورته کولو اعظمي حد ته رسیدلی",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "ټول کټګورۍ",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "رد کړئ",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "shared_post_media_indicator": "دا پوسټ رسنۍ لري",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "شریک شوی پوسټ بار نشو کولی",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "ویډیو",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "همدا اوس",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "{minutes} دقیقې مخکې",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "{hours} ساعته مخکې",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "{days} ورځې مخکې",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "یو څه وخت مخکې",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} د",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} س",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} و",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} ا",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "خپل لومړی پوسټ جوړ کړئ",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "chat_member_list_updated": "د غړو لیست تازه شو.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "empty_archived_chats_title": "هیڅ آرشیف چیٹ نشته",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "chat_last_moderator_message": "تاسو باید د وتلو دمخه یو بل غړی مدیر ته وده ورکړئ.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_group_notification_update_failed": "د ګروپ خبرتیا تازه کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "empty_explore_description_no_categories": "ټولنه ومومئ یا خپل ځان جوړ کړئ",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_all_chats_description": "راځئ چې د پیل کولو لپاره چیټ جوړ کړو.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "story_unsaved_changes_message": "ایا تاسو ډاډه یاست چې لغوه کول غواړئ؟ ستاسو بدلونونه به خوندي نه شي.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "empty_all_chats_title": "تر اوسه خبرې نه دي شوي",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_group_chats_description": "د ملګرو سره ډله ایز چیٹ پیل کړئ",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "chat_add_member_button": "غړی اضافه کړئ",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_unban_confirmation_message": "ایا تاسو ډاډه یاست چې تاسو د دې کارن بندیز لرې کول غواړئ؟ دوی به وکولای شي چې یو ځل بیا له ډلې سره یوځای شي.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "empty_group_chats_cta": "ډله ایز چیٹ جوړ کړئ",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "chat_notification_silent_description": "په دې چینل کې د هرچا لپاره هیڅ خبرتیا نشته. غړي نشي کولی په چینل کې خبرتیاوې فعالې کړي.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "empty_explore_title_no_categories": "ستاسو سپړنه خالي ده",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "story_remove_link_message": "دا لینک به د کیسې څخه لیرې شي.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "chat_banned_users_updated": "منع شوي کاروونکي تازه شوي.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "feed_filter_apply": "فلټرونه پلي کړئ",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_sort_by": "په ترتیب سره",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "empty_category_communities_description": "په دې کټګورۍ کې هیڅ ټولنه نه موندل کیږي. د نورو کټګوریو سپړلو هڅه وکړئ یا خپل ځان جوړ کړئ.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "post_share_success": "پوسټ په بریالیتوب سره شریک شو",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "explore_empty_title": "ستاسو سپړنه خالي ده",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "empty_my_communities_title": "تراوسه هیڅ ټولنه نشته",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "general_error_title": "یو څه غلط شو",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "feed_filter_clear_all": "ټول پاک کړئ",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "general_open_settings": "ترتیبات خلاص کړئ",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "empty_my_communities_cta": "ټولنې وپلټئ",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "general_yes": "Yes",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "chat_group_left_success": "ګروپ چټ پاتې شو.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_promote_member_button": "غړي ته وده ورکړئ",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "empty_archived_chats_description": "آرشیف شوي چټونه به دلته ښکاره شي",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "chat_leave_group_title": "ګروپ پریږده",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_leave_group_message": "که تاسو دا ګروپ پریږدئ، نو تاسو به نور نوي فعالیتونه ونه ګورئ یا په دې ګروپ کې برخه واخلئ.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "feed_filter_title": "پوسټونه فلټر کړئ",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "chat_member_list_update_failed": "د غړو لیست تازه کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "feed_filter_content_type": "د منځپانګې ډول",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "chat_member_permissions_update_failed": "د غړو اجازې تازه کولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "explore_empty_description": "ګروپ ومومئ یا خپل ځان جوړ کړئ",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "chat_group_notification_updated": "د ګروپ خبرتیا تازه شوه.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_messaging_section": "پیغام رسول",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "empty_my_communities_description": "د ټولنو سره یوځای شئ ترڅو دوی دلته وګورئ",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_comments_description": "د تبصرو لپاره لومړی شئ",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "feed_filter_text": "متن",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_empty_title": "ستاسو فیډ خالي دی",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "chat_add_member_title": "غړی اضافه کړئ",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "feed_filter_images": "انځورونه",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "empty_search_cta": "پاک لټون",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "general_remove": "لرې کړئ",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "chat_notification_default_description": "په ډیفالټ کې، د دې ټولنې غړي به خبرتیاوې ترلاسه کړي، مګر دوی کولی شي د دوی بندول غوره کړي.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "feed_empty_description": "ګروپ ومومئ یا خپل ځان جوړ کړئ",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "cta_create_community": "ټولنه جوړه کړئ",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_search_title": "هیڅ پایله ونه موندل شوه",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "empty_group_chats_title": "تر اوسه هیڅ ګروپ چیټ نشته",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "feed_empty_create_button": "ګروپ جوړ کړئ",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "general_search": "لټون",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "chat_your_preferences": "ستاسو غوره توبونه",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "empty_search_description": "د مختلف کلیمو سره د لټون کولو هڅه وکړئ",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "chat_archived_empty": "هیڅ آرشیف چیٹ نشته",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_banned_users_update_failed": "د منع شوي کاروونکو په تازه کولو کې پاتې راغلل. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_unban_button": "منع کول",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "empty_comments_title": "تراوسه کومه تبصره نشته",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "feed_filter_oldest_first": "زوړ لومړی",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "general_error_retry": "مهرباني وکړئ بیا هڅه وکړئ.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "empty_all_chats_cta": "نوې چیٹ جوړ کړئ",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "chat_permission_moderators_description": "هغه غړي چې مدیران نه وي پیغامونه لوستلی شي مګر هیڅ پیغام نشي لیږلی.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_banned_users_empty": "دلته د لیدلو لپاره هیڅ شی نشته",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_member_permissions_updated": "د غړو اجازې تازه شوي.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_group_settings_title": "د ګروپ ترتیبات",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "feed_filter_videos": "ویډیوګانې",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "feed_filter_latest_first": "وروستی لومړی",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "chat_notification_subscribe_description": "ټول غړي د خبرتیاو ترلاسه کولو اختیار لري، مګر دوی باید فعال کړي. د ډیفالټ په واسطه، خبرتیاوې د هر غړي لپاره بندې دي.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_archived_title": "آرشیف شوي چټونه",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "feed_empty_explore_button": "ګروپ وپلټئ",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "chat_leave_button": "پریږده",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "empty_explore_title_no_communities": "تراوسه هیڅ ټولنه نشته",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "chat_permission_everyone_description": "هرڅوک کولی شي په ګروپ کې پیغام واستوي.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "explore_no_group_title": "تر اوسه کومه ډله نه ده",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "explore_no_group_description": "راځئ خپل ګروپونه جوړ کړو..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "chat_group_left_failed": "د ګروپ چیټ پریښودو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_profile_update_failed": "د ګروپ پروفایل تازه کولو کې پاتې راغلی. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "feed_filter_all": "All",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "chat_group_profile_updated": "د ګروپ پروفایل تازه شو.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "د ګروپ ترتیبات",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "empty_explore_description_no_communities": "د ټولنې د جوړولو لپاره لومړی شئ",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "search_posts_hint": "پوسټونه وپلټئ",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "هڅه وکړئ خپل لټون تنظیم کړئ",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
@@ -65,13 +66,13 @@ class _AmityStoryVideoPlayerState extends State<AmityStoryVideoPlayer> {
             color: const Color.fromRGBO(0, 0, 0, 1),
             child: Center(
               child: state is StoryVideoPlayerInitial
-                  ? const Column(
+                  ? Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CircularProgressIndicator(),
-                        SizedBox(height: 20),
-                        Text('Loading', style: TextStyle(fontWeight: FontWeight.w500)),
-                        SizedBox(height: 20),
+                        const CircularProgressIndicator(),
+                        const SizedBox(height: 20),
+                        Text(context.l10n.general_loading, style: const TextStyle(fontWeight: FontWeight.w500)),
+                        const SizedBox(height: 20),
                       ],
                     )
                   : state.videoController != null
@@ -81,13 +82,13 @@ class _AmityStoryVideoPlayerState extends State<AmityStoryVideoPlayer> {
                             controller: state.chewieController!,
                           ),
                         )
-                      : const Column(
+                      : Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            CircularProgressIndicator(),
-                            SizedBox(height: 20),
-                            Text('Loading', style: TextStyle(fontWeight: FontWeight.w500)),
-                            SizedBox(height: 20),
+                            const CircularProgressIndicator(),
+                            const SizedBox(height: 20),
+                            Text(context.l10n.general_loading, style: const TextStyle(fontWeight: FontWeight.w500)),
+                            const SizedBox(height: 20),
                           ],
                         ),
             ),

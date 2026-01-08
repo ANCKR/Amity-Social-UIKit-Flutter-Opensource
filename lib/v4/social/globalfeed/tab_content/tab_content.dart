@@ -16,6 +16,7 @@ class TabContent extends StatelessWidget {
     return BlocBuilder<SocialHomeBloc, SocialHomeState>(
       builder: (context, state) {
         final tabIndex = state is TabState ? state.selectedIndex : 0;
+
         if (tabIndex == 0) {
           context.read<SocialHomeBloc>().add(TabSelectedEvent(0));
           return const NewsFeedComponentConfigProviderWidget(

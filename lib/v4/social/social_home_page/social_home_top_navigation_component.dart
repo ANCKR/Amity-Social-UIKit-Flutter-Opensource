@@ -1,6 +1,8 @@
+import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/chat/home/chat_home_page.dart';
 import 'package:amity_uikit_beta_service/v4/core/amity_colors.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
+import 'package:amity_uikit_beta_service/v4/social/user/profile/amity_user_profile_page.dart';
 // import 'package:amity_uikit_beta_service/v4/social/community/community_creation/community_setup_page.dart';
 // import 'package:amity_uikit_beta_service/v4/social/social_home_page/create_post_menu_component.dart';
 import 'package:flutter/material.dart';
@@ -90,6 +92,32 @@ class AmitySocialHomeTopNavigationComponent extends NewBaseComponent {
                 fullscreenDialog: true,
                 builder: (context) => Scaffold(
                   body: AmityChatHomePage(),
+                ),
+              ),
+            );
+          },
+        ),
+        IconButton(
+          padding: const EdgeInsets.only(right: 16),
+          icon: Container(
+            width: 32,
+            height: 32,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              shape: BoxShape.circle,
+            ),
+            child: Icon(
+              Icons.person,
+              size: 20,
+              color: theme.primaryColor,
+            ),
+          ),
+          onPressed: () {
+            final currentUser = AmityCoreClient.getCurrentUser();
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => AmityUserProfilePage(
+                  userId: currentUser.userId!,
                 ),
               ),
             );

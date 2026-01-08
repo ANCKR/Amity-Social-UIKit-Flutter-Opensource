@@ -1,5 +1,6 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/components/alert_dialog.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
@@ -141,10 +142,10 @@ class _HyperLinkBottomSheetBuilderState extends State<HyperLinkBottomSheetBuilde
                       } else {
                         ConfirmationDialog().show(
                           context: context,
-                          title: 'Unsaved changes',
-                          detailText: 'are you sure you want to cancel? Your Changes won\'t be saved.',
-                          leftButtonText: 'No',
-                          rightButtonText: 'Yes',
+                          title: context.l10n.story_unsaved_changes,
+                          detailText: context.l10n.story_unsaved_changes_message,
+                          leftButtonText: context.l10n.general_no,
+                          rightButtonText: context.l10n.general_yes,
                           confrimColor: Colors.blue,
                           onConfirm: () {
                             Navigator.of(context).pop();
@@ -153,7 +154,7 @@ class _HyperLinkBottomSheetBuilderState extends State<HyperLinkBottomSheetBuilde
                       }
                     },
                     child: Text(
-                      'Cancel',
+                      context.l10n.general_cancel,
                       style: AmityTextStyle.subtitle(widget.theme.baseColor),
                     ),
                   ),
@@ -279,10 +280,10 @@ class _HyperLinkBottomSheetBuilderState extends State<HyperLinkBottomSheetBuilde
                         onTap: () {
                           ConfirmationDialog().show(
                             context: context,
-                            title: 'Remove Link?',
-                            detailText: 'This link will be removed from story.',
-                            leftButtonText: 'Cancel',
-                            rightButtonText: 'Remove',
+                            title: context.l10n.story_remove_link_confirm,
+                            detailText: context.l10n.story_remove_link_message,
+                            leftButtonText: context.l10n.general_cancel,
+                            rightButtonText: context.l10n.general_remove,
                             onConfirm: () {
                               context.read<HyperlinkBloc>().add(OnRemoveHyperLink());
                               Navigator.of(context).pop();

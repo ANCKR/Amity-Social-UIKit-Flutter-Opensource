@@ -25,6 +25,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:amity_uikit_beta_service/model/translation_model.dart';
+import 'package:amity_uikit_beta_service/repository/translation_repo.dart';
+import 'package:amity_uikit_beta_service/utils/translation_cache.dart';
+import 'package:amity_uikit_beta_service/v4/social/common/translation_button.dart';
 
 class CommentItem extends BaseElement {
   final ScrollController parentScrollController;
@@ -33,6 +37,23 @@ class CommentItem extends BaseElement {
       MentionTextEditingController();
   final ScrollController scrollController = ScrollController();
   final bool shouldAllowInteraction;
+
+  // Translation support
+  static final _translationService = TranslationService();
+  static final _translationCache = TranslationCache();
+  static final Map<String, ValueNotifier<TranslationState>> _translationNotifiers = {};
+
+  // Static method to reset all comment translation states
+  static void resetAllTranslations() {
+    // Reset translation state for all comments back to original
+    for (var notifier in _translationNotifiers.values) {
+      final currentState = notifier.value;
+      // Reset to original but keep cached translation for re-use
+      notifier.value = TranslationState(
+        translatedText: currentState.translatedText,
+      );
+    }
+  }
 
   CommentItem({
     Key? key,
@@ -363,16 +384,97 @@ class CommentItem extends BaseElement {
       mentionedUsers.sort((a, b) => a.index.compareTo(b.index));
     }
 
-    return ExpandableText(
-      key: ValueKey(textContent),
-      text: textContent,
-      mentionedUsers: mentionedUsers,
-      maxLines: 8,
-      style: normalStyle,
-      linkStyle: mentionStyle,
-      useLayoutBuilder: false,
-      onMentionTap: (userId) => _goToUserProfilePage(context, userId),
+    final commentId = comment.commentId ?? '';
+
+    // Create or get notifier for this comment
+    _translationNotifiers[commentId] ??= ValueNotifier<TranslationState>(TranslationState());
+
+    return ValueListenableBuilder<TranslationState>(
+      key: ValueKey('comment_translation_$commentId'), // Key to keep builder stable
+      valueListenable: _translationNotifiers[commentId]!,
+      builder: (context, translationState, child) {
+        // Use translated text if available
+        final displayText = translationState.isTranslated && translationState.translatedText != null
+            ? translationState.translatedText!
+            : textContent;
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ExpandableText(
+              key: ValueKey(displayText),
+              text: displayText,
+              mentionedUsers: mentionedUsers,
+              maxLines: 8,
+              style: normalStyle,
+              linkStyle: mentionStyle,
+              useLayoutBuilder: false,
+              onMentionTap: (userId) => _goToUserProfilePage(context, userId),
+            ),
+            if (textContent.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              TranslationButton(
+                isTranslated: translationState.isTranslated,
+                isLoading: translationState.isLoading,
+                error: translationState.error,
+                theme: theme,
+                onTap: () => _handleCommentTranslation(commentId, textContent, context),
+              ),
+            ],
+          ],
+        );
+      },
     );
+  }
+
+  Future<void> _handleCommentTranslation(
+    String commentId,
+    String text,
+    BuildContext context,
+  ) async {
+    final notifier = _translationNotifiers[commentId];
+    if (notifier == null) return;
+    
+    final currentState = notifier.value;
+    
+    // Toggle back to original
+    if (currentState.isTranslated) {
+      notifier.value = TranslationState(
+        translatedText: currentState.translatedText,
+      );
+      return;
+    }
+
+    final targetLang = Localizations.localeOf(context).languageCode;
+    final cached = _translationCache.get(commentId, targetLang);
+    if (cached != null) {
+      notifier.value = TranslationState(
+        isTranslated: true,
+        translatedText: cached,
+      );
+      return;
+    }
+    
+    // Show loading
+    notifier.value = TranslationState(isLoading: true);
+    
+    // Fetch translation
+    final translated = await _translationService.translateText(
+      text: text,
+      targetLang: targetLang,
+    );
+    
+    if (translated != null) {
+      _translationCache.put(commentId, targetLang, translated);
+      notifier.value = TranslationState(
+        isTranslated: true,
+        translatedText: translated,
+      );
+    } else {
+      notifier.value = TranslationState(
+        error: 'Failed to translate',
+      );
+    }
   }
 
   Widget renderCommentBottom(

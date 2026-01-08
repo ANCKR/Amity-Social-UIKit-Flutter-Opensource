@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/bloc/global_feed_bloc.dart';
@@ -58,7 +59,7 @@ class _AmityGlobalFeedFilterBottomSheetState
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Filter Posts',
+                  context.l10n.feed_filter_title,
                   style: AmityTextStyle.title(theme.baseColor),
                 ),
                 IconButton(
@@ -71,7 +72,7 @@ class _AmityGlobalFeedFilterBottomSheetState
 
             // Content Type Filter Section
             Text(
-              'Content Type',
+              context.l10n.feed_filter_content_type,
               style: AmityTextStyle.bodyBold(theme.baseColor),
             ),
             const SizedBox(height: 12),
@@ -81,7 +82,7 @@ class _AmityGlobalFeedFilterBottomSheetState
               children: [
                 _buildFilterChip(
                   context,
-                  'All',
+                  context.l10n.feed_filter_all,
                   localSelectedTypes.isEmpty,
                   () {
                     setState(() {
@@ -92,7 +93,7 @@ class _AmityGlobalFeedFilterBottomSheetState
                 ),
                 _buildFilterChip(
                   context,
-                  'Images',
+                  context.l10n.feed_filter_images,
                   localSelectedTypes.contains(AmityDataType.IMAGE),
                   () {
                     setState(() {
@@ -103,7 +104,7 @@ class _AmityGlobalFeedFilterBottomSheetState
                 ),
                 _buildFilterChip(
                   context,
-                  'Videos',
+                  context.l10n.feed_filter_videos,
                   localSelectedTypes.contains(AmityDataType.VIDEO),
                   () {
                     setState(() {
@@ -114,7 +115,7 @@ class _AmityGlobalFeedFilterBottomSheetState
                 ),
                 _buildFilterChip(
                   context,
-                  'Text',
+                  context.l10n.feed_filter_text,
                   localSelectedTypes.contains(AmityDataType.TEXT),
                   () {
                     setState(() {
@@ -129,13 +130,13 @@ class _AmityGlobalFeedFilterBottomSheetState
 
             // Sort By Section
             Text(
-              'Sort By',
+              context.l10n.feed_filter_sort_by,
               style: AmityTextStyle.bodyBold(theme.baseColor),
             ),
             const SizedBox(height: 12),
             _buildRadioOption(
               context,
-              'Latest First',
+              context.l10n.feed_filter_latest_first,
               localSortOption == AmityPostSortOption.LAST_CREATED,
               () {
                 setState(() {
@@ -146,7 +147,7 @@ class _AmityGlobalFeedFilterBottomSheetState
             ),
             _buildRadioOption(
               context,
-              'Oldest First',
+              context.l10n.feed_filter_oldest_first,
               localSortOption == AmityPostSortOption.FIRST_CREATED,
               () {
                 setState(() {
@@ -176,7 +177,7 @@ class _AmityGlobalFeedFilterBottomSheetState
                       ),
                     ),
                     child: Text(
-                      'Clear All',
+                      context.l10n.feed_filter_clear_all,
                       style: AmityTextStyle.bodyBold(theme.primaryColor),
                     ),
                   ),
@@ -201,7 +202,7 @@ class _AmityGlobalFeedFilterBottomSheetState
                       ),
                     ),
                     child: Text(
-                      'Apply Filters',
+                      context.l10n.feed_filter_apply,
                       style: AmityTextStyle.bodyBold(Colors.white),
                     ),
                   ),

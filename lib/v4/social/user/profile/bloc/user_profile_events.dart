@@ -85,3 +85,12 @@ class ShowUserNameOnAppBarEvent extends UserProfileEvent {
   @override
   List<Object> get props => [showUserName];
 }
+
+class UserProfileFollowActionLoadingEvent extends UserProfileEvent {
+  final bool isLoading;
+
+  const UserProfileFollowActionLoadingEvent({required this.isLoading});
+
+  @override
+  List<Object> get props => [isLoading];
+}

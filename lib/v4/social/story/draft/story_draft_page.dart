@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/components/alert_dialog.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_element.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/draft/amity_story_media_type.dart';
@@ -124,13 +125,6 @@ class _StoryDarftPageBuilderState extends State<StoryDarftPageBuilder> {
                                   AmityCustomSnackBar.show(
                                     context,
                                     'Can\'t add more than one link to your story.',
-                                    SvgPicture.asset(
-                                      'assets/Icons/ic_warning_outline_white.svg',
-                                      package: 'amity_uikit_beta_service',
-                                      height: 20,
-                                      color: Colors.white,
-                                    ),
-                                    textColor: Colors.white,
                                   );
                                 } else {
                                   showHyperLinkBottomSheet(
@@ -224,10 +218,10 @@ class _StoryDarftPageBuilderState extends State<StoryDarftPageBuilder> {
                               onTap: () {
                                 ConfirmationDialog().show(
                                   context: context,
-                                  title: 'Discard this Story?',
-                                  detailText: 'The story will be permanently deleted. It cannot be undone.',
-                                  leftButtonText: 'Cancel',
-                                  rightButtonText: 'Discard',
+                                  title: context.l10n.story_discard_confirm_title,
+                                  detailText: context.l10n.story_discard_confirm_message,
+                                  leftButtonText: context.l10n.general_cancel,
+                                  rightButtonText: context.l10n.story_discard_action,
                                   onConfirm: () {
                                     Navigator.of(context).pop();
                                   },

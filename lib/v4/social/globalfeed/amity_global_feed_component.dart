@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
@@ -98,7 +99,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                                     ),
                                   ),
                                 ),
-                                hintText: 'Search posts...',
+                                hintText: context.l10n.search_posts_hint,
                                 hintStyle: AmityTextStyle.body(theme.baseColorShade2),
                                 filled: true,
                                 contentPadding: const EdgeInsets.symmetric(vertical: 0),
@@ -268,7 +269,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                                       ),
                                       const SizedBox(height: 16),
                                       Text(
-                                        'No posts found',
+                                        context.l10n.search_no_results,
                                         style: TextStyle(
                                           fontSize: 18,
                                           color: theme.baseColorShade1,
@@ -277,7 +278,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                                       ),
                                       const SizedBox(height: 8),
                                       Text(
-                                        'Try adjusting your search',
+                                        context.l10n.search_adjust_hint,
                                         style: TextStyle(
                                           fontSize: 14,
                                           color: theme.baseColorShade2,

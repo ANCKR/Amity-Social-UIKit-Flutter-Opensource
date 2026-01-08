@@ -1,10 +1,11 @@
 import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
-import 'package:amity_uikit_beta_service/v4/core/styles.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_creation/community_setup_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/amity_community_category_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/communities_by_category/bloc/communities_by_category_page_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/social/shared/amity_empty_state_widget.dart';
 import 'package:amity_uikit_beta_service/v4/utils/app_bar.dart';
 import 'package:amity_uikit_beta_service/v4/utils/compact_string_converter.dart';
 import 'package:flutter/material.dart';
@@ -169,25 +170,19 @@ class AmityCommunitiesByCategoryPage extends NewBasePage {
   }
 
   Widget _getEmptyState(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset(
-              'assets/Icons/amity_ic_user_profile_empty_state.svg',
-              width: 60,
-              height: 60,
-              package: 'amity_uikit_beta_service',
-            ),
-            const SizedBox(height: 16),
-            Text(context.l10n.community_empty_state,
-                style: AmityTextStyle.titleBold(theme.baseColorShade3)),
-            const SizedBox(height: 40)
-          ],
-        )
-      ],
+    return AmityEmptyStateWidget(
+      theme: theme,
+      title: context.l10n.community_empty_state,
+      description: context.l10n.empty_category_communities_description,
+      primaryButtonText: context.l10n.cta_create_community,
+      onPrimaryButtonTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+          fullscreenDialog: true,
+          builder: (context) => AmityCommunitySetupPage(
+            mode: const CreateMode(),
+          ),
+        ));
+      },
     );
   }
 
