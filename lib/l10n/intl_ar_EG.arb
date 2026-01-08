@@ -1,0 +1,2410 @@
+{
+  "community_title": "مجتمع",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "ملف الأخبار",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "يستكشف",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "مجتمعاتي",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "مجموعاتي",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "يٌطعم",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "أذونات المجتمع",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "إذن النشر",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "من يمكنه النشر في هذا المجتمع",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "يمكنك التحكم في من يمكنه إنشاء منشورات في مجتمعك.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "السماح بالتعليقات على قصص المجتمع",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "قم بالتشغيل لتلقي التعليقات على القصص في هذا المجتمع.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "ترك المجتمع",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "اترك المجتمع. لن تتمكن بعد الآن من النشر والتفاعل في هذا المجتمع.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "إغلاق المجتمع",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "سيؤدي إغلاق هذا المجتمع إلى إزالة صفحة المجتمع وجميع محتوياتها وتعليقاتها.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "إغلاق المجتمع؟",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "سيتم إزالة جميع الأعضاء من المجتمع. سيتم حذف جميع المشاركات والرسائل وردود الفعل والوسائط المشتركة في المجتمع. لا يمكن التراجع عن هذا.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "أذونات المجموعة",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "إذن النشر",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "من يمكنه النشر في هذه المجموعة",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "يمكنك التحكم في من يمكنه إنشاء منشورات في مجموعتك.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "السماح بالتعليقات على قصص المجموعة",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "قم بالتشغيل لتلقي التعليقات على القصص في هذه المجموعة.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "مغادرة المجموعة",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "اترك المجموعة. لن تتمكن بعد الآن من النشر والتفاعل في هذه المجموعة.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "إغلاق المجموعة",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "سيؤدي إغلاق هذه المجموعة إلى إزالة صفحة المجموعة وجميع محتوياتها وتعليقاتها.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "إغلاق المجموعة؟",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "سيتم إزالة جميع الأعضاء من المجموعة. سيتم حذف جميع المنشورات والرسائل والتفاعلات والوسائط المشتركة في المجموعة. لا يمكن التراجع عن هذا.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "بحث المجتمع والمستخدم",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "ابحث في مجتمعي",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "لم يتم العثور على نتائج",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "المجتمعات",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "المستخدمين",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "يلغي",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "نعم",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "يتأكد",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "مميز",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "المتابعون",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "التالي",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "دعامات",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "إنشاء مشاركة",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "تحرير المشاركة",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "ماذا يحدث هنا",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "حذف المشاركة",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "سيتم حذف هذه المشاركة نهائيا.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "هل تريد حذف المشاركة؟",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "هل تريد حذف مشاركتك؟",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "الإبلاغ عن مشاركة",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "عدم الإبلاغ عن المشاركة",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "يحب",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "تعليق",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "يشارك",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "هل تريد تجاهل هذه المشاركة؟",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "سيتم حذف المنشور نهائيا. لا يمكن التراجع عنه.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "أكتب تعليق",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "مدة الاستطلاع",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "يمكنك دائمًا إغلاق الاستطلاع قبل المدة المحددة.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "تاريخ الانتهاء المخصص",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "إغلاق الاستطلاع",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "تم إغلاق هذا الاستطلاع. لم يعد بإمكانك التصويت.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "تصويت",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "انظر النتائج",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "العودة للتصويت",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "انظر النتائج الكاملة",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "تم التصويت بواسطتك",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "وأنت",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "غادر",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "فشل التصويت على الاستطلاع. يرجى المحاولة مرة أخرى.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "انتهى",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "حدد خيارًا واحدًا",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "حدد خيارًا واحدًا أو أكثر",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "يجب أن يحتوي الاستطلاع على خيارات {minOptions} على الأقل.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "سؤال الاستطلاع",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "ما هو سؤال الاستطلاع الخاص بك؟",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "قل شيئاً جميلاً",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "رد",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "الرد على",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "الإبلاغ عن التعليق",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "عدم الإبلاغ عن التعليق",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "تقرير الرد",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "عدم الإبلاغ عن الرد",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "تحرير التعليق",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "تحرير الرد",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "حذف التعليق",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "حذف الرد",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "سيتم حذف {content} هذا نهائيًا.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "تعليقك يحتوي على كلمة غير لائقة. يرجى مراجعته وحذفه.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "هذه القصة لم تعد متوفرة",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "تم إنشاء المجتمع بنجاح.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "فشل في إنشاء المجتمع. يرجى المحاولة مرة أخرى.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "تم تحديث المجتمع بنجاح.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "فشل في حفظ ملف تعريف مجتمعك. يرجى المحاولة مرة أخرى.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "غادر المجتمع بنجاح.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "فشل في مغادرة المجتمع.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "تم إغلاق المجتمع بنجاح.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "فشل في إغلاق المجتمع.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "ينضم",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "انضم",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "موصى به لك",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "تتجه الآن",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1.2 ألف عضو",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "إنشاء مجتمع",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "اسم المجتمع",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "قم بتسمية مجتمعك",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "أدخل الوصف",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "تحرير المجتمع",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "أعضاء",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "خاص",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "عام",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "يمكن لأي شخص الانضمام وعرض والبحث في المشاركات في هذا المجتمع.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "يمكن فقط للأعضاء الذين تمت دعوتهم من قبل المشرفين الانضمام إلى المشاركات الموجودة في هذا المجتمع وعرضها والبحث فيها.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "عن",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "فئات",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "اختر فئة",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "حدد الفئة",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "أضف فئة",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "المشاركات المعلقة",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "مشاركاتك في انتظار المراجعة",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "معلومات أساسية",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "ترك دون الانتهاء؟",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "لن يتم حفظ تقدمك ولن يتم إنشاء مجتمعك.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "يرسل",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "يكتب",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "اكتب رسالة",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "إعدادات",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "إشعارات",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "مشاركات جديدة",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "تلقي إشعارات عندما يقوم شخص ما بإنشاء مشاركات جديدة في هذا المجتمع.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "تفاعل المشاركات",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "احصل على إشعارات عندما يقوم شخص ما برد فعل على مشاركاتك في هذا المجتمع.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "تفاعل مع التعليقات",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "تلقي إشعارات عندما يعجب شخص ما بتعليقك في هذا المجتمع.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "تعليقات جديدة",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "تلقي إشعارات عندما يعلق شخص ما على مشاركتك في هذا المجتمع.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "الردود",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "تلقي إشعارات عندما يعلق شخص ما على تعليقاتك في هذا المجتمع.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "قصص جديدة",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "تلقي إشعارات عندما يقوم شخص ما بإنشاء قصة جديدة في هذا المجتمع.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "ردود الفعل القصة",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "احصل على إشعارات عندما يتفاعل شخص ما مع قصتك في هذا المجتمع.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "تعليقات القصة",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "احصل على إشعارات عندما يعلق شخص ما على قصتك في هذا المجتمع.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "الجميع",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "المشرفين فقط",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "يمكن للمسؤولين فقط النشر",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "خصوصية",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "لغة",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "ترك دون الانتهاء؟",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "قد لا يتم حفظ التغييرات التي أجريتها.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "هل تريد تغيير إعدادات خصوصية المجتمع؟",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "يحتوي هذا المجتمع على مشاركات مميزة عالميًا. سيؤدي تغيير المجتمع من عام إلى خاص إلى إزالة هذه المنشورات من الظهور عالميًا.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "يضيف",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "تحميل",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "يترك",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "عفوًا، حدث خطأ ما",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "تم تحريره",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(تحرير)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "استمر في التحرير",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "ينبذ",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "مشرف",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "يحفظ",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "يمسح",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "يحرر",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "يغلق",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "منتهي",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "بريد",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "تعليقات",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "قصة",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "قصص",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "استطلاع",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "خياري",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "على",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "عن",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "السماح بالإخطار",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "قم بالتشغيل لتلقي إشعارات الدفع من هذا المجتمع.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "ذكرت",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...شاهد المزيد",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "آلة تصوير",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "صورة",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "فيديو",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "إرسال",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "الجدول الزمني الخاص بي",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "خيارات",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "هل تريد تعديل المشاركة المميزة عالميًا؟",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "تم عرض المنشور الذي تقوم بتحريره عالميًا. إذا قمت بتحرير مشاركتك، فستحتاج إلى إعادة الموافقة عليها، ولن يتم عرضها عالميًا بعد الآن.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "ذكرت مشاركة.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "مشاركة لم يتم الإبلاغ عنها.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{لا يوجد أعضاء} =1{1 عضو} other{{count} أعضاء}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{بريد} other{دعامات}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{عضو} other{أعضاء}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "حظر المستخدم",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "إلغاء حظر المستخدم",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "فشل في حذف المشاركة. يرجى المحاولة مرة أخرى.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "غير قادر على مغادرة المجتمع",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "أنت المشرف الوحيد في هذه المجموعة. لمغادرة المجتمع، قم بترشيح أعضاء آخرين لدور المشرف",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "غير قادر على إغلاق المجتمع",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقا.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "تم الوصول إلى الحد الأقصى للتحميل",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "لقد وصلت إلى الحد الأقصى للتحميل وهو {maxUploads} من الصور. لن يتم حفظ أي صور إضافية.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "لقد وصلت إلى الحد الأقصى للتحميل وهو {maxUploads} من مقاطع الفيديو. لن يتم حفظ أي مقاطع فيديو إضافية.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "فشل تعديل المشاركة. يرجى المحاولة مرة أخرى.",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "فشل إنشاء المشاركة. يرجى المحاولة مرة أخرى.",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "لا يمكن أن يتجاوز سؤال الاستطلاع {maxQuestionLength} حرفًا.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "لا يمكن أن يتجاوز خيار الاستقصاء {maxQuestionLength} حرفًا.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "فشل في إنشاء الاستطلاع. يرجى المحاولة مرة أخرى.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "مجهول",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "جميع الأعضاء",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "المشرفون",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "عضو البحث",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "ترقية إلى وسيط",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "خفض رتبته إلى عضو",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "إزالة من المجتمع",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "الإبلاغ عن المستخدم",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "عدم الإبلاغ عن المستخدم",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "لا توجد مقاطع فيديو حتى الآن",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "لا توجد صور بعد",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "لا توجد مشاركة مثبتة حتى الآن",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "لا توجد مشاركات حتى الآن",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "إضافة عضو",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "مستخدم البحث",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "تحرير الملف الشخصي",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "تم تحديث ملف التعريف الخاص بك بنجاح!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "فشل في حفظ ملف التعريف الخاص بك. يرجى المحاولة مرة أخرى.",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "تعليقات القصة",
+  "post_item_bottom_nonmember_label": "انضم إلى المجموعة للتفاعل مع جميع المشاركات",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "تم تفعيل الإشعارات",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "فشل في تشغيل الإخطار. يرجى المحاولة مرة أخرى.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "تم إيقاف الإشعارات",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "فشل في إيقاف الإخطار. يرجى المحاولة مرة أخرى.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "أبلغ المستخدم.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "فشل في الإبلاغ عن المستخدم. يرجى المحاولة مرة أخرى.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "لم يتم الإبلاغ عن المستخدم.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "فشل في إلغاء الإبلاغ عن المستخدم. يرجى المحاولة مرة أخرى.",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "تم حظر المستخدم.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "فشل في حظر المستخدم. يرجى المحاولة مرة أخرى.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "تم إلغاء حظر المستخدم.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "فشل في إلغاء حظر المستخدم. يرجى المحاولة مرة أخرى.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "لم يتم العثور على أعضاء",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "ترقية المشرف",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "هل أنت متأكد أنك تريد ترقية هذا العضو إلى مشرف؟ سيتمكنون من الوصول إلى جميع ميزات المشرف.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "يرقي",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "تخفيض رتبة المشرف",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "هل أنت متأكد أنك تريد خفض رتبة هذا المشرف؟ سيفقدون إمكانية الوصول إلى كافة ميزات المشرف.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "خفض الرتبة",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "تأكيد الإزالة",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "هل أنت متأكد أنك تريد إزالة هذا العضو من المجموعة؟ سيكونون على علم بإزالتهم.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "يزيل",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "تأكيد الحظر",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "هل أنت متأكد أنك تريد حظر هذا المستخدم؟ ستتم إزالتهم من المجموعة ولن يتمكنوا من العثور عليها أو الانضمام مرة أخرى إلا إذا تم إلغاء حظرهم.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "حظر",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "تمت إضافة العضو بنجاح إلى هذا المجتمع.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "فشلت إضافة العضو. يرجى المحاولة مرة أخرى.",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "تمت ترقيته بنجاح إلى مشرف.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "فشلت ترقية العضو. يرجى المحاولة مرة أخرى.",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "تم تخفيض رتبة العضو بنجاح.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "فشل في خفض رتبة العضو. يرجى المحاولة مرة أخرى.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "تمت إزالة العضو من هذا المجتمع.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "فشل في إزالة العضو. يرجى المحاولة مرة أخرى.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "تمت متابعة المستخدم.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "عفوًا، حدث خطأ ما.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "تم إلغاء متابعة المستخدم.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "عفوًا، حدث خطأ ما.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "ارسل الى",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "لقد قمت بحظر هذا المستخدم",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "قم بإلغاء الحظر لرؤية منشوراتهم.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "هذا الحساب خاص",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "اتبع هذا المستخدم لرؤية مشاركاته.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "الآن",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "الآن",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "قم بتشغيل الإشعارات",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "قم بإيقاف تشغيل الإشعارات",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "هل تريد حظر المستخدم؟",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} لن يتمكن من إرسال الرسالة إليك. ولن يتم إعلامهم بأنك قمت بحظرهم.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "هل تريد إلغاء حظر المستخدم؟",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "سيتمكن {displayName} الآن من إرسال الرسالة إليك. ولن يتم إعلامهم بأنك قمت بإلغاء حظرهم.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "أرسل صورة",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "أرسل فيديو",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "طلبات متابعة جديدة",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "طلبات {count} تحتاج إلى موافقتك",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "إلغاء المتابعة",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "غير قادر على متابعة هذا المستخدم",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "أُووبس! حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقا.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "يتبع",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "إلغاء الطلب",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "التالي",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "هل تريد حظر المستخدم؟",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} لن يتمكن من رؤية المشاركات والتعليقات التي قمت بإنشائها. ولن يتم إعلامهم بأنك قمت بحظرهم.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "حاجز",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "هل تريد إلغاء حظر المستخدم؟",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "سيتمكن {displayName} الآن من رؤية المشاركات والتعليقات التي قمت بإنشائها. ولن يتم إعلامهم بأنك قمت بإلغاء حظرهم.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "إلغاء الحظر",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "هل تريد إلغاء متابعة هذا المستخدم؟",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "إذا غيرت رأيك، فسيتعين عليك طلب متابعتهم مرة أخرى.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "إلغاء المتابعة",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "فئة",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "لا يوجد مجتمع بعد",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "الطلبات المعلقة",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "لا توجد طلبات معلقة متاحة",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "قم بتمكين مراجعة النشر أو الموافقة على الانضمام في إعدادات المجتمع لإدارة الطلبات.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "ميزة طلبات الانضمام قريبا",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "سيؤدي رفض المشاركة المعلقة إلى حذف المشاركة المحددة من المجتمع نهائيًا.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "لا توجد مشاركات معلقة",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "يقبل",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "انخفاض",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "تم حذف المشاركة.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "فشل في حذف المشاركة. يرجى المحاولة مرة أخرى.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "تم قبول المشاركة.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "فشل قبول المشاركة. تمت مراجعة هذه المشاركة من قبل مشرف آخر.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "تم رفض المشاركة.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "فشل رفض المشاركة. تمت مراجعة هذه المشاركة من قبل مشرف آخر.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "الخيار {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "إضافة خيار",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "اختيار متعدد",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "السماح للمشاركين بالتصويت على أكثر من خيار واحد.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "ينتهي في {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "ينتهي يوم",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "حدد التاريخ",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "حدد الوقت",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "ساعة",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "دقيقة",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "اسم العرض",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "عن",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "نوع الصورة غير مدعوم",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "يرجى تحميل صورة PNG أو JPG.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "صورة غير لائقة",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "الرجاء اختيار صورة مختلفة للتحميل.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "التغييرات غير المحفوظة",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "هل أنت متأكد أنك تريد تجاهل التغييرات؟ سيتم فقدهم عند مغادرة هذه الصفحة.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "محادثة",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "الجميع",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "مباشر",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "المجموعات",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "في انتظار الشبكة",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "الدردشة المباشرة",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "دردشة جماعية",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "مؤرشف",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "تحرير الرسالة",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "نفسك",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "تم الرد على الرسالة",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "الرد على {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "وسائط",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "جارٍ تحميل الدردشة",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "لا يمكنك إرسال رسائل إلى هذا الشخص.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "لقد قمت بتعطيل إشعارات الدردشة",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "أرشيف",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "إلغاء الأرشفة",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "تم حذف هذه الرسالة",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "لا توجد معاينة مدعومة لهذا النوع من الرسائل",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "لا توجد رسالة بعد",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "مجموعة",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "إنشاء مجموعة",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "تحرير المجموعة",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "اسم المجموعة",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "قم بتسمية مجموعتك",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "أدخل الوصف",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "عن",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "أعضاء",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "ينضم",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "انضم",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "عام",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "خاص",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "يمكن لأي شخص الانضمام إلى هذه المجموعة وعرضها والبحث فيها.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "يمكن فقط للأعضاء الذين تمت دعوتهم من قبل المشرفين الانضمام إلى المشاركات في هذه المجموعة وعرضها والبحث فيها.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "موصى به لك",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "تتجه الآن",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1.2 ألف عضو",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "معلومات أساسية",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "ترك دون الانتهاء؟",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "لن يتم حفظ تقدمك ولن يتم إنشاء مجموعتك.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "المشاركات المعلقة",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "جميع الأعضاء",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "المشرفون",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "عضو البحث",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "ترقية إلى وسيط",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "خفض رتبته إلى عضو",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "إزالة من المجموعة",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "تعليقات القصة",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "لا توجد مجموعة بعد",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "الطلبات المعلقة",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "لا توجد طلبات معلقة متاحة",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "قم بتمكين مراجعة النشر أو الموافقة على الانضمام في إعدادات المجموعة لإدارة الطلبات.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "ميزة طلبات الانضمام قريبا",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "سيؤدي رفض المشاركة المعلقة إلى حذف المشاركة المحددة من المجموعة نهائيًا.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "لا توجد مشاركات معلقة",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "يقبل",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "انخفاض",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "تم إنشاء المجموعة بنجاح.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "فشل إنشاء المجموعة. يرجى المحاولة مرة أخرى.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "تم تحديث المجموعة بنجاح.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "فشل في حفظ ملف تعريف مجموعتك. يرجى المحاولة مرة أخرى.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "تم مغادرة المجموعة بنجاح.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "فشل في مغادرة المجموعة.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "تم إغلاق المجموعة بنجاح.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "فشل في إغلاق المجموعة.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "تم حذف المشاركة.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "فشل في حذف المشاركة. يرجى المحاولة مرة أخرى.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "تم قبول المشاركة.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "فشل قبول المشاركة. تمت مراجعة هذه المشاركة من قبل مشرف آخر.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "تم رفض المشاركة.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "فشل رفض المشاركة. تمت مراجعة هذه المشاركة من قبل مشرف آخر.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "غير قادر على مغادرة المجموعة",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "أنت المشرف الوحيد في هذه المجموعة. لمغادرة المجموعة، قم بترشيح أعضاء آخرين لدور المشرف",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "غير قادر على إغلاق المجموعة",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقا.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "تمت أرشفة عدد كبير جدًا من الدردشات",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "عام",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "خاص",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "ملف",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "تأكيد إلغاء الحظر",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "هل تريد حذف هذه الرسالة؟",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "الجميع",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "المشرفين فقط",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "الوضع الافتراضي",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "الوضع الصامت",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "وضع الاشتراك",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "ملف تعريف المجموعة",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "إشعارات المجموعة",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "أذونات الأعضاء",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "جميع الأعضاء",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "المستخدمين المحظورين",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "مغادرة المجموعة",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "أنت المشرف الأخير",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "إشعارات",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "السماح بالإخطارات",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "هل تريد تجاهل هذه القصة؟",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "سيتم حذف القصة نهائيا لا يمكن التراجع عنه.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "هل تريد إزالة الرابط؟",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "التغييرات غير المحفوظة",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "فشل تحميل القصة",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "هل تريد حذف هذه القصة؟",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "قصص",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "المشاركات المرسلة للمراجعة",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "السماح بالوصول إلى الملفات الخاصة بك",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "السماح بالوصول إلى الصور الخاصة بك",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "السماح بالوصول إلى مقاطع الفيديو الخاصة بك",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "تم الوصول إلى الحد الأقصى للتحميل",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "جميع الفئات",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "ينبذ",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "general_search": "يبحث",
+  "@general_search": {
+    "description": "Translation for: Search"
+  },
+  "general_error_title": "حدث خطأ ما",
+  "@general_error_title": {
+    "description": "Translation for: Something went wrong"
+  },
+  "general_error_retry": "يرجى المحاولة مرة أخرى.",
+  "@general_error_retry": {
+    "description": "Translation for: Please try again."
+  },
+  "chat_archived_title": "الدردشات المؤرشفة",
+  "@chat_archived_title": {
+    "description": "Translation for: Archived chats"
+  },
+  "chat_archived_empty": "لا توجد دردشة أرشيفية",
+  "@chat_archived_empty": {
+    "description": "Translation for: No archive chat"
+  },
+  "chat_add_member_title": "إضافة عضو",
+  "@chat_add_member_title": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_add_member_button": "إضافة عضو",
+  "@chat_add_member_button": {
+    "description": "Translation for: Add Member"
+  },
+  "chat_banned_users_empty": "لا شيء هنا لنرى بعد",
+  "@chat_banned_users_empty": {
+    "description": "Translation for: Nothing here to see yet"
+  },
+  "chat_unban_confirmation_message": "هل أنت متأكد أنك تريد رفع الحظر عن هذا المستخدم؟ سيكونون قادرين على الانضمام إلى المجموعة مرة أخرى.",
+  "@chat_unban_confirmation_message": {
+    "description": "Translation for: Are you sure you want to unban this user? They will be able to rejoin the group again."
+  },
+  "chat_unban_button": "إلغاء الحظر",
+  "@chat_unban_button": {
+    "description": "Translation for: Unban"
+  },
+  "chat_group_settings_title": "إعدادات المجموعة",
+  "@chat_group_settings_title": {
+    "description": "Translation for: Group Settings"
+  },
+  "chat_group_settings_section": "إعدادات المجموعة",
+  "@chat_group_settings_section": {
+    "description": "Translation for: Group settings"
+  },
+  "chat_your_preferences": "تفضيلاتك",
+  "@chat_your_preferences": {
+    "description": "Translation for: Your preferences"
+  },
+  "chat_leave_group_title": "مغادرة المجموعة",
+  "@chat_leave_group_title": {
+    "description": "Translation for: Leave group"
+  },
+  "chat_leave_group_message": "إذا غادرت هذه المجموعة، فلن تتمكن بعد الآن من رؤية أنشطة جديدة أو المشاركة في هذه المجموعة.",
+  "@chat_leave_group_message": {
+    "description": "Translation for: If you leave this group, you will no longer see new activities or participate in this group."
+  },
+  "chat_leave_button": "يترك",
+  "@chat_leave_button": {
+    "description": "Translation for: Leave"
+  },
+  "chat_promote_member_button": "ترقية العضو",
+  "@chat_promote_member_button": {
+    "description": "Translation for: Promote member"
+  },
+  "chat_group_profile_updated": "تم تحديث الملف الشخصي للمجموعة.",
+  "@chat_group_profile_updated": {
+    "description": "Translation for: Group profile updated."
+  },
+  "chat_group_notification_updated": "تم تحديث إشعار المجموعة.",
+  "@chat_group_notification_updated": {
+    "description": "Translation for: Group notification updated."
+  },
+  "chat_member_permissions_updated": "تم تحديث أذونات الأعضاء.",
+  "@chat_member_permissions_updated": {
+    "description": "Translation for: Member permissions updated."
+  },
+  "chat_member_list_updated": "تم تحديث قائمة الأعضاء.",
+  "@chat_member_list_updated": {
+    "description": "Translation for: Member list updated."
+  },
+  "chat_banned_users_updated": "تم تحديث المستخدمين المحظورين.",
+  "@chat_banned_users_updated": {
+    "description": "Translation for: Banned users updated."
+  },
+  "chat_group_left_success": "الدردشة الجماعية غادرت.",
+  "@chat_group_left_success": {
+    "description": "Translation for: Group chat left."
+  },
+  "chat_group_profile_update_failed": "فشل تحديث الملف الشخصي للمجموعة. يرجى المحاولة مرة أخرى.",
+  "@chat_group_profile_update_failed": {
+    "description": "Translation for: Failed to update group profile. Please try again."
+  },
+  "chat_group_notification_update_failed": "فشل تحديث إشعار المجموعة. يرجى المحاولة مرة أخرى.",
+  "@chat_group_notification_update_failed": {
+    "description": "Translation for: Failed to update group notification. Please try again."
+  },
+  "chat_member_permissions_update_failed": "فشل في تحديث أذونات الأعضاء. يرجى المحاولة مرة أخرى.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Translation for: Failed to update member permissions. Please try again."
+  },
+  "chat_member_list_update_failed": "فشل تحديث قائمة الأعضاء. يرجى المحاولة مرة أخرى.",
+  "@chat_member_list_update_failed": {
+    "description": "Translation for: Failed to update member list. Please try again."
+  },
+  "chat_banned_users_update_failed": "فشل في تحديث المستخدمين المحظورين. يرجى المحاولة مرة أخرى.",
+  "@chat_banned_users_update_failed": {
+    "description": "Translation for: Failed to update banned users. Please try again."
+  },
+  "chat_group_left_failed": "فشل في مغادرة الدردشة الجماعية. يرجى المحاولة مرة أخرى.",
+  "@chat_group_left_failed": {
+    "description": "Translation for: Failed to leave group chat. Please try again."
+  },
+  "chat_messaging_section": "المراسلة",
+  "@chat_messaging_section": {
+    "description": "Translation for: Messaging"
+  },
+  "chat_permission_everyone_description": "يمكن للجميع إرسال رسالة في المجموعة.",
+  "@chat_permission_everyone_description": {
+    "description": "Translation for: Everyone can send a message in the group."
+  },
+  "chat_permission_moderators_description": "يمكن للأعضاء الذين ليسوا مشرفين قراءة الرسائل ولكن لا يمكنهم إرسال أية رسائل.",
+  "@chat_permission_moderators_description": {
+    "description": "Translation for: Members who are not moderators can read messages but cannot send any messages."
+  },
+  "chat_notification_default_description": "افتراضيًا، سيتلقى الأعضاء في هذا المجتمع إشعارات، لكن يمكنهم اختيار إيقاف تشغيلها.",
+  "@chat_notification_default_description": {
+    "description": "Translation for: By default, members in this community will receive notifications, but they can choose to turn them off."
+  },
+  "chat_notification_silent_description": "لا توجد إشعارات للجميع في هذه القناة. لا يمكن للأعضاء تشغيل الإشعارات في القناة.",
+  "@chat_notification_silent_description": {
+    "description": "Translation for: No notifications for everyone in this channel. Members can't turn on notifications in the channel."
+  },
+  "chat_notification_subscribe_description": "يتوفر لدى جميع الأعضاء خيار تلقي الإشعارات، ولكن يتعين عليهم تمكينها. افتراضيًا، يتم إيقاف تشغيل الإشعارات لكل عضو.",
+  "@chat_notification_subscribe_description": {
+    "description": "Translation for: All members have the option to receive notifications, but they need to enable them. By default, notifications are turned off for each member."
+  },
+  "feed_filter_title": "تصفية المشاركات",
+  "@feed_filter_title": {
+    "description": "Translation for: Filter Posts"
+  },
+  "feed_filter_content_type": "نوع المحتوى",
+  "@feed_filter_content_type": {
+    "description": "Translation for: Content Type"
+  },
+  "feed_filter_all": "الجميع",
+  "@feed_filter_all": {
+    "description": "Translation for: All"
+  },
+  "feed_filter_images": "الصور",
+  "@feed_filter_images": {
+    "description": "Translation for: Images"
+  },
+  "feed_filter_videos": "فيديوهات",
+  "@feed_filter_videos": {
+    "description": "Translation for: Videos"
+  },
+  "feed_filter_text": "نص",
+  "@feed_filter_text": {
+    "description": "Translation for: Text"
+  },
+  "feed_filter_sort_by": "فرز حسب",
+  "@feed_filter_sort_by": {
+    "description": "Translation for: Sort By"
+  },
+  "feed_filter_latest_first": "الأحدث أولاً",
+  "@feed_filter_latest_first": {
+    "description": "Translation for: Latest First"
+  },
+  "feed_filter_oldest_first": "الأقدم أولاً",
+  "@feed_filter_oldest_first": {
+    "description": "Translation for: Oldest First"
+  },
+  "feed_filter_clear_all": "مسح الكل",
+  "@feed_filter_clear_all": {
+    "description": "Translation for: Clear All"
+  },
+  "feed_filter_apply": "تطبيق المرشحات",
+  "@feed_filter_apply": {
+    "description": "Translation for: Apply Filters"
+  },
+  "feed_empty_title": "خلاصتك فارغة",
+  "@feed_empty_title": {
+    "description": "Translation for: Your feed is empty"
+  },
+  "feed_empty_description": "ابحث عن مجموعة أو أنشئ مجموعة خاصة بك",
+  "@feed_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "feed_empty_explore_button": "استكشاف المجموعة",
+  "@feed_empty_explore_button": {
+    "description": "Translation for: Explore group"
+  },
+  "feed_empty_create_button": "إنشاء مجموعة",
+  "@feed_empty_create_button": {
+    "description": "Translation for: Create group"
+  },
+  "explore_empty_title": "الاستكشاف الخاص بك فارغ",
+  "@explore_empty_title": {
+    "description": "Translation for: Your explore is empty"
+  },
+  "explore_no_group_title": "لا توجد مجموعة بعد",
+  "@explore_no_group_title": {
+    "description": "Translation for: No group yet"
+  },
+  "explore_empty_description": "ابحث عن مجموعة أو أنشئ مجموعة خاصة بك",
+  "@explore_empty_description": {
+    "description": "Translation for: Find group or create your own"
+  },
+  "explore_no_group_description": "فلنقم بإنشاء مجموعاتكم الخاصة..",
+  "@explore_no_group_description": {
+    "description": "Translation for: Let's create your own groups.."
+  },
+  "shared_post_media_indicator": "تحتوي هذه المشاركة على وسائط",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "تعذر تحميل المشاركة المشتركة",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "فيديو",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "الآن",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "منذ {minutes} د",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "منذ {hours} س",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "منذ {days} ي",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "منذ بعض الوقت",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} د",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} س",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} ي",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} أ",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "أنشئ منشورك الأول",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "chat_last_moderator_message": "يجب عليك ترقية عضو آخر إلى المشرف قبل المغادرة.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "cta_create_community": "إنشاء المجتمع",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_all_chats_cta": "إنشاء دردشة جديدة",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_all_chats_description": "لنقم بإنشاء دردشة للبدء.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_title": "لا توجد محادثة بعد",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "ستظهر الدردشات المؤرشفة هنا",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_archived_chats_title": "لا توجد دردشة أرشيفية",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "لم يتم العثور على مجتمعات في هذه الفئة. حاول استكشاف فئات أخرى أو إنشاء فئات خاصة بك.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_description": "كن أول من يعلق",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_comments_title": "لا توجد تعليقات حتى الآن",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_explore_description_no_categories": "ابحث عن المجتمع أو أنشئ مجتمعًا خاصًا بك",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_communities": "كن أول من أنشأ المجتمع",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "الاستكشاف الخاص بك فارغ",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "لا توجد مجتمعات حتى الآن",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_group_chats_cta": "إنشاء دردشة جماعية",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_description": "ابدأ محادثة جماعية مع الأصدقاء",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_title": "لا توجد محادثات جماعية حتى الآن",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_my_communities_cta": "استكشاف المجتمعات",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_my_communities_description": "انضم إلى المجتمعات لرؤيتها هنا",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_title": "لا توجد مجتمعات حتى الآن",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_search_cta": "مسح البحث",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_search_description": "حاول البحث باستخدام كلمات رئيسية مختلفة",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_title": "لم يتم العثور على نتائج",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "general_no": "لا",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "general_open_settings": "افتح الإعدادات",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "يزيل",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_yes": "نعم",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "post_share_success": "تمت مشاركة المشاركة بنجاح",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_remove_link_message": "ستتم إزالة هذا الرابط من القصة.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "story_unsaved_changes_message": "هل أنت متأكد أنك تريد الإلغاء؟ لن يتم حفظ تغييراتك.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "search_posts_hint": "بحث في المشاركات",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "حاول تعديل بحثك",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

@@ -589,67 +589,88 @@ class UserProfileHeaderActionButton extends BaseElement {
 
   @override
   Widget buildElement(BuildContext context) {
-    return Container(
-      height: 40,
-      width: double.infinity,
-      padding: const EdgeInsets.only(
-        top: 10,
-        left: 0,
-        right: 0,
-        bottom: 10,
-      ),
-      decoration: (state == UserProfileHeaderState.followRequest)
-          ? ShapeDecoration(
-              color: theme.primaryColor,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8)),
-            )
-          : BoxDecoration(
-              border: Border.all(
-                  color:
-                      theme.secondaryColor.blend(ColorBlendingOption.shade3)),
-              borderRadius: BorderRadius.circular(8),
-            ),
-      child: GestureDetector(
-        behavior: HitTestBehavior.translucent,
-        onTap: () {
-          tapAction();
-        },
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              width: 24,
-              height: 24,
-              child: SvgPicture.asset(
-                getAsset(),
-                colorFilter: ColorFilter.mode(
-                  (state == UserProfileHeaderState.followRequest)
-                      ? Colors.white
-                      : theme.baseColor,
-                  BlendMode.srcIn,
+    return BlocBuilder<UserProfileBloc, UserProfileState>(
+      builder: (context, profileState) {
+        final isLoading = profileState.isFollowActionLoading;
+
+        return Container(
+          height: 40,
+          width: double.infinity,
+          padding: const EdgeInsets.only(
+            top: 10,
+            left: 0,
+            right: 0,
+            bottom: 10,
+          ),
+          decoration: (state == UserProfileHeaderState.followRequest)
+              ? ShapeDecoration(
+                  color: theme.primaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8)),
+                )
+              : BoxDecoration(
+                  border: Border.all(
+                      color:
+                          theme.secondaryColor.blend(ColorBlendingOption.shade3)),
+                  borderRadius: BorderRadius.circular(8),
                 ),
-                package: 'amity_uikit_beta_service',
-              ),
-            ),
-            const SizedBox(width: 4),
-            Text(
-              text,
-              style: (state == UserProfileHeaderState.followRequest)
-                  ? AmityTextStyle.bodyBold(
-                      Colors.white,
-                      textHeight: 1.0,
-                    )
-                  : AmityTextStyle.bodyBold(
-                      theme.baseColor,
-                      textHeight: 1.0,
+          child: GestureDetector(
+            behavior: HitTestBehavior.translucent,
+            onTap: isLoading ? null : () {
+              tapAction();
+            },
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                if (isLoading)
+                  SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      valueColor: AlwaysStoppedAnimation<Color>(
+                        (state == UserProfileHeaderState.followRequest)
+                            ? Colors.white
+                            : theme.baseColor,
+                      ),
+                      backgroundColor: theme.baseColorShade4,
                     ),
+                  )
+                else
+                  SizedBox(
+                    width: 24,
+                    height: 24,
+                    child: SvgPicture.asset(
+                      getAsset(),
+                      colorFilter: ColorFilter.mode(
+                        (state == UserProfileHeaderState.followRequest)
+                            ? Colors.white
+                            : theme.baseColor,
+                        BlendMode.srcIn,
+                      ),
+                      package: 'amity_uikit_beta_service',
+                    ),
+                  ),
+                const SizedBox(width: 4),
+                Text(
+                  text,
+                  style: (state == UserProfileHeaderState.followRequest)
+                      ? AmityTextStyle.bodyBold(
+                          Colors.white,
+                          textHeight: 1.0,
+                        )
+                      : AmityTextStyle.bodyBold(
+                          theme.baseColor,
+                          textHeight: 1.0,
+                        ),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 

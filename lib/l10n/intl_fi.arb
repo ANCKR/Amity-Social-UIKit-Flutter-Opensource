@@ -1,0 +1,2410 @@
+{
+  "community_title": "yhteisössä",
+  "@community_title": {
+    "description": "Title for the homepage"
+  },
+  "tab_newsfeed": "Uutissyöte",
+  "@tab_newsfeed": {
+    "description": "Label for the newsfeed tab in the main navigation"
+  },
+  "tab_explore": "Tutkia",
+  "@tab_explore": {
+    "description": "Label for the explore tab in the main navigation"
+  },
+  "tab_my_communities": "Omat yhteisöt",
+  "@tab_my_communities": {
+    "description": "Label for the my communities tab in the main navigation"
+  },
+  "tab_my_groups": "Omat ryhmät",
+  "@tab_my_groups": {
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
+  },
+  "tab_feed": "Syötä",
+  "@tab_feed": {
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
+  },
+  "settings_permissions": "yhteisön luvat",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Postituslupa",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "Kuka voi lähettää viestejä tähän yhteisöön",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "Voit hallita, kuka voi luoda viestejä yhteisössäsi.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Salli kommentit yhteisön tarinoihin",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Ota käyttöön saadaksesi kommentteja tämän yhteisön tarinoista.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "Poistu yhteisöstä",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Poistu yhteisöstä. Et voi enää lähettää viestejä ja olla vuorovaikutuksessa tässä yhteisössä.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Sulje yhteisö",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Tämän yhteisön sulkeminen poistaa yhteisön sivun ja kaiken sen sisällön ja kommentit.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "Sulje yhteisö?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "Kaikki jäsenet poistetaan yhteisöstä. Kaikki yhteisössä jaetut viestit, viestit, reaktiot ja media poistetaan. Tätä ei voi kumota.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Ryhmän käyttöoikeudet",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Postituslupa",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "Kuka voi kirjoittaa tähän ryhmään",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "Voit hallita, kuka voi luoda viestejä ryhmässäsi.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Salli kommentit ryhmätarinoihin",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Ota käyttöön saadaksesi kommentteja tämän ryhmän tarinoista.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Poistu ryhmästä",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Poistu ryhmästä. Et voi enää lähettää viestejä ja olla vuorovaikutuksessa tässä ryhmässä.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Sulje ryhmä",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Tämän ryhmän sulkeminen poistaa ryhmän sivun ja kaiken sen sisällön ja kommentit.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "Sulje ryhmä?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "Kaikki jäsenet poistetaan ryhmästä. Kaikki ryhmässä jaetut viestit, viestit, reaktiot ja media poistetaan. Tätä ei voi kumota.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Hae yhteisöstä ja käyttäjästä",
+  "@global_search_hint": {
+    "description": "Hint text for the search communities and users field on the homepage"
+  },
+  "search_my_community_hint": "Hae yhteisöstäni",
+  "@search_my_community_hint": {
+    "description": "Hint text for searching my communities"
+  },
+  "search_no_results": "Tuloksia ei löytynyt",
+  "@search_no_results": {
+    "description": "Message displayed when no search results are found"
+  },
+  "title_communities": "yhteisöt",
+  "@title_communities": {
+    "description": "Title for the communities section"
+  },
+  "title_users": "Käyttäjät",
+  "@title_users": {
+    "description": "Title for the users section"
+  },
+  "general_cancel": "Peruuttaa",
+  "@general_cancel": {
+    "description": "Label for the cancel button"
+  },
+  "general_ok": "OK",
+  "@general_ok": {
+    "description": "Label for the OK button"
+  },
+  "general_confirm": "Vahvistaa",
+  "@general_confirm": {
+    "description": "Label for the confirm button"
+  },
+  "general_featured": "Esittelyssä",
+  "@general_featured": {
+    "description": "Label for the featured posts"
+  },
+  "profile_followers": "Seuraajat",
+  "@profile_followers": {
+    "description": "Label for followers count"
+  },
+  "profile_following": "Jälkeen",
+  "@profile_following": {
+    "description": "Label for following count"
+  },
+  "profile_posts": "Viestit",
+  "@profile_posts": {
+    "description": "Label for user posts"
+  },
+  "post_create": "Luo viesti",
+  "@post_create": {
+    "description": "Label for create post button"
+  },
+  "post_edit": "Muokkaa viestiä",
+  "@post_edit": {
+    "description": "Label for edit post button"
+  },
+  "post_create_hint": "Mitä tapahtuu",
+  "@post_create_hint": {
+    "description": "Hint text for post creation input field"
+  },
+  "post_delete": "Poista viesti",
+  "@post_delete": {
+    "description": "Label for delete post button"
+  },
+  "post_delete_description": "Tämä viesti poistetaan pysyvästi.",
+  "@post_delete_description": {
+    "description": "Confirmation message for deleting a post"
+  },
+  "post_delete_confirmation": "Poistetaanko viesti?",
+  "@post_delete_confirmation": {
+    "description": "Confirmation title for deleting a post"
+  },
+  "post_delete_confirmation_description": "Haluatko poistaa viestisi?",
+  "@post_delete_confirmation_description": {
+    "description": "Confirmation description for deleting a post"
+  },
+  "post_report": "Ilmoita viestistä",
+  "@post_report": {
+    "description": "Label for report post button"
+  },
+  "post_unreport": "Peruuta viesti",
+  "@post_unreport": {
+    "description": "Label for unreport post button"
+  },
+  "post_like": "Pitää",
+  "@post_like": {
+    "description": "Label for like action"
+  },
+  "post_comment": "Kommentti",
+  "@post_comment": {
+    "description": "Label for comment action"
+  },
+  "post_share": "Jakaa",
+  "@post_share": {
+    "description": "Label for share action"
+  },
+  "post_discard": "Hylätäänkö tämä viesti?",
+  "@post_discard": {
+    "description": "Label for discard button"
+  },
+  "post_discard_description": "Viesti poistetaan pysyvästi. Sitä ei voi kumota.",
+  "@post_discard_description": {
+    "description": "Description for discard button"
+  },
+  "post_write_comment": "Kirjoita kommentti",
+  "@post_write_comment": {
+    "description": "Placeholder for comment input"
+  },
+  "poll_duration": "Äänestyksen kesto",
+  "@poll_duration": {
+    "description": "Label for poll duration"
+  },
+  "poll_duration_hint": "Voit aina sulkea kyselyn ennen asetettua kestoa.",
+  "@poll_duration_hint": {
+    "description": "Hint text for poll duration select field"
+  },
+  "poll_custom_edn_date": "Muokattu lopetuspäivä",
+  "@poll_custom_edn_date": {
+    "description": "Label for custom end date"
+  },
+  "poll_close": "Sulje kysely",
+  "@poll_close": {
+    "description": "Label for close poll button"
+  },
+  "poll_close_description": "Tämä kysely on suljettu. Et voi enää äänestää.",
+  "@poll_close_description": {
+    "description": "Description for closed poll"
+  },
+  "poll_vote": "Äänestää",
+  "@poll_vote": {
+    "description": "Label for vote button"
+  },
+  "poll_results": "Katso tulokset",
+  "@poll_results": {
+    "description": "Label for poll results"
+  },
+  "poll_back_to_vote": "Takaisin äänestämään",
+  "@poll_back_to_vote": {
+    "description": "Label for back to vote button"
+  },
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
+  "@poll_vote_count": {
+    "description": "Plural form for poll vote count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
+  "@poll_total_votes": {
+    "description": "Plural form for poll total votes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plusSign": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
+  "@poll_see_more_options": {
+    "description": "Plural form for poll see more options",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_see_full_results": "Katso täydelliset tulokset",
+  "@poll_see_full_results": {
+    "description": "Label for see full results button"
+  },
+  "poll_voted": "Sinun äänestämä",
+  "@poll_voted": {
+    "description": "Label for voted poll"
+  },
+  "poll_and_you": "ja sinä",
+  "@poll_and_you": {
+    "description": "Suffix for voted poll and you"
+  },
+  "poll_remaining_time": "vasemmalle",
+  "@poll_remaining_time": {
+    "description": "Label for remaining time in poll"
+  },
+  "poll_vote_error": "Äänestäminen epäonnistui. Yritä uudelleen.",
+  "@poll_vote_error": {
+    "description": "Error message when voting fails"
+  },
+  "poll_ended": "Päättyi",
+  "@poll_ended": {
+    "description": "Label for ended poll"
+  },
+  "poll_single_choice": "Valitse yksi vaihtoehto",
+  "@poll_single_choice": {
+    "description": "Label for single choice poll"
+  },
+  "poll_multiple_choice": "Valitse yksi tai useampi vaihtoehto",
+  "@poll_multiple_choice": {
+    "description": "Label for multiple choice poll"
+  },
+  "poll_options_description": "Kyselyssä on oltava vähintään {minOptions} vaihtoehtoa.",
+  "@poll_options_description": {
+    "description": "Description for poll options",
+    "placeholders": {
+      "minOptions": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_question": "Äänestyksen kysymys",
+  "@poll_question": {
+    "description": "Label for poll question"
+  },
+  "poll_question_hint": "Mikä on kyselysi?",
+  "@poll_question_hint": {
+    "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Sano jotain kivaa",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Vastata",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Vastataan",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Ilmoita kommentista",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Peruuta kommentti",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Raportoi vastaus",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Peruuta vastaus",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Muokkaa kommenttia",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Muokkaa vastausta",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Poista kommentti",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Poista vastaus",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "Tämä {content} poistetaan pysyvästi.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Kommenttisi sisältää sopimatonta sanaa. Tarkista ja poista se.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "Tämä tarina ei ole enää saatavilla",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Yhteisön luominen onnistui.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "Yhteisön luominen epäonnistui. Yritä uudelleen.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Yhteisön päivitys onnistui.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "Yhteisöprofiilisi tallentaminen epäonnistui. Yritä uudelleen.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "Poistui yhteisöstä onnistuneesti.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "Yhteisöstä poistuminen epäonnistui.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "Yhteisön sulkeminen onnistui.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "Yhteisön sulkeminen epäonnistui.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Liity",
+  "@community_join": {
+    "description": "Label for join community button"
+  },
+  "community_joined": "Liittyi",
+  "@community_joined": {
+    "description": "Label for joined community status"
+  },
+  "community_recommended_for_you": "Suositellaan sinulle",
+  "@community_recommended_for_you": {
+    "description": "Section title for recommended communities"
+  },
+  "community_trending_now": "Nousussa nyt",
+  "@community_trending_now": {
+    "description": "Section title for trending communities"
+  },
+  "community_placeholder_members": "1,2 000 jäsentä",
+  "@community_placeholder_members": {
+    "description": "Placeholder text for community members count in recommended communities"
+  },
+  "community_create": "Luo yhteisö",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Yhteisön nimi",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Nimeä yhteisösi",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Anna kuvaus",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Muokkaa yhteisöä",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "jäsenet",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Yksityinen",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Julkinen",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Kuka tahansa voi liittyä, tarkastella ja etsiä viestejä tässä yhteisössä.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Vain moderaattorien kutsumat jäsenet voivat liittyä tämän yhteisön julkaisuihin, tarkastella niitä ja hakea niitä.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "Noin",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "Luokat",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Valitse kategoria",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Valitse Luokka",
+  "@category_select_title": {
+    "description": "Title for category selection page"
+  },
+  "category_add": "Lisää luokka",
+  "@category_add": {
+    "description": "Label for add category button"
+  },
+  "community_pending_posts": "Odottavat viestit",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Viestisi odottavat tarkistusta",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Perustiedot",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "Lähdetäänkö viimeistelemättä?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Edistymistäsi ei tallenneta, eikä yhteisöäsi luoda.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Lähetä",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "kirjoittaa",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Kirjoita viesti",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "Asetukset",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Ilmoitukset",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Uusia postauksia",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Saat ilmoituksia, kun joku luo uusia viestejä tässä yhteisössä.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reagoi viesteihin",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Vastaanota ilmoituksia, kun joku reagoi viesteihisi tässä yhteisössä.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "Reagoi kommentteihin",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Saat ilmoituksia, kun joku tykkää kommentistasi tässä yhteisössä.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Uusia kommentteja",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Saat ilmoituksia, kun joku kommentoi viestiäsi tässä yhteisössä.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Vastauksia",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Saat ilmoituksia, kun joku kommentoi kommenttejasi tässä yhteisössä.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Uusia tarinoita",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Vastaanota ilmoituksia, kun joku luo uuden tarinan tässä yhteisössä.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Tarinan reaktiot",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Saat ilmoituksia, kun joku reagoi tarinaasi tässä yhteisössä.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Tarinan kommentit",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Saat ilmoituksia, kun joku kommentoi tarinaasi tässä yhteisössä.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Kaikki",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Vain moderaattorit",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Vain ylläpitäjät voivat lähettää",
+  "@settings_only_admins": {
+    "description": "Label for only admins can post setting"
+  },
+  "settings_privacy": "Yksityisyys",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Kieli",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "Lähdetäänkö viimeistelemättä?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Tekemiäsi muutoksia ei välttämättä tallenneta.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "Muutetaanko yhteisön tietosuoja-asetuksia?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Tässä yhteisössä on maailmanlaajuisesti esiteltyjä viestejä. Yhteisön muuttaminen julkisesta yksityiseksi poistaa nämä viestit näkyvistä maailmanlaajuisesti.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Lisätä",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Ladataan",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Lähde",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Hups, jotain meni pieleen",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Muokattu",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(muokattu)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Jatka muokkaamista",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Hävitä",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderaattori",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Tallentaa",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Poistaa",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Muokata",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Lähellä",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "Tehty",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Lähettää",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "Kommentit",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Tarina",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Tarinoita",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Poll",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Valinnainen",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "Päällä",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Pois",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Salli ilmoitus",
+  "@settings_allow_notification": {
+    "description": "Label for allow notification toggle"
+  },
+  "settings_allow_notification_description": "Ota käyttöön saadaksesi push-ilmoituksia tästä yhteisöstä.",
+  "@settings_allow_notification_description": {
+    "description": "Description for allow notification setting"
+  },
+  "general_reported": "raportoitu",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...Katso lisää",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Kamera",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Kuva",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Video",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Lähettäminen",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Oma aikajanani",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Vaihtoehdot",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "Muokkaatko maailmanlaajuisesti esiteltyä viestiä?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "Muokkaamasi viesti on ollut esillä maailmanlaajuisesti. Jos muokkaat viestiäsi, se on hyväksyttävä uudelleen, eikä sitä enää esitetä maailmanlaajuisesti.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Viesti raportoi.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Viesti raportoimaton.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{Ei jäseniä} =1{1 jäsen} other{{count} jäseniä}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{lähettää} other{viestit}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{jäsen} other{jäseniä}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Estä käyttäjä",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Kumoa käyttäjän esto",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "Viestin poistaminen epäonnistui. Yritä uudelleen.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "Yhteisöstä ei voi poistua",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Olet tämän ryhmän ainoa moderaattori. Jos haluat poistua yhteisöstä, nimeä muut jäsenet moderaattorirooliin",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "Yhteisöä ei voi sulkea",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Jotain meni pieleen. Yritä myöhemmin uudelleen.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Latausten enimmäisraja saavutettu",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "Olet saavuttanut {maxUploads} kuvan latausrajan. Lisäkuvia ei tallenneta.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "Olet saavuttanut {maxUploads} videon latausrajan. Muita videoita ei tallenneta.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Viestin muokkaaminen epäonnistui. Yritä uudelleen.",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Viestin luominen epäonnistui. Yritä uudelleen.",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "Kyselykysymys ei saa ylittää {maxQuestionLength} merkkiä.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "Kyselyvaihtoehto ei voi ylittää {maxQuestionLength} merkkiä.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "Kyselyn luominen epäonnistui. Yritä uudelleen.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
+  },
+  "user_profile_unknown_name": "Tuntematon",
+  "@user_profile_unknown_name": {
+    "description": "Fallback display name for users with no display name"
+  },
+  "community_all_members": "Kaikki jäsenet",
+  "@community_all_members": {
+    "description": "Tab label for all members in community membership page"
+  },
+  "community_moderators": "Moderaattorit",
+  "@community_moderators": {
+    "description": "Tab label for moderators in community membership page"
+  },
+  "community_search_member_hint": "Hae jäsentä",
+  "@community_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "community_promote_moderator": "Ylennä valvojaksi",
+  "@community_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "community_demote_member": "Alenna jäseneksi",
+  "@community_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "community_remove_member": "Poista yhteisöstä",
+  "@community_remove_member": {
+    "description": "Action to remove a member from the community"
+  },
+  "user_report": "Ilmoita käyttäjästä",
+  "@user_report": {
+    "description": "Action to report a user"
+  },
+  "user_unreport": "Peruuta ilmoitus käyttäjästä",
+  "@user_unreport": {
+    "description": "Action to unreport a user"
+  },
+  "feed_no_videos": "Ei vielä videoita",
+  "@feed_no_videos": {
+    "description": "Empty state message when there are no videos in the feed"
+  },
+  "feed_no_photos": "Ei kuvia vielä",
+  "@feed_no_photos": {
+    "description": "Empty state message when there are no photos in the feed"
+  },
+  "feed_no_pinned_posts": "Ei vielä kiinnitettyä viestiä",
+  "@feed_no_pinned_posts": {
+    "description": "Empty state message when there are no pinned posts in the community"
+  },
+  "feed_no_posts": "Ei viestejä vielä",
+  "@feed_no_posts": {
+    "description": "Empty state message when there are no posts in the community feed"
+  },
+  "member_add": "Lisää jäsen",
+  "@member_add": {
+    "description": "Button text and title for adding members"
+  },
+  "search_user_hint": "Etsi käyttäjä",
+  "@search_user_hint": {
+    "description": "Hint text for searching users"
+  },
+  "profile_edit": "Muokkaa profiilia",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "Profiilisi päivitys onnistui!",
+  "@profile_update_success": {
+    "description": "Success message when profile is updated"
+  },
+  "profile_update_failed": "Profiilisi tallentaminen epäonnistui. Yritä uudelleen.",
+  "@profile_update_failed": {
+    "description": "Error message when profile update fails"
+  },
+  "community_story_comments": "Tarinan kommentit",
+  "post_item_bottom_nonmember_label": "Liity ryhmään, jotta voit olla vuorovaikutuksessa kaikkien viestien kanssa",
+  "@post_item_bottom_nonmember_label": {
+    "description": "Label for post item bottom text for non members"
+  },
+  "notification_turn_on_success": "Ilmoitus käytössä",
+  "@notification_turn_on_success": {
+    "description": "success toast message for turning on notification"
+  },
+  "notification_turn_on_error": "Ilmoituksen ottaminen käyttöön epäonnistui. Yritä uudelleen.",
+  "@notification_turn_on_error": {
+    "description": "error toast message for turning on notification"
+  },
+  "notification_turn_off_success": "Ilmoitus pois päältä",
+  "@notification_turn_off_success": {
+    "description": "success toast message for turning off notification"
+  },
+  "notification_turn_off_error": "Ilmoituksen poistaminen käytöstä epäonnistui. Yritä uudelleen.",
+  "@notification_turn_off_error": {
+    "description": "error toast message for turning off notification"
+  },
+  "user_report_success": "Käyttäjä ilmoitti.",
+  "@user_report_success": {
+    "description": "success toast message for reporting user"
+  },
+  "user_report_error": "Käyttäjän ilmoittaminen epäonnistui. Yritä uudelleen.",
+  "@user_report_error": {
+    "description": "error toast message for reporting user"
+  },
+  "user_unreport_success": "Käyttäjää ei ole ilmoitettu.",
+  "@user_unreport_success": {
+    "description": "success toast message for unreporting user"
+  },
+  "user_unreport_error": "Käyttäjän ilmoituksen poistaminen epäonnistui. Yritä uudelleen.",
+  "@user_unreport_error": {
+    "description": "error toast message for unreporting user"
+  },
+  "user_block_success": "Käyttäjä estetty.",
+  "@user_block_success": {
+    "description": "success toast message for blocking user"
+  },
+  "user_block_error": "Käyttäjän estäminen epäonnistui. Yritä uudelleen.",
+  "@user_block_error": {
+    "description": "error toast message for blocking user"
+  },
+  "user_unblock_success": "Käyttäjän esto kumottu.",
+  "@user_unblock_success": {
+    "description": "success toast message for unblocking user"
+  },
+  "user_unblock_error": "Käyttäjän eston poistaminen epäonnistui. Yritä uudelleen.",
+  "@user_unblock_error": {
+    "description": "error toast message for unblocking user"
+  },
+  "search_no_members_found": "Jäseniä ei löytynyt",
+  "@search_no_members_found": {
+    "description": "Message displayed when no members are found in search"
+  },
+  "moderator_promotion_title": "Moderaattorin ylennys",
+  "@moderator_promotion_title": {
+    "description": "Title for moderator promotion confirmation dialog"
+  },
+  "moderator_promotion_description": "Haluatko varmasti ylentää tämän jäsenen valvojaksi? He saavat pääsyn kaikkiin moderaattoriominaisuuksiin.",
+  "@moderator_promotion_description": {
+    "description": "Description for moderator promotion confirmation dialog"
+  },
+  "moderator_promote_button": "Edistää",
+  "@moderator_promote_button": {
+    "description": "Button text for promoting to moderator"
+  },
+  "moderator_demotion_title": "Moderaattorin alentaminen",
+  "@moderator_demotion_title": {
+    "description": "Title for moderator demotion confirmation dialog"
+  },
+  "moderator_demotion_description": "Haluatko varmasti alentaa tämän valvojan? He menettävät pääsyn kaikkiin valvojan ominaisuuksiin.",
+  "@moderator_demotion_description": {
+    "description": "Description for moderator demotion confirmation dialog"
+  },
+  "moderator_demote_button": "Alentaa",
+  "@moderator_demote_button": {
+    "description": "Button text for demoting moderator"
+  },
+  "member_removal_confirm_title": "Vahvista poistaminen",
+  "@member_removal_confirm_title": {
+    "description": "Title for member removal confirmation dialog"
+  },
+  "member_removal_confirm_description": "Haluatko varmasti poistaa tämän jäsenen ryhmästä? He ovat tietoisia poistamisestaan.",
+  "@member_removal_confirm_description": {
+    "description": "Description for member removal confirmation dialog"
+  },
+  "member_remove_button": "Poistaa",
+  "@member_remove_button": {
+    "description": "Button text for removing member"
+  },
+  "user_ban_confirm_title": "Vahvista kielto",
+  "@user_ban_confirm_title": {
+    "description": "Title for user ban confirmation dialog"
+  },
+  "user_ban_confirm_description": "Haluatko varmasti estää tämän käyttäjän? Heidät poistetaan ryhmästä, eivätkä he voi löytää sitä tai liittyä uudelleen, ellei heidän estoaan ole poistettu.",
+  "@user_ban_confirm_description": {
+    "description": "Description for user ban confirmation dialog"
+  },
+  "user_ban_button": "Kieltää",
+  "@user_ban_button": {
+    "description": "Button text for banning user"
+  },
+  "member_add_success": "Jäsen lisättiin tähän yhteisöön.",
+  "@member_add_success": {
+    "description": "Success message when adding member to community"
+  },
+  "member_add_error": "Jäsenen lisääminen epäonnistui. Yritä uudelleen.",
+  "@member_add_error": {
+    "description": "Error message when adding member fails"
+  },
+  "moderator_promote_success": "Ylennettiin moderaattoriksi.",
+  "@moderator_promote_success": {
+    "description": "Success message when promoting member to moderator"
+  },
+  "moderator_promote_error": "Jäsenen ylennys epäonnistui. Yritä uudelleen.",
+  "@moderator_promote_error": {
+    "description": "Error message when promoting member fails"
+  },
+  "moderator_demote_success": "Alennettiin jäseneksi.",
+  "@moderator_demote_success": {
+    "description": "Success message when demoting moderator to member"
+  },
+  "moderator_demote_error": "Jäsenen alentaminen epäonnistui. Yritä uudelleen.",
+  "@moderator_demote_error": {
+    "description": "Error message when demoting moderator fails"
+  },
+  "member_remove_success": "Jäsen poistettu tästä yhteisöstä.",
+  "@member_remove_success": {
+    "description": "Success message when removing member from community"
+  },
+  "member_remove_error": "Jäsenen poistaminen epäonnistui. Yritä uudelleen.",
+  "@member_remove_error": {
+    "description": "Error message when removing member fails"
+  },
+  "user_follow_success": "Käyttäjä seurasi.",
+  "@user_follow_success": {
+    "description": "Success message when following user"
+  },
+  "user_follow_error": "Hups, jotain meni pieleen.",
+  "@user_follow_error": {
+    "description": "Error message when following user fails"
+  },
+  "user_unfollow_success": "Käyttäjä lopetti seuraamisen.",
+  "@user_unfollow_success": {
+    "description": "Success message when unfollowing user"
+  },
+  "user_unfollow_error": "Hups, jotain meni pieleen.",
+  "@user_unfollow_error": {
+    "description": "Error message when unfollowing user fails"
+  },
+  "post_target_selection_title": "Lähetä osoitteeseen",
+  "@post_target_selection_title": {
+    "description": "Title for post target selection page"
+  },
+  "user_feed_blocked_title": "Olet estänyt tämän käyttäjän",
+  "@user_feed_blocked_title": {
+    "description": "Title for blocked user feed empty state"
+  },
+  "user_feed_blocked_description": "Kumoa esto nähdäksesi heidän viestinsä.",
+  "@user_feed_blocked_description": {
+    "description": "Description for blocked user feed empty state"
+  },
+  "user_feed_private_title": "Tämä tili on yksityinen",
+  "@user_feed_private_title": {
+    "description": "Title for private user feed empty state"
+  },
+  "user_feed_private_description": "Seuraa tätä käyttäjää nähdäksesi hänen viestinsä.",
+  "@user_feed_private_description": {
+    "description": "Description for private user feed empty state"
+  },
+  "timestamp_just_now": "Juuri nyt",
+  "@timestamp_just_now": {
+    "description": "Timestamp text for content posted just now in social feeds"
+  },
+  "timestamp_now": "nyt",
+  "@timestamp_now": {
+    "description": "Timestamp text for content posted just now in chat"
+  },
+  "chat_notification_turn_on": "Ota ilmoitukset käyttöön",
+  "@chat_notification_turn_on": {
+    "description": "Text for turning on chat notifications"
+  },
+  "chat_notification_turn_off": "Poista ilmoitukset käytöstä",
+  "@chat_notification_turn_off": {
+    "description": "Text for turning off chat notifications"
+  },
+  "chat_block_user_title": "Estä käyttäjä?",
+  "@chat_block_user_title": {
+    "description": "Title for blocking user confirmation dialog in chat"
+  },
+  "chat_block_user_description": "{displayName} ei voi lähettää sinulle viestiä. Heille ei ilmoiteta, että olet estänyt heidät.",
+  "@chat_block_user_description": {
+    "description": "Description for blocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_unblock_user_title": "Poistetaanko käyttäjän esto?",
+  "@chat_unblock_user_title": {
+    "description": "Title for unblocking user confirmation dialog in chat"
+  },
+  "chat_unblock_user_description": "{displayName} voi nyt lähettää sinulle viestin. Heille ei ilmoiteta, että olet kumonnut eston.",
+  "@chat_unblock_user_description": {
+    "description": "Description for unblocking user confirmation dialog in chat",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_message_photo": "Lähetä valokuva",
+  "@chat_message_photo": {
+    "description": "Text shown for photo messages in chat notifications"
+  },
+  "chat_message_video": "Lähetä video",
+  "@chat_message_video": {
+    "description": "Text shown for video messages in chat notifications"
+  },
+  "user_follow_request_new": "Uusia seurantapyyntöjä",
+  "@user_follow_request_new": {
+    "description": "Text for new follow requests notification"
+  },
+  "user_follow_request_approval": "{count} pyynnöt tarvitsevat hyväksynnän",
+  "@user_follow_request_approval": {
+    "description": "Text showing number of requests needing approval",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unfollow": "Lopeta seuraaminen",
+  "@user_unfollow": {
+    "description": "Button text for unfollowing a user"
+  },
+  "user_follow_unable_title": "Tätä käyttäjää ei voi seurata",
+  "@user_follow_unable_title": {
+    "description": "Title for dialog when unable to follow user"
+  },
+  "user_follow_unable_description": "Oho! jotain meni pieleen. Yritä myöhemmin uudelleen.",
+  "@user_follow_unable_description": {
+    "description": "Description for dialog when unable to follow user"
+  },
+  "user_follow": "Seuraa",
+  "@user_follow": {
+    "description": "Button text for following a user"
+  },
+  "user_follow_cancel": "Peruuta pyyntö",
+  "@user_follow_cancel": {
+    "description": "Button text for canceling follow request"
+  },
+  "user_following": "Jälkeen",
+  "@user_following": {
+    "description": "Button text showing user is being followed"
+  },
+  "user_block_confirm_title": "Estä käyttäjä?",
+  "@user_block_confirm_title": {
+    "description": "Title for blocking user confirmation dialog"
+  },
+  "user_block_confirm_description": "{displayName} ei voi nähdä luomiasi viestejä ja kommentteja. Heille ei ilmoiteta, että olet estänyt heidät.",
+  "@user_block_confirm_description": {
+    "description": "Description for blocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_block_confirm_button": "Lohko",
+  "@user_block_confirm_button": {
+    "description": "Button text for confirming block action"
+  },
+  "user_unblock_confirm_title": "Poistetaanko käyttäjän esto?",
+  "@user_unblock_confirm_title": {
+    "description": "Title for unblocking user confirmation dialog"
+  },
+  "user_unblock_confirm_description": "{displayName} näkee nyt luomasi viestit ja kommentit. Heille ei ilmoiteta, että olet kumonnut eston.",
+  "@user_unblock_confirm_description": {
+    "description": "Description for unblocking user confirmation dialog",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "user_unblock_confirm_button": "Kumoa esto",
+  "@user_unblock_confirm_button": {
+    "description": "Button text for confirming unblock action"
+  },
+  "user_unfollow_confirm_title": "Lopetetaanko tämän käyttäjän seuraaminen?",
+  "@user_unfollow_confirm_title": {
+    "description": "Title for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_description": "Jos muutat mieltäsi, sinun on pyydettävä seuraamaan niitä uudelleen.",
+  "@user_unfollow_confirm_description": {
+    "description": "Description for unfollowing user confirmation dialog"
+  },
+  "user_unfollow_confirm_button": "Lopeta seuraaminen",
+  "@user_unfollow_confirm_button": {
+    "description": "Button text for confirming unfollow action"
+  },
+  "category_default_title": "Luokka",
+  "@category_default_title": {
+    "description": "Default title for category page when category name is not available"
+  },
+  "community_empty_state": "Ei vielä yhteisöä",
+  "@community_empty_state": {
+    "description": "Empty state message when there are no communities in the category"
+  },
+  "community_pending_requests_title": "Odottavat pyynnöt",
+  "@community_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "community_pending_requests_empty_title": "Odottavia pyyntöjä ei ole saatavilla",
+  "@community_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "community_pending_requests_empty_description": "Ota julkaisujen tarkistus käyttöön tai liity hyväksyntään yhteisön asetuksissa hallita pyyntöjä.",
+  "@community_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "community_join_requests_coming_soon": "Liittymispyyntöominaisuus tulossa pian",
+  "@community_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "community_pending_posts_warning": "Odottavan viestin hylkääminen poistaa valitun viestin pysyvästi yhteisöstä.",
+  "@community_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "community_pending_posts_empty": "Ei vireillä olevia viestejä",
+  "@community_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "community_pending_post_accept": "Hyväksyä",
+  "@community_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "community_pending_post_decline": "Hylkää",
+  "@community_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "community_pending_post_delete_success": "Viesti poistettu.",
+  "@community_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "community_pending_post_delete_error": "Viestin poistaminen epäonnistui. Yritä uudelleen.",
+  "@community_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "community_pending_post_approve_success": "Viesti hyväksytty.",
+  "@community_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "community_pending_post_approve_error": "Viestin hyväksyminen epäonnistui. Toinen moderaattori on tarkistanut tämän viestin.",
+  "@community_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "community_pending_post_decline_success": "Viesti hylätty.",
+  "@community_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "community_pending_post_decline_error": "Viestin hylkääminen epäonnistui. Toinen moderaattori on tarkistanut tämän viestin.",
+  "@community_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "poll_option_hint": "Vaihtoehto {optionNumber}",
+  "@poll_option_hint": {
+    "description": "Hint text for poll option input field",
+    "placeholders": {
+      "optionNumber": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_add_option": "Lisää vaihtoehto",
+  "@poll_add_option": {
+    "description": "Button text for adding a new poll option"
+  },
+  "poll_multiple_selection_title": "Useita valintoja",
+  "@poll_multiple_selection_title": {
+    "description": "Title for multiple selection toggle"
+  },
+  "poll_multiple_selection_description": "Anna osallistujien äänestää useampaa kuin yhtä vaihtoehtoa.",
+  "@poll_multiple_selection_description": {
+    "description": "Description for multiple selection toggle"
+  },
+  "poll_ends_on": "Päättyy {endDate}",
+  "@poll_ends_on": {
+    "description": "Text showing when poll ends with formatted date",
+    "placeholders": {
+      "endDate": {
+        "type": "String"
+      }
+    }
+  },
+  "poll_ends_on_label": "Päättyy",
+  "@poll_ends_on_label": {
+    "description": "Label for poll end date"
+  },
+  "poll_select_date": "Valitse Päivämäärä",
+  "@poll_select_date": {
+    "description": "Placeholder text for date picker"
+  },
+  "poll_select_time": "Valitse Aika",
+  "@poll_select_time": {
+    "description": "Placeholder text for time picker"
+  },
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
+  "@poll_duration_days": {
+    "description": "Poll duration options with proper pluralization",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "poll_time_hour": "Tunnin",
+  "@poll_time_hour": {
+    "description": "Label for hour in time picker"
+  },
+  "poll_time_minute": "Minuutti",
+  "@poll_time_minute": {
+    "description": "Label for minute in time picker"
+  },
+  "profile_edit_display_name": "Näyttönimi",
+  "@profile_edit_display_name": {
+    "description": "Label for display name field in edit profile"
+  },
+  "profile_edit_about": "Noin",
+  "@profile_edit_about": {
+    "description": "Label for about field in edit profile"
+  },
+  "profile_edit_unsupported_image_title": "Kuvatyyppiä ei tueta",
+  "@profile_edit_unsupported_image_title": {
+    "description": "Title for unsupported image type dialog"
+  },
+  "profile_edit_unsupported_image_description": "Lataa PNG- tai JPG-kuva.",
+  "@profile_edit_unsupported_image_description": {
+    "description": "Description for unsupported image type dialog"
+  },
+  "profile_edit_inappropriate_image_title": "Sopimaton kuva",
+  "@profile_edit_inappropriate_image_title": {
+    "description": "Title for inappropriate image dialog"
+  },
+  "profile_edit_inappropriate_image_description": "Valitse ladattavaksi toinen kuva.",
+  "@profile_edit_inappropriate_image_description": {
+    "description": "Description for inappropriate image dialog"
+  },
+  "profile_edit_unsaved_changes_title": "Tallentamattomat muutokset",
+  "@profile_edit_unsaved_changes_title": {
+    "description": "Title for unsaved changes confirmation dialog"
+  },
+  "profile_edit_unsaved_changes_description": "Haluatko varmasti hylätä muutokset? Ne katoavat, kun poistut tältä sivulta.",
+  "@profile_edit_unsaved_changes_description": {
+    "description": "Description for unsaved changes confirmation dialog"
+  },
+  "chat_title": "Chat",
+  "@chat_title": {
+    "description": "Title for chat home page"
+  },
+  "chat_tab_all": "Kaikki",
+  "@chat_tab_all": {
+    "description": "Tab label for all chats"
+  },
+  "chat_tab_direct": "Suoraan",
+  "@chat_tab_direct": {
+    "description": "Tab label for direct chats"
+  },
+  "chat_tab_groups": "ryhmät",
+  "@chat_tab_groups": {
+    "description": "Tab label for group chats"
+  },
+  "chat_waiting_for_network": "Odotetaan verkkoa",
+  "@chat_waiting_for_network": {
+    "description": "Message shown when waiting for network connection"
+  },
+  "chat_direct_chat": "Suora chat",
+  "@chat_direct_chat": {
+    "description": "Menu option for creating direct chat"
+  },
+  "chat_group_chat": "Ryhmäkeskustelu",
+  "@chat_group_chat": {
+    "description": "Menu option for creating group chat"
+  },
+  "chat_archived": "Arkistoitu",
+  "@chat_archived": {
+    "description": "Menu option for archived chats"
+  },
+  "message_editing_message": "Viestin muokkaaminen",
+  "@message_editing_message": {
+    "description": "Text shown when editing a message"
+  },
+  "message_replying_yourself": "itseäsi",
+  "@message_replying_yourself": {
+    "description": "Text shown when replying to your own message"
+  },
+  "message_replied_message": "Vastattu viesti",
+  "@message_replied_message": {
+    "description": "Title for replied message display"
+  },
+  "message_replying_to": "Vastataan numeroon {displayName}",
+  "@message_replying_to": {
+    "description": "Text shown when replying to a message",
+    "placeholders": {
+      "displayName": {
+        "type": "String"
+      }
+    }
+  },
+  "message_media": "Media",
+  "@message_media": {
+    "description": "Label for media button in message composer"
+  },
+  "chat_loading": "Ladataan chattia",
+  "@chat_loading": {
+    "description": "Loading message shown when chat is initializing"
+  },
+  "chat_blocked_message": "Et voi lähettää viestejä tälle henkilölle.",
+  "@chat_blocked_message": {
+    "description": "Message shown when user is blocked and cannot send messages"
+  },
+  "chat_notifications_disabled": "Olet poistanut chatin ilmoitukset käytöstä",
+  "@chat_notifications_disabled": {
+    "description": "Message shown when chat notifications are disabled"
+  },
+  "chat_archive": "Arkisto",
+  "@chat_archive": {
+    "description": "Action text for archiving a chat"
+  },
+  "chat_unarchive": "Poista arkistosta",
+  "@chat_unarchive": {
+    "description": "Action text for unarchiving a chat"
+  },
+  "chat_message_deleted": "Tämä viesti poistettiin",
+  "@chat_message_deleted": {
+    "description": "Preview text for deleted messages"
+  },
+  "chat_message_no_preview": "Esikatselua ei tueta tälle viestityypille",
+  "@chat_message_no_preview": {
+    "description": "Preview text for unsupported message types"
+  },
+  "chat_no_message_yet": "Ei viestiä vielä",
+  "@chat_no_message_yet": {
+    "description": "Preview text when there are no messages in the chat"
+  },
+  "group_title": "ryhmä",
+  "@group_title": {
+    "description": "Title for groups (replaces community_title)"
+  },
+  "group_create": "Luo ryhmä",
+  "@group_create": {
+    "description": "Label for create group button"
+  },
+  "group_edit": "Muokkaa ryhmää",
+  "@group_edit": {
+    "description": "Label for edit group button"
+  },
+  "group_name": "Ryhmän nimi",
+  "@group_name": {
+    "description": "Label for group name"
+  },
+  "group_name_hint": "Nimeä ryhmäsi",
+  "@group_name_hint": {
+    "description": "Hint text for group name input"
+  },
+  "group_description_hint": "Kirjoita kuvaus",
+  "@group_description_hint": {
+    "description": "Hint text for group description input"
+  },
+  "group_about": "Noin",
+  "@group_about": {
+    "description": "Label for group about section"
+  },
+  "group_members": "jäsenet",
+  "@group_members": {
+    "description": "Label for group members"
+  },
+  "group_join": "Liity",
+  "@group_join": {
+    "description": "Label for join group button"
+  },
+  "group_joined": "Liittyi",
+  "@group_joined": {
+    "description": "Label for joined group status"
+  },
+  "group_public": "Julkinen",
+  "@group_public": {
+    "description": "Label for public group type"
+  },
+  "group_private": "Yksityinen",
+  "@group_private": {
+    "description": "Label for private group type"
+  },
+  "group_public_description": "Kuka tahansa voi liittyä tähän ryhmään, tarkastella ja etsiä viestejä.",
+  "@group_public_description": {
+    "description": "Description for public group type"
+  },
+  "group_private_description": "Vain moderaattoreiden kutsumat jäsenet voivat liittyä, tarkastella ja etsiä viestejä tässä ryhmässä.",
+  "@group_private_description": {
+    "description": "Description for private group type"
+  },
+  "group_recommended_for_you": "Suositellaan sinulle",
+  "@group_recommended_for_you": {
+    "description": "Section title for recommended groups"
+  },
+  "group_trending_now": "Nousussa nyt",
+  "@group_trending_now": {
+    "description": "Section title for trending groups"
+  },
+  "group_placeholder_members": "1,2 000 jäsentä",
+  "@group_placeholder_members": {
+    "description": "Placeholder text for group members count"
+  },
+  "group_basic_info": "Perustiedot",
+  "@group_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "group_discard_confirmation": "Lähdetäänkö viimeistelemättä?",
+  "@group_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "group_discard_description": "Edistymistäsi ei tallenneta, eikä ryhmääsi luoda.",
+  "@group_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "group_pending_posts": "Odottavat viestit",
+  "@group_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@group_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@group_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_all_members": "Kaikki jäsenet",
+  "@group_all_members": {
+    "description": "Tab label for all members in group membership page"
+  },
+  "group_moderators": "Moderaattorit",
+  "@group_moderators": {
+    "description": "Tab label for moderators in group membership page"
+  },
+  "group_search_member_hint": "Hae jäsentä",
+  "@group_search_member_hint": {
+    "description": "Hint text for member search field"
+  },
+  "group_promote_moderator": "Ylennä valvojaksi",
+  "@group_promote_moderator": {
+    "description": "Action to promote a member to moderator role"
+  },
+  "group_demote_member": "Alenna jäseneksi",
+  "@group_demote_member": {
+    "description": "Action to demote a moderator to member role"
+  },
+  "group_remove_member": "Poista ryhmästä",
+  "@group_remove_member": {
+    "description": "Action to remove a member from the group"
+  },
+  "group_story_comments": "Tarinan kommentit",
+  "@group_story_comments": {
+    "description": "Group story comments setting option"
+  },
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@group_members_count": {
+    "description": "Plural form for group members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "group_empty_state": "Ei vielä ryhmää",
+  "@group_empty_state": {
+    "description": "Empty state message when there are no groups"
+  },
+  "group_pending_requests_title": "Odottavat pyynnöt",
+  "@group_pending_requests_title": {
+    "description": "Title for the pending requests page"
+  },
+  "group_pending_requests_empty_title": "Odottavia pyyntöjä ei ole saatavilla",
+  "@group_pending_requests_empty_title": {
+    "description": "Title for empty state when no pending requests are available"
+  },
+  "group_pending_requests_empty_description": "Ota viestien tarkistus käyttöön tai liity hyväksyntään ryhmän asetuksista hallitaksesi pyyntöjä.",
+  "@group_pending_requests_empty_description": {
+    "description": "Description for empty state when no pending requests are available"
+  },
+  "group_join_requests_coming_soon": "Liittymispyyntöominaisuus tulossa pian",
+  "@group_join_requests_coming_soon": {
+    "description": "Placeholder text for join requests feature that is not yet implemented"
+  },
+  "group_pending_posts_warning": "Odottavan viestin hylkääminen poistaa valitun viestin pysyvästi ryhmästä.",
+  "@group_pending_posts_warning": {
+    "description": "Warning message for moderators about declining pending posts"
+  },
+  "group_pending_posts_empty": "Ei vireillä olevia viestejä",
+  "@group_pending_posts_empty": {
+    "description": "Empty state message when there are no pending posts"
+  },
+  "group_pending_post_accept": "Hyväksyä",
+  "@group_pending_post_accept": {
+    "description": "Button text for accepting a pending post"
+  },
+  "group_pending_post_decline": "Hylkää",
+  "@group_pending_post_decline": {
+    "description": "Button text for declining a pending post"
+  },
+  "group_create_success_message": "Ryhmän luominen onnistui.",
+  "@group_create_success_message": {
+    "description": "Toast message for group creation success"
+  },
+  "group_create_error_message": "Ryhmän luominen epäonnistui. Yritä uudelleen.",
+  "@group_create_error_message": {
+    "description": "Toast message for group creation failure"
+  },
+  "group_update_success_message": "Ryhmän päivitys onnistui.",
+  "@group_update_success_message": {
+    "description": "Toast message for group update success"
+  },
+  "group_update_error_message": "Ryhmäprofiilin tallentaminen epäonnistui. Yritä uudelleen.",
+  "@group_update_error_message": {
+    "description": "Toast message for group update failure"
+  },
+  "group_leave_success_message": "Ryhmästä poistuminen onnistui.",
+  "@group_leave_success_message": {
+    "description": "Toast message for group leave success"
+  },
+  "group_leave_error_message": "Ryhmästä poistuminen epäonnistui.",
+  "@group_leave_error_message": {
+    "description": "Toast message for group leave error"
+  },
+  "group_close_success_message": "Ryhmän sulkeminen onnistui.",
+  "@group_close_success_message": {
+    "description": "Toast message for group close success"
+  },
+  "group_close_error_message": "Ryhmän sulkeminen epäonnistui.",
+  "@group_close_error_message": {
+    "description": "Toast message for group close error"
+  },
+  "group_pending_post_delete_success": "Viesti poistettu.",
+  "@group_pending_post_delete_success": {
+    "description": "Success message when pending post is deleted"
+  },
+  "group_pending_post_delete_error": "Viestin poistaminen epäonnistui. Yritä uudelleen.",
+  "@group_pending_post_delete_error": {
+    "description": "Error message when deleting pending post fails"
+  },
+  "group_pending_post_approve_success": "Viesti hyväksytty.",
+  "@group_pending_post_approve_success": {
+    "description": "Success message when pending post is approved"
+  },
+  "group_pending_post_approve_error": "Viestin hyväksyminen epäonnistui. Toinen moderaattori on tarkistanut tämän viestin.",
+  "@group_pending_post_approve_error": {
+    "description": "Error message when approving pending post fails"
+  },
+  "group_pending_post_decline_success": "Viesti hylätty.",
+  "@group_pending_post_decline_success": {
+    "description": "Success message when pending post is declined"
+  },
+  "group_pending_post_decline_error": "Viestin hylkääminen epäonnistui. Toinen moderaattori on tarkistanut tämän viestin.",
+  "@group_pending_post_decline_error": {
+    "description": "Error message when declining pending post fails"
+  },
+  "error_leave_group": "Ryhmästä ei voi poistua",
+  "@error_leave_group": {
+    "description": "Error message title when leaving a group fails"
+  },
+  "error_leave_group_description": "Olet tämän ryhmän ainoa moderaattori. Jos haluat poistua ryhmästä, nimeä muut jäsenet moderaattorirooliin",
+  "@error_leave_group_description": {
+    "description": "Error message description when leaving a group fails"
+  },
+  "error_close_group": "Ryhmää ei voi sulkea",
+  "@error_close_group": {
+    "description": "Error message title when closing a group fails"
+  },
+  "error_close_group_description": "Jotain meni pieleen. Yritä myöhemmin uudelleen.",
+  "@error_close_group_description": {
+    "description": "Error message description when closing a group fails"
+  },
+  "chat_too_many_archived": "Liian monta keskustelua arkistoitu",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
+  },
+  "chat_group_type_public": "Julkinen",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
+  },
+  "chat_group_type_private": "Yksityinen",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
+  },
+  "general_file": "Tiedosto",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Vahvista porttikiellon poistaminen",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "Poistetaanko tämä viesti?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Kaikki",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Vain moderaattorit",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Oletustila",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Hiljainen tila",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Tilaustila",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Ryhmän profiili",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Ryhmäilmoitukset",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Jäsenten käyttöoikeudet",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Kaikki jäsenet",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Kielletyt käyttäjät",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Poistu ryhmästä",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Olet viimeinen moderaattori",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "ilmoituksia",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Salli ilmoitukset",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "Hylätäänkö tämä tarina?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "Tarina poistetaan pysyvästi. Sitä ei voi kumota.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "Poistetaanko linkki?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Tallentamattomat muutokset",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "Tarinan lataaminen epäonnistui",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "Poistetaanko tämä tarina?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Tarinoita",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Viestit lähetettiin tarkistettavaksi",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Salli pääsy tiedostoihisi",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Salli kuviesi käyttöoikeus",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Salli pääsy videoihisi",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Latausten enimmäisraja saavutettu",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Kaikki luokat",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Hävitä",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "shared_post_media_indicator": "Tämä julkaisu sisältää mediaa",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "Jaettua julkaisua ei voi ladata",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "Video",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "Juuri nyt",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "{minutes} min sitten",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "{hours} t sitten",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "{days} pv sitten",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "Jonkin aikaa sitten",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} min",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} t",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} pv",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} vk",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "Luo ensimmäinen julkaisusi",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "chat_add_member_button": "Lisää jäsen",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_add_member_title": "Lisää jäsen",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "chat_archived_empty": "Ei arkiston chattia",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_archived_title": "Arkistoidut keskustelut",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "chat_banned_users_empty": "Täällä ei ole vielä mitään nähtävää",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_banned_users_update_failed": "Kiellettyjen käyttäjien päivittäminen epäonnistui. Yritä uudelleen.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_banned_users_updated": "Kielletyt käyttäjät päivitetty.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "chat_group_left_failed": "Ryhmäkeskusteluista poistuminen epäonnistui. Yritä uudelleen.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_left_success": "Ryhmäkeskustelu poistunut.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_group_notification_update_failed": "Ryhmäilmoituksen päivittäminen epäonnistui. Yritä uudelleen.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "chat_group_notification_updated": "Ryhmäilmoitus päivitetty.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_group_profile_update_failed": "Ryhmäprofiilin päivitys epäonnistui. Yritä uudelleen.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "chat_group_profile_updated": "Ryhmäprofiili päivitetty.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Ryhmäasetukset",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "chat_group_settings_title": "Ryhmäasetukset",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "chat_last_moderator_message": "Sinun on ylennettava toinen jäsen moderaattoriksi ennen poistumista.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_leave_button": "Lähde",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_leave_group_message": "Jos poistut tästä ryhmästä, et enää näe uusia aktiviteetteja tai osallistu tähän ryhmään.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_leave_group_title": "Poistu ryhmästä",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_member_list_update_failed": "Jäsenluettelon päivittäminen epäonnistui. Yritä uudelleen.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "chat_member_list_updated": "Jäsenlista päivitetty.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "chat_member_permissions_update_failed": "Jäsenoikeuksien päivittäminen epäonnistui. Yritä uudelleen.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "chat_member_permissions_updated": "Jäsenoikeudet päivitetty.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_messaging_section": "Viestit",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "chat_notification_default_description": "Oletuksena tämän yhteisön jäsenet saavat ilmoituksia, mutta he voivat halutessaan poistaa ne käytöstä.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "chat_notification_silent_description": "Ei ilmoituksia kaikille tämän kanavan käyttäjille. Jäsenet eivät voi ottaa ilmoituksia käyttöön kanavalla.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "chat_notification_subscribe_description": "Kaikilla jäsenillä on mahdollisuus vastaanottaa ilmoituksia, mutta heidän on otettava ne käyttöön. Oletusarvoisesti ilmoitukset on poistettu käytöstä jokaiselta jäseneltä.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_permission_everyone_description": "Ryhmässä jokainen voi lähettää viestin.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "chat_permission_moderators_description": "Jäsenet, jotka eivät ole valvojia, voivat lukea viestejä, mutta eivät voi lähettää viestejä.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_promote_member_button": "Mainosta jäsentä",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "chat_unban_button": "Poista porttikielto",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "chat_unban_confirmation_message": "Haluatko varmasti poistaa tämän käyttäjän porttikiellon? He voivat liittyä ryhmään uudelleen.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "chat_your_preferences": "Sinun mieltymyksesi",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "cta_create_community": "Luo yhteisö",
+  "@cta_create_community": {
+    "description": "CTA button text to create a community"
+  },
+  "empty_all_chats_cta": "Luo uusi chat",
+  "@empty_all_chats_cta": {
+    "description": "CTA button text for empty all chats list"
+  },
+  "empty_all_chats_description": "Aloitetaan luomalla chat.",
+  "@empty_all_chats_description": {
+    "description": "Description for empty all chats list"
+  },
+  "empty_all_chats_title": "Ei keskustelua vielä",
+  "@empty_all_chats_title": {
+    "description": "Title for empty all chats list"
+  },
+  "empty_archived_chats_description": "Arkistoidut keskustelut näkyvät täällä",
+  "@empty_archived_chats_description": {
+    "description": "Description for empty archived chats list"
+  },
+  "empty_archived_chats_title": "Ei arkiston chattia",
+  "@empty_archived_chats_title": {
+    "description": "Title for empty archived chats list"
+  },
+  "empty_category_communities_description": "Tästä luokasta ei löytynyt yhteisöjä. Kokeile tutustua muihin luokkiin tai luo omasi.",
+  "@empty_category_communities_description": {
+    "description": "Description for empty category communities"
+  },
+  "empty_comments_description": "Ole ensimmäinen kommentoija",
+  "@empty_comments_description": {
+    "description": "Description for empty comments list"
+  },
+  "empty_comments_title": "Ei vielä kommentteja",
+  "@empty_comments_title": {
+    "description": "Title for empty comments list"
+  },
+  "empty_explore_description_no_categories": "Etsi yhteisö tai luo oma",
+  "@empty_explore_description_no_categories": {
+    "description": "Description for empty explore when there are no categories"
+  },
+  "empty_explore_description_no_communities": "Ole ensimmäinen, joka luo yhteisön",
+  "@empty_explore_description_no_communities": {
+    "description": "Description for empty explore when there are no communities"
+  },
+  "empty_explore_title_no_categories": "Tutkimuksesi on tyhjä",
+  "@empty_explore_title_no_categories": {
+    "description": "Title for empty explore when there are no categories"
+  },
+  "empty_explore_title_no_communities": "Ei vielä yhteisöjä",
+  "@empty_explore_title_no_communities": {
+    "description": "Title for empty explore when there are no communities"
+  },
+  "empty_group_chats_cta": "Luo ryhmäkeskustelu",
+  "@empty_group_chats_cta": {
+    "description": "CTA button text for empty group chats list"
+  },
+  "empty_group_chats_description": "Aloita ryhmäkeskustelu ystävien kanssa",
+  "@empty_group_chats_description": {
+    "description": "Description for empty group chats list"
+  },
+  "empty_group_chats_title": "Ei vielä ryhmäkeskusteluja",
+  "@empty_group_chats_title": {
+    "description": "Title for empty group chats list"
+  },
+  "empty_my_communities_cta": "Tutustu yhteisöihin",
+  "@empty_my_communities_cta": {
+    "description": "CTA button text for empty my communities list"
+  },
+  "empty_my_communities_description": "Liity yhteisöihin nähdäksesi ne täällä",
+  "@empty_my_communities_description": {
+    "description": "Description for empty my communities list"
+  },
+  "empty_my_communities_title": "Ei vielä yhteisöjä",
+  "@empty_my_communities_title": {
+    "description": "Title for empty my communities list"
+  },
+  "empty_search_cta": "Tyhjennä haku",
+  "@empty_search_cta": {
+    "description": "CTA button text for empty search results"
+  },
+  "empty_search_description": "Kokeile etsiä eri avainsanoilla",
+  "@empty_search_description": {
+    "description": "Description for empty search results"
+  },
+  "empty_search_title": "Tuloksia ei löytynyt",
+  "@empty_search_title": {
+    "description": "Title for empty search results"
+  },
+  "explore_empty_description": "Etsi ryhmä tai luo oma",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "explore_empty_title": "Tutkimuksesi on tyhjä",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "explore_no_group_description": "Luodaan omia ryhmiä..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "explore_no_group_title": "Ei vielä ryhmää",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "feed_empty_create_button": "Luo ryhmä",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "feed_empty_description": "Etsi ryhmä tai luo oma",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "feed_empty_explore_button": "Tutustu ryhmään",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "feed_empty_title": "Syötteesi on tyhjä",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "feed_filter_all": "Kaikki",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "feed_filter_apply": "Käytä suodattimia",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_clear_all": "Tyhjennä kaikki",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "feed_filter_content_type": "Sisältötyyppi",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "feed_filter_images": "Kuvat",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "feed_filter_latest_first": "Uusin ensin",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "feed_filter_oldest_first": "Vanhin ensin",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "feed_filter_sort_by": "Lajitteluperuste",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "feed_filter_text": "Teksti",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_filter_title": "Suodata viestit",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "feed_filter_videos": "Videot",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "general_error_retry": "Yritä uudelleen.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "general_error_title": "Jotain meni pieleen",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "general_no": "Ei",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "general_open_settings": "Avaa asetukset",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "Poistaa",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_search": "Haku",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "general_yes": "Kyllä",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "post_share_success": "Viesti jaettu onnistuneesti",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_remove_link_message": "Tämä linkki poistetaan tarinasta.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "story_unsaved_changes_message": "oletko varma, että haluat peruuttaa? Muutoksiasi ei tallenneta.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "search_posts_hint": "Hae viestejä",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Yritä muokata hakuasi",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
+  }
+}

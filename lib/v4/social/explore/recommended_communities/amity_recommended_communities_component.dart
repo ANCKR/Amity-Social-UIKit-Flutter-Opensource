@@ -3,6 +3,8 @@ import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/amity_community_category_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
@@ -64,9 +66,31 @@ class AmityRecommendedCommunitiesComponent extends NewBaseComponent {
                         AmityRecommendedCommunityCard(
                       theme: theme,
                       community: state.communities[index],
-                      onJoinTap: () => context
-                          .read<RecommendedCommunitiesCubit>()
-                          .joinCommunity(state.communities[index].communityId!),
+                      isLoading: state.loadingCommunityIds.contains(state.communities[index].communityId),
+                      onJoinTap: () async {
+                        final community = state.communities[index];
+                        final communityName = community.displayName ?? 'Community';
+                        final success = await context
+                            .read<RecommendedCommunitiesCubit>()
+                            .joinCommunity(community.communityId!);
+                        // Show bloc toast after joining
+                        if (context.mounted) {
+                          if (success) {
+                            context.read<AmityToastBloc>().add(
+                              AmityToastShort(
+                                message: 'Joined $communityName',
+                                icon: AmityToastIcon.success,
+                              ),
+                            );
+                          } else {
+                            context.read<AmityToastBloc>().add(
+                              AmityToastShort(
+                                message: 'Failed to join $communityName',
+                              ),
+                            );
+                          }
+                        }
+                      },
                     ),
                   ),
                 ),
@@ -83,12 +107,14 @@ class AmityRecommendedCommunityCard extends StatelessWidget {
   final AmityThemeColor theme;
   final AmityCommunity community;
   final VoidCallback onJoinTap;
+  final bool isLoading;
 
   const AmityRecommendedCommunityCard({
     Key? key,
     required this.theme,
     required this.community,
     required this.onJoinTap,
+    this.isLoading = false,
   }) : super(key: key);
 
   @override
@@ -201,6 +227,7 @@ class AmityRecommendedCommunityCard extends StatelessWidget {
                             theme: theme,
                             community: community,
                             onTap: onJoinTap,
+                            isLoading: isLoading,
                           ),
                         ),
                       ],
@@ -226,6 +253,9 @@ class AmityRecommendedCommunityAvatarView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final imageUrl = image?.getUrl(AmityImageSize.MEDIUM);
+    final hasValidUrl = imageUrl != null && imageUrl.isNotEmpty;
+
     return SizedBox(
       height: 125,
       width: 268,
@@ -234,9 +264,9 @@ class AmityRecommendedCommunityAvatarView extends StatelessWidget {
           topLeft: Radius.circular(8),
           topRight: Radius.circular(8),
         ),
-        child: image?.getUrl(AmityImageSize.MEDIUM) != null
+        child: hasValidUrl
             ? Image.network(
-                image!.getUrl(AmityImageSize.MEDIUM),
+                imageUrl,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) =>
                     _buildPlaceholder(),
@@ -265,18 +295,21 @@ class AmityCommunityJoinButton extends StatelessWidget {
   final AmityThemeColor theme;
   final AmityCommunity community;
   final VoidCallback onTap;
+  final bool isLoading;
 
   const AmityCommunityJoinButton({
     Key? key,
     required this.theme,
     required this.community,
     required this.onTap,
+    this.isLoading = false,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final isJoined = community.isJoined ?? false;
     return InkWell(
-      onTap: onTap,
+      onTap: (isLoading || isJoined) ? null : onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: _getButtonDecoration(),
@@ -284,7 +317,7 @@ class AmityCommunityJoinButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             _getButtonIcon(),
-            const SizedBox(width: 4),
+            const SizedBox(width: 10),
             _getButtonLabel(context),
           ],
         ),
@@ -308,6 +341,19 @@ class AmityCommunityJoinButton extends StatelessWidget {
   }
 
   Widget _getButtonIcon() {
+    if (isLoading) {
+      return SizedBox(
+        width: 18,
+        height: 18,
+        child: CircularProgressIndicator(
+          strokeWidth: 2,
+          valueColor: AlwaysStoppedAnimation<Color>(
+            community.isJoined ?? false ? theme.baseColor : Colors.white,
+          ),
+          backgroundColor: theme.baseColorShade4,
+        ),
+      );
+    }
     return community.isJoined ?? false
         ? Icon(Icons.check, color: theme.baseColor, size: 16)
         : const Icon(Icons.add, color: Colors.white, size: 16);

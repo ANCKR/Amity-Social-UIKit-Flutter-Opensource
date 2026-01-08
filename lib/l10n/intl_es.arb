@@ -1,10 +1,9 @@
 {
-  "@@locale": "es",
   "community_title": "Comunidad",
   "@community_title": {
     "description": "Title for the homepage"
   },
-  "tab_newsfeed": "Noticias",
+  "tab_newsfeed": "suministro de noticias",
   "@tab_newsfeed": {
     "description": "Label for the newsfeed tab in the main navigation"
   },
@@ -12,23 +11,119 @@
   "@tab_explore": {
     "description": "Label for the explore tab in the main navigation"
   },
-  "tab_my_communities": "Mis Comunidades",
+  "tab_my_communities": "Mis comunidades",
   "@tab_my_communities": {
     "description": "Label for the my communities tab in the main navigation"
   },
-  "tab_my_groups": "Mis Grupos",
+  "tab_my_groups": "Mis grupos",
   "@tab_my_groups": {
-    "description": "Etiqueta para la pestaña mis grupos en la navegación principal (reemplaza tab_my_communities)"
+    "description": "Label for the my groups tab in the main navigation (replaces tab_my_communities)"
   },
-  "tab_feed": "Feed",
+  "tab_feed": "Alimentar",
   "@tab_feed": {
-    "description": "Etiqueta para la pestaña de feed en la navegación principal (muestra feeds de contenido)"
+    "description": "Label for the feed tab in the main navigation (shows content feeds)"
   },
-  "global_search_hint": "Buscar comunidad y usuario",
+  "settings_permissions": "Permisos de la comunidad",
+  "@settings_permissions": {
+    "description": "Label for permissions settings"
+  },
+  "community_post_permission": "Permiso de publicación",
+  "@community_post_permission": {
+    "description": "Community post permissions setting option"
+  },
+  "community_post_permission_title_label": "¿Quién puede publicar en esta comunidad?",
+  "@community_post_permission_title_label": {
+    "description": "label for post permissions page title"
+  },
+  "community_post_permission_description_label": "Puedes controlar quién puede crear publicaciones en tu comunidad.",
+  "@community_post_permission_description_label": {
+    "description": "label for post permissions page description"
+  },
+  "settings_allow_stories_comments": "Permitir comentarios en historias de la comunidad",
+  "@settings_allow_stories_comments": {
+    "description": "Label for allow comments on stories settings"
+  },
+  "settings_allow_stories_comments_description": "Actívalo para recibir comentarios sobre historias de esta comunidad.",
+  "@settings_allow_stories_comments_description": {
+    "description": "Description for allow comments on stories settings"
+  },
+  "community_leave": "salir de la comunidad",
+  "@community_leave": {
+    "description": "Label for leave community button"
+  },
+  "community_leave_description": "Salir de la comunidad. Ya no podrás publicar ni interactuar en esta comunidad.",
+  "@community_leave_description": {
+    "description": "Confirmation message for leaving a community"
+  },
+  "community_setting_close_label": "Comunidad cercana",
+  "@community_setting_close_label": {
+    "description": "Label for close community setting"
+  },
+  "community_setting_close_description": "Al cerrar esta comunidad, se eliminará la página de la comunidad y todo su contenido y comentarios.",
+  "@community_setting_close_description": {
+    "description": "Description for close community setting"
+  },
+  "community_close": "¿Comunidad cercana?",
+  "@community_close": {
+    "description": "Label for close button"
+  },
+  "community_close_description": "Todos los miembros serán eliminados de la comunidad. Se eliminarán todas las publicaciones, mensajes, reacciones y medios compartidos en la comunidad. Esto no se puede deshacer.",
+  "@community_close_description": {
+    "description": "Confirmation message for closing a community"
+  },
+  "group_settings_permissions": "Permisos de grupo",
+  "@group_settings_permissions": {
+    "description": "Section title for group permissions in settings (replaces settings_permissions)"
+  },
+  "group_post_permission": "Permiso de publicación",
+  "@group_post_permission": {
+    "description": "Group post permissions setting option"
+  },
+  "group_post_permission_title_label": "¿Quién puede publicar en este grupo?",
+  "@group_post_permission_title_label": {
+    "description": "Label for post permissions page title"
+  },
+  "group_post_permission_description_label": "Puedes controlar quién puede crear publicaciones en tu grupo.",
+  "@group_post_permission_description_label": {
+    "description": "Label for post permissions page description"
+  },
+  "group_allow_stories_comments": "Permitir comentarios en historias grupales",
+  "@group_allow_stories_comments": {
+    "description": "Label for story comments setting (replaces settings_allow_stories_comments)"
+  },
+  "group_allow_stories_comments_description": "Actívalo para recibir comentarios sobre historias de este grupo.",
+  "@group_allow_stories_comments_description": {
+    "description": "Description for story comments setting (replaces settings_allow_stories_comments_description)"
+  },
+  "group_leave": "Dejar grupo",
+  "@group_leave": {
+    "description": "Label for leave group button"
+  },
+  "group_leave_description": "Deja el grupo. Ya no podrás publicar ni interactuar en este grupo.",
+  "@group_leave_description": {
+    "description": "Confirmation message for leaving a group"
+  },
+  "group_setting_close_label": "Cerrar grupo",
+  "@group_setting_close_label": {
+    "description": "Label for close group setting"
+  },
+  "group_setting_close_description": "Al cerrar este grupo, se eliminará la página del grupo y todo su contenido y comentarios.",
+  "@group_setting_close_description": {
+    "description": "Description for close group setting"
+  },
+  "group_close": "¿Grupo cerrado?",
+  "@group_close": {
+    "description": "Confirmation title for closing a group"
+  },
+  "group_close_description": "Todos los miembros serán eliminados del grupo. Se eliminarán todas las publicaciones, mensajes, reacciones y medios compartidos en el grupo. Esto no se puede deshacer.",
+  "@group_close_description": {
+    "description": "Confirmation message for closing a group"
+  },
+  "global_search_hint": "Comunidad de búsqueda y usuario",
   "@global_search_hint": {
     "description": "Hint text for the search communities and users field on the homepage"
   },
-  "search_my_community_hint": "Buscar mi comunidad",
+  "search_my_community_hint": "Buscar en mi comunidad",
   "@search_my_community_hint": {
     "description": "Hint text for searching my communities"
   },
@@ -48,7 +143,7 @@
   "@general_cancel": {
     "description": "Label for the cancel button"
   },
-  "general_ok": "OK",
+  "general_ok": "DE ACUERDO",
   "@general_ok": {
     "description": "Label for the OK button"
   },
@@ -56,19 +151,15 @@
   "@general_confirm": {
     "description": "Label for the confirm button"
   },
-  "general_featured": "Destacado",
+  "general_featured": "Presentado",
   "@general_featured": {
     "description": "Label for the featured posts"
-  },
-  "profile_edit": "Editar perfil",
-  "@profile_edit": {
-    "description": "Label for edit profile button"
   },
   "profile_followers": "Seguidores",
   "@profile_followers": {
     "description": "Label for followers count"
   },
-  "profile_following": "Siguiendo",
+  "profile_following": "Siguiente",
   "@profile_following": {
     "description": "Label for following count"
   },
@@ -84,7 +175,7 @@
   "@post_edit": {
     "description": "Label for edit post button"
   },
-  "post_create_hint": "¿Qué está pasando...?",
+  "post_create_hint": "Qué está sucediendo",
   "@post_create_hint": {
     "description": "Hint text for post creation input field"
   },
@@ -92,7 +183,7 @@
   "@post_delete": {
     "description": "Label for delete post button"
   },
-  "post_delete_description": "Esta publicación se eliminará permanentemente.",
+  "post_delete_description": "Esta publicación será eliminada permanentemente.",
   "@post_delete_description": {
     "description": "Confirmation message for deleting a post"
   },
@@ -108,15 +199,15 @@
   "@post_report": {
     "description": "Label for report post button"
   },
-  "post_unreport": "Desreportar publicación",
+  "post_unreport": "Dejar de reportar publicación",
   "@post_unreport": {
     "description": "Label for unreport post button"
   },
-  "post_like": "Me gusta",
+  "post_like": "Como",
   "@post_like": {
     "description": "Label for like action"
   },
-  "post_comment": "Comentar",
+  "post_comment": "Comentario",
   "@post_comment": {
     "description": "Label for comment action"
   },
@@ -128,11 +219,11 @@
   "@post_discard": {
     "description": "Label for discard button"
   },
-  "post_discard_description": "La publicación se eliminará permanentemente. No se puede deshacer.",
+  "post_discard_description": "La publicación será eliminada permanentemente. No se puede deshacer.",
   "@post_discard_description": {
     "description": "Description for discard button"
   },
-  "post_write_comment": "Escribe un comentario...",
+  "post_write_comment": "Escribe un comentario",
   "@post_write_comment": {
     "description": "Placeholder for comment input"
   },
@@ -168,7 +259,7 @@
   "@poll_back_to_vote": {
     "description": "Label for back to vote button"
   },
-  "poll_vote_count": "{count, plural, =1{1 voto} other{{count} votos}}",
+  "poll_vote_count": "{count, plural, =1{1 vote} other{{count} votes}}",
   "@poll_vote_count": {
     "description": "Plural form for poll vote count",
     "placeholders": {
@@ -177,7 +268,7 @@
       }
     }
   },
-  "poll_total_votes": "{count, plural, =0{Sin votos} =1{Votado por 1 participante} other{Votado por {count}{plusSign} participantes}}",
+  "poll_total_votes": "{count, plural, =0{No votes} =1{Voted by 1 participant} other{Voted by {count}{plusSign} participants}}",
   "@poll_total_votes": {
     "description": "Plural form for poll total votes",
     "placeholders": {
@@ -189,7 +280,7 @@
       }
     }
   },
-  "poll_see_more_options": "{count, plural, =1{Ver 1 opción más} other{Ver {count} opciones más}}",
+  "poll_see_more_options": "{count, plural, =1{See 1 more option} other{See {count} more options}}",
   "@poll_see_more_options": {
     "description": "Plural form for poll see more options",
     "placeholders": {
@@ -206,27 +297,27 @@
   "@poll_voted": {
     "description": "Label for voted poll"
   },
-  "poll_and_you": " y tú",
+  "poll_and_you": "y tú",
   "@poll_and_you": {
     "description": "Suffix for voted poll and you"
   },
-  "poll_remaining_time": "restante",
+  "poll_remaining_time": "izquierda",
   "@poll_remaining_time": {
     "description": "Label for remaining time in poll"
   },
-  "poll_vote_error": "Error al votar en la encuesta. Por favor, inténtalo de nuevo.",
+  "poll_vote_error": "No se pudo votar en la encuesta. Por favor inténtalo de nuevo.",
   "@poll_vote_error": {
     "description": "Error message when voting fails"
   },
-  "poll_ended": "Finalizado",
+  "poll_ended": "Terminado",
   "@poll_ended": {
     "description": "Label for ended poll"
   },
-  "poll_single_choice": "Selecciona una opción",
+  "poll_single_choice": "Seleccione una opción",
   "@poll_single_choice": {
     "description": "Label for single choice poll"
   },
-  "poll_multiple_choice": "Selecciona una o más opciones",
+  "poll_multiple_choice": "Seleccione una o más opciones",
   "@poll_multiple_choice": {
     "description": "Label for multiple choice poll"
   },
@@ -239,13 +330,119 @@
       }
     }
   },
-  "poll_question": "Pregunta de la encuesta",
+  "poll_question": "pregunta de la encuesta",
   "@poll_question": {
     "description": "Label for poll question"
   },
   "poll_question_hint": "¿Cuál es tu pregunta de la encuesta?",
   "@poll_question_hint": {
     "description": "Hint text for poll question input"
+  },
+  "comment_create_hint": "Di algo bonito",
+  "@comment_create_hint": {
+    "description": "Hint text for comment input"
+  },
+  "comment_reply": "Responder",
+  "@comment_reply": {
+    "description": "Label for reply button"
+  },
+  "comment_reply_to": "Respondiendo a",
+  "@comment_reply_to": {
+    "description": "Label for reply to comment"
+  },
+  "comment_view_reply_count": "{count, plural, =1{View 1 reply} other{View {count} reply}}",
+  "@comment_view_reply_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "comment_report": "Reportar comentario",
+  "@comment_report": {
+    "description": "Label for report comment button"
+  },
+  "comment_unreport": "Dejar de reportar comentario",
+  "@comment_unreport": {
+    "description": "Label for unreport comment button"
+  },
+  "comment_reply_report": "Informar respuesta",
+  "@comment_reply_report": {
+    "description": "Label for report reply button"
+  },
+  "comment_reply_unreport": "Respuesta para no informar",
+  "@comment_reply_unreport": {
+    "description": "Label for unreport reply button"
+  },
+  "comment_edit": "Editar comentario",
+  "@comment_edit": {
+    "description": "Label for edit comment button"
+  },
+  "comment_reply_edit": "Editar respuesta",
+  "@comment_reply_edit": {
+    "description": "Label for edit reply button"
+  },
+  "comment_delete": "Eliminar comentario",
+  "@comment_delete": {
+    "description": "Label for delete comment button"
+  },
+  "comment_reply_delete": "Eliminar respuesta",
+  "@comment_reply_delete": {
+    "description": "Label for delete reply button"
+  },
+  "comment_delete_description": "Este {content} se eliminará permanentemente.",
+  "@comment_delete_description": {
+    "description": "Confirmation message for deleting a comment",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "comment_create_error_ban_word": "Tu comentario contiene palabras inapropiadas. Por favor revíselo y elimínelo.",
+  "@comment_create_error_ban_word": {
+    "description": "Toast message for comment creation with banned word"
+  },
+  "comment_create_error_story_deleted": "Esta historia ya no está disponible.",
+  "@comment_create_error_story_deleted": {
+    "description": "Toast message for comment creation"
+  },
+  "community_create_success_message": "Comunidad creada con éxito.",
+  "@community_create_success_message": {
+    "description": "Toast message for community creation success"
+  },
+  "community_create_error_message": "No se pudo crear la comunidad. Por favor inténtalo de nuevo.",
+  "@community_create_error_message": {
+    "description": "Toast message for community creation failure"
+  },
+  "community_update_success_message": "Comunidad actualizada con éxito.",
+  "@community_update_success_message": {
+    "description": "Toast message for community update success"
+  },
+  "community_update_error_message": "No se pudo guardar el perfil de su comunidad. Por favor inténtalo de nuevo.",
+  "@community_update_error_message": {
+    "description": "Toast message for community update failure"
+  },
+  "community_leave_success_message": "Salió exitosamente de la comunidad.",
+  "@community_leave_success_message": {
+    "description": "Toast message for community leave success"
+  },
+  "community_leave_error_message": "No pudo abandonar la comunidad.",
+  "@community_leave_error_message": {
+    "description": "Toast message for community leave error"
+  },
+  "community_close_success_message": "Cerró con éxito la comunidad.",
+  "@community_close_success_message": {
+    "description": "Toast message for community close success"
+  },
+  "community_close_error_message": "No se pudo cerrar la comunidad.",
+  "@community_close_error_message": {
+    "description": "Toast message for community close error"
+  },
+  "community_join": "Unirse",
+  "@community_join": {
+    "description": "Label for join community button"
   },
   "community_joined": "Unido",
   "@community_joined": {
@@ -263,25 +460,513 @@
   "@community_placeholder_members": {
     "description": "Placeholder text for community members count in recommended communities"
   },
-  "category_select_title": "Seleccionar Categoría",
+  "community_create": "Crear comunidad",
+  "@community_create": {
+    "description": "Label for create community button"
+  },
+  "community_name": "Nombre de la comunidad",
+  "@community_name": {
+    "description": "Label for community name"
+  },
+  "community_name_hint": "Nombra tu comunidad",
+  "@community_name_hint": {
+    "description": "Hint text for community name input"
+  },
+  "community_description_hint": "Introduce la descripción",
+  "@community_description_hint": {
+    "description": "Hint text for community description input"
+  },
+  "community_edit": "Editar comunidad",
+  "@community_edit": {
+    "description": "Label for edit community button"
+  },
+  "community_members": "Miembros",
+  "@community_members": {
+    "description": "Label for community members"
+  },
+  "community_private": "Privado",
+  "@community_private": {
+    "description": "Label for private community type"
+  },
+  "community_public": "Público",
+  "@community_public": {
+    "description": "Label for public community type"
+  },
+  "community_public_description": "Cualquiera puede unirse, ver y buscar publicaciones en esta comunidad.",
+  "@community_public_description": {
+    "description": "Description for public community type"
+  },
+  "community_private_description": "Solo los miembros invitados por los moderadores pueden unirse, ver y buscar publicaciones en esta comunidad.",
+  "@community_private_description": {
+    "description": "Description for private community type"
+  },
+  "community_about": "Acerca de",
+  "@community_about": {
+    "description": "Label for community about section"
+  },
+  "categories_title": "Categorías",
+  "@categories_title": {
+    "description": "Title for categories section"
+  },
+  "category_hint": "Seleccionar categoría",
+  "@category_hint": {
+    "description": "Hint text for category select field"
+  },
+  "category_select_title": "Seleccionar categoría",
   "@category_select_title": {
     "description": "Title for category selection page"
   },
-  "category_add": "Agregar Categoría",
+  "category_add": "Agregar categoría",
   "@category_add": {
     "description": "Label for add category button"
   },
-  "settings_only_admins": "Solo los administradores pueden publicar",
+  "community_pending_posts": "Publicaciones pendientes",
+  "@community_pending_posts": {
+    "description": "Label for pending posts section"
+  },
+  "commnuity_pending_post_reviewing": "Tus publicaciones están pendientes de revisión",
+  "@commnuity_pending_post_reviewing": {
+    "description": "Label for reviewing pending post"
+  },
+  "commnuity_pending_post_count": "{count, plural, =1{{count} post need approval} other{{count} posts need approval}}",
+  "@commnuity_pending_post_count": {
+    "description": "Plural form for pending post count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
+  "@community_pending_request_title": {
+    "description": "Title for pending request/requests",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
+  "@community_pending_request_message": {
+    "description": "Message for pending request showing count and plural forms",
+    "placeholders": {
+      "displayCount": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_basic_info": "Información básica",
+  "@community_basic_info": {
+    "description": "Label for basic info section"
+  },
+  "community_discard_confirmation": "¿Salir sin terminar?",
+  "@community_discard_confirmation": {
+    "description": "Label for discard changes confirmation"
+  },
+  "community_discard_description": "Tu progreso no se guardará y no se creará tu comunidad.",
+  "@community_discard_description": {
+    "description": "Description for discard changes confirmation"
+  },
+  "message_send": "Enviar",
+  "@message_send": {
+    "description": "Label for send message button"
+  },
+  "message_typing": "está escribiendo",
+  "@message_typing": {
+    "description": "Label for typing indicator"
+  },
+  "message_placeholder": "Escribe un mensaje",
+  "@message_placeholder": {
+    "description": "Placeholder for message input"
+  },
+  "settings_title": "Ajustes",
+  "@settings_title": {
+    "description": "Title for settings screen"
+  },
+  "settings_notifications": "Notificaciones",
+  "@settings_notifications": {
+    "description": "Label for notifications settings"
+  },
+  "settings_new_posts": "Nuevas publicaciones",
+  "@settings_new_posts": {
+    "description": "Label for new posts settings"
+  },
+  "settings_new_posts_description": "Reciba notificaciones cuando alguien cree nuevas publicaciones en esta comunidad.",
+  "@settings_new_posts_description": {
+    "description": "Description for new posts settings"
+  },
+  "settings_react_posts": "Reaccionar publicaciones",
+  "@settings_react_posts": {
+    "description": "Label for react to posts settings"
+  },
+  "settings_react_posts_description": "Recibe notificaciones cuando alguien reaccione a tus publicaciones en esta comunidad.",
+  "@settings_react_posts_description": {
+    "description": "Description for react to posts settings"
+  },
+  "settings_react_comments": "reaccionar comentarios",
+  "@settings_react_comments": {
+    "description": "Label for react to comments settings"
+  },
+  "settings_react_comments_description": "Recibe notificaciones cuando a alguien le guste tu comentario en esta comunidad.",
+  "@settings_react_comments_description": {
+    "description": "Description for react to comments settings"
+  },
+  "settings_new_comments": "Nuevos comentarios",
+  "@settings_new_comments": {
+    "description": "Label for new comments settings"
+  },
+  "settings_new_comments_description": "Recibe notificaciones cuando alguien comente tu publicación en esta comunidad.",
+  "@settings_new_comments_description": {
+    "description": "Description for new comments settings"
+  },
+  "settings_new_replies": "Respuestas",
+  "@settings_new_replies": {
+    "description": "Label for new replies settings"
+  },
+  "settings_new_replies_description": "Recibe notificaciones cuando alguien comente tus comentarios en esta comunidad.",
+  "@settings_new_replies_description": {
+    "description": "Description for new replies settings"
+  },
+  "settings_new_stories": "Nuevas historias",
+  "@settings_new_stories": {
+    "description": "Label for new stories settings"
+  },
+  "settings_new_stories_description": "Reciba notificaciones cuando alguien cree una nueva historia en esta comunidad.",
+  "@settings_new_stories_description": {
+    "description": "Description for new stories settings"
+  },
+  "settings_story_reactions": "Reacciones de la historia",
+  "@settings_story_reactions": {
+    "description": "Label for story reactions settings"
+  },
+  "settings_story_reactions_description": "Recibe notificaciones cuando alguien reaccione a tu historia en esta comunidad.",
+  "@settings_story_reactions_description": {
+    "description": "Description for story reactions settings"
+  },
+  "settings_story_comments": "Comentarios de la historia",
+  "@settings_story_comments": {
+    "description": "Label for story comments settings"
+  },
+  "settings_story_comments_description": "Recibe notificaciones cuando alguien comente tu historia en esta comunidad.",
+  "@settings_story_comments_description": {
+    "description": "Description for story comments settings"
+  },
+  "settings_everyone": "Todos",
+  "@settings_everyone": {
+    "description": "Label for everyone settings"
+  },
+  "settings_only_moderators": "Sólo moderadores",
+  "@settings_only_moderators": {
+    "description": "Label for only moderators settings"
+  },
+  "settings_only_admins": "Sólo los administradores pueden publicar",
   "@settings_only_admins": {
     "description": "Label for only admins can post setting"
   },
-  "settings_allow_notification": "Permitir Notificaciones",
+  "settings_privacy": "Privacidad",
+  "@settings_privacy": {
+    "description": "Label for privacy settings"
+  },
+  "settings_language": "Idioma",
+  "@settings_language": {
+    "description": "Label for language settings"
+  },
+  "settings_leave_confirmation": "¿Salir sin terminar?",
+  "@settings_leave_confirmation": {
+    "description": "Label for confirmation settings"
+  },
+  "settings_leave_description": "Es posible que los cambios que haya realizado no se guarden.",
+  "@settings_leave_description": {
+    "description": "Description for confirmation settings"
+  },
+  "settings_privacy_confirmation": "¿Cambiar la configuración de privacidad de la comunidad?",
+  "@settings_privacy_confirmation": {
+    "description": "Label for privacy confirmation settings"
+  },
+  "settings_privacy_description": "Esta comunidad tiene publicaciones destacadas a nivel mundial. Al cambiar la comunidad de pública a privada, estas publicaciones dejarán de aparecer globalmente.",
+  "@settings_privacy_description": {
+    "description": "Description for privacy confirmation settings"
+  },
+  "general_add": "Agregar",
+  "@general_add": {
+    "description": "Label for add button"
+  },
+  "general_loading": "Cargando",
+  "@general_loading": {
+    "description": "Label for loading states"
+  },
+  "general_leave": "Dejar",
+  "@general_leave": {
+    "description": "Label for leave button"
+  },
+  "general_error": "Vaya, algo salió mal",
+  "@general_error": {
+    "description": "Generic error message"
+  },
+  "general_edited": "Editado",
+  "@general_edited": {
+    "description": "Label for edited content"
+  },
+  "general_edited_suffix": "(editado)",
+  "@general_edited_suffix": {
+    "description": "Suffix for edited post"
+  },
+  "general_keep_editing": "Sigue editando",
+  "@general_keep_editing": {
+    "description": "Label for keep editing button"
+  },
+  "general_discard": "Desechar",
+  "@general_discard": {
+    "description": "Label for discard button"
+  },
+  "general_moderator": "Moderador",
+  "@general_moderator": {
+    "description": "Label for moderator role"
+  },
+  "general_save": "Ahorrar",
+  "@general_save": {
+    "description": "Label for save button"
+  },
+  "general_delete": "Borrar",
+  "@general_delete": {
+    "description": "Label for delete button"
+  },
+  "general_edit": "Editar",
+  "@general_edit": {
+    "description": "Label for edit button"
+  },
+  "general_close": "Cerca",
+  "@general_close": {
+    "description": "Label for close button"
+  },
+  "general_done": "Hecho",
+  "@general_done": {
+    "description": "Label for done button"
+  },
+  "general_post": "Correo",
+  "@general_post": {
+    "description": "Label for post button"
+  },
+  "general_comments": "Comentarios",
+  "@general_comments": {
+    "description": "Label for comments button"
+  },
+  "general_story": "Historia",
+  "@general_story": {
+    "description": "Label for story button"
+  },
+  "general_stories": "Historias",
+  "@general_stories": {
+    "description": "Label for stories button"
+  },
+  "general_poll": "Encuesta",
+  "@general_poll": {
+    "description": "Label for poll button"
+  },
+  "general_optional": "Opcional",
+  "@general_optional": {
+    "description": "Label for optional fields"
+  },
+  "general_on": "En",
+  "@general_on": {
+    "description": "Label for on state"
+  },
+  "general_off": "Apagado",
+  "@general_off": {
+    "description": "Label for off state"
+  },
+  "settings_allow_notification": "Permitir notificación",
   "@settings_allow_notification": {
     "description": "Label for allow notification toggle"
   },
-  "settings_allow_notification_description": "Activa para recibir notificaciones push de esta comunidad.",
+  "settings_allow_notification_description": "Actívelo para recibir notificaciones automáticas de esta comunidad.",
   "@settings_allow_notification_description": {
     "description": "Description for allow notification setting"
+  },
+  "general_reported": "reportado",
+  "@general_reported": {
+    "description": "Label for reported content"
+  },
+  "general_see_more": "...Ver más",
+  "@general_see_more": {
+    "description": "Label for see more button"
+  },
+  "general_camera": "Cámara",
+  "@general_camera": {
+    "description": "Label for camera button"
+  },
+  "general_photo": "Foto",
+  "@general_photo": {
+    "description": "Label for photo button"
+  },
+  "general_video": "Video",
+  "@general_video": {
+    "description": "Label for video button"
+  },
+  "general_posting": "Destino",
+  "@general_posting": {
+    "description": "Label for posting states"
+  },
+  "general_my_timeline": "Mi línea de tiempo",
+  "@general_my_timeline": {
+    "description": "Label for my timeline button"
+  },
+  "general_options": "Opciones",
+  "@general_options": {
+    "description": "Label for options button"
+  },
+  "post_edit_globally_featured": "¿Editar publicación destacada globalmente?",
+  "@post_edit_globally_featured": {
+    "description": "Title for globally featured post"
+  },
+  "post_edit_globally_featured_description": "La publicación que estás editando se ha destacado a nivel mundial. Si editas tu publicación, será necesario volver a aprobarla y ya no aparecerá globalmente.",
+  "@post_edit_globally_featured_description": {
+    "description": "Description for globally featured post"
+  },
+  "post_like_count": "{count, plural, =1{1 like} other{{count} likes}}",
+  "@post_like_count": {
+    "description": "Plural form for post like count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_comment_count": "{count, plural, =1{1 comment} other{{count} comments}}",
+  "@post_comment_count": {
+    "description": "Plural form for post comment count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_reported": "Publicación informada.",
+  "@post_reported": {
+    "description": "Label for reported post"
+  },
+  "post_unreported": "Publicación no reportada.",
+  "@post_unreported": {
+    "description": "Label for unreported post"
+  },
+  "profile_followers_count": "{count, plural, =0{No followers} =1{1 follower} other{{count} followers}}",
+  "@profile_followers_count": {
+    "description": "Plural form for profile followers count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_members_count": "{count, plural, =0{Sin miembros} =1{1 miembro} other{{count} miembros}}",
+  "@community_members_count": {
+    "description": "Plural form for community members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_posts_count": "{count, plural, =1{correo} other{publicaciones}}",
+  "@profile_posts_count": {
+    "description": "Plural form for user posts count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profile_members_count": "{count, plural, =1{miembro} other{miembros}}",
+  "@profile_members_count": {
+    "description": "Plural form for member count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "user_block": "Bloquear usuario",
+  "@user_block": {
+    "description": "Community story comments setting option"
+  },
+  "user_unblock": "Desbloquear usuario",
+  "@user_unblock": {
+    "description": "Label for unblock user button"
+  },
+  "error_delete_post": "No se pudo eliminar la publicación. Por favor inténtalo de nuevo.",
+  "@error_delete_post": {
+    "description": "Error message when deleting a post fails"
+  },
+  "error_leave_community": "No puedo salir de la comunidad",
+  "@error_leave_community": {
+    "description": "Error message title when leaving a community fails"
+  },
+  "error_leave_community_description": "Eres el único moderador de este grupo. Para abandonar la comunidad, nomine a otros miembros para el rol de moderador.",
+  "@error_leave_community_description": {
+    "description": "Error message description when leaving a community fails"
+  },
+  "error_close_community": "No se puede cerrar la comunidad",
+  "@error_close_community": {
+    "description": "Error message title when closing a community fails"
+  },
+  "error_close_community_description": "Algo salió mal. Inténtelo de nuevo más tarde.",
+  "@error_close_community_description": {
+    "description": "Error message description when closing a community fails"
+  },
+  "error_max_upload_reached": "Se alcanzó el límite máximo de carga",
+  "@error_max_upload_reached": {
+    "description": "Error message when maximum upload limit is reached"
+  },
+  "error_max_upload_image_reached_description": "Has alcanzado el límite de carga de {maxUploads} imágenes. No se guardarán imágenes adicionales.",
+  "@error_max_upload_image_reached_description": {
+    "description": "Error message description when maximum upload images limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_upload_videos_reached_description": "Has alcanzado el límite de carga de {maxUploads} vídeos. No se guardarán vídeos adicionales.",
+  "@error_max_upload_videos_reached_description": {
+    "description": "Error message description when maximum upload videos limit is reached",
+    "placeholders": {
+      "maxUploads": {
+        "type": "int"
+      }
+    }
+  },
+  "error_edit_post": "Error al editar",
+  "@error_edit_post": {
+    "description": "Error message when editing a post fails"
+  },
+  "error_create_post": "Error al crear",
+  "@error_create_post": {
+    "description": "Error message when creating a post fails"
+  },
+  "error_max_poll_characters": "La pregunta de la encuesta no puede exceder los {maxQuestionLength} caracteres.",
+  "@error_max_poll_characters": {
+    "description": "Error message when poll question exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_max_poll_option_characters": "La opción de encuesta no puede exceder los {maxQuestionLength} caracteres.",
+  "@error_max_poll_option_characters": {
+    "description": "Error message when poll option exceeds maximum characters",
+    "placeholders": {
+      "maxQuestionLength": {
+        "type": "int"
+      }
+    }
+  },
+  "error_create_poll": "No se pudo crear la encuesta. Por favor inténtalo de nuevo.",
+  "@error_create_poll": {
+    "description": "Error message when creating a poll fails"
   },
   "user_profile_unknown_name": "Desconocido",
   "@user_profile_unknown_name": {
@@ -299,7 +984,7 @@
   "@community_search_member_hint": {
     "description": "Hint text for member search field"
   },
-  "community_promote_moderator": "Promover a moderador",
+  "community_promote_moderator": "Promocionar a moderador",
   "@community_promote_moderator": {
     "description": "Action to promote a member to moderator role"
   },
@@ -307,7 +992,7 @@
   "@community_demote_member": {
     "description": "Action to demote a moderator to member role"
   },
-  "community_remove_member": "Eliminar de la comunidad",
+  "community_remove_member": "Quitar de la comunidad",
   "@community_remove_member": {
     "description": "Action to remove a member from the community"
   },
@@ -315,11 +1000,11 @@
   "@user_report": {
     "description": "Action to report a user"
   },
-  "user_unreport": "Desreportar usuario",
+  "user_unreport": "Dejar de reportar usuario",
   "@user_unreport": {
     "description": "Action to unreport a user"
   },
-  "feed_no_videos": "Aún no hay videos",
+  "feed_no_videos": "Aún no hay vídeos",
   "@feed_no_videos": {
     "description": "Empty state message when there are no videos in the feed"
   },
@@ -327,7 +1012,7 @@
   "@feed_no_photos": {
     "description": "Empty state message when there are no photos in the feed"
   },
-  "feed_no_pinned_posts": "Aún no hay publicaciones fijadas",
+  "feed_no_pinned_posts": "Aún no hay ninguna publicación fijada",
   "@feed_no_pinned_posts": {
     "description": "Empty state message when there are no pinned posts in the community"
   },
@@ -343,543 +1028,28 @@
   "@search_user_hint": {
     "description": "Hint text for searching users"
   },
-  "profile_update_success": "¡Perfil actualizado exitosamente!",
+  "profile_edit": "Editar perfil",
+  "@profile_edit": {
+    "description": "Button text for editing user profile"
+  },
+  "profile_update_success": "¡Actualizó exitosamente su perfil!",
   "@profile_update_success": {
     "description": "Success message when profile is updated"
   },
-  "profile_update_failed": "Error al guardar tu perfil. Por favor, inténtalo de nuevo.",
+  "profile_update_failed": "Error al guardar",
   "@profile_update_failed": {
     "description": "Error message when profile update fails"
   },
-  "user_block": "Bloquear Usuario",
-  "@user_block": {
-    "description": "Button text for blocking a user"
-  },
-  "settings_notifications": "Notificaciones",
-  "@settings_notifications": {
-    "description": "Label for notifications settings"
-  },
-  "categories_title": "Categorías",
-  "@categories_title": {
-    "description": "Title for categories section"
-  },
-  "category_hint": "Seleccionar categoría",
-  "@category_hint": {
-    "description": "Hint text for category select field"
-  },
-  "comment_create_hint": "Di algo bonito...",
-  "@comment_create_hint": {
-    "description": "Hint text for comment input"
-  },
-  "comment_delete": "Eliminar comentario",
-  "@comment_delete": {
-    "description": "Label for delete comment button"
-  },
-  "comment_delete_description": "Este {content} será eliminado permanentemente.",
-  "@comment_delete_description": {
-    "description": "Confirmation message for deleting a comment"
-  },
-  "comment_edit": "Editar comentario",
-  "@comment_edit": {
-    "description": "Label for edit comment button"
-  },
-  "comment_reply": "Responder",
-  "@comment_reply": {
-    "description": "Label for reply button"
-  },
-  "comment_reply_delete": "Eliminar respuesta",
-  "@comment_reply_delete": {
-    "description": "Label for delete reply button"
-  },
-  "comment_reply_edit": "Editar respuesta",
-  "@comment_reply_edit": {
-    "description": "Label for edit reply button"
-  },
-  "comment_reply_report": "Reportar respuesta",
-  "@comment_reply_report": {
-    "description": "Label for report reply button"
-  },
-  "comment_reply_to": "Respondiendo a ",
-  "@comment_reply_to": {
-    "description": "Label for reply to comment"
-  },
-  "comment_reply_unreport": "Quitar reporte",
-  "@comment_reply_unreport": {
-    "description": "Label for unreport reply button"
-  },
-  "comment_report": "Reportar comentario",
-  "@comment_report": {
-    "description": "Label for report comment button"
-  },
-  "comment_unreport": "Quitar reporte",
-  "@comment_unreport": {
-    "description": "Label for unreport comment button"
-  },
-  "comment_view_reply_count": "{count, plural, =1{Ver 1 respuesta} other{Ver {count} respuestas}}",
-  "@comment_view_reply_count": {
-    "description": "Plural form for post comment count"
-  },
-  "commnuity_pending_post_count": "{count, plural, =1{{count} publicación necesita aprobación} other{{count} publicaciones necesitan aprobación}}",
-  "@commnuity_pending_post_count": {
-    "description": "Plural form for pending post count"
-  },
-  "commnuity_pending_post_reviewing": "Tus publicaciones están pendientes de revisión",
-  "@commnuity_pending_post_reviewing": {
-    "description": "Label for reviewing pending post"
-  },
-  "community_about": "Acerca de",
-  "@community_about": {
-    "description": "Label for community about section"
-  },
-  "community_basic_info": "Información Básica",
-  "@community_basic_info": {
-    "description": "Label for basic info section"
-  },
-  "community_close": "¿Cerrar comunidad?",
-  "@community_close": {
-    "description": "Label for close button"
-  },
-  "community_close_description": "Todos los miembros serán removidos de la comunidad. Todas las publicaciones, mensajes, reacciones y medios compartidos en la comunidad serán eliminados. Esto no se puede deshacer.",
-  "@community_close_description": {
-    "description": "Confirmation message for closing a community"
-  },
-  "community_create": "Crear Comunidad",
-  "@community_create": {
-    "description": "Label for create community button"
-  },
-  "community_description_hint": "Ingresa la descripción",
-  "@community_description_hint": {
-    "description": "Hint text for community description input"
-  },
-  "community_discard_confirmation": "¿Salir sin terminar?",
-  "@community_discard_confirmation": {
-    "description": "Label for discard changes confirmation"
-  },
-  "community_discard_description": "Tu progreso no será guardado y tu comunidad no será creada.",
-  "@community_discard_description": {
-    "description": "Description for discard changes confirmation"
-  },
-  "community_edit": "Editar Comunidad",
-  "@community_edit": {
-    "description": "Label for edit community button"
-  },
-  "community_join": "Unirse",
-  "@community_join": {
-    "description": "Label for join community button"
-  },
-  "community_leave": "Salir de la comunidad",
-  "@community_leave": {
-    "description": "Label for leave community button"
-  },
-  "community_leave_description": "Salir de la comunidad. Ya no podrás publicar e interactuar en esta comunidad.",
-  "@community_leave_description": {
-    "description": "Confirmation message for leaving a community"
-  },
-  "community_members": "Miembros",
-  "@community_members": {
-    "description": "Label for community members"
-  },
-  "community_members_count": "{count, plural, =0{Sin miembros} =1{1 miembro} other{{count} miembros}}",
-  "@community_members_count": {
-    "description": "Plural form for community members count"
-  },
-  "community_name": "Nombre de la comunidad",
-  "@community_name": {
-    "description": "Label for community name"
-  },
-  "community_name_hint": "Nombra tu comunidad",
-  "@community_name_hint": {
-    "description": "Hint text for community name input"
-  },
-  "community_pending_posts": "Publicaciones Pendientes",
-  "@community_pending_posts": {
-    "description": "Label for pending posts section"
-  },
-  "community_pending_request_message": "{displayCount} {count, plural, =1{publicación requiere} other{publicaciones requieren}} aprobación",
-  "@community_pending_request_message": {
-    "description": "Message for pending request showing count and plural forms"
-  },
-  "community_pending_request_title": "{count, plural, =1{Solicitud pendiente} other{Solicitudes pendientes}}",
-  "@community_pending_request_title": {
-    "description": "Title for pending request/requests"
-  },
-  "community_post_permission": "Permiso de publicación",
-  "@community_post_permission": {
-    "description": "Community post permissions setting option"
-  },
-  "community_private": "Privada",
-  "@community_private": {
-    "description": "Label for private community type"
-  },
-  "community_private_description": "Solo los miembros invitados por los moderadores pueden unirse, ver y buscar las publicaciones en esta comunidad.",
-  "@community_private_description": {
-    "description": "Description for private community type"
-  },
-  "community_public": "Pública",
-  "@community_public": {
-    "description": "Label for public community type"
-  },
-  "community_public_description": "Cualquiera puede unirse, ver y buscar las publicaciones en esta comunidad.",
-  "@community_public_description": {
-    "description": "Description for public community type"
-  },
-  "community_setting_close_description": "Cerrar esta comunidad eliminará la página de la comunidad y todo su contenido y comentarios.",
-  "@community_setting_close_description": {
-    "description": "Description for close community setting"
-  },
-  "community_setting_close_label": "Cerrar comunidad",
-  "@community_setting_close_label": {
-    "description": "Label for close community setting"
-  },
-  "community_story_comments": "Comentarios de historias",
-  "@community_story_comments": {
-    "description": "Community story comments setting option"
-  },
-  "error_close_community": "No se pudo cerrar la comunidad",
-  "@error_close_community": {
-    "description": "Error message title when closing a community fails"
-  },
-  "error_close_community_description": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
-  "@error_close_community_description": {
-    "description": "Error message description when closing a community fails"
-  },
-  "error_create_poll": "Error al crear la encuesta. Por favor, inténtalo de nuevo.",
-  "@error_create_poll": {
-    "description": "Error message when creating a poll fails"
-  },
-  "error_create_post": "Error al crear la publicación. Por favor, inténtalo de nuevo.",
-  "@error_create_post": {
-    "description": "Error message when creating a post fails"
-  },
-  "error_delete_post": "Error al eliminar la publicación. Por favor, inténtalo de nuevo.",
-  "@error_delete_post": {
-    "description": "Error message when deleting a post fails"
-  },
-  "error_edit_post": "Error al editar la publicación. Por favor, inténtalo de nuevo.",
-  "@error_edit_post": {
-    "description": "Error message when editing a post fails"
-  },
-  "error_leave_community": "No se puede salir de la comunidad",
-  "@error_leave_community": {
-    "description": "Error message title when leaving a community fails"
-  },
-  "error_leave_community_description": "Eres el único moderador de este grupo. Para salir de la comunidad, nombra a otros miembros al rol de moderador",
-  "@error_leave_community_description": {
-    "description": "Error message description when leaving a community fails"
-  },
-  "error_max_poll_characters": "La pregunta de la encuesta no puede exceder {maxQuestionLength} caracteres.",
-  "@error_max_poll_characters": {
-    "description": "Error message when poll question exceeds maximum characters"
-  },
-  "error_max_poll_option_characters": "La opción de la encuesta no puede exceder {maxQuestionLength} caracteres.",
-  "@error_max_poll_option_characters": {
-    "description": "Error message when poll option exceeds maximum characters"
-  },
-  "error_max_upload_image_reached_description": "Has alcanzado el límite de carga de {maxUploads} imágenes. Cualquier imagen adicional no será guardada.",
-  "@error_max_upload_image_reached_description": {
-    "description": "Error message description when maximum upload images limit is reached"
-  },
-  "error_max_upload_reached": "Límite máximo de carga alcanzado",
-  "@error_max_upload_reached": {
-    "description": "Error message when maximum upload limit is reached"
-  },
-  "error_max_upload_videos_reached_description": "Has alcanzado el límite de carga de {maxUploads} videos. Cualquier video adicional no será guardado.",
-  "@error_max_upload_videos_reached_description": {
-    "description": "Error message description when maximum upload videos limit is reached"
-  },
-  "general_add": "Agregar",
-  "@general_add": {
-    "description": "Label for add button"
-  },
-  "general_camera": "Cámara",
-  "@general_camera": {
-    "description": "Label for camera button"
-  },
-  "general_close": "Cerrar",
-  "@general_close": {
-    "description": "Label for close button"
-  },
-  "general_comments": "Comentarios",
-  "@general_comments": {
-    "description": "Label for comments button"
-  },
-  "general_delete": "Eliminar",
-  "@general_delete": {
-    "description": "Label for delete button"
-  },
-  "general_discard": "Descartar",
-  "@general_discard": {
-    "description": "Label for discard button"
-  },
-  "general_done": "Listo",
-  "@general_done": {
-    "description": "Label for done button"
-  },
-  "general_edit": "Editar",
-  "@general_edit": {
-    "description": "Label for edit button"
-  },
-  "general_edited": "Editado",
-  "@general_edited": {
-    "description": "Label for edited content"
-  },
-  "general_edited_suffix": " (editado)",
-  "@general_edited_suffix": {
-    "description": "Suffix for edited post"
-  },
-  "general_error": "Ups, algo salió mal",
-  "@general_error": {
-    "description": "Generic error message"
-  },
-  "general_keep_editing": "Seguir editando",
-  "@general_keep_editing": {
-    "description": "Label for keep editing button"
-  },
-  "general_leave": "Salir",
-  "@general_leave": {
-    "description": "Label for leave button"
-  },
-  "general_loading": "Cargando...",
-  "@general_loading": {
-    "description": "Label for loading states"
-  },
-  "general_moderator": "Moderador",
-  "@general_moderator": {
-    "description": "Label for moderator role"
-  },
-  "general_my_timeline": "Mi Cronología",
-  "@general_my_timeline": {
-    "description": "Label for my timeline button"
-  },
-  "general_off": "Desactivado",
-  "@general_off": {
-    "description": "Label for off state"
-  },
-  "general_on": "Activado",
-  "@general_on": {
-    "description": "Label for on state"
-  },
-  "general_optional": "Opcional",
-  "@general_optional": {
-    "description": "Label for optional fields"
-  },
-  "general_options": "Opciones",
-  "@general_options": {
-    "description": "Label for options button"
-  },
-  "general_photo": "Foto",
-  "@general_photo": {
-    "description": "Label for photo button"
-  },
-  "general_poll": "Encuesta",
-  "@general_poll": {
-    "description": "Label for poll button"
-  },
-  "general_post": "Publicar",
-  "@general_post": {
-    "description": "Label for post button"
-  },
-  "general_posting": "Publicando",
-  "@general_posting": {
-    "description": "Label for posting states"
-  },
-  "general_reported": "reportado",
-  "@general_reported": {
-    "description": "Label for reported content"
-  },
-  "general_save": "Guardar",
-  "@general_save": {
-    "description": "Label for save button"
-  },
-  "general_see_more": "...Ver más",
-  "@general_see_more": {
-    "description": "Label for see more button"
-  },
-  "general_stories": "Historias",
-  "@general_stories": {
-    "description": "Label for stories button"
-  },
-  "general_story": "Historia",
-  "@general_story": {
-    "description": "Label for story button"
-  },
-  "general_video": "Video",
-  "@general_video": {
-    "description": "Label for video button"
-  },
-  "message_placeholder": "Escribe un mensaje...",
-  "@message_placeholder": {
-    "description": "Placeholder for message input"
-  },
-  "message_send": "Enviar",
-  "@message_send": {
-    "description": "Label for send message button"
-  },
-  "message_typing": "está escribiendo...",
-  "@message_typing": {
-    "description": "Label for typing indicator"
-  },
-  "post_comment_count": "{count, plural, =1{1 comentario} other{{count} comentarios}}",
-  "@post_comment_count": {
-    "description": "Plural form for post comment count"
-  },
-  "post_edit_globally_featured": "¿Editar publicación destacada globalmente?",
-  "@post_edit_globally_featured": {
-    "description": "Title for globally featured post"
-  },
-  "post_edit_globally_featured_description": "La publicación que estás editando ha sido destacada globalmente. Si editas tu publicación, necesitará ser re-aprobada y ya no será destacada globalmente.",
-  "@post_edit_globally_featured_description": {
-    "description": "Description for globally featured post"
-  },
-  "post_like_count": "{count, plural, =1{1 me gusta} other{{count} me gusta}}",
-  "@post_like_count": {
-    "description": "Plural form for post like count"
-  },
-  "post_reported": "Publicación reportada.",
-  "@post_reported": {
-    "description": "Label for reported post"
-  },
-  "post_unreported": "Reporte de publicación removido.",
-  "@post_unreported": {
-    "description": "Label for unreported post"
-  },
-  "profile_followers_count": "{count, plural, =0{Sin seguidores} =1{1 seguidor} other{{count} seguidores}}",
-  "@profile_followers_count": {
-    "description": "Plural form for profile followers count"
-  },
-  "profile_members_count": "{count, plural, =1{miembro} other{miembros}}",
-  "@profile_members_count": {
-    "description": "Plural form for member count"
-  },
-  "profile_posts_count": "{count, plural, =1{publicación} other{publicaciones}}",
-  "@profile_posts_count": {
-    "description": "Plural form for user posts count"
-  },
-  "settings_allow_stories_comments": "Permitir comentarios en historias de la comunidad",
-  "@settings_allow_stories_comments": {
-    "description": "Label for allow comments on stories settings"
-  },
-  "settings_allow_stories_comments_description": "Activa para recibir comentarios en las historias de esta comunidad.",
-  "@settings_allow_stories_comments_description": {
-    "description": "Description for allow comments on stories settings"
-  },
-  "settings_everyone": "Todos",
-  "@settings_everyone": {
-    "description": "Label for everyone settings"
-  },
-  "settings_language": "Idioma",
-  "@settings_language": {
-    "description": "Label for language settings"
-  },
-  "settings_leave_confirmation": "¿Salir sin terminar?",
-  "@settings_leave_confirmation": {
-    "description": "Label for confirmation settings"
-  },
-  "settings_leave_description": "Los cambios que hiciste pueden no ser guardados.",
-  "@settings_leave_description": {
-    "description": "Description for confirmation settings"
-  },
-  "settings_new_comments": "Nuevos comentarios",
-  "@settings_new_comments": {
-    "description": "Label for new comments settings"
-  },
-  "settings_new_comments_description": "Recibe notificaciones cuando alguien comente en tu publicación en esta comunidad.",
-  "@settings_new_comments_description": {
-    "description": "Description for new comments settings"
-  },
-  "settings_new_posts": "Nuevas publicaciones",
-  "@settings_new_posts": {
-    "description": "Label for new posts settings"
-  },
-  "settings_new_posts_description": "Recibe notificaciones cuando alguien cree nuevas publicaciones en esta comunidad.",
-  "@settings_new_posts_description": {
-    "description": "Description for new posts settings"
-  },
-  "settings_new_replies": "Respuestas",
-  "@settings_new_replies": {
-    "description": "Label for new replies settings"
-  },
-  "settings_new_replies_description": "Recibe notificaciones cuando alguien comente en tus comentarios en esta comunidad.",
-  "@settings_new_replies_description": {
-    "description": "Description for new replies settings"
-  },
-  "settings_new_stories": "Nuevas historias",
-  "@settings_new_stories": {
-    "description": "Label for new stories settings"
-  },
-  "settings_new_stories_description": "Recibe notificaciones cuando alguien cree una nueva historia en esta comunidad.",
-  "@settings_new_stories_description": {
-    "description": "Description for new stories settings"
-  },
-  "settings_only_moderators": "Solo moderadores",
-  "@settings_only_moderators": {
-    "description": "Label for only moderators settings"
-  },
-  "settings_permissions": "Permisos de la comunidad",
-  "@settings_permissions": {
-    "description": "Label for permissions settings"
-  },
-  "settings_privacy": "Privacidad",
-  "@settings_privacy": {
-    "description": "Label for privacy settings"
-  },
-  "settings_privacy_confirmation": "¿Cambiar configuración de privacidad de la comunidad?",
-  "@settings_privacy_confirmation": {
-    "description": "Label for privacy confirmation settings"
-  },
-  "settings_privacy_description": "Esta comunidad tiene publicaciones destacadas globalmente. Cambiar la comunidad de pública a privada eliminará estas publicaciones de ser destacadas globalmente.",
-  "@settings_privacy_description": {
-    "description": "Description for privacy confirmation settings"
-  },
-  "settings_react_comments": "Reacciones a comentarios",
-  "@settings_react_comments": {
-    "description": "Label for react to comments settings"
-  },
-  "settings_react_comments_description": "Recibe notificaciones cuando alguien le dé me gusta a tu comentario en esta comunidad.",
-  "@settings_react_comments_description": {
-    "description": "Description for react to comments settings"
-  },
-  "settings_react_posts": "Reacciones a publicaciones",
-  "@settings_react_posts": {
-    "description": "Label for react to posts settings"
-  },
-  "settings_react_posts_description": "Recibe notificaciones cuando alguien reaccione a tus publicaciones en esta comunidad.",
-  "@settings_react_posts_description": {
-    "description": "Description for react to posts settings"
-  },
-  "settings_story_comments": "Comentarios de historias",
-  "@settings_story_comments": {
-    "description": "Label for story comments settings"
-  },
-  "settings_story_comments_description": "Recibe notificaciones cuando alguien comente en tu historia en esta comunidad.",
-  "@settings_story_comments_description": {
-    "description": "Description for story comments settings"
-  },
-  "settings_story_reactions": "Reacciones a historias",
-  "@settings_story_reactions": {
-    "description": "Label for story reactions settings"
-  },
-  "settings_story_reactions_description": "Recibe notificaciones cuando alguien reaccione a tu historia en esta comunidad.",
-  "@settings_story_reactions_description": {
-    "description": "Description for story reactions settings"
-  },
-  "settings_title": "Configuración",
-  "@settings_title": {
-    "description": "Title for settings screen"
-  },
-  "user_unblock": "Desbloquear usuario",
-  "@user_unblock": {
-    "description": "Label for unblock user button"
-  },
-  "post_item_bottom_nonmember_label": "Súmate a la comunidad para interactuar con todos los posts",
+  "community_story_comments": "Comentarios de la historia",
+  "post_item_bottom_nonmember_label": "Únete al grupo para interactuar con todas las publicaciones.",
   "@post_item_bottom_nonmember_label": {
-    "description": "label for post item bottom text for non members"
+    "description": "Label for post item bottom text for non members"
   },
   "notification_turn_on_success": "Notificación activada",
   "@notification_turn_on_success": {
     "description": "success toast message for turning on notification"
   },
-  "notification_turn_on_error": "Error al activar la notificación. Por favor, inténtalo de nuevo.",
+  "notification_turn_on_error": "No se pudo activar la notificación. Por favor inténtalo de nuevo.",
   "@notification_turn_on_error": {
     "description": "error toast message for turning on notification"
   },
@@ -887,7 +1057,7 @@
   "@notification_turn_off_success": {
     "description": "success toast message for turning off notification"
   },
-  "notification_turn_off_error": "Error al desactivar la notificación. Por favor, inténtalo de nuevo.",
+  "notification_turn_off_error": "No se pudo desactivar la notificación. Por favor inténtalo de nuevo.",
   "@notification_turn_off_error": {
     "description": "error toast message for turning off notification"
   },
@@ -895,7 +1065,7 @@
   "@user_report_success": {
     "description": "success toast message for reporting user"
   },
-  "user_report_error": "Error al reportar usuario. Por favor, inténtalo de nuevo.",
+  "user_report_error": "No se pudo informar al usuario. Por favor inténtalo de nuevo.",
   "@user_report_error": {
     "description": "error toast message for reporting user"
   },
@@ -903,7 +1073,7 @@
   "@user_unreport_success": {
     "description": "success toast message for unreporting user"
   },
-  "user_unreport_error": "Error al cancelar el reporte del usuario. Por favor, inténtalo de nuevo.",
+  "user_unreport_error": "Error al desmarcar",
   "@user_unreport_error": {
     "description": "error toast message for unreporting user"
   },
@@ -911,7 +1081,7 @@
   "@user_block_success": {
     "description": "success toast message for blocking user"
   },
-  "user_block_error": "Error al bloquear usuario. Por favor, inténtalo de nuevo.",
+  "user_block_error": "No se pudo bloquear al usuario. Por favor inténtalo de nuevo.",
   "@user_block_error": {
     "description": "error toast message for blocking user"
   },
@@ -919,7 +1089,7 @@
   "@user_unblock_success": {
     "description": "success toast message for unblocking user"
   },
-  "user_unblock_error": "Error al desbloquear usuario. Por favor, inténtalo de nuevo.",
+  "user_unblock_error": "No se pudo desbloquear al usuario. Por favor inténtalo de nuevo.",
   "@user_unblock_error": {
     "description": "error toast message for unblocking user"
   },
@@ -927,11 +1097,11 @@
   "@search_no_members_found": {
     "description": "Message displayed when no members are found in search"
   },
-  "moderator_promotion_title": "Promoción a moderador",
+  "moderator_promotion_title": "Promoción de moderador",
   "@moderator_promotion_title": {
     "description": "Title for moderator promotion confirmation dialog"
   },
-  "moderator_promotion_description": "¿Estás seguro de que quieres promover a este miembro a Moderador? Tendrá acceso a todas las funciones de moderador.",
+  "moderator_promotion_description": "¿Estás seguro de que deseas promover a este miembro a Moderador? Obtendrán acceso a todas las funciones de moderador.",
   "@moderator_promotion_description": {
     "description": "Description for moderator promotion confirmation dialog"
   },
@@ -939,11 +1109,11 @@
   "@moderator_promote_button": {
     "description": "Button text for promoting to moderator"
   },
-  "moderator_demotion_title": "Degradación de moderador",
+  "moderator_demotion_title": "degradación del moderador",
   "@moderator_demotion_title": {
     "description": "Title for moderator demotion confirmation dialog"
   },
-  "moderator_demotion_description": "¿Estás seguro de que quieres degradar a este Moderador? Perderá el acceso a todas las funciones de moderador.",
+  "moderator_demotion_description": "¿Estás seguro de que quieres degradar a este moderador? Perderán el acceso a todas las funciones de moderador.",
   "@moderator_demotion_description": {
     "description": "Description for moderator demotion confirmation dialog"
   },
@@ -955,7 +1125,7 @@
   "@member_removal_confirm_title": {
     "description": "Title for member removal confirmation dialog"
   },
-  "member_removal_confirm_description": "¿Estás seguro de que quieres eliminar a este miembro del grupo? Se dará cuenta de su eliminación.",
+  "member_removal_confirm_description": "¿Estás seguro de que deseas eliminar a este miembro del grupo? Estarán al tanto de su remoción.",
   "@member_removal_confirm_description": {
     "description": "Description for member removal confirmation dialog"
   },
@@ -967,11 +1137,11 @@
   "@user_ban_confirm_title": {
     "description": "Title for user ban confirmation dialog"
   },
-  "user_ban_confirm_description": "¿Estás seguro de que quieres prohibir a este usuario? Será eliminado del grupo y no podrá encontrarlo ni volver a unirse a menos que sea desbloqueado.",
+  "user_ban_confirm_description": "¿Estás seguro de que quieres prohibir a este usuario? Serán eliminados del grupo y no podrán encontrarlo ni volver a unirse a menos que se les quite la prohibición.",
   "@user_ban_confirm_description": {
     "description": "Description for user ban confirmation dialog"
   },
-  "user_ban_button": "Prohibir",
+  "user_ban_button": "Prohibición",
   "@user_ban_button": {
     "description": "Button text for banning user"
   },
@@ -979,15 +1149,15 @@
   "@member_add_success": {
     "description": "Success message when adding member to community"
   },
-  "member_add_error": "Error al agregar miembro. Por favor, inténtalo de nuevo.",
+  "member_add_error": "Error al agregar",
   "@member_add_error": {
     "description": "Error message when adding member fails"
   },
-  "moderator_promote_success": "Promovido exitosamente a moderador.",
+  "moderator_promote_success": "Ascendido exitosamente a moderador.",
   "@moderator_promote_success": {
     "description": "Success message when promoting member to moderator"
   },
-  "moderator_promote_error": "Error al promover miembro. Por favor, inténtalo de nuevo.",
+  "moderator_promote_error": "Error al promover",
   "@moderator_promote_error": {
     "description": "Error message when promoting member fails"
   },
@@ -995,7 +1165,7 @@
   "@moderator_demote_success": {
     "description": "Success message when demoting moderator to member"
   },
-  "moderator_demote_error": "Error al degradar miembro. Por favor, inténtalo de nuevo.",
+  "moderator_demote_error": "No se pudo degradar al miembro. Por favor inténtalo de nuevo.",
   "@moderator_demote_error": {
     "description": "Error message when demoting moderator fails"
   },
@@ -1003,23 +1173,23 @@
   "@member_remove_success": {
     "description": "Success message when removing member from community"
   },
-  "member_remove_error": "Error al eliminar miembro. Por favor, inténtalo de nuevo.",
+  "member_remove_error": "No se pudo eliminar el miembro. Por favor inténtalo de nuevo.",
   "@member_remove_error": {
     "description": "Error message when removing member fails"
   },
-  "user_follow_success": "Usuario seguido.",
+  "user_follow_success": "El usuario lo siguió.",
   "@user_follow_success": {
     "description": "Success message when following user"
   },
-  "user_follow_error": "Ups, algo salió mal.",
+  "user_follow_error": "Vaya, algo salió mal.",
   "@user_follow_error": {
     "description": "Error message when following user fails"
   },
-  "user_unfollow_success": "Usuario no seguido.",
+  "user_unfollow_success": "Usuario dejado de seguir.",
   "@user_unfollow_success": {
     "description": "Success message when unfollowing user"
   },
-  "user_unfollow_error": "Ups, algo salió mal.",
+  "user_unfollow_error": "Vaya, algo salió mal.",
   "@user_unfollow_error": {
     "description": "Error message when unfollowing user fails"
   },
@@ -1031,7 +1201,7 @@
   "@user_feed_blocked_title": {
     "description": "Title for blocked user feed empty state"
   },
-  "user_feed_blocked_description": "Desbloquea para ver sus publicaciones.",
+  "user_feed_blocked_description": "Desbloquear para ver",
   "@user_feed_blocked_description": {
     "description": "Description for blocked user feed empty state"
   },
@@ -1043,7 +1213,7 @@
   "@user_feed_private_description": {
     "description": "Description for private user feed empty state"
   },
-  "timestamp_just_now": "Ahora mismo",
+  "timestamp_just_now": "En este momento",
   "@timestamp_just_now": {
     "description": "Timestamp text for content posted just now in social feeds"
   },
@@ -1063,7 +1233,7 @@
   "@chat_block_user_title": {
     "description": "Title for blocking user confirmation dialog in chat"
   },
-  "chat_block_user_description": "{displayName} no podrá enviarte mensajes. No se le notificará que lo has bloqueado.",
+  "chat_block_user_description": "{displayName} no podrá enviarte el mensaje. No se les notificará que los has bloqueado.",
   "@chat_block_user_description": {
     "description": "Description for blocking user confirmation dialog in chat",
     "placeholders": {
@@ -1076,7 +1246,7 @@
   "@chat_unblock_user_title": {
     "description": "Title for unblocking user confirmation dialog in chat"
   },
-  "chat_unblock_user_description": "{displayName} ahora podrá enviarte mensajes. No se le notificará que lo has desbloqueado.",
+  "chat_unblock_user_description": "{displayName} ahora podrá enviarte el mensaje. No se les notificará que los has desbloqueado.",
   "@chat_unblock_user_description": {
     "description": "Description for unblocking user confirmation dialog in chat",
     "placeholders": {
@@ -1085,11 +1255,11 @@
       }
     }
   },
-  "chat_message_photo": "Enviar una foto",
+  "chat_message_photo": "enviar una foto",
   "@chat_message_photo": {
     "description": "Text shown for photo messages in chat notifications"
   },
-  "chat_message_video": "Enviar un video",
+  "chat_message_video": "enviar un vídeo",
   "@chat_message_video": {
     "description": "Text shown for video messages in chat notifications"
   },
@@ -1097,7 +1267,7 @@
   "@user_follow_request_new": {
     "description": "Text for new follow requests notification"
   },
-  "user_follow_request_approval": "{count} solicitudes necesitan tu aprobación",
+  "user_follow_request_approval": "Las solicitudes {count} necesitan su aprobación",
   "@user_follow_request_approval": {
     "description": "Text showing number of requests needing approval",
     "placeholders": {
@@ -1114,7 +1284,7 @@
   "@user_follow_unable_title": {
     "description": "Title for dialog when unable to follow user"
   },
-  "user_follow_unable_description": "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
+  "user_follow_unable_description": "¡Ups! algo salió mal. Inténtelo de nuevo más tarde.",
   "@user_follow_unable_description": {
     "description": "Description for dialog when unable to follow user"
   },
@@ -1126,7 +1296,7 @@
   "@user_follow_cancel": {
     "description": "Button text for canceling follow request"
   },
-  "user_following": "Siguiendo",
+  "user_following": "Siguiente",
   "@user_following": {
     "description": "Button text showing user is being followed"
   },
@@ -1134,7 +1304,7 @@
   "@user_block_confirm_title": {
     "description": "Title for blocking user confirmation dialog"
   },
-  "user_block_confirm_description": "{displayName} no podrá ver las publicaciones ni los comentarios que hayas creado. No se le notificará que lo has bloqueado.",
+  "user_block_confirm_description": "{displayName} no podrá ver las publicaciones ni los comentarios que haya creado. No se les notificará que los has bloqueado.",
   "@user_block_confirm_description": {
     "description": "Description for blocking user confirmation dialog",
     "placeholders": {
@@ -1151,7 +1321,7 @@
   "@user_unblock_confirm_title": {
     "description": "Title for unblocking user confirmation dialog"
   },
-  "user_unblock_confirm_description": "{displayName} ahora podrá ver las publicaciones y los comentarios que hayas creado. No se le notificará que lo has desbloqueado.",
+  "user_unblock_confirm_description": "{displayName} ahora podrá ver las publicaciones y comentarios que hayas creado. No se les notificará que los has desbloqueado.",
   "@user_unblock_confirm_description": {
     "description": "Description for unblocking user confirmation dialog",
     "placeholders": {
@@ -1160,7 +1330,7 @@
       }
     }
   },
-  "user_unblock_confirm_button": "Desbloquear",
+  "user_unblock_confirm_button": "Desatascar",
   "@user_unblock_confirm_button": {
     "description": "Button text for confirming unblock action"
   },
@@ -1168,7 +1338,7 @@
   "@user_unfollow_confirm_title": {
     "description": "Title for unfollowing user confirmation dialog"
   },
-  "user_unfollow_confirm_description": "Si cambias de opinión, tendrás que enviar una solicitud para seguirlo nuevamente.",
+  "user_unfollow_confirm_description": "Si cambias de opinión, tendrás que solicitar seguirlos nuevamente.",
   "@user_unfollow_confirm_description": {
     "description": "Description for unfollowing user confirmation dialog"
   },
@@ -1188,19 +1358,19 @@
   "@community_pending_requests_title": {
     "description": "Title for the pending requests page"
   },
-  "community_pending_requests_empty_title": "No hay solicitudes pendientes",
+  "community_pending_requests_empty_title": "No hay solicitudes pendientes disponibles",
   "@community_pending_requests_empty_title": {
     "description": "Title for empty state when no pending requests are available"
   },
-  "community_pending_requests_empty_description": "Habilita la revisión de publicaciones o la aprobación de unirse en la configuración de la comunidad para gestionar solicitudes.",
+  "community_pending_requests_empty_description": "Habilite la revisión de publicaciones o la aprobación de unirse en la configuración de la comunidad para administrar las solicitudes.",
   "@community_pending_requests_empty_description": {
     "description": "Description for empty state when no pending requests are available"
   },
-  "community_join_requests_coming_soon": "La función de solicitudes para unirse estará disponible pronto",
+  "community_join_requests_coming_soon": "Próximamente la función de solicitudes de unión",
   "@community_join_requests_coming_soon": {
     "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  "community_pending_posts_warning": "Rechazar una publicación pendiente eliminará permanentemente la publicación seleccionada de la comunidad.",
+  "community_pending_posts_warning": "Rechazar publicación pendiente eliminará permanentemente la publicación seleccionada de la comunidad.",
   "@community_pending_posts_warning": {
     "description": "Warning message for moderators about declining pending posts"
   },
@@ -1220,7 +1390,7 @@
   "@community_pending_post_delete_success": {
     "description": "Success message when pending post is deleted"
   },
-  "community_pending_post_delete_error": "No se pudo eliminar la publicación. Por favor, inténtalo de nuevo.",
+  "community_pending_post_delete_error": "No se pudo eliminar la publicación. Por favor inténtalo de nuevo.",
   "@community_pending_post_delete_error": {
     "description": "Error message when deleting pending post fails"
   },
@@ -1228,7 +1398,7 @@
   "@community_pending_post_approve_success": {
     "description": "Success message when pending post is approved"
   },
-  "community_pending_post_approve_error": "No se pudo aceptar la publicación. Esta publicación ya ha sido revisada por otro moderador.",
+  "community_pending_post_approve_error": "No se pudo aceptar la publicación. Esta publicación ha sido revisada por otro moderador.",
   "@community_pending_post_approve_error": {
     "description": "Error message when approving pending post fails"
   },
@@ -1236,7 +1406,7 @@
   "@community_pending_post_decline_success": {
     "description": "Success message when pending post is declined"
   },
-  "community_pending_post_decline_error": "No se pudo rechazar la publicación. Esta publicación ya ha sido revisada por otro moderador.",
+  "community_pending_post_decline_error": "No se pudo rechazar la publicación. Esta publicación ha sido revisada por otro moderador.",
   "@community_pending_post_decline_error": {
     "description": "Error message when declining pending post fails"
   },
@@ -1257,7 +1427,7 @@
   "@poll_multiple_selection_title": {
     "description": "Title for multiple selection toggle"
   },
-  "poll_multiple_selection_description": "Permitir que los participantes voten más de una opción.",
+  "poll_multiple_selection_description": "Deje que los participantes voten más de una opción.",
   "@poll_multiple_selection_description": {
     "description": "Description for multiple selection toggle"
   },
@@ -1282,7 +1452,7 @@
   "@poll_select_time": {
     "description": "Placeholder text for time picker"
   },
-  "poll_duration_days": "{days, plural, =1{1 día} other{{days} días}}",
+  "poll_duration_days": "{days, plural, =1{1 day} other{{days} days}}",
   "@poll_duration_days": {
     "description": "Poll duration options with proper pluralization",
     "placeholders": {
@@ -1307,11 +1477,11 @@
   "@profile_edit_about": {
     "description": "Label for about field in edit profile"
   },
-  "profile_edit_unsupported_image_title": "Tipo de imagen no compatible",
+  "profile_edit_unsupported_image_title": "Tipo de imagen no admitido",
   "@profile_edit_unsupported_image_title": {
     "description": "Title for unsupported image type dialog"
   },
-  "profile_edit_unsupported_image_description": "Por favor, sube una imagen en formato PNG o JPG.",
+  "profile_edit_unsupported_image_description": "Sube una imagen PNG o JPG.",
   "@profile_edit_unsupported_image_description": {
     "description": "Description for unsupported image type dialog"
   },
@@ -1319,7 +1489,7 @@
   "@profile_edit_inappropriate_image_title": {
     "description": "Title for inappropriate image dialog"
   },
-  "profile_edit_inappropriate_image_description": "Por favor, elige una imagen diferente para subir.",
+  "profile_edit_inappropriate_image_description": "Elija una imagen diferente para cargar.",
   "@profile_edit_inappropriate_image_description": {
     "description": "Description for inappropriate image dialog"
   },
@@ -1327,19 +1497,19 @@
   "@profile_edit_unsaved_changes_title": {
     "description": "Title for unsaved changes confirmation dialog"
   },
-  "profile_edit_unsaved_changes_description": "¿Estás seguro de que quieres descartar los cambios? Se perderán al salir de esta página.",
+  "profile_edit_unsaved_changes_description": "¿Está seguro de que desea descartar los cambios? Se perderán cuando abandones esta página.",
   "@profile_edit_unsaved_changes_description": {
     "description": "Description for unsaved changes confirmation dialog"
   },
-  "chat_title": "Chat",
+  "chat_title": "Charlar",
   "@chat_title": {
     "description": "Title for chat home page"
   },
-  "chat_tab_all": "Todos",
+  "chat_tab_all": "Todo",
   "@chat_tab_all": {
     "description": "Tab label for all chats"
   },
-  "chat_tab_direct": "Directos",
+  "chat_tab_direct": "Directo",
   "@chat_tab_direct": {
     "description": "Tab label for direct chats"
   },
@@ -1347,11 +1517,11 @@
   "@chat_tab_groups": {
     "description": "Tab label for group chats"
   },
-  "chat_waiting_for_network": "Esperando conexión de red...",
+  "chat_waiting_for_network": "Esperando red",
   "@chat_waiting_for_network": {
     "description": "Message shown when waiting for network connection"
   },
-  "chat_direct_chat": "Chat directo",
+  "chat_direct_chat": "chat directo",
   "@chat_direct_chat": {
     "description": "Menu option for creating direct chat"
   },
@@ -1359,7 +1529,7 @@
   "@chat_group_chat": {
     "description": "Menu option for creating group chat"
   },
-  "chat_archived": "Archivados",
+  "chat_archived": "Archivado",
   "@chat_archived": {
     "description": "Menu option for archived chats"
   },
@@ -1384,11 +1554,11 @@
       }
     }
   },
-  "message_media": "Multimedia",
+  "message_media": "Medios de comunicación",
   "@message_media": {
     "description": "Label for media button in message composer"
   },
-  "chat_loading": "Cargando chat...",
+  "chat_loading": "Cargando conversación",
   "@chat_loading": {
     "description": "Loading message shown when chat is initializing"
   },
@@ -1396,11 +1566,11 @@
   "@chat_blocked_message": {
     "description": "Message shown when user is blocked and cannot send messages"
   },
-  "chat_notifications_disabled": "Has desactivado las notificaciones del chat",
+  "chat_notifications_disabled": "Has desactivado las notificaciones para el chat.",
   "@chat_notifications_disabled": {
     "description": "Message shown when chat notifications are disabled"
   },
-  "chat_archive": "Archivar",
+  "chat_archive": "Archivo",
   "@chat_archive": {
     "description": "Action text for archiving a chat"
   },
@@ -1416,197 +1586,106 @@
   "@chat_message_no_preview": {
     "description": "Preview text for unsupported message types"
   },
-  "chat_no_message_yet": "Aún no hay mensajes",
+  "chat_no_message_yet": "Aún no hay mensaje",
   "@chat_no_message_yet": {
     "description": "Preview text when there are no messages in the chat"
   },
-  "comment_create_error_ban_word": "Tu comentario contiene una palabra inapropiada. Por favor, revísalo y elimínalo.",
-  "@comment_create_error_ban_word": {
-    "description": "Mensaje de aviso para la creación de comentarios con palabra prohibida"
-  },
-  "comment_create_error_story_deleted": "Esta historia ya no está disponible",
-  "@comment_create_error_story_deleted": {
-    "description": "Mensaje de aviso para la creación de comentarios"
-  },
-  "community_create_success_message": "Comunidad creada exitosamente.",
-  "@community_create_success_message": {
-    "description": "Mensaje de éxito para la creación de comunidad"
-  },
-  "community_create_error_message": "No se pudo crear la comunidad. Por favor, inténtalo de nuevo.",
-  "@community_create_error_message": {
-    "description": "Mensaje de error para la creación de comunidad"
-  },
-  "community_update_success_message": "Comunidad actualizada exitosamente.",
-  "@community_update_success_message": {
-    "description": "Mensaje de éxito para la actualización de comunidad"
-  },
-  "community_update_error_message": "No se pudo guardar el perfil de la comunidad. Por favor, inténtalo de nuevo.",
-  "@community_update_error_message": {
-    "description": "Mensaje de error para la actualización de comunidad"
-  },
-  "community_leave_success_message": "Has salido de la comunidad exitosamente.",
-  "@community_leave_success_message": {
-    "description": "Mensaje de éxito para salir de la comunidad"
-  },
-  "community_leave_error_message": "No se pudo salir de la comunidad.",
-  "@community_leave_error_message": {
-    "description": "Mensaje de error para salir de la comunidad"
-  },
-  "community_close_success_message": "Comunidad cerrada exitosamente.",
-  "@community_close_success_message": {
-    "description": "Mensaje de éxito para cerrar la comunidad"
-  },
-  "community_close_error_message": "No se pudo cerrar la comunidad.",
-  "@community_close_error_message": {
-    "description": "Mensaje de error para cerrar la comunidad"
-  },
-  "community_post_permission_title_label": "Quién puede publicar en esta comunidad",
-  "@community_post_permission_title_label": {
-    "description": "Etiqueta para el título de la página de permisos de publicación"
-  },
-  "community_post_permission_description_label": "Puedes controlar quién puede crear publicaciones en tu comunidad.",
-  "@community_post_permission_description_label": {
-    "description": "Etiqueta para la descripción de la página de permisos de publicación"
-  },
-  
   "group_title": "Grupo",
   "@group_title": {
-    "description": "Título para grupos (reemplaza community_title)"
+    "description": "Title for groups (replaces community_title)"
   },
-  
-  "group_create": "Crear Grupo",
+  "group_create": "Crear grupo",
   "@group_create": {
-    "description": "Etiqueta para el botón de crear grupo"
+    "description": "Label for create group button"
   },
-  
-  "group_edit": "Editar Grupo",
+  "group_edit": "Editar grupo",
   "@group_edit": {
-    "description": "Etiqueta para el botón de editar grupo"
+    "description": "Label for edit group button"
   },
-  
   "group_name": "Nombre del grupo",
   "@group_name": {
-    "description": "Etiqueta para el nombre del grupo"
+    "description": "Label for group name"
   },
-  
   "group_name_hint": "Nombra tu grupo",
   "@group_name_hint": {
-    "description": "Texto de sugerencia para la entrada del nombre del grupo"
+    "description": "Hint text for group name input"
   },
-  
-  "group_description_hint": "Ingresa descripción",
+  "group_description_hint": "Introduce la descripción",
   "@group_description_hint": {
-    "description": "Texto de sugerencia para la entrada de descripción del grupo"
+    "description": "Hint text for group description input"
   },
-  
   "group_about": "Acerca de",
   "@group_about": {
-    "description": "Etiqueta para la sección acerca del grupo"
+    "description": "Label for group about section"
   },
-  
   "group_members": "Miembros",
   "@group_members": {
-    "description": "Etiqueta para los miembros del grupo"
+    "description": "Label for group members"
   },
-  
   "group_join": "Unirse",
   "@group_join": {
-    "description": "Etiqueta para el botón de unirse al grupo"
+    "description": "Label for join group button"
   },
-  
   "group_joined": "Unido",
   "@group_joined": {
-    "description": "Etiqueta para el estado de unido al grupo"
+    "description": "Label for joined group status"
   },
-  
-  "group_leave": "Salir del grupo",
-  "@group_leave": {
-    "description": "Etiqueta para el botón de salir del grupo"
-  },
-  
-  "group_leave_description": "Salir del grupo. Ya no podrás publicar e interactuar en este grupo.",
-  "@group_leave_description": {
-    "description": "Mensaje de confirmación para salir de un grupo"
-  },
-  
-  "group_close": "¿Cerrar grupo?",
-  "@group_close": {
-    "description": "Título de confirmación para cerrar un grupo"
-  },
-  
-  "group_close_description": "Todos los miembros serán eliminados del grupo. Todas las publicaciones, mensajes, reacciones y medios compartidos en el grupo serán eliminados. Esto no se puede deshacer.",
-  "@group_close_description": {
-    "description": "Mensaje de confirmación para cerrar un grupo"
-  },
-  
   "group_public": "Público",
   "@group_public": {
-    "description": "Etiqueta para el tipo de grupo público"
+    "description": "Label for public group type"
   },
-  
   "group_private": "Privado",
   "@group_private": {
-    "description": "Etiqueta para el tipo de grupo privado"
+    "description": "Label for private group type"
   },
-  
-  "group_public_description": "Cualquiera puede unirse, ver y buscar las publicaciones en este grupo.",
+  "group_public_description": "Cualquiera puede unirse, ver y buscar las publicaciones de este grupo.",
   "@group_public_description": {
-    "description": "Descripción para el tipo de grupo público"
+    "description": "Description for public group type"
   },
-  
-  "group_private_description": "Solo los miembros invitados por los moderadores pueden unirse, ver y buscar las publicaciones en este grupo.",
+  "group_private_description": "Sólo los miembros invitados por los moderadores pueden unirse, ver y buscar las publicaciones de este grupo.",
   "@group_private_description": {
-    "description": "Descripción para el tipo de grupo privado"
+    "description": "Description for private group type"
   },
-  
   "group_recommended_for_you": "Recomendado para ti",
   "@group_recommended_for_you": {
-    "description": "Título de sección para grupos recomendados"
+    "description": "Section title for recommended groups"
   },
-  
   "group_trending_now": "Tendencia ahora",
   "@group_trending_now": {
-    "description": "Título de sección para grupos en tendencia"
+    "description": "Section title for trending groups"
   },
-  
   "group_placeholder_members": "1.2K miembros",
   "@group_placeholder_members": {
-    "description": "Texto de marcador de posición para el conteo de miembros del grupo"
+    "description": "Placeholder text for group members count"
   },
-  
   "group_basic_info": "Información básica",
   "@group_basic_info": {
-    "description": "Etiqueta para la sección de información básica"
+    "description": "Label for basic info section"
   },
-  
   "group_discard_confirmation": "¿Salir sin terminar?",
   "@group_discard_confirmation": {
-    "description": "Etiqueta para la confirmación de descartar cambios"
+    "description": "Label for discard changes confirmation"
   },
-  
-  "group_discard_description": "Tu progreso no se guardará y tu grupo no será creado.",
+  "group_discard_description": "Tu progreso no se guardará y no se creará tu grupo.",
   "@group_discard_description": {
-    "description": "Descripción para la confirmación de descartar cambios"
+    "description": "Description for discard changes confirmation"
   },
-  
-  "group_pending_posts": "Publicaciones Pendientes",
+  "group_pending_posts": "Publicaciones pendientes",
   "@group_pending_posts": {
-    "description": "Etiqueta para la sección de publicaciones pendientes"
+    "description": "Label for pending posts section"
   },
-  
-  "group_pending_request_title": "{count, plural, =1{Solicitud pendiente} other{Solicitudes pendientes}}",
+  "group_pending_request_title": "{count, plural, =1{Pending request} other{Pending requests}}",
   "@group_pending_request_title": {
-    "description": "Título para solicitud/solicitudes pendientes",
+    "description": "Title for pending request/requests",
     "placeholders": {
       "count": {
         "type": "int"
       }
     }
   },
-  
-  "group_pending_request_message": "{displayCount} {count, plural, =1{publicación requiere} other{publicaciones requieren}} aprobación",
+  "group_pending_request_message": "{displayCount} {count, plural, =1{post requires} other{posts require}} approval",
   "@group_pending_request_message": {
-    "description": "Mensaje para solicitud pendiente mostrando conteo y formas plurales",
+    "description": "Message for pending request showing count and plural forms",
     "placeholders": {
       "displayCount": {
         "type": "String"
@@ -1616,229 +1695,716 @@
       }
     }
   },
-  
   "group_all_members": "Todos los miembros",
   "@group_all_members": {
-    "description": "Etiqueta de pestaña para todos los miembros en la página de membresía del grupo"
+    "description": "Tab label for all members in group membership page"
   },
-  
   "group_moderators": "Moderadores",
   "@group_moderators": {
-    "description": "Etiqueta de pestaña para moderadores en la página de membresía del grupo"
+    "description": "Tab label for moderators in group membership page"
   },
-  
   "group_search_member_hint": "Buscar miembro",
   "@group_search_member_hint": {
-    "description": "Texto de sugerencia para el campo de búsqueda de miembros"
+    "description": "Hint text for member search field"
   },
-  
-  "group_promote_moderator": "Promover a moderador",
+  "group_promote_moderator": "Promocionar a moderador",
   "@group_promote_moderator": {
-    "description": "Acción para promover un miembro al rol de moderador"
+    "description": "Action to promote a member to moderator role"
   },
-  
   "group_demote_member": "Degradar a miembro",
   "@group_demote_member": {
-    "description": "Acción para degradar un moderador al rol de miembro"
+    "description": "Action to demote a moderator to member role"
   },
-  
-  "group_remove_member": "Eliminar del grupo",
+  "group_remove_member": "Quitar del grupo",
   "@group_remove_member": {
-    "description": "Acción para eliminar un miembro del grupo"
+    "description": "Action to remove a member from the group"
   },
-  
-  "group_post_permission": "Permiso de publicación",
-  "@group_post_permission": {
-    "description": "Opción de configuración de permisos de publicación del grupo"
-  },
-  
-  "group_story_comments": "Comentarios de historias",
+  "group_story_comments": "Comentarios de la historia",
   "@group_story_comments": {
-    "description": "Opción de configuración de comentarios de historias del grupo"
+    "description": "Group story comments setting option"
   },
-  
-  "group_setting_close_label": "Cerrar grupo",
-  "@group_setting_close_label": {
-    "description": "Etiqueta para la configuración de cerrar grupo"
-  },
-  
-  "group_setting_close_description": "Cerrar este grupo eliminará la página del grupo y todo su contenido y comentarios.",
-  "@group_setting_close_description": {
-    "description": "Descripción para la configuración de cerrar grupo"
-  },
-  
-  "group_post_permission_title_label": "Quién puede publicar en este grupo",
-  "@group_post_permission_title_label": {
-    "description": "Etiqueta para el título de la página de permisos de publicación"
-  },
-  
-  "group_post_permission_description_label": "Puedes controlar quién puede crear publicaciones en tu grupo.",
-  "@group_post_permission_description_label": {
-    "description": "Etiqueta para la descripción de la página de permisos de publicación"
-  },
-  
-  "group_members_count": "{count, plural, =0{Sin miembros} =1{1 miembro} other{{count} miembros}}",
+  "group_members_count": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
   "@group_members_count": {
-    "description": "Forma plural para el conteo de miembros del grupo",
+    "description": "Plural form for group members count",
     "placeholders": {
       "count": {
         "type": "int"
       }
     }
   },
-  
-  "group_empty_state": "Aún no hay grupos",
+  "group_empty_state": "Ningún grupo todavía",
   "@group_empty_state": {
-    "description": "Mensaje de estado vacío cuando no hay grupos"
+    "description": "Empty state message when there are no groups"
   },
-  
-  "group_pending_requests_title": "Solicitudes Pendientes",
+  "group_pending_requests_title": "Solicitudes pendientes",
   "@group_pending_requests_title": {
-    "description": "Título para la página de solicitudes pendientes"
+    "description": "Title for the pending requests page"
   },
-  
   "group_pending_requests_empty_title": "No hay solicitudes pendientes disponibles",
   "@group_pending_requests_empty_title": {
-    "description": "Título para el estado vacío cuando no hay solicitudes pendientes disponibles"
+    "description": "Title for empty state when no pending requests are available"
   },
-  
-  "group_pending_requests_empty_description": "Habilita la revisión de publicaciones o la aprobación de unión en la configuración del grupo para gestionar solicitudes.",
+  "group_pending_requests_empty_description": "Habilite la revisión de publicaciones o la aprobación de unirse en la configuración del grupo para administrar las solicitudes.",
   "@group_pending_requests_empty_description": {
-    "description": "Descripción para el estado vacío cuando no hay solicitudes pendientes disponibles"
+    "description": "Description for empty state when no pending requests are available"
   },
-  
-  "group_join_requests_coming_soon": "La función de solicitudes de unión estará disponible pronto",
+  "group_join_requests_coming_soon": "Próximamente la función de solicitudes de unión",
   "@group_join_requests_coming_soon": {
-    "description": "Texto de marcador de posición para la función de solicitudes de unión que aún no está implementada"
+    "description": "Placeholder text for join requests feature that is not yet implemented"
   },
-  
   "group_pending_posts_warning": "Rechazar publicación pendiente eliminará permanentemente la publicación seleccionada del grupo.",
   "@group_pending_posts_warning": {
-    "description": "Mensaje de advertencia para moderadores sobre el rechazo de publicaciones pendientes"
+    "description": "Warning message for moderators about declining pending posts"
   },
-  
   "group_pending_posts_empty": "No hay publicaciones pendientes",
   "@group_pending_posts_empty": {
-    "description": "Mensaje de estado vacío cuando no hay publicaciones pendientes"
+    "description": "Empty state message when there are no pending posts"
   },
-  
   "group_pending_post_accept": "Aceptar",
   "@group_pending_post_accept": {
-    "description": "Texto del botón para aceptar una publicación pendiente"
+    "description": "Button text for accepting a pending post"
   },
-  
   "group_pending_post_decline": "Rechazar",
   "@group_pending_post_decline": {
-    "description": "Texto del botón para rechazar una publicación pendiente"
+    "description": "Button text for declining a pending post"
   },
-  
   "group_create_success_message": "Grupo creado exitosamente.",
   "@group_create_success_message": {
-    "description": "Mensaje de éxito para la creación de grupo"
+    "description": "Toast message for group creation success"
   },
-  
-  "group_create_error_message": "No se pudo crear el grupo. Por favor, inténtalo de nuevo.",
+  "group_create_error_message": "No se pudo crear el grupo. Por favor inténtalo de nuevo.",
   "@group_create_error_message": {
-    "description": "Mensaje de error para la creación de grupo"
+    "description": "Toast message for group creation failure"
   },
-  
-  "group_update_success_message": "Grupo actualizado exitosamente.",
+  "group_update_success_message": "Grupo actualizado correctamente.",
   "@group_update_success_message": {
-    "description": "Mensaje de éxito para la actualización de grupo"
+    "description": "Toast message for group update success"
   },
-  
-  "group_update_error_message": "No se pudo guardar el perfil del grupo. Por favor, inténtalo de nuevo.",
+  "group_update_error_message": "No se pudo guardar el perfil de su grupo. Por favor inténtalo de nuevo.",
   "@group_update_error_message": {
-    "description": "Mensaje de error para la actualización de grupo"
+    "description": "Toast message for group update failure"
   },
-  
-  "group_leave_success_message": "Has salido del grupo exitosamente.",
+  "group_leave_success_message": "Dejó con éxito el grupo.",
   "@group_leave_success_message": {
-    "description": "Mensaje de éxito para salir del grupo"
+    "description": "Toast message for group leave success"
   },
-  
-  "group_leave_error_message": "No se pudo salir del grupo.",
+  "group_leave_error_message": "No pude abandonar el grupo.",
   "@group_leave_error_message": {
-    "description": "Mensaje de error para salir del grupo"
+    "description": "Toast message for group leave error"
   },
-  
-  "group_close_success_message": "Grupo cerrado exitosamente.",
+  "group_close_success_message": "Cerró exitosamente el grupo.",
   "@group_close_success_message": {
-    "description": "Mensaje de éxito para cerrar el grupo"
+    "description": "Toast message for group close success"
   },
-  
   "group_close_error_message": "No se pudo cerrar el grupo.",
   "@group_close_error_message": {
-    "description": "Mensaje de error para cerrar el grupo"
+    "description": "Toast message for group close error"
   },
-  
   "group_pending_post_delete_success": "Publicación eliminada.",
   "@group_pending_post_delete_success": {
-    "description": "Mensaje de éxito cuando se elimina una publicación pendiente"
+    "description": "Success message when pending post is deleted"
   },
-  
-  "group_pending_post_delete_error": "No se pudo eliminar la publicación. Por favor, inténtalo de nuevo.",
+  "group_pending_post_delete_error": "No se pudo eliminar la publicación. Por favor inténtalo de nuevo.",
   "@group_pending_post_delete_error": {
-    "description": "Mensaje de error cuando falla la eliminación de publicación pendiente"
+    "description": "Error message when deleting pending post fails"
   },
-  
   "group_pending_post_approve_success": "Publicación aceptada.",
   "@group_pending_post_approve_success": {
-    "description": "Mensaje de éxito cuando se aprueba una publicación pendiente"
+    "description": "Success message when pending post is approved"
   },
-  
   "group_pending_post_approve_error": "No se pudo aceptar la publicación. Esta publicación ha sido revisada por otro moderador.",
   "@group_pending_post_approve_error": {
-    "description": "Mensaje de error cuando falla la aprobación de publicación pendiente"
+    "description": "Error message when approving pending post fails"
   },
-  
   "group_pending_post_decline_success": "Publicación rechazada.",
   "@group_pending_post_decline_success": {
-    "description": "Mensaje de éxito cuando se rechaza una publicación pendiente"
+    "description": "Success message when pending post is declined"
   },
-  
   "group_pending_post_decline_error": "No se pudo rechazar la publicación. Esta publicación ha sido revisada por otro moderador.",
   "@group_pending_post_decline_error": {
-    "description": "Mensaje de error cuando falla el rechazo de publicación pendiente"
+    "description": "Error message when declining pending post fails"
   },
-  
-  "error_leave_group": "No se puede salir del grupo",
+  "error_leave_group": "No puedo salir del grupo",
   "@error_leave_group": {
-    "description": "Título del mensaje de error cuando falla salir de un grupo"
+    "description": "Error message title when leaving a group fails"
   },
-  
-  "error_leave_group_description": "Eres el único moderador en este grupo. Para salir del grupo, nombra a otros miembros como moderadores",
+  "error_leave_group_description": "Eres el único moderador de este grupo. Para abandonar el grupo, nomine a otros miembros para el rol de moderador.",
   "@error_leave_group_description": {
-    "description": "Descripción del mensaje de error cuando falla salir de un grupo"
+    "description": "Error message description when leaving a group fails"
   },
-  
   "error_close_group": "No se puede cerrar el grupo",
   "@error_close_group": {
-    "description": "Título del mensaje de error cuando falla cerrar un grupo"
+    "description": "Error message title when closing a group fails"
   },
-  
-  "error_close_group_description": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
+  "error_close_group_description": "Algo salió mal. Inténtelo de nuevo más tarde.",
   "@error_close_group_description": {
-    "description": "Descripción del mensaje de error cuando falla cerrar un grupo"
+    "description": "Error message description when closing a group fails"
   },
-  
-  "post_item_bottom_nonmember_label": "Únete al grupo para interactuar con todas las publicaciones",
-  "@post_item_bottom_nonmember_label": {
-    "description": "Etiqueta para el texto inferior del elemento de publicación para no miembros"
+  "chat_too_many_archived": "Demasiados chats archivados",
+  "@chat_too_many_archived": {
+    "description": "Error message when user has archived too many chats"
   },
-  
-  "group_settings_permissions": "Permisos del grupo",
-  "@group_settings_permissions": {
-    "description": "Título de sección para permisos del grupo en configuración (reemplaza settings_permissions)"
+  "chat_group_type_public": "Público",
+  "@chat_group_type_public": {
+    "description": "Label for public group type"
   },
-  
-  "group_allow_stories_comments": "Permitir comentarios en historias del grupo",
-  "@group_allow_stories_comments": {
-    "description": "Etiqueta para la configuración de comentarios de historias (reemplaza settings_allow_stories_comments)"
+  "chat_group_type_private": "Privado",
+  "@chat_group_type_private": {
+    "description": "Label for private group type"
   },
-  
-  "group_allow_stories_comments_description": "Actívalo para recibir comentarios en historias de este grupo.",
-  "@group_allow_stories_comments_description": {
-    "description": "Descripción para la configuración de comentarios de historias (reemplaza settings_allow_stories_comments_description)"
+  "general_file": "Archivo",
+  "@general_file": {
+    "description": "Generic label for file"
+  },
+  "chat_confirm_unban": "Confirmar desbanear",
+  "@chat_confirm_unban": {
+    "description": "Title for unban confirmation dialog"
+  },
+  "chat_delete_message_confirm": "¿Eliminar este mensaje?",
+  "@chat_delete_message_confirm": {
+    "description": "Confirmation message for deleting a message"
+  },
+  "chat_permission_everyone": "Todos",
+  "@chat_permission_everyone": {
+    "description": "Permission level for everyone in group"
+  },
+  "chat_permission_moderators_only": "Sólo moderadores",
+  "@chat_permission_moderators_only": {
+    "description": "Permission level for moderators only"
+  },
+  "chat_notification_default_mode": "Modo predeterminado",
+  "@chat_notification_default_mode": {
+    "description": "Default notification mode option"
+  },
+  "chat_notification_silent_mode": "Modo silencioso",
+  "@chat_notification_silent_mode": {
+    "description": "Silent notification mode option"
+  },
+  "chat_notification_subscribe_mode": "Modo de suscripción",
+  "@chat_notification_subscribe_mode": {
+    "description": "Subscribe notification mode option"
+  },
+  "chat_group_profile": "Perfil de grupo",
+  "@chat_group_profile": {
+    "description": "Label for group profile settings"
+  },
+  "chat_group_notifications": "Notificaciones grupales",
+  "@chat_group_notifications": {
+    "description": "Label for group notifications settings"
+  },
+  "chat_member_permissions": "Permisos de miembros",
+  "@chat_member_permissions": {
+    "description": "Label for member permissions settings"
+  },
+  "chat_all_members": "Todos los miembros",
+  "@chat_all_members": {
+    "description": "Label for all members list"
+  },
+  "chat_banned_users": "Usuarios prohibidos",
+  "@chat_banned_users": {
+    "description": "Label for banned users list"
+  },
+  "chat_leave_group": "Dejar grupo",
+  "@chat_leave_group": {
+    "description": "Button text for leaving a group"
+  },
+  "chat_last_moderator_warning": "Eres el último moderador.",
+  "@chat_last_moderator_warning": {
+    "description": "Warning message when user is the last moderator"
+  },
+  "chat_notifications": "notificaciones",
+  "@chat_notifications": {
+    "description": "Generic label for notifications"
+  },
+  "chat_allow_notifications": "Permitir notificaciones",
+  "@chat_allow_notifications": {
+    "description": "Label for allowing notifications setting"
+  },
+  "story_discard_confirm_title": "¿Descartar esta historia?",
+  "@story_discard_confirm_title": {
+    "description": "Title for story discard confirmation dialog"
+  },
+  "story_discard_confirm_message": "La historia será eliminada permanentemente. No se puede deshacer.",
+  "@story_discard_confirm_message": {
+    "description": "Message for story discard confirmation dialog"
+  },
+  "story_remove_link_confirm": "¿Quitar enlace?",
+  "@story_remove_link_confirm": {
+    "description": "Confirmation dialog title for removing link"
+  },
+  "story_unsaved_changes": "Cambios no guardados",
+  "@story_unsaved_changes": {
+    "description": "Warning for unsaved changes in story"
+  },
+  "story_upload_failed": "No se pudo subir la historia",
+  "@story_upload_failed": {
+    "description": "Error message when story upload fails"
+  },
+  "story_delete_confirm": "¿Eliminar esta historia?",
+  "@story_delete_confirm": {
+    "description": "Confirmation message for deleting a story"
+  },
+  "story_label": "Historias",
+  "@story_label": {
+    "description": "Generic label for stories feature"
+  },
+  "post_pending_review": "Publicaciones enviadas para revisión",
+  "@post_pending_review": {
+    "description": "Label for posts pending review"
+  },
+  "media_permission_files": "Permitir el acceso a sus archivos",
+  "@media_permission_files": {
+    "description": "Permission request message for file access"
+  },
+  "media_permission_photos": "Permitir el acceso a tus fotos",
+  "@media_permission_photos": {
+    "description": "Permission request message for photo access"
+  },
+  "media_permission_videos": "Permitir el acceso a tus vídeos",
+  "@media_permission_videos": {
+    "description": "Permission request message for video access"
+  },
+  "media_upload_limit_reached": "Se alcanzó el límite máximo de carga",
+  "@media_upload_limit_reached": {
+    "description": "Error message when upload limit is reached"
+  },
+  "category_all": "Todas las categorías",
+  "@category_all": {
+    "description": "Label for all categories view"
+  },
+  "story_discard_action": "Desechar",
+  "@story_discard_action": {
+    "description": "Button text for discarding story"
+  },
+  "empty_my_communities_title": "Sin comunidades",
+  "@empty_my_communities_title": {
+    "description": "Título para lista vacía de mis comunidades"
+  },
+  "empty_my_communities_description": "Únete a comunidades para verlas aquí",
+  "@empty_my_communities_description": {
+    "description": "Descripción para lista vacía de mis comunidades"
+  },
+  "empty_my_communities_cta": "Explorar comunidades",
+  "@empty_my_communities_cta": {
+    "description": "Texto del botón CTA para lista vacía de mis comunidades"
+  },
+  "empty_group_chats_title": "Sin chats grupales",
+  "@empty_group_chats_title": {
+    "description": "Título para lista vacía de chats grupales"
+  },
+  "empty_group_chats_description": "Inicia un chat grupal con amigos",
+  "@empty_group_chats_description": {
+    "description": "Descripción para lista vacía de chats grupales"
+  },
+  "empty_group_chats_cta": "Crear chat grupal",
+  "@empty_group_chats_cta": {
+    "description": "Texto del botón CTA para lista vacía de chats grupales"
+  },
+  "empty_all_chats_title": "Aún no hay conversaciones",
+  "@empty_all_chats_title": {
+    "description": "Título para lista de chats vacía"
+  },
+  "empty_all_chats_description": "Vamos a crear un chat para empezar.",
+  "@empty_all_chats_description": {
+    "description": "Descripción para lista de chats vacía"
+  },
+  "empty_all_chats_cta": "Crear nuevo chat",
+  "@empty_all_chats_cta": {
+    "description": "Texto del botón CTA para lista de chats vacía"
+  },
+  "empty_archived_chats_title": "No hay chats archivados",
+  "@empty_archived_chats_title": {
+    "description": "Título para lista de chats archivados vacía"
+  },
+  "empty_archived_chats_description": "Los chats archivados aparecerán aquí",
+  "@empty_archived_chats_description": {
+    "description": "Descripción para lista vacía de chats archivados"
+  },
+  "empty_comments_title": "Aún no hay comentarios",
+  "@empty_comments_title": {
+    "description": "Título para lista vacía de comentarios"
+  },
+  "empty_comments_description": "Sé el primero en comentar",
+  "@empty_comments_description": {
+    "description": "Descripción para lista vacía de comentarios"
+  },
+  "empty_search_title": "No se encontraron resultados",
+  "@empty_search_title": {
+    "description": "Título para resultados de búsqueda vacíos"
+  },
+  "empty_search_description": "Prueba con diferentes palabras clave o explora comunidades",
+  "@empty_search_description": {
+    "description": "Descripción para resultados de búsqueda vacíos"
+  },
+  "empty_search_cta": "Explorar comunidades",
+  "@empty_search_cta": {
+    "description": "Texto del botón CTA para resultados de búsqueda vacíos"
+  },
+  "empty_category_communities_description": "No se encontraron comunidades en esta categoría. Prueba explorar otras categorías o crea la tuya propia.",
+  "@empty_category_communities_description": {
+    "description": "Descripción para comunidades vacías en categoría"
+  },
+  "empty_explore_title_no_categories": "Tu exploración está vacía",
+  "@empty_explore_title_no_categories": {
+    "description": "Título para página de exploración cuando no hay categorías"
+  },
+  "empty_explore_description_no_categories": "Encuentra comunidades o crea la tuya propia",
+  "@empty_explore_description_no_categories": {
+    "description": "Descripción para página de exploración cuando no hay categorías"
+  },
+  "empty_explore_title_no_communities": "Aún no hay comunidades",
+  "@empty_explore_title_no_communities": {
+    "description": "Título para página de exploración cuando hay categorías pero no comunidades"
+  },
+  "empty_explore_description_no_communities": "Sé el primero en crear una comunidad",
+  "@empty_explore_description_no_communities": {
+    "description": "Descripción para página de exploración cuando hay categorías pero no comunidades"
+  },
+  "cta_create_community": "Crear comunidad",
+  "@cta_create_community": {
+    "description": "Texto del botón CTA para crear comunidad"
+  },
+  "shared_post_media_indicator": "Esta publicación contiene medios",
+  "@shared_post_media_indicator": {
+    "description": "Text shown when shared post contains media but can't display preview"
+  },
+  "shared_post_load_error": "No se puede cargar la publicación compartida",
+  "@shared_post_load_error": {
+    "description": "Error message when shared post data cannot be loaded"
+  },
+  "media_type_video": "Video",
+  "@media_type_video": {
+    "description": "Label for video content type"
+  },
+  "timestamp_just_now_full": "Justo ahora",
+  "@timestamp_just_now_full": {
+    "description": "Full timestamp text for content posted just now"
+  },
+  "timestamp_minutes_ago": "Hace {minutes} min",
+  "@timestamp_minutes_ago": {
+    "description": "Timestamp for content posted minutes ago",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_ago": "Hace {hours} h",
+  "@timestamp_hours_ago": {
+    "description": "Timestamp for content posted hours ago",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_ago": "Hace {days} d",
+  "@timestamp_days_ago": {
+    "description": "Timestamp for content posted days ago",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_some_time_ago": "Hace un tiempo",
+  "@timestamp_some_time_ago": {
+    "description": "Fallback timestamp when date parsing fails"
+  },
+  "timestamp_minutes_short": "{minutes} min",
+  "@timestamp_minutes_short": {
+    "description": "Short timestamp for minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_hours_short": "{hours} h",
+  "@timestamp_hours_short": {
+    "description": "Short timestamp for hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_days_short": "{days} d",
+  "@timestamp_days_short": {
+    "description": "Short timestamp for days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "timestamp_weeks_short": "{weeks} sem",
+  "@timestamp_weeks_short": {
+    "description": "Short timestamp for weeks",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "feed_empty_create_first_post": "Crea tu primera publicación",
+  "@feed_empty_create_first_post": {
+    "description": "Description text encouraging user to create their first post"
+  },
+  "chat_add_member_button": "Agregar miembro",
+  "@chat_add_member_button": {
+    "description": "Button text to add members"
+  },
+  "chat_add_member_title": "Agregar miembro",
+  "@chat_add_member_title": {
+    "description": "Title for add member page"
+  },
+  "chat_archived_empty": "Sin chat de archivo",
+  "@chat_archived_empty": {
+    "description": "Empty state for archived chats"
+  },
+  "chat_archived_title": "Chats archivados",
+  "@chat_archived_title": {
+    "description": "Title for archived chats page"
+  },
+  "chat_banned_users_empty": "No hay nada aquí que ver todavía",
+  "@chat_banned_users_empty": {
+    "description": "Empty state for banned users"
+  },
+  "chat_banned_users_update_failed": "No se pudieron actualizar los usuarios prohibidos. Por favor inténtalo de nuevo.",
+  "@chat_banned_users_update_failed": {
+    "description": "Error message for banned users update"
+  },
+  "chat_banned_users_updated": "Usuarios prohibidos actualizados.",
+  "@chat_banned_users_updated": {
+    "description": "Success message for banned users update"
+  },
+  "chat_group_left_failed": "No se pudo salir del chat grupal. Por favor inténtalo de nuevo.",
+  "@chat_group_left_failed": {
+    "description": "Error message when leaving fails"
+  },
+  "chat_group_left_success": "Se acabó el chat grupal.",
+  "@chat_group_left_success": {
+    "description": "Success message after leaving group"
+  },
+  "chat_group_notification_update_failed": "No se pudo actualizar la notificación del grupo. Por favor inténtalo de nuevo.",
+  "@chat_group_notification_update_failed": {
+    "description": "Error message for notification update"
+  },
+  "chat_group_notification_updated": "Notificación grupal actualizada.",
+  "@chat_group_notification_updated": {
+    "description": "Success message for notification update"
+  },
+  "chat_group_profile_update_failed": "No se pudo actualizar el perfil del grupo. Por favor inténtalo de nuevo.",
+  "@chat_group_profile_update_failed": {
+    "description": "Error message for profile update"
+  },
+  "chat_group_profile_updated": "Perfil del grupo actualizado.",
+  "@chat_group_profile_updated": {
+    "description": "Success message for profile update"
+  },
+  "chat_group_settings_section": "Configuración de grupo",
+  "@chat_group_settings_section": {
+    "description": "Section header for group settings"
+  },
+  "chat_group_settings_title": "Configuración de grupo",
+  "@chat_group_settings_title": {
+    "description": "Title for group settings page"
+  },
+  "chat_last_moderator_message": "Debes promover a otro miembro a moderador antes de salir.",
+  "@chat_last_moderator_message": {
+    "description": "Message shown to last moderator"
+  },
+  "chat_leave_button": "Dejar",
+  "@chat_leave_button": {
+    "description": "Button to confirm leaving group"
+  },
+  "chat_leave_group_message": "Si abandonas este grupo, ya no verás nuevas actividades ni participarás en este grupo.",
+  "@chat_leave_group_message": {
+    "description": "Warning message for leaving group"
+  },
+  "chat_leave_group_title": "Dejar grupo",
+  "@chat_leave_group_title": {
+    "description": "Title for leave group confirmation"
+  },
+  "chat_member_list_update_failed": "No se pudo actualizar la lista de miembros. Por favor inténtalo de nuevo.",
+  "@chat_member_list_update_failed": {
+    "description": "Error message for member list update"
+  },
+  "chat_member_list_updated": "Lista de miembros actualizada.",
+  "@chat_member_list_updated": {
+    "description": "Success message for member list update"
+  },
+  "chat_member_permissions_update_failed": "No se pudieron actualizar los permisos de los miembros. Por favor inténtalo de nuevo.",
+  "@chat_member_permissions_update_failed": {
+    "description": "Error message for permissions update"
+  },
+  "chat_member_permissions_updated": "Permisos de miembros actualizados.",
+  "@chat_member_permissions_updated": {
+    "description": "Success message for permissions update"
+  },
+  "chat_messaging_section": "Mensajería",
+  "@chat_messaging_section": {
+    "description": "Section header for messaging settings"
+  },
+  "chat_notification_default_description": "De forma predeterminada, los miembros de esta comunidad recibirán notificaciones, pero pueden optar por desactivarlas.",
+  "@chat_notification_default_description": {
+    "description": "Description for default notification mode"
+  },
+  "chat_notification_silent_description": "No hay notificaciones para todos en este canal. Los miembros no pueden activar las notificaciones en el canal.",
+  "@chat_notification_silent_description": {
+    "description": "Description for silent mode"
+  },
+  "chat_notification_subscribe_description": "Todos los miembros tienen la opción de recibir notificaciones, pero deben habilitarlas. De forma predeterminada, las notificaciones están desactivadas para cada miembro.",
+  "@chat_notification_subscribe_description": {
+    "description": "Description for subscribe mode"
+  },
+  "chat_permission_everyone_description": "Todos pueden enviar un mensaje en el grupo.",
+  "@chat_permission_everyone_description": {
+    "description": "Description for everyone permission"
+  },
+  "chat_permission_moderators_description": "Los miembros que no son moderadores pueden leer mensajes pero no pueden enviar ningún mensaje.",
+  "@chat_permission_moderators_description": {
+    "description": "Description for moderators-only permission"
+  },
+  "chat_promote_member_button": "Promocionar miembro",
+  "@chat_promote_member_button": {
+    "description": "Button to promote member"
+  },
+  "chat_unban_button": "Desbanear",
+  "@chat_unban_button": {
+    "description": "Button to unban user"
+  },
+  "chat_unban_confirmation_message": "¿Estás seguro de que quieres desbanear a este usuario? Podrán volver a unirse al grupo.",
+  "@chat_unban_confirmation_message": {
+    "description": "Confirmation message for unbanning user"
+  },
+  "chat_your_preferences": "Tus preferencias",
+  "@chat_your_preferences": {
+    "description": "Section header for user preferences"
+  },
+  "explore_empty_description": "Encuentra grupo o crea el tuyo propio",
+  "@explore_empty_description": {
+    "description": "Description for empty explore"
+  },
+  "explore_empty_title": "Tu exploración está vacía",
+  "@explore_empty_title": {
+    "description": "Title for empty explore state"
+  },
+  "explore_no_group_description": "Creemos tus propios grupos..",
+  "@explore_no_group_description": {
+    "description": "Encouragement to create groups"
+  },
+  "explore_no_group_title": "Ningún grupo todavía",
+  "@explore_no_group_title": {
+    "description": "Title when no groups exist"
+  },
+  "feed_empty_create_button": "Crear",
+  "@feed_empty_create_button": {
+    "description": "Button text to create a new group"
+  },
+  "feed_empty_description": "Buscar o crear grupo",
+  "@feed_empty_description": {
+    "description": "Description shown when feed is empty"
+  },
+  "feed_empty_explore_button": "Explorar",
+  "@feed_empty_explore_button": {
+    "description": "Button text to explore groups"
+  },
+  "feed_empty_title": "Tu feed está vacío",
+  "@feed_empty_title": {
+    "description": "Title shown when feed has no content"
+  },
+  "feed_filter_all": "Todo",
+  "@feed_filter_all": {
+    "description": "Filter option to show all content types"
+  },
+  "feed_filter_apply": "Aplicar filtros",
+  "@feed_filter_apply": {
+    "description": "Button text to apply selected filters"
+  },
+  "feed_filter_clear_all": "Borrar todo",
+  "@feed_filter_clear_all": {
+    "description": "Button text to clear all filters"
+  },
+  "feed_filter_content_type": "Tipo de contenido",
+  "@feed_filter_content_type": {
+    "description": "Section header for content type filters"
+  },
+  "feed_filter_images": "Imágenes",
+  "@feed_filter_images": {
+    "description": "Filter option to show only images"
+  },
+  "feed_filter_latest_first": "Último primero",
+  "@feed_filter_latest_first": {
+    "description": "Sort option to show latest posts first"
+  },
+  "feed_filter_oldest_first": "El más viejo primero",
+  "@feed_filter_oldest_first": {
+    "description": "Sort option to show oldest posts first"
+  },
+  "feed_filter_sort_by": "Ordenar por",
+  "@feed_filter_sort_by": {
+    "description": "Section header for sort options"
+  },
+  "feed_filter_text": "Texto",
+  "@feed_filter_text": {
+    "description": "Filter option to show only text posts"
+  },
+  "feed_filter_title": "Filtrar publicaciones",
+  "@feed_filter_title": {
+    "description": "Title of the feed filter bottom sheet"
+  },
+  "feed_filter_videos": "Vídeos",
+  "@feed_filter_videos": {
+    "description": "Filter option to show only videos"
+  },
+  "general_error_retry": "Por favor inténtalo de nuevo.",
+  "@general_error_retry": {
+    "description": "Generic retry message"
+  },
+  "general_error_title": "algo salió mal",
+  "@general_error_title": {
+    "description": "Generic error title"
+  },
+  "general_no": "No",
+  "@general_no": {
+    "description": "Generic no button text"
+  },
+  "general_open_settings": "Abrir configuración",
+  "@general_open_settings": {
+    "description": "Button text to open device settings"
+  },
+  "general_remove": "Eliminar",
+  "@general_remove": {
+    "description": "Generic remove button text"
+  },
+  "general_search": "Buscar",
+  "@general_search": {
+    "description": "Generic search placeholder text"
+  },
+  "general_yes": "Sí",
+  "@general_yes": {
+    "description": "Generic yes button text"
+  },
+  "post_share_success": "Publicación compartida exitosamente",
+  "@post_share_success": {
+    "description": "Success message when post is shared"
+  },
+  "story_remove_link_message": "Este enlace será eliminado de la historia.",
+  "@story_remove_link_message": {
+    "description": "Confirmation message when removing link from story"
+  },
+  "story_unsaved_changes_message": "¿Estás seguro de que quieres cancelar? Tus cambios no se guardarán.",
+  "@story_unsaved_changes_message": {
+    "description": "Warning message for unsaved changes in story"
+  },
+  "search_posts_hint": "Buscar publicaciones",
+  "@search_posts_hint": {
+    "description": "Hint text for searching posts in global feed"
+  },
+  "search_adjust_hint": "Intenta ajustar tu búsqueda",
+  "@search_adjust_hint": {
+    "description": "Message shown when search returns no results"
   }
 }

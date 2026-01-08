@@ -29,7 +29,7 @@ class CustomBottomSheet extends StatelessWidget {
         builder: (context, state) {
           final triggeredHeight = ((maxSize - minSize) * 0.5) + minSize;
           return DraggableScrollableSheet(
-            initialChildSize: maxSize,
+            initialChildSize: minSize,
             minChildSize: minSize,
             maxChildSize: maxSize,
             controller: sheetController,

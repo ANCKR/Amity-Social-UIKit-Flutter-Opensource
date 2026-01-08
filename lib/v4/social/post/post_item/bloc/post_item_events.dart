@@ -69,3 +69,15 @@ class PostItemDelete extends PostItemEvent {
 }
 
 class PostItemReacted extends PostItemEvent {}
+
+class TranslatePost extends PostItemEvent {
+  final String text;
+  final String targetLang;
+
+  const TranslatePost({required this.text, required this.targetLang});
+
+  @override
+  List<Object> get props => [text, targetLang];
+}
+
+class ShowOriginalPost extends PostItemEvent {}

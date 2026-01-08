@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/v4/social/community/community_join_notifier.dart';
 import 'package:amity_uikit_beta_service/v4/utils/bloc_extension.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
@@ -73,12 +74,40 @@ class CommunityProfileBloc
     });
 
     on<CommunityProfileEventJoining>((event, emit) async {
+      // Set loading state and clear previous success/error flags
+      emit(state.copyWith(
+        isJoiningCommunity: true,
+        joinSuccess: false,
+        joinError: false,
+      ));
+
       try {
-        emit(state.copyWith(isJoined: true));
+        // Join the community
         await AmitySocialClient.newCommunityRepository()
             .joinCommunity(event.communityId);
+
+        // Fetch the updated community
+        final updatedCommunity = await AmitySocialClient.newCommunityRepository()
+            .getCommunity(event.communityId);
+
+        // Update state with new community data and set success flag
+        emit(state.copyWith(
+          community: updatedCommunity,
+          isJoined: updatedCommunity.isJoined,
+          isJoiningCommunity: false,
+          joinSuccess: true,
+          joinError: false,
+        ));
+
+        // Notify globally that user joined this community
+        CommunityJoinNotifier().notifyJoined(event.communityId);
       } catch (e) {
-        emit(state.copyWith(isJoined: false));
+        // Clear loading state and set error flag
+        emit(state.copyWith(
+          isJoiningCommunity: false,
+          joinSuccess: false,
+          joinError: true,
+        ));
       }
     });
 
@@ -91,6 +120,10 @@ class CommunityProfileBloc
 
     on<CommunityProfileEventExpandDetail>((event, emit) async {
       emit(state.copyWith(isDetailExpanded: true));
+    });
+
+    on<CommunityProfileEventResetJoinFlags>((event, emit) async {
+      emit(state.copyWith(joinSuccess: false, joinError: false));
     });
 
     try {

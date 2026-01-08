@@ -53,6 +53,10 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
       emit(state.copyWith(showUserNameOnAppBar: event.showUserName));
     });
 
+    on<UserProfileFollowActionLoadingEvent>((event, emit) async {
+      emit(state.copyWith(isFollowActionLoading: event.isLoading));
+    });
+
     final relationshipManager = UserRelationshipManager();
 
     // User Moderation
@@ -113,18 +117,41 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
           });
           break;
         case UserModerationAction.unfollow:
+          // Set loading state
+          addEvent(const UserProfileFollowActionLoadingEvent(isLoading: true));
+
           relationshipManager.unfollowUser(userId, onSuccess: () {
+            // Show success toast
+            toast.add(AmityToastShort(
+                message: event.successMessage, icon: AmityToastIcon.success));
+
             // Query updated follow info again.
             setupFollowInfo(userId);
+
+            // Reset loading state
+            addEvent(const UserProfileFollowActionLoadingEvent(isLoading: false));
           }, onError: () {
             toast.add(AmityToastShort(
                 message: event.errorMessage, icon: AmityToastIcon.warning));
+
+            // Reset loading state
+            addEvent(const UserProfileFollowActionLoadingEvent(isLoading: false));
           });
           break;
         case UserModerationAction.follow:
+          // Set loading state
+          addEvent(const UserProfileFollowActionLoadingEvent(isLoading: true));
+
           relationshipManager.followUser(userId, onSuccess: () {
+            // Show success toast
+            toast.add(AmityToastShort(
+                message: event.successMessage, icon: AmityToastIcon.success));
+
             // Query updated follow info again.
             setupFollowInfo(userId);
+
+            // Reset loading state
+            addEvent(const UserProfileFollowActionLoadingEvent(isLoading: false));
           }, onError: (error) {
             if (error != null && error is AmityException) {
               if (error.isAmityErrorWithCode(
@@ -135,6 +162,9 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
               toast.add(AmityToastShort(
                   message: event.errorMessage, icon: AmityToastIcon.warning));
             }
+
+            // Reset loading state
+            addEvent(const UserProfileFollowActionLoadingEvent(isLoading: false));
           });
           break;
       }

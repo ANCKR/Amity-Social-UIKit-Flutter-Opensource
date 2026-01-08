@@ -1,3 +1,4 @@
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
@@ -6,6 +7,7 @@ import 'package:amity_uikit_beta_service/v4/social/community/community_creation/
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class AmityEmptyNewsFeedComponent extends NewBaseComponent {
   AmityEmptyNewsFeedComponent({Key? key, String? pageId})
@@ -43,13 +45,13 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                 SizedBox(
                   width: 252,
                   child: Text(
-                    'Your feed is empty',
+                    context.l10n.feed_empty_title,
                     textAlign: TextAlign.center,
                     style: AmityTextStyle.titleBold(theme.baseColorShade1),
                   ),
                 ),
                 Text(
-                  'Find group or create your own ',
+                  context.l10n.feed_empty_description,
                   textAlign: TextAlign.center,
                   style: AmityTextStyle.caption(theme.baseColorShade1),
                 ),
@@ -67,7 +69,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                               .add(TabSelectedEvent(1));
                         },
                         child: Container(
-                          width: 220,
+                          width: 240,
                           padding: const EdgeInsets.only(
                             top: 10,
                             left: 12,
@@ -80,7 +82,7 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                 borderRadius: BorderRadius.circular(4)),
                           ),
                           child: Row(
-                            mainAxisSize: MainAxisSize.min,
+                            mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
@@ -89,26 +91,27 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                 height: 20,
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 2),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      width: 20,
-                                      child: SvgPicture.asset(
-                                        'assets/Icons/amity_ic_globe.svg',
-                                        package: 'amity_uikit_beta_service',
-                                        width: 20,
-                                        height: 16,
-                                      ),
-                                    ),
-                                  ],
+                                child: SvgPicture.asset(
+                                  'assets/Icons/amity_ic_globe.svg',
+                                  package: 'amity_uikit_beta_service',
+                                  width: 20,
+                                  height: 16,
+                                  colorFilter: const ColorFilter.mode(
+                                    Colors.white,
+                                    BlendMode.srcIn,
+                                  ),
                                 ),
                               ),
-                              Text(
-                                'Explore group',
-                                style: AmityTextStyle.subtitleBold(Colors.white),
+                              const SizedBox(width: 4),
+                              Flexible(
+                                child: AutoSizeText(
+                                  context.l10n.empty_my_communities_cta,
+                                  style: AmityTextStyle.subtitleBold(Colors.white),
+                                  maxLines: 1,
+                                  minFontSize: 10,
+                                  maxFontSize: 14,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
                               ),
                             ],
                           ),
@@ -125,17 +128,23 @@ class AmityEmptyNewsFeedComponent extends NewBaseComponent {
                                   )));
                         },
                         child: Container(
-                          width: 220,
+                          width: 240,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 16, vertical: 10),
                           child: Row(
-                            mainAxisSize: MainAxisSize.min,
+                            mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Text(
-                                'Create group',
-                                style: AmityTextStyle.subtitle(theme.primaryColor),
+                              Flexible(
+                                child: AutoSizeText(
+                                  context.l10n.cta_create_community,
+                                  style: AmityTextStyle.subtitle(theme.primaryColor),
+                                  maxLines: 1,
+                                  minFontSize: 10,
+                                  maxFontSize: 14,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
                               ),
                             ],
                           ),

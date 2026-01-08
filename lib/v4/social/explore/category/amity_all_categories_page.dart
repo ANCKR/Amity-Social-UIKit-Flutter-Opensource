@@ -1,4 +1,5 @@
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/community_creation/element/category_grid_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/bloc/amity_all_categories_page_bloc.dart';
@@ -30,7 +31,7 @@ class AmityAllCategoriesPage extends NewBasePage {
     return Scaffold(
       backgroundColor: theme.backgroundColor,
       appBar: AmityAppBar(
-          title: 'All Categories',
+          title: context.l10n.category_all,
           configProvider: configProvider,
           theme: theme),
       body: CustomScrollView(

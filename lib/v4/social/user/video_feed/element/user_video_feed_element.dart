@@ -2,7 +2,6 @@ import 'package:amity_sdk/amity_sdk.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/core/video_post_player/pager/video_post_player.dart';
-import 'package:amity_uikit_beta_service/v4/utils/network_image.dart';
 import 'package:flutter/material.dart';
 
 class UserVideoFeedElement extends StatefulWidget {
@@ -27,6 +26,7 @@ class _UserVideoFeedElementState extends State<UserVideoFeedElement> {
   @override
   Widget build(BuildContext context) {
     final imageUrl = (widget.post.data as VideoData).thumbnail?.fileUrl ?? "";
+    final hasValidUrl = imageUrl.isNotEmpty;
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(8.0),
@@ -49,10 +49,10 @@ class _UserVideoFeedElementState extends State<UserVideoFeedElement> {
             Container(
               decoration: BoxDecoration(
                 color: widget.theme.baseColorShade4,
-                image: DecorationImage(
+                image: hasValidUrl ? DecorationImage(
                   image: NetworkImage(imageUrl),
                   fit: BoxFit.cover,
-                ),
+                ) : null,
               ),
             ),
 

@@ -106,7 +106,7 @@ class _AmityToastState extends State<AmityToast> {
           width: double.infinity,
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
-            color: theme.secondaryColor,
+            color: Colors.black54,
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
             shadows: const [

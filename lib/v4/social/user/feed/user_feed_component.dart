@@ -5,6 +5,7 @@ import 'package:amity_uikit_beta_service/v4/core/theme.dart';
 import 'package:amity_uikit_beta_service/v4/social/globalfeed/amity_global_feed_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/amity_post_content_component.dart';
 import 'package:amity_uikit_beta_service/v4/social/post/common/post_action.dart';
+import 'package:amity_uikit_beta_service/v4/social/post_target_selection_page/post_target_selection_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/feed/bloc/user_feed_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/feed/user_feed_empty_state_info.dart';
 import 'package:amity_uikit_beta_service/v4/social/user/user_feed_empty_state.dart';
@@ -59,7 +60,12 @@ class UserFeedComponent extends NewBaseComponent {
               info = getEmptyStateInfo(
                   context, state.emptyState ?? UserFeedEmptyStateType.empty);
             }
-            return SliverToBoxAdapter(child: UserFeedEmptyState(info: info));
+            return SliverFillRemaining(
+              child: Container(
+                alignment: Alignment.center,
+                child: UserFeedEmptyState(info: info),
+              ),
+            );
           } else {
             return SliverMainAxisGroup(
               slivers: [
@@ -123,20 +129,52 @@ class UserFeedComponent extends NewBaseComponent {
 
   UserFeedEmptyStateInfo getEmptyStateInfo(
       BuildContext context, UserFeedEmptyStateType type) {
+    final currentUser = AmityCoreClient.getCurrentUser();
+    final isOwnProfile = currentUser.userId == userId;
+
     switch (type) {
       case UserFeedEmptyStateType.empty:
-        return UserFeedEmptyStateInfo(context.l10n.feed_no_posts, "",
-            "assets/Icons/amity_ic_feed_empty.svg");
+        if (isOwnProfile) {
+          // Own profile - show button to create post
+          return UserFeedEmptyStateInfo(
+            context.l10n.feed_no_posts,
+            context.l10n.feed_empty_create_first_post,
+            "assets/Icons/amity_ic_feed_empty.svg",
+            buttonText: context.l10n.post_create,
+            buttonIcon: "assets/Icons/amity_ic_create_post_button.svg",
+            onButtonTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => PopScope(
+                    canPop: true,
+                    child: AmityPostTargetSelectionPage(),
+                  ),
+                ),
+              );
+            },
+          );
+        } else {
+          // Other user's profile - no button
+          return UserFeedEmptyStateInfo(
+            context.l10n.feed_no_posts,
+            "",
+            "assets/Icons/amity_ic_feed_empty.svg",
+          );
+        }
       case UserFeedEmptyStateType.blocked:
         return UserFeedEmptyStateInfo(
-            context.l10n.user_feed_blocked_title,
-            context.l10n.user_feed_blocked_description,
-            "assets/Icons/amity_ic_blocked_feed_empty_state.svg");
+          context.l10n.user_feed_blocked_title,
+          context.l10n.user_feed_blocked_description,
+          "assets/Icons/amity_ic_blocked_feed_empty_state.svg",
+        );
       case UserFeedEmptyStateType.private:
         return UserFeedEmptyStateInfo(
-            context.l10n.user_feed_private_title,
-            context.l10n.user_feed_private_description,
-            "assets/Icons/amity_ic_private_feed_empty_state.svg");
+          context.l10n.user_feed_private_title,
+          context.l10n.user_feed_private_description,
+          "assets/Icons/amity_ic_private_feed_empty_state.svg",
+        );
     }
   }
 

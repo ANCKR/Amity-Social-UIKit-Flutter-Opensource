@@ -14,6 +14,7 @@ class UserImageFeedElement extends BaseElement {
   @override
   Widget buildElement(BuildContext context) {
     final imageUrl = (post.data as ImageData).getUrl(AmityImageSize.MEDIUM);
+    final hasValidUrl = imageUrl.isNotEmpty;
 
     return ClipRRect(
         borderRadius: BorderRadius.circular(8.0),
@@ -32,10 +33,10 @@ class UserImageFeedElement extends BaseElement {
           child: Container(
             decoration: BoxDecoration(
               color: theme.baseColorShade4,
-              image: DecorationImage(
+              image: hasValidUrl ? DecorationImage(
                 image: NetworkImage(imageUrl),
                 fit: BoxFit.cover,
-              ),
+              ) : null,
             ),
           ),
         ));

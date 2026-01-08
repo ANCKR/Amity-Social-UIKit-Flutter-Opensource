@@ -7,6 +7,8 @@ import 'package:amity_uikit_beta_service/v4/social/my_community_search/my_commun
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/bloc/social_home_state.dart';
 import 'package:amity_uikit_beta_service/v4/social/social_home_page/social_home_top_navigation_component.dart';
+import 'package:amity_uikit_beta_service/v4/social/post/post_item/post_item.dart';
+import 'package:amity_uikit_beta_service/v4/social/comment/comment_item/comment_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,6 +17,9 @@ class AmitySocialHomePage extends NewBasePage {
 
   @override
   Widget buildPage(BuildContext context) {
+    // Reset all translations when entering the UIKit
+    _resetAllTranslations();
+
     return BlocProvider(
       create: (context) => SocialHomeBloc(),
       child: Builder(builder: (context) {
@@ -70,5 +75,15 @@ class AmitySocialHomePage extends NewBasePage {
         );
       }),
     );
+  }
+
+  /// Resets all dynamic translation states to original English text
+  /// This ensures users see original content when they re-enter the UIKit
+  void _resetAllTranslations() {
+    // Reset post translations
+    PostItem.resetAllTranslations();
+
+    // Reset comment translations
+    CommentItem.resetAllTranslations();
   }
 }

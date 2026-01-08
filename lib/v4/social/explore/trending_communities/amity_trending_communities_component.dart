@@ -3,6 +3,8 @@ import 'package:amity_uikit_beta_service/l10n/localization_helper.dart';
 import 'package:amity_uikit_beta_service/v4/core/base_component.dart';
 import 'package:amity_uikit_beta_service/v4/core/styles.dart';
 import 'package:amity_uikit_beta_service/v4/core/theme.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/amity_uikit_toast.dart';
+import 'package:amity_uikit_beta_service/v4/core/toast/bloc/amity_uikit_toast_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/community/profile/amity_community_profile_page.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/category/amity_community_category_view.dart';
 import 'package:amity_uikit_beta_service/v4/social/explore/explore_component_cubit.dart';
@@ -80,6 +82,7 @@ class AmityTrendingCommunitiesView extends StatelessWidget {
                   index: entry.key,
                   theme: theme,
                   community: entry.value,
+                  isLoading: state.loadingCommunityIds.contains(entry.value.communityId),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => AmityCommunityProfilePage(
@@ -87,15 +90,50 @@ class AmityTrendingCommunitiesView extends StatelessWidget {
                       ),
                     ));
                   },
-                  onJoinTap: () {
+                  onJoinTap: () async {
+                    final communityName = entry.value.displayName ?? 'Community';
                     if (entry.value.isJoined == true) {
-                      context
+                      final success = await context
                           .read<TrendingCommunitiesCubit>()
                           .leaveCommunity(entry.value.communityId!);
+                      // Show bloc toast after leaving
+                      if (context.mounted) {
+                        if (success) {
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: context.l10n.community_leave_success_message,
+                              icon: AmityToastIcon.success,
+                            ),
+                          );
+                        } else {
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: context.l10n.community_leave_error_message,
+                            ),
+                          );
+                        }
+                      }
                     } else {
-                      context
+                      final success = await context
                           .read<TrendingCommunitiesCubit>()
                           .joinCommunity(entry.value.communityId!);
+                      // Show bloc toast after joining
+                      if (context.mounted) {
+                        if (success) {
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: 'Joined $communityName',
+                              icon: AmityToastIcon.success,
+                            ),
+                          );
+                        } else {
+                          context.read<AmityToastBloc>().add(
+                            AmityToastShort(
+                              message: 'Failed to join $communityName',
+                            ),
+                          );
+                        }
+                      }
                     }
                   },
                 )
@@ -113,6 +151,7 @@ class AmityJoinCommunityView extends StatelessWidget {
   final VoidCallback onTap;
   final VoidCallback onJoinTap;
   final int index;
+  final bool isLoading;
 
   const AmityJoinCommunityView({
     Key? key,
@@ -121,6 +160,7 @@ class AmityJoinCommunityView extends StatelessWidget {
     required this.onTap,
     required this.onJoinTap,
     required this.index,
+    required this.isLoading,
   }) : super(key: key);
 
   @override
@@ -137,24 +177,7 @@ class AmityJoinCommunityView extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(4),
-                  child: Image.network(
-                    community.avatarImage?.getUrl(AmityImageSize.MEDIUM) ?? '',
-                    width: 80,
-                    height: 80,
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) => Container(
-                        width: 80,
-                        height: 80,
-                        color: theme.baseColorShade3,
-                        child: Center(
-                          child: SvgPicture.asset(
-                            'assets/Icons/amity_ic_default_community_avatar.svg',
-                            width: 24,
-                            height: 18,
-                            package: 'amity_uikit_beta_service',
-                          ),
-                        )),
-                  ),
+                  child: _buildCommunityAvatar(community, theme),
                 ),
                 Container(
                   width: 80,
@@ -165,8 +188,8 @@ class AmityJoinCommunityView extends StatelessWidget {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.black.withOpacity(0),
-                        Colors.black.withOpacity(0.4),
+                        Colors.black.withValues(alpha: 0.0),
+                        Colors.black.withValues(alpha: 0.4),
                       ],
                     ),
                   ),
@@ -251,12 +274,47 @@ class AmityJoinCommunityView extends StatelessWidget {
                       theme: theme,
                       community: community,
                       onTap: onJoinTap,
+                      isLoading: isLoading,
                     ),
                   ),
                 ],
               ),
             )
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCommunityAvatar(AmityCommunity community, AmityThemeColor theme) {
+    final imageUrl = community.avatarImage?.getUrl(AmityImageSize.MEDIUM);
+
+    // Check if URL is valid (not null and not empty)
+    if (imageUrl != null && imageUrl.isNotEmpty) {
+      return Image.network(
+        imageUrl,
+        width: 80,
+        height: 80,
+        fit: BoxFit.cover,
+        errorBuilder: (context, error, stackTrace) => _buildPlaceholder(theme),
+      );
+    }
+
+    // Show placeholder if no valid URL
+    return _buildPlaceholder(theme);
+  }
+
+  Widget _buildPlaceholder(AmityThemeColor theme) {
+    return Container(
+      width: 80,
+      height: 80,
+      color: theme.baseColorShade3,
+      child: Center(
+        child: SvgPicture.asset(
+          'assets/Icons/amity_ic_default_community_avatar.svg',
+          width: 24,
+          height: 18,
+          package: 'amity_uikit_beta_service',
         ),
       ),
     );

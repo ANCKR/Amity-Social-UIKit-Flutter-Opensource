@@ -234,11 +234,11 @@
             "text": "Your Feed is empty"
         },
         "social_home_page/empty_newsfeed/description": {
-            "text": "Find group or create your own"
+            "text": "Find community or create your own"
         },
         "social_home_page/empty_newsfeed/explore_communitties_button": {
             "icon": "exploreCommunityIcon",
-            "text": "Explore Group"
+            "text": "Explore Community"
         },
         "social_home_page/empty_newsfeed/create_community_button": {
             "icon": "createCommunityIcon"

@@ -474,7 +474,7 @@ class SecondPage extends StatelessWidget {
         leading: BackButton(
           color: Colors.black,
           onPressed: () {
-            AmityUIKit().unRegisterDevice();
+            AmityUIKit().unRegisterDevice(context: context);
             MyAppNavigatorKey.currentState!.pushReplacement(
               MaterialPageRoute(builder: (context) => const MyHomePage()),
             );
@@ -657,7 +657,7 @@ class SocialPage extends StatelessWidget {
               title: const Text('unregister'),
               onTap: () {
                 // Navigate or perform action based on 'Global Feed' tap
-                AmityUIKit().unRegisterDevice();
+                AmityUIKit().unRegisterDevice(context: context);
               },
             ),
             ListTile(

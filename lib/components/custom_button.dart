@@ -1,6 +1,7 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 import '../viewmodel/configuration_viewmodel.dart';
 
@@ -54,6 +55,7 @@ class CustomButton extends StatelessWidget {
           padding: EdgeInsets.all(padding ?? (icon != null ? 16.0 : 18.0)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               icon ?? const SizedBox.shrink(),
               icon != null
@@ -67,19 +69,29 @@ class CustomButton extends StatelessWidget {
                           child: CircularProgressIndicator(
                             color: Colors.white,
                           ))
-                      : Text(
-                          label ?? "Next",
-                          textAlign: TextAlign.center,
-                          style: theme.textTheme.titleMedium!.copyWith(
-                              color: textColor ?? theme.scaffoldBackgroundColor,
-                              fontSize: textSize ?? 16),
+                      : Flexible(
+                          child: AutoSizeText(
+                            label ?? "Next",
+                            textAlign: TextAlign.center,
+                            maxLines: 1,
+                            minFontSize: 12,
+                            overflow: TextOverflow.ellipsis,
+                            style: theme.textTheme.titleMedium!.copyWith(
+                                color: textColor ?? theme.scaffoldBackgroundColor,
+                                fontSize: textSize ?? 16),
+                          ),
                         ))
-                  : Text(
-                      label ?? "Next",
-                      textAlign: TextAlign.center,
-                      style: theme.textTheme.titleMedium!.copyWith(
-                          color: textColor ?? theme.scaffoldBackgroundColor,
-                          fontSize: textSize ?? 16),
+                  : Flexible(
+                      child: AutoSizeText(
+                        label ?? "Next",
+                        textAlign: TextAlign.center,
+                        maxLines: 1,
+                        minFontSize: 12,
+                        overflow: TextOverflow.ellipsis,
+                        style: theme.textTheme.titleMedium!.copyWith(
+                            color: textColor ?? theme.scaffoldBackgroundColor,
+                            fontSize: textSize ?? 16),
+                      ),
                     ),
               trailing != null ? const Spacer() : const SizedBox.shrink(),
               trailing ?? const SizedBox.shrink(),
