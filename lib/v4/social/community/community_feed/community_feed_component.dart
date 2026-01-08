@@ -185,8 +185,7 @@ class CommunityFeedComponent extends NewBaseComponent {
     }
     final amityPost = post;
     if (((amityPost.children?.isNotEmpty ?? false) &&
-            (amityPost.children!.first.type == AmityDataType.FILE ||
-                amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
+            (amityPost.children!.first.type == AmityDataType.FILE)) ||
         (amityPost.isDeleted ?? false)) {
       return Container();
     } else {
@@ -235,13 +234,12 @@ class CommunityFeedComponent extends NewBaseComponent {
 
   Widget _getPost(int index, CommunityFeedState state) {
     final amityPost = state.posts[index];
-    if (((amityPost.children?.isNotEmpty ?? false) &&
-            (amityPost.children!.first.type == AmityDataType.LIVESTREAM)) ||
-        (amityPost.isDeleted ?? false) ||
+    if ((amityPost.isDeleted ?? false) ||
         (state.announcements.map((e) => e.postId).contains(amityPost.postId))) {
       return Container();
     } else {
-      var uniqueKey = UniqueKey();
+      // Use stable key based on post ID to preserve widget state during scroll
+      final stableKey = ValueKey('post_${amityPost.postId}');
       return VisibilityDetector(
         key: Key(amityPost.postId ?? ''),
         onVisibilityChanged: (VisibilityInfo info) {
@@ -265,7 +263,7 @@ class CommunityFeedComponent extends NewBaseComponent {
                   category: (state.pins.map((e) => e.postId).contains(post.postId))
                       ? AmityPostCategory.pin
                       : AmityPostCategory.general,
-                  key: uniqueKey,
+                  key: stableKey,
                   hideTarget: isOriginalInShared,
                   hideMenu: !state.isJoined,
                   action: AmityPostAction(

@@ -3,6 +3,7 @@
 import 'dart:developer';
 
 import 'package:amity_sdk/amity_sdk.dart';
+import 'package:amity_video_player/amity_video_player.dart';
 import 'package:amity_uikit_beta_service/uikit_behavior.dart';
 import 'package:amity_uikit_beta_service/l10n/generated/app_localizations.dart';
 import 'package:amity_uikit_beta_service/utils/navigation_key.dart';
@@ -16,6 +17,7 @@ import 'package:amity_uikit_beta_service/v4/social/story/create/bloc/create_stor
 import 'package:amity_uikit_beta_service/v4/social/story/draft/bloc/story_draft_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/hyperlink/bloc/hyperlink_bloc.dart';
 import 'package:amity_uikit_beta_service/v4/social/story/view/components/story_video_player/bloc/story_video_player_bloc.dart';
+import 'package:amity_uikit_beta_service/v4/social/livestream/data/livestream_session_manager.dart';
 import 'package:amity_uikit_beta_service/v4/utils/config_provider.dart';
 import 'package:amity_uikit_beta_service/v4/utils/create_story/bloc/create_story_bloc.dart';
 import 'package:amity_uikit_beta_service/viewmodel/category_viewmodel.dart';
@@ -128,6 +130,15 @@ class AmityUIKit {
         ),
         sycInitialization: true);
 
+    // Initialize Amity Video Player Client for livestream support
+    // As per documentation: https://docs.amity.co/social/flutter
+    try {
+      AmityStreamPlayerClient.setup(AmityCoreClient.getConfiguration());
+      log('AmityStreamPlayerClient initialized successfully');
+    } catch (e) {
+      log('Failed to initialize AmityStreamPlayerClient: $e');
+    }
+
     // Initialize translation service
     final translationService = TranslationService();
     translationService.init(
@@ -151,6 +162,16 @@ class AmityUIKit {
         .then((value) async {
       log("login success");
 
+      // Initialize livestream session in background (non-blocking)
+      // Parent app doesn't wait for this - user can proceed immediately
+      LivestreamSessionManager().initializeSession().then((_) {
+        log("🎬 Livestream session initialized in background");
+      }).catchError((error) {
+        log("⚠️ Livestream session initialization failed (non-critical): $error");
+        // Don't block login on livestream session failure
+      });
+
+      // Callback immediately - don't wait for livestream session
       // Wait a bit for SDK session to be fully established
       await Future.delayed(const Duration(milliseconds: 500));
 
@@ -171,18 +192,6 @@ class AmityUIKit {
       if (callback != null) {
         callback(true, null);
       }
-      //   } else {
-      //     if (callback != null) {
-      //       callback(false, "Initialize accesstoken fail...");
-      //     }
-      //   }
-      // }).onError((error, stackTrace) {
-      //   log("initAccessToken fail...");
-      //   log(error.toString());
-      //   if (callback != null) {
-      //     callback(true, error.toString());
-      //   }
-      // });
     }).onError((error, stackTrace) {
       log("registerDevice...Error:$error");
       if (callback != null) {
@@ -238,6 +247,10 @@ class AmityUIKit {
 
     AmityCoreClient.unregisterDeviceNotification();
     ParentMessageCache().clear();
+
+    // Clear livestream session on logout
+    LivestreamSessionManager().clearSession();
+
     AmityCoreClient.logout();
   }
 

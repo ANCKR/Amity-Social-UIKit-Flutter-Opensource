@@ -198,13 +198,11 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                         (context, index) {
                           final amityPost = state.filteredList[index];
 
-                          if (((amityPost.children?.isNotEmpty ?? false) &&
-                                  (amityPost.children!.first.type ==
-                                          AmityDataType.LIVESTREAM)) ||
-                              (amityPost.isDeleted ?? false)) {
+                          if (amityPost.isDeleted ?? false) {
                             return Container();
                           } else {
-                            var uniqueKey = UniqueKey();
+                            // Use stable key based on post ID to preserve widget state during scroll
+                            final stableKey = ValueKey('post_${amityPost.postId}');
                             return VisibilityDetector(
                               key: Key(amityPost.postId ?? ''),
                               onVisibilityChanged: (VisibilityInfo info) {
@@ -232,7 +230,7 @@ class AmityGlobalFeedComponent extends NewBaseComponent {
                                                 .contains(post.postId))
                                             ? AmityPostCategory.globalFeatured
                                             : AmityPostCategory.general,
-                                        key: uniqueKey,
+                                        key: stableKey,
                                         hideTarget: isOriginalInShared,
                                         action: AmityPostAction(
                                           onAddReaction: (String) {},
